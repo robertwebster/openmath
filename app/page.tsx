@@ -40,7 +40,7 @@ export default function Home() {
             NSW Maths Practice
           </h1>
           <p className="text-lg text-slate-500 max-w-xl mx-auto leading-relaxed">
-            Free practice questions, instant feedback, and worked examples —
+            Free practice questions, instant feedback and worked examples,
             aligned to the NSW Mathematics syllabus. No account needed.
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="relative">
             <input
               type="text"
-              placeholder="Search topics — e.g. trigonometry, probability…"
+              placeholder="Search topics, e.g. trigonometry, probability..."
               className="w-full px-5 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 placeholder-slate-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-base"
             />
             <span className="absolute right-4 top-3.5 text-slate-300 text-lg">
