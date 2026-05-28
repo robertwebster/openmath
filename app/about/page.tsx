@@ -109,7 +109,7 @@ export default function AboutPage() {
           <p>
             Open Math is built and maintained by{" "}
             <a
-              href="https://1upit.com.au"
+              href="https://1upit.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-600 hover:text-indigo-700 underline underline-offset-2"
@@ -153,7 +153,7 @@ export default function AboutPage() {
           <span>
             Built by{" "}
             <a
-              href="https://1upit.com.au"
+              href="https://1upit.com"
               className="underline hover:text-slate-600 transition-colors"
               target="_blank"
               rel="noopener noreferrer"

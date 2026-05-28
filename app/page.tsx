@@ -126,7 +126,7 @@ export default function Home() {
           <span>
             Built by{" "}
             <a
-              href="https://1upit.com.au"
+              href="https://1upit.com"
               className="underline hover:text-slate-600 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
