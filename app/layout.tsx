@@ -8,7 +8,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Open Math — Free NSW Mathematics Practice",
+  title: "Open Math: Free NSW Mathematics Practice",
   description:
     "Free, open source mathematics practice for NSW students in Years 7–10. Instant feedback, no accounts required.",
 };
