@@ -74,7 +74,7 @@ export default async function TopicPage({ params }: Props) {
           <h1 className="text-3xl font-bold text-slate-900 tracking-tight">{topicMeta.title}</h1>
           {topicMeta.extension && (
             <span className="mt-1.5 shrink-0 text-xs font-medium text-indigo-600 bg-indigo-50 border border-indigo-200 rounded-full px-2.5 py-0.5">
-              Extension
+              Extension topic
             </span>
           )}
         </div>
@@ -83,26 +83,6 @@ export default async function TopicPage({ params }: Props) {
         <p className="text-xs text-slate-400 mb-10">
           {topicMeta.strand} · {topicMeta.syllabusOutcome}
         </p>
-
-        {/* Video link */}
-        {topicMeta.video && (
-          <div className="mb-10 bg-slate-50 border border-slate-200 rounded-xl p-5 flex items-center gap-4">
-            <div className="shrink-0 w-10 h-10 flex items-center justify-center bg-red-100 rounded-lg text-red-600 font-bold text-sm">
-              ▶
-            </div>
-            <div className="min-w-0">
-              <p className="text-xs text-slate-400 mb-0.5">{topicMeta.video.channel}</p>
-              <a
-                href={topicMeta.video.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-medium text-slate-700 hover:text-indigo-600 transition-colors truncate block"
-              >
-                {topicMeta.video.title} ↗
-              </a>
-            </div>
-          </div>
-        )}
 
         {/* Sub-topic cards */}
         <h2 className="text-sm font-medium text-slate-400 uppercase tracking-widest mb-4">Sub-topics</h2>

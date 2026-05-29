@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Question, WorkedExample, SubtopicMeta } from "@/lib/types";
+import MathText from "@/components/MathText";
 
 interface Props {
   subtopic: SubtopicMeta;
@@ -99,7 +100,7 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
   function toggleExample(index: number) {
     setExampleStates((prev) =>
       prev.map((s, i) =>
-        i === index ? { expanded: !s.expanded, stepsRevealed: s.expanded ? 0 : 0 } : s
+        i === index ? { expanded: !s.expanded, stepsRevealed: 0 } : s
       )
     );
   }
@@ -107,7 +108,19 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
   function nextStep(index: number) {
     setExampleStates((prev) =>
       prev.map((s, i) =>
-        i === index ? { ...s, stepsRevealed: s.stepsRevealed + 1 } : s
+        i === index && s.stepsRevealed < workedExamples[index].steps.length
+          ? { ...s, stepsRevealed: s.stepsRevealed + 1 }
+          : s
+      )
+    );
+  }
+
+  function prevStep(index: number) {
+    setExampleStates((prev) =>
+      prev.map((s, i) =>
+        i === index && s.stepsRevealed > 0
+          ? { ...s, stepsRevealed: s.stepsRevealed - 1 }
+          : s
       )
     );
   }
@@ -134,7 +147,17 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
             {workedExamples.map((ex, ei) => {
               const es = exampleStates[ei];
               return (
-                <div key={ex.id} className="bg-white border border-slate-200 rounded-xl overflow-hidden">
+                <div
+                  key={ex.id}
+                  tabIndex={es.expanded ? 0 : -1}
+                  onKeyDown={(e) => {
+                    if (!es.expanded) return;
+                    if (e.key === "ArrowRight") { e.preventDefault(); nextStep(ei); }
+                    if (e.key === "ArrowLeft") { e.preventDefault(); prevStep(ei); }
+                  }}
+                  className="bg-white border border-slate-200 rounded-xl overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
+                >
+                  {/* Card header */}
                   <div className="px-6 py-4 flex items-center justify-between gap-4">
                     <div>
                       <h3 className="font-medium text-slate-900">{ex.title}</h3>
@@ -150,8 +173,8 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
 
                   {/* Problem statement — always visible */}
                   <div className="px-6 pb-4 border-t border-slate-100 pt-4">
-                    <p className="text-sm text-slate-500 font-medium mb-1">Problem</p>
-                    <pre className="text-sm text-slate-800 font-mono whitespace-pre-wrap leading-relaxed">{ex.problem}</pre>
+                    <p className="text-xs font-medium text-slate-400 mb-2">Problem</p>
+                    <MathText text={ex.problem} className="text-sm text-slate-800 leading-relaxed" />
                   </div>
 
                   {/* Steps */}
@@ -166,37 +189,59 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
                             <span className="shrink-0 w-6 h-6 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold flex items-center justify-center mt-0.5">
                               {step.step}
                             </span>
-                            <div>
-                              <p className="text-sm text-slate-700 mb-2">{step.instruction}</p>
-                              <pre className="text-sm font-mono text-slate-800 bg-slate-50 rounded-lg px-4 py-3 whitespace-pre-wrap leading-relaxed">
-                                {step.working}
-                              </pre>
+                            <div className="flex-1">
+                              <MathText text={step.instruction} className="text-sm text-slate-700 mb-2" />
+                              <MathText text={step.working} className="text-sm text-slate-800 bg-slate-50 rounded-lg px-4 py-3 leading-relaxed" />
                             </div>
                           </div>
                         </div>
                       ))}
 
-                      {/* Next step / answer */}
+                      {/* Step navigation */}
                       {es.expanded && es.stepsRevealed < ex.steps.length && (
-                        <button
-                          onClick={() => nextStep(ei)}
-                          className="print:hidden ml-9 text-sm font-medium text-indigo-600 hover:text-indigo-700 transition-colors border border-indigo-200 rounded-lg px-4 py-2"
-                        >
-                          Next step
-                        </button>
+                        <div className="print:hidden ml-9 flex items-center gap-4">
+                          <div className="flex items-center gap-2">
+                            {es.stepsRevealed > 0 && (
+                              <button
+                                onClick={() => prevStep(ei)}
+                                className="text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors border border-slate-200 rounded-lg px-3 py-1.5"
+                              >
+                                ← Back
+                              </button>
+                            )}
+                            <button
+                              onClick={() => nextStep(ei)}
+                              className="text-sm font-medium text-indigo-600 hover:text-indigo-700 transition-colors border border-indigo-200 rounded-lg px-4 py-1.5"
+                            >
+                              Next step →
+                            </button>
+                          </div>
+                          <span className="text-xs text-slate-400">or use ← → keys</span>
+                        </div>
                       )}
 
-                      {es.stepsRevealed >= ex.steps.length && (
-                        <div className="ml-9 print:hidden">
-                          <p className="text-sm text-slate-500 font-medium mb-1">Answer</p>
-                          <p className="text-sm font-mono text-slate-800">{ex.answer}</p>
+                      {/* All steps shown — show answer */}
+                      {es.expanded && es.stepsRevealed >= ex.steps.length && (
+                        <div className="print:hidden ml-9 flex items-center gap-4">
+                          <button
+                            onClick={() => prevStep(ei)}
+                            className="text-sm font-medium text-slate-500 hover:text-slate-700 transition-colors border border-slate-200 rounded-lg px-3 py-1.5"
+                          >
+                            ← Back
+                          </button>
+                          <div className="bg-green-50 border border-green-200 rounded-lg px-4 py-3">
+                            <p className="text-xs font-medium text-green-700 mb-1">Answer</p>
+                            <MathText text={ex.answer} className="text-sm text-slate-800" />
+                          </div>
                         </div>
                       )}
 
                       {/* Answer always shown in print */}
                       <div className="hidden print:block ml-9">
-                        <p className="text-sm text-slate-500 font-medium mb-1">Answer</p>
-                        <p className="text-sm font-mono text-slate-800">{ex.answer}</p>
+                        <div className="bg-green-50 border border-green-200 rounded-lg px-4 py-3">
+                          <p className="text-xs font-medium text-green-700 mb-1">Answer</p>
+                          <MathText text={ex.answer} className="text-sm text-slate-800" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -210,124 +255,127 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
       {/* Practice questions */}
       <section>
         <h2 className="text-xl font-semibold text-slate-900 mb-6">Practise</h2>
-        <div className="space-y-6">
+        <div className="space-y-4">
           {questions.map((q, qi) => {
             const qs = questionStates[qi];
             const showExplanation = qs.showExplanation || showAll;
 
             return (
-              <div key={q.id} className="bg-white border border-slate-200 rounded-xl p-6">
-                {/* Question number + difficulty */}
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xs font-medium text-slate-400">Q{qi + 1}</span>
+              <div key={q.id} className="bg-white border border-slate-200 rounded-xl overflow-hidden">
+                {/* Card header */}
+                <div className="px-6 py-4 flex items-center gap-2">
+                  <span className="text-xs font-medium text-slate-500">Q{qi + 1}</span>
                   <span className="text-xs text-slate-300">·</span>
                   <span className="text-xs text-slate-400">{difficultyLabel(q.difficulty)}</span>
                 </div>
 
-                {/* Stem */}
-                <pre className="text-sm text-slate-800 whitespace-pre-wrap leading-relaxed mb-5 font-sans">{q.stem}</pre>
+                {/* Content body */}
+                <div className="px-6 pb-6 border-t border-slate-100 pt-4">
+                  {/* Stem */}
+                  <MathText text={q.stem} className="text-sm text-slate-800 leading-relaxed mb-5" />
 
-                {/* Answer input */}
-                <div className="print:hidden mb-4">
-                  {q.type === "numeric" && (
-                    <input
-                      type="text"
-                      inputMode="decimal"
-                      value={qs.value}
-                      onChange={(e) => updateQuestion(qi, { value: e.target.value })}
-                      disabled={qs.submitted}
-                      placeholder="Your answer"
-                      className="w-40 px-3 py-2 rounded-lg border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:bg-slate-50 disabled:text-slate-400"
-                    />
-                  )}
-
-                  {q.type === "coordinate" && (
-                    <input
-                      type="text"
-                      value={qs.value}
-                      onChange={(e) => updateQuestion(qi, { value: e.target.value })}
-                      disabled={qs.submitted}
-                      placeholder="(x, y)"
-                      className="w-40 px-3 py-2 rounded-lg border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:bg-slate-50 disabled:text-slate-400"
-                    />
-                  )}
-
-                  {q.type === "fraction" && (
-                    <div className="flex items-center gap-2">
+                  {/* Answer input */}
+                  <div className="print:hidden mb-4">
+                    {q.type === "numeric" && (
                       <input
                         type="text"
-                        inputMode="numeric"
+                        inputMode="decimal"
                         value={qs.value}
                         onChange={(e) => updateQuestion(qi, { value: e.target.value })}
                         disabled={qs.submitted}
-                        placeholder="Numerator"
-                        className="w-28 px-3 py-2 rounded-lg border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:bg-slate-50 disabled:text-slate-400"
+                        placeholder="Your answer"
+                        className="w-40 px-3 py-2 rounded-lg border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:bg-slate-50 disabled:text-slate-400"
                       />
-                      <span className="text-slate-400 font-medium">/</span>
+                    )}
+
+                    {q.type === "coordinate" && (
                       <input
                         type="text"
-                        inputMode="numeric"
-                        value={qs.denominator}
-                        onChange={(e) => updateQuestion(qi, { denominator: e.target.value })}
+                        value={qs.value}
+                        onChange={(e) => updateQuestion(qi, { value: e.target.value })}
                         disabled={qs.submitted}
-                        placeholder="Denominator"
-                        className="w-28 px-3 py-2 rounded-lg border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:bg-slate-50 disabled:text-slate-400"
+                        placeholder="(x, y)"
+                        className="w-40 px-3 py-2 rounded-lg border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:bg-slate-50 disabled:text-slate-400"
                       />
-                    </div>
+                    )}
+
+                    {q.type === "fraction" && (
+                      <div className="flex items-center gap-2">
+                        <input
+                          type="text"
+                          inputMode="numeric"
+                          value={qs.value}
+                          onChange={(e) => updateQuestion(qi, { value: e.target.value })}
+                          disabled={qs.submitted}
+                          placeholder="Numerator"
+                          className="w-28 px-3 py-2 rounded-lg border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:bg-slate-50 disabled:text-slate-400"
+                        />
+                        <span className="text-slate-400 font-medium">/</span>
+                        <input
+                          type="text"
+                          inputMode="numeric"
+                          value={qs.denominator}
+                          onChange={(e) => updateQuestion(qi, { denominator: e.target.value })}
+                          disabled={qs.submitted}
+                          placeholder="Denominator"
+                          className="w-28 px-3 py-2 rounded-lg border border-slate-200 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:bg-slate-50 disabled:text-slate-400"
+                        />
+                      </div>
+                    )}
+
+                    {q.type === "multiple-choice" && q.options && (
+                      <div className="space-y-2">
+                        {q.options.map((opt) => (
+                          <label key={opt} className="flex items-center gap-3 cursor-pointer">
+                            <input
+                              type="radio"
+                              name={`q-${qi}`}
+                              value={opt}
+                              checked={qs.selected === opt}
+                              onChange={() => updateQuestion(qi, { selected: opt })}
+                              disabled={qs.submitted}
+                              className="accent-indigo-600"
+                            />
+                            <span className="text-sm text-slate-700">{opt}</span>
+                          </label>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Submit / Try again */}
+                  {!qs.submitted && (
+                    <button
+                      onClick={() => handleSubmit(qi)}
+                      className="print:hidden text-sm font-medium bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg px-4 py-2 transition-colors"
+                    >
+                      Check answer
+                    </button>
                   )}
 
-                  {q.type === "multiple-choice" && q.options && (
-                    <div className="space-y-2">
-                      {q.options.map((opt) => (
-                        <label key={opt} className="flex items-center gap-3 cursor-pointer">
-                          <input
-                            type="radio"
-                            name={`q-${qi}`}
-                            value={opt}
-                            checked={qs.selected === opt}
-                            onChange={() => updateQuestion(qi, { selected: opt })}
-                            disabled={qs.submitted}
-                            className="accent-indigo-600"
-                          />
-                          <span className="text-sm text-slate-700">{opt}</span>
-                        </label>
-                      ))}
-                    </div>
+                  {qs.submitted && (
+                    <button
+                      onClick={() => handleReset(qi)}
+                      className="print:hidden text-sm font-medium text-slate-600 hover:text-slate-800 border border-slate-200 rounded-lg px-4 py-2 transition-colors"
+                    >
+                      Try again
+                    </button>
                   )}
-                </div>
 
-                {/* Submit / Try again */}
-                {!qs.submitted && (
-                  <button
-                    onClick={() => handleSubmit(qi)}
-                    className="print:hidden text-sm font-medium bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg px-4 py-2 transition-colors"
-                  >
-                    Check answer
-                  </button>
-                )}
+                  {/* Feedback */}
+                  {qs.submitted && (
+                    <p className={`mt-4 text-sm font-medium ${qs.correct ? "text-green-700" : "text-red-700"}`}>
+                      {qs.correct ? "Correct." : "Not quite."}
+                    </p>
+                  )}
 
-                {qs.submitted && (
-                  <button
-                    onClick={() => handleReset(qi)}
-                    className="print:hidden text-sm font-medium text-slate-600 hover:text-slate-800 border border-slate-200 rounded-lg px-4 py-2 transition-colors"
-                  >
-                    Try again
-                  </button>
-                )}
-
-                {/* Feedback */}
-                {qs.submitted && (
-                  <p className={`mt-4 text-sm font-medium ${qs.correct ? "text-green-700" : "text-red-700"}`}>
-                    {qs.correct ? "Correct." : "Not quite."}
-                  </p>
-                )}
-
-                {/* Explanation — always in DOM, shown via state or print */}
-                <div className={showExplanation ? "block mt-4" : "hidden print:block"}>
-                  <p className="text-xs font-medium text-slate-400 mb-2 print:mt-4">Explanation</p>
-                  <pre className="text-sm font-mono text-slate-700 bg-slate-50 rounded-lg px-4 py-3 whitespace-pre-wrap leading-relaxed">
-                    {q.explanation}
-                  </pre>
+                  {/* Explanation — always in DOM, shown via state or print */}
+                  <div className={showExplanation ? "block mt-4" : "hidden print:block"}>
+                    <div className="bg-green-50 border border-green-200 rounded-lg px-4 py-3 print:mt-4">
+                      <p className="text-xs font-medium text-green-700 mb-2">Explanation</p>
+                      <MathText text={q.explanation} className="text-sm text-slate-700 leading-relaxed" />
+                    </div>
+                  </div>
                 </div>
               </div>
             );

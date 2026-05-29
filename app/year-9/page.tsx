@@ -58,7 +58,7 @@ export default function Year9Page() {
                 </h2>
                 {topic.extension && (
                   <span className="shrink-0 text-xs font-medium text-indigo-600 bg-indigo-50 border border-indigo-200 rounded-full px-2.5 py-0.5">
-                    Extension
+                    Extension topic
                   </span>
                 )}
               </div>
