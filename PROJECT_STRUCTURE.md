@@ -168,6 +168,19 @@ content/
 
 Questions live here and only here. Topic and year quizzes aggregate from these files.
 
+**Primary format: numeric answer entry.** The student does working on paper and enters the final answer in the browser. The site confirms correct or incorrect and shows a full worked solution either way. This is the default for all procedural questions (algebra, trigonometry, indices, etc.).
+
+**Answer types:**
+
+| Type | When to use | Input |
+|---|---|---|
+| `numeric` | Answer is a single number or decimal | Single text field |
+| `fraction` | Answer is a fraction | Two fields: numerator / denominator |
+| `coordinate` | Answer is a point (x, y) | Two fields |
+| `multiple-choice` | Conceptual questions, or where working backwards defeats the purpose | Option list |
+
+Write questions to produce numeric answers where possible. Avoid `multiple-choice` for procedural questions — students can substitute answers back in or guess, which builds no skill.
+
 ```json
 [
   {
@@ -176,17 +189,21 @@ Questions live here and only here. Topic and year quizzes aggregate from these f
     "topic": "trigonometry",
     "year": 9,
     "difficulty": 1,
-    "type": "multiple-choice",
-    "stem": "A ladder leans against a wall making an angle of 60° with the ground. If the ladder is 5m long, how high up the wall does it reach?",
-    "options": ["2.5 m", "4.33 m", "5.77 m", "3.54 m"],
-    "answer": "4.33 m",
+    "type": "numeric",
+    "stem": "A ladder leans against a wall at an angle of 60° to the ground. The ladder is 5 m long. How high up the wall does it reach? Give your answer in metres, rounded to two decimal places.",
+    "answer": "4.33",
+    "tolerance": 0.01,
     "hint": "The height is the side opposite the 60° angle. Which trig ratio uses opposite and hypotenuse?",
-    "explanation": "sin(60°) = opposite/hypotenuse = h/5 → h = 5 × sin(60°) = 5 × 0.866 = 4.33 m"
+    "explanation": "sin(60°) = opposite / hypotenuse = h / 5, so h = 5 × sin(60°) = 5 × 0.866 = 4.33 m"
   }
 ]
 ```
 
-**Question types:** `multiple-choice`, `short-answer`, `worked-steps`  
+**Fields:**
+- `tolerance` — for numeric answers, how close is close enough (handles rounding). Omit for exact answers.
+- `options` — only present on `multiple-choice` questions.
+- `answer` — always a string. For `fraction` type, use `"3/4"`. For `coordinate`, use `"(2, -1)"`.
+
 **Difficulty scale:** 1 (straightforward) → 3 (challenging)  
 **Tagging:** Every question carries `subtopic`, `topic`, and `year` — this is what powers aggregation into topic and year quizzes.
 
@@ -211,6 +228,31 @@ If a high-quality, relevant video exists for a topic it can be added as a supple
 ```
 
 The preferred source is **Eddie Woo's Wootube channel** — an NSW high school maths teacher whose videos are free, well-regarded, and aligned to the NSW curriculum. Other channels can be used if the content is clearly better for a specific topic, but consistency of source is preferred over comprehensiveness. If no good video exists for a topic, the field is simply omitted — a missing video is fine, a mediocre one is not.
+
+---
+
+## Interaction Model
+
+### Primary use case: paper and screen
+
+The expected experience is a student with a piece of paper and pen working through questions, using the screen to read the question, check their answer, and read the worked solution when they get something wrong. The site does not ask students to type out algebraic working — that happens on paper.
+
+Each question has three states:
+1. **Unanswered** — question stem visible, answer field empty
+2. **Answered** — student submits their answer, immediately sees correct or incorrect
+3. **Explained** — full worked solution shown, either after a wrong answer or on request
+
+### Secondary use case: print and return
+
+A student may want to print a sub-topic page and work through the questions offline. The site supports this via browser print (`window.print()` / Ctrl+P). Print CSS hides navigation, feedback controls and input fields, leaving only the question stems and space for working.
+
+The student can return to the page later and use a "Show all answers" button to reveal worked solutions for all questions at once, without going through the answer-entry flow.
+
+Both use cases are served by the same page — no separate PDF format, no second content format to maintain.
+
+### Year 11 and 12 considerations
+
+Most Year 11/12 questions still produce numeric or simple answers and follow the same model. Questions that require proof or construction ("show that...", "prove that...") cannot be checked programmatically. These are flagged with `"type": "proof"` and present only the worked solution for the student to compare against their own.
 
 ---
 

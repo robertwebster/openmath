@@ -1,0 +1,94 @@
+[
+  {
+    "id": "word-ex-1",
+    "title": "Sum and difference of two numbers",
+    "difficulty": 1,
+    "problem": "Two numbers add to 20 and their difference is 6. Find both numbers.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Define variables. Let the two numbers be x and y, where x is the larger.",
+        "working": "x + y = 20\nx − y = 6"
+      },
+      {
+        "step": 2,
+        "instruction": "Add the equations to eliminate y.",
+        "working": "2x = 26\nx = 13"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute x = 13 into the first equation.",
+        "working": "13 + y = 20\ny = 7"
+      },
+      {
+        "step": 4,
+        "instruction": "Check and write a sentence answer.",
+        "working": "13 + 7 = 20 ✓   13 − 7 = 6 ✓\nThe two numbers are 13 and 7."
+      }
+    ],
+    "answer": "13 and 7"
+  },
+  {
+    "id": "word-ex-2",
+    "title": "Ticket pricing problem",
+    "difficulty": 2,
+    "problem": "Adult tickets cost $8 and student tickets cost $5. 120 tickets were sold for a total of $741. How many of each type were sold?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Define variables.",
+        "working": "Let a = number of adult tickets\nLet s = number of student tickets"
+      },
+      {
+        "step": 2,
+        "instruction": "Write two equations: one for the total number of tickets, one for the total revenue.",
+        "working": "a + s = 120\n8a + 5s = 741"
+      },
+      {
+        "step": 3,
+        "instruction": "From the first equation, express a in terms of s and substitute.",
+        "working": "a = 120 − s\n8(120 − s) + 5s = 741\n960 − 8s + 5s = 741\n−3s = −219\ns = 73"
+      },
+      {
+        "step": 4,
+        "instruction": "Find a and check.",
+        "working": "a = 120 − 73 = 47\nCheck: 8(47) + 5(73) = 376 + 365 = 741 ✓\n\n47 adult tickets and 73 student tickets were sold."
+      }
+    ],
+    "answer": "47 adult tickets and 73 student tickets"
+  },
+  {
+    "id": "word-ex-3",
+    "title": "Mobile plan — finding fixed fee and rate",
+    "difficulty": 2,
+    "problem": "A mobile plan charges a fixed monthly fee plus a charge per GB of data. Sam used 3 GB in January and paid $42. He used 5 GB in February and paid $54. Find the fixed monthly fee and the cost per GB.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Define variables.",
+        "working": "Let f = fixed monthly fee ($)\nLet r = cost per GB ($)"
+      },
+      {
+        "step": 2,
+        "instruction": "Write two equations from the two months.",
+        "working": "f + 3r = 42\nf + 5r = 54"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract the first equation from the second to eliminate f.",
+        "working": "2r = 12\nr = 6"
+      },
+      {
+        "step": 4,
+        "instruction": "Substitute r = 6 into the first equation.",
+        "working": "f + 18 = 42\nf = 24"
+      },
+      {
+        "step": 5,
+        "instruction": "Check and state the answer.",
+        "working": "Check February: 24 + 5(6) = 54 ✓\nFixed fee: $24 per month. Data rate: $6 per GB."
+      }
+    ],
+    "answer": "Fixed fee $24, data rate $6 per GB"
+  }
+]
