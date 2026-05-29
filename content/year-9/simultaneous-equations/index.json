@@ -1,0 +1,20 @@
+{
+  "id": "simultaneous-equations",
+  "title": "Simultaneous equations",
+  "year": 9,
+  "stage": "5-paths",
+  "extension": true,
+  "strand": "Algebra",
+  "syllabusOutcome": "MA5-EQU-P-01",
+  "description": "Solve pairs of simultaneous equations using substitution, elimination and graphical methods. Apply these techniques to real-world problems.",
+  "subtopics": [
+    "substitution-method",
+    "elimination-method",
+    "word-problems"
+  ],
+  "video": {
+    "url": "https://www.youtube.com/watch?v=ova8GSmPV4o",
+    "channel": "Eddie Woo",
+    "title": "Simultaneous Equations (Introduction)"
+  }
+}
