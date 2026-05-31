@@ -1,0 +1,69 @@
+[
+  {
+    "id": "pythagorean-triads-example-1",
+    "title": "Identifying a Pythagorean triad",
+    "difficulty": 1,
+    "problem": "Determine whether $(6, 8, 10)$ is a Pythagorean triad.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Square each number.",
+        "working": "$6^2 = 36, \\quad 8^2 = 64, \\quad 10^2 = 100$"
+      },
+      {
+        "step": 2,
+        "instruction": "Check whether the sum of the two smaller squares equals the largest square.",
+        "working": "$36 + 64 = 100$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the conclusion.",
+        "working": "Since $6^2 + 8^2 = 10^2$, the numbers $(6, 8, 10)$ form a Pythagorean triad."
+      }
+    ],
+    "answer": "Yes, $(6, 8, 10)$ is a Pythagorean triad."
+  },
+  {
+    "id": "pythagorean-triads-example-2",
+    "title": "Finding the missing value in a triad",
+    "difficulty": 2,
+    "problem": "Find the missing value in the Pythagorean triad $(8, 15, ?)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Square the two known values.",
+        "working": "$8^2 = 64, \\quad 15^2 = 225$"
+      },
+      {
+        "step": 2,
+        "instruction": "Add the squares of the two legs.",
+        "working": "$64 + 225 = 289$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the square root to get the hypotenuse.",
+        "working": "$\\sqrt{289} = 17$"
+      }
+    ],
+    "answer": "The missing value is $17$. The triad is $(8, 15, 17)$."
+  },
+  {
+    "id": "pythagorean-triads-example-3",
+    "title": "Using triad knowledge to solve a problem",
+    "difficulty": 3,
+    "problem": "A right-angled triangle has legs of $24$ m and $7$ m. Find the hypotenuse without using a calculator.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall common Pythagorean triads and check whether the given legs match one.",
+        "working": "The triad $(7, 24, 25)$ is a known Pythagorean triple: $7^2 + 24^2 = 49 + 576 = 625 = 25^2$."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the hypotenuse from the triad.",
+        "working": "Since $7^2 + 24^2 = 25^2$, the hypotenuse is $25$ m."
+      }
+    ],
+    "answer": "The hypotenuse is $25$ m."
+  }
+]

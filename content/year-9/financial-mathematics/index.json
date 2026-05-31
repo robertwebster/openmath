@@ -1,0 +1,11 @@
+{
+  "id": "financial-mathematics",
+  "title": "Financial mathematics",
+  "year": 9,
+  "stage": "5",
+  "extension": false,
+  "strand": "Number and Algebra",
+  "syllabusOutcome": "MA5-NAF-C-01",
+  "description": "Apply percentages and interest formulas to solve problems involving simple interest, compound interest, and earning money.",
+  "subtopics": ["simple-interest", "compound-interest", "earning-money", "budgeting-and-applications"]
+}

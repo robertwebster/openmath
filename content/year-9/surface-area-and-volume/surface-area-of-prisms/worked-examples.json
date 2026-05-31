@@ -1,0 +1,99 @@
+[
+  {
+    "id": "surface-area-of-prisms-we-1",
+    "title": "Surface area of a rectangular prism",
+    "difficulty": 1,
+    "problem": "A rectangular prism has length $7 \\text{ cm}$, width $4 \\text{ cm}$ and height $3 \\text{ cm}$. Find its surface area.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the surface area formula for a rectangular prism.",
+        "working": "$SA = 2(lw + lh + wh)$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values.",
+        "working": "$SA = 2(7 \\times 4 + 7 \\times 3 + 4 \\times 3)$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate each product.",
+        "working": "$SA = 2(28 + 21 + 12)$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add the terms inside the brackets.",
+        "working": "$SA = 2 \\times 61$"
+      },
+      {
+        "step": 5,
+        "instruction": "Multiply to find the surface area.",
+        "working": "$SA = 122 \\text{ cm}^2$"
+      }
+    ],
+    "answer": "$122 \\text{ cm}^2$"
+  },
+  {
+    "id": "surface-area-of-prisms-we-2",
+    "title": "Surface area of a triangular prism",
+    "difficulty": 2,
+    "problem": "A triangular prism has a right-angled triangular cross-section with legs $5 \\text{ cm}$ and $12 \\text{ cm}$. The length of the prism is $6 \\text{ cm}$. Find the total surface area.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the hypotenuse of the triangular cross-section using Pythagoras.",
+        "working": "$c = \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\text{ cm}$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the combined area of the two triangular ends.",
+        "working": "$2 \\times \\tfrac{1}{2} \\times 5 \\times 12 = 60 \\text{ cm}^2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the total area of the three rectangular faces (one for each side of the triangle).",
+        "working": "$6 \\times (5 + 12 + 13) = 6 \\times 30 = 180 \\text{ cm}^2$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add all face areas to find the total surface area.",
+        "working": "$SA = 60 + 180 = 240 \\text{ cm}^2$"
+      }
+    ],
+    "answer": "$240 \\text{ cm}^2$"
+  },
+  {
+    "id": "surface-area-of-prisms-we-3",
+    "title": "Surface area of an open-top rectangular tray",
+    "difficulty": 3,
+    "problem": "A rectangular storage tray has length $40 \\text{ cm}$, width $25 \\text{ cm}$ and height $15 \\text{ cm}$, and has no lid. Find the total surface area of the tray.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the faces present. An open-top tray has 5 faces: one bottom and four sides (no top).",
+        "working": "Faces: bottom, two longer sides, two shorter sides"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the area of the bottom face.",
+        "working": "$40 \\times 25 = 1000 \\text{ cm}^2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the combined area of the two longer side faces.",
+        "working": "$2 \\times (40 \\times 15) = 2 \\times 600 = 1200 \\text{ cm}^2$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the combined area of the two shorter side faces.",
+        "working": "$2 \\times (25 \\times 15) = 2 \\times 375 = 750 \\text{ cm}^2$"
+      },
+      {
+        "step": 5,
+        "instruction": "Add all face areas to find the total surface area.",
+        "working": "$SA = 1000 + 1200 + 750 = 2950 \\text{ cm}^2$"
+      }
+    ],
+    "answer": "$2950 \\text{ cm}^2$"
+  }
+]

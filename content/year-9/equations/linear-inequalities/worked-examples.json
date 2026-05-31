@@ -1,0 +1,69 @@
+[
+  {
+    "id": "lineq-we-1",
+    "title": "Solving a one-step inequality",
+    "difficulty": 1,
+    "problem": "Solve $x + 5 \\geq 12$ and state the boundary value of $x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Subtract 5 from both sides to isolate $x$.",
+        "working": "$$x + 5 - 5 \\geq 12 - 5$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Simplify.",
+        "working": "$$x \\geq 7$$"
+      }
+    ],
+    "answer": "The boundary value of $x$ is $7$. The solution is $x \\geq 7$."
+  },
+  {
+    "id": "lineq-we-2",
+    "title": "Solving a two-step inequality with sign reversal",
+    "difficulty": 2,
+    "problem": "Solve $5 - 3x \\geq 14$ and state the boundary value of $x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Subtract 5 from both sides.",
+        "working": "$$5 - 3x - 5 \\geq 14 - 5$$\n$$-3x \\geq 9$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Divide both sides by $-3$. Because you are dividing by a negative number, the inequality sign reverses.",
+        "working": "$$\\frac{-3x}{-3} \\leq \\frac{9}{-3}$$\n$$x \\leq -3$$"
+      }
+    ],
+    "answer": "The boundary value of $x$ is $-3$. The solution is $x \\leq -3$."
+  },
+  {
+    "id": "lineq-we-3",
+    "title": "Solving an inequality with brackets and variables on both sides",
+    "difficulty": 3,
+    "problem": "Solve $-3(x - 2) \\leq 2x + 1$ and state the boundary value of $x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Expand the brackets on the left-hand side.",
+        "working": "$$-3x + 6 \\leq 2x + 1$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Subtract $2x$ from both sides to collect $x$ terms on the left.",
+        "working": "$$-3x + 6 - 2x \\leq 1$$\n$$-5x + 6 \\leq 1$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract 6 from both sides.",
+        "working": "$$-5x \\leq -5$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide both sides by $-5$. Reverse the inequality sign because you are dividing by a negative number.",
+        "working": "$$x \\geq \\frac{-5}{-5}$$\n$$x \\geq 1$$"
+      }
+    ],
+    "answer": "The boundary value of $x$ is $1$. The solution is $x \\geq 1$."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "geometrical-properties",
+  "title": "Geometrical properties",
+  "year": 9,
+  "stage": "5",
+  "extension": false,
+  "strand": "Measurement and Space",
+  "syllabusOutcome": "MA5-GEO-C-01",
+  "description": "Explore properties of triangles and quadrilaterals, and apply congruence and similarity tests.",
+  "subtopics": ["properties-of-triangles", "properties-of-quadrilaterals", "congruence", "similarity"]
+}

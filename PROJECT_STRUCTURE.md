@@ -11,7 +11,8 @@ A working guide to how the project is organised, why each decision was made, and
 | Framework | Next.js (App Router) | Per-topic layout flexibility; static export friendly |
 | Hosting | Vercel (hobby tier) | Free, auto-deploys on merge to main |
 | Styling | Tailwind CSS | Low overhead, utility-first, easy for contributors |
-| Content | MDX + JSON | Human-readable, Git-diffable, AI-generatable |
+| Content | JSON | Human-readable, Git-diffable, AI-generatable |
+| Math rendering | KaTeX | Fast, offline-capable LaTeX rendering via `MathText` component |
 | Interactivity | React (per topic) | Each topic page owns its own rendering |
 | Version control | GitHub (public repo) | Open source, Vercel integration, PR workflow |
 
@@ -206,6 +207,23 @@ Write questions to produce numeric answers where possible. Avoid `multiple-choic
 
 **Difficulty scale:** 1 (straightforward) → 3 (challenging)  
 **Tagging:** Every question carries `subtopic`, `topic`, and `year` — this is what powers aggregation into topic and year quizzes.
+
+### Math notation — KaTeX throughout
+
+All mathematical notation in content JSON files uses LaTeX, rendered by the `MathText` component (`components/MathText.tsx`). This applies to every field a student sees: `stem`, `hint`, `explanation`, `instruction`, `working`, and `problem`.
+
+**Rules:**
+
+| Context | Syntax | Example |
+|---|---|---|
+| Inline math (variables, expressions in prose) | `$...$` | `"Substitute $x = 3$ into the equation"` |
+| Display math (equations on their own line) | `$$...$$` | `"$$3x + 2 = 11$$"` |
+| Equation systems | `$$\begin{cases}...\end{cases}$$` | `"$$\\begin{cases} x + y = 8 \\\\ x - y = 2 \\end{cases}$$"` |
+| Currency (dollar signs in word problems) | `\$` | `"Adult tickets cost \\$8"` |
+
+**Never use plain text for mathematical expressions** — even simple things like `x = 3` or `2y` should be written as `$x = 3$` and `$2y$`. This ensures consistent rendering and makes future content easier to search and validate.
+
+Newlines within `working` and `explanation` fields use `\n`. Each display math block goes on its own line.
 
 ### `worked-examples.mdx` — Explained examples
 

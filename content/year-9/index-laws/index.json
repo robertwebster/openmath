@@ -1,0 +1,11 @@
+{
+  "id": "index-laws",
+  "title": "Index laws",
+  "year": 9,
+  "stage": "5",
+  "extension": false,
+  "strand": "Number and Algebra",
+  "syllabusOutcome": "MA5-IND-C-01",
+  "description": "Apply index laws to simplify expressions, work with zero and negative indices, and use scientific notation.",
+  "subtopics": ["index-law-rules", "zero-and-negative-indices", "scientific-notation"]
+}

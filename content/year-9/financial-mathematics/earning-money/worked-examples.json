@@ -1,0 +1,74 @@
+[
+  {
+    "id": "earn-ex-1",
+    "title": "Calculating a weekly wage",
+    "difficulty": 1,
+    "problem": "Cam earns $\\$19.50$ per hour and works $38$ hours per week. Calculate his weekly wage and annual salary.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the weekly wage by multiplying the hourly rate by the number of hours.",
+        "working": "\\text{Weekly wage} = \\$19.50 \\times 38 = \\$741.00"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the annual salary by multiplying the weekly wage by 52 weeks.",
+        "working": "\\text{Annual salary} = \\$741.00 \\times 52 = \\$38\\,532.00"
+      }
+    ],
+    "answer": "Weekly wage: $\\$741.00$. Annual salary: $\\$38\\,532.00$."
+  },
+  {
+    "id": "earn-ex-2",
+    "title": "Calculating pay with overtime",
+    "difficulty": 2,
+    "problem": "Nico earns $\\$28.00$ per hour. One week he worked $38$ ordinary hours, $3$ hours at time-and-a-half, and $2$ hours at double time. Calculate his total pay for that week.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the ordinary pay.",
+        "working": "\\text{Ordinary pay} = \\$28.00 \\times 38 = \\$1\\,064.00"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the time-and-a-half rate, then the time-and-a-half pay.",
+        "working": "\\text{Time-and-a-half rate} = \\$28.00 \\times 1.5 = \\$42.00\\text{/hr} \\\\ \\text{Time-and-a-half pay} = \\$42.00 \\times 3 = \\$126.00"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the double-time rate, then the double-time pay.",
+        "working": "\\text{Double-time rate} = \\$28.00 \\times 2 = \\$56.00\\text{/hr} \\\\ \\text{Double-time pay} = \\$56.00 \\times 2 = \\$112.00"
+      },
+      {
+        "step": 4,
+        "instruction": "Add all three components to find the total pay.",
+        "working": "\\text{Total pay} = \\$1\\,064.00 + \\$126.00 + \\$112.00 = \\$1\\,302.00"
+      }
+    ],
+    "answer": "$\\$1\\,302.00$"
+  },
+  {
+    "id": "earn-ex-3",
+    "title": "Calculating net pay after deductions",
+    "difficulty": 3,
+    "problem": "Yuki's annual salary is $\\$62\\,400$. Each week, $21\\%$ is deducted for income tax and $\\$55$ is deducted for superannuation. Calculate her weekly net pay.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the weekly gross pay by dividing the annual salary by 52.",
+        "working": "\\text{Weekly gross} = \\$62\\,400 \\div 52 = \\$1\\,200.00"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the income tax deduction.",
+        "working": "\\text{Income tax} = \\$1\\,200 \\times 0.21 = \\$252.00"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract both deductions from the gross pay to find net pay.",
+        "working": "\\text{Net pay} = \\$1\\,200.00 - \\$252.00 - \\$55.00 = \\$893.00"
+      }
+    ],
+    "answer": "$\\$893.00$ per week"
+  }
+]

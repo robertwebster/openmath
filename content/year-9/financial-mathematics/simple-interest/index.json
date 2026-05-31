@@ -1,0 +1,9 @@
+{
+  "id": "simple-interest",
+  "title": "Simple interest",
+  "topic": "financial-mathematics",
+  "year": 9,
+  "strand": "Number and Algebra",
+  "syllabusOutcome": "MA5-NAF-C-01",
+  "description": "Use the simple interest formula $I = Prn$ to calculate interest and find unknown values in financial problems."
+}

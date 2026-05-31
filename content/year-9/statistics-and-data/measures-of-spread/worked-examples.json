@@ -1,0 +1,84 @@
+[
+  {
+    "id": "spread-example-1",
+    "title": "Finding the range",
+    "difficulty": 1,
+    "problem": "Find the range of the dataset: $8, \\ 3, \\ 15, \\ 11, \\ 6, \\ 19, \\ 4$",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the highest and lowest values.",
+        "working": "Highest value $= 19$, lowest value $= 3$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the formula: Range = highest − lowest.",
+        "working": "Range $= 19 - 3 = 16$"
+      }
+    ],
+    "answer": "The range is $16$."
+  },
+  {
+    "id": "spread-example-2",
+    "title": "Finding the interquartile range",
+    "difficulty": 2,
+    "problem": "Find the interquartile range (IQR) of the ordered dataset: $5, \\ 8, \\ 12, \\ 15, \\ 18, \\ 22, \\ 27$",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the median.",
+        "working": "There are 7 values. The median is the 4th value: $15$."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the lower half (values below the median) and find $Q_1$.",
+        "working": "Lower half: $\\{5, 8, 12\\}$. The median of this half is $Q_1 = 8$."
+      },
+      {
+        "step": 3,
+        "instruction": "Identify the upper half (values above the median) and find $Q_3$.",
+        "working": "Upper half: $\\{18, 22, 27\\}$. The median of this half is $Q_3 = 22$."
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the IQR.",
+        "working": "$\\text{IQR} = Q_3 - Q_1 = 22 - 8 = 14$"
+      }
+    ],
+    "answer": "The IQR is $14$."
+  },
+  {
+    "id": "spread-example-3",
+    "title": "Comparing range and IQR when an outlier is present",
+    "difficulty": 3,
+    "problem": "For the dataset $6, \\ 8, \\ 10, \\ 12, \\ 14, \\ 16, \\ 52$, calculate the range and the IQR, and explain which better describes the spread.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the range.",
+        "working": "Range $= 52 - 6 = 46$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the median to split the data.",
+        "working": "There are 7 values. The median is the 4th value: $12$."
+      },
+      {
+        "step": 3,
+        "instruction": "Find $Q_1$ from the lower half.",
+        "working": "Lower half: $\\{6, 8, 10\\}$. $Q_1 = 8$."
+      },
+      {
+        "step": 4,
+        "instruction": "Find $Q_3$ from the upper half.",
+        "working": "Upper half: $\\{14, 16, 52\\}$. $Q_3 = 16$."
+      },
+      {
+        "step": 5,
+        "instruction": "Calculate the IQR and compare with the range.",
+        "working": "$\\text{IQR} = 16 - 8 = 8$. The range is $46$ because the outlier $52$ pulls the maximum far from the rest. The IQR is only $8$, reflecting the true spread of the central data. The IQR is the better measure here."
+      }
+    ],
+    "answer": "Range $= 46$; IQR $= 8$. The IQR better describes the spread because it is not distorted by the outlier $52$."
+  }
+]

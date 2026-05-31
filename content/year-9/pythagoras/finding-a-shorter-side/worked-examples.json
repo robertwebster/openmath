@@ -1,0 +1,99 @@
+[
+  {
+    "id": "finding-a-shorter-side-example-1",
+    "title": "Find a shorter side using Pythagoras' theorem",
+    "difficulty": 1,
+    "problem": "A right-angled triangle has a hypotenuse of $13$ cm and one leg of $5$ cm. Find the length of the other leg.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write Pythagoras' theorem.",
+        "working": "$a^2 + b^2 = c^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values. The hypotenuse $c = 13$ and one leg $b = 5$.",
+        "working": "$a^2 + 5^2 = 13^2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate the squares.",
+        "working": "$a^2 + 25 = 169$"
+      },
+      {
+        "step": 4,
+        "instruction": "Rearrange to isolate $a^2$.",
+        "working": "$a^2 = 169 - 25 = 144$"
+      },
+      {
+        "step": 5,
+        "instruction": "Take the square root to find $a$.",
+        "working": "$a = \\sqrt{144} = 12$ cm"
+      }
+    ],
+    "answer": "$12$ cm"
+  },
+  {
+    "id": "finding-a-shorter-side-example-2",
+    "title": "Find the height a ladder reaches",
+    "difficulty": 2,
+    "problem": "A 10 m ladder leans against a wall. The foot of the ladder is 4 m from the base of the wall. Find the height the ladder reaches up the wall, correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the sides. The ladder is the hypotenuse ($c = 10$ m), the horizontal distance is one leg ($b = 4$ m), and the height $h$ is the unknown leg.",
+        "working": "$h^2 + 4^2 = 10^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate the squares.",
+        "working": "$h^2 + 16 = 100$"
+      },
+      {
+        "step": 3,
+        "instruction": "Rearrange to isolate $h^2$.",
+        "working": "$h^2 = 100 - 16 = 84$"
+      },
+      {
+        "step": 4,
+        "instruction": "Take the square root and round to 2 decimal places.",
+        "working": "$h = \\sqrt{84} \\approx 9.17$ m"
+      }
+    ],
+    "answer": "$9.17$ m"
+  },
+  {
+    "id": "finding-a-shorter-side-example-3",
+    "title": "Find the height of an isosceles triangle",
+    "difficulty": 3,
+    "problem": "An isosceles triangle has two equal sides of $13$ cm and a base of $10$ cm. Find the perpendicular height of the triangle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Draw a perpendicular from the apex to the base. It bisects the base into two equal halves.",
+        "working": "Half-base $= \\dfrac{10}{2} = 5$ cm"
+      },
+      {
+        "step": 2,
+        "instruction": "This creates a right-angled triangle with hypotenuse $13$ cm (the equal side) and one leg $5$ cm (the half-base). Write Pythagoras' theorem.",
+        "working": "$h^2 + 5^2 = 13^2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate the squares.",
+        "working": "$h^2 + 25 = 169$"
+      },
+      {
+        "step": 4,
+        "instruction": "Rearrange to isolate $h^2$.",
+        "working": "$h^2 = 169 - 25 = 144$"
+      },
+      {
+        "step": 5,
+        "instruction": "Take the square root.",
+        "working": "$h = \\sqrt{144} = 12$ cm"
+      }
+    ],
+    "answer": "$12$ cm"
+  }
+]

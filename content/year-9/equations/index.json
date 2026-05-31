@@ -1,0 +1,15 @@
+{
+  "id": "equations",
+  "title": "Equations",
+  "year": 9,
+  "stage": "5",
+  "extension": false,
+  "strand": "Algebra",
+  "syllabusOutcome": "MA5-EQU-C-01",
+  "description": "Solve and apply linear equations, linear inequalities, and substitute into formulas.",
+  "subtopics": [
+    "solving-linear-equations",
+    "linear-inequalities",
+    "substitution-and-formulas"
+  ]
+}

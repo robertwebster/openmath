@@ -1,0 +1,89 @@
+[
+  {
+    "id": "compound-interest-example-1",
+    "title": "Calculate the final amount",
+    "difficulty": 1,
+    "problem": "$\\$2000$ is invested at $6\\%$ per year compound interest for 3 years. Calculate the final amount.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write down the compound interest formula and the known values.",
+        "working": "$$A = P(1 + r)^n, \\quad P = 2000, \\quad r = 0.06, \\quad n = 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute into the formula.",
+        "working": "$$A = 2000 \\times (1.06)^3$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate $(1.06)^3$.",
+        "working": "$$(1.06)^3 = 1.06 \\times 1.06 \\times 1.06 = 1.191016$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Multiply to find $A$.",
+        "working": "$$A = 2000 \\times 1.191016 = \\$2382.03$$"
+      }
+    ],
+    "answer": "The final amount is $\\$2382.03$."
+  },
+  {
+    "id": "compound-interest-example-2",
+    "title": "Find the interest earned and compare with simple interest",
+    "difficulty": 2,
+    "problem": "$\\$1000$ is invested at $8\\%$ per year for 2 years. Calculate the compound interest earned and find how much more it is than the simple interest on the same investment.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the amount using compound interest.",
+        "working": "$$A = 1000 \\times (1.08)^2 = 1000 \\times 1.1664 = \\$1166.40$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the compound interest earned.",
+        "working": "$$I_{\\text{compound}} = A - P = 1166.40 - 1000 = \\$166.40$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the simple interest earned using $I = Prn$.",
+        "working": "$$I_{\\text{simple}} = 1000 \\times 0.08 \\times 2 = \\$160.00$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the difference.",
+        "working": "$$166.40 - 160.00 = \\$6.40$$"
+      }
+    ],
+    "answer": "Compound interest earns $\\$166.40$, which is $\\$6.40$ more than simple interest."
+  },
+  {
+    "id": "compound-interest-example-3",
+    "title": "Find the initial principal",
+    "difficulty": 3,
+    "problem": "An investment grows to $\\$2249.73$ after 3 years at $4\\%$ per year compound interest. Find the initial principal.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the compound interest formula with the known values.",
+        "working": "$$A = P(1 + r)^n, \\quad A = 2249.73, \\quad r = 0.04, \\quad n = 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rearrange to make $P$ the subject.",
+        "working": "$$P = \\frac{A}{(1 + r)^n}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate $(1.04)^3$.",
+        "working": "$$(1.04)^3 = 1.124864$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide to find $P$.",
+        "working": "$$P = \\frac{2249.73}{1.124864} \\approx \\$2000.00$$"
+      }
+    ],
+    "answer": "The initial principal was $\\$2000.00$."
+  }
+]

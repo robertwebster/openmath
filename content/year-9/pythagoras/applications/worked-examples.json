@@ -1,0 +1,74 @@
+[
+  {
+    "id": "app-worked-1",
+    "title": "Height reached by a ladder",
+    "difficulty": 1,
+    "problem": "A ladder $10$ m long leans against a vertical wall. The foot of the ladder is $6$ m from the base of the wall. How high up the wall does the ladder reach?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Draw a right-angled triangle. The ladder is the hypotenuse ($c = 10$ m), the ground distance is one leg ($a = 6$ m), and the height reached is the unknown leg ($b$).",
+        "working": "$a = 6$ m, $c = 10$ m, find $b$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rearrange Pythagoras' theorem to find the unknown leg.",
+        "working": "$b^2 = c^2 - a^2 = 10^2 - 6^2 = 100 - 36 = 64$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the square root.",
+        "working": "$b = \\sqrt{64} = 8$ m"
+      }
+    ],
+    "answer": "The ladder reaches $8$ m up the wall."
+  },
+  {
+    "id": "app-worked-2",
+    "title": "Wire connecting tops of two poles",
+    "difficulty": 2,
+    "problem": "Two telephone poles are $12$ m apart. One pole is $8$ m tall and the other is $3$ m tall. A wire connects their tops. Find the length of the wire.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the right-angled triangle. The horizontal distance between poles is one leg. The vertical difference between the pole tops is the other leg.",
+        "working": "Horizontal leg $= 12$ m. Vertical leg $= 8 - 3 = 5$ m."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply Pythagoras' theorem to find the wire length (the hypotenuse).",
+        "working": "$c^2 = 12^2 + 5^2 = 144 + 25 = 169$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the square root.",
+        "working": "$c = \\sqrt{169} = 13$ m"
+      }
+    ],
+    "answer": "The wire is $13$ m long."
+  },
+  {
+    "id": "app-worked-3",
+    "title": "Area of an equilateral triangle",
+    "difficulty": 3,
+    "problem": "An equilateral triangle has sides of length $10$ cm. Find the area of the triangle, to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Drop a perpendicular from the top vertex to the base. This creates two congruent right-angled triangles. The hypotenuse of each is $10$ cm and one leg is half the base, which is $5$ cm.",
+        "working": "Hypotenuse $= 10$ cm, base leg $= 5$ cm, find height $h$"
+      },
+      {
+        "step": 2,
+        "instruction": "Use Pythagoras' theorem to find the height.",
+        "working": "$h^2 = 10^2 - 5^2 = 100 - 25 = 75$, so $h = \\sqrt{75} = 5\\sqrt{3}$ cm"
+      },
+      {
+        "step": 3,
+        "instruction": "Use the area formula for a triangle with the full base and the height found.",
+        "working": "$A = \\frac{1}{2} \\times 10 \\times 5\\sqrt{3} = 25\\sqrt{3} \\approx 43.30$ cm$^2$"
+      }
+    ],
+    "answer": "$25\\sqrt{3} \\approx 43.30$ cm$^2$"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gle-we-1",
+    "title": "Finding intercepts to graph a line",
+    "difficulty": 1,
+    "problem": "Find the $x$-intercept and $y$-intercept of $y = 3x - 9$, and use them to sketch the line.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the $y$-intercept by setting $x = 0$.",
+        "working": "$y = 3(0) - 9 = -9$. The $y$-intercept is $(0, -9)$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the $x$-intercept by setting $y = 0$ and solving for $x$.",
+        "working": "$0 = 3x - 9 \\Rightarrow 3x = 9 \\Rightarrow x = 3$. The $x$-intercept is $(3, 0)$."
+      },
+      {
+        "step": 3,
+        "instruction": "Plot both intercepts and draw a straight line through them.",
+        "working": "Plot $(0, -9)$ and $(3, 0)$. Draw a line through these two points."
+      }
+    ],
+    "answer": "$x$-intercept: $(3, 0)$; $y$-intercept: $(0, -9)$"
+  },
+  {
+    "id": "gle-we-2",
+    "title": "Rearranging to gradient-intercept form",
+    "difficulty": 2,
+    "problem": "Rearrange $3x - 4y = 20$ into gradient-intercept form and state the gradient and $y$-intercept.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Isolate the $y$-term by subtracting $3x$ from both sides.",
+        "working": "$-4y = -3x + 20$"
+      },
+      {
+        "step": 2,
+        "instruction": "Divide every term by $-4$.",
+        "working": "$y = \\dfrac{-3x + 20}{-4} = \\dfrac{3}{4}x - 5$"
+      },
+      {
+        "step": 3,
+        "instruction": "Read off the gradient and $y$-intercept from $y = mx + b$.",
+        "working": "Gradient $m = \\dfrac{3}{4}$; $y$-intercept $b = -5$, i.e. the point $(0, -5)$."
+      }
+    ],
+    "answer": "$y = \\dfrac{3}{4}x - 5$; gradient $= \\dfrac{3}{4}$, $y$-intercept $= -5$"
+  },
+  {
+    "id": "gle-we-3",
+    "title": "Finding the equation of a line through two points",
+    "difficulty": 3,
+    "problem": "Find the equation of the line passing through $(-1, 5)$ and $(3, -3)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the gradient using $m = \\dfrac{y_2 - y_1}{x_2 - x_1}$.",
+        "working": "$m = \\dfrac{-3 - 5}{3 - (-1)} = \\dfrac{-8}{4} = -2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the equation as $y = -2x + b$ and substitute one point to find $b$.",
+        "working": "Using $(-1, 5)$: $5 = -2(-1) + b \\Rightarrow 5 = 2 + b \\Rightarrow b = 3$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the final equation and verify with the second point.",
+        "working": "Equation: $y = -2x + 3$. Check with $(3, -3)$: $y = -2(3) + 3 = -3$ ✓"
+      }
+    ],
+    "answer": "$y = -2x + 3$"
+  }
+]

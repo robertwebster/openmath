@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ed-1-1",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A hiker stands on flat ground and looks up at the top of a mountain. The angle between the horizontal and the hiker's line of sight is called the angle of...",
+    "options": [
+      "elevation",
+      "depression",
+      "inclination",
+      "refraction"
+    ],
+    "answer": "elevation",
+    "tolerance": 0,
+    "hint": "When you look upward from the horizontal, the angle is named after the direction you are looking.",
+    "explanation": "When looking upward from horizontal, the angle formed is an angle of elevation. The angle of depression is formed when looking downward from horizontal."
+  },
+  {
+    "id": "ed-1-2",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A pilot looks down from an aircraft at a runway far below. The angle between the horizontal and the pilot's line of sight to the runway is called the angle of...",
+    "options": [
+      "elevation",
+      "depression",
+      "declination",
+      "inclination"
+    ],
+    "answer": "depression",
+    "tolerance": 0,
+    "hint": "When you look downward from the horizontal, the angle is named after the direction you are looking.",
+    "explanation": "When looking downward from horizontal, the angle formed is an angle of depression. It is measured between the horizontal and the line of sight going down."
+  },
+  {
+    "id": "ed-1-3",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A person stands $20$ m from the base of a tower and looks up at the top at an angle of elevation of $45°$. In the right-angled triangle formed, the height of the tower is the side...",
+    "options": [
+      "opposite the $45°$ angle",
+      "adjacent to the $45°$ angle",
+      "the hypotenuse",
+      "equal to the $20$ m base"
+    ],
+    "answer": "opposite the $45°$ angle",
+    "tolerance": 0,
+    "hint": "The $45°$ angle sits at the observer's feet. Which side of the triangle is directly across from it?",
+    "explanation": "The $45°$ angle is at the observer's position. The height of the tower is the vertical side directly across from this angle, so it is the opposite side. The $20$ m base is the adjacent side and the line of sight is the hypotenuse."
+  },
+  {
+    "id": "ed-1-4",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "From a window $12$ m above the ground, a person looks down at a point on the ground at an angle of depression of $55°$. Which trigonometric ratio should be used to find the horizontal distance to that point?",
+    "options": [
+      "$\\sin$",
+      "$\\cos$",
+      "$\\tan$",
+      "$\\cos^{-1}$"
+    ],
+    "answer": "$\\tan$",
+    "tolerance": 0,
+    "hint": "Identify which sides of the triangle you know and which you want to find, relative to the $55°$ angle.",
+    "explanation": "The height ($12$ m) is opposite the $55°$ angle and the horizontal distance $d$ is adjacent. Using TOA: $\\tan 55° = \\dfrac{12}{d}$, so $\\tan$ is the correct ratio."
+  },
+  {
+    "id": "ed-2-1",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A person stands $30$ m from the base of a building and measures the angle of elevation to the top as $42°$. Find the height of the building, correct to 2 decimal places.",
+    "answer": 27.01,
+    "tolerance": 0.01,
+    "hint": "The $30$ m base is adjacent to the $42°$ angle and the height is opposite. Use $\\tan$.",
+    "explanation": "Using TOA: $\\tan 42° = \\dfrac{h}{30}$, so $h = 30 \\times \\tan 42° = 30 \\times 0.9004\\ldots = 27.01$ m."
+  },
+  {
+    "id": "ed-2-2",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "From the top of a cliff $75$ m high, the angle of depression to a boat at sea is $18°$. Find the horizontal distance from the base of the cliff to the boat, correct to 2 decimal places.",
+    "answer": 230.83,
+    "tolerance": 0.01,
+    "hint": "Using alternate interior angles, the angle in the right-angled triangle is also $18°$. The cliff height is opposite this angle and the horizontal distance is adjacent.",
+    "explanation": "Using alternate interior angles, the $18°$ angle also appears at the base of the right-angled triangle. The cliff ($75$ m) is opposite the $18°$ angle and the horizontal distance $d$ is adjacent. Using TOA: $\\tan 18° = \\dfrac{75}{d}$, so $d = \\dfrac{75}{\\tan 18°} = \\dfrac{75}{0.3249\\ldots} = 230.83$ m."
+  },
+  {
+    "id": "ed-2-3",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A ladder $5.5$ m long leans against a vertical wall, making an angle of elevation of $68°$ with the ground. Find how high up the wall the ladder reaches, correct to 2 decimal places.",
+    "answer": 5.10,
+    "tolerance": 0.01,
+    "hint": "The ladder is the hypotenuse and the height up the wall is opposite the $68°$ angle. Use $\\sin$.",
+    "explanation": "Using SOH: $\\sin 68° = \\dfrac{h}{5.5}$, so $h = 5.5 \\times \\sin 68° = 5.5 \\times 0.9272\\ldots = 5.10$ m."
+  },
+  {
+    "id": "ed-2-4",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A kite is flying on a $50$ m string that makes an angle of elevation of $62°$ with the ground. Assuming the string is straight, find the height of the kite above the ground, correct to 2 decimal places.",
+    "answer": 44.15,
+    "tolerance": 0.01,
+    "hint": "The string is the hypotenuse and the height of the kite is opposite the $62°$ angle. Use $\\sin$.",
+    "explanation": "Using SOH: $\\sin 62° = \\dfrac{h}{50}$, so $h = 50 \\times \\sin 62° = 50 \\times 0.8829\\ldots = 44.15$ m."
+  },
+  {
+    "id": "ed-3-1",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "From the top of a cliff $50$ m above sea level, the angles of depression to two boats directly out to sea are $20°$ (farther boat) and $35°$ (nearer boat). Find the distance between the two boats, correct to 2 decimal places.",
+    "answer": 65.97,
+    "tolerance": 0.05,
+    "hint": "Find the horizontal distance from the cliff base to each boat separately using $d = \\dfrac{50}{\\tan(\\text{angle})}$, then subtract.",
+    "explanation": "Horizontal distance to nearer boat: $d_1 = \\dfrac{50}{\\tan 35°} = \\dfrac{50}{0.7002\\ldots} \\approx 71.41$ m. Horizontal distance to farther boat: $d_2 = \\dfrac{50}{\\tan 20°} = \\dfrac{50}{0.3640\\ldots} \\approx 137.37$ m. Distance between boats: $137.37 - 71.41 \\approx 65.97$ m."
+  },
+  {
+    "id": "ed-3-2",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "From a point P on the ground, the angle of elevation to the top of a tower is $32°$. From a point Q, $30$ m closer to the tower along the same horizontal line, the angle of elevation is $48°$. Find the height of the tower, correct to 2 decimal places.",
+    "answer": 42.86,
+    "tolerance": 0.05,
+    "hint": "Let $h$ be the height and $d$ be the distance from Q to the tower base. Write two equations using $\\tan$ and solve for $h$.",
+    "explanation": "Let $h$ = height and $d$ = horizontal distance from Q to tower base. Then $\\tan 48° = \\dfrac{h}{d}$ and $\\tan 32° = \\dfrac{h}{d + 30}$. From the first equation, $d = \\dfrac{h}{\\tan 48°}$. Substituting: $\\tan 32° = \\dfrac{h}{\\dfrac{h}{\\tan 48°} + 30}$. Rearranging gives $h = \\dfrac{30}{\\cot 32° - \\cot 48°} = \\dfrac{30}{1.6003 - 0.9004} = \\dfrac{30}{0.6999} \\approx 42.86$ m."
+  },
+  {
+    "id": "ed-3-3",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "From the top of a $45$ m building, the angle of depression to the base of a shorter building directly across a street is $62°$. The angle of depression from the top of the taller building to the roof of the shorter building is $48°$. Find the height of the shorter building, correct to 2 decimal places.",
+    "answer": 18.43,
+    "tolerance": 0.05,
+    "hint": "First find the width of the street using the angle to the base, then use the angle to the roof to find how far below the top of the taller building the roof of the shorter building is.",
+    "explanation": "Street width: $d = \\dfrac{45}{\\tan 62°} = \\dfrac{45}{1.8807\\ldots} \\approx 23.93$ m. The vertical drop from the top of the taller building to the roof of the shorter: $23.93 \\times \\tan 48° = 23.93 \\times 1.1106\\ldots \\approx 26.57$ m. Height of shorter building: $45 - 26.57 \\approx 18.43$ m."
+  },
+  {
+    "id": "ed-3-4",
+    "subtopic": "elevation-and-depression",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A flagpole sits on top of a $10$ m wall. From a point on flat ground $20$ m from the base of the wall, the angle of elevation to the top of the flagpole is $55°$. Find the height of the flagpole, correct to 2 decimal places.",
+    "answer": 18.56,
+    "tolerance": 0.01,
+    "hint": "Use $\\tan 55° = \\dfrac{\\text{total height}}{20}$ to find the total height, then subtract the $10$ m wall.",
+    "explanation": "Let $p$ = height of the flagpole. The total height from the ground to the top of the flagpole is $10 + p$. Using TOA: $\\tan 55° = \\dfrac{10 + p}{20}$, so $10 + p = 20 \\times \\tan 55° = 20 \\times 1.4281\\ldots = 28.56$. Therefore $p = 28.56 - 10 = 18.56$ m."
+  }
+]

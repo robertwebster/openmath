@@ -1,16 +1,44 @@
 import Link from "next/link";
+import fs from "fs";
+import path from "path";
 import type { Metadata } from "next";
 import { getTopicMeta } from "@/lib/content";
+import MathText from "@/components/MathText";
 
 export const metadata: Metadata = {
   title: "Year 9 | Open Math",
   description: "Year 9 NSW Mathematics practice topics — free, no account needed.",
 };
 
-const topicIds = ["simultaneous-equations"];
+// Curriculum order — topics appear in this sequence; any unlisted topics append alphabetically
+const TOPIC_ORDER = [
+  "index-laws",
+  "equations",
+  "linear-relationships",
+  "pythagoras",
+  "trigonometry",
+  "surface-area-and-volume",
+  "geometrical-properties",
+  "financial-mathematics",
+  "statistics-and-data",
+  "probability",
+  "simultaneous-equations",
+];
+
+function getTopicIds(): string[] {
+  const base = path.join(process.cwd(), "content", "year-9");
+  const dirs = fs
+    .readdirSync(base, { withFileTypes: true })
+    .filter((d) => d.isDirectory() && fs.existsSync(path.join(base, d.name, "index.json")))
+    .map((d) => d.name);
+  return [
+    ...TOPIC_ORDER.filter((id) => dirs.includes(id)),
+    ...dirs.filter((id) => !TOPIC_ORDER.includes(id)).sort(),
+  ];
+}
 
 export default function Year9Page() {
-  const topics = topicIds.map((id) => getTopicMeta(9, id));
+  const topics = getTopicIds().map((id) => getTopicMeta(9, id));
 
   return (
     <div className="flex flex-col min-h-full">
@@ -62,7 +90,7 @@ export default function Year9Page() {
                   </span>
                 )}
               </div>
-              <p className="text-sm text-slate-500 leading-relaxed mb-4">{topic.description}</p>
+              <MathText text={topic.description} className="text-sm text-slate-500 leading-relaxed mb-4" />
               <p className="text-xs text-slate-400">
                 {topic.subtopics.length} sub-topic{topic.subtopics.length !== 1 ? "s" : ""}
               </p>

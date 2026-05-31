@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getTopicMeta, getSubtopicMeta } from "@/lib/content";
+import MathText from "@/components/MathText";
 
 interface Props {
   params: Promise<{ topic: string }>;
@@ -79,7 +80,7 @@ export default async function TopicPage({ params }: Props) {
           )}
         </div>
 
-        <p className="text-slate-500 leading-relaxed mb-3 max-w-2xl">{topicMeta.description}</p>
+        <MathText text={topicMeta.description} className="text-slate-500 leading-relaxed mb-3 max-w-2xl" />
         <p className="text-xs text-slate-400 mb-10">
           {topicMeta.strand} · {topicMeta.syllabusOutcome}
         </p>
@@ -96,7 +97,7 @@ export default async function TopicPage({ params }: Props) {
               <h3 className="text-base font-semibold text-slate-900 group-hover:text-indigo-700 transition-colors mb-2">
                 {sub!.title}
               </h3>
-              <p className="text-sm text-slate-500 leading-relaxed">{sub!.description}</p>
+              <MathText text={sub!.description} className="text-sm text-slate-500 leading-relaxed" />
             </Link>
           ))}
         </div>

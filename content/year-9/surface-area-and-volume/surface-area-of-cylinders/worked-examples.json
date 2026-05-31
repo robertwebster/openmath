@@ -1,0 +1,84 @@
+[
+  {
+    "id": "surface-area-of-cylinders-worked-1",
+    "title": "Curved surface area of a cylinder",
+    "difficulty": 1,
+    "problem": "Find the curved surface area of a cylinder with radius $6 \\text{ cm}$ and height $8 \\text{ cm}$. Round your answer to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for curved surface area.",
+        "working": "$$CSA = 2\\pi r h$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values: $r = 6$ and $h = 8$.",
+        "working": "$$CSA = 2\\pi \\times 6 \\times 8 = 96\\pi$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate using a calculator.",
+        "working": "$$CSA = 96\\pi \\approx 301.59 \\text{ cm}^2$$"
+      }
+    ],
+    "answer": "$301.59 \\text{ cm}^2$"
+  },
+  {
+    "id": "surface-area-of-cylinders-worked-2",
+    "title": "Total surface area of a closed cylinder",
+    "difficulty": 2,
+    "problem": "Find the total surface area of a closed cylinder with radius $5 \\text{ cm}$ and height $10 \\text{ cm}$. Round your answer to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for total surface area of a closed cylinder. A closed cylinder has a curved surface and two circular ends.",
+        "working": "$$TSA = 2\\pi r h + 2\\pi r^2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the curved surface area.",
+        "working": "$$2\\pi r h = 2\\pi \\times 5 \\times 10 = 100\\pi$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the total area of the two circular ends.",
+        "working": "$$2\\pi r^2 = 2\\pi \\times 5^2 = 50\\pi$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add the two parts and evaluate.",
+        "working": "$$TSA = 100\\pi + 50\\pi = 150\\pi \\approx 471.24 \\text{ cm}^2$$"
+      }
+    ],
+    "answer": "$471.24 \\text{ cm}^2$"
+  },
+  {
+    "id": "surface-area-of-cylinders-worked-3",
+    "title": "Surface area of an open cylindrical tin",
+    "difficulty": 3,
+    "problem": "A cylindrical tin has no lid. Its radius is $6 \\text{ cm}$ and its height is $10 \\text{ cm}$. Find the total surface area of material needed to make the tin. Round your answer to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify which faces the tin has. Since there is no lid, the tin has a curved surface and one circular base only.",
+        "working": "$$SA = 2\\pi r h + \\pi r^2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the curved surface area.",
+        "working": "$$2\\pi r h = 2\\pi \\times 6 \\times 10 = 120\\pi$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the area of the single circular base.",
+        "working": "$$\\pi r^2 = \\pi \\times 6^2 = 36\\pi$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add the two areas and evaluate.",
+        "working": "$$SA = 120\\pi + 36\\pi = 156\\pi \\approx 490.09 \\text{ cm}^2$$"
+      }
+    ],
+    "answer": "$490.09 \\text{ cm}^2$"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "statistics-and-data",
+  "title": "Statistics and data",
+  "year": 9,
+  "stage": "5",
+  "extension": false,
+  "strand": "Statistics and Probability",
+  "syllabusOutcome": "MA5-DAT-C-01",
+  "description": "Classify data types, calculate measures of centre and spread, display data in graphs, and interpret statistical displays.",
+  "subtopics": ["types-of-data", "measures-of-centre", "measures-of-spread", "displaying-data", "interpreting-data"]
+}

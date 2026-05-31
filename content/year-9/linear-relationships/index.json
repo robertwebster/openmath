@@ -1,0 +1,15 @@
+{
+  "id": "linear-relationships",
+  "title": "Linear relationships",
+  "year": 9,
+  "stage": "5",
+  "extension": false,
+  "strand": "Algebra",
+  "syllabusOutcome": "MA5-LIN-C-01",
+  "description": "Explore gradient, intercepts, and graphing of linear equations. Identify and apply direct proportion.",
+  "subtopics": [
+    "gradient-and-intercept",
+    "graphing-linear-equations",
+    "direct-proportion"
+  ]
+}

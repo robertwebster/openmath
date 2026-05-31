@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tod-we-1",
+    "title": "Classifying variables as categorical or numerical",
+    "difficulty": 1,
+    "problem": "A researcher records the following information for each student in a class: (a) the student's hair colour, (b) the number of hours of sleep they got last night, (c) their score on a maths test out of $100$. Classify each variable as categorical or numerical.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Ask: does the variable name or label something, or does it measure a quantity?",
+        "working": "If the variable places subjects into named groups (e.g. colours, brands, types), it is categorical. If it records a numerical quantity that can be measured or counted, it is numerical."
+      },
+      {
+        "step": 2,
+        "instruction": "Classify variable (a): hair colour.",
+        "working": "Hair colour (e.g. brown, blonde, black) is a label that places each student in a named group. It does not measure a quantity, so it is categorical data."
+      },
+      {
+        "step": 3,
+        "instruction": "Classify variables (b) and (c): hours of sleep and test score.",
+        "working": "Hours of sleep is a measured quantity recorded as a number, so it is numerical data. Test score out of $100$ is also a numerical quantity, so it is numerical data."
+      }
+    ],
+    "answer": "(a) categorical, (b) numerical, (c) numerical"
+  },
+  {
+    "id": "tod-we-2",
+    "title": "Classifying numerical data as discrete or continuous",
+    "difficulty": 2,
+    "problem": "Classify each of the following as discrete or continuous numerical data: (a) the number of customers who visit a shop each day, (b) the weight (in kg) of a customer's shopping bag.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the definitions. Discrete data can only take specific, separate values (usually whole numbers obtained by counting). Continuous data can take any value within a range.",
+        "working": "Key question: can the variable take fractional values in a meaningful way, or is it restricted to whole numbers?"
+      },
+      {
+        "step": 2,
+        "instruction": "Classify variable (a): number of customers per day.",
+        "working": "You cannot have $47.3$ customers — customers are counted in whole numbers. The data can only take specific integer values, so it is discrete numerical data."
+      },
+      {
+        "step": 3,
+        "instruction": "Classify variable (b): weight of a shopping bag.",
+        "working": "Weight can take any value in a range, such as $3.0$ kg, $3.14$ kg, or $3.141$ kg. It is measured (not counted), so it is continuous numerical data."
+      }
+    ],
+    "answer": "(a) discrete numerical data, (b) continuous numerical data"
+  },
+  {
+    "id": "tod-we-3",
+    "title": "Identifying data type and choosing an appropriate display",
+    "difficulty": 3,
+    "problem": "A school records two variables for each student: (a) their house group (Red, Blue, Green, Yellow), and (b) the number of books they read during the year. For each variable, identify the data type and suggest the most appropriate display.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Classify the data type for each variable.",
+        "working": "House group names a category — it is categorical data. Number of books read is counted in whole numbers — it is discrete numerical data."
+      },
+      {
+        "step": 2,
+        "instruction": "Choose a display for categorical data: house group.",
+        "working": "Categorical data is best displayed using a column graph (bar chart) or a pie chart. These show the frequency or proportion of each category clearly."
+      },
+      {
+        "step": 3,
+        "instruction": "Choose a display for discrete numerical data: number of books read.",
+        "working": "Discrete numerical data with many possible values is best displayed using a stem-and-leaf plot (for smaller datasets) or a histogram (for larger datasets). A stem-and-leaf plot also preserves individual values and shows the shape of the distribution."
+      }
+    ],
+    "answer": "(a) categorical — column graph or pie chart; (b) discrete numerical — stem-and-leaf plot or histogram"
+  }
+]
