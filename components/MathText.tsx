@@ -20,9 +20,9 @@ function parseSegments(text: string): Segment[] {
       segments.push({ kind: "text", content: safe.slice(last, m.index).replaceAll(ESC, "$") });
     }
     if (m[1] !== undefined) {
-      segments.push({ kind: "display", content: m[1].trim() });
+      segments.push({ kind: "display", content: m[1].trim().replaceAll(ESC, "\\$") });
     } else {
-      segments.push({ kind: "inline", content: m[2] });
+      segments.push({ kind: "inline", content: m[2].replaceAll(ESC, "\\$") });
     }
     last = m.index + m[0].length;
   }

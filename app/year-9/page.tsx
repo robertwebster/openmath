@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
 import { getTopicMeta } from "@/lib/content";
+import MathText from "@/components/MathText";
 
 export const metadata: Metadata = {
   title: "Year 9 | Open Math",
@@ -89,7 +90,7 @@ export default function Year9Page() {
                   </span>
                 )}
               </div>
-              <p className="text-sm text-slate-500 leading-relaxed mb-4">{topic.description}</p>
+              <MathText text={topic.description} className="text-sm text-slate-500 leading-relaxed mb-4" />
               <p className="text-xs text-slate-400">
                 {topic.subtopics.length} sub-topic{topic.subtopics.length !== 1 ? "s" : ""}
               </p>

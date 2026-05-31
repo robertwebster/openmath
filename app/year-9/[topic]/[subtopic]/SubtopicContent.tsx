@@ -137,7 +137,7 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
           Print
         </button>
       </div>
-      <p className="text-slate-500 leading-relaxed mb-12 max-w-2xl">{subtopic.description}</p>
+      <MathText text={subtopic.description} className="text-slate-500 leading-relaxed mb-12 max-w-2xl" />
 
       {/* Worked examples */}
       {workedExamples.length > 0 && (
