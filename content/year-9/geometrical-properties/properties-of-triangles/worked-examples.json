@@ -1,0 +1,84 @@
+[
+  {
+    "id": "pot-worked-1",
+    "title": "Finding a missing angle using the angle sum",
+    "difficulty": 1,
+    "problem": "A triangle has two angles measuring $65°$ and $47°$. Find the size of the third angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the angle sum property of a triangle.",
+        "working": "The angles of any triangle add to $180°$."
+      },
+      {
+        "step": 2,
+        "instruction": "Add the two known angles.",
+        "working": "$65° + 47° = 112°$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract from $180°$ to find the missing angle.",
+        "working": "$180° - 112° = 68°$"
+      }
+    ],
+    "answer": "The third angle is $68°$."
+  },
+  {
+    "id": "pot-worked-2",
+    "title": "Finding base angles in an isosceles triangle",
+    "difficulty": 2,
+    "problem": "An isosceles triangle has an apex angle of $50°$. Find the size of each base angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall that the two base angles of an isosceles triangle are equal. Let each base angle be $b$.",
+        "working": "Base angles: $b°$ and $b°$, apex angle: $50°$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write an equation using the angle sum of a triangle.",
+        "working": "$50 + b + b = 180$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $b$.",
+        "working": "$2b = 130$, so $b = 65$"
+      }
+    ],
+    "answer": "Each base angle is $65°$."
+  },
+  {
+    "id": "pot-worked-3",
+    "title": "Finding angles using algebraic expressions",
+    "difficulty": 3,
+    "problem": "A triangle has angles $(2x + 15)°$, $(x + 10)°$, and $(x - 5)°$. Find $x$ and state the size of each angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write an equation using the angle sum of a triangle.",
+        "working": "$(2x + 15) + (x + 10) + (x - 5) = 180$"
+      },
+      {
+        "step": 2,
+        "instruction": "Collect like terms on the left side.",
+        "working": "$4x + 20 = 180$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $x$.",
+        "working": "$4x = 160$, so $x = 40$"
+      },
+      {
+        "step": 4,
+        "instruction": "Substitute $x = 40$ to find each angle.",
+        "working": "$2(40) + 15 = 95°$, $\\quad 40 + 10 = 50°$, $\\quad 40 - 5 = 35°$"
+      },
+      {
+        "step": 5,
+        "instruction": "Check: the three angles should add to $180°$.",
+        "working": "$95° + 50° + 35° = 180°$ ✓"
+      }
+    ],
+    "answer": "$x = 40$; the angles are $95°$, $50°$, and $35°$."
+  }
+]

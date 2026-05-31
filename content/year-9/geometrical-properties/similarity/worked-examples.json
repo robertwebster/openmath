@@ -1,0 +1,79 @@
+[
+  {
+    "id": "sim-worked-1",
+    "title": "Finding the scale factor between similar triangles",
+    "difficulty": 1,
+    "problem": "Triangle $ABC$ is similar to triangle $DEF$. $AB = 4$ cm and $DE = 6$ cm. Find the scale factor from $\\triangle ABC$ to $\\triangle DEF$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the pair of corresponding sides.",
+        "working": "$AB$ in $\\triangle ABC$ corresponds to $DE$ in $\\triangle DEF$."
+      },
+      {
+        "step": 2,
+        "instruction": "Write the scale factor as a ratio of the second figure's side to the first figure's side.",
+        "working": "Scale factor $= \\dfrac{DE}{AB} = \\dfrac{6}{4}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Simplify the fraction.",
+        "working": "$\\dfrac{6}{4} = 1.5$"
+      }
+    ],
+    "answer": "The scale factor from $\\triangle ABC$ to $\\triangle DEF$ is $1.5$."
+  },
+  {
+    "id": "sim-worked-2",
+    "title": "Finding a missing side using similarity",
+    "difficulty": 2,
+    "problem": "Triangle $ABC \\sim$ triangle $DEF$. $AB = 8$ cm, $DE = 12$ cm, and $BC = 10$ cm. Find $EF$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the scale factor from $\\triangle ABC$ to $\\triangle DEF$ using the known corresponding sides.",
+        "working": "Scale factor $= \\dfrac{DE}{AB} = \\dfrac{12}{8} = 1.5$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the side in $\\triangle DEF$ that corresponds to $BC$.",
+        "working": "$BC$ (second side of $\\triangle ABC$) corresponds to $EF$ (second side of $\\triangle DEF$)."
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply $BC$ by the scale factor.",
+        "working": "$EF = BC \\times 1.5 = 10 \\times 1.5 = 15$ cm"
+      }
+    ],
+    "answer": "$EF = 15$ cm."
+  },
+  {
+    "id": "sim-worked-3",
+    "title": "Finding a missing side in nested similar triangles",
+    "difficulty": 3,
+    "problem": "In triangle $PQR$, point $S$ lies on $PQ$ and point $T$ lies on $PR$ such that $ST \\parallel QR$. $PS = 6$ cm, $SQ = 9$ cm, and $QR = 20$ cm. Find $ST$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the full length $PQ$.",
+        "working": "$PQ = PS + SQ = 6 + 9 = 15$ cm"
+      },
+      {
+        "step": 2,
+        "instruction": "Explain why $\\triangle PST \\sim \\triangle PQR$.",
+        "working": "Since $ST \\parallel QR$, the corresponding angles $\\angle PST = \\angle PQR$ and $\\angle PTS = \\angle PRQ$. By AA, $\\triangle PST \\sim \\triangle PQR$."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the scale factor from $\\triangle PQR$ to $\\triangle PST$.",
+        "working": "Scale factor $= \\dfrac{PS}{PQ} = \\dfrac{6}{15} = 0.4$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find $ST$ by multiplying $QR$ by the scale factor.",
+        "working": "$ST = QR \\times 0.4 = 20 \\times 0.4 = 8$ cm"
+      }
+    ],
+    "answer": "$ST = 8$ cm."
+  }
+]

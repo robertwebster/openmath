@@ -1,0 +1,74 @@
+[
+  {
+    "id": "si-ex-01",
+    "title": "Calculating simple interest",
+    "difficulty": 1,
+    "problem": "Calculate the simple interest earned on a principal of $\\$1500$ at $4\\%$ per annum for $3$ years.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the values.",
+        "working": "$P = 1500$, $r = 0.04$ (convert $4\\%$ to a decimal), $n = 3$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the simple interest formula.",
+        "working": "$I = Prn$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the values and calculate.",
+        "working": "$I = 1500 \\times 0.04 \\times 3 = \\$180$"
+      }
+    ],
+    "answer": "The simple interest earned is $\\$180$."
+  },
+  {
+    "id": "si-ex-02",
+    "title": "Finding the principal",
+    "difficulty": 2,
+    "problem": "Simple interest of $\\$192$ is earned at $4\\%$ per annum over $4$ years. Find the principal.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the known values.",
+        "working": "$I = 192$, $r = 0.04$, $n = 4$, $P = ?$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rearrange the formula $I = Prn$ to make $P$ the subject.",
+        "working": "$P = \\dfrac{I}{rn}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute and calculate.",
+        "working": "$P = \\dfrac{192}{0.04 \\times 4} = \\dfrac{192}{0.16} = \\$1200$"
+      }
+    ],
+    "answer": "The principal was $\\$1200$."
+  },
+  {
+    "id": "si-ex-03",
+    "title": "Finding the total amount repaid",
+    "difficulty": 3,
+    "problem": "Sarah borrows $\\$5000$ at $3.5\\%$ per annum simple interest for $4$ years. What is the total amount she must repay?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the values.",
+        "working": "$P = 5000$, $r = 0.035$ (convert $3.5\\%$ to a decimal), $n = 4$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the interest using $I = Prn$.",
+        "working": "$I = 5000 \\times 0.035 \\times 4 = \\$700$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the total amount using $A = P + I$.",
+        "working": "$A = 5000 + 700 = \\$5700$"
+      }
+    ],
+    "answer": "Sarah must repay a total of $\\$5700$."
+  }
+]

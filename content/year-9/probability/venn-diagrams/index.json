@@ -1,0 +1,9 @@
+{
+  "id": "venn-diagrams",
+  "title": "Venn diagrams",
+  "topic": "probability",
+  "year": 9,
+  "strand": "Statistics and Probability",
+  "syllabusOutcome": "MA5-PRB-C-01",
+  "description": "Use Venn diagrams to find probabilities for intersecting events, apply the addition rule P(A or B) = P(A) + P(B) - P(A and B), and solve problems involving two overlapping events."
+}

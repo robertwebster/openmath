@@ -1,0 +1,89 @@
+[
+  {
+    "id": "vol-cyl-ex-1",
+    "title": "Finding the volume of a cylinder",
+    "difficulty": 1,
+    "problem": "Find the volume of a cylinder with radius $4$ cm and height $10$ cm. Round to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for the volume of a cylinder.",
+        "working": "$$V = \\pi r^2 h$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values $r = 4$ and $h = 10$.",
+        "working": "$$V = \\pi \\times 4^2 \\times 10$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate $4^2 = 16$ and multiply.",
+        "working": "$$V = \\pi \\times 16 \\times 10 = 160\\pi$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the decimal value.",
+        "working": "$$V = 160\\pi \\approx 502.65 \\text{ cm}^3$$"
+      }
+    ],
+    "answer": "$V \\approx 502.65$ cm³"
+  },
+  {
+    "id": "vol-cyl-ex-2",
+    "title": "Finding the height given the volume",
+    "difficulty": 2,
+    "problem": "A cylinder has volume $392.70$ cm³ and radius $5$ cm. Find its height, rounded to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula and identify the unknown.",
+        "working": "$$V = \\pi r^2 h \\quad \\Rightarrow \\quad h = \\frac{V}{\\pi r^2}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values $V = 392.70$ and $r = 5$.",
+        "working": "$$h = \\frac{392.70}{\\pi \\times 5^2} = \\frac{392.70}{\\pi \\times 25}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the denominator $\\pi \\times 25 \\approx 78.54$.",
+        "working": "$$h = \\frac{392.70}{78.54}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide to find the height.",
+        "working": "$$h \\approx 5.00 \\text{ cm}$$"
+      }
+    ],
+    "answer": "$h = 5.00$ cm"
+  },
+  {
+    "id": "vol-cyl-ex-3",
+    "title": "Filling time for a cylindrical tank",
+    "difficulty": 3,
+    "problem": "A cylindrical water tank has radius $3$ m and height $4$ m. Water flows into the tank at $6$ m³ per minute. How long does it take to fill the tank? Round to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the volume of the cylindrical tank.",
+        "working": "$$V = \\pi r^2 h = \\pi \\times 3^2 \\times 4 = 36\\pi \\text{ m}^3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the decimal value of the volume.",
+        "working": "$$V = 36\\pi \\approx 113.10 \\text{ m}^3$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Divide the total volume by the flow rate to find the time.",
+        "working": "$$\\text{Time} = \\frac{\\text{Volume}}{\\text{Flow rate}} = \\frac{113.10}{6}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the time.",
+        "working": "$$\\text{Time} \\approx 18.85 \\text{ minutes}$$"
+      }
+    ],
+    "answer": "Approximately $18.85$ minutes"
+  }
+]

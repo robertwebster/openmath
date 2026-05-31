@@ -1,0 +1,69 @@
+[
+  {
+    "id": "scientific-notation-example-1",
+    "title": "Converting a large number to scientific notation",
+    "difficulty": 1,
+    "problem": "Write $73{,}000$ in scientific notation.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Place the decimal point after the first non-zero digit.",
+        "working": "The first non-zero digit is $7$, so the coefficient is $7.3$."
+      },
+      {
+        "step": 2,
+        "instruction": "Count how many places the decimal point moved.",
+        "working": "The decimal moved 4 places to the left: $73{,}000 \\to 7.3$."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the number in the form $a \\times 10^n$.",
+        "working": "Since the decimal moved 4 places to the left, the power of 10 is positive: $n = 4$."
+      }
+    ],
+    "answer": "$7.3 \\times 10^4$"
+  },
+  {
+    "id": "scientific-notation-example-2",
+    "title": "Converting from scientific notation to a standard number",
+    "difficulty": 2,
+    "problem": "Write $5.4 \\times 10^{-2}$ as a standard number.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the power of 10.",
+        "working": "The power of 10 is $-2$, which means the decimal moves 2 places to the left."
+      },
+      {
+        "step": 2,
+        "instruction": "Move the decimal point in the coefficient.",
+        "working": "Start with $5.4$ and move the decimal 2 places to the left: $5.4 \\to 0.54 \\to 0.054$."
+      }
+    ],
+    "answer": "$0.054$"
+  },
+  {
+    "id": "scientific-notation-example-3",
+    "title": "Multiplying numbers in scientific notation",
+    "difficulty": 3,
+    "problem": "Calculate $(3 \\times 10^4) \\times (2.5 \\times 10^3)$ and write the answer in scientific notation.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Multiply the coefficients.",
+        "working": "$3 \\times 2.5 = 7.5$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the product rule to the powers of 10.",
+        "working": "$10^4 \\times 10^3 = 10^{4+3} = 10^7$"
+      },
+      {
+        "step": 3,
+        "instruction": "Combine and check that the coefficient satisfies $1 \\le a < 10$.",
+        "working": "$7.5 \\times 10^7$. Since $1 \\le 7.5 < 10$, this is already in correct scientific notation."
+      }
+    ],
+    "answer": "$7.5 \\times 10^7$"
+  }
+]

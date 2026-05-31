@@ -1,0 +1,79 @@
+[
+  {
+    "id": "gi-ex-1",
+    "title": "Gradient from rise and run",
+    "difficulty": 1,
+    "problem": "A line rises $8$ units for every $4$ units it runs to the right. Find the gradient.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the gradient formula.",
+        "working": "$$\\text{gradient} = \\frac{\\text{rise}}{\\text{run}}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the rise and run values.",
+        "working": "$$\\text{gradient} = \\frac{8}{4}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Simplify.",
+        "working": "$$\\text{gradient} = 2$$"
+      }
+    ],
+    "answer": "The gradient is $2$."
+  },
+  {
+    "id": "gi-ex-2",
+    "title": "Gradient from two points",
+    "difficulty": 2,
+    "problem": "Find the gradient of the line passing through $(3, 4)$ and $(7, 12)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the gradient formula.",
+        "working": "$$m = \\frac{y_2 - y_1}{x_2 - x_1}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Label the coordinates: let $(x_1, y_1) = (3, 4)$ and $(x_2, y_2) = (7, 12)$.",
+        "working": "$$m = \\frac{12 - 4}{7 - 3}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Simplify the numerator and denominator, then divide.",
+        "working": "$$m = \\frac{8}{4} = 2$$"
+      }
+    ],
+    "answer": "The gradient is $2$."
+  },
+  {
+    "id": "gi-ex-3",
+    "title": "Equation of a line from two points",
+    "difficulty": 3,
+    "problem": "Find the equation of the line passing through $(1, 4)$ and $(3, 10)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the gradient using the two points.",
+        "working": "$$m = \\frac{10 - 4}{3 - 1} = \\frac{6}{2} = 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Use $y = mx + b$ and substitute one point to find the $y$-intercept. Use $(1, 4)$.",
+        "working": "$$4 = 3(1) + b$$\n$$4 = 3 + b$$\n$$b = 1$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the equation.",
+        "working": "$$y = 3x + 1$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check by substituting the other point $(3, 10)$.",
+        "working": "$$3(3) + 1 = 9 + 1 = 10 \\checkmark$$"
+      }
+    ],
+    "answer": "$y = 3x + 1$"
+  }
+]

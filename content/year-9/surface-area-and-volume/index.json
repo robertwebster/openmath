@@ -1,0 +1,16 @@
+{
+  "id": "surface-area-and-volume",
+  "title": "Surface area and volume",
+  "year": 9,
+  "stage": "5",
+  "extension": false,
+  "strand": "Measurement and Space",
+  "syllabusOutcome": "MA5-LAV-C-01",
+  "description": "Calculate surface area and volume of prisms and cylinders, and apply these to real-world problems.",
+  "subtopics": [
+    "surface-area-of-prisms",
+    "surface-area-of-cylinders",
+    "volume-of-prisms",
+    "volume-of-cylinders"
+  ]
+}

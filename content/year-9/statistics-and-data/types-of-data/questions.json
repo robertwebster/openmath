@@ -1,0 +1,230 @@
+[
+  {
+    "id": "tod-1-1",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A survey asks students to name their favourite sport. This variable is best described as:",
+    "options": [
+      "Numerical data",
+      "Categorical data",
+      "Discrete data",
+      "Continuous data"
+    ],
+    "answer": "Categorical data",
+    "tolerance": 0,
+    "hint": "Ask yourself: does the answer describe a category or label, or does it measure a quantity?",
+    "explanation": "Favourite sport is a label or name, not a number. Data that falls into named groups or categories is called categorical data."
+  },
+  {
+    "id": "tod-1-2",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A researcher records the height (in centimetres) of each student in a class. This variable is best described as:",
+    "options": [
+      "Categorical data",
+      "Qualitative data",
+      "Numerical data",
+      "Nominal data"
+    ],
+    "answer": "Numerical data",
+    "tolerance": 0,
+    "hint": "Height is measured with a number. What type of data uses numbers to record quantities?",
+    "explanation": "Height is measured as a number and represents a quantity. Data that takes numerical values is called numerical data (also known as quantitative data)."
+  },
+  {
+    "id": "tod-1-3",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which of the following is an example of categorical data?",
+    "options": [
+      "The mass (in kg) of apples in a bag",
+      "The number of cars in a car park",
+      "The brand of shoes worn by students",
+      "The time (in minutes) spent on homework each night"
+    ],
+    "answer": "The brand of shoes worn by students",
+    "tolerance": 0,
+    "hint": "Categorical data names or labels something rather than measuring a quantity.",
+    "explanation": "The brand of shoes (e.g. Nike, Adidas, New Balance) is a label, not a number, so it is categorical data. The other options all record numerical quantities."
+  },
+  {
+    "id": "tod-1-4",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A school records the suburb where each student lives. This variable is best described as:",
+    "options": [
+      "Numerical data",
+      "Categorical data",
+      "Continuous data",
+      "Discrete data"
+    ],
+    "answer": "Categorical data",
+    "tolerance": 0,
+    "hint": "Even though suburb names are words, ask: does this variable name a group, or measure a quantity?",
+    "explanation": "The suburb where a student lives is a label that places each student in a named category. It does not measure a quantity, so it is categorical data."
+  },
+  {
+    "id": "tod-2-1",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "The number of goals scored in a soccer match is an example of:",
+    "options": [
+      "Categorical data",
+      "Continuous numerical data",
+      "Discrete numerical data",
+      "Qualitative data"
+    ],
+    "answer": "Discrete numerical data",
+    "tolerance": 0,
+    "hint": "Can the number of goals be a fraction, or must it be a whole number?",
+    "explanation": "Goals are counted in whole numbers only — you cannot score $2.5$ goals. Numerical data that can only take separate, countable values (usually whole numbers) is called discrete data."
+  },
+  {
+    "id": "tod-2-2",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "The time (in seconds) taken by a student to complete a $100\\text{ m}$ sprint is an example of:",
+    "options": [
+      "Categorical data",
+      "Continuous numerical data",
+      "Discrete numerical data",
+      "Qualitative data"
+    ],
+    "answer": "Continuous numerical data",
+    "tolerance": 0,
+    "hint": "Can time take any value within a range, or only specific whole-number values?",
+    "explanation": "Time can take any value within a range (e.g. $13.47$ seconds, $13.471$ seconds). Numerical data that can take any value in an interval is called continuous data."
+  },
+  {
+    "id": "tod-2-3",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which of the following is an example of continuous data?",
+    "options": [
+      "The number of students absent from school each day",
+      "The shoe size of students in a class",
+      "The number of text messages sent by a student each day",
+      "The volume of water (in litres) in a water bottle"
+    ],
+    "answer": "The volume of water (in litres) in a water bottle",
+    "tolerance": 0,
+    "hint": "Continuous data can take any value within a range, including decimals. Which option fits this description?",
+    "explanation": "Volume can take any value in a range (e.g. $0.735$ L, $0.7351$ L), so it is continuous data. Absences, shoe sizes, and text messages are all counted in whole numbers, making them discrete."
+  },
+  {
+    "id": "tod-2-4",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A geologist records the mass (in kilograms) of each rock in a sample. This data is best described as:",
+    "options": [
+      "Categorical",
+      "Discrete numerical",
+      "Continuous numerical",
+      "Ordinal"
+    ],
+    "answer": "Continuous numerical",
+    "tolerance": 0,
+    "hint": "Mass is measured on a scale and can take any value, not just whole numbers.",
+    "explanation": "Mass is measured and can take any value within a range (e.g. $1.234$ kg). This makes it continuous numerical data."
+  },
+  {
+    "id": "tod-3-1",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A class survey records the eye colour of each student. The most appropriate display for this data is:",
+    "options": [
+      "Histogram",
+      "Stem-and-leaf plot",
+      "Column graph",
+      "Box plot"
+    ],
+    "answer": "Column graph",
+    "tolerance": 0,
+    "hint": "Eye colour is categorical. Which display is designed for categorical data?",
+    "explanation": "Eye colour is categorical data. A column graph (or bar chart) is used to display the frequency of each category. Histograms, stem-and-leaf plots, and box plots are used for numerical data."
+  },
+  {
+    "id": "tod-3-2",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A researcher measures the heights (in cm) of $50$ students. The most appropriate display for this data is:",
+    "options": [
+      "Column graph",
+      "Histogram",
+      "Pie chart",
+      "Stem-and-leaf plot"
+    ],
+    "answer": "Histogram",
+    "tolerance": 0,
+    "hint": "Heights are continuous numerical data. Which display groups continuous data into intervals?",
+    "explanation": "Height is continuous numerical data. A histogram groups values into intervals (class widths) and is the most appropriate display for large datasets of continuous data. A stem-and-leaf plot would work for smaller datasets, but a histogram is preferred for $50$ values."
+  },
+  {
+    "id": "tod-3-3",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A class is asked to name their favourite subject. The most appropriate measure of centre to summarise this data is:",
+    "options": [
+      "Mean",
+      "Median",
+      "Mode",
+      "Range"
+    ],
+    "answer": "Mode",
+    "tolerance": 0,
+    "hint": "You cannot add or order subject names. Which measure of centre works for categorical data?",
+    "explanation": "Favourite subject is categorical data. You cannot calculate a mean or median for categories, since they cannot be added or meaningfully ordered. The mode (the most frequently chosen subject) is the only appropriate measure of centre for categorical data."
+  },
+  {
+    "id": "tod-3-4",
+    "subtopic": "types-of-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A teacher wants to compare the exam scores of two classes side by side to see how their distributions differ. The most appropriate display is:",
+    "options": [
+      "Two separate pie charts",
+      "A single histogram",
+      "A back-to-back stem-and-leaf plot",
+      "A column graph"
+    ],
+    "answer": "A back-to-back stem-and-leaf plot",
+    "tolerance": 0,
+    "hint": "The teacher wants to compare two groups of numerical data and see the shape of each distribution.",
+    "explanation": "A back-to-back stem-and-leaf plot places both datasets on the same stem so their distributions can be directly compared side by side. It shows the shape, spread, and individual values for both groups simultaneously."
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "id": "zero-and-negative-indices-example-1",
+    "title": "Evaluating a zero index",
+    "difficulty": 1,
+    "problem": "Evaluate $(-8)^0$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the zero index rule.",
+        "working": "For any non-zero value $a$: $a^0 = 1$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the rule to $(-8)^0$.",
+        "working": "$(-8)^0 = 1$"
+      }
+    ],
+    "answer": "$1$"
+  },
+  {
+    "id": "zero-and-negative-indices-example-2",
+    "title": "Evaluating a negative index",
+    "difficulty": 2,
+    "problem": "Evaluate $5^{-3}$. Write your answer as a fraction.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the negative index rule.",
+        "working": "$a^{-n} = \\dfrac{1}{a^n}$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rewrite $5^{-3}$ using a positive index.",
+        "working": "$5^{-3} = \\dfrac{1}{5^3}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the denominator.",
+        "working": "$5^3 = 5 \\times 5 \\times 5 = 125$, so $5^{-3} = \\dfrac{1}{125}$"
+      }
+    ],
+    "answer": "$\\dfrac{1}{125}$"
+  },
+  {
+    "id": "zero-and-negative-indices-example-3",
+    "title": "Combining index laws with negative indices",
+    "difficulty": 3,
+    "problem": "Simplify $\\dfrac{2^5 \\times 2^{-3}}{2^4}$ and write your answer as a fraction.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the product rule to the numerator.",
+        "working": "$2^5 \\times 2^{-3} = 2^{5+(-3)} = 2^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the quotient rule.",
+        "working": "$\\dfrac{2^2}{2^4} = 2^{2-4} = 2^{-2}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the negative index rule to write as a fraction.",
+        "working": "$2^{-2} = \\dfrac{1}{2^2} = \\dfrac{1}{4}$"
+      }
+    ],
+    "answer": "$\\dfrac{1}{4}$"
+  }
+]

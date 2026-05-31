@@ -1,0 +1,64 @@
+[
+  {
+    "id": "ce-ex-1",
+    "title": "Using the complementary event rule",
+    "difficulty": 1,
+    "problem": "The probability that it will rain tomorrow is $\\dfrac{3}{7}$. Find the probability that it will NOT rain tomorrow.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the complementary event",
+        "working": "The event is 'rain tomorrow'. Its complement is 'no rain tomorrow'. These two events are mutually exclusive and together cover all possible outcomes, so their probabilities must add to $1$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the complementary event rule",
+        "working": "$$P(\\text{not rain}) = 1 - P(\\text{rain}) = 1 - \\frac{3}{7} = \\frac{7}{7} - \\frac{3}{7} = \\frac{4}{7}$$"
+      }
+    ],
+    "answer": "$P(\\text{not rain}) = \\dfrac{4}{7}$"
+  },
+  {
+    "id": "ce-ex-2",
+    "title": "Finding a complementary probability from a sample space",
+    "difficulty": 2,
+    "problem": "A number is chosen at random from the integers $1$ to $20$ inclusive. Find the probability that the number chosen is NOT a multiple of $3$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find $P(\\text{multiple of 3})$",
+        "working": "Multiples of $3$ from $1$ to $20$: $3, 6, 9, 12, 15, 18$ — that is $6$ numbers. $$P(\\text{multiple of 3}) = \\frac{6}{20} = \\frac{3}{10}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the complementary event rule",
+        "working": "$$P(\\text{not a multiple of 3}) = 1 - P(\\text{multiple of 3}) = 1 - \\frac{3}{10} = \\frac{7}{10}$$"
+      }
+    ],
+    "answer": "$P(\\text{not a multiple of 3}) = \\dfrac{7}{10}$"
+  },
+  {
+    "id": "ce-ex-3",
+    "title": "At least one outcome — using the complement",
+    "difficulty": 3,
+    "problem": "Two fair six-sided dice are rolled. Find the probability that at least one die shows a $5$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the complementary event",
+        "working": "The complement of 'at least one $5$' is 'no $5$ on either die'. It is much easier to calculate the complement first."
+      },
+      {
+        "step": 2,
+        "instruction": "Find $P(\\text{no 5 on either die})$",
+        "working": "For each die, $P(\\text{not a 5}) = \\dfrac{5}{6}$. Since the dice are independent: $$P(\\text{no 5 on either}) = \\frac{5}{6} \\times \\frac{5}{6} = \\frac{25}{36}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the complementary event rule",
+        "working": "$$P(\\text{at least one 5}) = 1 - P(\\text{no 5 on either}) = 1 - \\frac{25}{36} = \\frac{11}{36}$$"
+      }
+    ],
+    "answer": "$P(\\text{at least one 5}) = \\dfrac{11}{36}$"
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "id": "scr-1-1",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "In a right-angled triangle, which side is the hypotenuse?",
+    "options": [
+      "The side opposite the right angle",
+      "The side opposite angle $\\theta$",
+      "The side next to angle $\\theta$ (not the hypotenuse)",
+      "The shortest side"
+    ],
+    "answer": "The side opposite the right angle",
+    "tolerance": 0,
+    "hint": "The hypotenuse is always opposite the largest angle.",
+    "explanation": "The hypotenuse is the side directly across from the right angle ($90°$). It is always the longest side of the right-angled triangle."
+  },
+  {
+    "id": "scr-1-2",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "In a right-angled triangle with angle $\\theta$ at one vertex, the side directly across from $\\theta$ is called the:",
+    "options": [
+      "hypotenuse",
+      "adjacent side",
+      "opposite side",
+      "base"
+    ],
+    "answer": "opposite side",
+    "tolerance": 0,
+    "hint": "Side names are always relative to the angle you are working with.",
+    "explanation": "The opposite side is the side directly across from the angle $\\theta$. The adjacent side is the other non-hypotenuse side, which is next to $\\theta$."
+  },
+  {
+    "id": "scr-1-3",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which trigonometric ratio is defined as $\\dfrac{\\text{opposite}}{\\text{hypotenuse}}$?",
+    "options": [
+      "$\\sin \\theta$",
+      "$\\cos \\theta$",
+      "$\\tan \\theta$",
+      "$\\dfrac{1}{\\cos \\theta}$"
+    ],
+    "answer": "$\\sin \\theta$",
+    "tolerance": 0,
+    "hint": "Use the SOHCAHTOA memory aid.",
+    "explanation": "SOH stands for Sine = Opposite over Hypotenuse, so $\\sin \\theta = \\dfrac{\\text{opposite}}{\\text{hypotenuse}}$."
+  },
+  {
+    "id": "scr-1-4",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which trigonometric ratio is defined as $\\dfrac{\\text{opposite}}{\\text{adjacent}}$?",
+    "options": [
+      "$\\sin \\theta$",
+      "$\\cos \\theta$",
+      "$\\tan \\theta$",
+      "$\\dfrac{1}{\\sin \\theta}$"
+    ],
+    "answer": "$\\tan \\theta$",
+    "tolerance": 0,
+    "hint": "Use the SOHCAHTOA memory aid — what does TOA stand for?",
+    "explanation": "TOA stands for Tangent = Opposite over Adjacent, so $\\tan \\theta = \\dfrac{\\text{opposite}}{\\text{adjacent}}$."
+  },
+  {
+    "id": "scr-2-1",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Use a calculator to find $\\sin 35°$ correct to 4 decimal places.",
+    "answer": 0.5736,
+    "tolerance": 0.00005,
+    "hint": "Make sure your calculator is set to degree mode.",
+    "explanation": "Entering $\\sin 35°$ on a calculator gives $0.573576\\ldots$, which rounds to $0.5736$ to 4 decimal places."
+  },
+  {
+    "id": "scr-2-2",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Use a calculator to find $\\cos 48°$ correct to 4 decimal places.",
+    "answer": 0.6691,
+    "tolerance": 0.00005,
+    "hint": "Make sure your calculator is set to degree mode.",
+    "explanation": "Entering $\\cos 48°$ on a calculator gives $0.669131\\ldots$, which rounds to $0.6691$ to 4 decimal places."
+  },
+  {
+    "id": "scr-2-3",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Use a calculator to find $\\tan 62°$ correct to 4 decimal places.",
+    "answer": 1.8807,
+    "tolerance": 0.00005,
+    "hint": "Make sure your calculator is set to degree mode.",
+    "explanation": "Entering $\\tan 62°$ on a calculator gives $1.880726\\ldots$, which rounds to $1.8807$ to 4 decimal places."
+  },
+  {
+    "id": "scr-2-4",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Use a calculator to find $\\sin 72°$ correct to 4 decimal places.",
+    "answer": 0.9511,
+    "tolerance": 0.00005,
+    "hint": "Make sure your calculator is set to degree mode.",
+    "explanation": "Entering $\\sin 72°$ on a calculator gives $0.951056\\ldots$, which rounds to $0.9511$ to 4 decimal places."
+  },
+  {
+    "id": "scr-3-1",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A right-angled triangle has angle $\\theta = 40°$ at one vertex, and the hypotenuse is $10$ cm. Which equation correctly gives the length of the side opposite $\\theta$?",
+    "options": [
+      "$x = 10 \\sin 40°$",
+      "$x = 10 \\cos 40°$",
+      "$x = 10 \\tan 40°$",
+      "$x = \\dfrac{10}{\\sin 40°}$"
+    ],
+    "answer": "$x = 10 \\sin 40°$",
+    "tolerance": 0,
+    "hint": "Which ratio links the opposite side to the hypotenuse?",
+    "explanation": "Since $\\sin \\theta = \\dfrac{\\text{opposite}}{\\text{hypotenuse}}$, we have $\\sin 40° = \\dfrac{x}{10}$, so $x = 10 \\sin 40°$."
+  },
+  {
+    "id": "scr-3-2",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A right-angled triangle has angle $\\theta = 55°$ and the adjacent side is $8$ cm. Which equation correctly gives the length of the hypotenuse $h$?",
+    "options": [
+      "$h = \\dfrac{8}{\\cos 55°}$",
+      "$h = 8 \\cos 55°$",
+      "$h = 8 \\sin 55°$",
+      "$h = \\dfrac{8}{\\sin 55°}$"
+    ],
+    "answer": "$h = \\dfrac{8}{\\cos 55°}$",
+    "tolerance": 0,
+    "hint": "CAH: $\\cos \\theta = \\dfrac{\\text{adjacent}}{\\text{hypotenuse}}$. Rearrange to make $h$ the subject.",
+    "explanation": "Using CAH: $\\cos 55° = \\dfrac{8}{h}$. Rearranging gives $h = \\dfrac{8}{\\cos 55°}$."
+  },
+  {
+    "id": "scr-3-3",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "In a right-angled triangle, the side opposite angle $\\theta$ is $7$ cm and the adjacent side is $5$ cm. Which equation correctly gives $\\theta$?",
+    "options": [
+      "$\\theta = \\tan^{-1}\\!\\left(\\dfrac{7}{5}\\right)$",
+      "$\\theta = \\sin^{-1}\\!\\left(\\dfrac{7}{5}\\right)$",
+      "$\\theta = \\cos^{-1}\\!\\left(\\dfrac{5}{7}\\right)$",
+      "$\\theta = \\tan^{-1}\\!\\left(\\dfrac{5}{7}\\right)$"
+    ],
+    "answer": "$\\theta = \\tan^{-1}\\!\\left(\\dfrac{7}{5}\\right)$",
+    "tolerance": 0,
+    "hint": "You have the opposite and adjacent sides. Which ratio uses these two sides?",
+    "explanation": "Since $\\tan \\theta = \\dfrac{\\text{opposite}}{\\text{adjacent}} = \\dfrac{7}{5}$, we solve for $\\theta$ using the inverse: $\\theta = \\tan^{-1}\\!\\left(\\dfrac{7}{5}\\right)$."
+  },
+  {
+    "id": "scr-3-4",
+    "subtopic": "sin-cos-tan-ratios",
+    "topic": "trigonometry",
+    "year": 9,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A right-angled triangle has angle $\\theta = 30°$ and hypotenuse $12$ cm. Which expression gives the length of the adjacent side?",
+    "options": [
+      "$12 \\cos 30°$",
+      "$12 \\sin 30°$",
+      "$\\dfrac{12}{\\cos 30°}$",
+      "$\\dfrac{\\cos 30°}{12}$"
+    ],
+    "answer": "$12 \\cos 30°$",
+    "tolerance": 0,
+    "hint": "CAH: $\\cos \\theta = \\dfrac{\\text{adjacent}}{\\text{hypotenuse}}$. What is the adjacent side equal to?",
+    "explanation": "Using CAH: $\\cos 30° = \\dfrac{\\text{adjacent}}{12}$. Multiplying both sides by $12$ gives adjacent $= 12 \\cos 30°$."
+  }
+]

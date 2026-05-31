@@ -1,0 +1,84 @@
+[
+  {
+    "id": "cong-worked-1",
+    "title": "Identifying a congruence test",
+    "difficulty": 1,
+    "problem": "Triangles $ABC$ and $DEF$ have $AB = DE = 8$ cm, $BC = EF = 6$ cm, and $AC = DF = 10$ cm. Which congruence test proves $\\triangle ABC \\cong \\triangle DEF$?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "List the equal measurements given.",
+        "working": "$AB = DE = 8$ cm, $BC = EF = 6$ cm, $AC = DF = 10$ cm"
+      },
+      {
+        "step": 2,
+        "instruction": "Count the pairs: three pairs of equal sides, no angles given.",
+        "working": "Three sides of one triangle equal three sides of the other."
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the matching congruence test.",
+        "working": "Three pairs of equal sides → SSS (Side-Side-Side)"
+      }
+    ],
+    "answer": "$\\triangle ABC \\cong \\triangle DEF$ by SSS."
+  },
+  {
+    "id": "cong-worked-2",
+    "title": "Finding a missing angle using congruence",
+    "difficulty": 2,
+    "problem": "Triangle $PQR \\cong$ triangle $XYZ$. $\\angle P = 50°$ and $\\angle Q = 80°$. Find $\\angle Z$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the third angle of $\\triangle PQR$ using the angle sum.",
+        "working": "$\\angle R = 180° - 50° - 80° = 50°$"
+      },
+      {
+        "step": 2,
+        "instruction": "Use the correspondence in the congruence statement: $P \\leftrightarrow X$, $Q \\leftrightarrow Y$, $R \\leftrightarrow Z$.",
+        "working": "$\\angle Z$ corresponds to $\\angle R$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the conclusion.",
+        "working": "$\\angle Z = \\angle R = 50°$"
+      }
+    ],
+    "answer": "$\\angle Z = 50°$."
+  },
+  {
+    "id": "cong-worked-3",
+    "title": "Proving congruence in a rectangle and finding an angle",
+    "difficulty": 3,
+    "problem": "In rectangle $ABCD$, diagonal $AC$ is drawn. Prove that $\\triangle ABC \\cong \\triangle CDA$, then find $\\angle DCA$ given that $\\angle BAC = 28°$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify equal sides using properties of a rectangle.",
+        "working": "Opposite sides of a rectangle are equal: $AB = CD$ and $BC = DA$."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify equal angles.",
+        "working": "All angles in a rectangle are $90°$, so $\\angle ABC = \\angle CDA = 90°$."
+      },
+      {
+        "step": 3,
+        "instruction": "Match the congruence test: two sides and the included angle.",
+        "working": "$AB = CD$, $\\angle ABC = \\angle CDA = 90°$, $BC = DA$ → SAS"
+      },
+      {
+        "step": 4,
+        "instruction": "State the congruence.",
+        "working": "$\\therefore \\triangle ABC \\cong \\triangle CDA$ (SAS)"
+      },
+      {
+        "step": 5,
+        "instruction": "Write the correspondence and find $\\angle DCA$.",
+        "working": "The correspondence is $A \\leftrightarrow C$, $B \\leftrightarrow D$, $C \\leftrightarrow A$. So $\\angle BAC \\leftrightarrow \\angle DCA$, giving $\\angle DCA = 28°$."
+      }
+    ],
+    "answer": "$\\triangle ABC \\cong \\triangle CDA$ by SAS, and $\\angle DCA = 28°$."
+  }
+]

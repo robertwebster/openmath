@@ -1,0 +1,17 @@
+{
+  "id": "probability",
+  "title": "Probability",
+  "year": 9,
+  "stage": "5",
+  "extension": false,
+  "strand": "Statistics and Probability",
+  "syllabusOutcome": "MA5-PRB-C-01",
+  "description": "Calculate theoretical and experimental probability, use Venn diagrams, and apply complementary event rules.",
+  "subtopics": [
+    "sample-space",
+    "theoretical-probability",
+    "experimental-probability",
+    "complementary-events",
+    "venn-diagrams"
+  ]
+}

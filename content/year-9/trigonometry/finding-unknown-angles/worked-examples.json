@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fua-we-1",
+    "title": "Find an angle using sin⁻¹",
+    "difficulty": 1,
+    "problem": "In a right-angled triangle, the side opposite angle $\\theta$ is $3$ cm and the hypotenuse is $5$ cm. Find $\\theta$ to the nearest tenth of a degree.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the known sides and the correct trig ratio.",
+        "working": "The opposite side is $3$ cm and the hypotenuse is $5$ cm, so use $\\sin$. $$\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{3}{5}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the inverse sine function to find $\\theta$.",
+        "working": "$$\\theta = \\sin^{-1}\\!\\left(\\frac{3}{5}\\right) = \\sin^{-1}(0.6)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate using a calculator and round to 1 decimal place.",
+        "working": "$$\\theta \\approx 36.9°$$"
+      }
+    ],
+    "answer": "$\\theta \\approx 36.9°$"
+  },
+  {
+    "id": "fua-we-2",
+    "title": "Find the angle a ladder makes with the ground",
+    "difficulty": 2,
+    "problem": "A $10$ m ladder leans against a vertical wall with its base $4$ m from the wall. Find the angle the ladder makes with the ground, to the nearest tenth of a degree.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Draw and label the right-angled triangle.",
+        "working": "The ladder ($10$ m) is the hypotenuse. The distance from the wall ($4$ m) is the side adjacent to the angle with the ground."
+      },
+      {
+        "step": 2,
+        "instruction": "Choose the correct trig ratio.",
+        "working": "Adjacent and hypotenuse are known, so use $\\cos$. $$\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{4}{10} = 0.4$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply $\\cos^{-1}$ and evaluate.",
+        "working": "$$\\theta = \\cos^{-1}(0.4) \\approx 66.4°$$"
+      }
+    ],
+    "answer": "The ladder makes an angle of approximately $66.4°$ with the ground."
+  },
+  {
+    "id": "fua-we-3",
+    "title": "Find the base angle of an isosceles triangle",
+    "difficulty": 3,
+    "problem": "An isosceles triangle has two equal sides of $10$ cm and a base of $12$ cm. Find the base angle to the nearest tenth of a degree.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Draw the perpendicular height from the apex to the base.",
+        "working": "The height bisects the base, creating two right-angled triangles. Each has a hypotenuse of $10$ cm and a base of $\\dfrac{12}{2} = 6$ cm."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the sides relative to the base angle $\\theta$.",
+        "working": "For the base angle: adjacent $= 6$ cm, hypotenuse $= 10$ cm. Use $\\cos$. $$\\cos \\theta = \\frac{6}{10} = 0.6$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply $\\cos^{-1}$ and evaluate.",
+        "working": "$$\\theta = \\cos^{-1}(0.6) \\approx 53.1°$$"
+      }
+    ],
+    "answer": "The base angle is approximately $53.1°$."
+  }
+]

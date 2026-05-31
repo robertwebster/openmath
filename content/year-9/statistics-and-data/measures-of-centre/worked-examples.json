@@ -1,0 +1,79 @@
+[
+  {
+    "id": "moc-we-1",
+    "title": "Finding the mean of a dataset",
+    "difficulty": 1,
+    "problem": "Find the mean of the dataset: $5, \\ 8, \\ 3, \\ 10, \\ 4$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Add all the values to find the sum.",
+        "working": "$5 + 8 + 3 + 10 + 4 = 30$"
+      },
+      {
+        "step": 2,
+        "instruction": "Count the number of values in the dataset.",
+        "working": "There are $5$ values."
+      },
+      {
+        "step": 3,
+        "instruction": "Divide the sum by the number of values.",
+        "working": "$\\text{Mean} = \\dfrac{30}{5} = 6$"
+      }
+    ],
+    "answer": "Mean $= 6$"
+  },
+  {
+    "id": "moc-we-2",
+    "title": "Finding the median and mode",
+    "difficulty": 2,
+    "problem": "For the dataset $7, \\ 3, \\ 9, \\ 3, \\ 5, \\ 11, \\ 3, \\ 8$, find (a) the median and (b) the mode.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Order the values from smallest to largest.",
+        "working": "$3, \\ 3, \\ 3, \\ 5, \\ 7, \\ 8, \\ 9, \\ 11$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the median. With $8$ values (an even count), average the $4$th and $5$th values.",
+        "working": "$4$th value $= 5$, $5$th value $= 7$. $\\text{Median} = \\dfrac{5 + 7}{2} = 6$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the mode by identifying the most frequently occurring value.",
+        "working": "$3$ appears $3$ times; all other values appear fewer times. $\\text{Mode} = 3$"
+      }
+    ],
+    "answer": "(a) Median $= 6$; (b) Mode $= 3$"
+  },
+  {
+    "id": "moc-we-3",
+    "title": "Finding the mean from a frequency table",
+    "difficulty": 3,
+    "problem": "The frequency table below shows the number of siblings reported by $20$ students.\n\n$$\\begin{array}{|c|c|}\\hline \\text{Number of siblings} & \\text{Frequency} \\\\ \\hline 0 & 5 \\\\ 1 & 8 \\\\ 2 & 4 \\\\ 3 & 3 \\\\ \\hline \\end{array}$$\n\nFind the mean number of siblings.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Multiply each value by its frequency to find the contribution of each row.",
+        "working": "$0 \\times 5 = 0$ \\\\ $1 \\times 8 = 8$ \\\\ $2 \\times 4 = 8$ \\\\ $3 \\times 3 = 9$"
+      },
+      {
+        "step": 2,
+        "instruction": "Add the products to find the total number of siblings across all students.",
+        "working": "$\\text{Total} = 0 + 8 + 8 + 9 = 25$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the frequencies to confirm the total number of students.",
+        "working": "$\\text{Total frequency} = 5 + 8 + 4 + 3 = 20$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide the total by the total frequency to find the mean.",
+        "working": "$\\text{Mean} = \\dfrac{25}{20} = 1.25$"
+      }
+    ],
+    "answer": "Mean $= 1.25$ siblings"
+  }
+]

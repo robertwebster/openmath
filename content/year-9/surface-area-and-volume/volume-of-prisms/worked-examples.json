@@ -1,0 +1,69 @@
+[
+  {
+    "id": "volume-of-prisms-we-1",
+    "title": "Volume of a rectangular prism",
+    "difficulty": 1,
+    "problem": "A rectangular prism has length $4 \\text{ cm}$, width $6 \\text{ cm}$ and height $5 \\text{ cm}$. Find its volume.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the volume formula for a rectangular prism.",
+        "working": "$V = lwh$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known dimensions.",
+        "working": "$V = 4 \\times 6 \\times 5$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply to find the volume.",
+        "working": "$V = 120 \\text{ cm}^3$"
+      }
+    ],
+    "answer": "$120 \\text{ cm}^3$"
+  },
+  {
+    "id": "volume-of-prisms-we-2",
+    "title": "Volume of a triangular prism",
+    "difficulty": 2,
+    "problem": "A triangular prism has a right-angled triangular cross-section with base $8 \\text{ cm}$ and perpendicular height $3 \\text{ cm}$. The prism is $7 \\text{ cm}$ long. Find its volume.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the area of the triangular cross-section.",
+        "working": "$A = \\tfrac{1}{2} \\times b \\times h = \\tfrac{1}{2} \\times 8 \\times 3 = 12 \\text{ cm}^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the cross-sectional area by the length of the prism.",
+        "working": "$V = A \\times l = 12 \\times 7 = 84 \\text{ cm}^3$"
+      }
+    ],
+    "answer": "$84 \\text{ cm}^3$"
+  },
+  {
+    "id": "volume-of-prisms-we-3",
+    "title": "Volume of a tank and capacity",
+    "difficulty": 3,
+    "problem": "A rectangular water tank is $90 \\text{ cm}$ long, $60 \\text{ cm}$ wide and $50 \\text{ cm}$ deep. Water fills $\\tfrac{3}{4}$ of its capacity. How many litres of water are in the tank? ($1 \\text{ litre} = 1000 \\text{ cm}^3$)",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the full volume of the tank using $V = lwh$.",
+        "working": "$V = 90 \\times 60 \\times 50 = 270\\,000 \\text{ cm}^3$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the volume of water, which is $\\tfrac{3}{4}$ of the full volume.",
+        "working": "$V_{\\text{water}} = \\tfrac{3}{4} \\times 270\\,000 = 202\\,500 \\text{ cm}^3$"
+      },
+      {
+        "step": 3,
+        "instruction": "Convert from $\\text{cm}^3$ to litres by dividing by $1000$.",
+        "working": "$202\\,500 \\div 1000 = 202.5 \\text{ L}$"
+      }
+    ],
+    "answer": "$202.5 \\text{ L}$"
+  }
+]

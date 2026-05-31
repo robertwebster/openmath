@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fth-worked-1",
+    "title": "Finding the hypotenuse from two legs",
+    "difficulty": 1,
+    "problem": "A right-angled triangle has legs of length $6$ cm and $8$ cm. Find the length of the hypotenuse.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write Pythagoras' theorem.",
+        "working": "$c^2 = a^2 + b^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values.",
+        "working": "$c^2 = 6^2 + 8^2 = 36 + 64 = 100$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the square root of both sides.",
+        "working": "$c = \\sqrt{100} = 10$ cm"
+      }
+    ],
+    "answer": "$c = 10$ cm"
+  },
+  {
+    "id": "fth-worked-2",
+    "title": "Length of a ladder leaning against a wall",
+    "difficulty": 2,
+    "problem": "A ladder leans against a wall with its base $0.7$ m from the wall and reaching $2.4$ m up the wall. How long is the ladder?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the right-angled triangle. The ladder is the hypotenuse, the horizontal distance is one leg ($0.7$ m), and the vertical height is the other leg ($2.4$ m).",
+        "working": "$a = 0.7$ m, $b = 2.4$ m, find $c$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply Pythagoras' theorem and substitute.",
+        "working": "$c^2 = 0.7^2 + 2.4^2 = 0.49 + 5.76 = 6.25$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the square root.",
+        "working": "$c = \\sqrt{6.25} = 2.5$ m"
+      }
+    ],
+    "answer": "The ladder is $2.5$ m long."
+  },
+  {
+    "id": "fth-worked-3",
+    "title": "Diagonal of a square",
+    "difficulty": 3,
+    "problem": "A square has a side length of $10$ m. Find the length of its diagonal, to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recognise that the diagonal of a square divides it into two right-angled isosceles triangles. Each triangle has two legs equal to the side length of the square.",
+        "working": "$a = 10$ m, $b = 10$ m, find $c$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply Pythagoras' theorem.",
+        "working": "$c^2 = 10^2 + 10^2 = 100 + 100 = 200$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the square root. The result is a surd — simplify and then evaluate to 2 decimal places.",
+        "working": "$c = \\sqrt{200} = \\sqrt{100 \\times 2} = 10\\sqrt{2} \\approx 14.14$ m"
+      }
+    ],
+    "answer": "$10\\sqrt{2} \\approx 14.14$ m"
+  }
+]

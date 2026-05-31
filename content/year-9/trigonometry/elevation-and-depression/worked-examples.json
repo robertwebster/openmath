@@ -1,0 +1,89 @@
+[
+  {
+    "id": "ed-we-1",
+    "title": "Identifying angles of elevation and depression",
+    "difficulty": 1,
+    "problem": "A person stands $15$ m from the base of a tree and looks up at the top at an angle of $40°$ above the horizontal. (a) Name the type of angle formed. (b) Identify which side of the right-angled triangle represents the height of the tree, relative to the $40°$ angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Determine whether the person is looking up or down from horizontal.",
+        "working": "The person is looking upward from the horizontal, so the angle is an angle of elevation."
+      },
+      {
+        "step": 2,
+        "instruction": "Sketch the right-angled triangle. The $40°$ angle sits at the observer's position (on the ground). Label the three sides.",
+        "working": "$$\\text{hypotenuse} = \\text{line of sight}, \\quad \\text{adjacent} = 15 \\text{ m (horizontal base)}, \\quad \\text{opposite} = h \\text{ (height of tree)}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Identify the height of the tree relative to the $40°$ angle.",
+        "working": "The height of the tree is directly across from the $40°$ angle, so it is the opposite side."
+      },
+      {
+        "step": 4,
+        "instruction": "Set up the ratio to find the height (for reference).",
+        "working": "$$\\tan 40° = \\frac{h}{15} \\implies h = 15 \\times \\tan 40° = 15 \\times 0.8391\\ldots \\approx 12.59 \\text{ m}$$"
+      }
+    ],
+    "answer": "The angle is an angle of elevation. The height of the tree is the side opposite the $40°$ angle."
+  },
+  {
+    "id": "ed-we-2",
+    "title": "Finding a height using angle of elevation",
+    "difficulty": 2,
+    "problem": "From a point $40$ m from the base of a vertical tower, the angle of elevation to the top is $38°$. Find the height of the tower, correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the known information and the unknown.",
+        "working": "$$\\text{adjacent} = 40 \\text{ m}, \\quad \\theta = 38°, \\quad \\text{opposite} = h$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Choose the trigonometric ratio. The adjacent side ($40$ m) and opposite side ($h$) are involved, so use TOA.",
+        "working": "$$\\tan 38° = \\frac{h}{40}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Rearrange to make $h$ the subject.",
+        "working": "$$h = 40 \\times \\tan 38°$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Evaluate using a calculator and round to 2 decimal places.",
+        "working": "$$h = 40 \\times 0.78129\\ldots = 31.2514\\ldots \\approx 31.25 \\text{ m}$$"
+      }
+    ],
+    "answer": "$h \\approx 31.25$ m"
+  },
+  {
+    "id": "ed-we-3",
+    "title": "Multi-step: distance between two boats from a cliff",
+    "difficulty": 3,
+    "problem": "From the top of a cliff $60$ m above sea level, the angles of depression to two boats directly out to sea are $25°$ (farther boat) and $40°$ (nearer boat). Find the distance between the two boats, correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Set up the diagram. The cliff is $60$ m high. Two lines of sight go to the two boats. Using alternate interior angles, the angle at the base of each right-angled triangle equals the angle of depression.",
+        "working": "$$\\text{For each boat: } \\tan(\\text{angle}) = \\frac{60}{d} \\implies d = \\frac{60}{\\tan(\\text{angle})}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the horizontal distance from the cliff base to the nearer boat.",
+        "working": "$$d_1 = \\frac{60}{\\tan 40°} = \\frac{60}{0.83910\\ldots} = 71.51 \\text{ m}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the horizontal distance from the cliff base to the farther boat.",
+        "working": "$$d_2 = \\frac{60}{\\tan 25°} = \\frac{60}{0.46631\\ldots} = 128.67 \\text{ m}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Subtract to find the distance between the two boats.",
+        "working": "$$\\text{distance} = d_2 - d_1 = 128.67 - 71.51 = 57.16 \\text{ m}$$"
+      }
+    ],
+    "answer": "The distance between the two boats is approximately $57.16$ m."
+  }
+]

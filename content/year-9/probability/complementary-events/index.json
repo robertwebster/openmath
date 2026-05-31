@@ -1,0 +1,9 @@
+{
+  "id": "complementary-events",
+  "title": "Complementary events",
+  "topic": "probability",
+  "year": 9,
+  "strand": "Statistics and Probability",
+  "syllabusOutcome": "MA5-PRB-C-01",
+  "description": "Use the complementary event rule P(A') = 1 - P(A) to find probabilities, including problems where using the complement is the most efficient method."
+}

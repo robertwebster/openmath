@@ -1,0 +1,79 @@
+[
+  {
+    "id": "vd-ex-1",
+    "title": "Reading a Venn diagram",
+    "difficulty": 1,
+    "problem": "A Venn diagram shows events $A$ and $B$ within a sample space of $20$ equally likely outcomes. There are $6$ outcomes in $A$ only, $4$ outcomes in $B$ only, $3$ outcomes in both $A$ and $B$, and $7$ outcomes in neither. Find $P(A \\text{ or } B)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the outcomes that make up $A$ or $B$",
+        "working": "$A$ or $B$ includes every outcome inside at least one of the two circles: $A$ only, $B$ only, and both $A$ and $B$."
+      },
+      {
+        "step": 2,
+        "instruction": "Count the favourable outcomes",
+        "working": "$$n(A \\text{ or } B) = 6 + 4 + 3 = 13$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the probability",
+        "working": "$$P(A \\text{ or } B) = \\frac{n(A \\text{ or } B)}{n(\\text{sample space})} = \\frac{13}{20}$$"
+      }
+    ],
+    "answer": "$P(A \\text{ or } B) = \\dfrac{13}{20}$"
+  },
+  {
+    "id": "vd-ex-2",
+    "title": "Filling in a Venn diagram",
+    "difficulty": 2,
+    "problem": "In a class of $30$ students, $18$ play sport, $14$ study music, and $7$ do both. A student is chosen at random. Find $P(\\text{neither sport nor music})$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the number in each region",
+        "working": "Sport only: $18 - 7 = 11$. Music only: $14 - 7 = 7$. Both: $7$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the number in neither",
+        "working": "Total in sport or music: $11 + 7 + 7 = 25$. $$n(\\text{neither}) = 30 - 25 = 5$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the probability",
+        "working": "$$P(\\text{neither}) = \\frac{5}{30} = \\frac{1}{6}$$"
+      }
+    ],
+    "answer": "$P(\\text{neither sport nor music}) = \\dfrac{1}{6}$"
+  },
+  {
+    "id": "vd-ex-3",
+    "title": "Using the addition rule to find P(A and B)",
+    "difficulty": 3,
+    "problem": "For two events $A$ and $B$: $P(A) = \\dfrac{3}{5}$, $P(B) = \\dfrac{1}{2}$, and $P(A \\text{ or } B) = \\dfrac{4}{5}$. Find $P(A \\text{ and } B)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write down the addition rule",
+        "working": "$$P(A \\text{ or } B) = P(A) + P(B) - P(A \\text{ and } B)$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rearrange to make $P(A \\text{ and } B)$ the subject",
+        "working": "$$P(A \\text{ and } B) = P(A) + P(B) - P(A \\text{ or } B)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the known values",
+        "working": "$$P(A \\text{ and } B) = \\frac{3}{5} + \\frac{1}{2} - \\frac{4}{5}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Convert to a common denominator and simplify",
+        "working": "$$= \\frac{6}{10} + \\frac{5}{10} - \\frac{8}{10} = \\frac{3}{10}$$"
+      }
+    ],
+    "answer": "$P(A \\text{ and } B) = \\dfrac{3}{10}$"
+  }
+]

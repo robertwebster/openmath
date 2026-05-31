@@ -1,0 +1,69 @@
+[
+  {
+    "id": "bud-ex-1",
+    "title": "Calculating a percentage increase",
+    "difficulty": 1,
+    "problem": "A backpack costs $\\$95$ and the price increases by $20\\%$. What is the new price?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the amount of the increase by calculating $20\\%$ of the original price.",
+        "working": "\\text{Increase} = \\$95 \\times 0.20 = \\$19.00"
+      },
+      {
+        "step": 2,
+        "instruction": "Add the increase to the original price to get the new price.",
+        "working": "\\text{New price} = \\$95 + \\$19 = \\$114.00"
+      }
+    ],
+    "answer": "$\\$114.00$"
+  },
+  {
+    "id": "bud-ex-2",
+    "title": "Analysing a budget",
+    "difficulty": 2,
+    "problem": "Hannah earns $\\$1\\,600$ per week. She spends $35\\%$ on rent, $20\\%$ on food, and $10\\%$ on transport. How much does she have left each week for other expenses and savings?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Add the percentages for the three spending categories.",
+        "working": "35\\% + 20\\% + 10\\% = 65\\%"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the remaining percentage.",
+        "working": "100\\% - 65\\% = 35\\%"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate $35\\%$ of Hannah's weekly income.",
+        "working": "\\$1\\,600 \\times 0.35 = \\$560.00"
+      }
+    ],
+    "answer": "$\\$560.00$ per week"
+  },
+  {
+    "id": "bud-ex-3",
+    "title": "Saving toward a goal",
+    "difficulty": 3,
+    "problem": "Ben earns $\\$4\\,000$ per month and receives a $5\\%$ pay rise. After the rise, he saves $20\\%$ of his new monthly income. How much does Ben save in total over $12$ months?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate Ben's new monthly income after the pay rise.",
+        "working": "\\text{New income} = \\$4\\,000 \\times 1.05 = \\$4\\,200.00"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate his monthly savings as $20\\%$ of the new income.",
+        "working": "\\text{Monthly savings} = \\$4\\,200 \\times 0.20 = \\$840.00"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply the monthly savings by $12$ to find total savings over a year.",
+        "working": "\\text{Total savings} = \\$840 \\times 12 = \\$10\\,080.00"
+      }
+    ],
+    "answer": "$\\$10\\,080.00$"
+  }
+]

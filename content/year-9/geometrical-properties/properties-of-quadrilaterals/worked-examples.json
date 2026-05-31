@@ -1,0 +1,94 @@
+[
+  {
+    "id": "poq-worked-1",
+    "title": "Finding a missing angle in a parallelogram",
+    "difficulty": 1,
+    "problem": "A parallelogram has one angle of $130°$. Find the size of the adjacent angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the property of adjacent angles in a parallelogram.",
+        "working": "Adjacent angles in a parallelogram are co-interior angles and sum to $180°$."
+      },
+      {
+        "step": 2,
+        "instruction": "Write an equation for the adjacent angle.",
+        "working": "$130° + \\angle B = 180°$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for the adjacent angle.",
+        "working": "$\\angle B = 180° - 130° = 50°$"
+      }
+    ],
+    "answer": "The adjacent angle is $50°$."
+  },
+  {
+    "id": "poq-worked-2",
+    "title": "Finding equal angles in a kite",
+    "difficulty": 2,
+    "problem": "Kite $ABCD$ has $\\angle A = 80°$ and $\\angle C = 120°$. Angles $\\angle B$ and $\\angle D$ are equal. Find the size of $\\angle B$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the angle sum of a quadrilateral.",
+        "working": "$\\angle A + \\angle B + \\angle C + \\angle D = 360°$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known angles. Let $\\angle B = \\angle D = x$.",
+        "working": "$80 + x + 120 + x = 360$"
+      },
+      {
+        "step": 3,
+        "instruction": "Simplify the left side.",
+        "working": "$2x + 200 = 360$"
+      },
+      {
+        "step": 4,
+        "instruction": "Solve for $x$.",
+        "working": "$2x = 160$, so $x = 80$"
+      }
+    ],
+    "answer": "$\\angle B = 80°$."
+  },
+  {
+    "id": "poq-worked-3",
+    "title": "Using algebra to find angles in a parallelogram",
+    "difficulty": 3,
+    "problem": "In parallelogram $ABCD$, $\\angle A = (3x + 12)°$ and $\\angle B = (2x + 18)°$. Find $x$ and the size of $\\angle A$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall that adjacent angles in a parallelogram are supplementary.",
+        "working": "$\\angle A + \\angle B = 180°$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the expressions for each angle.",
+        "working": "$(3x + 12) + (2x + 18) = 180$"
+      },
+      {
+        "step": 3,
+        "instruction": "Collect like terms.",
+        "working": "$5x + 30 = 180$"
+      },
+      {
+        "step": 4,
+        "instruction": "Solve for $x$.",
+        "working": "$5x = 150$, so $x = 30$"
+      },
+      {
+        "step": 5,
+        "instruction": "Find $\\angle A$ by substituting $x = 30$.",
+        "working": "$\\angle A = 3(30) + 12 = 90 + 12 = 102°$"
+      },
+      {
+        "step": 6,
+        "instruction": "Check: $\\angle B = 2(30) + 18 = 78°$. Verify the angles sum to $180°$.",
+        "working": "$102° + 78° = 180°$ ✓"
+      }
+    ],
+    "answer": "$x = 30$ and $\\angle A = 102°$."
+  }
+]

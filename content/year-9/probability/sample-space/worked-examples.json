@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ss-we-1",
+    "title": "Listing a simple sample space",
+    "difficulty": 1,
+    "problem": "A spinner has $5$ equal sectors numbered $1$ to $5$. List the sample space when the spinner is spun once and state how many outcomes it contains.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify all the possible outcomes. Each sector is a separate outcome.",
+        "working": "The spinner can land on $1$, $2$, $3$, $4$, or $5$."
+      },
+      {
+        "step": 2,
+        "instruction": "Write the sample space using set notation.",
+        "working": "$$S = \\{1, 2, 3, 4, 5\\}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Count the number of outcomes.",
+        "working": "There are $5$ elements in the set, so the sample space contains $5$ outcomes."
+      }
+    ],
+    "answer": "$S = \\{1, 2, 3, 4, 5\\}$; $5$ outcomes"
+  },
+  {
+    "id": "ss-we-2",
+    "title": "Two-stage experiment",
+    "difficulty": 2,
+    "problem": "A coin is flipped and then a fair six-sided die is rolled. List all the outcomes in the sample space using a table, and state how many outcomes there are.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the outcomes for each stage.",
+        "working": "Coin: $\\{H, T\\}$ — $2$ outcomes. Die: $\\{1, 2, 3, 4, 5, 6\\}$ — $6$ outcomes."
+      },
+      {
+        "step": 2,
+        "instruction": "Systematically list all combinations by pairing each coin outcome with each die outcome.",
+        "working": "$$H1,\\ H2,\\ H3,\\ H4,\\ H5,\\ H6$$ $$T1,\\ T2,\\ T3,\\ T4,\\ T5,\\ T6$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the multiplication principle to count the total outcomes.",
+        "working": "$$2 \\times 6 = 12 \\text{ outcomes}$$"
+      }
+    ],
+    "answer": "The sample space has $12$ outcomes: $H1, H2, H3, H4, H5, H6, T1, T2, T3, T4, T5, T6$."
+  },
+  {
+    "id": "ss-we-3",
+    "title": "Three-stage experiment using the multiplication principle",
+    "difficulty": 3,
+    "problem": "A student chooses a shirt from $3$ colours (red, blue, white), a pair of pants from $2$ styles (jeans, chinos), and a pair of shoes from $4$ options. How many different outfits are possible?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the number of choices at each stage.",
+        "working": "Shirts: $3$ choices. Pants: $2$ choices. Shoes: $4$ choices."
+      },
+      {
+        "step": 2,
+        "instruction": "State the multiplication principle: for a multi-stage experiment, the total number of outcomes equals the product of the number of outcomes at each stage.",
+        "working": "$$\\text{Total outcomes} = 3 \\times 2 \\times 4$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the product.",
+        "working": "$$3 \\times 2 \\times 4 = 24$$"
+      }
+    ],
+    "answer": "$24$ different outfits are possible."
+  }
+]

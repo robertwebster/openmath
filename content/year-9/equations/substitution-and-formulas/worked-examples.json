@@ -1,0 +1,79 @@
+[
+  {
+    "id": "saf-we1",
+    "title": "Substituting into a formula",
+    "difficulty": 1,
+    "problem": "The area of a rectangle is given by $A = lw$. Find $A$ when $l = 9$ and $w = 5$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula.",
+        "working": "$$A = lw$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $l = 9$ and $w = 5$.",
+        "working": "$$A = 9 \\times 5$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate.",
+        "working": "$$A = 45$$"
+      }
+    ],
+    "answer": "$A = 45$ square units."
+  },
+  {
+    "id": "saf-we2",
+    "title": "Rearranging a formula to find an unknown",
+    "difficulty": 2,
+    "problem": "The formula $F = \\dfrac{9}{5}C + 32$ converts Celsius to Fahrenheit. Find the Celsius temperature $C$ when $F = 68$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula with the known value substituted.",
+        "working": "$$68 = \\frac{9}{5}C + 32$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Subtract $32$ from both sides.",
+        "working": "$$36 = \\frac{9}{5}C$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply both sides by $\\dfrac{5}{9}$ to isolate $C$.",
+        "working": "$$C = 36 \\times \\frac{5}{9} = \\frac{180}{9} = 20$$"
+      }
+    ],
+    "answer": "$C = 20$, so $68°\\text{F} = 20°\\text{C}$."
+  },
+  {
+    "id": "saf-we3",
+    "title": "Multi-step formula — Pythagoras' theorem",
+    "difficulty": 3,
+    "problem": "A right-angled triangle has a hypotenuse of $13$ cm and one leg of $5$ cm. Find the length of the other leg using Pythagoras' theorem: $c^2 = a^2 + b^2$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the known values. The hypotenuse is $c = 13$ and one leg is $a = 5$. We need to find $b$.",
+        "working": "$$13^2 = 5^2 + b^2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate the squares.",
+        "working": "$$169 = 25 + b^2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract $25$ from both sides.",
+        "working": "$$b^2 = 169 - 25 = 144$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Take the square root of both sides.",
+        "working": "$$b = \\sqrt{144} = 12$$"
+      }
+    ],
+    "answer": "The other leg is $12$ cm."
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "id": "index-law-rules-example-1",
+    "title": "Using the product and quotient rules",
+    "difficulty": 1,
+    "problem": "Simplify $7^5 \\times 7^3 \\div 7^4$. Give your answer as a power of $7$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the product rule to the multiplication.",
+        "working": "$7^5 \\times 7^3 = 7^{5+3} = 7^8$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the quotient rule to the division.",
+        "working": "$7^8 \\div 7^4 = 7^{8-4} = 7^4$"
+      }
+    ],
+    "answer": "$7^4$"
+  },
+  {
+    "id": "index-law-rules-example-2",
+    "title": "Using the power of a power rule with the quotient rule",
+    "difficulty": 2,
+    "problem": "Simplify $(4^3)^2 \\div 4^5$. Give your answer as a power of $4$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the power of a power rule.",
+        "working": "$(4^3)^2 = 4^{3 \\times 2} = 4^6$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the quotient rule.",
+        "working": "$4^6 \\div 4^5 = 4^{6-5} = 4^1 = 4$"
+      }
+    ],
+    "answer": "$4$"
+  },
+  {
+    "id": "index-law-rules-example-3",
+    "title": "Combining all three index laws",
+    "difficulty": 3,
+    "problem": "Simplify $\\dfrac{(6^2)^3 \\times 6^4}{6^3 \\times 6^5}$. Give your answer as a power of $6$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the power of a power rule to $(6^2)^3$.",
+        "working": "$(6^2)^3 = 6^{2 \\times 3} = 6^6$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the product rule to the numerator.",
+        "working": "$6^6 \\times 6^4 = 6^{6+4} = 6^{10}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the product rule to the denominator.",
+        "working": "$6^3 \\times 6^5 = 6^{3+5} = 6^8$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply the quotient rule.",
+        "working": "$6^{10} \\div 6^8 = 6^{10-8} = 6^2$"
+      }
+    ],
+    "answer": "$6^2$"
+  }
+]

@@ -1,0 +1,208 @@
+[
+  {
+    "id": "interp-d1-01",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A dot plot shows most values clustered near the left, with a long tail stretching to the right. How would you describe the shape of this distribution?",
+    "options": [
+      "Symmetric",
+      "Positively skewed",
+      "Negatively skewed",
+      "Bell-shaped"
+    ],
+    "answer": "Positively skewed",
+    "hint": "If the tail extends to the right, the distribution is skewed in that direction.",
+    "explanation": "When the tail extends to the right (towards higher values), the distribution is called positively skewed (or right-skewed). Most data is bunched on the left, with a few large values pulling the tail to the right."
+  },
+  {
+    "id": "interp-d1-02",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A histogram is roughly the same shape on both sides of the centre, with no obvious long tail on either side. How would you describe this distribution?",
+    "options": [
+      "Positively skewed",
+      "Negatively skewed",
+      "Symmetric",
+      "Uniform"
+    ],
+    "answer": "Symmetric",
+    "hint": "A distribution where both sides look like mirror images is symmetric.",
+    "explanation": "If the left and right sides of the histogram are roughly mirror images of each other, the distribution is symmetric. In a symmetric distribution the mean and median are close to each other."
+  },
+  {
+    "id": "interp-d1-03",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A stem-and-leaf plot for test scores shows most data near the high end, with a long tail stretching to the left (low scores). Which description fits best?",
+    "options": [
+      "Symmetric",
+      "Positively skewed",
+      "Negatively skewed",
+      "Bi-modal"
+    ],
+    "answer": "Negatively skewed",
+    "hint": "When the tail extends to the left (lower values), the distribution is skewed in that direction.",
+    "explanation": "When the tail extends to the left (towards lower values), the distribution is negatively skewed (or left-skewed). Most scores are high, but a few low scores create the tail on the left."
+  },
+  {
+    "id": "interp-d1-04",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "The ages of people at a community event are: $12, 14, 15, 15, 16, 17, 18, 72$. Which value is an outlier?",
+    "options": [
+      "$12$",
+      "$18$",
+      "$72$",
+      "$15$"
+    ],
+    "answer": "$72$",
+    "hint": "An outlier is a value that is far away from the rest of the data.",
+    "explanation": "The value $72$ is an outlier because it is much larger than all other values in the dataset, which are clustered between $12$ and $18$. Outliers are data points that lie far from the main group."
+  },
+  {
+    "id": "interp-d2-01",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "The daily maximum temperatures (°C) for two weeks are: $18, 19, 20, 20, 21, 21, 22, 22, 22, 23, 23, 24, 24, 45$. The value $45$ is an outlier. Which statement best explains the effect of this outlier on the mean?",
+    "options": [
+      "The outlier makes the mean much higher than the typical temperature.",
+      "The outlier makes the mean much lower than the typical temperature.",
+      "The outlier has no effect on the mean.",
+      "The outlier makes the mean equal to the median."
+    ],
+    "answer": "The outlier makes the mean much higher than the typical temperature.",
+    "hint": "Think about how one very large value affects the sum used to calculate the mean.",
+    "explanation": "The mean of the 13 non-outlier values is about $21.5$°C. Including $45$ pushes the mean of all 14 values to about $23.1$°C — higher than most of the actual temperatures. Outliers pull the mean towards them, which is why the median is often a better measure of centre for skewed data."
+  },
+  {
+    "id": "interp-d2-02",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A dataset of house prices (in $\\$1000$s) is: $320, 340, 355, 360, 370, 380, 390, 850$. The value $850$ is an outlier. What is the mean of the seven non-outlier values? Give your answer to the nearest whole number.",
+    "answer": 359,
+    "tolerance": 0,
+    "hint": "Add the seven values (excluding $850$) and divide by $7$.",
+    "explanation": "Sum of the seven values: $320 + 340 + 355 + 360 + 370 + 380 + 390 = 2515$. Mean $= 2515 \\div 7 \\approx 359.3$, which rounds to $359$ (in $\\$1000$s)."
+  },
+  {
+    "id": "interp-d2-03",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A dataset has a large outlier at the high end. Which measure of centre is least affected by this outlier?",
+    "options": [
+      "Mean",
+      "Median",
+      "Range",
+      "Sum"
+    ],
+    "answer": "Median",
+    "hint": "The median depends only on the position of the middle value, not the size of extreme values.",
+    "explanation": "The median is resistant to outliers because it is determined by the middle position — a single extreme value cannot move the middle very much. The mean is pulled towards the outlier because every value contributes to the sum. The range is also heavily affected because it uses the maximum and minimum values."
+  },
+  {
+    "id": "interp-d2-04",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A student earns these weekly amounts from casual work: $\\$80, \\$85, \\$90, \\$90, \\$95, \\$200$. The $\\$200$ is an outlier (an unusually busy week). Which statement correctly describes the effect of removing the outlier on the range?",
+    "options": [
+      "The range increases from $\\$120$ to $\\$200$.",
+      "The range decreases from $\\$120$ to $\\$15$.",
+      "The range stays the same.",
+      "The range decreases from $\\$115$ to $\\$15$."
+    ],
+    "answer": "The range decreases from $\\$120$ to $\\$15$.",
+    "hint": "Range = maximum $-$ minimum. Calculate with and without $\\$200$.",
+    "explanation": "With the outlier: range $= 200 - 80 = \\$120$. Without the outlier: range $= 95 - 80 = \\$15$. Removing the outlier greatly reduces the range, showing how sensitive the range is to extreme values."
+  },
+  {
+    "id": "interp-d3-01",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Two classes sat the same maths test. Class A has a mean of $72$ and an IQR of $8$. Class B has a mean of $68$ and an IQR of $24$. Which conclusion is best supported by the data?",
+    "options": [
+      "Class A performed better on average and its results were more consistent.",
+      "Class B performed better on average and its results were more consistent.",
+      "Class A performed better on average but its results were less consistent.",
+      "Both classes performed equally and had similar spread."
+    ],
+    "answer": "Class A performed better on average and its results were more consistent.",
+    "hint": "Compare means for centre and IQR for spread. A smaller IQR means less spread.",
+    "explanation": "Class A has a higher mean ($72 > 68$), so it performed better on average. Class A also has a smaller IQR ($8 < 24$), meaning its results are more tightly clustered — more consistent. Class B's wider IQR indicates more variation in individual scores."
+  },
+  {
+    "id": "interp-d3-02",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Dataset A: $4, 6, 8, 10, 12$. Dataset B: $4, 6, 8, 10, 22$. Both datasets have the same median. By how much does the mean of Dataset B exceed the mean of Dataset A?",
+    "answer": 2,
+    "tolerance": 0,
+    "hint": "Calculate the mean of each dataset, then subtract.",
+    "explanation": "Mean of A $= (4 + 6 + 8 + 10 + 12) \\div 5 = 40 \\div 5 = 8$. Mean of B $= (4 + 6 + 8 + 10 + 22) \\div 5 = 50 \\div 5 = 10$. Difference $= 10 - 8 = 2$. Both datasets have median $= 8$ (the middle value), showing that the outlier $22$ raised the mean but did not change the median."
+  },
+  {
+    "id": "interp-d3-03",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "The points scored per game by two basketball players over a season are summarised below:\n\n$$\\begin{array}{lcc} & \\text{Player A} & \\text{Player B} \\\\ \\hline \\text{Mean} & 18 & 18 \\\\ \\text{Median} & 17 & 18 \\\\ \\text{IQR} & 6 & 14 \\end{array}$$\n\nWhich statement best describes the comparison between the two players?",
+    "options": [
+      "Player A is more consistent; Player B has more variable scoring.",
+      "Player B is more consistent; Player A has more variable scoring.",
+      "Both players are equally consistent because they have the same mean.",
+      "Player A typically scores higher than Player B."
+    ],
+    "answer": "Player A is more consistent; Player B has more variable scoring.",
+    "hint": "Use IQR to compare consistency. A smaller IQR means less spread.",
+    "explanation": "Both players have the same mean ($18$ points), so their average scoring is equal. However, Player A's IQR is $6$ compared to Player B's IQR of $14$. A smaller IQR means Player A's scores are more tightly clustered — more consistent from game to game. Player B's larger IQR indicates more variable performance."
+  },
+  {
+    "id": "interp-d3-04",
+    "subtopic": "interpreting-data",
+    "topic": "statistics-and-data",
+    "year": 9,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A dataset of $10$ values has a mean of $30$. A new value of $140$ is added. What happens to the mean and median after adding this outlier?",
+    "options": [
+      "The mean increases more than the median.",
+      "The median increases more than the mean.",
+      "Both increase by the same amount.",
+      "Neither changes."
+    ],
+    "answer": "The mean increases more than the median.",
+    "hint": "The mean uses every value in its calculation; the median only uses the middle position.",
+    "explanation": "Original sum $= 10 \\times 30 = 300$. New mean $= (300 + 140) \\div 11 = 440 \\div 11 = 40$, an increase of $10$. The median of $11$ ordered values is the 6th value. Adding $140$ at the top shifts the 6th position by one place, typically producing a much smaller change in the median. The mean increases more because it is directly pulled towards the large outlier."
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "scr-we-1",
+    "title": "Identifying sides and writing ratios",
+    "difficulty": 1,
+    "problem": "A right-angled triangle has angle $\\theta$ at one vertex. The side opposite $\\theta$ is $6$ cm, the side adjacent to $\\theta$ is $8$ cm, and the hypotenuse is $10$ cm. Write the values of $\\sin \\theta$, $\\cos \\theta$ and $\\tan \\theta$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the three sides relative to $\\theta$.",
+        "working": "$$\\text{opposite} = 6 \\text{ cm}, \\quad \\text{adjacent} = 8 \\text{ cm}, \\quad \\text{hypotenuse} = 10 \\text{ cm}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply SOHCAHTOA to write $\\sin \\theta$.",
+        "working": "$$\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{6}{10} = 0.6$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply SOHCAHTOA to write $\\cos \\theta$.",
+        "working": "$$\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{8}{10} = 0.8$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply SOHCAHTOA to write $\\tan \\theta$.",
+        "working": "$$\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{6}{8} = 0.75$$"
+      }
+    ],
+    "answer": "$\\sin \\theta = 0.6$, $\\cos \\theta = 0.8$, $\\tan \\theta = 0.75$"
+  },
+  {
+    "id": "scr-we-2",
+    "title": "Evaluating a trig ratio with a calculator",
+    "difficulty": 2,
+    "problem": "Use a calculator to find $\\tan 57°$ correct to 4 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Check that your calculator is set to degree mode.",
+        "working": "Mode: Degrees"
+      },
+      {
+        "step": 2,
+        "instruction": "Enter $\\tan 57°$ on your calculator.",
+        "working": "$$\\tan 57° = 1.539864957\\ldots$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Round to 4 decimal places. The fifth decimal digit is $6$, so round up.",
+        "working": "$$\\tan 57° \\approx 1.5399$$"
+      }
+    ],
+    "answer": "$\\tan 57° \\approx 1.5399$"
+  },
+  {
+    "id": "scr-we-3",
+    "title": "Setting up a trig equation for an unknown side",
+    "difficulty": 3,
+    "problem": "A right-angled triangle has angle $\\theta = 42°$ at one vertex and a hypotenuse of $15$ cm. Write an equation for the length of the opposite side $x$, then calculate $x$ correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the known information and the unknown. We know the hypotenuse and the angle, and we want the opposite side.",
+        "working": "$$\\text{hypotenuse} = 15 \\text{ cm}, \\quad \\theta = 42°, \\quad \\text{opposite} = x$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Choose the ratio that links the opposite side and the hypotenuse. That is SOH: $\\sin \\theta = \\dfrac{\\text{opposite}}{\\text{hypotenuse}}$.",
+        "working": "$$\\sin 42° = \\frac{x}{15}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Rearrange to make $x$ the subject.",
+        "working": "$$x = 15 \\sin 42°$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Evaluate using a calculator.",
+        "working": "$$x = 15 \\times 0.6691\\ldots = 10.037\\ldots \\approx 10.04 \\text{ cm}$$"
+      }
+    ],
+    "answer": "$x = 15 \\sin 42° \\approx 10.04$ cm"
+  }
+]

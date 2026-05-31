@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ep-ex-1",
+    "title": "Calculating relative frequency",
+    "difficulty": 1,
+    "problem": "A spinner is spun $50$ times. It lands on blue $15$ times. Find the experimental probability of landing on blue.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the number of trials and the frequency of the event",
+        "working": "Total number of spins (trials) $= 50$. Number of times blue appeared (frequency) $= 15$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the experimental probability formula",
+        "working": "$$P(\\text{blue}) = \\frac{\\text{frequency of event}}{\\text{total number of trials}} = \\frac{15}{50}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Simplify the fraction",
+        "working": "$$\\frac{15}{50} = \\frac{3}{10}$$"
+      }
+    ],
+    "answer": "$P(\\text{blue}) = \\dfrac{3}{10}$"
+  },
+  {
+    "id": "ep-ex-2",
+    "title": "Comparing experimental and theoretical probability",
+    "difficulty": 2,
+    "problem": "A fair six-sided die is rolled $60$ times and a $1$ appears $7$ times. Find the experimental probability of rolling a $1$, and compare it to the theoretical probability.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the experimental probability",
+        "working": "$$P_\\text{exp}(1) = \\frac{7}{60}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "State the theoretical probability",
+        "working": "For a fair die, each face is equally likely. $P_\\text{theo}(1) = \\dfrac{1}{6} = \\dfrac{10}{60}$."
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the two values",
+        "working": "Experimental: $\\dfrac{7}{60} \\approx 0.117$. Theoretical: $\\dfrac{10}{60} \\approx 0.167$. The experimental probability is less than the theoretical probability. This is normal — experimental results vary from trial to trial, and tend to get closer to the theoretical value as the number of trials increases."
+      }
+    ],
+    "answer": "$P_\\text{exp}(1) = \\dfrac{7}{60}$, which is less than the theoretical probability of $\\dfrac{1}{6}$."
+  },
+  {
+    "id": "ep-ex-3",
+    "title": "Predicting expected frequency",
+    "difficulty": 3,
+    "problem": "In an experiment, a bag of counters is sampled with replacement $60$ times and a green counter is drawn $18$ times. If the bag is sampled $300$ times, how many times would you expect to draw green?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the experimental probability of drawing green",
+        "working": "$$P(\\text{green}) = \\frac{18}{60} = \\frac{3}{10}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Use the experimental probability to find the expected frequency",
+        "working": "$$\\text{Expected frequency} = P(\\text{green}) \\times \\text{number of trials} = \\frac{3}{10} \\times 300$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the result",
+        "working": "$$\\frac{3}{10} \\times 300 = 90$$"
+      }
+    ],
+    "answer": "You would expect to draw green $90$ times."
+  }
+]

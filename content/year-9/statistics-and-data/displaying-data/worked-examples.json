@@ -1,0 +1,74 @@
+[
+  {
+    "id": "dd-we-1",
+    "title": "Reading a stem-and-leaf plot",
+    "difficulty": 1,
+    "problem": "The stem-and-leaf plot shows the ages (in years) of $9$ people at a sports club.\n\n$$\\begin{array}{r|l} \\text{Stem} & \\text{Leaf} \\\\ \\hline 1 & 5 \\quad 8 \\quad 8 \\\\ 2 & 0 \\quad 3 \\quad 7 \\\\ 3 & 1 \\quad 4 \\quad 9 \\end{array}$$\n\nKey: $1 \\mid 5$ means $15$.\n\nFind (a) the mode and (b) the median.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Read the plot to list all values in order. The stem gives the tens digit and each leaf gives the units digit.",
+        "working": "$15, \\ 18, \\ 18, \\ 20, \\ 23, \\ 27, \\ 31, \\ 34, \\ 39$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the mode by identifying the value that appears most often.",
+        "working": "$18$ appears twice; all other values appear once. Mode $= 18$."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the median. With $9$ values, the median is the $5$th value in the ordered list.",
+        "working": "$\\underbrace{15, \\ 18, \\ 18, \\ 20, \\ \\mathbf{23}, \\ 27, \\ 31, \\ 34, \\ 39}_{9 \\text{ values}}$ Median $= 23$."
+      }
+    ],
+    "answer": "(a) Mode $= 18$; (b) Median $= 23$"
+  },
+  {
+    "id": "dd-we-2",
+    "title": "Reading a histogram",
+    "difficulty": 2,
+    "problem": "The table below summarises a histogram showing the number of hours $40$ students spent studying in one week.\n\n$$\\begin{array}{|c|c|} \\hline \\text{Hours} & \\text{Frequency} \\\\ \\hline [0, 2) & 4 \\\\ [2, 4) & 8 \\\\ [4, 6) & 12 \\\\ [6, 8) & 10 \\\\ [8, 10) & 6 \\\\ \\hline \\end{array}$$\n\nFind (a) the modal class, (b) the relative frequency of the $[4, 6)$ class, and (c) the number of students who studied for fewer than $4$ hours.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the modal class by identifying the interval with the highest frequency.",
+        "working": "Frequencies: $4, \\ 8, \\ 12, \\ 10, \\ 6$. The highest is $12$, in the class $[4, 6)$. Modal class $= [4, 6)$."
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the relative frequency of $[4, 6)$ by dividing its frequency by the total.",
+        "working": "Total $= 4 + 8 + 12 + 10 + 6 = 40$. Relative frequency $= \\dfrac{12}{40} = 0.3$."
+      },
+      {
+        "step": 3,
+        "instruction": "Add the frequencies for all classes below $4$ hours.",
+        "working": "Classes $[0, 2)$ and $[2, 4)$: $4 + 8 = 12$ students."
+      }
+    ],
+    "answer": "(a) Modal class $= [4, 6)$; (b) Relative frequency $= 0.3$; (c) $12$ students"
+  },
+  {
+    "id": "dd-we-3",
+    "title": "Choosing the right statistical display",
+    "difficulty": 3,
+    "problem": "For each situation below, identify the most appropriate statistical display and give a reason.\n\n(a) A teacher records the individual test scores (out of $50$) for $30$ students.\n\n(b) A scientist measures the heights (in cm) of $1500$ seedlings, ranging from $5$ cm to $85$ cm.\n\n(c) A shop records its daily revenue every day for two years.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "For (a): identify the data type and quantity, then match to an appropriate display.",
+        "working": "The data is numerical with $30$ individual values. A stem-and-leaf plot groups values by tens digit, preserves each individual score, and clearly shows the shape of the distribution for a moderate-sized dataset."
+      },
+      {
+        "step": 2,
+        "instruction": "For (b): consider the large number of values and wide range.",
+        "working": "With $1500$ values spanning $5$ to $85$ cm, a histogram groups values into class intervals. This makes the distribution readable without the overcrowding that a dot plot or stem-and-leaf would produce."
+      },
+      {
+        "step": 3,
+        "instruction": "For (c): consider that the data is recorded over a sequence of time periods.",
+        "working": "Daily revenue over two years is a time-series dataset. A line graph connects consecutive data points, making trends, seasonal patterns and unusual days easy to identify."
+      }
+    ],
+    "answer": "(a) Stem-and-leaf plot; (b) Histogram; (c) Line graph"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "compound-interest",
+  "title": "Compound interest",
+  "topic": "financial-mathematics",
+  "year": 9,
+  "strand": "Number and Algebra",
+  "syllabusOutcome": "MA5-NAF-C-01",
+  "description": "Calculate compound interest using A = P(1 + r)^n, find the interest earned, and solve problems involving an unknown principal or number of periods."
+}

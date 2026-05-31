@@ -1,0 +1,16 @@
+{
+  "id": "trigonometry",
+  "title": "Trigonometry",
+  "year": 9,
+  "stage": "5",
+  "extension": false,
+  "strand": "Measurement and Space",
+  "syllabusOutcome": "MA5-TRG-C-01",
+  "description": "Use trigonometric ratios to find unknown sides and angles in right-angled triangles, including angles of elevation and depression.",
+  "subtopics": [
+    "sin-cos-tan-ratios",
+    "finding-unknown-sides",
+    "finding-unknown-angles",
+    "elevation-and-depression"
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "direct-proportion-we-1",
+    "title": "Identify the constant of proportionality from a table",
+    "difficulty": 1,
+    "problem": "The table shows values of $x$ and $y$. $$\\begin{array}{c|ccc} x & 2 & 3 & 5 \\\\ \\hline y & 14 & 21 & 35 \\end{array}$$ Find the constant of proportionality $k$ and write the equation relating $y$ and $x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Check whether $y \\div x$ is constant across all pairs.",
+        "working": "$14 \\div 2 = 7, \\quad 21 \\div 3 = 7, \\quad 35 \\div 5 = 7$"
+      },
+      {
+        "step": 2,
+        "instruction": "Since the ratio is the same for all pairs, $y$ is directly proportional to $x$. The constant of proportionality equals this ratio.",
+        "working": "$k = 7$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the equation in the form $y = kx$.",
+        "working": "$y = 7x$"
+      }
+    ],
+    "answer": "$k = 7$ and $y = 7x$"
+  },
+  {
+    "id": "direct-proportion-we-2",
+    "title": "Find missing values using $y = kx$",
+    "difficulty": 2,
+    "problem": "$y$ is directly proportional to $x$. When $x = 5$, $y = 30$. (a) Find $k$. (b) Find $y$ when $x = 9$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Use $k = y \\div x$ with the known pair to find the constant of proportionality.",
+        "working": "$k = 30 \\div 5 = 6$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the equation.",
+        "working": "$y = 6x$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $x = 9$ to find the missing value.",
+        "working": "$y = 6 \\times 9 = 54$"
+      }
+    ],
+    "answer": "$k = 6$; when $x = 9$, $y = 54$"
+  },
+  {
+    "id": "direct-proportion-we-3",
+    "title": "Solve a direct proportion word problem",
+    "difficulty": 3,
+    "problem": "The amount of paint $L$ litres needed to cover a wall is directly proportional to the area $A$ m$^2$ being painted. 12 litres covers 48 m$^2$. How many litres are needed to cover 80 m$^2$?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the relationship in the form $L = kA$, then use the known values to find $k$.",
+        "working": "$k = L \\div A = 12 \\div 48 = 0.25$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the equation.",
+        "working": "$L = 0.25A$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $A = 80$ to find the required amount of paint.",
+        "working": "$L = 0.25 \\times 80 = 20$"
+      }
+    ],
+    "answer": "20 litres"
+  }
+]
