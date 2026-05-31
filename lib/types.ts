@@ -32,6 +32,13 @@ export interface WorkedExample {
   answer: string;
 }
 
+export interface SubtopicVerifier {
+  date: string;
+  initials: string;
+  notes?: string;
+  screenshot?: string;
+}
+
 export interface SubtopicMeta {
   id: string;
   title: string;
@@ -40,6 +47,7 @@ export interface SubtopicMeta {
   strand: string;
   syllabusOutcome: string;
   description: string;
+  verifiers?: SubtopicVerifier[];
 }
 
 export interface TopicMeta {
