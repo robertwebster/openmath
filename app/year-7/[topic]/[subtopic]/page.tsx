@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getTopicMeta, getSubtopicMeta, getQuestions, getWorkedExamples } from "@/lib/content";
-import SubtopicContent from "@/app/year-9/[topic]/[subtopic]/SubtopicContent";
+import SubtopicContent from "@/components/SubtopicContent";
 
 interface Props {
   params: Promise<{ topic: string; subtopic: string }>;
