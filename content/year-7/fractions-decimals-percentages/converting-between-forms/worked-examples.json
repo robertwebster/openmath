@@ -1,0 +1,59 @@
+[
+  {
+    "id": "cvt-ex-1",
+    "title": "Converting a fraction to a decimal",
+    "difficulty": 1,
+    "problem": "Convert $\\dfrac{3}{4}$ to a decimal.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Divide the numerator by the denominator.",
+        "working": "$$3 \\div 4 = 0.75$$"
+      }
+    ],
+    "answer": "$0.75$"
+  },
+  {
+    "id": "cvt-ex-2",
+    "title": "Converting a decimal to a percentage",
+    "difficulty": 2,
+    "problem": "Convert $0.65$ to a percentage.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Multiply the decimal by $100$.",
+        "working": "$$0.65 \\times 100 = 65$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the result with a percentage sign.",
+        "working": "$$65\\%$$"
+      }
+    ],
+    "answer": "$65\\%$"
+  },
+  {
+    "id": "cvt-ex-3",
+    "title": "Ordering mixed forms",
+    "difficulty": 3,
+    "problem": "Arrange $\\dfrac{3}{5}$, $0.55$, and $62\\%$ in order from smallest to largest.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Convert all values to decimals.",
+        "working": "$$\\frac{3}{5} = 3 \\div 5 = 0.6$$\n$$62\\% = 62 \\div 100 = 0.62$$\n$$0.55 = 0.55$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Compare the decimal values.",
+        "working": "$$0.55 < 0.6 < 0.62$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the original values in that order.",
+        "working": "$0.55$, $\\dfrac{3}{5}$, $62\\%$"
+      }
+    ],
+    "answer": "$0.55$, $\\dfrac{3}{5}$, $62\\%$"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "id": "computation-with-integers",
+  "title": "Computation with integers",
+  "year": 7,
+  "stage": "4",
+  "extension": false,
+  "strand": "Number",
+  "syllabusOutcome": "MA4-INT-C-01",
+  "description": "Add, subtract, multiply and divide integers. Apply order of operations.",
+  "subtopics": [
+    "adding-and-subtracting-integers",
+    "multiplying-and-dividing-integers",
+    "order-of-operations"
+  ]
+}

@@ -165,6 +165,31 @@ content/
 }
 ```
 
+The `verifiers` field is optional and starts absent. It is added by a human reviewer after checking the sub-topic content for accuracy and NSW syllabus alignment — never by the content generation process.
+
+```json
+{
+  "id": "angles-of-elevation-depression",
+  ...
+  "verifiers": [
+    {
+      "date": "2026-06-01",
+      "initials": "RW",
+      "notes": "All 12 questions checked. Q7 answer corrected from 4.32 to 4.33.",
+      "screenshot": "verify-trig-elev-2026-06-01.png"
+    }
+  ]
+}
+```
+
+**Fields:**
+- `date` — ISO date the review was done
+- `initials` — reviewer's initials
+- `notes` — optional free text, useful for recording corrections made
+- `screenshot` — optional filename of a screenshot showing the page working correctly
+
+**Do not include `verifiers` when generating new content.** The field is added manually after a human has worked through the questions and confirmed they are correct.
+
 ### `questions.json` — Sub-topic question bank
 
 Questions live here and only here. Topic and year quizzes aggregate from these files.

@@ -10,12 +10,15 @@ interface Props {
   workedExamples: WorkedExample[];
 }
 
+const SUCCESS_EMOJIS = ["🎉", "🌟", "🚀", "✨", "🎊"];
+
 interface QuestionState {
   value: string;
   denominator: string;
   selected: string;
   submitted: boolean;
   correct: boolean;
+  emoji: string;
   showExplanation: boolean;
 }
 
@@ -57,6 +60,7 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
       submitted: false,
       correct: false,
       showExplanation: false,
+      emoji: "",
     }))
   );
 
@@ -76,7 +80,8 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
     const q = questions[index];
     const state = questionStates[index];
     const correct = checkAnswer(q, state);
-    updateQuestion(index, { submitted: true, correct, showExplanation: true });
+    const emoji = correct ? SUCCESS_EMOJIS[Math.floor(Math.random() * SUCCESS_EMOJIS.length)] : "";
+    updateQuestion(index, { submitted: true, correct, showExplanation: true, emoji });
   }
 
   function handleReset(index: number) {
@@ -87,6 +92,7 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
       submitted: false,
       correct: false,
       showExplanation: false,
+      emoji: "",
     });
   }
 
@@ -353,20 +359,23 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
                     </button>
                   )}
 
-                  {qs.submitted && (
-                    <button
-                      onClick={() => handleReset(qi)}
-                      className="print:hidden text-sm font-medium text-slate-600 hover:text-slate-800 border border-slate-200 rounded-lg px-4 py-2 transition-colors"
-                    >
-                      Try again
-                    </button>
-                  )}
-
                   {/* Feedback */}
                   {qs.submitted && (
-                    <p className={`mt-4 text-sm font-medium ${qs.correct ? "text-green-700" : "text-red-700"}`}>
-                      {qs.correct ? "Correct." : "Not quite."}
-                    </p>
+                    <div className="mt-4 flex items-center gap-3">
+                      {qs.correct ? (
+                        <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-green-700 bg-green-100 border border-green-300 rounded-full px-3 py-1">
+                          <span>{qs.emoji}</span>
+                          Correct
+                        </span>
+                      ) : (
+                        <>
+                          <span className="inline-flex items-center text-xs font-semibold text-red-700 bg-red-100 border border-red-300 rounded-full px-3 py-1">
+                            Not quite
+                          </span>
+                          <span className="text-sm text-slate-500">See below for the working.</span>
+                        </>
+                      )}
+                    </div>
                   )}
 
                   {/* Explanation — always in DOM, shown via state or print */}
@@ -376,6 +385,15 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
                       <MathText text={q.explanation} className="text-sm text-slate-700 leading-relaxed" />
                     </div>
                   </div>
+
+                  {qs.submitted && (
+                    <button
+                      onClick={() => handleReset(qi)}
+                      className="print:hidden mt-4 text-sm font-medium text-slate-600 hover:text-slate-800 border border-slate-200 rounded-lg px-4 py-2 transition-colors"
+                    >
+                      Try again
+                    </button>
+                  )}
                 </div>
               </div>
             );

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "y7-prb-tprob-we-1",
+    "title": "Probability of a simple event",
+    "difficulty": 1,
+    "problem": "A bag contains 3 red marbles and 7 blue marbles. One marble is drawn at random. Find the probability of drawing a red marble.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Count the total number of outcomes.",
+        "working": "Total marbles $= 3 + 7 = 10$"
+      },
+      {
+        "step": 2,
+        "instruction": "Count the number of favourable outcomes.",
+        "working": "There are 3 red marbles, so there are 3 favourable outcomes."
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the probability formula.",
+        "working": "$$P(\\text{red}) = \\frac{\\text{favourable outcomes}}{\\text{total outcomes}} = \\frac{3}{10}$$"
+      }
+    ],
+    "answer": "3/10"
+  },
+  {
+    "id": "y7-prb-tprob-we-2",
+    "title": "Probability of a complementary event",
+    "difficulty": 2,
+    "problem": "A standard six-sided die is rolled. Find the probability of NOT rolling a prime number.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "List all possible outcomes.",
+        "working": "The outcomes are $\\{1, 2, 3, 4, 5, 6\\}$ — 6 equally likely outcomes."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the prime numbers on the die.",
+        "working": "Prime numbers: $2, 3, 5$. There are 3 primes, so $P(\\text{prime}) = \\dfrac{3}{6} = \\dfrac{1}{2}$."
+      },
+      {
+        "step": 3,
+        "instruction": "Use the complementary rule to find P(not prime).",
+        "working": "$$P(\\text{not prime}) = 1 - P(\\text{prime}) = 1 - \\frac{1}{2} = \\frac{1}{2}$$"
+      }
+    ],
+    "answer": "1/2"
+  },
+  {
+    "id": "y7-prb-tprob-we-3",
+    "title": "Probability from a two-way table",
+    "difficulty": 3,
+    "problem": "A survey of 50 people records their gender and beverage preference. The results: 15 males prefer tea, 10 males prefer coffee, 12 females prefer tea and 13 females prefer coffee. A person is chosen at random. Find the probability the person is male and prefers coffee.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Organise the data into a two-way table.",
+        "working": "Male: tea 15, coffee 10, total 25. Female: tea 12, coffee 13, total 25. Overall total: 50."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the number of favourable outcomes.",
+        "working": "The cell for male and coffee shows 10 people."
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the probability formula.",
+        "working": "$$P(\\text{male and coffee}) = \\frac{10}{50} = \\frac{1}{5}$$"
+      }
+    ],
+    "answer": "1/5"
+  }
+]

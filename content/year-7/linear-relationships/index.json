@@ -1,0 +1,11 @@
+{
+  "id": "linear-relationships",
+  "title": "Linear relationships",
+  "year": 7,
+  "stage": "4",
+  "strand": "Algebra",
+  "syllabusOutcome": "MA4-LIN-C-01",
+  "description": "Plot points on the number plane and identify linear patterns from tables and graphs.",
+  "subtopics": ["graphing-on-number-plane", "linear-patterns"],
+  "extension": false
+}

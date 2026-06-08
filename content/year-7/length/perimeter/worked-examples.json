@@ -1,0 +1,94 @@
+[
+  {
+    "id": "per-ex-1",
+    "title": "Perimeter of a rectangle",
+    "difficulty": 1,
+    "problem": "Find the perimeter of a rectangle with length $11$ cm and width $4$ cm.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the perimeter formula for a rectangle.",
+        "working": "$$P = 2(l + w)$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values.",
+        "working": "$$P = 2(11 + 4)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the values inside the brackets.",
+        "working": "$$P = 2(15)$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Multiply to find the perimeter.",
+        "working": "$$P = 30 \\text{ cm}$$"
+      }
+    ],
+    "answer": "$30$ cm"
+  },
+  {
+    "id": "per-ex-2",
+    "title": "Perimeter of a composite shape",
+    "difficulty": 2,
+    "problem": "A composite L-shaped figure has sides measuring $7$ m, $4$ m, $3$ m, $2$ m, $4$ m and $2$ m. Find the perimeter.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "The perimeter of any shape is the total distance around the outside. List all the side lengths.",
+        "working": "$7$ m, $4$ m, $3$ m, $2$ m, $4$ m, $2$ m"
+      },
+      {
+        "step": 2,
+        "instruction": "Add all the side lengths together.",
+        "working": "$$P = 7 + 4 + 3 + 2 + 4 + 2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the sum.",
+        "working": "$$P = 22 \\text{ m}$$"
+      }
+    ],
+    "answer": "$22$ m"
+  },
+  {
+    "id": "per-ex-3",
+    "title": "Finding a missing side given perimeter",
+    "difficulty": 3,
+    "problem": "A rectangle has a perimeter of $34$ cm. Its length is $5$ cm more than its width. Find the width.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Define the unknown. Let the width be $w$ cm. Write an expression for the length.",
+        "working": "Width $= w$ cm, Length $= (w + 5)$ cm"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the perimeter formula and substitute.",
+        "working": "$$34 = 2(l + w) = 2(w + 5 + w)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Simplify inside the brackets.",
+        "working": "$$34 = 2(2w + 5)$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Expand the brackets.",
+        "working": "$$34 = 4w + 10$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Subtract $10$ from both sides.",
+        "working": "$$24 = 4w$$"
+      },
+      {
+        "step": 6,
+        "instruction": "Divide both sides by $4$.",
+        "working": "$$w = 6 \\text{ cm}$$"
+      }
+    ],
+    "answer": "Width $= 6$ cm, length $= 11$ cm"
+  }
+]

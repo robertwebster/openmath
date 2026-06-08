@@ -1,0 +1,14 @@
+{
+  "id": "equations",
+  "title": "Equations",
+  "year": 7,
+  "stage": "4",
+  "extension": false,
+  "strand": "Algebra",
+  "syllabusOutcome": "MA4-EQU-C-01",
+  "description": "Solve one-step and two-step linear equations.",
+  "subtopics": [
+    "one-step-equations",
+    "two-step-equations"
+  ]
+}

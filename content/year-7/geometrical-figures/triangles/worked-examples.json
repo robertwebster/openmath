@@ -1,0 +1,79 @@
+[
+  {
+    "id": "y7-geo-tri-we-1",
+    "title": "Classifying a triangle by its sides",
+    "difficulty": 1,
+    "problem": "A triangle has sides of length 7 cm, 7 cm, and 10 cm. Classify this triangle by its sides.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Count how many sides are equal.",
+        "working": "Two sides are 7 cm. The third side is 10 cm."
+      },
+      {
+        "step": 2,
+        "instruction": "Recall the classification rules for sides.",
+        "working": "Equilateral: all three sides equal. Isosceles: exactly two sides equal. Scalene: no sides equal."
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the rule.",
+        "working": "Exactly two sides are equal, so the triangle is isosceles."
+      }
+    ],
+    "answer": "Isosceles"
+  },
+  {
+    "id": "y7-geo-tri-we-2",
+    "title": "Finding a missing angle in a triangle",
+    "difficulty": 2,
+    "problem": "Two angles of a triangle are $72°$ and $58°$. Find the third angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the angle sum of a triangle.",
+        "working": "The angles of any triangle add to $180°$."
+      },
+      {
+        "step": 2,
+        "instruction": "Add the two known angles.",
+        "working": "$72° + 58° = 130°$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract from $180°$.",
+        "working": "$\\angle C = 180° - 130° = 50°$"
+      }
+    ],
+    "answer": "$50°$"
+  },
+  {
+    "id": "y7-geo-tri-we-3",
+    "title": "Finding angles from a ratio",
+    "difficulty": 3,
+    "problem": "The three angles of a triangle are in the ratio $2:3:7$. Find the size of each angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Let the angles be $2x$, $3x$, and $7x$.",
+        "working": "These represent the three angles in the given ratio."
+      },
+      {
+        "step": 2,
+        "instruction": "Use the angle sum of a triangle.",
+        "working": "$2x + 3x + 7x = 180°$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $x$.",
+        "working": "$12x = 180°$, so $x = 15°$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find each angle.",
+        "working": "$2x = 30°$, $\\quad 3x = 45°$, $\\quad 7x = 105°$"
+      }
+    ],
+    "answer": "$30°$, $45°$, and $105°$"
+  }
+]

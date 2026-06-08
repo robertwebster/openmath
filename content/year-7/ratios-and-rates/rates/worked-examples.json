@@ -1,0 +1,79 @@
+[
+  {
+    "id": "rte-ex-1",
+    "title": "Finding a unit rate",
+    "difficulty": 1,
+    "problem": "Mia pays $\\$6.40$ for 8 apples. What is the cost per apple?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the rate: a total cost for a number of items.",
+        "working": "$\\$6.40$ for $8$ apples"
+      },
+      {
+        "step": 2,
+        "instruction": "Divide the total cost by the number of items.",
+        "working": "$$\\$6.40 \\div 8 = \\$0.80$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the unit rate.",
+        "working": "The cost per apple is $\\$0.80$."
+      }
+    ],
+    "answer": "$\\$0.80$ per apple"
+  },
+  {
+    "id": "rte-ex-2",
+    "title": "Applying a rate to find distance",
+    "difficulty": 2,
+    "problem": "A car travels at 85 km/h for 4 hours. How far does it travel?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the rate and the time.",
+        "working": "Speed $= 85$ km/h, time $= 4$ h"
+      },
+      {
+        "step": 2,
+        "instruction": "Use the formula: distance = speed × time.",
+        "working": "$$d = \\text{speed} \\times \\text{time}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute and calculate.",
+        "working": "$$d = 85 \\times 4 = 340 \\text{ km}$$"
+      }
+    ],
+    "answer": "$340$ km"
+  },
+  {
+    "id": "rte-ex-3",
+    "title": "Comparing unit rates",
+    "difficulty": 3,
+    "problem": "Shop X sells 4 bottles of juice for $\\$7.20$. Shop Y sells 6 bottles for $\\$9.90$. Which shop offers better value, and by how much per bottle?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the unit price at Shop X.",
+        "working": "$$\\$7.20 \\div 4 = \\$1.80 \\text{ per bottle}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the unit price at Shop Y.",
+        "working": "$$\\$9.90 \\div 6 = \\$1.65 \\text{ per bottle}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the two unit prices.",
+        "working": "$\\$1.65 < \\$1.80$, so Shop Y is cheaper."
+      },
+      {
+        "step": 4,
+        "instruction": "Find the difference per bottle.",
+        "working": "$$\\$1.80 - \\$1.65 = \\$0.15 \\text{ per bottle}$$"
+      }
+    ],
+    "answer": "Shop Y by $\\$0.15$ per bottle"
+  }
+]

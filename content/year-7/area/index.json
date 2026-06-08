@@ -1,0 +1,11 @@
+{
+  "id": "area",
+  "title": "Area",
+  "year": 7,
+  "stage": "4",
+  "strand": "Measurement",
+  "syllabusOutcome": "MA4-ARE-C-01",
+  "description": "Calculate area of triangles, quadrilaterals and composite shapes.",
+  "extension": false,
+  "subtopics": ["area-of-rectangles-and-triangles", "area-of-composite-shapes"]
+}

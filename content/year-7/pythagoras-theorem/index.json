@@ -1,0 +1,15 @@
+{
+  "id": "pythagoras-theorem",
+  "title": "Pythagoras' theorem",
+  "year": 7,
+  "stage": "4",
+  "strand": "Measurement",
+  "syllabusOutcome": "MA4-PYT-C-01",
+  "description": "Apply Pythagoras' theorem to find unknown sides in right-angled triangles and solve problems.",
+  "extension": false,
+  "subtopics": [
+    "finding-the-hypotenuse",
+    "finding-unknown-sides",
+    "applications"
+  ]
+}

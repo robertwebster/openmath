@@ -1,0 +1,69 @@
+[
+  {
+    "id": "y7-dat-types-we-1",
+    "title": "Classifying data as categorical or numerical",
+    "difficulty": 1,
+    "problem": "Shirt sizes worn by students in a class are recorded as S, M, L, or XL. Classify this data.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Ask: does the data describe qualities or labels, or does it consist of measured or counted numbers?",
+        "working": "Shirt sizes S, M, L, XL are labels — they describe a quality, not a number."
+      },
+      {
+        "step": 2,
+        "instruction": "Classify as categorical or numerical.",
+        "working": "Because the data uses labels rather than numbers, it is categorical data."
+      }
+    ],
+    "answer": "Categorical data"
+  },
+  {
+    "id": "y7-dat-types-we-2",
+    "title": "Classifying numerical data as discrete or continuous",
+    "difficulty": 2,
+    "problem": "The mass of each apple in a box is measured in grams. Classify this numerical data as discrete or continuous.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the definitions.",
+        "working": "Discrete data can only take specific values (usually whole numbers). Continuous data can take any value within a range."
+      },
+      {
+        "step": 2,
+        "instruction": "Decide whether mass can take any value or only specific values.",
+        "working": "Mass can be measured to any level of precision: 142 g, 142.5 g, 142.53 g, and so on."
+      },
+      {
+        "step": 3,
+        "instruction": "Classify.",
+        "working": "Since mass can take any value within a range, it is continuous data."
+      }
+    ],
+    "answer": "Continuous data"
+  },
+  {
+    "id": "y7-dat-types-we-3",
+    "title": "Choosing an appropriate display",
+    "difficulty": 3,
+    "problem": "A teacher records the number of students absent from school each day over 20 school days. Values range from 0 to 8. Choose the most appropriate display.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the data type.",
+        "working": "Number of students absent is a count. Counts can only be whole numbers (0, 1, 2, ...), so this is discrete numerical data."
+      },
+      {
+        "step": 2,
+        "instruction": "Consider suitable displays for discrete numerical data with a small range.",
+        "working": "A dot plot places a dot above a number line for each data value. It shows individual values and the distribution clearly when the range is small and the data set is not too large."
+      },
+      {
+        "step": 3,
+        "instruction": "Choose the most appropriate display.",
+        "working": "With 20 data values and a range of 0 to 8, a dot plot is most appropriate. It shows where values are concentrated and any gaps or outliers."
+      }
+    ],
+    "answer": "Dot plot"
+  }
+]

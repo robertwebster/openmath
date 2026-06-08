@@ -11,7 +11,7 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { topic, subtopic } = await params;
   try {
-    const meta = getSubtopicMeta(9, topic, subtopic);
+    const meta = getSubtopicMeta(7, topic, subtopic);
     return {
       title: `${meta.title} | Open Math`,
       description: meta.description,
@@ -26,10 +26,10 @@ export default async function SubtopicPage({ params }: Props) {
 
   let topicMeta, subtopicMeta, questions, workedExamples;
   try {
-    topicMeta = getTopicMeta(9, topic);
-    subtopicMeta = getSubtopicMeta(9, topic, subtopic);
-    questions = getQuestions(9, topic, subtopic);
-    workedExamples = getWorkedExamples(9, topic, subtopic);
+    topicMeta = getTopicMeta(7, topic);
+    subtopicMeta = getSubtopicMeta(7, topic, subtopic);
+    questions = getQuestions(7, topic, subtopic);
+    workedExamples = getWorkedExamples(7, topic, subtopic);
   } catch {
     notFound();
   }
@@ -61,9 +61,9 @@ export default async function SubtopicPage({ params }: Props) {
         <nav className="text-sm text-slate-400 mb-8 print:hidden">
           <Link href="/" className="hover:text-slate-600 transition-colors">Open Math</Link>
           <span className="mx-2">›</span>
-          <Link href="/year-9" className="hover:text-slate-600 transition-colors">Year 9</Link>
+          <Link href="/year-7" className="hover:text-slate-600 transition-colors">Year 7</Link>
           <span className="mx-2">›</span>
-          <Link href={`/year-9/${topic}`} className="hover:text-slate-600 transition-colors">{topicMeta.title}</Link>
+          <Link href={`/year-7/${topic}`} className="hover:text-slate-600 transition-colors">{topicMeta.title}</Link>
           <span className="mx-2">›</span>
           <span className="text-slate-600">{subtopicMeta.title}</span>
         </nav>

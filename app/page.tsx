@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const years = [
-  { year: 7,  stage: "Stage 4", topics: 0,  available: false },
+  { year: 7,  stage: "Stage 4", topics: 16, available: true  },
   { year: 8,  stage: "Stage 4", topics: 0,  available: false },
   { year: 9,  stage: "Stage 5", topics: 10, available: true  },
   { year: 10, stage: "Stage 5", topics: 0,  available: false },

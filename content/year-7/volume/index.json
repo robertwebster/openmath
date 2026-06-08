@@ -1,0 +1,11 @@
+{
+  "id": "volume",
+  "title": "Volume",
+  "year": 7,
+  "stage": "4",
+  "strand": "Measurement",
+  "syllabusOutcome": "MA4-VOL-C-01",
+  "description": "Calculate volume of rectangular and triangular prisms.",
+  "extension": false,
+  "subtopics": ["volume-of-prisms"]
+}

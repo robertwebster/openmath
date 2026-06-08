@@ -1,0 +1,14 @@
+{
+  "id": "length",
+  "title": "Length",
+  "year": 7,
+  "stage": "4",
+  "extension": false,
+  "strand": "Measurement",
+  "syllabusOutcome": "MA4-LEN-C-01",
+  "description": "Calculate perimeter of polygons and circumference of circles.",
+  "subtopics": [
+    "perimeter",
+    "circumference"
+  ]
+}

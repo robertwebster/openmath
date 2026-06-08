@@ -1,0 +1,11 @@
+{
+  "id": "data-analysis",
+  "title": "Data analysis",
+  "year": 7,
+  "stage": "4",
+  "strand": "Statistics",
+  "syllabusOutcome": "MA4-DAT-C-02",
+  "description": "Calculate and interpret measures of centre and spread.",
+  "extension": false,
+  "subtopics": ["measures-of-centre", "measures-of-spread"]
+}

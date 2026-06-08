@@ -1,0 +1,74 @@
+[
+  {
+    "id": "y7-ang-types-we-1",
+    "title": "Classifying an angle",
+    "difficulty": 1,
+    "problem": "An angle measures $128°$. Classify this angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the angle classifications.",
+        "working": "Acute: $0° < \\theta < 90°$ \\quad Right: $\\theta = 90°$ \\quad Obtuse: $90° < \\theta < 180°$ \\quad Straight: $\\theta = 180°$ \\quad Reflex: $180° < \\theta < 360°$"
+      },
+      {
+        "step": 2,
+        "instruction": "Compare $128°$ to the ranges.",
+        "working": "$90° < 128° < 180°$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the classification.",
+        "working": "$128°$ is an obtuse angle."
+      }
+    ],
+    "answer": "Obtuse angle"
+  },
+  {
+    "id": "y7-ang-types-we-2",
+    "title": "Finding a missing supplementary angle",
+    "difficulty": 2,
+    "problem": "Two angles are supplementary and one of them is $53°$. Find the other angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall that supplementary angles add to $180°$.",
+        "working": "$\\angle A + \\angle B = 180°$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known angle.",
+        "working": "$53° + \\angle B = 180°$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for the unknown angle.",
+        "working": "$\\angle B = 180° - 53° = 127°$"
+      }
+    ],
+    "answer": "$127°$"
+  },
+  {
+    "id": "y7-ang-types-we-3",
+    "title": "Finding an unknown angle on a straight line",
+    "difficulty": 3,
+    "problem": "Two angles on a straight line are $(3x + 5)°$ and $(x + 15)°$. Find the value of $x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall that angles on a straight line add to $180°$.",
+        "working": "$(3x + 5) + (x + 15) = 180$"
+      },
+      {
+        "step": 2,
+        "instruction": "Simplify the left side.",
+        "working": "$4x + 20 = 180$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $x$.",
+        "working": "$4x = 160$, so $x = 40$"
+      }
+    ],
+    "answer": "$x = 40$"
+  }
+]

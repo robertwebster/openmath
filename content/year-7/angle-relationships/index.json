@@ -1,0 +1,11 @@
+{
+  "id": "angle-relationships",
+  "title": "Angle relationships",
+  "year": 7,
+  "stage": "4",
+  "strand": "Space",
+  "syllabusOutcome": "MA4-ANG-C-01",
+  "description": "Classify angles, identify angle relationships, and apply properties of parallel lines.",
+  "extension": false,
+  "subtopics": ["types-of-angles", "parallel-lines"]
+}

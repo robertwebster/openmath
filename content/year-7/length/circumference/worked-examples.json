@@ -1,0 +1,84 @@
+[
+  {
+    "id": "circ-ex-1",
+    "title": "Circumference given radius",
+    "difficulty": 1,
+    "problem": "Find the circumference of a circle with radius $6$ cm. Give your answer correct to 2 decimal places. Use $\\pi \\approx 3.14159$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the circumference formula using radius.",
+        "working": "$$C = 2\\pi r$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $r = 6$ and $\\pi \\approx 3.14159$.",
+        "working": "$$C = 2 \\times 3.14159 \\times 6$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply $2 \\times 3.14159$ first.",
+        "working": "$$C = 6.28318 \\times 6$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Complete the multiplication and round to 2 decimal places.",
+        "working": "$$C = 37.6991 \\approx 37.70 \\text{ cm}$$"
+      }
+    ],
+    "answer": "$37.70$ cm"
+  },
+  {
+    "id": "circ-ex-2",
+    "title": "Circumference given diameter",
+    "difficulty": 2,
+    "problem": "Find the circumference of a circle with diameter $9$ m. Give your answer correct to 2 decimal places. Use $\\pi \\approx 3.14159$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "When the diameter is given, use the formula $C = \\pi d$.",
+        "working": "$$C = \\pi d$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $d = 9$ and $\\pi \\approx 3.14159$.",
+        "working": "$$C = 3.14159 \\times 9$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply and round to 2 decimal places.",
+        "working": "$$C = 28.2743 \\approx 28.27 \\text{ m}$$"
+      }
+    ],
+    "answer": "$28.27$ m"
+  },
+  {
+    "id": "circ-ex-3",
+    "title": "Finding the radius given circumference",
+    "difficulty": 3,
+    "problem": "A circle has a circumference of $43.98$ m. Find the radius correct to 2 decimal places. Use $\\pi \\approx 3.14159$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the circumference formula.",
+        "working": "$$C = 2\\pi r$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rearrange to make $r$ the subject.",
+        "working": "$$r = \\frac{C}{2\\pi}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate $2\\pi$ using $\\pi \\approx 3.14159$.",
+        "working": "$$2\\pi = 2 \\times 3.14159 = 6.28318$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Substitute $C = 43.98$ and divide.",
+        "working": "$$r = \\frac{43.98}{6.28318} \\approx 7.00 \\text{ m}$$"
+      }
+    ],
+    "answer": "$7.00$ m"
+  }
+]

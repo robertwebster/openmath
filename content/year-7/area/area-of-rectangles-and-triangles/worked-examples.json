@@ -1,0 +1,74 @@
+[
+  {
+    "id": "y7-area-rect-tri-we-1",
+    "title": "Finding the area of a rectangle",
+    "difficulty": 1,
+    "problem": "Find the area of a rectangle with length $11$ cm and width $4$ cm.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for the area of a rectangle.",
+        "working": "$A = l \\times w$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the length and width into the formula.",
+        "working": "$A = 11 \\times 4$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply to calculate the area.",
+        "working": "$A = 44 \\text{ cm}^2$"
+      }
+    ],
+    "answer": "$44 \\text{ cm}^2$"
+  },
+  {
+    "id": "y7-area-rect-tri-we-2",
+    "title": "Finding the area of a triangle",
+    "difficulty": 2,
+    "problem": "Find the area of a triangle with a base of $12$ cm and a perpendicular height of $5$ cm.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for the area of a triangle.",
+        "working": "$A = \\frac{1}{2} \\times b \\times h$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the base and height into the formula.",
+        "working": "$A = \\frac{1}{2} \\times 12 \\times 5$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply to calculate the area.",
+        "working": "$A = \\frac{1}{2} \\times 60 = 30 \\text{ cm}^2$"
+      }
+    ],
+    "answer": "$30 \\text{ cm}^2$"
+  },
+  {
+    "id": "y7-area-rect-tri-we-3",
+    "title": "Finding the area of a composite shape",
+    "difficulty": 3,
+    "problem": "A composite shape is made of a rectangle $7$ cm long and $3$ cm tall with a triangle on top. The triangle has a base of $7$ cm and a height of $4$ cm. Find the total area.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the area of the rectangle using $A = l \\times w$.",
+        "working": "$A_{\\text{rectangle}} = 7 \\times 3 = 21 \\text{ cm}^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the area of the triangle using $A = \\frac{1}{2} \\times b \\times h$.",
+        "working": "$A_{\\text{triangle}} = \\frac{1}{2} \\times 7 \\times 4 = 14 \\text{ cm}^2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the two areas to find the total area.",
+        "working": "$A_{\\text{total}} = 21 + 14 = 35 \\text{ cm}^2$"
+      }
+    ],
+    "answer": "$35 \\text{ cm}^2$"
+  }
+]

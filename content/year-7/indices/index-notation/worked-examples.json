@@ -1,0 +1,74 @@
+[
+  {
+    "id": "in-ex-1",
+    "title": "Writing in index form",
+    "difficulty": 1,
+    "problem": "Write $3 \\times 3 \\times 3 \\times 3 \\times 3$ in index form.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the base — the number being multiplied.",
+        "working": "The number being multiplied is $3$, so the base is $3$."
+      },
+      {
+        "step": 2,
+        "instruction": "Count how many times the base is multiplied.",
+        "working": "$3$ appears $5$ times in the product."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the base with the count as the exponent (index).",
+        "working": "$$3 \\times 3 \\times 3 \\times 3 \\times 3 = 3^5$$"
+      }
+    ],
+    "answer": "$3^5$"
+  },
+  {
+    "id": "in-ex-2",
+    "title": "Evaluating a power",
+    "difficulty": 2,
+    "problem": "Calculate $4^3$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the power in expanded form.",
+        "working": "$$4^3 = 4 \\times 4 \\times 4$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the first two factors.",
+        "working": "$$4 \\times 4 = 16$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply the result by the remaining factor.",
+        "working": "$$16 \\times 4 = 64$$"
+      }
+    ],
+    "answer": "$64$"
+  },
+  {
+    "id": "in-ex-3",
+    "title": "Comparing expressions with indices",
+    "difficulty": 3,
+    "problem": "Which is greater: $2^6$ or $5^3$?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Evaluate $2^6$ by expanding and multiplying.",
+        "working": "$$2^6 = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 = 64$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate $5^3$ by expanding and multiplying.",
+        "working": "$$5^3 = 5 \\times 5 \\times 5 = 125$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the two values.",
+        "working": "$$125 > 64$$\nSo $5^3 > 2^6$."
+      }
+    ],
+    "answer": "$5^3$ is greater ($5^3 = 125$, $2^6 = 64$)"
+  }
+]
