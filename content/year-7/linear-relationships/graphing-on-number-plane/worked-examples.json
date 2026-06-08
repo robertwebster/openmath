@@ -1,0 +1,84 @@
+[
+  {
+    "id": "lin-gnp-ex-1",
+    "title": "Plotting a point and identifying its quadrant",
+    "difficulty": 1,
+    "problem": "Plot the point $A(-3, 2)$ on the number plane and state which quadrant it lies in.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the x-coordinate and y-coordinate.",
+        "working": "The x-coordinate is $-3$ and the y-coordinate is $2$."
+      },
+      {
+        "step": 2,
+        "instruction": "Start at the origin. Move horizontally according to the x-coordinate.",
+        "working": "Since $x = -3$, move 3 units to the left."
+      },
+      {
+        "step": 3,
+        "instruction": "From that position, move vertically according to the y-coordinate.",
+        "working": "Since $y = 2$, move 2 units up. Mark the point $A$."
+      },
+      {
+        "step": 4,
+        "instruction": "Identify the quadrant by checking the signs of the coordinates.",
+        "working": "The x-coordinate is negative and the y-coordinate is positive. This is Quadrant 2."
+      }
+    ],
+    "answer": "Quadrant 2"
+  },
+  {
+    "id": "lin-gnp-ex-2",
+    "title": "Finding the midpoint of two points",
+    "difficulty": 2,
+    "problem": "Find the midpoint of the points $A(-4, 2)$ and $B(6, -8)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write down the midpoint formula.",
+        "working": "$$M = \\left(\\frac{x_A + x_B}{2},\\ \\frac{y_A + y_B}{2}\\right)$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the x-coordinate of the midpoint.",
+        "working": "$$x_M = \\frac{-4 + 6}{2} = \\frac{2}{2} = 1$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the y-coordinate of the midpoint.",
+        "working": "$$y_M = \\frac{2 + (-8)}{2} = \\frac{-6}{2} = -3$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write the midpoint as an ordered pair.",
+        "working": "$$M = (1, -3)$$"
+      }
+    ],
+    "answer": "$(1, -3)$"
+  },
+  {
+    "id": "lin-gnp-ex-3",
+    "title": "Finding the distance between two points",
+    "difficulty": 3,
+    "problem": "Find the distance between the points $A(-2, 1)$ and $B(4, 9)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the horizontal distance between the two points.",
+        "working": "$$\\Delta x = x_B - x_A = 4 - (-2) = 6$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the vertical distance between the two points.",
+        "working": "$$\\Delta y = y_B - y_A = 9 - 1 = 8$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply Pythagoras' theorem. The horizontal and vertical distances form the two shorter sides of a right-angled triangle, and the distance $AB$ is the hypotenuse.",
+        "working": "$$d = \\sqrt{(\\Delta x)^2 + (\\Delta y)^2} = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$$"
+      }
+    ],
+    "answer": "$10$ units"
+  }
+]

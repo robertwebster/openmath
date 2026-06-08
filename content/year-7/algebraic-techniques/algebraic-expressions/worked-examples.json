@@ -1,0 +1,84 @@
+[
+  {
+    "id": "alg-exp-ex-1",
+    "title": "Identifying parts of an algebraic expression",
+    "difficulty": 1,
+    "problem": "For the expression $5x - 3$, state the number of terms, the coefficient of $x$, and the constant term.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Count the terms. Terms are separated by $+$ and $-$ signs.",
+        "working": "The terms are $5x$ and $-3$.\n\nThere are $2$ terms."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the coefficient of $x$. This is the number multiplying $x$, including its sign.",
+        "working": "The term containing $x$ is $5x$.\n\nCoefficient of $x$ $= 5$"
+      },
+      {
+        "step": 3,
+        "instruction": "Identify the constant term. This is the term with no variable.",
+        "working": "The term with no variable is $-3$.\n\nConstant term $= -3$"
+      }
+    ],
+    "answer": "2 terms, coefficient of $x$ is $5$, constant term is $-3$"
+  },
+  {
+    "id": "alg-exp-ex-2",
+    "title": "Collecting like terms",
+    "difficulty": 2,
+    "problem": "Simplify $4x + 3y - 2x + y$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the like terms. Like terms have the same variable.",
+        "working": "$x$ terms: $4x$ and $-2x$\n\n$y$ terms: $3y$ and $y$"
+      },
+      {
+        "step": 2,
+        "instruction": "Collect the $x$ terms.",
+        "working": "$$4x - 2x = 2x$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Collect the $y$ terms. Note that $y$ means $1y$.",
+        "working": "$$3y + y = 3y + 1y = 4y$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write the simplified expression.",
+        "working": "$$4x + 3y - 2x + y = 2x + 4y$$"
+      }
+    ],
+    "answer": "$2x + 4y$"
+  },
+  {
+    "id": "alg-exp-ex-3",
+    "title": "Expanding brackets and collecting like terms",
+    "difficulty": 3,
+    "problem": "Expand and simplify $3(2x + 5) - 4x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Expand the brackets by multiplying each term inside by $3$.",
+        "working": "$$3(2x + 5) = 3 \\times 2x + 3 \\times 5 = 6x + 15$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rewrite the full expression with the brackets expanded.",
+        "working": "$$3(2x + 5) - 4x = 6x + 15 - 4x$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Collect the like terms containing $x$.",
+        "working": "$$6x - 4x = 2x$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write the simplified expression.",
+        "working": "$$6x + 15 - 4x = 2x + 15$$"
+      }
+    ],
+    "answer": "$2x + 15$"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "y7-vol-prisms-we-1",
+    "title": "Volume of a rectangular prism",
+    "difficulty": 1,
+    "problem": "Find the volume of a rectangular prism with length $9$ cm, width $4$ cm and height $3$ cm.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for the volume of a rectangular prism.",
+        "working": "$V = l \\times w \\times h$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the length, width and height into the formula.",
+        "working": "$V = 9 \\times 4 \\times 3$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply to calculate the volume.",
+        "working": "$V = 108 \\text{ cm}^3$"
+      }
+    ],
+    "answer": "$108 \\text{ cm}^3$"
+  },
+  {
+    "id": "y7-vol-prisms-we-2",
+    "title": "Volume of a triangular prism",
+    "difficulty": 2,
+    "problem": "A triangular prism has a triangular cross-section with base $8$ cm and perpendicular height $5$ cm. The length of the prism is $12$ cm. Find the volume.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the area of the triangular cross-section using $A = \\frac{1}{2} \\times b \\times h$.",
+        "working": "$A_{\\triangle} = \\frac{1}{2} \\times 8 \\times 5 = 20 \\text{ cm}^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the cross-sectional area by the length of the prism.",
+        "working": "$V = A_{\\triangle} \\times l = 20 \\times 12$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the volume.",
+        "working": "$V = 240 \\text{ cm}^3$"
+      }
+    ],
+    "answer": "$240 \\text{ cm}^3$"
+  },
+  {
+    "id": "y7-vol-prisms-we-3",
+    "title": "Finding a missing dimension",
+    "difficulty": 3,
+    "problem": "A rectangular prism has a volume of $144$ cm³, a length of $9$ cm and a width of $4$ cm. Find the height.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for the volume of a rectangular prism.",
+        "working": "$V = l \\times w \\times h$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values into the formula.",
+        "working": "$144 = 9 \\times 4 \\times h = 36h$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $h$ by dividing both sides by $36$.",
+        "working": "$h = \\frac{144}{36} = 4 \\text{ cm}$"
+      }
+    ],
+    "answer": "$4 \\text{ cm}$"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "id": "fractions-decimals-percentages",
+  "title": "Fractions, decimals and percentages",
+  "year": 7,
+  "stage": "4",
+  "extension": false,
+  "strand": "Number",
+  "syllabusOutcome": "MA4-FRC-C-01",
+  "description": "Work with fractions, decimals and percentages, and convert between them.",
+  "subtopics": [
+    "fractions",
+    "decimals",
+    "percentages",
+    "converting-between-forms"
+  ]
+}

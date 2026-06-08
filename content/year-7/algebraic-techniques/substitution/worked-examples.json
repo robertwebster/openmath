@@ -1,0 +1,94 @@
+[
+  {
+    "id": "sub-ex-1",
+    "title": "Substituting into a one-variable expression",
+    "difficulty": 1,
+    "problem": "If $x = 4$, find the value of $3x - 5$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the expression.",
+        "working": "$3x - 5$"
+      },
+      {
+        "step": 2,
+        "instruction": "Replace $x$ with $4$.",
+        "working": "$3(4) - 5$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply $3 \\times 4$.",
+        "working": "$12 - 5$"
+      },
+      {
+        "step": 4,
+        "instruction": "Subtract to find the value.",
+        "working": "$12 - 5 = 7$"
+      }
+    ],
+    "answer": "$7$"
+  },
+  {
+    "id": "sub-ex-2",
+    "title": "Substituting into a two-variable expression",
+    "difficulty": 2,
+    "problem": "If $a = 3$ and $b = -2$, find the value of $2a + b^2$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the expression.",
+        "working": "$2a + b^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Replace $a$ with $3$ and $b$ with $-2$.",
+        "working": "$2(3) + (-2)^2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate the power. Note that a negative number squared gives a positive result.",
+        "working": "$(-2)^2 = (-2) \\times (-2) = 4$"
+      },
+      {
+        "step": 4,
+        "instruction": "Multiply $2 \\times 3$.",
+        "working": "$2(3) = 6$"
+      },
+      {
+        "step": 5,
+        "instruction": "Add to find the value.",
+        "working": "$6 + 4 = 10$"
+      }
+    ],
+    "answer": "$10$"
+  },
+  {
+    "id": "sub-ex-3",
+    "title": "Substituting into a formula",
+    "difficulty": 3,
+    "problem": "The area of a triangle is given by the formula $A = \\dfrac{1}{2}bh$. Find $A$ when $b = 10$ and $h = 6$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula.",
+        "working": "$$A = \\dfrac{1}{2}bh$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $b = 10$ and $h = 6$.",
+        "working": "$$A = \\dfrac{1}{2} \\times 10 \\times 6$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply $10 \\times 6$ first.",
+        "working": "$$A = \\dfrac{1}{2} \\times 60$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide by $2$ to find the area.",
+        "working": "$$A = 30$$"
+      }
+    ],
+    "answer": "$A = 30$ square units"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "y7-prb-eprob-we-1",
+    "title": "Calculating experimental probability",
+    "difficulty": 1,
+    "problem": "A spinner is spun 40 times. The results are: red 12 times, blue 18 times, green 10 times. Find the experimental probability of landing on red. Give your answer as a fraction in simplest form.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Count the number of times red appeared.",
+        "working": "Red appeared 12 times."
+      },
+      {
+        "step": 2,
+        "instruction": "Write the total number of trials.",
+        "working": "Total spins $= 12 + 18 + 10 = 40$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the experimental probability formula and simplify.",
+        "working": "$$P(\\text{red}) = \\frac{12}{40} = \\frac{3}{10}$$"
+      }
+    ],
+    "answer": "3/10"
+  },
+  {
+    "id": "y7-prb-eprob-we-2",
+    "title": "Predicting expected frequency",
+    "difficulty": 2,
+    "problem": "In 50 coin flips, heads appeared 30 times. If the coin is flipped 200 times, how many times would you expect to get heads?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the experimental probability of heads.",
+        "working": "$$P(\\text{heads}) = \\frac{30}{50} = \\frac{3}{5}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the experimental probability by the new number of trials.",
+        "working": "$$\\text{Expected frequency} = \\frac{3}{5} \\times 200 = 120$$"
+      }
+    ],
+    "answer": "120"
+  },
+  {
+    "id": "y7-prb-eprob-we-3",
+    "title": "Comparing experimental and theoretical probability",
+    "difficulty": 3,
+    "problem": "A fair six-sided die is rolled 180 times. Lin records the results and the number 2 appears 36 times. (a) Find the experimental probability of rolling a 2. (b) Using theoretical probability, how many times would you expect to roll a 2 in 180 rolls?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the experimental probability from Lin's results.",
+        "working": "$$P(2) = \\frac{36}{180} = \\frac{1}{5}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "State the theoretical probability of rolling a 2.",
+        "working": "A fair die has 6 equally likely outcomes, so $P(2) = \\dfrac{1}{6}$."
+      },
+      {
+        "step": 3,
+        "instruction": "Use theoretical probability to find the expected frequency.",
+        "working": "$$\\text{Expected frequency} = \\frac{1}{6} \\times 180 = 30$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Compare the results.",
+        "working": "Experimental probability $\\dfrac{1}{5} = 0.2$ is slightly higher than theoretical probability $\\dfrac{1}{6} \\approx 0.167$. This difference is due to chance variation. With more trials, the experimental probability would likely move closer to $\\dfrac{1}{6}$."
+      }
+    ],
+    "answer": "Experimental probability: 1/5; theoretical expected frequency: 30"
+  }
+]

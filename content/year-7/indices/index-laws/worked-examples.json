@@ -1,0 +1,74 @@
+[
+  {
+    "id": "il-we-1",
+    "title": "Multiplying powers with the same base",
+    "difficulty": 1,
+    "problem": "Simplify $5^3 \\times 5^4$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Check that both terms have the same base.",
+        "working": "Both terms have base $5$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the multiplication index law: $a^m \\times a^n = a^{m+n}$.",
+        "working": "$5^3 \\times 5^4 = 5^{3+4}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the indices.",
+        "working": "$5^{3+4} = 5^7$"
+      }
+    ],
+    "answer": "$5^7$"
+  },
+  {
+    "id": "il-we-2",
+    "title": "Dividing powers with the same base",
+    "difficulty": 2,
+    "problem": "Simplify $7^8 \\div 7^3$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Check that both terms have the same base.",
+        "working": "Both terms have base $7$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the division index law: $a^m \\div a^n = a^{m-n}$.",
+        "working": "$7^8 \\div 7^3 = 7^{8-3}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract the indices.",
+        "working": "$7^{8-3} = 7^5$"
+      }
+    ],
+    "answer": "$7^5$"
+  },
+  {
+    "id": "il-we-3",
+    "title": "Combining the power of a power and multiplication laws",
+    "difficulty": 3,
+    "problem": "Simplify $(2^4)^3 \\times 2^5$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the power of a power law to the first term: $(a^m)^n = a^{m \\times n}$.",
+        "working": "$(2^4)^3 = 2^{4 \\times 3} = 2^{12}$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rewrite the expression using the result from step 1.",
+        "working": "$2^{12} \\times 2^5$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the multiplication index law: add the indices.",
+        "working": "$2^{12} \\times 2^5 = 2^{12+5} = 2^{17}$"
+      }
+    ],
+    "answer": "$2^{17}$"
+  }
+]

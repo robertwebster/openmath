@@ -1,0 +1,14 @@
+{
+  "id": "indices",
+  "title": "Indices",
+  "year": 7,
+  "stage": "4",
+  "extension": false,
+  "strand": "Number",
+  "syllabusOutcome": "MA4-IND-C-01",
+  "description": "Use index notation and apply index laws for multiplication and division.",
+  "subtopics": [
+    "index-notation",
+    "index-laws"
+  ]
+}

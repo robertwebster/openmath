@@ -1,0 +1,74 @@
+[
+  {
+    "id": "y7-dat-centre-we-1",
+    "title": "Finding the mean",
+    "difficulty": 1,
+    "problem": "Find the mean of the data set $5, 3, 8, 4, 10$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Add all the values together.",
+        "working": "$5 + 3 + 8 + 4 + 10 = 30$"
+      },
+      {
+        "step": 2,
+        "instruction": "Count the number of values.",
+        "working": "There are 5 values in the data set."
+      },
+      {
+        "step": 3,
+        "instruction": "Divide the sum by the number of values.",
+        "working": "$\\text{mean} = 30 \\div 5 = 6$"
+      }
+    ],
+    "answer": "The mean is $6$."
+  },
+  {
+    "id": "y7-dat-centre-we-2",
+    "title": "Finding the median and mode",
+    "difficulty": 2,
+    "problem": "Find the median and mode of the data set $6, 3, 9, 3, 7, 5, 3$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Sort the data in ascending order.",
+        "working": "$3, 3, 3, 5, 6, 7, 9$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the median (the middle value). There are 7 values, so the median is the 4th value.",
+        "working": "The 4th value in the sorted list is $5$. Median $= 5$."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the mode (the value that appears most often).",
+        "working": "The value $3$ appears 3 times, which is more than any other value. Mode $= 3$."
+      }
+    ],
+    "answer": "Median $= 5$, mode $= 3$."
+  },
+  {
+    "id": "y7-dat-centre-we-3",
+    "title": "Finding an unknown value given the mean",
+    "difficulty": 3,
+    "problem": "Five numbers have a mean of $9$. Four of the numbers are $7, 12, 8, 11$. Find the fifth number.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Use the mean to find the total sum required.",
+        "working": "$\\text{Total sum} = \\text{mean} \\times \\text{count} = 9 \\times 5 = 45$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the sum of the four known values.",
+        "working": "$7 + 12 + 8 + 11 = 38$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract to find the fifth number.",
+        "working": "$\\text{fifth number} = 45 - 38 = 7$"
+      }
+    ],
+    "answer": "The fifth number is $7$."
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "y7-par-lines-we-1",
+    "title": "Finding a corresponding angle",
+    "difficulty": 1,
+    "problem": "Two parallel lines are cut by a transversal. One angle measures $85°$. Find the corresponding angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the definition of corresponding angles.",
+        "working": "Corresponding angles lie in matching positions at each parallel line — same side of the transversal, same location relative to the intersection."
+      },
+      {
+        "step": 2,
+        "instruction": "State the relationship between corresponding angles.",
+        "working": "When two parallel lines are cut by a transversal, corresponding angles are equal."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the answer.",
+        "working": "Corresponding angle $= 85°$"
+      }
+    ],
+    "answer": "$85°$"
+  },
+  {
+    "id": "y7-par-lines-we-2",
+    "title": "Finding a co-interior angle",
+    "difficulty": 2,
+    "problem": "Two parallel lines are cut by a transversal. One co-interior angle is $74°$. Find the other co-interior angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall where co-interior angles are located.",
+        "working": "Co-interior angles lie between the parallel lines on the same side of the transversal."
+      },
+      {
+        "step": 2,
+        "instruction": "State the relationship between co-interior angles.",
+        "working": "Co-interior angles between parallel lines are supplementary — they add to $180°$."
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the missing angle.",
+        "working": "$180° - 74° = 106°$"
+      }
+    ],
+    "answer": "$106°$"
+  },
+  {
+    "id": "y7-par-lines-we-3",
+    "title": "Solving for an unknown using co-interior angles",
+    "difficulty": 3,
+    "problem": "Two parallel lines are cut by a transversal. The co-interior angles are $(3x + 10)°$ and $(2x + 20)°$. Find the value of $x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the equation using the co-interior angle relationship.",
+        "working": "Co-interior angles are supplementary: $(3x + 10) + (2x + 20) = 180$"
+      },
+      {
+        "step": 2,
+        "instruction": "Collect like terms.",
+        "working": "$5x + 30 = 180$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $x$.",
+        "working": "$5x = 150 \\implies x = 30$"
+      }
+    ],
+    "answer": "$x = 30$"
+  }
+]

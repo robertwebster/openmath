@@ -1,0 +1,84 @@
+[
+  {
+    "id": "year7-fus-we-1",
+    "title": "Find a shorter side (integer result)",
+    "difficulty": 1,
+    "problem": "A right-angled triangle has a hypotenuse of $13$ cm and one leg of $5$ cm. Find the length of the other leg.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write Pythagoras' theorem.",
+        "working": "$$a^2 + b^2 = c^2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rearrange to find the unknown side $a$.",
+        "working": "$$a^2 = c^2 - b^2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the known values.",
+        "working": "$$a^2 = 13^2 - 5^2 = 169 - 25 = 144$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Take the square root to find $a$.",
+        "working": "$$a = \\sqrt{144} = 12 \\text{ cm}$$"
+      }
+    ],
+    "answer": "12 cm"
+  },
+  {
+    "id": "year7-fus-we-2",
+    "title": "Find a shorter side (decimal result)",
+    "difficulty": 2,
+    "problem": "A right-angled triangle has a hypotenuse of $11$ cm and one leg of $5$ cm. Find the length of the other leg, rounded to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the rearranged form of Pythagoras' theorem.",
+        "working": "$$a^2 = c^2 - b^2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values.",
+        "working": "$$a^2 = 11^2 - 5^2 = 121 - 25 = 96$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the square root and round to 2 decimal places.",
+        "working": "$$a = \\sqrt{96} \\approx 9.80 \\text{ cm}$$"
+      }
+    ],
+    "answer": "9.80 cm"
+  },
+  {
+    "id": "year7-fus-we-3",
+    "title": "Multi-step: find a side then calculate perimeter",
+    "difficulty": 3,
+    "problem": "A rectangle has a diagonal of $15$ cm and one side of $9$ cm. Find the perimeter of the rectangle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recognise that the diagonal is the hypotenuse of a right-angled triangle with legs equal to the rectangle's sides.",
+        "working": "$$b^2 = c^2 - a^2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values to find the missing side.",
+        "working": "$$b^2 = 15^2 - 9^2 = 225 - 81 = 144$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the square root.",
+        "working": "$$b = \\sqrt{144} = 12 \\text{ cm}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the perimeter.",
+        "working": "$$P = 2(9 + 12) = 2 \\times 21 = 42 \\text{ cm}$$"
+      }
+    ],
+    "answer": "42 cm"
+  }
+]

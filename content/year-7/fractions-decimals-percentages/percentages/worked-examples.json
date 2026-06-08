@@ -1,0 +1,69 @@
+[
+  {
+    "id": "pct-ex-1",
+    "title": "Finding a percentage of a quantity",
+    "difficulty": 1,
+    "problem": "Find $30\\%$ of $90$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the percentage as a decimal.",
+        "working": "$$30\\% = \\frac{30}{100} = 0.3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the decimal by the quantity.",
+        "working": "$$0.3 \\times 90 = 27$$"
+      }
+    ],
+    "answer": "$27$"
+  },
+  {
+    "id": "pct-ex-2",
+    "title": "Expressing one quantity as a percentage of another",
+    "difficulty": 2,
+    "problem": "Express $14$ as a percentage of $40$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the first quantity as a fraction of the second.",
+        "working": "$$\\frac{14}{40}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply by $100$ to convert the fraction to a percentage.",
+        "working": "$$\\frac{14}{40} \\times 100 = \\frac{1400}{40} = 35$$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the answer as a percentage.",
+        "working": "$14$ is $35\\%$ of $40$."
+      }
+    ],
+    "answer": "$35\\%$"
+  },
+  {
+    "id": "pct-ex-3",
+    "title": "Finding the original amount after a percentage increase",
+    "difficulty": 3,
+    "problem": "After a $15\\%$ increase, an item costs $\\$92$. Find the original price.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the multiplier. A $15\\%$ increase means the new price is $115\\%$ of the original.",
+        "working": "$$115\\% = 1.15$$\n\nSo: $\\text{original} \\times 1.15 = 92$"
+      },
+      {
+        "step": 2,
+        "instruction": "Solve for the original price by dividing by the multiplier.",
+        "working": "$$\\text{original} = 92 \\div 1.15 = 80$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Check: apply the $15\\%$ increase to the original price.",
+        "working": "$$80 \\times 1.15 = 80 + 12 = 92 \\checkmark$$"
+      }
+    ],
+    "answer": "$\\$80$"
+  }
+]

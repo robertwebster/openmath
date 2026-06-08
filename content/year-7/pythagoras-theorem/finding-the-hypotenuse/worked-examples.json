@@ -1,0 +1,74 @@
+[
+  {
+    "id": "year7-fth-we-1",
+    "title": "Find the hypotenuse — integer result",
+    "difficulty": 1,
+    "problem": "A right-angled triangle has legs of length $3$ cm and $4$ cm. Find the length of the hypotenuse.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write Pythagoras' theorem.",
+        "working": "$$c^2 = a^2 + b^2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known leg lengths.",
+        "working": "$$c^2 = 3^2 + 4^2 = 9 + 16 = 25$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the square root to find $c$.",
+        "working": "$$c = \\sqrt{25} = 5 \\text{ cm}$$"
+      }
+    ],
+    "answer": "The hypotenuse is $5$ cm."
+  },
+  {
+    "id": "year7-fth-we-2",
+    "title": "Find the hypotenuse — decimal result",
+    "difficulty": 2,
+    "problem": "A right-angled triangle has legs of length $5$ cm and $8$ cm. Find the length of the hypotenuse, rounded to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write Pythagoras' theorem.",
+        "working": "$$c^2 = a^2 + b^2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known leg lengths.",
+        "working": "$$c^2 = 5^2 + 8^2 = 25 + 64 = 89$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the square root. The result is not a whole number, so round to 2 decimal places.",
+        "working": "$$c = \\sqrt{89} \\approx 9.43 \\text{ cm}$$"
+      }
+    ],
+    "answer": "The hypotenuse is approximately $9.43$ cm."
+  },
+  {
+    "id": "year7-fth-we-3",
+    "title": "Find the hypotenuse — multi-step problem",
+    "difficulty": 3,
+    "problem": "A square has area $36$ cm². Find the length of its diagonal, rounded to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the side length of the square from its area.",
+        "working": "$$s = \\sqrt{36} = 6 \\text{ cm}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "The diagonal of a square divides it into two right-angled triangles, each with legs equal to the side length. Apply Pythagoras' theorem.",
+        "working": "$$d^2 = 6^2 + 6^2 = 36 + 36 = 72$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the square root and round to 2 decimal places.",
+        "working": "$$d = \\sqrt{72} \\approx 8.49 \\text{ cm}$$"
+      }
+    ],
+    "answer": "The diagonal is approximately $8.49$ cm."
+  }
+]

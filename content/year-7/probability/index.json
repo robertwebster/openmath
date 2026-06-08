@@ -1,0 +1,11 @@
+{
+  "id": "probability",
+  "title": "Probability",
+  "year": 7,
+  "stage": "4",
+  "strand": "Probability",
+  "syllabusOutcome": "MA4-PRB-C-01",
+  "description": "Calculate theoretical probability and compare with experimental results.",
+  "extension": false,
+  "subtopics": ["theoretical-probability", "experimental-probability"]
+}

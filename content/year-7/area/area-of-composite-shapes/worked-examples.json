@@ -1,0 +1,79 @@
+[
+  {
+    "id": "y7-area-composite-we-1",
+    "title": "Area of an L-shaped figure",
+    "difficulty": 1,
+    "problem": "An L-shaped figure is formed by taking a $9 \\text{ m} \\times 7 \\text{ m}$ rectangle and removing a $3 \\text{ m} \\times 4 \\text{ m}$ rectangle from one corner. Find the area.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the area of the large rectangle.",
+        "working": "$A_{\\text{large}} = 9 \\times 7 = 63 \\text{ m}^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the area of the removed rectangle.",
+        "working": "$A_{\\text{removed}} = 3 \\times 4 = 12 \\text{ m}^2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract the removed area from the large rectangle.",
+        "working": "$A = 63 - 12 = 51 \\text{ m}^2$"
+      }
+    ],
+    "answer": "$51 \\text{ m}^2$"
+  },
+  {
+    "id": "y7-area-composite-we-2",
+    "title": "Area of a shape with a triangle",
+    "difficulty": 2,
+    "problem": "A composite shape consists of an $8 \\text{ cm} \\times 5 \\text{ cm}$ rectangle with a triangle of base $8 \\text{ cm}$ and height $3 \\text{ cm}$ on top. Find the total area.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the area of the rectangle using $A = l \\times w$.",
+        "working": "$A_{\\text{rectangle}} = 8 \\times 5 = 40 \\text{ cm}^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the area of the triangle using $A = \\frac{1}{2} \\times b \\times h$.",
+        "working": "$A_{\\text{triangle}} = \\frac{1}{2} \\times 8 \\times 3 = 12 \\text{ cm}^2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the two areas to find the total.",
+        "working": "$A_{\\text{total}} = 40 + 12 = 52 \\text{ cm}^2$"
+      }
+    ],
+    "answer": "$52 \\text{ cm}^2$"
+  },
+  {
+    "id": "y7-area-composite-we-3",
+    "title": "Area of a shape with a semicircle",
+    "difficulty": 3,
+    "problem": "A composite shape is formed by a $12 \\text{ cm} \\times 6 \\text{ cm}$ rectangle with a semicircle of diameter $6 \\text{ cm}$ attached to one of the shorter ends. Find the total area to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the area of the rectangle.",
+        "working": "$A_{\\text{rectangle}} = 12 \\times 6 = 72 \\text{ cm}^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the radius of the semicircle. The diameter is $6 \\text{ cm}$, so the radius is $r = 6 \\div 2 = 3 \\text{ cm}$.",
+        "working": "$r = 3 \\text{ cm}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the area of the semicircle using $A = \\frac{1}{2} \\pi r^2$.",
+        "working": "$A_{\\text{semicircle}} = \\frac{1}{2} \\times \\pi \\times 3^2 = 4.5\\pi \\approx 14.14 \\text{ cm}^2$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add the two areas to find the total.",
+        "working": "$A_{\\text{total}} = 72 + 14.14 = 86.14 \\text{ cm}^2$"
+      }
+    ],
+    "answer": "$86.14 \\text{ cm}^2$"
+  }
+]

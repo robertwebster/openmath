@@ -1,0 +1,79 @@
+[
+  {
+    "id": "rat-ex-1",
+    "title": "Simplifying a ratio",
+    "difficulty": 1,
+    "problem": "Simplify the ratio $18:24$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the highest common factor (HCF) of 18 and 24.",
+        "working": "Factors of 18: 1, 2, 3, 6, 9, 18\n\nFactors of 24: 1, 2, 3, 4, 6, 8, 12, 24\n\nHCF $= 6$"
+      },
+      {
+        "step": 2,
+        "instruction": "Divide both parts of the ratio by the HCF.",
+        "working": "$$18 \\div 6 = 3, \\quad 24 \\div 6 = 4$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the simplified ratio.",
+        "working": "$$18:24 = 3:4$$"
+      }
+    ],
+    "answer": "$3:4$"
+  },
+  {
+    "id": "rat-ex-2",
+    "title": "Dividing a quantity in a given ratio",
+    "difficulty": 2,
+    "problem": "Divide $\\$75$ in the ratio $2:3$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the total number of parts.",
+        "working": "$$2 + 3 = 5 \\text{ parts}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the value of one part.",
+        "working": "$$\\$75 \\div 5 = \\$15 \\text{ per part}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply to find each share.",
+        "working": "First share: $2 \\times \\$15 = \\$30$\n\nSecond share: $3 \\times \\$15 = \\$45$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check that the shares add to the original amount.",
+        "working": "$$\\$30 + \\$45 = \\$75 \\checkmark$$"
+      }
+    ],
+    "answer": "$\\$30$ and $\\$45$"
+  },
+  {
+    "id": "rat-ex-3",
+    "title": "Finding an unknown in an equivalent ratio",
+    "difficulty": 3,
+    "problem": "Find $x$ if $4:x$ is equivalent to $12:21$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the equivalent ratios as equal fractions.",
+        "working": "$$\\frac{4}{x} = \\frac{12}{21}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Simplify the right-hand fraction by dividing by the HCF of 12 and 21.",
+        "working": "HCF of 12 and 21 is 3:\n$$\\frac{12}{21} = \\frac{4}{7}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "The fractions are equal, so the denominators must match.",
+        "working": "$$\\frac{4}{x} = \\frac{4}{7} \\implies x = 7$$"
+      }
+    ],
+    "answer": "$x = 7$"
+  }
+]

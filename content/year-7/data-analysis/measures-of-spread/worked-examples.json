@@ -1,0 +1,84 @@
+[
+  {
+    "id": "y7-dat-spread-we-1",
+    "title": "Finding the range",
+    "difficulty": 1,
+    "problem": "Find the range of the data set $4, 9, 2, 15, 7$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the highest value in the data set.",
+        "working": "The highest value is $15$."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the lowest value in the data set.",
+        "working": "The lowest value is $2$."
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract the lowest value from the highest value.",
+        "working": "$\\text{Range} = 15 - 2 = 13$"
+      }
+    ],
+    "answer": "The range is $13$."
+  },
+  {
+    "id": "y7-dat-spread-we-2",
+    "title": "Finding the interquartile range",
+    "difficulty": 2,
+    "problem": "Find the interquartile range (IQR) of the data set $3, 6, 9, 12, 15, 18$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Confirm the data is sorted, then split it into a lower half and an upper half.",
+        "working": "Lower half: $3, 6, 9$. Upper half: $12, 15, 18$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find Q1, the median of the lower half.",
+        "working": "The median of $3, 6, 9$ is $6$, so Q1 $= 6$."
+      },
+      {
+        "step": 3,
+        "instruction": "Find Q3, the median of the upper half.",
+        "working": "The median of $12, 15, 18$ is $15$, so Q3 $= 15$."
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the IQR.",
+        "working": "$\\text{IQR} = Q3 - Q1 = 15 - 6 = 9$"
+      }
+    ],
+    "answer": "The IQR is $9$."
+  },
+  {
+    "id": "y7-dat-spread-we-3",
+    "title": "Comparing the spread of two data sets",
+    "difficulty": 3,
+    "problem": "Compare the spread of Set A: $\\{10, 12, 14, 16, 18, 20\\}$ and Set B: $\\{2, 8, 14, 20, 26, 32\\}$ using both range and IQR.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the range of each set.",
+        "working": "Set A: range $= 20 - 10 = 10$. Set B: range $= 32 - 2 = 30$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find Q1 and Q3 for Set A.",
+        "working": "Lower half: $10, 12, 14$ — Q1 $= 12$. Upper half: $16, 18, 20$ — Q3 $= 18$. IQR $= 18 - 12 = 6$."
+      },
+      {
+        "step": 3,
+        "instruction": "Find Q1 and Q3 for Set B.",
+        "working": "Lower half: $2, 8, 14$ — Q1 $= 8$. Upper half: $20, 26, 32$ — Q3 $= 26$. IQR $= 26 - 8 = 18$."
+      },
+      {
+        "step": 4,
+        "instruction": "Compare the measures and draw a conclusion.",
+        "working": "Set B has a greater range ($30 > 10$) and a greater IQR ($18 > 6$), so Set B is more spread out by both measures."
+      }
+    ],
+    "answer": "Set B is more spread out, with a greater range ($30$ vs $10$) and a greater IQR ($18$ vs $6$)."
+  }
+]

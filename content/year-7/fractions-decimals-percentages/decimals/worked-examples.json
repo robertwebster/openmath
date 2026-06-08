@@ -1,0 +1,79 @@
+[
+  {
+    "id": "dec-we1",
+    "title": "Adding decimals",
+    "difficulty": 1,
+    "problem": "Calculate $4.7 + 2.58$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write both numbers with the same number of decimal places.",
+        "working": "$4.7 = 4.70$, so we calculate $4.70 + 2.58$."
+      },
+      {
+        "step": 2,
+        "instruction": "Add column by column from right to left.",
+        "working": "Hundredths: $0 + 8 = 8$. Tenths: $7 + 5 = 12$, write $2$ and carry $1$. Ones: $4 + 2 + 1 = 7$."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the final answer.",
+        "working": "$$4.70 + 2.58 = 7.28$$"
+      }
+    ],
+    "answer": "7.28"
+  },
+  {
+    "id": "dec-we2",
+    "title": "Multiplying decimals",
+    "difficulty": 2,
+    "problem": "Calculate $2.4 \\times 3.5$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Ignore the decimal points and multiply the whole numbers.",
+        "working": "$24 \\times 35 = 840$"
+      },
+      {
+        "step": 2,
+        "instruction": "Count the total number of decimal places in both original numbers.",
+        "working": "$2.4$ has $1$ decimal place. $3.5$ has $1$ decimal place. Total: $2$ decimal places."
+      },
+      {
+        "step": 3,
+        "instruction": "Place the decimal point in the answer so it has the correct number of decimal places.",
+        "working": "$$840 \\to 8.40 = 8.4$$"
+      }
+    ],
+    "answer": "8.4"
+  },
+  {
+    "id": "dec-we3",
+    "title": "Dividing decimals with rounding",
+    "difficulty": 3,
+    "problem": "Calculate $3.6 \\div 0.7$, rounding your answer to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Multiply both numbers by $10$ so the divisor becomes a whole number.",
+        "working": "$$3.6 \\div 0.7 = 36 \\div 7$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Perform the division to at least 3 decimal places.",
+        "working": "$$36 \\div 7 = 5.142857\\ldots$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Round to 2 decimal places by looking at the third decimal digit.",
+        "working": "The third decimal digit is $2$, which is less than $5$, so round down. The second decimal place stays as $4$."
+      },
+      {
+        "step": 4,
+        "instruction": "Write the final answer.",
+        "working": "$$3.6 \\div 0.7 \\approx 5.14$$"
+      }
+    ],
+    "answer": "5.14"
+  }
+]

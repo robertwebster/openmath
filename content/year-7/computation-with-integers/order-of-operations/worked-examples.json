@@ -1,0 +1,84 @@
+[
+  {
+    "id": "ooo-ex-1",
+    "title": "Two operations, no brackets",
+    "difficulty": 1,
+    "problem": "Calculate $10 - 6 \\div 2$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the operations present: subtraction and division.",
+        "working": "$$10 - 6 \\div 2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Division is performed before subtraction (BODMAS: D before S).",
+        "working": "$$6 \\div 2 = 3$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Now perform the subtraction.",
+        "working": "$$10 - 3 = 7$$"
+      }
+    ],
+    "answer": "$7$"
+  },
+  {
+    "id": "ooo-ex-2",
+    "title": "Brackets and exponents",
+    "difficulty": 2,
+    "problem": "Calculate $3^2 - 2 \\times 4$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the operations: exponent, multiplication, subtraction. Apply BODMAS order.",
+        "working": "$$3^2 - 2 \\times 4$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate the exponent first (O in BODMAS).",
+        "working": "$$3^2 = 9$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Perform multiplication next (M before S).",
+        "working": "$$2 \\times 4 = 8$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Finally, perform the subtraction.",
+        "working": "$$9 - 8 = 1$$"
+      }
+    ],
+    "answer": "$1$"
+  },
+  {
+    "id": "ooo-ex-3",
+    "title": "Nested brackets with exponent",
+    "difficulty": 3,
+    "problem": "Calculate $3 \\times (4 + 2^2)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Work inside the brackets first. Inside, there is an exponent and addition.",
+        "working": "$$3 \\times (4 + 2^2)$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Inside the brackets, evaluate the exponent before adding.",
+        "working": "$$2^2 = 4$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Complete the addition inside the brackets.",
+        "working": "$$4 + 4 = 8$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Multiply by the value outside the brackets.",
+        "working": "$$3 \\times 8 = 24$$"
+      }
+    ],
+    "answer": "$24$"
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "alg-exp-fac-ex-1",
+    "title": "Expanding a single bracket",
+    "difficulty": 1,
+    "problem": "Expand $5(x + 3)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Multiply the term outside the brackets by the first term inside.",
+        "working": "$$5 \\times x = 5x$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the term outside the brackets by the second term inside.",
+        "working": "$$5 \\times 3 = 15$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the expanded expression by combining the two results.",
+        "working": "$$5(x + 3) = 5x + 15$$"
+      }
+    ],
+    "answer": "$5x + 15$"
+  },
+  {
+    "id": "alg-exp-fac-ex-2",
+    "title": "Expanding two brackets and simplifying",
+    "difficulty": 2,
+    "problem": "Expand and simplify $3(x + 4) + 2(x - 1)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Expand the first bracket.",
+        "working": "$$3(x + 4) = 3x + 12$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Expand the second bracket.",
+        "working": "$$2(x - 1) = 2x - 2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the full expression with both brackets expanded.",
+        "working": "$$3x + 12 + 2x - 2$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Collect like terms.",
+        "working": "$$(3 + 2)x + (12 - 2) = 5x + 10$$"
+      }
+    ],
+    "answer": "$5x + 10$"
+  },
+  {
+    "id": "alg-exp-fac-ex-3",
+    "title": "Factorising by taking out a common factor",
+    "difficulty": 3,
+    "problem": "Factorise $12x + 8$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the highest common factor (HCF) of $12x$ and $8$.",
+        "working": "Factors of $12$: $1, 2, 3, 4, 6, 12$\n\nFactors of $8$: $1, 2, 4, 8$\n\nHCF $= 4$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the HCF outside the brackets.",
+        "working": "$$12x + 8 = 4(\\ldots)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Divide each term by the HCF to find what goes inside the brackets.",
+        "working": "$$12x \\div 4 = 3x \\qquad 8 \\div 4 = 2$$\n\n$$12x + 8 = 4(3x + 2)$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check by expanding.",
+        "working": "$$4(3x + 2) = 4 \\times 3x + 4 \\times 2 = 12x + 8 \\checkmark$$"
+      }
+    ],
+    "answer": "$4(3x + 2)$"
+  }
+]

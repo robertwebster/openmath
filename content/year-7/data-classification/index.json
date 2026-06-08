@@ -1,0 +1,11 @@
+{
+  "id": "data-classification",
+  "title": "Data classification and visualisation",
+  "year": 7,
+  "stage": "4",
+  "strand": "Statistics",
+  "syllabusOutcome": "MA4-DAT-C-01",
+  "description": "Classify data types and choose appropriate displays.",
+  "extension": false,
+  "subtopics": ["types-of-data", "displaying-data"]
+}

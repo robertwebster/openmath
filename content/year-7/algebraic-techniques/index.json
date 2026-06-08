@@ -1,0 +1,15 @@
+{
+  "id": "algebraic-techniques",
+  "title": "Algebraic techniques",
+  "year": 7,
+  "stage": "4",
+  "extension": false,
+  "strand": "Algebra",
+  "syllabusOutcome": "MA4-ALG-C-01",
+  "description": "Write, simplify and substitute into algebraic expressions. Expand and factorise simple expressions.",
+  "subtopics": [
+    "algebraic-expressions",
+    "expanding-and-factorising",
+    "substitution"
+  ]
+}

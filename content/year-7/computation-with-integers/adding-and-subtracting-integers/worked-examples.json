@@ -1,0 +1,69 @@
+[
+  {
+    "id": "asi-ex-1",
+    "title": "Adding a negative integer",
+    "difficulty": 1,
+    "problem": "Calculate $-3 + 7$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Locate the starting point on the number line.",
+        "working": "Start at $-3$."
+      },
+      {
+        "step": 2,
+        "instruction": "Adding a positive number means moving right along the number line.",
+        "working": "Move $7$ places to the right from $-3$:\n$$-3 \\to -2 \\to -1 \\to 0 \\to 1 \\to 2 \\to 3 \\to 4$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Read the result.",
+        "working": "$$-3 + 7 = 4$$"
+      }
+    ],
+    "answer": "$4$"
+  },
+  {
+    "id": "asi-ex-2",
+    "title": "Subtracting a negative integer",
+    "difficulty": 2,
+    "problem": "Calculate $5 - (-3)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the rule: subtracting a negative is the same as adding the positive.",
+        "working": "$$5 - (-3) = 5 + 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Add the two positive integers.",
+        "working": "$$5 + 3 = 8$$"
+      }
+    ],
+    "answer": "$8$"
+  },
+  {
+    "id": "asi-ex-3",
+    "title": "Multi-step expression with mixed operations",
+    "difficulty": 3,
+    "problem": "Calculate $-5 + 3 - (-4)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Rewrite the expression by replacing $- (-4)$ with $+ 4$.",
+        "working": "$$-5 + 3 - (-4) = -5 + 3 + 4$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Work from left to right. First add $-5$ and $3$.",
+        "working": "$$-5 + 3 = -2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Then add $4$ to the result.",
+        "working": "$$-2 + 4 = 2$$"
+      }
+    ],
+    "answer": "$2$"
+  }
+]

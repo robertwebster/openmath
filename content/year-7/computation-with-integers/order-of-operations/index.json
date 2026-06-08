@@ -1,0 +1,9 @@
+{
+  "id": "order-of-operations",
+  "title": "Order of operations",
+  "topic": "computation-with-integers",
+  "year": 7,
+  "strand": "Number",
+  "syllabusOutcome": "MA4-INT-C-01",
+  "description": "Apply the order of operations (BODMAS) to evaluate expressions involving integers."
+}

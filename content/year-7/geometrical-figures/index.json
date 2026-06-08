@@ -1,0 +1,11 @@
+{
+  "id": "geometrical-figures",
+  "title": "Properties of geometrical figures",
+  "year": 7,
+  "stage": "4",
+  "strand": "Space",
+  "syllabusOutcome": "MA4-GEO-C-01",
+  "description": "Identify and apply properties of triangles and quadrilaterals.",
+  "extension": false,
+  "subtopics": ["triangles", "quadrilaterals"]
+}

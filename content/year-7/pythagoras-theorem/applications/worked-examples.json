@@ -1,0 +1,89 @@
+[
+  {
+    "id": "year7-app-we-1",
+    "title": "Find the diagonal of a rectangle",
+    "difficulty": 1,
+    "problem": "A rectangle has length $6$ cm and width $8$ cm. Find the length of the diagonal.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the right-angled triangle. The diagonal of a rectangle is the hypotenuse of a right-angled triangle formed by the length and width.",
+        "working": "Legs: $6$ cm and $8$ cm. Hypotenuse: $d$."
+      },
+      {
+        "step": 2,
+        "instruction": "Write Pythagoras' theorem.",
+        "working": "$$d^2 = l^2 + w^2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the known values.",
+        "working": "$$d^2 = 6^2 + 8^2 = 36 + 64 = 100$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Take the square root to find the diagonal.",
+        "working": "$$d = \\sqrt{100} = 10 \\text{ cm}$$"
+      }
+    ],
+    "answer": "10 cm"
+  },
+  {
+    "id": "year7-app-we-2",
+    "title": "Find the distance between two points",
+    "difficulty": 2,
+    "problem": "Find the distance between the points $(1, 3)$ and $(7, 11)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the horizontal distance by subtracting the $x$-coordinates.",
+        "working": "$$\\text{horizontal} = 7 - 1 = 6$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the vertical distance by subtracting the $y$-coordinates.",
+        "working": "$$\\text{vertical} = 11 - 3 = 8$$"
+      },
+      {
+        "step": 3,
+        "instruction": "These two distances are the legs of a right-angled triangle. Apply Pythagoras' theorem.",
+        "working": "$$d^2 = 6^2 + 8^2 = 36 + 64 = 100$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Take the square root to find the distance.",
+        "working": "$$d = \\sqrt{100} = 10 \\text{ units}$$"
+      }
+    ],
+    "answer": "10 units"
+  },
+  {
+    "id": "year7-app-we-3",
+    "title": "Real-world problem: ladder against a wall",
+    "difficulty": 3,
+    "problem": "A ladder $13$ m long leans against a vertical wall. The foot of the ladder is $5$ m from the base of the wall. How high up the wall does the ladder reach?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the sides of the right-angled triangle. The ladder is the hypotenuse; the wall height and ground distance are the shorter sides.",
+        "working": "Hypotenuse $= 13$ m, base $= 5$ m, height $= h$."
+      },
+      {
+        "step": 2,
+        "instruction": "Write Pythagoras' theorem with the unknown height.",
+        "working": "$$h^2 + 5^2 = 13^2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate the squares and rearrange.",
+        "working": "$$h^2 + 25 = 169$$\n$$h^2 = 169 - 25 = 144$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Take the square root to find the height.",
+        "working": "$$h = \\sqrt{144} = 12 \\text{ m}$$"
+      }
+    ],
+    "answer": "12 m"
+  }
+]

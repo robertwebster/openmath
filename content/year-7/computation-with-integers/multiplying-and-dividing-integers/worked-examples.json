@@ -1,0 +1,79 @@
+[
+  {
+    "id": "mdi-ex-1",
+    "title": "Multiplying integers with different signs",
+    "difficulty": 1,
+    "problem": "Calculate $-4 \\times 3$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the signs of both numbers.",
+        "working": "$-4$ is negative and $3$ is positive. The signs are different."
+      },
+      {
+        "step": 2,
+        "instruction": "When the signs are different, the result is negative. Multiply the absolute values.",
+        "working": "$$4 \\times 3 = 12$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the negative sign to the result.",
+        "working": "$$-4 \\times 3 = -12$$"
+      }
+    ],
+    "answer": "$-12$"
+  },
+  {
+    "id": "mdi-ex-2",
+    "title": "Multiplying two negative integers",
+    "difficulty": 2,
+    "problem": "Calculate $-6 \\times (-5)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the signs of both numbers.",
+        "working": "Both $-6$ and $-5$ are negative. The signs are the same."
+      },
+      {
+        "step": 2,
+        "instruction": "When the signs are the same, the result is positive. Multiply the absolute values.",
+        "working": "$$6 \\times 5 = 30$$"
+      },
+      {
+        "step": 3,
+        "instruction": "The result is positive.",
+        "working": "$$-6 \\times (-5) = 30$$"
+      }
+    ],
+    "answer": "$30$"
+  },
+  {
+    "id": "mdi-ex-3",
+    "title": "Multi-step expression with mixed operations",
+    "difficulty": 3,
+    "problem": "Calculate $3 \\times (-4) + (-2) \\times 5$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply order of operations: perform all multiplications before addition.",
+        "working": "There are two multiplications: $3 \\times (-4)$ and $(-2) \\times 5$."
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the first multiplication. The signs are different, so the result is negative.",
+        "working": "$$3 \\times (-4) = -12$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the second multiplication. The signs are different, so the result is negative.",
+        "working": "$$(-2) \\times 5 = -10$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add the two results.",
+        "working": "$$-12 + (-10) = -12 - 10 = -22$$"
+      }
+    ],
+    "answer": "$-22$"
+  }
+]
