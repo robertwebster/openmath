@@ -1,0 +1,15 @@
+{
+  "id": "area",
+  "title": "Area",
+  "year": 8,
+  "stage": "4",
+  "strand": "Measurement",
+  "syllabusOutcome": "MA4-ARE-C-01",
+  "description": "Find the area of circles, special quadrilaterals and composite shapes.",
+  "extension": false,
+  "subtopics": [
+    "area-of-circles",
+    "area-of-special-quadrilaterals",
+    "composite-shapes-with-circles"
+  ]
+}

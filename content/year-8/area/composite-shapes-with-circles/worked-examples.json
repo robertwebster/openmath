@@ -1,0 +1,84 @@
+[
+  {
+    "id": "y8-are-csc-we01",
+    "title": "Area of a rectangle combined with a semicircle",
+    "difficulty": 1,
+    "problem": "A shape is formed by attaching a semicircle to the top of a rectangle that is $8$ cm wide and $5$ cm tall. Find the total area correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the area of the rectangle.",
+        "working": "$A_{\\text{rect}} = 8 \\times 5 = 40$ cm²"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the radius of the semicircle. The diameter equals the width of the rectangle.",
+        "working": "$r = 8 \\div 2 = 4$ cm"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the area of the semicircle using $A = \\dfrac{1}{2}\\pi r^2$.",
+        "working": "$A_{\\text{semi}} = \\dfrac{1}{2} \\times \\pi \\times 4^2 = \\dfrac{16\\pi}{2} = 8\\pi \\approx 25.13$ cm²"
+      },
+      {
+        "step": 4,
+        "instruction": "Add both areas for the total.",
+        "working": "$A = 40 + 8\\pi \\approx 40 + 25.13 = 65.13$ cm²"
+      }
+    ],
+    "answer": "$A \\approx 65.13$ cm²"
+  },
+  {
+    "id": "y8-are-csc-we02",
+    "title": "Area of a rectangle with a circular region removed",
+    "difficulty": 2,
+    "problem": "A rectangular piece of wood is $20$ cm long and $12$ cm wide. A circular hole of radius $4$ cm is cut from the centre. Find the remaining area correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the area of the rectangle.",
+        "working": "$A_{\\text{rect}} = 20 \\times 12 = 240$ cm²"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the area of the circular hole using $A = \\pi r^2$.",
+        "working": "$A_{\\text{circle}} = \\pi \\times 4^2 = 16\\pi \\approx 50.27$ cm²"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract the circle area from the rectangle area.",
+        "working": "$A_{\\text{remaining}} = 240 - 16\\pi \\approx 240 - 50.27 = 189.73$ cm²"
+      }
+    ],
+    "answer": "$A \\approx 189.73$ cm²"
+  },
+  {
+    "id": "y8-are-csc-we03",
+    "title": "Area of a circular border",
+    "difficulty": 3,
+    "problem": "A circular pond has a radius of $6$ m. A garden path of uniform width $2$ m is built around the outside. Find the area of the path correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the radius of the outer circle (pond radius plus path width).",
+        "working": "$r_{\\text{outer}} = 6 + 2 = 8$ m"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the area of the outer circle.",
+        "working": "$A_{\\text{outer}} = \\pi(8)^2 = 64\\pi$ m²"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the area of the inner circle (the pond).",
+        "working": "$A_{\\text{inner}} = \\pi(6)^2 = 36\\pi$ m²"
+      },
+      {
+        "step": 4,
+        "instruction": "Subtract to find the area of the path.",
+        "working": "$A_{\\text{path}} = 64\\pi - 36\\pi = 28\\pi \\approx 87.96$ m²"
+      }
+    ],
+    "answer": "$A \\approx 87.96$ m²"
+  }
+]

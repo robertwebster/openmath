@@ -1,0 +1,69 @@
+[
+  {
+    "id": "y8-geo-rar-we01",
+    "title": "Reflecting a point in the x-axis",
+    "difficulty": 1,
+    "problem": "Reflect the point $A(4, -3)$ in the $x$-axis. State the new coordinates.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the rule for a reflection in the $x$-axis.",
+        "working": "$(x, y) \\to (x, -y)$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the rule to $A(4, -3)$: keep the $x$-coordinate and change the sign of the $y$-coordinate.",
+        "working": "$A(4, -3) \\to A'(4, -(-3)) = A'(4, 3)$"
+      }
+    ],
+    "answer": "$A'(4, 3)$"
+  },
+  {
+    "id": "y8-geo-rar-we02",
+    "title": "Rotating a point 180° about the origin",
+    "difficulty": 2,
+    "problem": "Rotate the point $B(-3, 2)$ by $180°$ about the origin. State the new coordinates.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the rule for a $180°$ rotation about the origin.",
+        "working": "$(x, y) \\to (-x, -y)$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the rule to $B(-3, 2)$: change the sign of both coordinates.",
+        "working": "$B(-3, 2) \\to B'(-(-3), -(2)) = B'(3, -2)$"
+      }
+    ],
+    "answer": "$B'(3, -2)$"
+  },
+  {
+    "id": "y8-geo-rar-we03",
+    "title": "Identifying a transformation from original and image coordinates",
+    "difficulty": 3,
+    "problem": "The point $P(-2, 5)$ maps to $P'(-5, -2)$. Identify the transformation.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Test reflection in the $x$-axis: $(x, y) \\to (x, -y)$.",
+        "working": "$(-2, 5) \\to (-2, -5) \\neq (-5, -2)$ ✗"
+      },
+      {
+        "step": 2,
+        "instruction": "Test reflection in the $y$-axis: $(x, y) \\to (-x, y)$.",
+        "working": "$(-2, 5) \\to (2, 5) \\neq (-5, -2)$ ✗"
+      },
+      {
+        "step": 3,
+        "instruction": "Test a $90°$ anticlockwise rotation: $(x, y) \\to (-y, x)$.",
+        "working": "$(-2, 5) \\to (-5, -2)$ ✓"
+      },
+      {
+        "step": 4,
+        "instruction": "State the transformation.",
+        "working": "The image matches, so the transformation is a rotation of $90°$ anticlockwise about the origin."
+      }
+    ],
+    "answer": "Rotation of $90°$ anticlockwise about the origin"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "id": "algebraic-techniques",
+  "title": "Algebraic techniques",
+  "year": 8,
+  "stage": "4",
+  "extension": false,
+  "strand": "Algebra",
+  "syllabusOutcome": "MA4-ALG-C-01",
+  "description": "Simplify algebraic fractions, expand binomials and factorise expressions.",
+  "subtopics": [
+    "simplifying-algebraic-fractions",
+    "expanding-and-simplifying",
+    "factorising-expressions"
+  ]
+}

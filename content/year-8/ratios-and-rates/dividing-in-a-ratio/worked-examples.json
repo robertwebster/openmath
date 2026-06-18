@@ -1,0 +1,89 @@
+[
+  {
+    "id": "dar-we-1",
+    "title": "Dividing a quantity in a two-part ratio",
+    "difficulty": 1,
+    "problem": "Divide \\$150 in the ratio $2:3$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the total number of parts.",
+        "working": "$2 + 3 = 5$ parts"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the value of one part.",
+        "working": "$\\$150 \\div 5 = \\$30$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate each share.",
+        "working": "First share: $2 \\times \\$30 = \\$60$ \\\\ Second share: $3 \\times \\$30 = \\$90$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check: the shares should add to the total.",
+        "working": "$\\$60 + \\$90 = \\$150$ ✓"
+      }
+    ],
+    "answer": "The shares are \\$60 and \\$90."
+  },
+  {
+    "id": "dar-we-2",
+    "title": "Dividing a quantity in a three-part ratio",
+    "difficulty": 2,
+    "problem": "Three friends share 360 stickers in the ratio $2:3:7$. Find each person's share.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the total number of parts.",
+        "working": "$2 + 3 + 7 = 12$ parts"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the value of one part.",
+        "working": "$360 \\div 12 = 30$ stickers"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate each share.",
+        "working": "First friend: $2 \\times 30 = 60$ stickers \\\\ Second friend: $3 \\times 30 = 90$ stickers \\\\ Third friend: $7 \\times 30 = 210$ stickers"
+      },
+      {
+        "step": 4,
+        "instruction": "Check: the shares should add to the total.",
+        "working": "$60 + 90 + 210 = 360$ ✓"
+      }
+    ],
+    "answer": "The three friends receive 60, 90 and 210 stickers."
+  },
+  {
+    "id": "dar-we-3",
+    "title": "Finding the total from one share",
+    "difficulty": 3,
+    "problem": "Sarah and Tom share some money in the ratio $3:8$. Tom receives \\$120. Find the total amount shared.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify how many parts Tom has, and use this to find the value of one part.",
+        "working": "Tom has 8 parts $= \\$120$ \\\\ One part $= \\$120 \\div 8 = \\$15$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find Sarah's share.",
+        "working": "Sarah has 3 parts $= 3 \\times \\$15 = \\$45$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the total number of parts and calculate the total.",
+        "working": "Total parts: $3 + 8 = 11$ \\\\ Total amount: $11 \\times \\$15 = \\$165$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check: Sarah's and Tom's shares should add to the total.",
+        "working": "$\\$45 + \\$120 = \\$165$ ✓"
+      }
+    ],
+    "answer": "The total amount shared is \\$165."
+  }
+]

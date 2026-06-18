@@ -1,0 +1,14 @@
+{
+  "id": "properties-of-geometrical-figures",
+  "title": "Properties of geometrical figures",
+  "year": 8,
+  "stage": "4",
+  "strand": "Space",
+  "syllabusOutcome": "MA4-GEO-C-01",
+  "description": "Perform and describe reflections, rotations, translations and dilations.",
+  "extension": false,
+  "subtopics": [
+    "reflections-and-rotations",
+    "translations-and-dilations"
+  ]
+}

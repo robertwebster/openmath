@@ -1,0 +1,84 @@
+[
+  {
+    "id": "y8-td-we01",
+    "title": "Listing outcomes using a tree diagram",
+    "difficulty": 1,
+    "problem": "A bag contains one red (R) marble and one blue (B) marble. A marble is drawn at random, replaced, and then a second marble is drawn. Draw a tree diagram and list all outcomes in the sample space.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Draw the first stage of the tree.",
+        "working": "From the start, draw two branches — one labelled R and one labelled B."
+      },
+      {
+        "step": 2,
+        "instruction": "Draw the second stage of the tree.",
+        "working": "Since the marble is replaced, the same two options (R and B) are available for the second draw. From each first-stage branch, draw two more branches labelled R and B."
+      },
+      {
+        "step": 3,
+        "instruction": "List all outcomes by following each path from start to end.",
+        "working": "The four paths give outcomes: RR, RB, BR, BB."
+      }
+    ],
+    "answer": "Sample space $= \\{\\text{RR},\\ \\text{RB},\\ \\text{BR},\\ \\text{BB}\\}$. There are 4 outcomes."
+  },
+  {
+    "id": "y8-td-we02",
+    "title": "Finding probability from a tree diagram (with replacement)",
+    "difficulty": 2,
+    "problem": "A bag contains 2 red (R) and 1 blue (B) marble. A marble is drawn, replaced, then drawn again. Using a tree diagram, find $P(\\text{at least one blue marble})$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write probabilities on the first-stage branches.",
+        "working": "$P(R) = \\dfrac{2}{3}$, $\\quad P(B) = \\dfrac{1}{3}$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write probabilities on the second-stage branches.",
+        "working": "Because the marble is replaced, the probabilities are the same for the second draw. Write $P(R) = \\dfrac{2}{3}$ and $P(B) = \\dfrac{1}{3}$ from each first-stage branch."
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply along each path to find the probability of each outcome.",
+        "working": "$P(RR) = \\dfrac{2}{3} \\times \\dfrac{2}{3} = \\dfrac{4}{9}$, $\\quad P(RB) = \\dfrac{2}{3} \\times \\dfrac{1}{3} = \\dfrac{2}{9}$, $\\quad P(BR) = \\dfrac{1}{3} \\times \\dfrac{2}{3} = \\dfrac{2}{9}$, $\\quad P(BB) = \\dfrac{1}{3} \\times \\dfrac{1}{3} = \\dfrac{1}{9}$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add the probabilities for all outcomes that include at least one blue marble.",
+        "working": "$$P(\\text{at least one blue}) = P(RB) + P(BR) + P(BB) = \\frac{2}{9} + \\frac{2}{9} + \\frac{1}{9} = \\frac{5}{9}$$"
+      }
+    ],
+    "answer": "$\\dfrac{5}{9}$"
+  },
+  {
+    "id": "y8-td-we03",
+    "title": "Finding probability from a tree diagram (without replacement)",
+    "difficulty": 3,
+    "problem": "A bag contains 3 red (R) and 2 blue (B) marbles. Two marbles are drawn without replacement. Using a tree diagram, find $P(\\text{one red and one blue})$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write probabilities on the first-stage branches.",
+        "working": "$P(R) = \\dfrac{3}{5}$, $\\quad P(B) = \\dfrac{2}{5}$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write probabilities on the second-stage branches. These change because the first marble is not replaced.",
+        "working": "If first draw was R: 2 red and 2 blue remain from 4 total, so $P(R) = \\dfrac{2}{4} = \\dfrac{1}{2}$ and $P(B) = \\dfrac{2}{4} = \\dfrac{1}{2}$. If first draw was B: 3 red and 1 blue remain from 4 total, so $P(R) = \\dfrac{3}{4}$ and $P(B) = \\dfrac{1}{4}$."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the probability for each mixed-colour path.",
+        "working": "$$P(\\text{R then B}) = \\frac{3}{5} \\times \\frac{1}{2} = \\frac{3}{10}$$ $$P(\\text{B then R}) = \\frac{2}{5} \\times \\frac{3}{4} = \\frac{6}{20} = \\frac{3}{10}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add the two probabilities.",
+        "working": "$$P(\\text{one red and one blue}) = \\frac{3}{10} + \\frac{3}{10} = \\frac{6}{10} = \\frac{3}{5}$$"
+      }
+    ],
+    "answer": "$\\dfrac{3}{5}$"
+  }
+]

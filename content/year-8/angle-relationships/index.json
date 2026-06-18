@@ -1,0 +1,14 @@
+{
+  "id": "angle-relationships",
+  "title": "Angle relationships",
+  "year": 8,
+  "stage": "4",
+  "strand": "Space",
+  "syllabusOutcome": "MA4-ANG-C-01",
+  "description": "Find angles in polygons and solve complex parallel line problems.",
+  "extension": false,
+  "subtopics": [
+    "angles-in-polygons",
+    "parallel-lines-and-transversals"
+  ]
+}

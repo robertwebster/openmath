@@ -1,0 +1,79 @@
+[
+  {
+    "id": "y8-geo-tad-we01",
+    "title": "Translating a point using a vector",
+    "difficulty": 1,
+    "problem": "Translate point $A(2, 5)$ by the vector $\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}$ and state the coordinates of $A'$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Add the horizontal component of the vector to the $x$-coordinate.",
+        "working": "$x' = 2 + 3 = 5$"
+      },
+      {
+        "step": 2,
+        "instruction": "Add the vertical component of the vector to the $y$-coordinate.",
+        "working": "$y' = 5 + (-4) = 1$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the coordinates of the image.",
+        "working": "$A' = (5, 1)$"
+      }
+    ],
+    "answer": "$A'(5, 1)$"
+  },
+  {
+    "id": "y8-geo-tad-we02",
+    "title": "Dilating a point from the origin",
+    "difficulty": 2,
+    "problem": "Point $B(4, -2)$ is dilated from the origin by scale factor $3$. State the coordinates of $B'$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the dilation rule: multiply each coordinate by the scale factor $k$.",
+        "working": "$(x, y) \\to (kx, ky)$ where $k = 3$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the $x$-coordinate by $3$.",
+        "working": "$x' = 4 \\times 3 = 12$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply the $y$-coordinate by $3$.",
+        "working": "$y' = -2 \\times 3 = -6$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write the coordinates of the image.",
+        "working": "$B' = (12, -6)$"
+      }
+    ],
+    "answer": "$B'(12, -6)$"
+  },
+  {
+    "id": "y8-geo-tad-we03",
+    "title": "Finding the scale factor and classifying a dilation",
+    "difficulty": 3,
+    "problem": "Point $C(5, 10)$ is mapped to $C'(2, 4)$ by a dilation from the origin. Find the scale factor and classify the transformation as an enlargement, reduction or congruent.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the scale factor by dividing an image coordinate by the corresponding original coordinate.",
+        "working": "$k = \\dfrac{x'}{x} = \\dfrac{2}{5}$"
+      },
+      {
+        "step": 2,
+        "instruction": "Verify using the $y$-coordinates.",
+        "working": "$\\dfrac{y'}{y} = \\dfrac{4}{10} = \\dfrac{2}{5}$ ✓"
+      },
+      {
+        "step": 3,
+        "instruction": "Classify the dilation: since $k < 1$, the image is smaller than the original.",
+        "working": "$k = \\dfrac{2}{5} < 1$, so this is a reduction."
+      }
+    ],
+    "answer": "Scale factor $= \\dfrac{2}{5}$; the transformation is a reduction."
+  }
+]

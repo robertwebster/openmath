@@ -1,0 +1,89 @@
+[
+  {
+    "id": "eol-we-1",
+    "title": "Writing the equation of a line from gradient and y-intercept",
+    "difficulty": 1,
+    "problem": "Write the equation of a line with gradient $m = 3$ and y-intercept $b = -4$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the general equation of a straight line.",
+        "working": "$$y = mx + b$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the gradient $m = 3$ and the y-intercept $b = -4$.",
+        "working": "$$y = 3x + (-4)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Simplify.",
+        "working": "$$y = 3x - 4$$"
+      }
+    ],
+    "answer": "$y = 3x - 4$"
+  },
+  {
+    "id": "eol-we-2",
+    "title": "Finding the equation of a line from two points",
+    "difficulty": 2,
+    "problem": "Find the equation of the line passing through $(1, 2)$ and $(4, 11)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the gradient using the gradient formula.",
+        "working": "$$m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{11 - 2}{4 - 1} = \\frac{9}{3} = 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the equation using $m = 3$, then substitute one point to find $b$.",
+        "working": "Using $(1, 2)$: $\\quad 2 = 3(1) + b$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $b$.",
+        "working": "$$b = 2 - 3 = -1$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write the equation of the line.",
+        "working": "$$y = 3x - 1$$"
+      }
+    ],
+    "answer": "$y = 3x - 1$"
+  },
+  {
+    "id": "eol-we-3",
+    "title": "Finding the equation of a line parallel to a given line",
+    "difficulty": 3,
+    "problem": "Find the equation of the line that is parallel to $y = 2x - 3$ and passes through the point $(4, 11)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the gradient of the parallel line. Parallel lines have equal gradients.",
+        "working": "The line $y = 2x - 3$ has gradient $m = 2$, so the new line also has $m = 2$."
+      },
+      {
+        "step": 2,
+        "instruction": "Write the equation of the new line with $m = 2$ and an unknown y-intercept.",
+        "working": "$$y = 2x + b$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the given point $(4, 11)$ to find $b$.",
+        "working": "$$11 = 2(4) + b = 8 + b$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Solve for $b$.",
+        "working": "$$b = 11 - 8 = 3$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Write the equation of the line.",
+        "working": "$$y = 2x + 3$$"
+      }
+    ],
+    "answer": "$y = 2x + 3$"
+  }
+]

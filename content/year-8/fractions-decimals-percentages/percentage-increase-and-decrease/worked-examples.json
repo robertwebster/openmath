@@ -1,0 +1,64 @@
+[
+  {
+    "id": "y8-fdp-pid-we01",
+    "title": "Increasing a value by a percentage",
+    "difficulty": 1,
+    "problem": "Increase $\\$150$ by $20\\%$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the multiplier for a $20\\%$ increase.",
+        "working": "$100\\% + 20\\% = 120\\% = 1.20$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the original amount by the multiplier.",
+        "working": "$\\$150 \\times 1.20 = \\$180$"
+      }
+    ],
+    "answer": "$\\$180$"
+  },
+  {
+    "id": "y8-fdp-pid-we02",
+    "title": "Percentage decrease in context",
+    "difficulty": 2,
+    "problem": "A laptop costs $\\$1{,}200$. A store reduces the price by $15\\%$ for a sale. Find the sale price.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the multiplier for a $15\\%$ decrease.",
+        "working": "$100\\% - 15\\% = 85\\% = 0.85$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the original price by the multiplier.",
+        "working": "$\\$1{,}200 \\times 0.85 = \\$1{,}020$"
+      }
+    ],
+    "answer": "$\\$1{,}020$"
+  },
+  {
+    "id": "y8-fdp-pid-we03",
+    "title": "Finding the original price (reverse percentage)",
+    "difficulty": 3,
+    "problem": "After a $25\\%$ discount, a bag costs $\\$90$. Find the original price.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify what percentage the sale price represents.",
+        "working": "$100\\% - 25\\% = 75\\%$, so the sale price is $75\\%$ of the original."
+      },
+      {
+        "step": 2,
+        "instruction": "Write an equation and solve for the original price.",
+        "working": "$0.75 \\times \\text{original} = \\$90$"
+      },
+      {
+        "step": 3,
+        "instruction": "Divide both sides by $0.75$.",
+        "working": "$\\text{original} = \\$90 \\div 0.75 = \\$120$"
+      }
+    ],
+    "answer": "$\\$120$"
+  }
+]

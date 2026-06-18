@@ -1,0 +1,15 @@
+{
+  "id": "fractions-decimals-percentages",
+  "title": "Fractions, decimals and percentages",
+  "year": 8,
+  "stage": "4",
+  "strand": "Number",
+  "syllabusOutcome": "MA4-FRC-C-01",
+  "description": "Apply percentage increase and decrease, profit and loss, and fraction operations.",
+  "extension": false,
+  "subtopics": [
+    "percentage-increase-and-decrease",
+    "profit-loss-and-discounts",
+    "fraction-operations"
+  ]
+}

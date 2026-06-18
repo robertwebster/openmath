@@ -1,0 +1,11 @@
+{
+  "id": "factorising-expressions",
+  "title": "Factorising expressions",
+  "topic": "algebraic-techniques",
+  "year": 8,
+  "stage": "4",
+  "extension": false,
+  "strand": "Algebra",
+  "syllabusOutcome": "MA4-ALG-C-01",
+  "description": "Find the HCF of simple expressions and factorise by taking out a numeric or variable common factor; factorise three-term expressions with a common numeric factor and verify by expanding."
+}

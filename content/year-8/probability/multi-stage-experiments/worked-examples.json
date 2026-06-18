@@ -1,0 +1,74 @@
+[
+  {
+    "id": "y8-mse-we01",
+    "title": "Listing outcomes for a two-stage experiment",
+    "difficulty": 1,
+    "problem": "A coin is tossed and a spinner with 3 equal sectors labelled 1, 2 and 3 is spun. List all possible outcomes and state the total number.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "List the outcomes for each stage.",
+        "working": "Coin: H or T (2 outcomes). Spinner: 1, 2 or 3 (3 outcomes)."
+      },
+      {
+        "step": 2,
+        "instruction": "Form all ordered pairs systematically.",
+        "working": "$(\\text{H}, 1),\\ (\\text{H}, 2),\\ (\\text{H}, 3),\\ (\\text{T}, 1),\\ (\\text{T}, 2),\\ (\\text{T}, 3)$"
+      },
+      {
+        "step": 3,
+        "instruction": "Count the total number of outcomes.",
+        "working": "$2 \\times 3 = 6$ outcomes in total."
+      }
+    ],
+    "answer": "6 outcomes: $(\\text{H},1),\\ (\\text{H},2),\\ (\\text{H},3),\\ (\\text{T},1),\\ (\\text{T},2),\\ (\\text{T},3)$."
+  },
+  {
+    "id": "y8-mse-we02",
+    "title": "Finding probability from a table of outcomes",
+    "difficulty": 2,
+    "problem": "Two fair 6-sided dice are rolled. Find $P(\\text{sum} = 8)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Count the total number of equally likely outcomes.",
+        "working": "$6 \\times 6 = 36$ equally likely outcomes."
+      },
+      {
+        "step": 2,
+        "instruction": "List all favourable outcomes where the sum equals 8.",
+        "working": "$(2,6),\\ (3,5),\\ (4,4),\\ (5,3),\\ (6,2)$ — 5 pairs."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the probability as a fraction.",
+        "working": "$$P(\\text{sum} = 8) = \\frac{5}{36}$$"
+      }
+    ],
+    "answer": "$\\dfrac{5}{36}$"
+  },
+  {
+    "id": "y8-mse-we03",
+    "title": "Probability without replacement",
+    "difficulty": 3,
+    "problem": "A bag contains 3 red and 2 blue marbles. Two marbles are drawn without replacement. Find $P(\\text{both blue})$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the probability that the first marble drawn is blue.",
+        "working": "There are 2 blue marbles out of 5 total. $$P(\\text{first blue}) = \\frac{2}{5}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the probability that the second marble is blue, given the first was blue.",
+        "working": "After removing one blue marble, 4 marbles remain with 1 blue. $$P(\\text{second blue} \\mid \\text{first blue}) = \\frac{1}{4}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply the two probabilities.",
+        "working": "$$P(\\text{both blue}) = \\frac{2}{5} \\times \\frac{1}{4} = \\frac{2}{20} = \\frac{1}{10}$$"
+      }
+    ],
+    "answer": "$\\dfrac{1}{10}$"
+  }
+]

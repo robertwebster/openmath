@@ -1,0 +1,14 @@
+{
+  "id": "probability",
+  "title": "Probability",
+  "year": 8,
+  "stage": "4",
+  "strand": "Probability",
+  "syllabusOutcome": "MA4-PRB-C-01",
+  "description": "Use tables and tree diagrams to find probability of multi-stage events.",
+  "subtopics": [
+    "multi-stage-experiments",
+    "tree-diagrams"
+  ],
+  "extension": false
+}

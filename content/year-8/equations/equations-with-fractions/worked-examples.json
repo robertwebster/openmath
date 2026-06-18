@@ -1,0 +1,104 @@
+[
+  {
+    "id": "y8-eqfrac-we-01",
+    "title": "Solving $\\frac{x}{a} = b$",
+    "difficulty": 1,
+    "problem": "Solve for $x$: $$\\frac{x}{7} = 5$$",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the operation applied to $x$.",
+        "working": "$x$ has been divided by 7."
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply both sides by 7 to undo the division.",
+        "working": "$$\\frac{x}{7} \\times 7 = 5 \\times 7$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Simplify both sides.",
+        "working": "$x = 35$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check by substituting back into the original equation.",
+        "working": "$\\frac{35}{7} = 5$ ✓"
+      }
+    ],
+    "answer": "$x = 35$"
+  },
+  {
+    "id": "y8-eqfrac-we-02",
+    "title": "Solving $\\frac{x + a}{b} = c$",
+    "difficulty": 2,
+    "problem": "Solve for $x$: $$\\frac{x + 5}{3} = 8$$",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Multiply both sides by 3 to clear the fraction.",
+        "working": "$$\\frac{x + 5}{3} \\times 3 = 8 \\times 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Simplify the left side.",
+        "working": "$x + 5 = 24$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract 5 from both sides.",
+        "working": "$x = 24 - 5 = 19$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check by substituting back.",
+        "working": "$\\frac{19 + 5}{3} = \\frac{24}{3} = 8$ ✓"
+      }
+    ],
+    "answer": "$x = 19$"
+  },
+  {
+    "id": "y8-eqfrac-we-03",
+    "title": "Solving equations with fractions on both sides",
+    "difficulty": 3,
+    "problem": "Solve for $x$: $$\\frac{x}{4} = \\frac{x + 9}{7}$$",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the LCM of the two denominators.",
+        "working": "The LCM of 4 and 7 is 28."
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply both sides by 28 to clear all fractions.",
+        "working": "$$28 \\times \\frac{x}{4} = 28 \\times \\frac{x + 9}{7}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Simplify both sides.",
+        "working": "$7x = 4(x + 9)$"
+      },
+      {
+        "step": 4,
+        "instruction": "Expand the right side.",
+        "working": "$7x = 4x + 36$"
+      },
+      {
+        "step": 5,
+        "instruction": "Subtract $4x$ from both sides.",
+        "working": "$3x = 36$"
+      },
+      {
+        "step": 6,
+        "instruction": "Divide both sides by 3.",
+        "working": "$x = 12$"
+      },
+      {
+        "step": 7,
+        "instruction": "Check by substituting back.",
+        "working": "$\\frac{12}{4} = 3$ and $\\frac{12 + 9}{7} = \\frac{21}{7} = 3$ ✓"
+      }
+    ],
+    "answer": "$x = 12$"
+  }
+]

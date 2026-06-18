@@ -1,0 +1,79 @@
+[
+  {
+    "id": "y8-hfp-we01",
+    "title": "Reading a frequency from a histogram",
+    "difficulty": 1,
+    "problem": "A histogram shows the ages of visitors to a wildlife park. The frequency table is:\n\n0–10 years: 7,  10–20 years: 13,  20–30 years: 9,  30–40 years: 6,  40–50 years: 5\n\nHow many visitors were aged 10–20?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Locate the class interval 10–20 in the table.",
+        "working": "The row for the 10–20 age group is the second entry in the table."
+      },
+      {
+        "step": 2,
+        "instruction": "Read the frequency for that interval.",
+        "working": "The frequency for the 10–20 age group is $13$."
+      }
+    ],
+    "answer": "13 visitors were aged 10–20."
+  },
+  {
+    "id": "y8-hfp-we02",
+    "title": "Finding the modal class and approximate mean",
+    "difficulty": 2,
+    "problem": "A frequency table shows the time (minutes) Year 8 students spend on social media each day:\n\n0–30: 6,  30–60: 14,  60–90: 11,  90–120: 7,  120–150: 2\n\n(a) State the modal class. (b) Calculate the approximate mean.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the class interval with the highest frequency.",
+        "working": "Frequencies: 6, 14, 11, 7, 2. The highest is $14$, in the 30–60 interval.\nModal class = 30–60 minutes."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the midpoint of each class interval.",
+        "working": "$\\dfrac{0+30}{2} = 15, \\quad \\dfrac{30+60}{2} = 45, \\quad \\dfrac{60+90}{2} = 75, \\quad \\dfrac{90+120}{2} = 105, \\quad \\dfrac{120+150}{2} = 135$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply each midpoint by its frequency and sum the products.",
+        "working": "$6 \\times 15 + 14 \\times 45 + 11 \\times 75 + 7 \\times 105 + 2 \\times 135$\n$= 90 + 630 + 825 + 735 + 270 = 2550$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide the sum by the total frequency.",
+        "working": "$\\text{Total frequency} = 6 + 14 + 11 + 7 + 2 = 40$\n\n$\\text{Approximate mean} = \\dfrac{2550}{40} = 63.75$ minutes"
+      }
+    ],
+    "answer": "(a) Modal class = 30–60 minutes. (b) Approximate mean $= 63.75$ minutes."
+  },
+  {
+    "id": "y8-hfp-we03",
+    "title": "Describing distribution shape and comparing modal classes",
+    "difficulty": 3,
+    "problem": "Two histograms show the number of items purchased by customers at two stores on one day.\n\nStore A: 0–5: 2,  5–10: 5,  10–15: 14,  15–20: 9,  20–25: 2\nStore B: 0–5: 15,  5–10: 11,  10–15: 6,  15–20: 3,  20–25: 1\n\n(a) Describe the shape of each distribution. (b) Which store has a higher modal class?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Describe the shape of Store A's distribution.",
+        "working": "Frequencies: 2, 5, 14, 9, 2. The distribution rises to a peak at 10–15 then falls, with roughly equal values on both sides. Store A is approximately symmetric."
+      },
+      {
+        "step": 2,
+        "instruction": "Describe the shape of Store B's distribution.",
+        "working": "Frequencies: 15, 11, 6, 3, 1. The distribution is highest on the left and decreases toward the right, with a tail extending to the right. Store B is positively skewed."
+      },
+      {
+        "step": 3,
+        "instruction": "Identify the modal class for each store.",
+        "working": "Store A: highest frequency is $14$, in the 10–15 interval. Modal class = 10–15.\nStore B: highest frequency is $15$, in the 0–5 interval. Modal class = 0–5."
+      },
+      {
+        "step": 4,
+        "instruction": "Compare the modal classes.",
+        "working": "10–15 > 0–5, so Store A has the higher modal class."
+      }
+    ],
+    "answer": "(a) Store A is approximately symmetric; Store B is positively skewed. (b) Store A has a higher modal class (10–15)."
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "y8-bsp-we01",
+    "title": "Finding the median from a back-to-back stem plot",
+    "difficulty": 1,
+    "problem": "A back-to-back stem-and-leaf plot shows the number of hours per week two groups of students spend on hobbies.\n\n  Group P  | Stem | Group Q\n       6   |  1   | 2  5  8\n   9  5  2 |  2   | 0  4  7\n   7  4    |  3   | 1  6  9\n       3   |  4   | 5\n\nLeaves for Group P are read from the stem outward (right to left).\n\nFind the median for Group P.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Read the Group P leaves for each stem and write out the values.",
+        "working": "Stem 1, leaf 6 → 16\nStem 2, leaves 2, 5, 9 (outward from stem) → 22, 25, 29\nStem 3, leaves 4, 7 (outward) → 34, 37\nStem 4, leaf 3 → 43"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the values in ascending order and count them.",
+        "working": "16, 22, 25, 29, 34, 37, 43\nThere are 7 values."
+      },
+      {
+        "step": 3,
+        "instruction": "Locate the middle value.",
+        "working": "For $n = 7$ values, the median is the $\\dfrac{7 + 1}{2} = 4$th value.\n4th value = 29"
+      }
+    ],
+    "answer": "The median for Group P is 29 hours."
+  },
+  {
+    "id": "y8-bsp-we02",
+    "title": "Finding median, mode and range from a back-to-back stem plot",
+    "difficulty": 2,
+    "problem": "A back-to-back stem-and-leaf plot shows the number of points scored by players in two sports teams.\n\n  Team X   | Stem | Team Y\n   8  6  4 |  2   | 1  3  5\n   9  5  3 |  3   | 0  4  8\n   6  6  1 |  4   | 2  6  9\n       5   |  5   | 1  4\n\nLeaves for Team X are read from the stem outward (right to left).\n\nFor Team X, find: (a) the median, (b) the mode, and (c) the range.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "List the Team X values in ascending order.",
+        "working": "Stem 2, leaves 4, 6, 8 → 24, 26, 28\nStem 3, leaves 3, 5, 9 → 33, 35, 39\nStem 4, leaves 1, 6, 6 → 41, 46, 46\nStem 5, leaf 5 → 55\n\nOrdered: 24, 26, 28, 33, 35, 39, 41, 46, 46, 55  (10 values)"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the median.",
+        "working": "10 values → median is the average of the 5th and 6th values.\n5th value = 35,  6th value = 39\nMedian $= \\dfrac{35 + 39}{2} = 37$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the mode.",
+        "working": "Scan for repeated values: 46 appears twice; all other values appear once.\nMode = 46"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the range.",
+        "working": "Range = maximum − minimum = 55 − 24 = 31"
+      }
+    ],
+    "answer": "(a) Median = 37. (b) Mode = 46. (c) Range = 31."
+  },
+  {
+    "id": "y8-bsp-we03",
+    "title": "Comparing two distributions using a back-to-back stem plot",
+    "difficulty": 3,
+    "problem": "A back-to-back stem-and-leaf plot shows the marks (out of 80) achieved by two exam classes.\n\n  Team A   | Stem | Team B\n       8   |  3   | 1  4  6\n   9  7  5 |  4   | 0  3  8\n   8  6  4 |  5   | 2  5  9\n   9  7  3 |  6   | 1  7\n       5   |  7   | 4  8\n\nLeaves for Team A are read from the stem outward (right to left).\n\nUse the median and range to compare the performance of the two classes.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "List the Team A values in ascending order and find the median and range.",
+        "working": "Stem 3: 38\nStem 4: 45, 47, 49\nStem 5: 54, 56, 58\nStem 6: 63, 67, 69\nStem 7: 75\n\nOrdered: 38, 45, 47, 49, 54, 56, 58, 63, 67, 69, 75  (11 values)\nMedian = 6th value = 56\nRange = 75 − 38 = 37"
+      },
+      {
+        "step": 2,
+        "instruction": "List the Team B values in ascending order and find the median and range.",
+        "working": "Stem 3: 31, 34, 36\nStem 4: 40, 43, 48\nStem 5: 52, 55, 59\nStem 6: 61, 67\nStem 7: 74, 78\n\nOrdered: 31, 34, 36, 40, 43, 48, 52, 55, 59, 61, 67, 74, 78  (13 values)\nMedian = 7th value = 52\nRange = 78 − 31 = 47"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the medians.",
+        "working": "Team A median = 56,  Team B median = 52.\nTeam A has a higher median, suggesting Team A generally achieved higher marks."
+      },
+      {
+        "step": 4,
+        "instruction": "Compare the ranges.",
+        "working": "Team A range = 37,  Team B range = 47.\nTeam B has a greater range, indicating more variation in Team B's results."
+      }
+    ],
+    "answer": "Team A has a higher median mark (56 compared to 52), suggesting Team A generally performed better. Team B has a greater range (47 compared to 37), indicating more spread in Team B's results."
+  }
+]

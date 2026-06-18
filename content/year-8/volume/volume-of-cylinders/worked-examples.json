@@ -1,0 +1,79 @@
+[
+  {
+    "id": "y8-vol-voc-we01",
+    "title": "Finding the volume of a cylinder given radius and height",
+    "difficulty": 1,
+    "problem": "Find the volume of a cylinder with radius $3$ cm and height $10$ cm. Give your answer correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for the volume of a cylinder.",
+        "working": "$V = \\pi r^2 h$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $r = 3$ and $h = 10$.",
+        "working": "$V = \\pi \\times 3^2 \\times 10 = \\pi \\times 9 \\times 10 = 90\\pi$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate to 2 decimal places.",
+        "working": "$V \\approx 282.74$ cm³"
+      }
+    ],
+    "answer": "$V \\approx 282.74$ cm³"
+  },
+  {
+    "id": "y8-vol-voc-we02",
+    "title": "Finding the height of a cylinder given its volume and diameter",
+    "difficulty": 2,
+    "problem": "A cylinder has a diameter of $10$ cm and a volume of $471.24$ cm³. Find the height of the cylinder.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the radius from the diameter.",
+        "working": "$r = 10 \\div 2 = 5$ cm"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the formula and substitute the known values.",
+        "working": "$V = \\pi r^2 h \\Rightarrow 471.24 = \\pi \\times 5^2 \\times h = 25\\pi h$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $h$.",
+        "working": "$h = \\dfrac{471.24}{25\\pi} \\approx \\dfrac{471.24}{78.54} \\approx 6$ cm"
+      }
+    ],
+    "answer": "$h = 6$ cm"
+  },
+  {
+    "id": "y8-vol-voc-we03",
+    "title": "Volume of a hollow cylinder",
+    "difficulty": 3,
+    "problem": "A hollow cylindrical pipe has an outer radius of $6$ cm, an inner radius of $4$ cm, and a length of $15$ cm. Find the volume of material in the pipe correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the volume of the outer (solid) cylinder.",
+        "working": "$V_{\\text{outer}} = \\pi \\times 6^2 \\times 15 = \\pi \\times 36 \\times 15 = 540\\pi$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the volume of the inner (hollow) cylinder.",
+        "working": "$V_{\\text{inner}} = \\pi \\times 4^2 \\times 15 = \\pi \\times 16 \\times 15 = 240\\pi$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract to find the volume of material.",
+        "working": "$V = 540\\pi - 240\\pi = 300\\pi$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate to 2 decimal places.",
+        "working": "$V \\approx 942.48$ cm³"
+      }
+    ],
+    "answer": "$V \\approx 942.48$ cm³"
+  }
+]

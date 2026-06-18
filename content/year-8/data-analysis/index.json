@@ -1,0 +1,14 @@
+{
+  "id": "data-analysis",
+  "title": "Data analysis",
+  "year": 8,
+  "stage": "4",
+  "strand": "Statistics",
+  "syllabusOutcome": "MA4-DAT-C-02",
+  "description": "Calculate and use the five-number summary, box plots and data comparisons.",
+  "subtopics": [
+    "five-number-summary-and-box-plots",
+    "comparing-data-sets"
+  ],
+  "extension": false
+}
