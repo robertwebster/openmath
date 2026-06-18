@@ -1,0 +1,94 @@
+[
+  {
+    "id": "y8-word-problems-we1",
+    "title": "Writing and solving a one-step word problem",
+    "difficulty": 1,
+    "problem": "A number is doubled and then 3 is added. The result is 11. Find the number.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Define a variable.",
+        "working": "Let the unknown number be $n$."
+      },
+      {
+        "step": 2,
+        "instruction": "Write an equation from the word problem.",
+        "working": "$2n + 3 = 11$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract 3 from both sides.",
+        "working": "$2n = 8$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide both sides by 2.",
+        "working": "$n = 4$"
+      }
+    ],
+    "answer": "The number is $4$."
+  },
+  {
+    "id": "y8-word-problems-we2",
+    "title": "Setting up and solving a two-step word problem",
+    "difficulty": 2,
+    "problem": "A plumber charges a $\\$45$ call-out fee plus $\\$60$ per hour. A customer is charged $\\$225$ in total. How many hours did the plumber work?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Define a variable.",
+        "working": "Let $h$ = the number of hours worked."
+      },
+      {
+        "step": 2,
+        "instruction": "Write an equation for the total charge.",
+        "working": "$60h + 45 = 225$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract 45 from both sides.",
+        "working": "$60h = 180$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide both sides by 60.",
+        "working": "$h = 3$"
+      }
+    ],
+    "answer": "The plumber worked $3$ hours."
+  },
+  {
+    "id": "y8-word-problems-we3",
+    "title": "Solving a geometry word problem using angle sums",
+    "difficulty": 3,
+    "problem": "The three interior angles of a triangle are $x°$, $2x°$ and $3x°$. Find the value of $x$ and state each angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Define the variable.",
+        "working": "Let $x$ represent the smallest angle in degrees."
+      },
+      {
+        "step": 2,
+        "instruction": "Use the angle sum of a triangle.",
+        "working": "The interior angles of a triangle add to $180°$, so: $x + 2x + 3x = 180$"
+      },
+      {
+        "step": 3,
+        "instruction": "Collect like terms.",
+        "working": "$6x = 180$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide both sides by 6.",
+        "working": "$x = 30$"
+      },
+      {
+        "step": 5,
+        "instruction": "State each angle.",
+        "working": "$x° = 30°$, $\\quad 2x° = 60°$, $\\quad 3x° = 90°$"
+      }
+    ],
+    "answer": "$x = 30$. The three angles are $30°$, $60°$ and $90°$."
+  }
+]

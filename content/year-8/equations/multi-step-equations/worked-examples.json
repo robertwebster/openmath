@@ -1,0 +1,74 @@
+[
+  {
+    "id": "mse-we-1",
+    "title": "Solving an equation with brackets on one side",
+    "difficulty": 1,
+    "problem": "Solve $3(x + 2) = 15$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Expand the bracket on the left side.",
+        "working": "$$3(x + 2) = 3 \\times x + 3 \\times 2 = 3x + 6$$\nThe equation becomes $3x + 6 = 15$."
+      },
+      {
+        "step": 2,
+        "instruction": "Subtract 6 from both sides to isolate the variable term.",
+        "working": "$$3x + 6 - 6 = 15 - 6$$\n$$3x = 9$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Divide both sides by 3.",
+        "working": "$$x = 9 \\div 3 = 3$$"
+      }
+    ],
+    "answer": "$x = 3$"
+  },
+  {
+    "id": "mse-we-2",
+    "title": "Solving an equation with variables on both sides",
+    "difficulty": 2,
+    "problem": "Solve $5x - 3 = 2x + 9$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Subtract $2x$ from both sides to collect all variable terms on the left.",
+        "working": "$$5x - 2x - 3 = 2x - 2x + 9$$\n$$3x - 3 = 9$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Add 3 to both sides to isolate the variable term.",
+        "working": "$$3x - 3 + 3 = 9 + 3$$\n$$3x = 12$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Divide both sides by 3.",
+        "working": "$$x = 12 \\div 3 = 4$$"
+      }
+    ],
+    "answer": "$x = 4$"
+  },
+  {
+    "id": "mse-we-3",
+    "title": "Solving an equation with brackets on both sides",
+    "difficulty": 3,
+    "problem": "Solve $2(x + 4) = 3(x - 1)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Expand the bracket on each side.",
+        "working": "$$2 \\times x + 2 \\times 4 = 3 \\times x + 3 \\times (-1)$$\n$$2x + 8 = 3x - 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Subtract $2x$ from both sides to collect variable terms on the right.",
+        "working": "$$2x - 2x + 8 = 3x - 2x - 3$$\n$$8 = x - 3$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add 3 to both sides.",
+        "working": "$$8 + 3 = x - 3 + 3$$\n$$11 = x$$"
+      }
+    ],
+    "answer": "$x = 11$"
+  }
+]

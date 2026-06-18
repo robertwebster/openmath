@@ -1,0 +1,9 @@
+{
+  "id": "five-number-summary-and-box-plots",
+  "title": "Five-number summary and box plots",
+  "topic": "data-analysis",
+  "year": 8,
+  "strand": "Statistics",
+  "syllabusOutcome": "MA4-DAT-C-02",
+  "description": "Find the five-number summary (min, Q1, median, Q3, max) from sorted data; calculate the IQR and range from box plots; identify potential outliers using the 1.5 \u00d7 IQR rule."
+}

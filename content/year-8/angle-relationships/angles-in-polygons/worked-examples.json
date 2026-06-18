@@ -1,0 +1,84 @@
+[
+  {
+    "id": "y8-ang-aip-we01",
+    "title": "Finding the interior angle sum of a polygon",
+    "difficulty": 1,
+    "problem": "Find the sum of interior angles of a heptagon (7 sides).",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the interior angle sum formula.",
+        "working": "$S = (n - 2) \\times 180°$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $n = 7$.",
+        "working": "$S = (7 - 2) \\times 180° = 5 \\times 180°$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate.",
+        "working": "$S = 900°$"
+      }
+    ],
+    "answer": "$S = 900°$"
+  },
+  {
+    "id": "y8-ang-aip-we02",
+    "title": "Finding a missing interior angle in a polygon",
+    "difficulty": 2,
+    "problem": "A hexagon has five interior angles of $125°$, $100°$, $110°$, $130°$ and $95°$. Find the sixth angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the interior angle sum of a hexagon.",
+        "working": "$S = (6 - 2) \\times 180° = 4 \\times 180° = 720°$"
+      },
+      {
+        "step": 2,
+        "instruction": "Add the five known angles.",
+        "working": "$125 + 100 + 110 + 130 + 95 = 560°$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract from the angle sum to find the sixth angle.",
+        "working": "$\\text{sixth angle} = 720° - 560° = 160°$"
+      }
+    ],
+    "answer": "$160°$"
+  },
+  {
+    "id": "y8-ang-aip-we03",
+    "title": "Solving an algebraic angle problem in a polygon",
+    "difficulty": 3,
+    "problem": "The interior angles of a pentagon are $x°$, $2x°$, $(x + 40)°$, $(x + 20)°$ and $(x + 30)°$. Find $x$ and state the largest angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the interior angle sum of a pentagon.",
+        "working": "$S = (5 - 2) \\times 180° = 3 \\times 180° = 540°$"
+      },
+      {
+        "step": 2,
+        "instruction": "Set up an equation by adding all angle expressions and equating to $540°$.",
+        "working": "$x + 2x + (x + 40) + (x + 20) + (x + 30) = 540$"
+      },
+      {
+        "step": 3,
+        "instruction": "Collect like terms.",
+        "working": "$6x + 90 = 540$"
+      },
+      {
+        "step": 4,
+        "instruction": "Solve for $x$.",
+        "working": "$6x = 450 \\implies x = 75$"
+      },
+      {
+        "step": 5,
+        "instruction": "Find the largest angle, which is $2x°$.",
+        "working": "$2x = 2 \\times 75 = 150°$"
+      }
+    ],
+    "answer": "$x = 75$; the largest angle is $150°$"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "eas-we1",
+    "title": "Expanding a single bracket and collecting like terms",
+    "difficulty": 1,
+    "problem": "Expand and simplify $5(x + 3) + 2x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Expand the bracket using the distributive law.",
+        "working": "$5(x + 3) = 5 \\times x + 5 \\times 3 = 5x + 15$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rewrite the full expression with the bracket expanded.",
+        "working": "$5x + 15 + 2x$"
+      },
+      {
+        "step": 3,
+        "instruction": "Collect like terms — add the $x$ terms together.",
+        "working": "$5x + 2x + 15 = 7x + 15$"
+      }
+    ],
+    "answer": "$7x + 15$"
+  },
+  {
+    "id": "eas-we2",
+    "title": "Expanding the product of two binomials",
+    "difficulty": 2,
+    "problem": "Expand and simplify $(x + 3)(x + 2)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Multiply the first term in the first bracket by each term in the second bracket.",
+        "working": "$x \\times x = x^2$ and $x \\times 2 = 2x$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the second term in the first bracket by each term in the second bracket.",
+        "working": "$3 \\times x = 3x$ and $3 \\times 2 = 6$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write all four products, then collect like terms.",
+        "working": "$x^2 + 2x + 3x + 6 = x^2 + 5x + 6$"
+      }
+    ],
+    "answer": "$x^2 + 5x + 6$"
+  },
+  {
+    "id": "eas-we3",
+    "title": "Expanding and simplifying two pairs of brackets",
+    "difficulty": 3,
+    "problem": "Expand and simplify $(x + 4)(x - 2) + 3(x - 1)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Expand the first pair of brackets.",
+        "working": "$(x + 4)(x - 2) = x^2 - 2x + 4x - 8 = x^2 + 2x - 8$"
+      },
+      {
+        "step": 2,
+        "instruction": "Expand the second bracket.",
+        "working": "$3(x - 1) = 3x - 3$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write both expanded parts together.",
+        "working": "$x^2 + 2x - 8 + 3x - 3$"
+      },
+      {
+        "step": 4,
+        "instruction": "Collect like terms.",
+        "working": "$x^2 + (2x + 3x) + (-8 - 3) = x^2 + 5x - 11$"
+      }
+    ],
+    "answer": "$x^2 + 5x - 11$"
+  }
+]

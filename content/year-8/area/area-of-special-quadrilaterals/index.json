@@ -1,0 +1,9 @@
+{
+  "id": "area-of-special-quadrilaterals",
+  "title": "Area of special quadrilaterals",
+  "topic": "area",
+  "year": 8,
+  "strand": "Measurement",
+  "syllabusOutcome": "MA4-ARE-C-01",
+  "description": "Find the area of parallelograms using $A = bh$, trapeziums using $A = \\frac{1}{2}(a+b)h$, and rhombuses and kites using $A = \\frac{1}{2}d_1 d_2$."
+}

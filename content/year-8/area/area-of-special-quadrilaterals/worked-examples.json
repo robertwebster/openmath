@@ -1,0 +1,84 @@
+[
+  {
+    "id": "y8-are-asq-we01",
+    "title": "Finding the area of a parallelogram",
+    "difficulty": 1,
+    "problem": "Find the area of a parallelogram with base $10$ cm and perpendicular height $6$ cm.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for the area of a parallelogram.",
+        "working": "$A = bh$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $b = 10$ and $h = 6$.",
+        "working": "$A = 10 \\times 6$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the area.",
+        "working": "$A = 60$ cm²"
+      }
+    ],
+    "answer": "$A = 60$ cm²"
+  },
+  {
+    "id": "y8-are-asq-we02",
+    "title": "Finding the area of a trapezium",
+    "difficulty": 2,
+    "problem": "Find the area of a trapezium with parallel sides $6$ cm and $10$ cm, and perpendicular height $5$ cm.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for the area of a trapezium.",
+        "working": "$A = \\dfrac{1}{2}(a + b)h$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $a = 6$, $b = 10$ and $h = 5$.",
+        "working": "$A = \\dfrac{1}{2}(6 + 10) \\times 5$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the parallel sides.",
+        "working": "$A = \\dfrac{1}{2} \\times 16 \\times 5$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the area.",
+        "working": "$A = 8 \\times 5 = 40$ cm²"
+      }
+    ],
+    "answer": "$A = 40$ cm²"
+  },
+  {
+    "id": "y8-are-asq-we03",
+    "title": "Finding a missing diagonal of a rhombus",
+    "difficulty": 3,
+    "problem": "A rhombus has area $36$ cm² and one diagonal of length $9$ cm. Find the length of the other diagonal.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for the area of a rhombus.",
+        "working": "$A = \\dfrac{1}{2}d_1 d_2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $A = 36$ and $d_1 = 9$.",
+        "working": "$36 = \\dfrac{1}{2} \\times 9 \\times d_2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply both sides by $2$.",
+        "working": "$72 = 9 d_2$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide both sides by $9$.",
+        "working": "$d_2 = \\dfrac{72}{9} = 8$ cm"
+      }
+    ],
+    "answer": "$d_2 = 8$ cm"
+  }
+]

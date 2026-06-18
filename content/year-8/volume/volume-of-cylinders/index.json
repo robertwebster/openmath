@@ -1,0 +1,9 @@
+{
+  "id": "volume-of-cylinders",
+  "title": "Volume of cylinders",
+  "topic": "volume",
+  "year": 8,
+  "strand": "Measurement",
+  "syllabusOutcome": "MA4-VOL-C-01",
+  "description": "Calculate the volume of a cylinder using $V = \\pi r^2 h$, given the radius or diameter, and find the height when the volume is known."
+}

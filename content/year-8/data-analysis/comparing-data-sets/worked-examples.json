@@ -1,0 +1,89 @@
+[
+  {
+    "id": "y8-cds-we01",
+    "title": "Comparing means of two data sets",
+    "difficulty": 1,
+    "problem": "Two students recorded their daily screen time (in minutes) over five days.\n\nStudent A: $45, 60, 75, 90, 30$\nStudent B: $50, 65, 55, 80, 55$\n\nCompare the mean screen time of each student and state who spent more time on screens on average.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the mean for Student A.",
+        "working": "$$\\text{Mean A} = \\frac{45 + 60 + 75 + 90 + 30}{5} = \\frac{300}{5} = 60 \\text{ minutes}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the mean for Student B.",
+        "working": "$$\\text{Mean B} = \\frac{50 + 65 + 55 + 80 + 55}{5} = \\frac{305}{5} = 61 \\text{ minutes}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the two means and state the conclusion.",
+        "working": "Student A: mean $= 60$ min. Student B: mean $= 61$ min. Since $61 > 60$, Student B spent more time on screens on average."
+      }
+    ],
+    "answer": "Student B had a higher mean screen time of $61$ minutes, compared to Student A's mean of $60$ minutes."
+  },
+  {
+    "id": "y8-cds-we02",
+    "title": "Comparing spread using range and IQR",
+    "difficulty": 2,
+    "problem": "Two classes sat a maths quiz. Their sorted scores were:\n\nClass A: $18, 22, 26, 29, 33, 36, 40$\nClass B: $12, 20, 26, 30, 34, 38, 44$\n\nCompare the spread of each class's scores using the range and IQR.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the range for each class.",
+        "working": "$$\\text{Range A} = 40 - 18 = 22$$ $$\\text{Range B} = 44 - 12 = 32$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find Q1 and Q3 for Class A.",
+        "working": "There are 7 values. The median is the 4th value: $29$. The lower half is $18, 22, 26$, so $\\text{Q1} = 22$. The upper half is $33, 36, 40$, so $\\text{Q3} = 36$."
+      },
+      {
+        "step": 3,
+        "instruction": "Find Q1 and Q3 for Class B.",
+        "working": "There are 7 values. The median is the 4th value: $30$. The lower half is $12, 20, 26$, so $\\text{Q1} = 20$. The upper half is $34, 38, 44$, so $\\text{Q3} = 38$."
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the IQR for each class.",
+        "working": "$$\\text{IQR A} = 36 - 22 = 14$$ $$\\text{IQR B} = 38 - 20 = 18$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Compare and state the conclusion.",
+        "working": "Class B has a greater range ($32 > 22$) and a greater IQR ($18 > 14$). Class B's scores are more spread out, while Class A's scores are more consistent."
+      }
+    ],
+    "answer": "Class B has greater spread: range $= 32$ (vs $22$) and IQR $= 18$ (vs $14$). Class A is more consistent."
+  },
+  {
+    "id": "y8-cds-we03",
+    "title": "Writing a comparison using two statistics",
+    "difficulty": 3,
+    "problem": "Two athletes' 100 m sprint times (seconds) over a season are summarised below.\n\nAthlete A: median $= 11.8$ s, IQR $= 0.4$ s, range $= 1.0$ s\nAthlete B: median $= 12.3$ s, IQR $= 0.8$ s, range $= 1.6$ s\n\nCompare the two athletes' performances and state which athlete is more consistent, justifying your answer with statistics.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Compare the medians to assess typical performance.",
+        "working": "Athlete A has a lower median ($11.8$ s $< 12.3$ s). A lower sprint time means Athlete A is generally faster."
+      },
+      {
+        "step": 2,
+        "instruction": "Compare the IQRs to assess consistency.",
+        "working": "Athlete A has IQR $= 0.4$ s and Athlete B has IQR $= 0.8$ s. Since $0.4 < 0.8$, Athlete A's times are more tightly grouped -- Athlete A is more consistent."
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the ranges to confirm the conclusion about spread.",
+        "working": "Athlete A has range $= 1.0$ s and Athlete B has range $= 1.6$ s. Since $1.0 < 1.6$, Athlete A also has less overall spread, confirming the conclusion."
+      },
+      {
+        "step": 4,
+        "instruction": "Write a comparison statement using at least two statistics.",
+        "working": "Athlete A has a lower median sprint time ($11.8$ s vs $12.3$ s) and a smaller IQR ($0.4$ s vs $0.8$ s), so Athlete A is both faster and more consistent than Athlete B."
+      }
+    ],
+    "answer": "Athlete A is faster (lower median: $11.8$ s vs $12.3$ s) and more consistent (smaller IQR: $0.4$ s vs $0.8$ s)."
+  }
+]

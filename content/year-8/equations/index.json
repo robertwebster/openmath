@@ -1,0 +1,11 @@
+{
+  "id": "equations",
+  "title": "Equations",
+  "year": 8,
+  "stage": "4",
+  "strand": "Algebra",
+  "syllabusOutcome": "MA4-EQU-C-01",
+  "description": "Solve multi-step equations, equations with fractions, and word problems.",
+  "extension": false,
+  "subtopics": ["multi-step-equations", "equations-with-fractions", "word-problems"]
+}

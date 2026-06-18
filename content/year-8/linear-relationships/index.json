@@ -1,0 +1,11 @@
+{
+  "id": "linear-relationships",
+  "title": "Linear relationships",
+  "year": 8,
+  "stage": "4",
+  "strand": "Algebra",
+  "syllabusOutcome": "MA4-LIN-C-01",
+  "description": "Find gradient and y-intercept, determine the equation of a line, and sketch linear equations.",
+  "extension": false,
+  "subtopics": ["gradient-and-y-intercept", "equation-of-a-line", "sketching-linear-equations"]
+}

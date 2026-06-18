@@ -1,0 +1,84 @@
+[
+  {
+    "id": "sle-we-1",
+    "title": "Sketching a line using gradient and y-intercept",
+    "difficulty": 1,
+    "problem": "Sketch the line $y = 2x - 1$ by identifying its gradient and y-intercept.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the gradient and y-intercept from the equation.",
+        "working": "The equation $y = 2x - 1$ is in the form $y = mx + b$ where $m = 2$ and $b = -1$. The gradient is $2$ and the y-intercept is $-1$."
+      },
+      {
+        "step": 2,
+        "instruction": "Plot the y-intercept.",
+        "working": "The y-intercept is $-1$, so plot the point $(0, -1)$ on the y-axis."
+      },
+      {
+        "step": 3,
+        "instruction": "Use the gradient to find a second point.",
+        "working": "Gradient $= 2 = \\frac{\\text{rise}}{\\text{run}} = \\frac{2}{1}$. From $(0, -1)$, move right $1$ unit and up $2$ units to reach the point $(1, 1)$."
+      },
+      {
+        "step": 4,
+        "instruction": "Draw the line through the two points.",
+        "working": "Plot $(0, -1)$ and $(1, 1)$, then draw a straight line through both points, extending in both directions."
+      }
+    ],
+    "answer": "y-intercept $(0, -1)$; using gradient $2$, a second point is $(1, 1)$."
+  },
+  {
+    "id": "sle-we-2",
+    "title": "Sketching a line using x-intercept and y-intercept",
+    "difficulty": 2,
+    "problem": "Find the x-intercept and y-intercept of $2x + 3y = 6$ and use them to sketch the line.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the y-intercept by substituting $x = 0$.",
+        "working": "$2(0) + 3y = 6 \\Rightarrow 3y = 6 \\Rightarrow y = 2$. The y-intercept is $(0, 2)$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the x-intercept by substituting $y = 0$.",
+        "working": "$2x + 3(0) = 6 \\Rightarrow 2x = 6 \\Rightarrow x = 3$. The x-intercept is $(3, 0)$."
+      },
+      {
+        "step": 3,
+        "instruction": "Draw the line through both intercepts.",
+        "working": "Plot $(0, 2)$ and $(3, 0)$ on the axes, then draw a straight line through both points."
+      }
+    ],
+    "answer": "x-intercept $(3, 0)$; y-intercept $(0, 2)$."
+  },
+  {
+    "id": "sle-we-3",
+    "title": "Identifying horizontal and vertical lines",
+    "difficulty": 3,
+    "problem": "A graph contains two lines. Line A is horizontal and passes through $(0, 5)$. Line B is vertical and passes through $(-2, 0)$. Write the equation of each line and state its gradient.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify Line A as a horizontal line and write its equation.",
+        "working": "A horizontal line has the same $y$-value for every point. Since Line A passes through $(0, 5)$, every point on it has $y = 5$. The equation is $y = 5$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the gradient of Line A.",
+        "working": "For any two points on $y = 5$, the rise is always $0$. So gradient $= \\frac{0}{\\text{run}} = 0$."
+      },
+      {
+        "step": 3,
+        "instruction": "Identify Line B as a vertical line and write its equation.",
+        "working": "A vertical line has the same $x$-value for every point. Since Line B passes through $(-2, 0)$, every point on it has $x = -2$. The equation is $x = -2$."
+      },
+      {
+        "step": 4,
+        "instruction": "State the gradient of Line B.",
+        "working": "A vertical line has zero run for any rise, which would require dividing by zero. The gradient of a vertical line is undefined."
+      }
+    ],
+    "answer": "Line A: $y = 5$, gradient $= 0$. Line B: $x = -2$, gradient is undefined."
+  }
+]

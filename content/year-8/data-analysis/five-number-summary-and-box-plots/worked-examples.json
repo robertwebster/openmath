@@ -1,0 +1,84 @@
+[
+  {
+    "id": "y8-fnsbp-we01",
+    "title": "Finding the five-number summary",
+    "difficulty": 1,
+    "problem": "Find the five-number summary of the sorted data set: $2, 5, 9, 13, 17, 22, 26, 30$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the minimum and maximum.",
+        "working": "Minimum $= 2$, maximum $= 30$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the median.",
+        "working": "There are 8 values, so the median is the mean of the 4th and 5th values. $$\\text{Median} = \\frac{13 + 17}{2} = \\frac{30}{2} = 15$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find Q1 (lower quartile).",
+        "working": "The lower half is $2, 5, 9, 13$. Q1 is the mean of the 2nd and 3rd values. $$\\text{Q1} = \\frac{5 + 9}{2} = \\frac{14}{2} = 7$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find Q3 (upper quartile).",
+        "working": "The upper half is $17, 22, 26, 30$. Q3 is the mean of the 2nd and 3rd values. $$\\text{Q3} = \\frac{22 + 26}{2} = \\frac{48}{2} = 24$$"
+      }
+    ],
+    "answer": "Five-number summary: min $= 2$, Q1 $= 7$, median $= 15$, Q3 $= 24$, max $= 30$."
+  },
+  {
+    "id": "y8-fnsbp-we02",
+    "title": "Finding the IQR and range from a box plot",
+    "difficulty": 2,
+    "problem": "A box plot shows: minimum $= 14$, Q1 $= 28$, median $= 42$, Q3 $= 57$, maximum $= 80$. Find: (a) the range, (b) the IQR.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the range.",
+        "working": "$$\\text{Range} = \\text{maximum} - \\text{minimum} = 80 - 14 = 66$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the IQR.",
+        "working": "$$\\text{IQR} = \\text{Q3} - \\text{Q1} = 57 - 28 = 29$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the IQR.",
+        "working": "The IQR of $29$ means the middle $50\\%$ of data values span a range of $29$ units, from $28$ to $57$."
+      }
+    ],
+    "answer": "Range $= 66$; IQR $= 29$."
+  },
+  {
+    "id": "y8-fnsbp-we03",
+    "title": "Identifying potential outliers using the IQR rule",
+    "difficulty": 3,
+    "problem": "A data set has Q1 $= 22$ and Q3 $= 46$. A value of $85$ appears in the data. Determine whether $85$ is a potential outlier.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the IQR.",
+        "working": "$$\\text{IQR} = 46 - 22 = 24$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the upper fence.",
+        "working": "$$\\text{Upper fence} = \\text{Q3} + 1.5 \\times \\text{IQR} = 46 + 1.5 \\times 24 = 46 + 36 = 82$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the value to the upper fence.",
+        "working": "Since $85 > 82$, the value $85$ lies beyond the upper fence."
+      },
+      {
+        "step": 4,
+        "instruction": "State the conclusion.",
+        "working": "A value is a potential outlier if it is more than $1.5 \\times \\text{IQR}$ beyond Q1 or Q3. Since $85 > 82$, the value $85$ is a potential outlier."
+      }
+    ],
+    "answer": "Yes, $85$ is a potential outlier because it exceeds the upper fence of $82$."
+  }
+]

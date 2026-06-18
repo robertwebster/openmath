@@ -1,0 +1,15 @@
+{
+  "id": "ratios-and-rates",
+  "title": "Ratios and rates",
+  "year": 8,
+  "stage": "4",
+  "extension": false,
+  "strand": "Number",
+  "syllabusOutcome": "MA4-RAT-C-01",
+  "description": "Divide quantities in a ratio, use scale, and apply speed-distance-time.",
+  "subtopics": [
+    "dividing-in-a-ratio",
+    "scale-and-maps",
+    "speed-distance-time"
+  ]
+}

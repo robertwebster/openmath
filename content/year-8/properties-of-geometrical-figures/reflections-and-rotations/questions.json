@@ -1,0 +1,182 @@
+[
+  {
+    "id": "y8-geo-rar-q01",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 1,
+    "type": "coordinate",
+    "stem": "Reflect the point $A(3, 2)$ in the $x$-axis. State the new coordinates.",
+    "answer": "(3, -2)",
+    "tolerance": 0,
+    "hint": "When reflecting in the $x$-axis, the $x$-coordinate stays the same and the $y$-coordinate changes sign.",
+    "explanation": "Reflecting in the $x$-axis: $(x, y) \\to (x, -y)$. So $A(3, 2) \\to A'(3, -2)$."
+  },
+  {
+    "id": "y8-geo-rar-q02",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 1,
+    "type": "coordinate",
+    "stem": "Reflect the point $B(-4, 1)$ in the $y$-axis. State the new coordinates.",
+    "answer": "(4, 1)",
+    "tolerance": 0,
+    "hint": "When reflecting in the $y$-axis, the $y$-coordinate stays the same and the $x$-coordinate changes sign.",
+    "explanation": "Reflecting in the $y$-axis: $(x, y) \\to (-x, y)$. So $B(-4, 1) \\to B'(4, 1)$."
+  },
+  {
+    "id": "y8-geo-rar-q03",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 1,
+    "type": "coordinate",
+    "stem": "Reflect the point $C(5, -3)$ in the $x$-axis. State the new coordinates.",
+    "answer": "(5, 3)",
+    "tolerance": 0,
+    "hint": "When reflecting in the $x$-axis, the $y$-coordinate changes sign.",
+    "explanation": "Reflecting in the $x$-axis: $(x, y) \\to (x, -y)$. So $C(5, -3) \\to C'(5, 3)$."
+  },
+  {
+    "id": "y8-geo-rar-q04",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 1,
+    "type": "coordinate",
+    "stem": "Reflect the point $D(-2, -6)$ in the $y$-axis. State the new coordinates.",
+    "answer": "(2, -6)",
+    "tolerance": 0,
+    "hint": "When reflecting in the $y$-axis, the $x$-coordinate changes sign.",
+    "explanation": "Reflecting in the $y$-axis: $(x, y) \\to (-x, y)$. So $D(-2, -6) \\to D'(2, -6)$."
+  },
+  {
+    "id": "y8-geo-rar-q05",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 2,
+    "type": "coordinate",
+    "stem": "Rotate the point $P(3, 4)$ by $90°$ anticlockwise about the origin. State the new coordinates.",
+    "answer": "(-4, 3)",
+    "tolerance": 0,
+    "hint": "A $90°$ anticlockwise rotation maps $(x, y) \\to (-y, x)$.",
+    "explanation": "A $90°$ anticlockwise rotation maps $(x, y) \\to (-y, x)$. So $P(3, 4) \\to P'(-4, 3)$."
+  },
+  {
+    "id": "y8-geo-rar-q06",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 2,
+    "type": "coordinate",
+    "stem": "Rotate the point $Q(2, -5)$ by $180°$ about the origin. State the new coordinates.",
+    "answer": "(-2, 5)",
+    "tolerance": 0,
+    "hint": "A $180°$ rotation maps $(x, y) \\to (-x, -y)$.",
+    "explanation": "A $180°$ rotation maps $(x, y) \\to (-x, -y)$. So $Q(2, -5) \\to Q'(-2, 5)$."
+  },
+  {
+    "id": "y8-geo-rar-q07",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 2,
+    "type": "coordinate",
+    "stem": "Rotate the point $R(-3, 4)$ by $90°$ clockwise about the origin. State the new coordinates.",
+    "answer": "(4, 3)",
+    "tolerance": 0,
+    "hint": "A $90°$ clockwise rotation maps $(x, y) \\to (y, -x)$.",
+    "explanation": "A $90°$ clockwise rotation maps $(x, y) \\to (y, -x)$. So $R(-3, 4) \\to R'(4, -(-3)) = R'(4, 3)$."
+  },
+  {
+    "id": "y8-geo-rar-q08",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 2,
+    "type": "coordinate",
+    "stem": "Rotate the point $S(6, -2)$ by $90°$ anticlockwise about the origin. State the new coordinates.",
+    "answer": "(2, 6)",
+    "tolerance": 0,
+    "hint": "A $90°$ anticlockwise rotation maps $(x, y) \\to (-y, x)$.",
+    "explanation": "A $90°$ anticlockwise rotation maps $(x, y) \\to (-y, x)$. So $S(6, -2) \\to S'(-(-2), 6) = S'(2, 6)$."
+  },
+  {
+    "id": "y8-geo-rar-q09",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "The point $A(3, -4)$ maps to $A'(-3, -4)$. Which transformation was applied?",
+    "options": [
+      "Reflection in the $x$-axis",
+      "Reflection in the $y$-axis",
+      "Rotation of $90°$ anticlockwise about the origin",
+      "Rotation of $180°$ about the origin"
+    ],
+    "answer": "Reflection in the $y$-axis",
+    "tolerance": 0,
+    "hint": "Check which coordinate changed: if the $x$-coordinate changed sign and the $y$-coordinate stayed the same, it is a reflection in the $y$-axis.",
+    "explanation": "The $x$-coordinate changed from $3$ to $-3$ and the $y$-coordinate stayed at $-4$. This matches the rule $(x, y) \\to (-x, y)$, which is a reflection in the $y$-axis."
+  },
+  {
+    "id": "y8-geo-rar-q10",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "The point $Q(-5, 2)$ maps to $Q'(2, 5)$. Which transformation was applied?",
+    "options": [
+      "Reflection in the $x$-axis",
+      "Reflection in the $y$-axis",
+      "Rotation of $90°$ anticlockwise about the origin",
+      "Rotation of $90°$ clockwise about the origin"
+    ],
+    "answer": "Rotation of $90°$ clockwise about the origin",
+    "tolerance": 0,
+    "hint": "Test the rotation rules: $90°$ anticlockwise maps $(x, y) \\to (-y, x)$; $90°$ clockwise maps $(x, y) \\to (y, -x)$.",
+    "explanation": "A $90°$ clockwise rotation maps $(x, y) \\to (y, -x)$. Applying this to $(-5, 2)$: $(2, -(-5)) = (2, 5)$. This matches $Q'(2, 5)$, confirming a $90°$ clockwise rotation about the origin."
+  },
+  {
+    "id": "y8-geo-rar-q11",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "The point $R(4, -3)$ maps to $R'(-4, 3)$. Which transformation was applied?",
+    "options": [
+      "Reflection in the $x$-axis",
+      "Reflection in the $y$-axis",
+      "Rotation of $90°$ clockwise about the origin",
+      "Rotation of $180°$ about the origin"
+    ],
+    "answer": "Rotation of $180°$ about the origin",
+    "tolerance": 0,
+    "hint": "A $180°$ rotation maps $(x, y) \\to (-x, -y)$. Check whether both coordinates changed sign.",
+    "explanation": "A $180°$ rotation maps $(x, y) \\to (-x, -y)$. Applying this to $(4, -3)$: $(-4, 3)$. This matches $R'(-4, 3)$, confirming a rotation of $180°$ about the origin."
+  },
+  {
+    "id": "y8-geo-rar-q12",
+    "subtopic": "reflections-and-rotations",
+    "topic": "properties-of-geometrical-figures",
+    "year": 8,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "The point $S(2, 6)$ maps to $S'(-6, 2)$. Which transformation was applied?",
+    "options": [
+      "Reflection in the $x$-axis",
+      "Reflection in the $y$-axis",
+      "Rotation of $90°$ anticlockwise about the origin",
+      "Rotation of $90°$ clockwise about the origin"
+    ],
+    "answer": "Rotation of $90°$ anticlockwise about the origin",
+    "tolerance": 0,
+    "hint": "A $90°$ anticlockwise rotation maps $(x, y) \\to (-y, x)$. Apply this to the original point and check.",
+    "explanation": "A $90°$ anticlockwise rotation maps $(x, y) \\to (-y, x)$. Applying this to $(2, 6)$: $(-6, 2)$. This matches $S'(-6, 2)$, confirming a rotation of $90°$ anticlockwise about the origin."
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "gyi-we-1",
+    "title": "Finding gradient and y-intercept from two points on a graph",
+    "difficulty": 1,
+    "problem": "A straight line passes through the points $(0, 2)$ and $(4, 10)$. Find the gradient and y-intercept of the line.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the rise (vertical change) between the two points.",
+        "working": "$$\\text{Rise} = 10 - 2 = 8$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the run (horizontal change) between the two points.",
+        "working": "$$\\text{Run} = 4 - 0 = 4$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the gradient using rise over run.",
+        "working": "$$m = \\frac{\\text{rise}}{\\text{run}} = \\frac{8}{4} = 2$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Read the y-intercept from the point where $x = 0$.",
+        "working": "The point $(0, 2)$ is on the y-axis, so the y-intercept is $2$."
+      }
+    ],
+    "answer": "Gradient $= 2$, y-intercept $= 2$"
+  },
+  {
+    "id": "gyi-we-2",
+    "title": "Finding gradient from two points using the gradient formula",
+    "difficulty": 2,
+    "problem": "Find the gradient of the line passing through $(2, 3)$ and $(5, 12)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Label the two points as $(x_1, y_1)$ and $(x_2, y_2)$.",
+        "working": "Let $(x_1, y_1) = (2, 3)$ and $(x_2, y_2) = (5, 12)$."
+      },
+      {
+        "step": 2,
+        "instruction": "Write the gradient formula.",
+        "working": "$$m = \\frac{y_2 - y_1}{x_2 - x_1}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the coordinates into the formula.",
+        "working": "$$m = \\frac{12 - 3}{5 - 2} = \\frac{9}{3} = 3$$"
+      }
+    ],
+    "answer": "Gradient $= 3$"
+  },
+  {
+    "id": "gyi-we-3",
+    "title": "Interpreting gradient as a rate of change in context",
+    "difficulty": 3,
+    "problem": "A car travels at a constant speed. After 1 hour it has covered 60 km, and after 3 hours it has covered 180 km. Find the gradient of the distance-time graph and explain what it represents.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the two data values as coordinate points $(\\text{time}, \\text{distance})$.",
+        "working": "The two points are $(1, 60)$ and $(3, 180)$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the gradient formula.",
+        "working": "$$m = \\frac{180 - 60}{3 - 1} = \\frac{120}{2} = 60$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the gradient in context.",
+        "working": "The gradient is $60$. Since the axes are hours and kilometres, the gradient represents a rate of $60$ km per hour."
+      }
+    ],
+    "answer": "Gradient $= 60$. It represents the speed of the car: $60$ km/h."
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "y8-vol-cv-we01",
+    "title": "Total volume of a rectangular prism and cylinder",
+    "difficulty": 1,
+    "problem": "A trophy base consists of a rectangular prism (length $12$ cm, width $10$ cm, height $3$ cm) with a cylinder (radius $3$ cm, height $8$ cm) on top. Find the total volume, correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the volume of the rectangular prism.",
+        "working": "$V_{\\text{prism}} = l \\times w \\times h = 12 \\times 10 \\times 3 = 360$ cm³"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the volume of the cylinder.",
+        "working": "$V_{\\text{cyl}} = \\pi r^2 h = \\pi \\times 3^2 \\times 8 = 72\\pi \\approx 226.19$ cm³"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the two volumes to find the total.",
+        "working": "$V_{\\text{total}} = 360 + 226.19 = 586.19$ cm³"
+      }
+    ],
+    "answer": "$V_{\\text{total}} \\approx 586.19$ cm³"
+  },
+  {
+    "id": "y8-vol-cv-we02",
+    "title": "Volume of a solid with a cylindrical hole removed",
+    "difficulty": 2,
+    "problem": "A metal block has dimensions $24$ cm by $16$ cm by $10$ cm. A cylindrical hole of radius $3$ cm is drilled completely through it (depth $10$ cm). Find the remaining volume, correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the volume of the full rectangular block.",
+        "working": "$V_{\\text{prism}} = 24 \\times 16 \\times 10 = 3840$ cm³"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the volume of the cylindrical hole.",
+        "working": "$V_{\\text{cyl}} = \\pi r^2 h = \\pi \\times 3^2 \\times 10 = 90\\pi \\approx 282.74$ cm³"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract the hole volume from the block volume.",
+        "working": "$V_{\\text{remaining}} = 3840 - 282.74 = 3557.26$ cm³"
+      }
+    ],
+    "answer": "$V_{\\text{remaining}} \\approx 3557.26$ cm³"
+  },
+  {
+    "id": "y8-vol-cv-we03",
+    "title": "Volume of metal in a hollow cylindrical pipe",
+    "difficulty": 3,
+    "problem": "A hollow cylindrical pipe has an outer radius of $6$ cm and an inner radius of $4$ cm. The pipe is $80$ cm long. Find the volume of metal in the pipe, correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the area of the annular (ring-shaped) cross-section by subtracting the inner circle area from the outer circle area.",
+        "working": "$A = \\pi R^2 - \\pi r^2 = \\pi(R^2 - r^2) = \\pi(6^2 - 4^2) = \\pi(36 - 16) = 20\\pi$ cm²"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the cross-sectional area by the length of the pipe.",
+        "working": "$V = A \\times l = 20\\pi \\times 80 = 1600\\pi$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate to 2 decimal places.",
+        "working": "$V \\approx 5026.55$ cm³"
+      }
+    ],
+    "answer": "$V \\approx 5026.55$ cm³"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fo-we-1",
+    "title": "Adding fractions with unlike denominators",
+    "difficulty": 1,
+    "problem": "Calculate $\\dfrac{2}{3} + \\dfrac{3}{8}$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the lowest common denominator (LCD) of 3 and 8.",
+        "working": "The multiples of 3 are 3, 6, 9, 12, 15, 18, 21, 24, … and the multiples of 8 are 8, 16, 24, … The LCD is 24."
+      },
+      {
+        "step": 2,
+        "instruction": "Convert each fraction to an equivalent fraction with denominator 24.",
+        "working": "$$\\dfrac{2}{3} = \\dfrac{2 \\times 8}{3 \\times 8} = \\dfrac{16}{24}, \\qquad \\dfrac{3}{8} = \\dfrac{3 \\times 3}{8 \\times 3} = \\dfrac{9}{24}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the numerators, keeping the denominator the same.",
+        "working": "$$\\dfrac{16}{24} + \\dfrac{9}{24} = \\dfrac{25}{24}$$"
+      }
+    ],
+    "answer": "$\\dfrac{25}{24}$"
+  },
+  {
+    "id": "fo-we-2",
+    "title": "Dividing fractions and simplifying",
+    "difficulty": 2,
+    "problem": "Calculate $\\dfrac{3}{4} \\div \\dfrac{9}{10}$. Give your answer in simplest form.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Change the division to multiplication by taking the reciprocal of the second fraction.",
+        "working": "$$\\dfrac{3}{4} \\div \\dfrac{9}{10} = \\dfrac{3}{4} \\times \\dfrac{10}{9}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply numerators together and denominators together.",
+        "working": "$$\\dfrac{3 \\times 10}{4 \\times 9} = \\dfrac{30}{36}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Simplify by dividing the numerator and denominator by their highest common factor (HCF = 6).",
+        "working": "$$\\dfrac{30}{36} = \\dfrac{30 \\div 6}{36 \\div 6} = \\dfrac{5}{6}$$"
+      }
+    ],
+    "answer": "$\\dfrac{5}{6}$"
+  },
+  {
+    "id": "fo-we-3",
+    "title": "Adding mixed numerals in a word problem",
+    "difficulty": 3,
+    "problem": "A painter uses $1\\dfrac{3}{4}$ litres of paint on Monday and $2\\dfrac{1}{3}$ litres on Tuesday. How many litres did the painter use in total?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Convert each mixed numeral to an improper fraction.",
+        "working": "$$1\\dfrac{3}{4} = \\dfrac{4 \\times 1 + 3}{4} = \\dfrac{7}{4}, \\qquad 2\\dfrac{1}{3} = \\dfrac{3 \\times 2 + 1}{3} = \\dfrac{7}{3}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the LCD of 4 and 3, then rewrite each fraction with that denominator.",
+        "working": "$$\\text{LCD}(4, 3) = 12: \\qquad \\dfrac{7}{4} = \\dfrac{21}{12}, \\qquad \\dfrac{7}{3} = \\dfrac{28}{12}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the fractions.",
+        "working": "$$\\dfrac{21}{12} + \\dfrac{28}{12} = \\dfrac{49}{12}$$"
+      }
+    ],
+    "answer": "$\\dfrac{49}{12}$ litres"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "pld-we1",
+    "title": "Finding profit and loss",
+    "difficulty": 1,
+    "problem": "A trader buys a watch for $\\$35$ and sells it for $\\$49$. Find the profit.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for profit.",
+        "working": "$$\\text{Profit} = \\text{Selling price} - \\text{Cost price}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the values.",
+        "working": "$$\\text{Profit} = 49 - 35$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate.",
+        "working": "$$\\text{Profit} = \\$14$$"
+      }
+    ],
+    "answer": "$\\$14$"
+  },
+  {
+    "id": "pld-we2",
+    "title": "Expressing profit as a percentage and finding a sale price",
+    "difficulty": 2,
+    "problem": "A bicycle is bought for $\\$80$ and sold for $\\$92$. Express the profit as a percentage of the cost price.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the profit in dollars.",
+        "working": "$$\\text{Profit} = 92 - 80 = \\$12$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the formula for profit percentage.",
+        "working": "$$\\text{Profit\\%} = \\frac{\\text{Profit}}{\\text{Cost price}} \\times 100$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute and evaluate.",
+        "working": "$$\\text{Profit\\%} = \\frac{12}{80} \\times 100 = 15\\%$$"
+      }
+    ],
+    "answer": "$15\\%$"
+  },
+  {
+    "id": "pld-we3",
+    "title": "Finding the pre-GST price",
+    "difficulty": 3,
+    "problem": "A laptop has a GST-inclusive price of $\\$880$. GST is $10\\%$. Find the pre-GST price.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recognise that the GST-inclusive price equals $110\\%$ of the pre-GST price.",
+        "working": "$$\\text{GST-inclusive price} = 1.10 \\times \\text{pre-GST price}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known value and set up an equation.",
+        "working": "$$1.10 \\times \\text{pre-GST price} = 880$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Divide both sides by $1.10$.",
+        "working": "$$\\text{pre-GST price} = \\frac{880}{1.10} = \\$800$$"
+      }
+    ],
+    "answer": "$\\$800$"
+  }
+]

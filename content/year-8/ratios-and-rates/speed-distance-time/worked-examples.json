@@ -1,0 +1,79 @@
+[
+  {
+    "id": "sdt-worked-1",
+    "title": "Finding time using $s = d \\div t$",
+    "difficulty": 1,
+    "problem": "A train travels 350 km at a constant speed of 70 km/h. How long does the journey take?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for time.",
+        "working": "$$t = \\frac{d}{s}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values.",
+        "working": "$$t = \\frac{350}{70}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate.",
+        "working": "$$t = 5 \\text{ hours}$$"
+      }
+    ],
+    "answer": "The journey takes 5 hours."
+  },
+  {
+    "id": "sdt-worked-2",
+    "title": "Converting km/h to m/s",
+    "difficulty": 2,
+    "problem": "A car travels at 108 km/h. Convert this speed to m/s.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the conversion factors.",
+        "working": "1 km = 1000 m and 1 hour = 3600 s, so to convert km/h to m/s, multiply by $\\dfrac{1000}{3600} = \\dfrac{5}{18}$."
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply by the conversion factor.",
+        "working": "$$108 \\times \\frac{5}{18} = \\frac{540}{18} = 30 \\text{ m/s}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Verify by converting back.",
+        "working": "$$30 \\times \\frac{3600}{1000} = 30 \\times 3.6 = 108 \\text{ km/h} \\checkmark$$"
+      }
+    ],
+    "answer": "108 km/h = 30 m/s"
+  },
+  {
+    "id": "sdt-worked-3",
+    "title": "Average speed for a return journey",
+    "difficulty": 3,
+    "problem": "A car travels 240 km from city A to city B at 80 km/h, then returns along the same route at 60 km/h. Find the average speed for the entire journey.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the time for each leg of the journey.",
+        "working": "$$t_1 = \\frac{240}{80} = 3 \\text{ hours} \\qquad t_2 = \\frac{240}{60} = 4 \\text{ hours}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the total distance and total time.",
+        "working": "$$\\text{Total distance} = 240 + 240 = 480 \\text{ km}$$ $$\\text{Total time} = 3 + 4 = 7 \\text{ hours}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the average speed formula.",
+        "working": "$$\\text{Average speed} = \\frac{\\text{total distance}}{\\text{total time}} = \\frac{480}{7} \\approx 68.57 \\text{ km/h}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Note: the average speed is not simply the average of 80 and 60.",
+        "working": "The average of 80 and 60 would give $\\dfrac{80 + 60}{2} = 70$ km/h, but the car spends more time at the slower speed, so the true average is less than 70 km/h."
+      }
+    ],
+    "answer": "The average speed is $\\dfrac{480}{7} \\approx 68.57$ km/h."
+  }
+]

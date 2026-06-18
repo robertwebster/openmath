@@ -1,0 +1,79 @@
+[
+  {
+    "id": "y8-ang-plt-we01",
+    "title": "Using co-interior angles",
+    "difficulty": 1,
+    "problem": "Two parallel lines are cut by a transversal. One co-interior angle measures $74°$. Find the other co-interior angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the relationship. Co-interior angles lie between the parallel lines on the same side of the transversal.",
+        "working": "The two angles are co-interior (also called same-side interior or allied angles)."
+      },
+      {
+        "step": 2,
+        "instruction": "State the co-interior angle property.",
+        "working": "Co-interior angles are supplementary: they add to $180°$."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the unknown angle.",
+        "working": "$\\text{other angle} = 180° - 74° = 106°$"
+      }
+    ],
+    "answer": "$106°$"
+  },
+  {
+    "id": "y8-ang-plt-we02",
+    "title": "Two-step angle problem with parallel lines",
+    "difficulty": 2,
+    "problem": "Two parallel lines are cut by a transversal. At the upper intersection, angle $a°$ and $128°$ lie on a straight line. Find the alternate interior angle $b°$ at the lower intersection.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find angle $a$ using angles on a straight line.",
+        "working": "$a = 180° - 128° = 52°$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the alternate interior angles property.",
+        "working": "Alternate interior angles are equal when lines are parallel, so $b = a = 52°$."
+      }
+    ],
+    "answer": "$b = 52°$"
+  },
+  {
+    "id": "y8-ang-plt-we03",
+    "title": "Solving an algebraic equation using co-interior angles",
+    "difficulty": 3,
+    "problem": "Two parallel lines are cut by a transversal. The co-interior angles are $(4x + 10)°$ and $(2x + 20)°$. Find $x$ and the size of each angle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write an equation using the co-interior angle property.",
+        "working": "$(4x + 10) + (2x + 20) = 180$"
+      },
+      {
+        "step": 2,
+        "instruction": "Collect like terms.",
+        "working": "$6x + 30 = 180$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $x$.",
+        "working": "$6x = 150 \\implies x = 25$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the size of each angle.",
+        "working": "$4(25) + 10 = 110°$ and $2(25) + 20 = 70°$"
+      },
+      {
+        "step": 5,
+        "instruction": "Check: co-interior angles must sum to $180°$.",
+        "working": "$110° + 70° = 180°$ ✓"
+      }
+    ],
+    "answer": "$x = 25$; the angles are $110°$ and $70°$"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "sam-we-1",
+    "title": "Finding the real distance from a map measurement",
+    "difficulty": 1,
+    "problem": "A map has a scale of $1:50\\,000$. A road measures $6$ cm on the map. Find the real length of the road in kilometres.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Interpret the scale.",
+        "working": "A scale of $1:50\\,000$ means $1$ cm on the map represents $50\\,000$ cm in real life."
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the map distance by the scale factor.",
+        "working": "$6 \\times 50\\,000 = 300\\,000$ cm"
+      },
+      {
+        "step": 3,
+        "instruction": "Convert centimetres to kilometres.",
+        "working": "$300\\,000 \\div 100\\,000 = 3$ km"
+      }
+    ],
+    "answer": "The real length of the road is $3$ km."
+  },
+  {
+    "id": "sam-we-2",
+    "title": "Finding the map distance from a real distance",
+    "difficulty": 2,
+    "problem": "A map has a scale of $1:25\\,000$. The real distance between two lakes is $5$ km. Find the distance between the lakes on the map in centimetres.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Convert the real distance to centimetres.",
+        "working": "$5$ km $= 5 \\times 100\\,000 = 500\\,000$ cm"
+      },
+      {
+        "step": 2,
+        "instruction": "Divide by the scale factor to find the map distance.",
+        "working": "$500\\,000 \\div 25\\,000 = 20$ cm"
+      },
+      {
+        "step": 3,
+        "instruction": "Check by working backwards.",
+        "working": "$20 \\times 25\\,000 = 500\\,000$ cm $= 5$ km ✓"
+      }
+    ],
+    "answer": "The distance on the map is $20$ cm."
+  },
+  {
+    "id": "sam-we-3",
+    "title": "Finding the real area from a scale drawing",
+    "difficulty": 3,
+    "problem": "A plan has a scale of $1:500$. A rectangular garden on the plan measures $4$ cm by $6$ cm. Find the real area of the garden in square metres.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the real length of each side in centimetres.",
+        "working": "Length: $4 \\times 500 = 2\\,000$ cm \\\\ Width: $6 \\times 500 = 3\\,000$ cm"
+      },
+      {
+        "step": 2,
+        "instruction": "Convert each dimension to metres.",
+        "working": "Length: $2\\,000 \\div 100 = 20$ m \\\\ Width: $3\\,000 \\div 100 = 30$ m"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the real area.",
+        "working": "$\\text{Area} = 20 \\times 30 = 600$ m²"
+      },
+      {
+        "step": 4,
+        "instruction": "Alternative method: use the area scale factor.",
+        "working": "Area scale factor $= 500^2 = 250\\,000$ \\\\ Plan area $= 4 \\times 6 = 24$ cm² \\\\ Real area $= 24 \\times 250\\,000 = 6\\,000\\,000$ cm² $= 600$ m²"
+      }
+    ],
+    "answer": "The real area of the garden is $600$ m²."
+  }
+]

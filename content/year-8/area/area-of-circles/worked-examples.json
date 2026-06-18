@@ -1,0 +1,79 @@
+[
+  {
+    "id": "y8-are-aoc-we01",
+    "title": "Finding the area of a circle given its radius",
+    "difficulty": 1,
+    "problem": "Find the area of a circle with radius $4$ cm. Give your answer correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for the area of a circle.",
+        "working": "$A = \\pi r^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $r = 4$.",
+        "working": "$A = \\pi \\times 4^2 = \\pi \\times 16 = 16\\pi$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate to 2 decimal places.",
+        "working": "$A \\approx 50.27$ cm²"
+      }
+    ],
+    "answer": "$A \\approx 50.27$ cm²"
+  },
+  {
+    "id": "y8-are-aoc-we02",
+    "title": "Finding the area of a circle given its diameter",
+    "difficulty": 2,
+    "problem": "Find the area of a circle with diameter $10$ cm. Give your answer correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the radius from the diameter.",
+        "working": "$r = 10 \\div 2 = 5$ cm"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the formula and substitute $r = 5$.",
+        "working": "$A = \\pi r^2 = \\pi \\times 5^2 = 25\\pi$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate to 2 decimal places.",
+        "working": "$A \\approx 78.54$ cm²"
+      }
+    ],
+    "answer": "$A \\approx 78.54$ cm²"
+  },
+  {
+    "id": "y8-are-aoc-we03",
+    "title": "Finding the area of a semicircle",
+    "difficulty": 3,
+    "problem": "Find the area of a semicircle with diameter $12$ cm. Give your answer correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the radius from the diameter.",
+        "working": "$r = 12 \\div 2 = 6$ cm"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the area of the full circle.",
+        "working": "$A_{\\text{circle}} = \\pi r^2 = \\pi \\times 6^2 = 36\\pi$"
+      },
+      {
+        "step": 3,
+        "instruction": "A semicircle is half a full circle.",
+        "working": "$A = \\dfrac{36\\pi}{2} = 18\\pi$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate to 2 decimal places.",
+        "working": "$A \\approx 56.55$ cm²"
+      }
+    ],
+    "answer": "$A \\approx 56.55$ cm²"
+  }
+]
