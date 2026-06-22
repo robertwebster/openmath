@@ -1,0 +1,218 @@
+[
+  {
+    "id": "comparing-relationships-1",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "The table below shows a relationship between $x$ and $y$.\n\n$$\\begin{array}{c|ccccc} x & 0 & 1 & 2 & 3 & 4 \\\\ \\hline y & 3 & 5 & 7 & 9 & 11 \\end{array}$$\n\nWhich type of relationship does the table show?",
+    "options": [
+      "Linear",
+      "Quadratic",
+      "Exponential",
+      "None of these"
+    ],
+    "answer": "Linear",
+    "tolerance": 0,
+    "hint": "Find the difference between consecutive $y$-values. If the difference is constant, the relationship is linear.",
+    "explanation": "First differences: $5-3=2$, $7-5=2$, $9-7=2$, $11-9=2$. All equal 2, so the first differences are constant. Constant first differences is the defining feature of a linear relationship."
+  },
+  {
+    "id": "comparing-relationships-2",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "The table below shows a relationship between $x$ and $y$.\n\n$$\\begin{array}{c|ccccc} x & 0 & 1 & 2 & 3 & 4 \\\\ \\hline y & 0 & 1 & 4 & 9 & 16 \\end{array}$$\n\nWhich type of relationship does the table show?",
+    "options": [
+      "Linear",
+      "Quadratic",
+      "Exponential",
+      "None of these"
+    ],
+    "answer": "Quadratic",
+    "tolerance": 0,
+    "hint": "The first differences are not constant. Try finding the second differences.",
+    "explanation": "First differences: $1-0=1$, $4-1=3$, $9-4=5$, $16-9=7$. Not constant, so not linear. Second differences: $3-1=2$, $5-3=2$, $7-5=2$. The second differences are constant (all equal to 2), confirming a quadratic relationship. (The equation is $y = x^2$.)"
+  },
+  {
+    "id": "comparing-relationships-3",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "The table below shows a relationship between $x$ and $y$.\n\n$$\\begin{array}{c|cccc} x & 0 & 1 & 2 & 3 \\\\ \\hline y & 2 & 6 & 18 & 54 \\end{array}$$\n\nWhich type of relationship does the table show?",
+    "options": [
+      "Linear",
+      "Quadratic",
+      "Exponential",
+      "None of these"
+    ],
+    "answer": "Exponential",
+    "tolerance": 0,
+    "hint": "Check whether the ratio of consecutive $y$-values is constant.",
+    "explanation": "Ratios: $\\dfrac{6}{2}=3$, $\\dfrac{18}{6}=3$, $\\dfrac{54}{18}=3$. Each $y$-value is multiplied by 3 when $x$ increases by 1. A constant multiplicative ratio identifies an exponential relationship."
+  },
+  {
+    "id": "comparing-relationships-4",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "The table below shows a relationship between $x$ and $y$.\n\n$$\\begin{array}{c|ccccc} x & 1 & 2 & 3 & 4 & 5 \\\\ \\hline y & 2 & 5 & 10 & 17 & 26 \\end{array}$$\n\nWhich type of relationship does the table show?",
+    "options": [
+      "Linear",
+      "Quadratic",
+      "Exponential",
+      "None of these"
+    ],
+    "answer": "Quadratic",
+    "tolerance": 0,
+    "hint": "Check the first differences first, then try the second differences.",
+    "explanation": "First differences: $5-2=3$, $10-5=5$, $17-10=7$, $26-17=9$. Not constant, so not linear. Second differences: $5-3=2$, $7-5=2$, $9-7=2$. The second differences are constant (all equal to 2), confirming a quadratic relationship. (The equation is $y = x^2 + 1$.)"
+  },
+  {
+    "id": "comparing-relationships-5",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which of the following equations represents an exponential relationship?",
+    "options": [
+      "$y = 2x + 1$",
+      "$y = x^2 + 3$",
+      "$y = 4 \\times 3^x$",
+      "$y = -5x + 2$"
+    ],
+    "answer": "$y = 4 \\times 3^x$",
+    "tolerance": 0,
+    "hint": "An exponential relationship has the variable $x$ as the exponent (power), not as the base.",
+    "explanation": "In $y = 4 \\times 3^x$, the variable $x$ appears as the exponent. This is an exponential relationship. The other options are linear ($y = 2x + 1$ and $y = -5x + 2$) and quadratic ($y = x^2 + 3$), where $x$ is not an exponent."
+  },
+  {
+    "id": "comparing-relationships-6",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which feature confirms that a table of values shows a linear relationship?",
+    "options": [
+      "The ratio of consecutive $y$-values is constant.",
+      "The first differences between consecutive $y$-values are constant.",
+      "The second differences between consecutive $y$-values are constant.",
+      "The $y$-values are always positive."
+    ],
+    "answer": "The first differences between consecutive $y$-values are constant.",
+    "tolerance": 0,
+    "hint": "A linear function has a constant gradient, which means $y$ changes by the same amount for every unit increase in $x$.",
+    "explanation": "A constant rate of change (gradient) means $y$ increases or decreases by the same fixed amount each time $x$ increases by 1. In a table, this appears as constant first differences. A constant ratio identifies an exponential relationship; constant second differences identify a quadratic relationship."
+  },
+  {
+    "id": "comparing-relationships-7",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "The table below shows a relationship between $x$ and $y$.\n\n$$\\begin{array}{c|ccccc} x & 0 & 1 & 2 & 3 & 4 \\\\ \\hline y & 1 & 2 & 4 & 8 & 16 \\end{array}$$\n\nWhich type of relationship does the table show, and what feature confirms this?",
+    "options": [
+      "Linear, because the $y$-values increase by the same amount each time",
+      "Quadratic, because the second differences are equal",
+      "Exponential, because each $y$-value is double the previous one",
+      "None of these"
+    ],
+    "answer": "Exponential, because each $y$-value is double the previous one",
+    "tolerance": 0,
+    "hint": "Calculate the ratio of consecutive $y$-values: $\\dfrac{2}{1}$, $\\dfrac{4}{2}$, $\\dfrac{8}{4}$, $\\dfrac{16}{8}$.",
+    "explanation": "Ratios: $\\dfrac{2}{1}=2$, $\\dfrac{4}{2}=2$, $\\dfrac{8}{4}=2$, $\\dfrac{16}{8}=2$. The ratio is constant (equal to 2), confirming an exponential relationship. First differences (1, 2, 4, 8) are not constant, ruling out linear. Second differences (1, 2, 4) are not constant, ruling out quadratic. The equation is $y = 2^x$."
+  },
+  {
+    "id": "comparing-relationships-8",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "The graphs of $y = 3x + 2$ and $y = x^2$ are drawn on the same axes. For large positive values of $x$, which function produces the greater $y$-values?",
+    "options": [
+      "$y = 3x + 2$, because it has a constant gradient",
+      "$y = x^2$, because quadratic functions grow faster than linear functions for large $x$",
+      "Both produce equal $y$-values for all large $x$",
+      "$y = 3x + 2$, because it has a larger $y$-intercept"
+    ],
+    "answer": "$y = x^2$, because quadratic functions grow faster than linear functions for large $x$",
+    "tolerance": 0,
+    "hint": "Compare the two functions for a large value such as $x = 10$.",
+    "explanation": "At $x = 10$: $y = 3(10)+2=32$ and $y = 10^2=100$. At $x = 100$: $y = 302$ and $y = 10000$. For large $x$, $y = x^2$ grows much faster. Although $y = 3x + 2$ is larger for small positive $x$ (at $x = 1$: $5 > 1$), the quadratic eventually overtakes it."
+  },
+  {
+    "id": "comparing-relationships-9",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "coordinate",
+    "stem": "The table below shows values of $y = 4x$ and $y = 2^x$.\n\n$$\\begin{array}{c|cccccc} x & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline y=4x & 0 & 4 & 8 & 12 & 16 & 20 \\\\ y=2^x & 1 & 2 & 4 & 8 & 16 & 32 \\end{array}$$\n\nFind the coordinates of the point where the two graphs intersect.",
+    "answer": "(4, 16)",
+    "tolerance": 0,
+    "hint": "Find the value of $x$ in the table where $y = 4x$ and $y = 2^x$ give the same result.",
+    "explanation": "Reading the table: when $x = 4$, both $y = 4 \\times 4 = 16$ and $y = 2^4 = 16$. The two graphs meet at the point $(4, 16)$."
+  },
+  {
+    "id": "comparing-relationships-10",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "The table below shows values of $y = 4x$ and $y = 2^x$.\n\n$$\\begin{array}{c|cccccc} x & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline y=4x & 0 & 4 & 8 & 12 & 16 & 20 \\\\ y=2^x & 1 & 2 & 4 & 8 & 16 & 32 \\end{array}$$\n\nFor $x > 4$, which function gives the larger $y$-value? Select the correct answer and reason.",
+    "options": [
+      "$y = 4x$, because linear functions have a constant gradient",
+      "$y = 2^x$, because exponential functions eventually grow faster than linear functions",
+      "Both functions give equal $y$-values for all $x > 4$",
+      "$y = 4x$, because the coefficient 4 is greater than the base 2"
+    ],
+    "answer": "$y = 2^x$, because exponential functions eventually grow faster than linear functions",
+    "tolerance": 0,
+    "hint": "Check the table at $x = 5$: $y = 4(5) = 20$ and $y = 2^5 = 32$.",
+    "explanation": "At $x = 5$: $y = 4(5) = 20$ and $y = 2^5 = 32$, so $y = 2^x$ is already larger. As $x$ continues to increase, $2^x$ doubles at each step while $4x$ only increases by 4. Exponential growth will always eventually outpace linear growth, regardless of the size of the linear coefficient."
+  },
+  {
+    "id": "comparing-relationships-11",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "coordinate",
+    "stem": "The table below shows values of $y = 3x$ and $y = x^2$.\n\n$$\\begin{array}{c|cccccc} x & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline y=3x & 0 & 3 & 6 & 9 & 12 & 15 \\\\ y=x^2 & 0 & 1 & 4 & 9 & 16 & 25 \\end{array}$$\n\nFind the coordinates of the positive intersection point of the two graphs.",
+    "answer": "(3, 9)",
+    "tolerance": 0,
+    "hint": "Find the positive $x$-value in the table where $y = 3x$ and $y = x^2$ are equal.",
+    "explanation": "At $x = 0$, both functions equal 0, but $x = 0$ is not positive. At $x = 3$: $y = 3 \\times 3 = 9$ and $y = 3^2 = 9$. Both give $y = 9$, so the positive intersection point is $(3, 9)$."
+  },
+  {
+    "id": "comparing-relationships-12",
+    "subtopic": "comparing-relationships",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "The table below shows values of $y = 3x$ and $y = x^2$.\n\n$$\\begin{array}{c|cccccc} x & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline y=3x & 0 & 3 & 6 & 9 & 12 & 15 \\\\ y=x^2 & 0 & 1 & 4 & 9 & 16 & 25 \\end{array}$$\n\nFor $x > 3$, which function gives the larger $y$-value, and what does this tell us about the rates of growth?",
+    "options": [
+      "$y = 3x$, because it has a gradient of 3",
+      "$y = x^2$, because quadratic growth eventually outpaces linear growth",
+      "Both give equal $y$-values for all $x > 3$",
+      "$y = 3x$, because the coefficient 3 is always larger than $x$ for $x < 3$"
+    ],
+    "answer": "$y = x^2$, because quadratic growth eventually outpaces linear growth",
+    "tolerance": 0,
+    "hint": "Check the table for $x = 4$ and $x = 5$.",
+    "explanation": "At $x = 4$: $y = 3(4)=12$ and $y = 4^2=16$, so $y = x^2$ is larger. At $x = 5$: $y = 15$ and $y = 25$. The gap keeps widening. Although $y = 3x > y = x^2$ for $0 < x < 3$, the quadratic overtakes the linear at $x = 3$ and stays ahead. Quadratic growth is faster than linear growth for all sufficiently large values of $x$."
+  }
+]

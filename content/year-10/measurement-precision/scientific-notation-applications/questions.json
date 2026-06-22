@@ -1,0 +1,193 @@
+[
+  {
+    "id": "scientific-notation-applications-1",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which of the following is $4\\,700\\,000$ written in scientific notation?",
+    "options": [
+      "$4.7 \\times 10^5$",
+      "$4.7 \\times 10^6$",
+      "$47 \\times 10^5$",
+      "$0.47 \\times 10^7$"
+    ],
+    "answer": "$4.7 \\times 10^6$",
+    "hint": "Scientific notation requires the coefficient to be at least 1 and less than 10. Count how many places you move the decimal point.",
+    "explanation": "Move the decimal point 6 places to the left to get $4.7$. Since the original number is large (greater than 1), the exponent is positive: $4.7 \\times 10^6$. The other options are not in correct scientific notation — the coefficient must be between 1 and 10."
+  },
+  {
+    "id": "scientific-notation-applications-2",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which of the following is $0.000052$ written in scientific notation?",
+    "options": [
+      "$5.2 \\times 10^{-4}$",
+      "$5.2 \\times 10^{-5}$",
+      "$52 \\times 10^{-6}$",
+      "$5.2 \\times 10^{5}$"
+    ],
+    "answer": "$5.2 \\times 10^{-5}$",
+    "hint": "Move the decimal point right until the number is between 1 and 10. Each move to the right decreases the exponent by 1.",
+    "explanation": "Move the decimal point 5 places to the right to get $5.2$. Since the original number is small (less than 1), the exponent is negative: $5.2 \\times 10^{-5}$. Check: $5.2 \\times 10^{-5} = 5.2 \\div 100\\,000 = 0.000052$ ✓"
+  },
+  {
+    "id": "scientific-notation-applications-3",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Write $6.3 \\times 10^5$ as a basic numeral.",
+    "answer": 630000,
+    "tolerance": 0,
+    "hint": "Multiply $6.3$ by $10^5$. Moving the decimal point 5 places to the right is the same as multiplying by $100\\,000$.",
+    "explanation": "$6.3 \\times 10^5 = 6.3 \\times 100\\,000 = 630\\,000$. Moving the decimal point in $6.3$ five places to the right gives $630\\,000$."
+  },
+  {
+    "id": "scientific-notation-applications-4",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which number is larger: $7.2 \\times 10^5$ or $9.8 \\times 10^4$?",
+    "options": [
+      "$7.2 \\times 10^5$, because it has a higher power of 10",
+      "$9.8 \\times 10^4$, because 9.8 is greater than 7.2",
+      "They are equal",
+      "Cannot be determined without a calculator"
+    ],
+    "answer": "$7.2 \\times 10^5$, because it has a higher power of 10",
+    "hint": "Compare the exponents first. A higher power of 10 means a larger number, regardless of the coefficient.",
+    "explanation": "$7.2 \\times 10^5 = 720\\,000$ and $9.8 \\times 10^4 = 98\\,000$. When comparing numbers in scientific notation, compare the exponents first. Since $10^5 > 10^4$, the number $7.2 \\times 10^5$ is larger — even though $9.8 > 7.2$ as coefficients."
+  },
+  {
+    "id": "scientific-notation-applications-5",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Evaluate $(3 \\times 10^4) \\times (2 \\times 10^3)$ and express the answer in scientific notation.",
+    "options": [
+      "$6 \\times 10^7$",
+      "$6 \\times 10^{12}$",
+      "$5 \\times 10^7$",
+      "$6 \\times 10^{43}$"
+    ],
+    "answer": "$6 \\times 10^7$",
+    "hint": "Multiply the coefficients together and add the exponents: $a^m \\times a^n = a^{m+n}$.",
+    "explanation": "Multiply the coefficients: $3 \\times 2 = 6$. Add the exponents: $10^4 \\times 10^3 = 10^{4+3} = 10^7$. Answer: $6 \\times 10^7$."
+  },
+  {
+    "id": "scientific-notation-applications-6",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Evaluate $\\dfrac{8.4 \\times 10^9}{2.1 \\times 10^3}$ and express the answer in scientific notation.",
+    "options": [
+      "$4 \\times 10^3$",
+      "$4 \\times 10^6$",
+      "$4 \\times 10^{12}$",
+      "$6.3 \\times 10^6$"
+    ],
+    "answer": "$4 \\times 10^6$",
+    "hint": "Divide the coefficients and subtract the exponents: $a^m \\div a^n = a^{m-n}$.",
+    "explanation": "Divide the coefficients: $8.4 \\div 2.1 = 4$. Subtract the exponents: $10^9 \\div 10^3 = 10^{9-3} = 10^6$. Answer: $4 \\times 10^6$."
+  },
+  {
+    "id": "scientific-notation-applications-7",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Calculate $(4.5 \\times 10^6) \\times (2 \\times 10^{-2})$ and write the answer as a basic numeral.",
+    "answer": 90000,
+    "tolerance": 0,
+    "hint": "Multiply the coefficients and add the exponents. Then convert the result to a basic numeral.",
+    "explanation": "Multiply coefficients: $4.5 \\times 2 = 9$. Add exponents: $10^6 \\times 10^{-2} = 10^{6+(-2)} = 10^4$. Result: $9 \\times 10^4 = 90\\,000$."
+  },
+  {
+    "id": "scientific-notation-applications-8",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Calculate $\\dfrac{7.2 \\times 10^8}{9 \\times 10^4}$ and write the answer as a basic numeral.",
+    "answer": 8000,
+    "tolerance": 0,
+    "hint": "Divide the coefficients and subtract the exponents, then convert to standard form.",
+    "explanation": "Divide coefficients: $7.2 \\div 9 = 0.8$. Subtract exponents: $10^8 \\div 10^4 = 10^{8-4} = 10^4$. Result: $0.8 \\times 10^4 = 8 \\times 10^3 = 8000$."
+  },
+  {
+    "id": "scientific-notation-applications-9",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A bacterium is $2.5 \\times 10^{-6}$ m long. A virus is $5 \\times 10^{-8}$ m long. How many times longer is the bacterium than the virus?",
+    "answer": 50,
+    "tolerance": 0,
+    "hint": "Divide the bacterium length by the virus length. Divide the coefficients and subtract the exponents.",
+    "explanation": "$$\\frac{2.5 \\times 10^{-6}}{5 \\times 10^{-8}} = \\frac{2.5}{5} \\times 10^{-6-(-8)} = 0.5 \\times 10^{2} = 5 \\times 10^{1} = 50$$\nThe bacterium is 50 times longer than the virus."
+  },
+  {
+    "id": "scientific-notation-applications-10",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "The diameter of the Sun is approximately $1.39 \\times 10^9$ m. The diameter of the Earth is approximately $1.27 \\times 10^7$ m. What is the difference in their diameters, in metres, written in scientific notation (to 3 significant figures)?",
+    "options": [
+      "$1.38 \\times 10^9$ m",
+      "$1.26 \\times 10^9$ m",
+      "$1.52 \\times 10^9$ m",
+      "$1.38 \\times 10^{10}$ m"
+    ],
+    "answer": "$1.38 \\times 10^9$ m",
+    "hint": "Convert both numbers to the same power of 10 before subtracting. $1.27 \\times 10^7 = 0.0127 \\times 10^9$.",
+    "explanation": "Express both in terms of $10^9$:\n$$1.39 \\times 10^9 - 0.0127 \\times 10^9 = (1.39 - 0.0127) \\times 10^9 = 1.3773 \\times 10^9$$\nRounded to 3 significant figures: $1.38 \\times 10^9$ m."
+  },
+  {
+    "id": "scientific-notation-applications-11",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Australia has approximately $2.6 \\times 10^7$ people. Each person uses approximately $4.0 \\times 10^2$ litres of water per day. What is the total daily water usage in Australia, in litres, written in scientific notation?",
+    "options": [
+      "$1.04 \\times 10^{10}$ litres",
+      "$1.04 \\times 10^9$ litres",
+      "$10.4 \\times 10^9$ litres",
+      "$6.6 \\times 10^9$ litres"
+    ],
+    "answer": "$1.04 \\times 10^{10}$ litres",
+    "hint": "Multiply the two numbers in scientific notation. Multiply coefficients and add exponents, then check the coefficient is between 1 and 10.",
+    "explanation": "Multiply coefficients: $2.6 \\times 4.0 = 10.4$. Add exponents: $10^7 \\times 10^2 = 10^9$. This gives $10.4 \\times 10^9$, but the coefficient must be between 1 and 10. Rewrite: $10.4 \\times 10^9 = 1.04 \\times 10^{10}$ litres."
+  },
+  {
+    "id": "scientific-notation-applications-12",
+    "subtopic": "scientific-notation-applications",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Light travels at approximately $3 \\times 10^8$ metres per second. The distance from the Earth to the Sun is approximately $1.5 \\times 10^{11}$ metres. How many seconds does it take light to travel from the Sun to Earth?",
+    "answer": 500,
+    "tolerance": 0,
+    "hint": "Use $\\text{time} = \\dfrac{\\text{distance}}{\\text{speed}}$. Divide the two numbers in scientific notation.",
+    "explanation": "$$\\text{time} = \\frac{1.5 \\times 10^{11}}{3 \\times 10^8} = \\frac{1.5}{3} \\times 10^{11-8} = 0.5 \\times 10^3 = 5 \\times 10^2 = 500 \\text{ seconds}$$\nLight takes 500 seconds (about 8 minutes 20 seconds) to reach Earth from the Sun."
+  }
+]

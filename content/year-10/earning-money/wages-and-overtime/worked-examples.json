@@ -1,0 +1,84 @@
+[
+  {
+    "id": "wao-ex-1",
+    "title": "Weekly wage at a standard hourly rate",
+    "difficulty": 1,
+    "problem": "Sarah works $38$ hours in a week and is paid $\\$24.50$ per hour. Calculate her weekly wage.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the hourly rate and the number of hours worked.",
+        "working": "Hourly rate $= \\$24.50$, hours worked $= 38$"
+      },
+      {
+        "step": 2,
+        "instruction": "Use the formula: weekly wage $=$ hours worked $\\times$ hourly rate.",
+        "working": "$$\\text{Weekly wage} = 38 \\times \\$24.50$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply to find the weekly wage.",
+        "working": "$$38 \\times 24.50 = \\$931.00$$"
+      }
+    ],
+    "answer": "$\\$931.00$"
+  },
+  {
+    "id": "wao-ex-2",
+    "title": "Pay including time-and-a-half overtime",
+    "difficulty": 2,
+    "problem": "Tom earns $\\$22.00$ per hour for a standard $38$-hour week. He works $4$ hours overtime at time-and-a-half. What is his total weekly pay?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate standard pay for the 38 hours.",
+        "working": "$$\\text{Standard pay} = 38 \\times \\$22.00 = \\$836.00$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the overtime rate. Time-and-a-half means $1.5 \\times$ the normal rate.",
+        "working": "$$\\text{Overtime rate} = \\$22.00 \\times 1.5 = \\$33.00 \\text{ per hour}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate overtime pay for 4 hours.",
+        "working": "$$\\text{Overtime pay} = 4 \\times \\$33.00 = \\$132.00$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add standard pay and overtime pay to find total weekly pay.",
+        "working": "$$\\text{Total pay} = \\$836.00 + \\$132.00 = \\$968.00$$"
+      }
+    ],
+    "answer": "$\\$968.00$"
+  },
+  {
+    "id": "wao-ex-3",
+    "title": "Fortnightly income with weekend and public holiday penalty rates",
+    "difficulty": 3,
+    "problem": "Priya works $76$ standard hours in a fortnight at $\\$28.50$ per hour. She also works $6$ hours on Saturday at time-and-a-half and $3$ hours on a public holiday at double time. Calculate her fortnightly gross income.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate standard fortnightly pay.",
+        "working": "$$\\text{Standard pay} = 76 \\times \\$28.50 = \\$2166.00$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the Saturday rate (time-and-a-half) and calculate Saturday pay.",
+        "working": "$$\\text{Saturday rate} = \\$28.50 \\times 1.5 = \\$42.75 \\text{ per hour}$$\n$$\\text{Saturday pay} = 6 \\times \\$42.75 = \\$256.50$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the public holiday rate (double time) and calculate public holiday pay.",
+        "working": "$$\\text{Public holiday rate} = \\$28.50 \\times 2 = \\$57.00 \\text{ per hour}$$\n$$\\text{Public holiday pay} = 3 \\times \\$57.00 = \\$171.00$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add all three components to find the fortnightly gross income.",
+        "working": "$$\\text{Fortnightly gross} = \\$2166.00 + \\$256.50 + \\$171.00 = \\$2593.50$$"
+      }
+    ],
+    "answer": "$\\$2593.50$"
+  }
+]

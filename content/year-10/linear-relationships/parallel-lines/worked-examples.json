@@ -1,0 +1,89 @@
+[
+  {
+    "id": "pl-y10-ex1",
+    "title": "Identifying parallel lines using gradients",
+    "difficulty": 1,
+    "problem": "Consider four lines: $y = 5x + 3$, $y = -5x + 1$, $y = 5x - 8$, and $y = 3x + 5$. Which two lines are parallel? Explain why.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the gradient of each line by comparing with $y = mx + c$.",
+        "working": "$y = 5x + 3$: $m = 5$ \\quad $y = -5x + 1$: $m = -5$ \\quad $y = 5x - 8$: $m = 5$ \\quad $y = 3x + 5$: $m = 3$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the pair of lines with equal gradients.",
+        "working": "$y = 5x + 3$ and $y = 5x - 8$ both have gradient $m = 5$. No other pair shares a gradient."
+      },
+      {
+        "step": 3,
+        "instruction": "Confirm the lines are distinct (different y-intercepts).",
+        "working": "The y-intercepts are $3$ and $-8$, which are different, so the lines are not the same line — they are distinct parallel lines that never intersect."
+      }
+    ],
+    "answer": "$y = 5x + 3$ and $y = 5x - 8$ are parallel because they both have gradient $5$."
+  },
+  {
+    "id": "pl-y10-ex2",
+    "title": "Writing the equation of a parallel line with a given y-intercept",
+    "difficulty": 2,
+    "problem": "Line $L$ has equation $3x - y + 4 = 0$. Write the equation of a line parallel to $L$ that has y-intercept $-2$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Rearrange the equation of line $L$ into $y = mx + c$ form.",
+        "working": "$$3x - y + 4 = 0 \\implies y = 3x + 4$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Read the gradient from the equation.",
+        "working": "The gradient of line $L$ is $m = 3$."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the equation of the parallel line using the same gradient and the given y-intercept.",
+        "working": "A parallel line has $m = 3$ and y-intercept $c = -2$: $$y = 3x - 2$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check that the lines are distinct and parallel.",
+        "working": "Both lines have gradient $3$ (parallel). Their y-intercepts are $4$ and $-2$ (different), so they are distinct lines that never meet."
+      }
+    ],
+    "answer": "$y = 3x - 2$"
+  },
+  {
+    "id": "pl-y10-ex3",
+    "title": "Writing the equation of a parallel line through a given point",
+    "difficulty": 3,
+    "problem": "Find the equation of a line parallel to $y = -2x + 5$ that passes through the point $(3, 1)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the gradient of the given line.",
+        "working": "The gradient of $y = -2x + 5$ is $m = -2$."
+      },
+      {
+        "step": 2,
+        "instruction": "Write the equation of the parallel line in the form $y = -2x + c$.",
+        "working": "The parallel line has the same gradient, so its equation is $y = -2x + c$ for some unknown $c$."
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the given point $(3, 1)$ into the equation to find $c$.",
+        "working": "$$1 = -2(3) + c = -6 + c \\implies c = 7$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write the final equation.",
+        "working": "$$y = -2x + 7$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Verify by substituting the point back in.",
+        "working": "When $x = 3$: $y = -2(3) + 7 = -6 + 7 = 1$ ✓"
+      }
+    ],
+    "answer": "$y = -2x + 7$"
+  }
+]

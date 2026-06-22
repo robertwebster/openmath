@@ -1,0 +1,15 @@
+{
+  "id": "earning-money",
+  "title": "Earning money",
+  "year": 10,
+  "stage": "5",
+  "extension": false,
+  "strand": "Number",
+  "syllabusOutcome": "MA5-FIN-C-01",
+  "description": "Calculate wages, overtime, leave loading and income tax to find net pay.",
+  "subtopics": [
+    "wages-and-overtime",
+    "leave-loading-and-other-income",
+    "income-tax-and-net-pay"
+  ]
+}

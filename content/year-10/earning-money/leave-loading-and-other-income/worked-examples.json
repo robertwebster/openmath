@@ -1,0 +1,79 @@
+[
+  {
+    "id": "lloi-ex-1",
+    "title": "Leave loading from an hourly rate",
+    "difficulty": 1,
+    "problem": "Nina earns $\\$25.00$ per hour for a standard $38$-hour week. Calculate her annual leave loading.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the normal weekly pay.",
+        "working": "$$\\text{Weekly pay} = 38 \\times \\$25.00 = \\$950.00$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find four weeks' normal pay. Leave loading is calculated on four weeks' pay.",
+        "working": "$$\\text{Four weeks' pay} = 4 \\times \\$950.00 = \\$3800.00$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate leave loading at $17.5\\%$ of four weeks' pay.",
+        "working": "$$\\text{Leave loading} = 0.175 \\times \\$3800.00 = \\$665.00$$"
+      }
+    ],
+    "answer": "$\\$665.00$"
+  },
+  {
+    "id": "lloi-ex-2",
+    "title": "Commission on sales",
+    "difficulty": 2,
+    "problem": "A real-estate agent earns a commission of $6\\%$ on all sales. She sells a property for $\\$8500$. Calculate her commission.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the commission rate and the sales value.",
+        "working": "Commission rate $= 6\\% = 0.06$, sales $= \\$8500$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the formula: commission $=$ commission rate $\\times$ sales.",
+        "working": "$$\\text{Commission} = 0.06 \\times \\$8500$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply to find the commission.",
+        "working": "$$0.06 \\times 8500 = \\$510.00$$"
+      }
+    ],
+    "answer": "$\\$510.00$"
+  },
+  {
+    "id": "lloi-ex-3",
+    "title": "Total annual income from salary, leave loading and commission",
+    "difficulty": 3,
+    "problem": "Aisha has an annual base salary of $\\$45\\,760$ (which is $\\$880$ per week). She receives annual leave loading of $17.5\\%$ on four weeks' normal pay, and earns a commission of $3\\%$ on $\\$72\\,000$ of sales. Calculate her total annual income.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate four weeks' normal pay using the weekly rate.",
+        "working": "$$\\text{Four weeks' pay} = 4 \\times \\$880.00 = \\$3520.00$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate leave loading at $17.5\\%$ of four weeks' pay.",
+        "working": "$$\\text{Leave loading} = 0.175 \\times \\$3520.00 = \\$616.00$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the commission on sales.",
+        "working": "$$\\text{Commission} = 0.03 \\times \\$72\\,000 = \\$2160.00$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add base salary, leave loading and commission to find total annual income.",
+        "working": "$$\\text{Total annual income} = \\$45\\,760 + \\$616 + \\$2160 = \\$48\\,536.00$$"
+      }
+    ],
+    "answer": "$\\$48\\,536.00$"
+  }
+]

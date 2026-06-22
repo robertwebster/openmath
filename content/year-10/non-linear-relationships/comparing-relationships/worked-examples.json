@@ -1,0 +1,84 @@
+[
+  {
+    "id": "comparing-relationships-example-1",
+    "title": "Identifying a relationship type from a table",
+    "difficulty": 1,
+    "problem": "For each table below, identify whether the relationship is linear, quadratic or exponential and state the key feature used.\n\n(a) $$\\begin{array}{c|cccc} x & 1 & 2 & 3 & 4 \\\\ \\hline y & 4 & 7 & 10 & 13 \\end{array}$$\n\n(b) $$\\begin{array}{c|cccc} x & 0 & 1 & 2 & 3 \\\\ \\hline y & 5 & 10 & 20 & 40 \\end{array}$$",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "For table (a), find the first differences between consecutive $y$-values.",
+        "working": "First differences: $7-4=3$, $10-7=3$, $13-10=3$. All equal to 3."
+      },
+      {
+        "step": 2,
+        "instruction": "Classify the relationship in table (a).",
+        "working": "The first differences are constant (all equal to 3), so the relationship is linear. The gradient is 3 and the equation is $y = 3x + 1$."
+      },
+      {
+        "step": 3,
+        "instruction": "For table (b), check the first differences, then the ratio of consecutive $y$-values.",
+        "working": "First differences: $10-5=5$, $20-10=10$, $40-20=20$. Not constant, so not linear.\n\nRatios: $\\dfrac{10}{5}=2$, $\\dfrac{20}{10}=2$, $\\dfrac{40}{20}=2$. The ratio is constant (each $y$-value doubles)."
+      },
+      {
+        "step": 4,
+        "instruction": "Classify the relationship in table (b).",
+        "working": "A constant multiplicative ratio is the defining feature of an exponential relationship. The equation is $y = 5 \\times 2^x$."
+      }
+    ],
+    "answer": "(a) Linear — first differences are constant (all equal to 3). (b) Exponential — the ratio of consecutive $y$-values is constant (all equal to 2)."
+  },
+  {
+    "id": "comparing-relationships-example-2",
+    "title": "Matching equations to relationship types and explaining identifying features",
+    "difficulty": 2,
+    "problem": "For each equation, state the type of relationship and give one identifying feature.\n\n(a) $y = 3x - 4$\n\n(b) $y = 2x^2 + 1$\n\n(c) $y = 5 \\times (0.8)^x$",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Classify $y = 3x - 4$.",
+        "working": "This is in the form $y = mx + c$ with $m = 3$ and $c = -4$. The variable $x$ appears only to the power of 1. This is a linear relationship — its graph is a straight line and first differences in a table would all equal 3."
+      },
+      {
+        "step": 2,
+        "instruction": "Classify $y = 2x^2 + 1$.",
+        "working": "The highest power of $x$ is 2. This is a quadratic relationship — its graph is a parabola opening upward. In a table, the second differences would all be constant (equal to $2 \\times 2 = 4$, since the coefficient of $x^2$ is 2)."
+      },
+      {
+        "step": 3,
+        "instruction": "Classify $y = 5 \\times (0.8)^x$.",
+        "working": "The variable $x$ appears as the exponent. The base is $0.8$, and since $0 < 0.8 < 1$, this is exponential decay. The $y$-intercept is $5 \\times (0.8)^0 = 5$. In a table, the ratio of consecutive $y$-values would all equal 0.8. The graph approaches $y = 0$ as $x$ increases."
+      }
+    ],
+    "answer": "(a) Linear — straight-line graph with gradient 3. (b) Quadratic — parabola; second differences are constant. (c) Exponential decay — base $0.8$ satisfies $0 < 0.8 < 1$; ratio of consecutive $y$-values equals 0.8."
+  },
+  {
+    "id": "comparing-relationships-example-3",
+    "title": "Finding the intersection of a linear and quadratic graph and comparing growth",
+    "difficulty": 3,
+    "problem": "The table below shows values of $y = 2x$ and $y = x^2$ for $x = 0$ to $5$.\n\n$$\\begin{array}{c|cccccc} x & 0 & 1 & 2 & 3 & 4 & 5 \\\\ \\hline y=2x & 0 & 2 & 4 & 6 & 8 & 10 \\\\ y=x^2 & 0 & 1 & 4 & 9 & 16 & 25 \\end{array}$$\n\n(a) Find the coordinates of the positive intersection point.\n(b) State which function gives larger $y$-values for $x > 2$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Read the table to find where both functions give the same $y$-value for positive $x$.",
+        "working": "At $x = 0$: $y = 2(0)=0$ and $y = 0^2=0$. Equal, but $x=0$ is not positive.\nAt $x = 2$: $y = 2(2)=4$ and $y = 2^2=4$. Equal — this is the positive intersection."
+      },
+      {
+        "step": 2,
+        "instruction": "Write the coordinates of the positive intersection point.",
+        "working": "The positive intersection point is $(2, 4)$."
+      },
+      {
+        "step": 3,
+        "instruction": "Verify by solving algebraically.",
+        "working": "Setting $2x = x^2$: $x^2 - 2x = 0 \\Rightarrow x(x-2)=0$. Solutions: $x = 0$ or $x = 2$. This confirms the positive intersection at $x = 2$."
+      },
+      {
+        "step": 4,
+        "instruction": "Compare the functions for $x > 2$.",
+        "working": "At $x = 3$: $2(3)=6$ and $3^2=9$. Quadratic is larger.\nAt $x = 4$: $8$ and $16$. Quadratic is larger.\nAt $x = 5$: $10$ and $25$. Quadratic is larger and the gap is growing.\n\nFor $x > 2$, $y = x^2$ gives larger $y$-values. Quadratic growth is faster than linear growth for large $x$."
+      }
+    ],
+    "answer": "(a) The positive intersection is at $(2, 4)$. (b) For $x > 2$, $y = x^2$ gives larger $y$-values because quadratic growth eventually outpaces linear growth."
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "id": "significant-figures-we-1",
+    "title": "Rounding to 2 significant figures",
+    "difficulty": 1,
+    "problem": "Round $62\\,850$ to 2 significant figures.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the first two significant figures.",
+        "working": "Starting from the leftmost non-zero digit: the first significant figure is $6$ (ten-thousands place) and the second is $2$ (thousands place)."
+      },
+      {
+        "step": 2,
+        "instruction": "Look at the digit immediately after the second significant figure.",
+        "working": "The digit in the hundreds place is $8$."
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the rounding rule.",
+        "working": "Since $8 \\geq 5$, round up the second significant figure: $2$ becomes $3$."
+      },
+      {
+        "step": 4,
+        "instruction": "Replace all remaining digits with zeros.",
+        "working": "The hundreds, tens and units digits all become zeros: $62\\,850 \\approx 63\\,000$."
+      }
+    ],
+    "answer": "$63\\,000$"
+  },
+  {
+    "id": "significant-figures-we-2",
+    "title": "Counting significant figures",
+    "difficulty": 2,
+    "problem": "How many significant figures does $0.05070$ have?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify and ignore leading zeros.",
+        "working": "The zeros before $5$ (that is, $0.0$) are leading zeros. They are placeholders that locate the decimal point, not significant figures."
+      },
+      {
+        "step": 2,
+        "instruction": "Count from the first non-zero digit.",
+        "working": "The digit $5$ is the first significant figure."
+      },
+      {
+        "step": 3,
+        "instruction": "Assess the zero between $5$ and $7$.",
+        "working": "This zero sits between two non-zero digits ($5$ and $7$), so it is significant."
+      },
+      {
+        "step": 4,
+        "instruction": "Assess the digit $7$.",
+        "working": "The digit $7$ is non-zero, so it is significant."
+      },
+      {
+        "step": 5,
+        "instruction": "Assess the trailing zero.",
+        "working": "The trailing $0$ appears after the decimal point. A trailing zero after the decimal point is always significant — it was deliberately recorded to indicate precision."
+      }
+    ],
+    "answer": "$0.05070$ has 4 significant figures: $5$, $0$, $7$ and $0$."
+  },
+  {
+    "id": "significant-figures-we-3",
+    "title": "Rounding a calculation result to the correct significant figures",
+    "difficulty": 3,
+    "problem": "Calculate $\\dfrac{4.56 \\times 1.8}{3.0}$ and express the answer to the correct number of significant figures. Explain why writing more digits would be misleading.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Count the significant figures in each value.",
+        "working": "$4.56$ has 3 significant figures; $1.8$ has 2 significant figures; $3.0$ has 2 significant figures."
+      },
+      {
+        "step": 2,
+        "instruction": "Determine the required precision for the answer.",
+        "working": "For multiplication and division, the answer is rounded to the same number of significant figures as the least precise value. The least precise values have 2 sig figs, so the answer must be rounded to 2 significant figures."
+      },
+      {
+        "step": 3,
+        "instruction": "Perform the calculation.",
+        "working": "$$4.56 \\times 1.8 = 8.208$$ $$8.208 \\div 3.0 = 2.736$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Round to 2 significant figures.",
+        "working": "The first two significant figures of $2.736$ are $2$ and $7$. The next digit is $3$ (less than $5$), so round down: $2.7$."
+      },
+      {
+        "step": 5,
+        "instruction": "Explain why extra digits are misleading.",
+        "working": "Writing $2.736$ implies the result is known to four significant figures. However, $1.8$ and $3.0$ are each only known to 2 significant figures (to the nearest $0.1$). The extra digits suggest a precision that the original measurements cannot support."
+      }
+    ],
+    "answer": "$2.7$"
+  }
+]

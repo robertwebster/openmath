@@ -1,0 +1,182 @@
+[
+  {
+    "id": "pl-y10-q01",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which of the following lines is parallel to $y = 3x + 1$?",
+    "options": [
+      "$y = 3x - 5$",
+      "$y = 5x + 3$",
+      "$y = -3x + 1$",
+      "$y = 3$"
+    ],
+    "answer": "$y = 3x - 5$",
+    "hint": "Parallel lines have equal gradients. Identify the gradient of $y = 3x + 1$ and find which option has the same gradient.",
+    "explanation": "The gradient of $y = 3x + 1$ is $m = 3$. Checking each option: $y = 3x - 5$ has $m = 3$ ✓; $y = 5x + 3$ has $m = 5$; $y = -3x + 1$ has $m = -3$; $y = 3$ has $m = 0$. Only $y = 3x - 5$ has the same gradient, so it is the parallel line."
+  },
+  {
+    "id": "pl-y10-q02",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "What is the gradient of any line parallel to $y = -4x + 7$?",
+    "answer": -4,
+    "tolerance": 0,
+    "hint": "Parallel lines have equal gradients. Read the gradient directly from $y = mx + c$.",
+    "explanation": "In $y = -4x + 7$, the coefficient of $x$ is $m = -4$. Any line parallel to this line must have the same gradient, so its gradient is also $-4$."
+  },
+  {
+    "id": "pl-y10-q03",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Consider the four lines: $y = 2x + 3$, $y = -2x + 1$, $y = 2x - 5$, and $y = 3x + 2$. Which pair of lines are parallel to each other?",
+    "options": [
+      "$y = 2x + 3$ and $y = -2x + 1$",
+      "$y = 2x + 3$ and $y = 2x - 5$",
+      "$y = -2x + 1$ and $y = 3x + 2$",
+      "$y = 2x - 5$ and $y = 3x + 2$"
+    ],
+    "answer": "$y = 2x + 3$ and $y = 2x - 5$",
+    "hint": "Find the gradient of each line and look for the pair with equal gradients.",
+    "explanation": "Gradients: $y = 2x + 3$ has $m = 2$; $y = -2x + 1$ has $m = -2$; $y = 2x - 5$ has $m = 2$; $y = 3x + 2$ has $m = 3$. The pair with equal gradients is $y = 2x + 3$ and $y = 2x - 5$ (both have $m = 2$). They have different y-intercepts ($3$ and $-5$), confirming they are distinct parallel lines."
+  },
+  {
+    "id": "pl-y10-q04",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "fraction",
+    "stem": "What is the gradient of any line parallel to $y = \\dfrac{1}{3}x + 5$?",
+    "answer": "1/3",
+    "hint": "The gradient is the coefficient of $x$. Parallel lines share the same gradient.",
+    "explanation": "In $y = \\frac{1}{3}x + 5$, the gradient is $m = \\frac{1}{3}$. Any line parallel to this has the same gradient: $\\frac{1}{3}$."
+  },
+  {
+    "id": "pl-y10-q05",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A line parallel to $y = 2x - 5$ has y-intercept $7$. Which of the following is its equation?",
+    "options": [
+      "$y = 2x + 7$",
+      "$y = 7x + 2$",
+      "$y = 2x - 5$",
+      "$y = -2x + 7$"
+    ],
+    "answer": "$y = 2x + 7$",
+    "hint": "Keep the same gradient as the original line, but replace $c$ with the new y-intercept.",
+    "explanation": "The gradient of $y = 2x - 5$ is $m = 2$. A parallel line has the same gradient. Substituting $m = 2$ and y-intercept $c = 7$: $$y = 2x + 7$$ The original y-intercept ($-5$) is replaced by $7$; the gradient ($2$) stays the same."
+  },
+  {
+    "id": "pl-y10-q06",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Line $A$ has equation $y = -3x + 4$. Line $B$ is parallel to line $A$ and has y-intercept $-1$. What is the equation of line $B$?",
+    "options": [
+      "$y = -3x - 1$",
+      "$y = 3x - 1$",
+      "$y = -3x + 4$",
+      "$y = -x - 3$"
+    ],
+    "answer": "$y = -3x - 1$",
+    "hint": "Parallel lines have the same gradient. Take $m$ from line $A$ and use the given y-intercept.",
+    "explanation": "Line $A$ has gradient $m = -3$. Since line $B$ is parallel to $A$, it also has gradient $m = -3$. With y-intercept $c = -1$: $$y = -3x - 1$$ Note: $y = -3x + 4$ is line $A$ itself, not a different parallel line."
+  },
+  {
+    "id": "pl-y10-q07",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A line has equation $4x - 2y + 6 = 0$. A second line is parallel to it and has y-intercept $-3$. What is the gradient of the second line?",
+    "answer": 2,
+    "tolerance": 0,
+    "hint": "Rearrange $4x - 2y + 6 = 0$ into $y = mx + c$ form first to identify the gradient.",
+    "explanation": "Rearranging $4x - 2y + 6 = 0$: $$2y = 4x + 6 \\implies y = 2x + 3$$ The gradient is $m = 2$. Any line parallel to this also has gradient $2$."
+  },
+  {
+    "id": "pl-y10-q08",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which of the following lines is parallel to $2x + y - 1 = 0$ and has y-intercept $5$?",
+    "options": [
+      "$y = -2x + 5$",
+      "$y = 2x + 5$",
+      "$y = -2x + 1$",
+      "$y = 5x - 2$"
+    ],
+    "answer": "$y = -2x + 5$",
+    "hint": "Rearrange $2x + y - 1 = 0$ into $y = mx + c$ to find the gradient, then apply that gradient with the new y-intercept.",
+    "explanation": "Rearranging $2x + y - 1 = 0$: $$y = -2x + 1$$ The gradient is $m = -2$. A parallel line with y-intercept $5$: $$y = -2x + 5$$"
+  },
+  {
+    "id": "pl-y10-q09",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A line is parallel to $y = 2x + 1$ and passes through the point $(3, 10)$. Find the y-intercept $c$ of this line.",
+    "answer": 4,
+    "tolerance": 0,
+    "hint": "The gradient is $2$ (same as the given line). Write $y = 2x + c$, then substitute $(3, 10)$ and solve for $c$.",
+    "explanation": "The gradient of $y = 2x + 1$ is $m = 2$. The parallel line has equation $y = 2x + c$. Substituting the point $(3, 10)$: $$10 = 2(3) + c = 6 + c \\implies c = 4$$ The equation of the parallel line is $y = 2x + 4$. Verify: $y = 2(3) + 4 = 10$ ✓"
+  },
+  {
+    "id": "pl-y10-q10",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A line is parallel to $y = -3x + 5$ and passes through the point $(2, -4)$. What is the y-intercept of this line?",
+    "answer": 2,
+    "tolerance": 0,
+    "hint": "The parallel line has gradient $-3$. Write $y = -3x + c$ and substitute $(2, -4)$ to find $c$.",
+    "explanation": "Gradient $= -3$ (parallel). Write $y = -3x + c$ and substitute $(2, -4)$: $$-4 = -3(2) + c = -6 + c \\implies c = 2$$ The equation is $y = -3x + 2$. Verify: $y = -3(2) + 2 = -4$ ✓"
+  },
+  {
+    "id": "pl-y10-q11",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A line is parallel to $y = \\dfrac{1}{2}x - 4$ and passes through the point $(4, 5)$. What is the y-intercept of this line?",
+    "answer": 3,
+    "tolerance": 0,
+    "hint": "The gradient is $\\frac{1}{2}$. Substitute $(4, 5)$ into $y = \\frac{1}{2}x + c$ and solve for $c$.",
+    "explanation": "Gradient $= \\frac{1}{2}$ (parallel). Write $y = \\frac{1}{2}x + c$ and substitute $(4, 5)$: $$5 = \\frac{1}{2}(4) + c = 2 + c \\implies c = 3$$ The equation is $y = \\frac{1}{2}x + 3$. Verify: $y = \\frac{1}{2}(4) + 3 = 5$ ✓"
+  },
+  {
+    "id": "pl-y10-q12",
+    "subtopic": "parallel-lines",
+    "topic": "linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A line is parallel to $y = -x + 7$ and passes through the point $(-2, 3)$. What is the y-intercept of this line?",
+    "answer": 1,
+    "tolerance": 0,
+    "hint": "The gradient is $-1$. Substitute $(-2, 3)$ into $y = -x + c$ and solve for $c$.",
+    "explanation": "Gradient $= -1$ (parallel to $y = -x + 7$). Write $y = -x + c$ and substitute $(-2, 3)$: $$3 = -(-2) + c = 2 + c \\implies c = 1$$ The equation is $y = -x + 1$. Verify: $y = -(-2) + 1 = 3$ ✓"
+  }
+]

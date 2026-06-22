@@ -1,0 +1,94 @@
+[
+  {
+    "id": "simulations-worked-1",
+    "title": "Estimating probability from simulation results",
+    "difficulty": 1,
+    "problem": "A simulation of spinning a four-section spinner (Red, Blue, Green, Yellow) was run 200 times. The results were:\n\n| Colour | Frequency |\n|--------|----------|\n| Red | 54 |\n| Blue | 68 |\n| Green | 48 |\n| Yellow | 30 |\n\nUse the simulation results to estimate the probability of the spinner landing on each colour.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Confirm the total number of trials.",
+        "working": "Total trials $= 54 + 68 + 48 + 30 = 200$ ✓"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the formula for estimated probability.",
+        "working": "$$P(\\text{colour}) \\approx \\frac{\\text{frequency of colour}}{\\text{total number of trials}}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the estimated probability for each colour.",
+        "working": "$$P(\\text{Red}) \\approx \\frac{54}{200} = 0.27$$\n$$P(\\text{Blue}) \\approx \\frac{68}{200} = 0.34$$\n$$P(\\text{Green}) \\approx \\frac{48}{200} = 0.24$$\n$$P(\\text{Yellow}) \\approx \\frac{30}{200} = 0.15$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check that the estimated probabilities sum to 1.",
+        "working": "$$0.27 + 0.34 + 0.24 + 0.15 = 1.00 \\checkmark$$"
+      }
+    ],
+    "answer": "$P(\\text{Red}) \\approx 0.27$, $P(\\text{Blue}) \\approx 0.34$, $P(\\text{Green}) \\approx 0.24$, $P(\\text{Yellow}) \\approx 0.15$"
+  },
+  {
+    "id": "simulations-worked-2",
+    "title": "Comparing simulation estimate with theoretical probability",
+    "difficulty": 2,
+    "problem": "A fair four-sided die (faces 1, 2, 3, 4) is rolled 80 times in a simulation. The number 1 appeared 26 times.\n\n(a) Calculate the theoretical probability of rolling a 1.\n(b) Find the expected frequency of rolling a 1 in 80 trials.\n(c) Compare the simulation result with the expected frequency and explain any difference.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the theoretical probability of rolling a 1.",
+        "working": "The die has 4 equally likely outcomes. Only one face shows 1.\n$$P(\\text{rolling a 1}) = \\frac{1}{4} = 0.25$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the expected frequency in 80 trials.",
+        "working": "$$\\text{Expected frequency} = P(\\text{rolling a 1}) \\times \\text{number of trials} = 0.25 \\times 80 = 20$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the simulation estimate of P(rolling a 1).",
+        "working": "$$P(\\text{rolling a 1}) \\approx \\frac{26}{80} = 0.325$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Compare the simulation result with the theoretical probability and explain.",
+        "working": "The simulation gave 26 ones (estimated probability 0.325), while the expected number was 20 (theoretical probability 0.25). The difference is due to **random variation** — in any finite number of trials, results are unlikely to match the theoretical probability exactly. Running a larger number of trials (for example, 8000 instead of 80) would bring the simulation estimate closer to 0.25."
+      }
+    ],
+    "answer": "(a) $P(\\text{rolling a 1}) = \\dfrac{1}{4} = 0.25$ (b) Expected frequency $= 20$ (c) The simulation estimate (0.325) differs from the theoretical probability (0.25) due to random variation; more trials would reduce this difference."
+  },
+  {
+    "id": "simulations-worked-3",
+    "title": "Designing a simulation",
+    "difficulty": 3,
+    "problem": "A student wants to estimate the probability that **at least one** of two independent coin flips lands heads, where each flip has $P(\\text{heads}) = 0.5$. Design a complete simulation using random digits 0–9, run 10 example trials, and use the results to estimate the probability.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Choose a tool and state the mapping.",
+        "working": "**Tool:** Random digits 0–9 from a random number table.\n\n**Mapping:** Digits 0–4 represent heads; digits 5–9 represent tails. Each flip has $P(\\text{heads}) = \\frac{5}{10} = 0.5$ ✓"
+      },
+      {
+        "step": 2,
+        "instruction": "Describe the trial structure.",
+        "working": "Each trial uses **two consecutive digits** — one for each coin flip.\n- If at least one digit is in the range 0–4 (heads), record the trial as **success** (at least one head).\n- If both digits are in the range 5–9 (tails), record the trial as **failure** (no heads)."
+      },
+      {
+        "step": 3,
+        "instruction": "State the number of trials and how results will be analysed.",
+        "working": "Run **100 trials** (200 digits total).\n\n$$P(\\text{at least one head}) \\approx \\frac{\\text{number of successes}}{100}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Work through 10 example trials using the digits: 7, 3, 6, 8, 0, 2, 9, 1, 5, 4, 7, 6, 3, 5, 8, 2, 0, 9, 6, 3.",
+        "working": "| Trial | Digit 1 | Digit 2 | Outcome |\n|-------|---------|---------|--------|\n| 1 | 7 (T) | 3 (H) | Success |\n| 2 | 6 (T) | 8 (T) | Failure |\n| 3 | 0 (H) | 2 (H) | Success |\n| 4 | 9 (T) | 1 (H) | Success |\n| 5 | 5 (T) | 4 (H) | Success |\n| 6 | 7 (T) | 6 (T) | Failure |\n| 7 | 3 (H) | 5 (T) | Success |\n| 8 | 8 (T) | 2 (H) | Success |\n| 9 | 0 (H) | 9 (T) | Success |\n| 10 | 6 (T) | 3 (H) | Success |"
+      },
+      {
+        "step": 5,
+        "instruction": "Calculate the simulation estimate and compare with the theoretical probability.",
+        "working": "8 successes out of 10 trials:\n$$P(\\text{at least one head}) \\approx \\frac{8}{10} = 0.8$$\n\nTheoretical probability: $P(\\text{at least one head}) = 1 - P(\\text{no heads}) = 1 - \\frac{1}{2} \\times \\frac{1}{2} = 1 - \\frac{1}{4} = \\frac{3}{4} = 0.75$\n\nThe simulation estimate (0.8) is close to the theoretical value (0.75). With 100 or more trials, the estimate would be more reliable."
+      }
+    ],
+    "answer": "Simulation design: use digits 0–4 = heads, 5–9 = tails; two digits per trial; record success if at least one digit is 0–4; run 100 trials; estimate $= $ successes $\\div$ 100. Theoretical $P(\\text{at least one head}) = \\dfrac{3}{4} = 0.75$."
+  }
+]

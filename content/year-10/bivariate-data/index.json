@@ -1,0 +1,11 @@
+{
+  "id": "bivariate-data",
+  "title": "Bivariate data",
+  "year": 10,
+  "stage": "5",
+  "extension": false,
+  "strand": "Statistics",
+  "syllabusOutcome": "MA5-DAT-C-02",
+  "description": "Construct scatter plots, describe association, draw lines of best fit and evaluate predictions.",
+  "subtopics": ["scatter-plots-and-association", "line-of-best-fit", "predictions-and-limitations"]
+}

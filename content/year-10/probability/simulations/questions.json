@@ -1,0 +1,194 @@
+[
+  {
+    "id": "simulations-1",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A simulation of 100 coin flips showed heads on 43 occasions. Use the simulation results to estimate $P(\\text{heads})$ as a decimal.",
+    "answer": 0.43,
+    "tolerance": 0.01,
+    "hint": "Estimated probability = number of times the outcome occurred ÷ total number of trials.",
+    "explanation": "Using the simulation results:\n$$P(\\text{heads}) \\approx \\frac{43}{100} = 0.43$$"
+  },
+  {
+    "id": "simulations-2",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A spinner with four coloured sections was spun 200 times in a simulation. The colour blue appeared 52 times. Use the simulation results to estimate $P(\\text{blue})$ as a decimal.",
+    "answer": 0.26,
+    "tolerance": 0.01,
+    "hint": "Divide the frequency of blue by the total number of spins.",
+    "explanation": "Using the simulation results:\n$$P(\\text{blue}) \\approx \\frac{52}{200} = 0.26$$"
+  },
+  {
+    "id": "simulations-3",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A simulation uses random digits 0–9, where digits 0, 1 and 2 represent 'success' and digits 3–9 represent 'failure'. In 150 trials, 'success' occurred 48 times. Use the simulation results to estimate $P(\\text{success})$ as a decimal.",
+    "answer": 0.32,
+    "tolerance": 0.01,
+    "hint": "Estimated probability = frequency of success ÷ total number of trials.",
+    "explanation": "Using the simulation results:\n$$P(\\text{success}) \\approx \\frac{48}{150} = 0.32$$"
+  },
+  {
+    "id": "simulations-4",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A bag contains red and blue counters. A simulation of 80 draws with replacement produced 32 red results. Use the simulation results to estimate $P(\\text{red})$ as a decimal.",
+    "answer": 0.4,
+    "tolerance": 0.01,
+    "hint": "Divide the number of red results by the total number of draws.",
+    "explanation": "Using the simulation results:\n$$P(\\text{red}) \\approx \\frac{32}{80} = 0.4$$"
+  },
+  {
+    "id": "simulations-5",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 2,
+    "type": "fraction",
+    "stem": "A fair six-sided die is simulated 120 times. In the simulation, the number 3 appeared 24 times, giving an estimated probability of $\\dfrac{24}{120} = 0.2$. What is the **theoretical** probability of rolling a 3 on a fair die? Give your answer as a fraction.",
+    "answer": "1/6",
+    "tolerance": 0,
+    "hint": "A fair die has 6 equally likely outcomes. How many of those outcomes show a 3?",
+    "explanation": "A fair die has 6 faces, each equally likely. There is only one face showing 3, so:\n$$P(\\text{rolling a 3}) = \\frac{1}{6}$$\nThe simulation estimate of 0.2 differs slightly from the theoretical value of $\\frac{1}{6} \\approx 0.167$ due to random variation."
+  },
+  {
+    "id": "simulations-6",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A simulation of 240 trials produced 75 successes, giving an estimated probability of $\\dfrac{75}{240} \\approx 0.313$. The theoretical probability of success is 0.3. How many successes would be **expected** in 240 trials based on the theoretical probability?",
+    "answer": 72,
+    "tolerance": 0,
+    "hint": "Expected frequency = theoretical probability × number of trials.",
+    "explanation": "Expected frequency = $P(\\text{success}) \\times \\text{number of trials}$\n$$= 0.3 \\times 240 = 72$$\nThe simulation gave 75 successes, which differs from the expected 72 due to random variation."
+  },
+  {
+    "id": "simulations-7",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A student simulates flipping a fair coin 50 times and gets 22 heads. The theoretical probability of heads is 0.5. Which statement **best** explains why the simulation result ($\\frac{22}{50} = 0.44$) differs from 0.5?",
+    "options": [
+      "The coin used in the simulation must be biased.",
+      "Random variation means results in a finite number of trials rarely exactly match the theoretical probability.",
+      "The theoretical probability of heads is not actually 0.5.",
+      "The simulation was carried out incorrectly."
+    ],
+    "answer": "Random variation means results in a finite number of trials rarely exactly match the theoretical probability.",
+    "tolerance": 0,
+    "hint": "Think about what happens naturally when you repeat a random experiment a limited number of times.",
+    "explanation": "In any simulation with a finite number of trials, results will vary around the theoretical probability due to chance. A result of 22 heads out of 50 (0.44) is well within the expected range of variation for a fair coin. As the number of trials increases, the simulation estimate tends to get closer to the theoretical probability of 0.5."
+  },
+  {
+    "id": "simulations-8",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A student runs a simulation of 50 trials to estimate $P(\\text{event})$ and gets an estimate of 0.46. They then increase the number of trials to 5000. What will most likely happen to the simulation estimate?",
+    "options": [
+      "The estimate will stay at 0.46.",
+      "The estimate will become exactly equal to the theoretical probability.",
+      "The estimate will get closer to the theoretical probability.",
+      "The estimate will become less reliable."
+    ],
+    "answer": "The estimate will get closer to the theoretical probability.",
+    "tolerance": 0,
+    "hint": "More trials reduces the effect of random variation on the estimate.",
+    "explanation": "Increasing the number of trials reduces the influence of random variation. Although the estimate will not necessarily become exactly equal to the theoretical probability, it will tend to get closer to it. This is the reason simulations are run with large numbers of trials — to improve reliability."
+  },
+  {
+    "id": "simulations-9",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A student wants to simulate an event where $P(\\text{success}) = 0.6$ using random digits 0–9. Which mapping correctly models the situation?",
+    "options": [
+      "Digits 0–5 represent success; digits 6–9 represent failure.",
+      "Digits 0–6 represent success; digits 7–9 represent failure.",
+      "Even digits represent success; odd digits represent failure.",
+      "Digits 1–5 represent success; digits 0 and 6–9 represent failure."
+    ],
+    "answer": "Digits 0–5 represent success; digits 6–9 represent failure.",
+    "tolerance": 0,
+    "hint": "Count how many digits out of 10 (digits 0–9) each mapping assigns to 'success'. This fraction should equal $P(\\text{success}) = 0.6$.",
+    "explanation": "There are 10 equally likely digits (0–9). To model $P(\\text{success}) = 0.6$, exactly $0.6 \\times 10 = 6$ digits must represent success.\n\n- **A:** Digits 0–5 = 6 digits $= \\frac{6}{10} = 0.6$ ✓\n- B: Digits 0–6 = 7 digits $= \\frac{7}{10} = 0.7$ ✗\n- C: Even digits (0, 2, 4, 6, 8) = 5 digits $= 0.5$ ✗\n- D: Digits 1–5 = 5 digits $= 0.5$ ✗\n\nOption A is the only correct mapping."
+  },
+  {
+    "id": "simulations-10",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A student writes: *\"I will roll a six-sided die 100 times. If I roll a 1 or 2, I record a success.\"* This description is incomplete. What is **missing**?",
+    "options": [
+      "The number of trials.",
+      "How to calculate the estimated probability from the recorded data.",
+      "The mapping of outcomes to success or failure.",
+      "Nothing — the description is complete."
+    ],
+    "answer": "How to calculate the estimated probability from the recorded data.",
+    "tolerance": 0,
+    "hint": "A complete simulation design has four parts: the tool, the mapping, the number of trials, and how to analyse the results.",
+    "explanation": "A valid simulation design must state:\n1. **Tool** — a six-sided die ✓\n2. **Mapping** — rolling 1 or 2 = success ✓\n3. **Number of trials** — 100 ✓\n4. **Analysis** — how to calculate the estimated probability from the results ✗ (missing)\n\nThe student should add something like: \"After 100 rolls, divide the number of successes by 100 to estimate $P(\\text{success})$.\""
+  },
+  {
+    "id": "simulations-11",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A student uses a random number table with two-digit numbers to simulate randomly selecting a letter from the 26-letter English alphabet. They assign letters A–Z to numbers 01–26. Numbers such as 27, 58 and 00 also appear in the table. What should the student do when these numbers appear?",
+    "options": [
+      "Record them as additional consonant outcomes.",
+      "Record them as additional vowel outcomes.",
+      "Skip them and use the next valid two-digit number from the table.",
+      "Stop the simulation — a different tool must be used."
+    ],
+    "answer": "Skip them and use the next valid two-digit number from the table.",
+    "tolerance": 0,
+    "hint": "Numbers outside the range 01–26 do not represent any letter in the alphabet.",
+    "explanation": "Because only numbers 01–26 correspond to the 26 letters of the alphabet, numbers outside this range (such as 27–99 and 00) do not represent a valid outcome. The standard procedure is to **skip** these values and move to the next number in the table. Including them would distort the simulation by introducing extra trials that do not represent any letter."
+  },
+  {
+    "id": "simulations-12",
+    "subtopic": "simulations",
+    "topic": "probability",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Two independent events, $A$ and $B$, have $P(A) = 0.5$ and $P(B) = 0.4$. A student wants to simulate one trial to estimate $P(A \\text{ and } B)$.\n\n**Method 1:** Use two random digits per trial — the first digit models $A$ (digits 0–4 = $A$ occurs; digits 5–9 = $A$ fails), the second digit models $B$ (digits 0–3 = $B$ occurs; digits 4–9 = $B$ fails). Record success if both digits indicate their event occurred.\n\n**Method 2:** Use one random digit per trial — digits 0–1 represent both $A$ and $B$ occurring; digits 2–9 represent at least one event failing.\n\nWhich statement is correct?",
+    "options": [
+      "Only Method 1 is valid — each event must always be simulated with a separate digit.",
+      "Only Method 2 is valid — combining events into one digit is simpler and more accurate.",
+      "Both methods are valid simulation designs.",
+      "Neither method is valid — a spinner must be used instead."
+    ],
+    "answer": "Both methods are valid simulation designs.",
+    "tolerance": 0,
+    "hint": "Check that each method assigns the correct probability to the required outcome. For Method 2, calculate $P(A) \\times P(B)$ and see whether 2 digits out of 10 matches this.",
+    "explanation": "**Method 1:** Simulates each event with a separate digit. $P(\\text{first digit 0–4}) = \\frac{5}{10} = 0.5 = P(A)$ ✓ and $P(\\text{second digit 0–3}) = \\frac{4}{10} = 0.4 = P(B)$ ✓. Success is recorded only when both conditions are met. This correctly models two independent events.\n\n**Method 2:** Since $A$ and $B$ are independent, $P(A \\text{ and } B) = 0.5 \\times 0.4 = 0.2$. Using digits 0–1 gives $\\frac{2}{10} = 0.2$ ✓. This shortcut is valid for independent events.\n\nBoth methods correctly model the situation."
+  }
+]

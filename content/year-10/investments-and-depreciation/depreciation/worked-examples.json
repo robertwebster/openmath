@@ -1,0 +1,94 @@
+[
+  {
+    "id": "dep-ex-1",
+    "title": "Finding salvage value using the depreciation formula",
+    "difficulty": 1,
+    "problem": "A refrigerator is purchased for $\\$5000$ and depreciates at $20\\%$ per year. Find its salvage value after $3$ years.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the depreciation formula and identify the values.",
+        "working": "$$S = V_0(1-r)^n, \\quad V_0 = 5000, \\quad r = 0.20, \\quad n = 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the values into the formula.",
+        "working": "$$S = 5000 \\times (1 - 0.20)^3 = 5000 \\times 0.8^3$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate $0.8^3$ step by step.",
+        "working": "$$0.8^2 = 0.64, \\quad 0.64 \\times 0.8 = 0.512$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Multiply to find the salvage value.",
+        "working": "$$S = 5000 \\times 0.512 = \\$2560$$"
+      }
+    ],
+    "answer": "$\\$2560$"
+  },
+  {
+    "id": "dep-ex-2",
+    "title": "Finding the original purchase price given the salvage value",
+    "difficulty": 2,
+    "problem": "After $4$ years of depreciating at $20\\%$ per year, a printer is worth $\\$4096$. Find its original purchase price.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the depreciation formula and rearrange to make $V_0$ the subject.",
+        "working": "$$S = V_0(1-r)^n \\implies V_0 = \\frac{S}{(1-r)^n}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values: $S = 4096$, $r = 0.20$, $n = 4$.",
+        "working": "$$V_0 = \\frac{4096}{(1 - 0.20)^4} = \\frac{4096}{0.8^4}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate $0.8^4$ by squaring twice.",
+        "working": "$$0.8^2 = 0.64, \\quad 0.64^2 = 0.4096$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide to find the original purchase price.",
+        "working": "$$V_0 = \\frac{4096}{0.4096} = \\$10\\,000$$"
+      }
+    ],
+    "answer": "$\\$10\\,000$"
+  },
+  {
+    "id": "dep-ex-3",
+    "title": "Finding the number of years to reach a value threshold",
+    "difficulty": 3,
+    "problem": "A car is purchased for $\\$20\\,000$ and depreciates at $10\\%$ per year. Find the number of complete years until its value first falls below $\\$13\\,000$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the inequality to solve, then plan to try consecutive integer values of $n$.",
+        "working": "$$20\\,000 \\times 0.9^n < 13\\,000$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Try $n = 1$, $2$ and $3$.",
+        "working": "$$n=1: \\; 20\\,000 \\times 0.9 = \\$18\\,000 > \\$13\\,000$$\n$$n=2: \\; 20\\,000 \\times 0.81 = \\$16\\,200 > \\$13\\,000$$\n$$n=3: \\; 20\\,000 \\times 0.729 = \\$14\\,580 > \\$13\\,000$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Try $n = 4$.",
+        "working": "$$n=4: \\; 20\\,000 \\times 0.9^4 = 20\\,000 \\times 0.6561 = \\$13\\,122 > \\$13\\,000$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Try $n = 5$.",
+        "working": "$$n=5: \\; 20\\,000 \\times 0.9^5 = 20\\,000 \\times 0.59049 = \\$11\\,809.80 < \\$13\\,000 \\checkmark$$"
+      },
+      {
+        "step": 5,
+        "instruction": "State the conclusion.",
+        "working": "The value first falls below $\\$13\\,000$ after $5$ complete years."
+      }
+    ],
+    "answer": "$5$ years"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "line-of-best-fit-example-1",
+    "title": "Using a line of best fit to estimate a value",
+    "difficulty": 1,
+    "problem": "A scatter plot shows the relationship between the number of hours of exercise per week ($x$) and resting pulse rate ($y$, in beats per minute). The line of best fit has equation $y = -1.5x + 80$.\n\n(a) Use the line of best fit to estimate the resting pulse rate of a person who exercises for 10 hours per week.\n(b) The data were collected from people who exercise between 2 and 20 hours per week. Is the estimate in part (a) an interpolation or an extrapolation?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the value of $x$ to substitute.",
+        "working": "The person exercises for 10 hours per week, so $x = 10$."
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $x = 10$ into the equation of the line of best fit.",
+        "working": "$$y = -1.5(10) + 80 = -15 + 80 = 65$$\nThe estimated resting pulse rate is 65 beats per minute."
+      },
+      {
+        "step": 3,
+        "instruction": "Determine whether this is an interpolation or an extrapolation.",
+        "working": "The data range is $x = 2$ to $x = 20$ hours per week.\n\nSince $x = 10$ lies within this range, the estimate is an interpolation — it uses the line within the observed data range rather than extending it beyond."
+      }
+    ],
+    "answer": "(a) 65 beats per minute. (b) Interpolation — $x = 10$ lies within the data range of 2 to 20 hours per week."
+  },
+  {
+    "id": "line-of-best-fit-example-2",
+    "title": "Evaluating whether a line of best fit is appropriate",
+    "difficulty": 2,
+    "problem": "A student draws a line of best fit on a scatter plot with 12 data points. The line passes through 4 of the 12 points exactly. Of the remaining 8 points, all 8 fall below the line.\n\n(a) Explain why this is not a good line of best fit.\n(b) Describe the two key features of a well-drawn line of best fit.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Count the points above and below the line.",
+        "working": "4 points lie exactly on the line and 8 points fall below it. No points fall above the line.\n\nDistribution: 0 above, 4 on the line, 8 below."
+      },
+      {
+        "step": 2,
+        "instruction": "Explain why this distribution is a problem.",
+        "working": "A good line of best fit should have roughly equal numbers of points above and below it. Here, all 8 remaining points fall below the line — none are above. This means the line is too high; it consistently overestimates the data values. A better line would be shifted downward until approximately 6 points fall above and 6 below."
+      },
+      {
+        "step": 3,
+        "instruction": "State the two key features of a well-drawn line of best fit.",
+        "working": "Feature 1: Approximately equal numbers of data points fall above the line and below it.\n\nFeature 2: The data points are spread along the full length of the line — not all clustered in the middle while the ends of the line are far from any data."
+      }
+    ],
+    "answer": "(a) The line is too high — 8 of the 12 points fall below it and none fall above. A well-drawn line would be shifted downward so that roughly equal numbers of points fall above and below. (b) A good line of best fit: (i) has approximately half the points above and half below; and (ii) has the points spread evenly along its entire length."
+  },
+  {
+    "id": "line-of-best-fit-example-3",
+    "title": "Distinguishing association from causation",
+    "difficulty": 3,
+    "problem": "A study of 100 adults finds a strong positive association between the number of credit cards owned and annual income. A financial journalist writes: \"Getting more credit cards will increase your income.\"\n\n(a) Identify the error in the journalist's reasoning.\n(b) Suggest a more plausible explanation for the observed association.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the type of error the journalist has made.",
+        "working": "The journalist has concluded that one variable causes the other based on an association alone. This is the error of confusing correlation with causation — a statistical relationship between two variables does not tell us which one (if either) causes the other."
+      },
+      {
+        "step": 2,
+        "instruction": "Explain why an association alone does not prove causation.",
+        "working": "When two variables are associated, there are several possible explanations:\n1. Variable A causes variable B.\n2. Variable B causes variable A (reverse causation).\n3. A third variable C causes both A and B (confounding variable).\n\nA scatter plot and a line of best fit can show that two variables move together, but they cannot identify which explanation is correct."
+      },
+      {
+        "step": 3,
+        "instruction": "Suggest a more plausible explanation for the association.",
+        "working": "A more plausible explanation: people with higher incomes are more likely to be approved for additional credit cards and may choose to hold more of them. The income enables the cards — not the other way around.\n\nAlternatively, a third variable such as level of education or financial experience may independently drive both higher income and higher credit card ownership."
+      }
+    ],
+    "answer": "(a) The journalist has confused correlation with causation. An association between two variables does not prove that one causes the other. (b) Higher income likely enables people to qualify for and hold more credit cards — the direction of influence is probably the reverse of what the journalist claims. Alternatively, a third variable such as education level may drive both higher income and higher credit card ownership."
+  }
+]

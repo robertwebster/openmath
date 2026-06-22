@@ -1,0 +1,178 @@
+[
+  {
+    "id": "significant-figures-1",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Round $38\\,470$ to 2 significant figures.",
+    "answer": 38000,
+    "tolerance": 0,
+    "hint": "Identify the first two significant figures. The digit in the hundreds place tells you whether to round up or down.",
+    "explanation": "The first significant figure is $3$ (ten-thousands place) and the second is $8$ (thousands place). The next digit is $4$, which is less than $5$, so round down. All remaining digits become zeros: $38\\,000$."
+  },
+  {
+    "id": "significant-figures-2",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Round $0.003847$ to 2 significant figures.",
+    "answer": 0.0038,
+    "tolerance": 0,
+    "hint": "Leading zeros are not significant. Start counting from the first non-zero digit.",
+    "explanation": "Leading zeros are placeholders, not significant figures. The first significant figure is $3$ and the second is $8$. The next digit is $4$, which is less than $5$, so round down: $0.0038$."
+  },
+  {
+    "id": "significant-figures-3",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Round $52\\,630$ to 3 significant figures.",
+    "answer": 52600,
+    "tolerance": 0,
+    "hint": "Count three significant figures from the left, then look at the fourth digit to decide whether to round up or down.",
+    "explanation": "The first three significant figures are $5$, $2$ and $6$. The fourth digit is $3$, which is less than $5$, so round down. The remaining digit becomes zero: $52\\,600$."
+  },
+  {
+    "id": "significant-figures-4",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Round $0.07254$ to 2 significant figures.",
+    "answer": 0.073,
+    "tolerance": 0,
+    "hint": "Ignore the leading zeros. The first non-zero digit is the first significant figure.",
+    "explanation": "The leading zeros are not significant. The first significant figure is $7$ and the second is $2$. The next digit is $5$, so round up: $0.073$."
+  },
+  {
+    "id": "significant-figures-5",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "How many significant figures does $0.00360$ have?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "3",
+    "hint": "Leading zeros are not significant. A trailing zero after the decimal point is significant because it was deliberately recorded.",
+    "explanation": "Leading zeros (before the $3$) are not significant — they are just placeholders. The digits $3$, $6$ and the trailing $0$ are all significant. The trailing zero appears after the decimal point, so it was deliberately recorded and indicates precision to that place. Total: 3 significant figures."
+  },
+  {
+    "id": "significant-figures-6",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "How many significant figures does $40\\,500$ have?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "3",
+    "hint": "Trailing zeros in a whole number without a decimal point are generally not counted as significant. The zero between 4 and 5 is significant.",
+    "explanation": "The digit $4$ is significant, the zero between $4$ and $5$ is significant (it lies between two non-zero digits), and $5$ is significant. The two trailing zeros in this whole number (no decimal point shown) are ambiguous placeholders and are not counted as significant. Total: 3 significant figures."
+  },
+  {
+    "id": "significant-figures-7",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A scientist records a mass as $4762.3$ g. Round this measurement to 3 significant figures.",
+    "answer": 4760,
+    "tolerance": 0,
+    "hint": "Identify the first three significant figures, then look at the fourth digit to decide how to round.",
+    "explanation": "The first three significant figures are $4$, $7$ and $6$. The fourth digit is $2$, which is less than $5$, so round down. The result is $4760$ g (to 3 significant figures)."
+  },
+  {
+    "id": "significant-figures-8",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "How many significant figures does $0.02050$ have?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4",
+    "hint": "Apply the rules: leading zeros are not significant, zeros between non-zero digits are significant, and trailing zeros after the decimal point are significant.",
+    "explanation": "Breaking down $0.02050$: the leading zeros before $2$ are not significant. The digit $2$ is significant. The zero between $2$ and $5$ is significant (between two non-zero digits). The digit $5$ is significant. The trailing zero after $5$ is significant (it appears after the decimal point). Total: 4 significant figures ($2$, $0$, $5$, $0$)."
+  },
+  {
+    "id": "significant-figures-9",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Calculate $3.42 \\times 8.7$ and express the answer to the correct number of significant figures.",
+    "answer": 30,
+    "tolerance": 0,
+    "hint": "For multiplication, the answer should have the same number of significant figures as the least precise factor.",
+    "explanation": "$3.42$ has 3 significant figures and $8.7$ has 2 significant figures. The least precise factor has 2 sig figs, so the answer must be rounded to 2 significant figures. $3.42 \\times 8.7 = 29.754$. Rounded to 2 significant figures: $30$."
+  },
+  {
+    "id": "significant-figures-10",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Calculate $0.0456 \\div 0.12$ and express the answer to the correct number of significant figures.",
+    "answer": 0.38,
+    "tolerance": 0,
+    "hint": "Count the significant figures in each number. For division, round to match the least precise value.",
+    "explanation": "$0.0456$ has 3 significant figures and $0.12$ has 2 significant figures. The answer must be rounded to 2 significant figures. $0.0456 \\div 0.12 = 0.38$. This already has 2 significant figures, so no further rounding is needed."
+  },
+  {
+    "id": "significant-figures-11",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Calculate $\\dfrac{6.83 \\times 4.2}{0.75}$ and express the answer to the correct number of significant figures.",
+    "answer": 38,
+    "tolerance": 0,
+    "hint": "Find the number with the fewest significant figures — the answer must be rounded to match that count.",
+    "explanation": "$6.83$ has 3 sig figs, $4.2$ has 2 sig figs, and $0.75$ has 2 sig figs. The least precise value has 2 sig figs, so round the answer to 2 sig figs. $6.83 \\times 4.2 = 28.686$. $28.686 \\div 0.75 = 38.248$. Rounded to 2 significant figures: $38$."
+  },
+  {
+    "id": "significant-figures-12",
+    "subtopic": "significant-figures",
+    "topic": "measurement-precision",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A student calculates the area of a rectangle with sides $3.2$ cm and $4.15$ cm and records the answer as $13.28$ cm$^2$. Which of the following is the most appropriately rounded answer?",
+    "options": [
+      "$13.28$ cm$^2$",
+      "$13.3$ cm$^2$",
+      "$13$ cm$^2$",
+      "$10$ cm$^2$"
+    ],
+    "answer": "$13$ cm$^2$",
+    "hint": "The answer should have the same number of significant figures as the measurement with the fewest significant figures.",
+    "explanation": "$3.2$ cm has 2 significant figures and $4.15$ cm has 3 significant figures. For multiplication, the answer must be rounded to 2 significant figures. $3.2 \\times 4.15 = 13.28$. Rounded to 2 significant figures: $13$ cm$^2$. Writing $13.28$ cm$^2$ implies a false precision — the side $3.2$ cm is only known to the nearest $0.1$ cm, so the area cannot be reliably stated to four significant figures."
+  }
+]

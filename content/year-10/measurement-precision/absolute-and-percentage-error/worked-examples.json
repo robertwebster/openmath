@@ -1,0 +1,79 @@
+[
+  {
+    "id": "absolute-and-percentage-error-we-1",
+    "title": "Finding the absolute error",
+    "difficulty": 1,
+    "problem": "A ruler measures to the nearest millimetre. A book is recorded as $185 \\text{ mm}$ long. Find the absolute error of this measurement.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the precision of the instrument.",
+        "working": "The ruler measures to the nearest $1 \\text{ mm}$, so the precision is $1 \\text{ mm}$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the absolute error formula.",
+        "working": "$$\\text{Absolute error} = \\frac{1}{2} \\times \\text{precision} = \\frac{1}{2} \\times 1 = 0.5 \\text{ mm}$$"
+      }
+    ],
+    "answer": "The absolute error is $0.5 \\text{ mm}$."
+  },
+  {
+    "id": "absolute-and-percentage-error-we-2",
+    "title": "Calculating percentage error",
+    "difficulty": 2,
+    "problem": "A thermometer is accurate to the nearest $2^\\circ\\text{C}$ and records a temperature of $30^\\circ\\text{C}$. Calculate the percentage error.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the absolute error.",
+        "working": "$$\\text{Absolute error} = \\frac{1}{2} \\times 2 = 1^\\circ\\text{C}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the percentage error formula.",
+        "working": "$$\\% \\text{ error} = \\frac{\\text{absolute error}}{\\text{measurement}} \\times 100\\% = \\frac{1}{30} \\times 100 = 3.\\overline{3}\\%$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Round to a suitable number of decimal places.",
+        "working": "$3.\\overline{3}\\% \\approx 3.33\\%$"
+      }
+    ],
+    "answer": "The percentage error is approximately $3.33\\%$."
+  },
+  {
+    "id": "absolute-and-percentage-error-we-3",
+    "title": "Comparing the precision of two instruments",
+    "difficulty": 3,
+    "problem": "A measuring jug (accurate to the nearest $10 \\text{ mL}$) records a volume as $200 \\text{ mL}$. A graduated cylinder (accurate to the nearest $1 \\text{ mL}$) records the same volume as $197 \\text{ mL}$. Calculate the percentage error for each instrument and determine which is more precise.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the absolute error for the measuring jug.",
+        "working": "$$\\text{Absolute error} = \\frac{1}{2} \\times 10 = 5 \\text{ mL}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the absolute error for the graduated cylinder.",
+        "working": "$$\\text{Absolute error} = \\frac{1}{2} \\times 1 = 0.5 \\text{ mL}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the percentage error for the measuring jug.",
+        "working": "$$\\% \\text{ error} = \\frac{5}{200} \\times 100 = 2.5\\%$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the percentage error for the graduated cylinder.",
+        "working": "$$\\% \\text{ error} = \\frac{0.5}{197} \\times 100 \\approx 0.25\\%$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Compare the percentage errors and state which instrument is more precise.",
+        "working": "$0.25\\% < 2.5\\%$, so the graduated cylinder has the smaller percentage error and is therefore more precise."
+      }
+    ],
+    "answer": "The graduated cylinder is more precise, with a percentage error of approximately $0.25\\%$ compared with $2.5\\%$ for the measuring jug."
+  }
+]

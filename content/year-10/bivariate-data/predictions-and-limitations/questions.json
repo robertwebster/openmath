@@ -1,0 +1,194 @@
+[
+  {
+    "id": "predictions-and-limitations-1",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A scatter plot shows the relationship between daily temperature ($x$, in °C) and the number of visitors to a beach ($y$). The line of best fit has equation $y = 8x - 60$. The data were collected for temperatures between 15°C and 35°C.\n\nUse the line to predict the number of visitors on a day when the temperature is 25°C.",
+    "answer": 140,
+    "tolerance": 0,
+    "hint": "Substitute $x = 25$ into $y = 8x - 60$. Check that 25 is within the data range first.",
+    "explanation": "Since $x = 25$ is within the data range (15 to 35), this is interpolation.\n\nSubstituting $x = 25$:\n$$y = 8(25) - 60 = 200 - 60 = 140$$\n\nThe line of best fit predicts 140 visitors."
+  },
+  {
+    "id": "predictions-and-limitations-2",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A line of best fit for a data set has equation $y = 3x + 7$. The data were collected for $x$ values between 2 and 10.\n\nUse the line to predict $y$ when $x = 6$.",
+    "answer": 25,
+    "tolerance": 0,
+    "hint": "Substitute $x = 6$ into $y = 3x + 7$.",
+    "explanation": "Since $x = 6$ is within the data range (2 to 10), this is interpolation.\n\nSubstituting $x = 6$:\n$$y = 3(6) + 7 = 18 + 7 = 25$$"
+  },
+  {
+    "id": "predictions-and-limitations-3",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A scatter plot comparing a student's hours of practice per week ($x$) and their music performance score ($y$, out of 100) has a line of best fit passing through the points $(2, 48)$ and $(8, 72)$. The data range is $x = 1$ to $x = 10$.\n\nUse the line to predict the performance score for a student who practises 5 hours per week.",
+    "answer": 60,
+    "tolerance": 0,
+    "hint": "Find the gradient of the line first, then use one known point to find the predicted value at $x = 5$.",
+    "explanation": "Gradient:\n$$m = \\frac{72 - 48}{8 - 2} = \\frac{24}{6} = 4$$\n\nUsing the point $(2, 48)$:\n$$y = 48 + 4(5 - 2) = 48 + 12 = 60$$\n\nThe line predicts a performance score of 60 for 5 hours of practice per week."
+  },
+  {
+    "id": "predictions-and-limitations-4",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A scatter plot comparing the age of a car ($x$, in years) and its resale value ($y$, in thousands of dollars) has a line of best fit with equation $y = -2.5x + 28$. The data were collected for cars aged 1 to 8 years.\n\nUse the line to estimate the resale value of a 5-year-old car.",
+    "answer": 15.5,
+    "tolerance": 0.01,
+    "hint": "Substitute $x = 5$ into $y = -2.5x + 28$.",
+    "explanation": "Substituting $x = 5$:\n$$y = -2.5(5) + 28 = -12.5 + 28 = 15.5$$\n\nThe line of best fit estimates a resale value of $15\\,500 for a 5-year-old car."
+  },
+  {
+    "id": "predictions-and-limitations-5",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A researcher records the foot length ($x$, in cm) and height ($y$, in cm) of adults aged 20–40. The data range is $x = 22$ cm to $x = 30$ cm. The line of best fit is $y = 6.5x - 12$.\n\nA student uses this equation to predict the height of a person with a foot length of 38 cm. Calculate the predicted height.",
+    "answer": 235,
+    "tolerance": 0,
+    "hint": "Substitute $x = 38$ into the equation. Note that 38 is outside the data range — this is extrapolation.",
+    "explanation": "Substituting $x = 38$:\n$$y = 6.5(38) - 12 = 247 - 12 = 235$$\n\nThe equation predicts a height of 235 cm. However, $x = 38$ is well outside the observed data range (22 to 30 cm), so this is extrapolation. The prediction is unreliable because the linear relationship may not hold beyond the observed range."
+  },
+  {
+    "id": "predictions-and-limitations-6",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A line of best fit is based on data collected within a certain range of $x$ values. A researcher extends the line beyond the data range to make a prediction.\n\nWhich statement best explains why this extrapolated prediction is less reliable than an interpolated one?",
+    "options": [
+      "The line of best fit was not drawn carefully enough",
+      "The relationship between the variables may not continue in the same pattern outside the observed range",
+      "Extrapolation can only be used when the association is negative",
+      "A line of best fit cannot be extended beyond the data"
+    ],
+    "answer": "The relationship between the variables may not continue in the same pattern outside the observed range",
+    "tolerance": 0,
+    "hint": "Think about what you know about the data outside the observed range — is it guaranteed to follow the same trend?",
+    "explanation": "When we extrapolate, we assume the linear pattern continues beyond the observed data. In practice, the relationship may level off, change direction, or behave differently outside the data range. This makes extrapolated predictions less reliable than interpolated ones."
+  },
+  {
+    "id": "predictions-and-limitations-7",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A line of best fit for a data set is $y = 0.5x + 12$. The data were collected for $x$ values from 10 to 40.\n\nA scientist uses the equation to predict $y$ when $x = 60$. Calculate the predicted value of $y$.",
+    "answer": 42,
+    "tolerance": 0,
+    "hint": "Substitute $x = 60$ into $y = 0.5x + 12$.",
+    "explanation": "Substituting $x = 60$:\n$$y = 0.5(60) + 12 = 30 + 12 = 42$$\n\nNote that $x = 60$ is outside the data range (10 to 40), so this is extrapolation. The predicted value of $y = 42$ may not be reliable."
+  },
+  {
+    "id": "predictions-and-limitations-8",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A meteorologist records daily maximum temperature and electricity usage in a city for the months of January to June. She uses the line of best fit to predict electricity usage in August.\n\nWhich statement about this prediction is most accurate?",
+    "options": [
+      "This is interpolation, and the prediction is reliable",
+      "August is outside the observed data range, so the prediction is extrapolation and may be less reliable",
+      "The prediction is valid as long as the association between temperature and electricity usage is strong",
+      "A line of best fit cannot be used to predict values in future months"
+    ],
+    "answer": "August is outside the observed data range, so the prediction is extrapolation and may be less reliable",
+    "tolerance": 0,
+    "hint": "Was August included in the original data collection period? If not, what type of prediction is this?",
+    "explanation": "The data were collected from January to June. August falls outside this range, so any prediction for August is extrapolation. Extrapolation is less reliable because conditions (and the relationship between variables) may differ outside the observed period."
+  },
+  {
+    "id": "predictions-and-limitations-9",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A student surveys 9 of her friends to investigate whether the number of hours spent on homework each week is associated with their average assessment mark. She finds a strong positive association and concludes that her model can be used to predict marks for all NSW Year 10 students.\n\nWhich limitation is most relevant to her conclusion?",
+    "options": [
+      "A scatter plot is not an appropriate graph for this type of data",
+      "The sample is too small and not representative of all NSW Year 10 students",
+      "The association cannot be positive if homework is the independent variable",
+      "A strong association means the model is always accurate for predictions"
+    ],
+    "answer": "The sample is too small and not representative of all NSW Year 10 students",
+    "tolerance": 0,
+    "hint": "Consider how many students were surveyed and whether they represent the broader population.",
+    "explanation": "A sample of 9 friends is very small and is not randomly selected — it is a convenience sample. Surveying only her friends means the sample is likely to share similar backgrounds, habits, and school environments. This makes the model unreliable for predicting marks across all NSW Year 10 students."
+  },
+  {
+    "id": "predictions-and-limitations-10",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A researcher plots a scatter plot of ice cream sales ($x$) versus the number of drownings at beaches ($y$) across different months. The plot shows a strong positive association. The researcher concludes that eating ice cream causes drowning.\n\nWhich statement best identifies the flaw in this conclusion?",
+    "options": [
+      "The scatter plot should have been drawn as a histogram instead",
+      "Association does not imply causation — both variables are likely to increase together because of a third factor, such as hot weather",
+      "The association is too strong for causation to apply",
+      "The conclusion is correct because the association is strong and positive"
+    ],
+    "answer": "Association does not imply causation — both variables are likely to increase together because of a third factor, such as hot weather",
+    "tolerance": 0,
+    "hint": "Just because two variables are associated does not mean one causes the other. What might cause both to rise at the same time?",
+    "explanation": "A strong association between two variables does not mean one causes the other. In this case, both ice cream sales and drownings tend to increase during hot weather — hot weather is a confounding variable that influences both. This is a classic example of a spurious correlation."
+  },
+  {
+    "id": "predictions-and-limitations-11",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A line of best fit is drawn through a scatter plot of 25 data points. Four of the points lie very far from the line and from the main cluster of data.\n\nHow do these outliers affect the line of best fit?",
+    "options": [
+      "Outliers always make the model more accurate by adding more data",
+      "Outliers may pull the line of best fit away from the main trend, reducing the model's accuracy for most data points",
+      "Outliers should always be removed from the data without any justification",
+      "Outliers have no effect on the position or gradient of the line of best fit"
+    ],
+    "answer": "Outliers may pull the line of best fit away from the main trend, reducing the model's accuracy for most data points",
+    "tolerance": 0,
+    "hint": "Think about how a line of best fit is positioned — what happens if extreme values are present?",
+    "explanation": "Outliers are data points that lie far from the general trend. A line of best fit attempts to minimise the distance to all data points, so outliers can shift the line toward themselves, distorting its gradient or position. This reduces the line's accuracy as a model for the majority of the data."
+  },
+  {
+    "id": "predictions-and-limitations-12",
+    "subtopic": "predictions-and-limitations",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A researcher collects data from 200 Year 10 students at a single selective school to investigate the relationship between study time and academic performance. She builds a linear model and uses it to predict academic performance for all Australian secondary school students.\n\nWhich limitation is most relevant?",
+    "options": [
+      "The sample is too large — smaller samples always produce better models",
+      "The sample comes from a selective school, which is not representative of all Australian secondary school students",
+      "Academic performance cannot be measured using a linear model",
+      "The model is only invalid if the association was weak"
+    ],
+    "answer": "The sample comes from a selective school, which is not representative of all Australian secondary school students",
+    "tolerance": 0,
+    "hint": "Consider whether students at a selective school are typical of the broader population of secondary students.",
+    "explanation": "Students at a selective school tend to be higher achieving and may have different study habits compared with students at comprehensive schools. The sample is not representative of all Australian secondary students, so applying the model to the broader population is not valid. This is a sampling bias limitation."
+  }
+]

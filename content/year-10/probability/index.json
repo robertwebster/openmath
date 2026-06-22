@@ -1,0 +1,15 @@
+{
+  "id": "probability",
+  "title": "Probability",
+  "year": 10,
+  "stage": "5",
+  "strand": "Probability",
+  "syllabusOutcome": "MA5-PRB-C-01",
+  "extension": false,
+  "description": "Distinguish independent and dependent events, apply the multiplication rule and design simulations.",
+  "subtopics": [
+    "independent-and-dependent-events",
+    "multiplying-probabilities",
+    "simulations"
+  ]
+}
