@@ -1,0 +1,74 @@
+[
+  {
+    "id": "btc-ex-1",
+    "title": "Finding the total cost of a terms arrangement",
+    "difficulty": 1,
+    "problem": "A sofa has a cash price of $\\$1400$. It can be purchased on terms with a deposit of $\\$200$ and 18 monthly repayments of $\\$75$. Find the total amount paid under the terms arrangement.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the deposit and the repayment details.",
+        "working": "Deposit $= \\$200$, number of repayments $= 18$, each repayment $= \\$75$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the total of all monthly repayments.",
+        "working": "$$18 \\times \\$75 = \\$1350$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the deposit to find the total amount paid.",
+        "working": "$$\\text{Total} = \\$200 + \\$1350 = \\$1550$$"
+      }
+    ],
+    "answer": "$\\$1550$"
+  },
+  {
+    "id": "btc-ex-2",
+    "title": "Expressing the interest cost as a percentage of the cash price",
+    "difficulty": 2,
+    "problem": "A dishwasher has a cash price of $\\$1200$. Buying on terms costs a deposit of $\\$240$ and 12 monthly repayments of $\\$90$. Find the interest paid and express it as a percentage of the cash price.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the total amount paid on terms.",
+        "working": "$$\\text{Total} = \\$240 + 12 \\times \\$90 = \\$240 + \\$1080 = \\$1320$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Subtract the cash price to find the interest charged.",
+        "working": "$$\\text{Interest} = \\$1320 - \\$1200 = \\$120$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Express the interest as a percentage of the cash price.",
+        "working": "$$\\% \\text{ interest} = \\frac{120}{1200} \\times 100 = 10\\%$$"
+      }
+    ],
+    "answer": "The interest paid is $\\$120$, which is $10\\%$ of the cash price."
+  },
+  {
+    "id": "btc-ex-3",
+    "title": "Comparing two credit options to find the cheaper deal",
+    "difficulty": 3,
+    "problem": "A gaming console has a cash price of $\\$600$. Option A is a buy-now-pay-later arrangement with a flat fee of $\\$30$ and the full balance split into 4 equal fortnightly payments. Option B is buying on terms with a deposit of $\\$100$ and 10 monthly repayments of $\\$58$. Find the total cost of each option and determine which is cheaper and by how much.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the total cost of Option A (BNPL). The balance itself is still paid in full — the flat fee is the only extra cost.",
+        "working": "$$\\text{Option A total} = \\$600 + \\$30 = \\$630$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the total cost of Option B (terms).",
+        "working": "$$\\text{Option B total} = \\$100 + 10 \\times \\$58 = \\$100 + \\$580 = \\$680$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the two totals to find which is cheaper and by how much.",
+        "working": "$$\\$680 - \\$630 = \\$50$$\n\nOption A is cheaper by $\\$50$."
+      }
+    ],
+    "answer": "Option A (BNPL) costs $\\$630$ and Option B (terms) costs $\\$680$. Option A is cheaper by $\\$50$."
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "id": "investments-and-depreciation",
+  "title": "Investments and depreciation",
+  "year": 10,
+  "stage": "5",
+  "extension": false,
+  "strand": "Number",
+  "syllabusOutcome": "MA5-FIN-C-02",
+  "description": "Apply compound interest and depreciation formulas and evaluate buying on terms.",
+  "subtopics": [
+    "compound-interest",
+    "depreciation",
+    "buying-on-terms-and-credit"
+  ]
+}

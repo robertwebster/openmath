@@ -1,0 +1,9 @@
+{
+  "id": "depreciation",
+  "title": "Depreciation",
+  "topic": "investments-and-depreciation",
+  "year": 10,
+  "strand": "Number",
+  "syllabusOutcome": "MA5-FIN-C-02",
+  "description": "Apply the depreciation formula $S = V_0(1 - r)^n$ to find salvage values, rates and initial values."
+}

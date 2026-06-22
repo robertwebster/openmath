@@ -1,0 +1,11 @@
+{
+  "id": "bearings",
+  "title": "Bearings",
+  "year": 10,
+  "stage": "5",
+  "extension": false,
+  "strand": "Measurement",
+  "syllabusOutcome": "MA5-TRG-C-02",
+  "description": "Read, convert and use true and compass bearings to solve problems.",
+  "subtopics": ["true-bearings", "compass-bearings", "solving-problems-with-bearings"]
+}

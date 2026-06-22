@@ -1,0 +1,99 @@
+[
+  {
+    "id": "multiplying-probabilities-worked-1",
+    "title": "Multiplying probabilities for independent events",
+    "difficulty": 1,
+    "problem": "A spinner has 3 equal sections labelled 1, 2 and 3. A fair coin is flipped at the same time as the spinner is spun. Find the probability that the spinner lands on 2 and the coin shows heads.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Check whether the two events are independent.",
+        "working": "The result of the spinner cannot affect the result of the coin, and the coin cannot affect the spinner. The two events are **independent**."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the probability that the spinner lands on 2.",
+        "working": "The spinner has 3 equal sections, so each section has an equal chance of being selected.\n$$P(\\text{spinner} = 2) = \\frac{1}{3}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the probability that the coin shows heads.",
+        "working": "A fair coin has two equally likely outcomes.\n$$P(\\text{heads}) = \\frac{1}{2}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply the multiplication rule for independent events.",
+        "working": "$$P(\\text{spinner} = 2 \\text{ and heads}) = P(\\text{spinner} = 2) \\times P(\\text{heads}) = \\frac{1}{3} \\times \\frac{1}{2} = \\frac{1}{6}$$"
+      }
+    ],
+    "answer": "$\\dfrac{1}{6}$"
+  },
+  {
+    "id": "multiplying-probabilities-worked-2",
+    "title": "Tree diagram for a two-stage experiment",
+    "difficulty": 2,
+    "problem": "A bag contains 3 red and 2 blue balls. One ball is drawn, its colour noted, and it is **replaced**. A second ball is then drawn. Draw a tree diagram and find the probability that both balls drawn are the same colour.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Set up the first level of the tree diagram.",
+        "working": "There are $3 + 2 = 5$ balls in total. The two possible outcomes on the first draw are red and blue.\n$$P(\\text{1st red}) = \\frac{3}{5}, \\quad P(\\text{1st blue}) = \\frac{2}{5}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Set up the second level of the tree diagram.",
+        "working": "Because the ball is replaced after the first draw, the bag always contains 3 red and 2 blue balls. The probabilities on the second draw are the same as on the first draw.\n$$P(\\text{2nd red}) = \\frac{3}{5}, \\quad P(\\text{2nd blue}) = \\frac{2}{5}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find P(both red) by multiplying along the red–red branch.",
+        "working": "$$P(\\text{RR}) = \\frac{3}{5} \\times \\frac{3}{5} = \\frac{9}{25}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find P(both blue) by multiplying along the blue–blue branch.",
+        "working": "$$P(\\text{BB}) = \\frac{2}{5} \\times \\frac{2}{5} = \\frac{4}{25}$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Add the two probabilities to find P(same colour).",
+        "working": "The outcomes RR and BB are mutually exclusive, so their probabilities are added.\n$$P(\\text{same colour}) = \\frac{9}{25} + \\frac{4}{25} = \\frac{13}{25}$$"
+      }
+    ],
+    "answer": "$\\dfrac{13}{25}$"
+  },
+  {
+    "id": "multiplying-probabilities-worked-3",
+    "title": "At least one using the complement rule",
+    "difficulty": 3,
+    "problem": "A bag contains 3 red and 5 blue marbles. Two marbles are drawn one at a time **without replacement**. Find the probability that at least one marble is red. Use the complement rule.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the complement event.",
+        "working": "\"At least one red\" means one red or two red marbles. Its complement is \"no red marbles at all\", which means both marbles drawn are blue. It is easier to calculate the complement probability."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the probability that the first marble is blue.",
+        "working": "There are $3 + 5 = 8$ marbles in total, of which 5 are blue.\n$$P(\\text{1st marble is blue}) = \\frac{5}{8}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the probability that the second marble is blue, given the first was blue.",
+        "working": "After one blue marble is removed, 3 red and 4 blue marbles remain — $3 + 4 = 7$ marbles in total.\n$$P(\\text{2nd blue} \\mid \\text{1st blue}) = \\frac{4}{7}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate P(both blue).",
+        "working": "$$P(\\text{both blue}) = \\frac{5}{8} \\times \\frac{4}{7} = \\frac{20}{56} = \\frac{5}{14}$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Apply the complement rule.",
+        "working": "$$P(\\text{at least one red}) = 1 - P(\\text{both blue}) = 1 - \\frac{5}{14} = \\frac{14}{14} - \\frac{5}{14} = \\frac{9}{14}$$"
+      }
+    ],
+    "answer": "$\\dfrac{9}{14}$"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "simulations",
+  "title": "Simulations",
+  "topic": "probability",
+  "year": 10,
+  "stage": "5",
+  "strand": "Probability",
+  "extension": false,
+  "syllabusOutcome": "MA5-PRB-C-01",
+  "description": "Design and use simulations to estimate probabilities and compare results with theoretical values."
+}

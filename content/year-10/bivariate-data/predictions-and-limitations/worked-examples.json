@@ -1,0 +1,79 @@
+[
+  {
+    "id": "predictions-and-limitations-worked-1",
+    "title": "Interpolating from a line of best fit",
+    "difficulty": 1,
+    "problem": "A scatter plot shows the relationship between the number of hours a student studies per week ($x$) and their exam score out of 100 ($y$). The line of best fit has equation $y = 5x + 30$. The data were collected for $x$ values between 2 and 12.\n\nUse the line to predict the exam score for a student who studies 7 hours per week.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Check whether the $x$ value is within the data range.",
+        "working": "The data range is $x = 2$ to $x = 12$. Since $x = 7$ is within this range, the prediction is an interpolation."
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $x = 7$ into the equation of the line of best fit.",
+        "working": "$$y = 5(7) + 30$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the predicted score.",
+        "working": "$$y = 35 + 30 = 65$$"
+      }
+    ],
+    "answer": "The line of best fit predicts an exam score of 65 for a student who studies 7 hours per week."
+  },
+  {
+    "id": "predictions-and-limitations-worked-2",
+    "title": "Extrapolating and explaining reduced reliability",
+    "difficulty": 2,
+    "problem": "A researcher records the number of years of work experience ($x$) and annual salary (\\$000s, $y$) for employees at a company. The data were collected for employees with 1 to 15 years of experience. The line of best fit is $y = 3.2x + 42$.\n\n(a) Calculate the predicted salary for an employee with 25 years of experience.\n(b) Give one reason why this prediction is less reliable than a prediction made within the data range.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify whether $x = 25$ is within the data range.",
+        "working": "The data range is $x = 1$ to $x = 15$. Since $x = 25$ is outside this range, the prediction is extrapolation."
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $x = 25$ into the equation.",
+        "working": "$$y = 3.2(25) + 42$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the predicted salary.",
+        "working": "$$y = 80 + 42 = 122$$\n\nThe model predicts an annual salary of $122\\,000."
+      },
+      {
+        "step": 4,
+        "instruction": "Explain why this extrapolated prediction is less reliable.",
+        "working": "The data only covers employees with up to 15 years of experience. Beyond this range, the rate of salary growth may slow down (e.g. due to salary caps or reduced promotions), so the linear pattern may not continue. Predictions outside the data range are less reliable because the relationship between variables may change."
+      }
+    ],
+    "answer": "(a) $122\\,000. (b) The prediction is extrapolation — the linear trend observed up to 15 years may not continue at the same rate beyond the observed data range."
+  },
+  {
+    "id": "predictions-and-limitations-worked-3",
+    "title": "Identifying limitations of a statistical model",
+    "difficulty": 3,
+    "problem": "A Year 10 student surveys 11 of her classmates about their daily screen time (hours) and their score on a recent maths test (%). She finds a moderate negative association and draws a line of best fit. She concludes: 'Screen time causes lower maths scores. This model can predict the maths score of any student in Australia from their screen time.'\n\nIdentify TWO specific limitations of this conclusion.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Consider the sample size and how the sample was selected.",
+        "working": "The sample consists of only 11 classmates — this is a very small sample. A reliable model typically requires a much larger sample. Additionally, the classmates were not randomly selected, so the sample is not representative of all Australian students. This is a convenience sample, which may share similar habits, school environments, and demographics."
+      },
+      {
+        "step": 2,
+        "instruction": "Consider whether a statistical association implies causation.",
+        "working": "A moderate negative association means that higher screen time tends to occur alongside lower test scores in this data set. However, association does not imply causation. Other variables — such as time management, study habits, or sleep — may influence both screen time and test scores. The model cannot justify the claim that screen time causes lower scores."
+      },
+      {
+        "step": 3,
+        "instruction": "State the two limitations clearly.",
+        "working": "Limitation 1: The sample is too small (11 students) and is a convenience sample, making it unrepresentative of all Australian students.\n\nLimitation 2: Association does not imply causation — the negative association does not prove that screen time causes lower maths scores."
+      }
+    ],
+    "answer": "Two limitations: (1) The sample is too small and unrepresentative — it cannot be generalised to all Australian students. (2) Association does not imply causation — the model shows a statistical relationship only, not a causal one."
+  }
+]

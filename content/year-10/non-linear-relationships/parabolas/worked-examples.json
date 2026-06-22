@@ -1,0 +1,94 @@
+[
+  {
+    "id": "par-y10-ex1",
+    "title": "Identifying vertex, axis of symmetry and concavity",
+    "difficulty": 1,
+    "problem": "For the parabola $y = -3x^2 + 4$, state: (a) the vertex, (b) the equation of the axis of symmetry, and (c) whether it opens upward or downward.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the values of $k$ and $c$ in $y = kx^2 + c$.",
+        "working": "Comparing $y = -3x^2 + 4$ with $y = kx^2 + c$: $k = -3$ and $c = 4$."
+      },
+      {
+        "step": 2,
+        "instruction": "State the vertex using $(0, c)$.",
+        "working": "The vertex of any parabola of the form $y = kx^2 + c$ is at $(0, c)$. Here the vertex is $(0, 4)$. Check: when $x = 0$, $y = -3(0)^2 + 4 = 4$ ✓"
+      },
+      {
+        "step": 3,
+        "instruction": "State the axis of symmetry.",
+        "working": "The axis of symmetry is the vertical line through the vertex. Since the vertex is at $(0, 4)$, the axis of symmetry is $x = 0$ (the y-axis)."
+      },
+      {
+        "step": 4,
+        "instruction": "Determine whether the parabola opens upward or downward.",
+        "working": "The coefficient of $x^2$ is $k = -3$. Since $k < 0$, the parabola opens downward. The vertex $(0, 4)$ is the maximum point."
+      }
+    ],
+    "answer": "Vertex $(0, 4)$; axis of symmetry $x = 0$; opens downward."
+  },
+  {
+    "id": "par-y10-ex2",
+    "title": "Describing the effect of changing $k$ and $c$",
+    "difficulty": 2,
+    "problem": "Compare the parabolas $y = x^2$, $y = 3x^2$, and $y = x^2 - 5$. (a) Which is narrower: $y = x^2$ or $y = 3x^2$? (b) How does $y = x^2 - 5$ differ from $y = x^2$?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Compare $y = x^2$ and $y = 3x^2$ by examining the coefficient of $x^2$.",
+        "working": "$y = x^2$ has coefficient $k = 1$. $y = 3x^2$ has coefficient $k = 3$. At $x = 2$: $y = 4$ for $y = x^2$ but $y = 12$ for $y = 3x^2$ — the second parabola rises more steeply."
+      },
+      {
+        "step": 2,
+        "instruction": "State which parabola is narrower.",
+        "working": "Since $3 > 1$, $y = 3x^2$ is narrower than $y = x^2$. Both have vertex $(0, 0)$ and axis of symmetry $x = 0$, but $y = 3x^2$ is steeper."
+      },
+      {
+        "step": 3,
+        "instruction": "Compare $y = x^2$ and $y = x^2 - 5$ by examining the constant term.",
+        "working": "$y = x^2$ has vertex $(0, 0)$. $y = x^2 - 5$ has $c = -5$, so its vertex is at $(0, -5)$. Subtracting 5 shifts every point on the graph 5 units downward."
+      },
+      {
+        "step": 4,
+        "instruction": "Summarise the effect.",
+        "working": "The shape and width of $y = x^2 - 5$ are identical to $y = x^2$. The only difference is that the entire graph has shifted 5 units downward."
+      }
+    ],
+    "answer": "(a) $y = 3x^2$ is narrower. (b) $y = x^2 - 5$ is the graph of $y = x^2$ shifted 5 units downward."
+  },
+  {
+    "id": "par-y10-ex3",
+    "title": "Finding the x-intercepts of a parabola",
+    "difficulty": 3,
+    "problem": "Find the x-intercepts of $y = 3x^2 - 27$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Set $y = 0$ to find where the parabola crosses the x-axis.",
+        "working": "$$3x^2 - 27 = 0$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Isolate $x^2$.",
+        "working": "$$3x^2 = 27$$ $$x^2 = 9$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $x$ by taking the square root of both sides.",
+        "working": "$$x = \\pm\\sqrt{9} = \\pm 3$$"
+      },
+      {
+        "step": 4,
+        "instruction": "State the x-intercepts as coordinates and interpret the result.",
+        "working": "The x-intercepts are $(3, 0)$ and $(-3, 0)$. Since $k = 3 > 0$, the parabola opens upward with vertex at $(0, -27)$ below the x-axis, confirming it crosses the x-axis at two points."
+      },
+      {
+        "step": 5,
+        "instruction": "Verify by substituting back into the original equation.",
+        "working": "When $x = 3$: $y = 3(3)^2 - 27 = 27 - 27 = 0$ ✓ When $x = -3$: $y = 3(-3)^2 - 27 = 27 - 27 = 0$ ✓"
+      }
+    ],
+    "answer": "The x-intercepts are $x = 3$ and $x = -3$, at the points $(3, 0)$ and $(-3, 0)$."
+  }
+]

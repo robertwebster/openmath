@@ -1,0 +1,79 @@
+[
+  {
+    "id": "exponential-graphs-example-1",
+    "title": "Evaluating an exponential function and finding the y-intercept",
+    "difficulty": 1,
+    "problem": "For the function $y = 2^x$, evaluate $y$ when $x = -1, 0, 1, 2, 3$ and state the y-intercept.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Evaluate $y$ for each value of $x$ using $y = 2^x$.",
+        "working": "$$\\begin{array}{c|c} x & y = 2^x \\\\ \\hline -1 & 2^{-1} = \\dfrac{1}{2} \\\\ 0 & 2^0 = 1 \\\\ 1 & 2^1 = 2 \\\\ 2 & 2^2 = 4 \\\\ 3 & 2^3 = 8 \\end{array}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the y-intercept by finding the value of $y$ when $x = 0$.",
+        "working": "When $x = 0$: $y = 2^0 = 1$. The y-intercept is $(0, 1)$."
+      },
+      {
+        "step": 3,
+        "instruction": "Observe the behaviour of the function.",
+        "working": "As $x$ increases, $y$ doubles each time — this is exponential growth. As $x$ decreases, $y$ approaches 0 but never reaches it. The x-axis ($y = 0$) is the horizontal asymptote."
+      }
+    ],
+    "answer": "The y-intercept is $1$. The table of values is: $x = -1 \\Rightarrow y = \\tfrac{1}{2}$; $x = 0 \\Rightarrow y = 1$; $x = 1 \\Rightarrow y = 2$; $x = 2 \\Rightarrow y = 4$; $x = 3 \\Rightarrow y = 8$."
+  },
+  {
+    "id": "exponential-graphs-example-2",
+    "title": "Identifying growth or decay and finding the horizontal asymptote",
+    "difficulty": 2,
+    "problem": "For the function $y = (0.3)^x$: (a) state whether the graph shows growth or decay and give a reason, (b) state the y-intercept, and (c) write the equation of the horizontal asymptote.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the base and compare it to 1.",
+        "working": "The base is $a = 0.3$. Since $0 < 0.3 < 1$, the graph shows exponential decay — as $x$ increases, $y$ decreases toward 0."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the y-intercept by substituting $x = 0$.",
+        "working": "$y = (0.3)^0 = 1$. The y-intercept is $(0, 1)$. This is true for all exponential functions $y = a^x$ regardless of the base."
+      },
+      {
+        "step": 3,
+        "instruction": "Determine the horizontal asymptote.",
+        "working": "As $x \\to \\infty$, $(0.3)^x \\to 0$ but never equals 0. As $x \\to -\\infty$, $(0.3)^x \\to \\infty$. The horizontal asymptote is $y = 0$."
+      }
+    ],
+    "answer": "(a) Exponential decay, because $0 < 0.3 < 1$. (b) The y-intercept is $1$. (c) The horizontal asymptote is $y = 0$."
+  },
+  {
+    "id": "exponential-graphs-example-3",
+    "title": "Finding the base from a point on the graph and describing the effect of changing the base",
+    "difficulty": 3,
+    "problem": "The graph of $y = a^x$ passes through the point $(4, 16)$. Find the value of $a$, state whether the graph shows growth or decay, and describe what happens to the graph when $a$ is increased to 3.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Substitute the point $(4, 16)$ into $y = a^x$.",
+        "working": "$16 = a^4$"
+      },
+      {
+        "step": 2,
+        "instruction": "Solve for $a$ by taking the fourth root. Take the positive value since $a > 0$.",
+        "working": "$a = \\sqrt[4]{16} = \\sqrt[4]{2^4} = 2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Determine whether the graph shows growth or decay.",
+        "working": "Since $a = 2 > 1$, the graph of $y = 2^x$ shows exponential growth."
+      },
+      {
+        "step": 4,
+        "instruction": "Describe the effect of increasing $a$ from 2 to 3.",
+        "working": "Both $y = 2^x$ and $y = 3^x$ are exponential growth functions with y-intercept 1 and horizontal asymptote $y = 0$. For $x > 0$, $3^x > 2^x$, so the graph of $y = 3^x$ rises more steeply. For $x < 0$, $3^x < 2^x$, so $y = 3^x$ decreases more quickly toward 0. The effect is that the graph becomes steeper on the right and flatter on the left."
+      }
+    ],
+    "answer": "$a = 2$. The graph shows exponential growth (since $a = 2 > 1$). Increasing $a$ to 3 makes the graph steeper for positive $x$ and closer to the asymptote for negative $x$, while keeping the y-intercept at 1."
+  }
+]

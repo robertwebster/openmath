@@ -1,0 +1,84 @@
+[
+  {
+    "id": "solving-problems-with-bearings-we-1",
+    "title": "Finding a north component from a single bearing",
+    "difficulty": 1,
+    "problem": "A ship sails on a bearing of $035°$ for 100 km. How far north of its starting point is the ship? Give your answer correct to 1 decimal place.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Draw a diagram and identify the right-angled triangle.",
+        "working": "Draw a north-south reference line at the starting point. The ship's path makes a $35°$ angle with north (measured clockwise). Drop a perpendicular from the end of the path to the north-south line. This forms a right-angled triangle with the $35°$ angle at the starting point, the 100 km path as the hypotenuse, and the north component as the adjacent side."
+      },
+      {
+        "step": 2,
+        "instruction": "Write the trigonometric ratio for the north component.",
+        "working": "The north component is adjacent to the $35°$ angle and the hypotenuse is 100 km, so:\n$$\\cos(35°) = \\frac{\\text{North}}{100}$$\n$$\\text{North} = 100\\cos(35°)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the north component.",
+        "working": "$$\\text{North} = 100 \\times \\cos(35°) \\approx 100 \\times 0.8192 \\approx 81.9 \\text{ km}$$"
+      }
+    ],
+    "answer": "The ship is $81.9$ km north of its starting point."
+  },
+  {
+    "id": "solving-problems-with-bearings-we-2",
+    "title": "Finding straight-line distance after a two-leg journey",
+    "difficulty": 2,
+    "problem": "A ship sails 80 km on a bearing of $060°$ and then 60 km on a bearing of $150°$. Find the straight-line distance from the starting point.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the north and east components of Leg 1.",
+        "working": "Leg 1: $d_1 = 80$ km, bearing $= 060°$.\n$$N_1 = 80\\cos(60°) = 80 \\times \\tfrac{1}{2} = 40 \\text{ km}$$\n$$E_1 = 80\\sin(60°) = 80 \\times \\tfrac{\\sqrt{3}}{2} = 40\\sqrt{3} \\text{ km}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the north and east components of Leg 2.",
+        "working": "Leg 2: $d_2 = 60$ km, bearing $= 150°$.\n$$N_2 = 60\\cos(150°) = 60 \\times \\left(-\\tfrac{\\sqrt{3}}{2}\\right) = -30\\sqrt{3} \\text{ km (southward)}$$\n$$E_2 = 60\\sin(150°) = 60 \\times \\tfrac{1}{2} = 30 \\text{ km}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the total north and east displacements.",
+        "working": "$$N = N_1 + N_2 = 40 - 30\\sqrt{3} \\text{ km}$$\n$$E = E_1 + E_2 = 40\\sqrt{3} + 30 \\text{ km}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply Pythagoras' theorem to find the straight-line distance.",
+        "working": "$$d^2 = N^2 + E^2 = (40 - 30\\sqrt{3})^2 + (40\\sqrt{3} + 30)^2$$\nExpanding:\n$$(40 - 30\\sqrt{3})^2 = 1600 - 2400\\sqrt{3} + 2700 = 4300 - 2400\\sqrt{3}$$\n$$(40\\sqrt{3} + 30)^2 = 4800 + 2400\\sqrt{3} + 900 = 5700 + 2400\\sqrt{3}$$\n$$d^2 = 4300 - 2400\\sqrt{3} + 5700 + 2400\\sqrt{3} = 10000$$\n$$d = 100 \\text{ km}$$"
+      }
+    ],
+    "answer": "The ship is $100$ km from its starting point."
+  },
+  {
+    "id": "solving-problems-with-bearings-we-3",
+    "title": "Finding distance and back-bearing for a two-leg journey",
+    "difficulty": 3,
+    "problem": "A boat sails 30 km due west and then 40 km due south. Find the straight-line distance from the starting point and the true bearing of the starting point from the boat's final position.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the total displacements.",
+        "working": "The boat travels 30 km west (east component $= -30$ km) and 40 km south (north component $= -40$ km). From the starting point, the boat's final position is 30 km west and 40 km south."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the straight-line distance using Pythagoras' theorem.",
+        "working": "$$d = \\sqrt{30^2 + 40^2} = \\sqrt{900 + 1600} = \\sqrt{2500} = 50 \\text{ km}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the direction from the boat back to the start.",
+        "working": "From the boat, the start is 30 km east and 40 km north. This direction is north-east, so the bearing is between $000°$ and $090°$."
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the angle from north towards east.",
+        "working": "$$\\tan(\\theta) = \\frac{\\text{east}}{\\text{north}} = \\frac{30}{40} = 0.75$$\n$$\\theta = \\arctan(0.75) \\approx 36.9°$$\nThe bearing of the start from the boat is approximately $037°$."
+      }
+    ],
+    "answer": "The straight-line distance is $50$ km; the starting point is on a bearing of $037°$ from the boat."
+  }
+]

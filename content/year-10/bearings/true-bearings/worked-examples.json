@@ -1,0 +1,79 @@
+[
+  {
+    "id": "true-bearings-we-1",
+    "title": "Reading a true bearing from a diagram",
+    "difficulty": 1,
+    "problem": "A compass diagram has north pointing straight up. A direction is marked $125°$ clockwise from north. Write this direction as a true bearing.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the definition of a true bearing.",
+        "working": "A true bearing is the angle measured clockwise from north to the direction. It is always written as a three-figure number, e.g. $005°$, $090°$, $125°$."
+      },
+      {
+        "step": 2,
+        "instruction": "Read the angle from the diagram.",
+        "working": "The diagram shows the direction is $125°$ clockwise from north."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the true bearing.",
+        "working": "The true bearing is $125°$. Since it already has three figures, no leading zero is needed."
+      }
+    ],
+    "answer": "The true bearing is $125°$."
+  },
+  {
+    "id": "true-bearings-we-2",
+    "title": "True bearing of an intercardinal direction",
+    "difficulty": 2,
+    "problem": "State the true bearing of south-west (SW) and explain where it appears on a compass diagram.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the bearings of the adjacent cardinal directions.",
+        "working": "South $= 180°$ and West $= 270°$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the midpoint between south and west.",
+        "working": "$$\\frac{180° + 270°}{2} = \\frac{450°}{2} = 225°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Describe the position on a compass diagram.",
+        "working": "On a diagram with north pointing up, the SW direction points down and to the left. It is $225°$ clockwise from north — halfway between the south and west arms of the compass."
+      }
+    ],
+    "answer": "The true bearing of south-west is $225°$."
+  },
+  {
+    "id": "true-bearings-we-3",
+    "title": "Finding a back-bearing",
+    "difficulty": 3,
+    "problem": "A ship sails from port P on a true bearing of $048°$ and arrives at port Q. The captain then needs to sail directly back to P. What bearing must the captain use for the return journey?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the back-bearing rule.",
+        "working": "The bearing from B to A is always exactly $180°$ different from the bearing from A to B, because the directions are opposite. Add $180°$ if the forward bearing is less than $180°$; subtract $180°$ if it is $180°$ or more."
+      },
+      {
+        "step": 2,
+        "instruction": "Determine which case applies.",
+        "working": "The bearing from P to Q is $048°$. Since $048° < 180°$, add $180°$."
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the back-bearing.",
+        "working": "$$048° + 180° = 228°$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check the answer is reasonable.",
+        "working": "PQ points north-east ($048°$ is between $000°$ and $090°$), so QP should point south-west. A bearing of $228°$ lies between $180°$ and $270°$ (the SW sector) — this is consistent."
+      }
+    ],
+    "answer": "The captain must sail on a bearing of $228°$ to return to P."
+  }
+]

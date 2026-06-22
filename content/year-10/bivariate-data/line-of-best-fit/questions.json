@@ -1,0 +1,206 @@
+[
+  {
+    "id": "line-of-best-fit-1",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A scatter plot shows the relationship between the number of hours a student studies per week ($x$) and their score on a maths test ($y$). The line of best fit drawn on the scatter plot has equation $y = 6x + 28$. Use the line of best fit to estimate the test score of a student who studies for 5 hours per week.",
+    "answer": 58,
+    "tolerance": 0,
+    "hint": "Substitute $x = 5$ into the equation of the line of best fit.",
+    "explanation": "Substituting $x = 5$ into $y = 6x + 28$:\n$$y = 6(5) + 28 = 30 + 28 = 58$$\nThe line of best fit estimates a test score of 58 for a student who studies 5 hours per week."
+  },
+  {
+    "id": "line-of-best-fit-2",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A scatter plot comparing daily maximum temperature ($x$, in °C) and the number of ice creams sold by a beachside kiosk ($y$) has a line of best fit with equation $y = 3.5x - 14$. Use the line to estimate the number of ice creams sold on a day when the maximum temperature is 30°C.",
+    "answer": 91,
+    "tolerance": 0,
+    "hint": "Substitute $x = 30$ into $y = 3.5x - 14$.",
+    "explanation": "Substituting $x = 30$:\n$$y = 3.5(30) - 14 = 105 - 14 = 91$$\nThe line of best fit predicts 91 ice creams will be sold on a day with a maximum temperature of 30°C."
+  },
+  {
+    "id": "line-of-best-fit-3",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A scatter plot comparing a person's age ($x$, in years) and their resting heart rate ($y$, in beats per minute) has a line of best fit with equation $y = -0.2x + 76$. Use the line to estimate the resting heart rate of a 40-year-old.",
+    "answer": 68,
+    "tolerance": 0,
+    "hint": "Substitute $x = 40$ into the equation of the line.",
+    "explanation": "Substituting $x = 40$:\n$$y = -0.2(40) + 76 = -8 + 76 = 68$$\nThe line of best fit estimates a resting heart rate of 68 beats per minute for a 40-year-old."
+  },
+  {
+    "id": "line-of-best-fit-4",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A factory records the number of items produced per hour ($x$) and the defect rate ($y$, as a percentage). The line of best fit has equation $y = -0.4x + 18$. Use the line to estimate the defect rate when 25 items are produced per hour.",
+    "answer": 8,
+    "tolerance": 0,
+    "hint": "Substitute $x = 25$ into $y = -0.4x + 18$.",
+    "explanation": "Substituting $x = 25$:\n$$y = -0.4(25) + 18 = -10 + 18 = 8$$\nThe line of best fit estimates a defect rate of $8\\%$ when 25 items are produced per hour."
+  },
+  {
+    "id": "line-of-best-fit-5",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which of the following best describes what a line of best fit is designed to do?",
+    "options": [
+      "Pass through as many data points as possible",
+      "Connect the first and last data points on the scatter plot",
+      "Pass through the middle of the data so that roughly equal numbers of points fall above and below it",
+      "Always pass through the origin"
+    ],
+    "answer": "Pass through the middle of the data so that roughly equal numbers of points fall above and below it",
+    "tolerance": 0,
+    "hint": "Think about how the line should sit in relation to the data points as a whole.",
+    "explanation": "A line of best fit is drawn through the middle of the data so that roughly equal numbers of data points fall above and below the line, with points spread evenly along its length. It does not have to pass through any specific data point, connect the first and last points, or pass through the origin."
+  },
+  {
+    "id": "line-of-best-fit-6",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A scatter plot contains 10 data points. Student A draws a line where 8 points fall above and 2 fall below. Student B draws a line where 5 points fall above and 5 fall below, with points spread roughly evenly along the full length of the line. Which student has drawn the better line of best fit?",
+    "options": [
+      "Student A, because the line should sit below most of the data",
+      "Student B, because the points are approximately evenly distributed above and below the line",
+      "Student A, because having more points above the line shows it is accurate",
+      "Both lines are equally good, because both pass through some of the data"
+    ],
+    "answer": "Student B, because the points are approximately evenly distributed above and below the line",
+    "tolerance": 0,
+    "hint": "A good line of best fit has approximately equal numbers of points above and below it.",
+    "explanation": "Student B's line is better. A well-drawn line of best fit has roughly equal numbers of data points above and below it. Student B achieves this with 5 above and 5 below. Student A's line has 8 above and only 2 below, which means the line is too low for most of the data. A better line would shift upward to balance the distribution."
+  },
+  {
+    "id": "line-of-best-fit-7",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A line of best fit is drawn on a scatter plot with 12 data points. The line fits the 6 central points closely, but the 3 leftmost points and the 3 rightmost points all sit well above the line. What does this suggest?",
+    "options": [
+      "The line is a good fit, because most points are close to it",
+      "The line may not be a good fit, because the points at both ends are systematically above it — a good line should have the points spread evenly along its entire length",
+      "The line is correct, because a line of best fit only needs to fit the middle of the data",
+      "The line should be redrawn to pass exactly through the outlying points at each end"
+    ],
+    "answer": "The line may not be a good fit, because the points at both ends are systematically above it — a good line should have the points spread evenly along its entire length",
+    "tolerance": 0,
+    "hint": "Check whether the points are evenly distributed along the full length of the line, not just in the middle.",
+    "explanation": "A good line of best fit should have the data points spread roughly evenly along its entire length. When points at both ends are all above the line, this suggests the line is slightly too low at the extremes — it may need to be tilted or shifted to better represent the full data set. Having the line fit well only in the middle but poorly at the ends indicates the line is not a good overall fit."
+  },
+  {
+    "id": "line-of-best-fit-8",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which of the following best states the main characteristics of a well-drawn line of best fit?",
+    "options": [
+      "All data points must lie exactly on the line",
+      "The line must have a negative gradient to reflect the spread of data",
+      "Approximately half the data points fall above the line and half below, with the points spread along the full length of the line",
+      "The line must pass through the data point with the highest $y$-value"
+    ],
+    "answer": "Approximately half the data points fall above the line and half below, with the points spread along the full length of the line",
+    "tolerance": 0,
+    "hint": "A line of best fit does not need to pass through any particular data point.",
+    "explanation": "A well-drawn line of best fit has two key characteristics: (1) approximately equal numbers of data points fall above and below the line; and (2) the points are spread evenly along the entire length of the line from end to end. The line does not need to pass through any specific data point, the point with the highest $y$-value, or the origin, and can have either a positive or negative gradient depending on the data."
+  },
+  {
+    "id": "line-of-best-fit-9",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A study finds a strong positive association between the number of backyard swimming pools per suburb and the rate of skin cancer diagnoses in that suburb. Which of the following statements is most correct?",
+    "options": [
+      "Swimming pools cause skin cancer",
+      "Skin cancer causes people to build more pools",
+      "Both variables are likely higher in warmer, sunnier suburbs — the climate is a confounding variable, not the pools themselves",
+      "The association proves that chlorine in pool water is harmful to skin"
+    ],
+    "answer": "Both variables are likely higher in warmer, sunnier suburbs — the climate is a confounding variable, not the pools themselves",
+    "tolerance": 0,
+    "hint": "Is there a third factor that could independently cause both more swimming pools and higher skin cancer rates in the same suburbs?",
+    "explanation": "The association does not prove causation. Both the number of swimming pools and the rate of skin cancer are higher in warmer, sunnier suburbs. The explanation is that these suburbs receive more sunshine hours, which encourages pool ownership and also increases residents' UV exposure. Climate is the confounding variable that drives both. The pools themselves are not causing the skin cancer."
+  },
+  {
+    "id": "line-of-best-fit-10",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A researcher finds a strong negative association between the number of hours of television watched per day ($x$) and a student's score on an end-of-year exam ($y$). A teacher concludes: \"Watching television causes students to get lower exam scores.\" Which of the following statements is most correct?",
+    "options": [
+      "The teacher is correct — a strong association is sufficient to prove causation",
+      "The association does not prove causation — other factors such as study time, motivation, or home environment could explain both variables",
+      "The teacher is wrong because the association is negative, so television must improve exam scores",
+      "An association between two variables always proves that one causes the other"
+    ],
+    "answer": "The association does not prove causation — other factors such as study time, motivation, or home environment could explain both variables",
+    "tolerance": 0,
+    "hint": "Can you think of a third variable that might cause a student to watch more TV and also score lower on exams?",
+    "explanation": "The association does not prove causation. A student who watches many hours of television may also be spending less time studying — reduced study time, not the television itself, may be the real cause of lower scores. Factors such as motivation, parental involvement, or home environment could independently affect both how much TV a student watches and how well they perform. A statistical association shows only that two variables tend to move together; it does not identify which one causes the other."
+  },
+  {
+    "id": "line-of-best-fit-11",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A data analysis shows a strong positive association between the number of hospitals in a city and the total number of deaths recorded in that city per year. A journalist concludes: \"More hospitals cause more deaths — we should close hospitals to save lives.\" Which of the following best explains the flaw in this reasoning?",
+    "options": [
+      "There is actually a negative association between hospitals and deaths",
+      "Both the number of hospitals and the number of deaths increase with city population — population size is a confounding variable",
+      "Deaths only occur inside hospitals, so the association is expected and meaningful",
+      "The journalist is correct — more hospitals lead directly to more deaths"
+    ],
+    "answer": "Both the number of hospitals and the number of deaths increase with city population — population size is a confounding variable",
+    "tolerance": 0,
+    "hint": "What other variable increases in cities that have both more hospitals and more deaths?",
+    "explanation": "The journalist has confused correlation with causation. Larger cities have more people, which means they require more hospitals and also record more deaths simply because there are more residents. Population size is the confounding variable that drives both. Closing hospitals would not reduce deaths — it would likely increase them. The association exists not because hospitals cause deaths, but because both variables are higher in more populous cities."
+  },
+  {
+    "id": "line-of-best-fit-12",
+    "subtopic": "line-of-best-fit",
+    "topic": "bivariate-data",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A study of primary school children finds a positive association between shoe size and reading ability score. A classmate says: \"Bigger feet cause better reading.\" Which of the following is the most accurate statement?",
+    "options": [
+      "The classmate is correct — larger feet lead to better reading ability",
+      "Better reading ability causes children's feet to grow larger",
+      "Both shoe size and reading ability increase as children get older — age is the confounding variable",
+      "There is no association because shoe size and reading ability are completely unrelated"
+    ],
+    "answer": "Both shoe size and reading ability increase as children get older — age is the confounding variable",
+    "tolerance": 0,
+    "hint": "Think about what causes both shoe size and reading ability to increase at the same time.",
+    "explanation": "The classmate has confused association with causation. As children grow older, their feet get larger (increased shoe size) and their reading ability improves (through experience and instruction). Age is the confounding variable — it causes both. The shoes are not improving reading; both are driven by the child's development over time. This is a classic example of why association does not imply causation."
+  }
+]

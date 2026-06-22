@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ci-ex-1",
+    "title": "Finding future value using compound interest",
+    "difficulty": 1,
+    "problem": "A principal of $\\$3500$ is invested at $4\\%$ per annum compound interest for $3$ years. Find the future value.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the compound interest formula and identify the values.",
+        "working": "$$FV = PV(1 + r)^n, \\quad PV = 3500, \\quad r = 0.04, \\quad n = 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the values into the formula.",
+        "working": "$$FV = 3500 \\times (1.04)^3$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate $(1.04)^3$ step by step.",
+        "working": "$$1.04^2 = 1.0816, \\quad 1.0816 \\times 1.04 = 1.124864$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Multiply to find the future value and round to the nearest cent.",
+        "working": "$$FV = 3500 \\times 1.124864 = 3937.024 \\approx \\$3937.02$$"
+      }
+    ],
+    "answer": "$\\$3937.02$"
+  },
+  {
+    "id": "ci-ex-2",
+    "title": "Finding present value given a future value",
+    "difficulty": 2,
+    "problem": "What principal must be invested at $5\\%$ per annum compound interest for $4$ years to produce a future value of $\\$6000$? Round to the nearest cent.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Start with the compound interest formula and rearrange to make $PV$ the subject.",
+        "working": "$$FV = PV(1+r)^n \\implies PV = \\frac{FV}{(1+r)^n}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the values: $FV = 6000$, $r = 0.05$, $n = 4$.",
+        "working": "$$PV = \\frac{6000}{(1.05)^4}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate $(1.05)^4$ by squaring twice.",
+        "working": "$$1.05^2 = 1.1025, \\quad 1.1025^2 = 1.21550625$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide to find the present value.",
+        "working": "$$PV = \\frac{6000}{1.21550625} \\approx \\$4936.21$$"
+      }
+    ],
+    "answer": "$\\$4936.21$"
+  },
+  {
+    "id": "ci-ex-3",
+    "title": "Finding the number of years by trying consecutive values",
+    "difficulty": 3,
+    "problem": "An investment of $\\$4000$ earns compound interest at $6\\%$ per annum. After how many complete years will the investment first be worth more than $\\$5000$?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the inequality to solve, then try consecutive integer values of $n$.",
+        "working": "$$4000 \\times (1.06)^n > 5000$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Try $n = 1$.",
+        "working": "$$FV = 4000 \\times 1.06 = \\$4240 < \\$5000$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Try $n = 2$ and $n = 3$.",
+        "working": "$$n=2: \\; FV = 4000 \\times 1.1236 = \\$4494.40 < \\$5000$$\n$$n=3: \\; FV = 4000 \\times 1.191016 = \\$4764.06 < \\$5000$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Try $n = 4$.",
+        "working": "$$FV = 4000 \\times (1.06)^4 = 4000 \\times 1.262477 = \\$5049.91 > \\$5000 \\checkmark$$"
+      },
+      {
+        "step": 5,
+        "instruction": "State the conclusion.",
+        "working": "The investment first exceeds $\\$5000$ after $4$ complete years."
+      }
+    ],
+    "answer": "$4$ years"
+  }
+]

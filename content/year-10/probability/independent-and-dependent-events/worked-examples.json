@@ -1,0 +1,89 @@
+[
+  {
+    "id": "independent-and-dependent-events-worked-1",
+    "title": "Classifying events as independent or dependent",
+    "difficulty": 1,
+    "problem": "A bag contains 6 blue counters and 4 red counters. Consider the following two situations.\n\n**Situation A:** A counter is drawn, its colour is noted, and it is then replaced before a second counter is drawn.\n\n**Situation B:** A counter is drawn and set aside. A second counter is then drawn from the remaining counters.\n\nClassify each situation as involving independent or dependent events, and explain your reasoning.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Consider Situation A: drawing with replacement.",
+        "working": "In Situation A, the counter is returned to the bag after the first draw. This means the bag always contains 6 blue and 4 red counters — a total of 10 counters — at the start of each draw. The outcome of the first draw has no effect on the contents of the bag for the second draw."
+      },
+      {
+        "step": 2,
+        "instruction": "Classify Situation A.",
+        "working": "Because the probabilities on the second draw are unchanged by the first draw, the two events in Situation A are **independent**."
+      },
+      {
+        "step": 3,
+        "instruction": "Consider Situation B: drawing without replacement.",
+        "working": "In Situation B, the first counter is not returned. If the first counter drawn was blue, there are now 5 blue and 4 red counters left (9 counters in total). If the first counter was red, there are 6 blue and 3 red counters left. Either way, the composition of the bag has changed, and the probabilities for the second draw are different depending on what was drawn first."
+      },
+      {
+        "step": 4,
+        "instruction": "Classify Situation B.",
+        "working": "Because the outcome of the first draw changes the probabilities for the second draw, the two events in Situation B are **dependent**."
+      }
+    ],
+    "answer": "Situation A (with replacement): independent events. Situation B (without replacement): dependent events."
+  },
+  {
+    "id": "independent-and-dependent-events-worked-2",
+    "title": "Probability of two independent events",
+    "difficulty": 2,
+    "problem": "A bag contains 3 green counters and 2 yellow counters. A counter is drawn, its colour is recorded, and it is then **replaced**. A second counter is drawn. Find the probability of drawing a green counter on the first draw and a yellow counter on the second draw.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify whether the events are independent or dependent.",
+        "working": "The counter is replaced after the first draw, so the bag always contains 5 counters (3 green, 2 yellow) for each draw. The outcome of the first draw does not affect the second draw. The two events are **independent**."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the probability of a green counter on the first draw.",
+        "working": "$$P(\\text{green on 1st draw}) = \\frac{3}{5}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the probability of a yellow counter on the second draw.",
+        "working": "Because the counter is replaced, the bag is the same for the second draw.\n$$P(\\text{yellow on 2nd draw}) = \\frac{2}{5}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply the multiplication rule for independent events.",
+        "working": "$$P(\\text{green then yellow}) = P(\\text{green}) \\times P(\\text{yellow}) = \\frac{3}{5} \\times \\frac{2}{5} = \\frac{6}{25}$$"
+      }
+    ],
+    "answer": "$\\dfrac{6}{25}$"
+  },
+  {
+    "id": "independent-and-dependent-events-worked-3",
+    "title": "Probability of two dependent events",
+    "difficulty": 3,
+    "problem": "A bag contains 4 red balls and 3 blue balls. Two balls are drawn **without replacement**. Find the probability that the first ball is red and the second ball is blue.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify whether the events are independent or dependent.",
+        "working": "The first ball is not replaced, so the contents of the bag change after the first draw. The probability for the second draw depends on the outcome of the first draw. The two events are **dependent**."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the probability that the first ball is red.",
+        "working": "There are $4 + 3 = 7$ balls in total.\n$$P(\\text{1st ball is red}) = \\frac{4}{7}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the probability that the second ball is blue, given the first was red.",
+        "working": "After one red ball is removed, the bag contains 3 red balls and 3 blue balls — a total of 6 balls.\n$$P(\\text{2nd ball is blue} \\mid \\text{1st is red}) = \\frac{3}{6} = \\frac{1}{2}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Multiply the probabilities to find the combined probability.",
+        "working": "$$P(\\text{red then blue}) = \\frac{4}{7} \\times \\frac{1}{2} = \\frac{4}{14} = \\frac{2}{7}$$"
+      }
+    ],
+    "answer": "$\\dfrac{2}{7}$"
+  }
+]

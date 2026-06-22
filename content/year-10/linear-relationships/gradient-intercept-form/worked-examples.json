@@ -1,0 +1,89 @@
+[
+  {
+    "id": "gif-y10-ex1",
+    "title": "Reading gradient and y-intercept from y = mx + c",
+    "difficulty": 1,
+    "problem": "The equation of a line is $y = 4x - 3$. State the gradient, the y-intercept, and the coordinates of the point on the line where $x = 2$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the gradient by comparing with $y = mx + c$.",
+        "working": "The coefficient of $x$ is $m = 4$, so the gradient is $4$."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the y-intercept.",
+        "working": "The constant term is $c = -3$, so the y-intercept is $-3$. The line crosses the y-axis at $(0, -3)$."
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $x = 2$ to find the y-coordinate.",
+        "working": "$$y = 4(2) - 3 = 8 - 3 = 5$$"
+      },
+      {
+        "step": 4,
+        "instruction": "State the coordinates of the point.",
+        "working": "The point on the line where $x = 2$ is $(2, 5)$."
+      }
+    ],
+    "answer": "Gradient $= 4$; y-intercept $= -3$; point at $x = 2$ is $(2, 5)$."
+  },
+  {
+    "id": "gif-y10-ex2",
+    "title": "Interpreting gradient and y-intercept in a real-world context",
+    "difficulty": 2,
+    "problem": "A car hire company charges according to $C = 0.45d + 60$, where $C$ is the total cost in dollars and $d$ is the distance driven in kilometres. Interpret the gradient and y-intercept in this context.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the gradient and its units.",
+        "working": "The gradient is $m = 0.45$. Since $C$ is in dollars and $d$ is in kilometres, the gradient has units of dollars per kilometre."
+      },
+      {
+        "step": 2,
+        "instruction": "Interpret the gradient in context.",
+        "working": "For each additional kilometre driven, the cost increases by $\\$0.45$. The gradient represents the charge per kilometre: $\\$0.45$/km."
+      },
+      {
+        "step": 3,
+        "instruction": "Identify the y-intercept and evaluate $C$ when $d = 0$.",
+        "working": "The y-intercept is $c = 60$. When $d = 0$: $C = 0.45(0) + 60 = \\$60$."
+      },
+      {
+        "step": 4,
+        "instruction": "Interpret the y-intercept in context.",
+        "working": "Even when no distance is driven, the cost is $\\$60$. The y-intercept represents the fixed hire fee charged regardless of distance."
+      }
+    ],
+    "answer": "The gradient $0.45$ is the cost per kilometre ($\\$0.45$/km). The y-intercept $60$ is the fixed hire fee of $\\$60$."
+  },
+  {
+    "id": "gif-y10-ex3",
+    "title": "Writing an equation from a table of values",
+    "difficulty": 3,
+    "problem": "A gym offers a membership plan. The table shows the total cost $C$ (in dollars) after $n$ months:\n\n| $n$ | $0$ | $1$ | $2$ | $3$ |\n|-----|-----|-----|-----|-----|\n| $C$ | $40$ | $65$ | $90$ | $115$ |\n\nWrite the equation for $C$ in terms of $n$ in the form $C = mn + c$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the gradient using two points from the table.",
+        "working": "$$m = \\frac{65 - 40}{1 - 0} = \\frac{25}{1} = 25$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Read the y-intercept directly from the table.",
+        "working": "When $n = 0$, $C = 40$, so $c = 40$."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the equation by substituting $m$ and $c$.",
+        "working": "$$C = 25n + 40$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Verify the equation using another point from the table.",
+        "working": "When $n = 3$: $C = 25(3) + 40 = 75 + 40 = 115$ ✓"
+      }
+    ],
+    "answer": "$C = 25n + 40$"
+  }
+]

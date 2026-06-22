@@ -1,0 +1,9 @@
+{
+  "id": "line-of-best-fit",
+  "title": "Line of best fit",
+  "topic": "bivariate-data",
+  "year": 10,
+  "strand": "Statistics",
+  "syllabusOutcome": "MA5-DAT-C-02",
+  "description": "Draw a line of best fit on a scatter plot, use it to make predictions by interpolation, and evaluate whether a given line is a good fit for the data."
+}

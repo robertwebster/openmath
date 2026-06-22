@@ -1,0 +1,11 @@
+{
+  "id": "measurement-precision",
+  "title": "Measurement precision",
+  "year": 10,
+  "stage": "5",
+  "extension": false,
+  "strand": "Measurement",
+  "syllabusOutcome": "MA5-MAG-C-01",
+  "description": "Round to significant figures, calculate absolute and percentage error, and apply scientific notation.",
+  "subtopics": ["significant-figures", "absolute-and-percentage-error", "scientific-notation-applications"]
+}

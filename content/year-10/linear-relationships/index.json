@@ -1,0 +1,11 @@
+{
+  "id": "linear-relationships",
+  "title": "Linear relationships",
+  "year": 10,
+  "stage": "5",
+  "extension": false,
+  "strand": "Algebra",
+  "syllabusOutcome": "MA5-LIN-C-02",
+  "description": "Interpret gradient-intercept form and find equations of parallel and perpendicular lines.",
+  "subtopics": ["gradient-intercept-form", "parallel-lines", "perpendicular-lines"]
+}

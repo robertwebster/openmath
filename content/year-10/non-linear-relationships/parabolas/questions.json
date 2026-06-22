@@ -1,0 +1,187 @@
+[
+  {
+    "id": "par-y10-q01",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "coordinate",
+    "stem": "What is the vertex of the parabola $y = 3x^2 + 5$?",
+    "answer": "(0, 5)",
+    "hint": "For a parabola in the form $y = kx^2 + c$, the vertex is always at $(0, c)$.",
+    "explanation": "The equation $y = 3x^2 + 5$ is in the form $y = kx^2 + c$ with $k = 3$ and $c = 5$. The vertex is at $(0, c) = (0, 5)$. When $x = 0$: $y = 3(0)^2 + 5 = 5$ ✓"
+  },
+  {
+    "id": "par-y10-q02",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "What is the y-coordinate of the vertex of $y = -x^2 - 4$?",
+    "answer": -4,
+    "tolerance": 0,
+    "hint": "The vertex of $y = kx^2 + c$ is at $(0, c)$. Identify the value of $c$.",
+    "explanation": "In $y = -x^2 - 4$, the constant term is $c = -4$. The vertex is at $(0, -4)$, so its y-coordinate is $-4$. When $x = 0$: $y = -(0)^2 - 4 = -4$ ✓"
+  },
+  {
+    "id": "par-y10-q03",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Does the parabola $y = -2x^2 + 7$ open upward or downward?",
+    "options": [
+      "Upward",
+      "Downward",
+      "It is a horizontal line",
+      "It cannot be determined"
+    ],
+    "answer": "Downward",
+    "hint": "Check the sign of the coefficient of $x^2$. If it is positive, the parabola opens upward; if negative, it opens downward.",
+    "explanation": "In $y = -2x^2 + 7$, the coefficient of $x^2$ is $k = -2$. Since $k < 0$, the parabola opens downward. The vertex $(0, 7)$ is the highest point on the curve."
+  },
+  {
+    "id": "par-y10-q04",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "What is the axis of symmetry of $y = 6x^2 - 3$?",
+    "options": [
+      "$x = 0$",
+      "$x = 6$",
+      "$x = -3$",
+      "$y = -3$"
+    ],
+    "answer": "$x = 0$",
+    "hint": "For a parabola of the form $y = kx^2 + c$, the vertex lies on the y-axis, so the axis of symmetry passes through $x = 0$.",
+    "explanation": "The parabola $y = 6x^2 - 3$ has vertex at $(0, -3)$. The axis of symmetry is the vertical line through the vertex: $x = 0$ (the y-axis). The values $x = 6$ and $x = -3$ come from misreading the coefficients, and $y = -3$ is a horizontal line — not an axis of symmetry."
+  },
+  {
+    "id": "par-y10-q05",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "How does the graph of $y = x^2 + 4$ differ from the graph of $y = x^2$?",
+    "options": [
+      "The graph shifts 4 units upward",
+      "The graph shifts 4 units to the right",
+      "The graph becomes 4 times narrower",
+      "The graph reflects about the x-axis"
+    ],
+    "answer": "The graph shifts 4 units upward",
+    "hint": "Adding a constant $c$ to $y = x^2$ moves the vertex from $(0, 0)$ to $(0, c)$.",
+    "explanation": "Changing $y = x^2$ to $y = x^2 + 4$ adds $c = 4$ to the equation, shifting the vertex from $(0, 0)$ to $(0, 4)$ — that is, 4 units upward. The shape and width of the parabola are unchanged. Changing the coefficient of $x^2$ would affect the width; changing the sign of $x^2$ would cause a reflection."
+  },
+  {
+    "id": "par-y10-q06",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which parabola is narrower: $y = x^2$ or $y = 5x^2$?",
+    "options": [
+      "$y = x^2$",
+      "$y = 5x^2$",
+      "They are equally wide",
+      "Both are the same width because they share the same vertex"
+    ],
+    "answer": "$y = 5x^2$",
+    "hint": "The larger the absolute value of $k$ in $y = kx^2$, the narrower the parabola.",
+    "explanation": "In $y = x^2$, the coefficient is $k = 1$; in $y = 5x^2$, it is $k = 5$. A larger coefficient causes the graph to rise more steeply for the same $x$-value, making it narrower. At $x = 1$: $y = 1$ for $y = x^2$ but $y = 5$ for $y = 5x^2$, confirming $y = 5x^2$ is steeper and narrower."
+  },
+  {
+    "id": "par-y10-q07",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "What is the y-intercept of the parabola $y = -3x^2 + 9$?",
+    "answer": 9,
+    "tolerance": 0,
+    "hint": "The y-intercept is found by substituting $x = 0$ into the equation.",
+    "explanation": "Substituting $x = 0$: $$y = -3(0)^2 + 9 = 0 + 9 = 9$$ The y-intercept is $9$. For any parabola of the form $y = kx^2 + c$, the y-intercept is always $c$ (the constant term)."
+  },
+  {
+    "id": "par-y10-q08",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "The vertex of the parabola $y = 2x^2 + k$ is at $(0, -3)$. What is the value of $k$?",
+    "answer": -3,
+    "tolerance": 0,
+    "hint": "For $y = 2x^2 + k$, the vertex is at $(0, k)$. Set the y-coordinate of the vertex equal to $-3$.",
+    "explanation": "The parabola $y = 2x^2 + k$ is in the form $y = ax^2 + c$, so its vertex is at $(0, k)$. Since the vertex is at $(0, -3)$, we need $k = -3$. Verify: $y = 2x^2 - 3$. When $x = 0$: $y = -3$ ✓"
+  },
+  {
+    "id": "par-y10-q09",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Find the x-intercepts of $y = x^2 - 36$ by setting $y = 0$. What is the positive x-intercept?",
+    "answer": 6,
+    "tolerance": 0,
+    "hint": "Set $y = 0$ to get $x^2 - 36 = 0$. Add $36$ to both sides, then take the square root.",
+    "explanation": "Setting $y = 0$: $$x^2 - 36 = 0$$ $$x^2 = 36$$ $$x = \\pm\\sqrt{36} = \\pm 6$$ The x-intercepts are $(6, 0)$ and $(-6, 0)$. The positive x-intercept is $6$."
+  },
+  {
+    "id": "par-y10-q10",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Find the x-intercepts of $y = 2x^2 - 8$ by setting $y = 0$.",
+    "options": [
+      "$x = 2$ and $x = -2$",
+      "$x = 4$ and $x = -4$",
+      "$x = 2$ only",
+      "$x = \\sqrt{8}$ and $x = -\\sqrt{8}$"
+    ],
+    "answer": "$x = 2$ and $x = -2$",
+    "hint": "Set $y = 0$: $2x^2 - 8 = 0$. Divide both sides by $2$, then solve $x^2 = 4$.",
+    "explanation": "Setting $y = 0$: $$2x^2 - 8 = 0$$ $$2x^2 = 8$$ $$x^2 = 4$$ $$x = \\pm 2$$ The x-intercepts are $(2, 0)$ and $(-2, 0)$. A common error is to treat $2x^2 = 8$ as $2x = 8$, giving $x = 4$ only; another is to forget the negative root; a third is to skip dividing by $2$, giving $x^2 = 8$ and $x = \\pm\\sqrt{8}$."
+  },
+  {
+    "id": "par-y10-q11",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Which of the following parabolas is the narrowest?",
+    "options": [
+      "$y = x^2$",
+      "$y = 2x^2$",
+      "$y = \\dfrac{1}{2}x^2$",
+      "$y = 4x^2$"
+    ],
+    "answer": "$y = 4x^2$",
+    "hint": "The larger the coefficient of $x^2$, the narrower the parabola. Compare the coefficients.",
+    "explanation": "The coefficients of $x^2$ are: $y = x^2$ ($k = 1$), $y = 2x^2$ ($k = 2$), $y = \\frac{1}{2}x^2$ ($k = 0.5$), $y = 4x^2$ ($k = 4$). Since $4 > 2 > 1 > 0.5$, the parabola $y = 4x^2$ is the narrowest. At $x = 1$: its y-value is $4$, compared to $2$, $1$ and $0.5$ for the others, confirming it rises the most steeply."
+  },
+  {
+    "id": "par-y10-q12",
+    "subtopic": "parabolas",
+    "topic": "non-linear-relationships",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Find the x-intercepts of $y = -x^2 + 49$ by setting $y = 0$. What is the positive x-intercept?",
+    "answer": 7,
+    "tolerance": 0,
+    "hint": "Set $y = 0$: $-x^2 + 49 = 0$. Rearrange to get $x^2 = 49$, then take the square root.",
+    "explanation": "Setting $y = 0$: $$-x^2 + 49 = 0$$ $$-x^2 = -49$$ $$x^2 = 49$$ $$x = \\pm 7$$ The x-intercepts are $(7, 0)$ and $(-7, 0)$. The positive x-intercept is $7$. Since $k = -1 < 0$ this parabola opens downward, with vertex $(0, 49)$ above the x-axis — so it does cross the x-axis at two points."
+  }
+]

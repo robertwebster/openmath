@@ -1,0 +1,74 @@
+[
+  {
+    "id": "itnp-we1",
+    "title": "Finding gross annual income from a weekly wage",
+    "difficulty": 1,
+    "problem": "Priya earns $\\$820$ per week. Calculate her gross annual income.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the number of weeks in a year.",
+        "working": "There are $52$ weeks in a year."
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the weekly wage by $52$.",
+        "working": "$$\\text{Gross annual income} = \\$820 \\times 52 = \\$42\\,640$$"
+      }
+    ],
+    "answer": "$\\$42\\,640$"
+  },
+  {
+    "id": "itnp-we2",
+    "title": "Calculating income tax from a bracket table",
+    "difficulty": 2,
+    "problem": "Ben has a taxable income of $\\$48\\,500$ per year. Using the tax table below, calculate his annual income tax.\n\n| Taxable income | Tax payable |\n|:---|:---|\n| $\\$0 - \\$18\\,200$ | Nil |\n| $\\$18\\,201 - \\$45\\,000$ | $19$ c for each $\\$1$ over $\\$18\\,200$ |\n| $\\$45\\,001 - \\$120\\,000$ | $\\$5092$ plus $32.5$ c for each $\\$1$ over $\\$45\\,000$ |",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify which bracket the income falls in.",
+        "working": "$\\$48\\,500$ is between $\\$45\\,001$ and $\\$120\\,000$, so use the third row of the table."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the amount of income above $\\$45\\,000$.",
+        "working": "$$\\$48\\,500 - \\$45\\,000 = \\$3500$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the bracket formula: base tax plus $32.5$ c per dollar above $\\$45\\,000$.",
+        "working": "$$\\text{Income tax} = \\$5092 + \\$3500 \\times 0.325 = \\$5092 + \\$1137.50 = \\$6229.50$$"
+      }
+    ],
+    "answer": "$\\$6229.50$"
+  },
+  {
+    "id": "itnp-we3",
+    "title": "Finding net weekly pay after tax and deductions",
+    "difficulty": 3,
+    "problem": "Natalie earns $\\$2600$ per fortnight. She has $\\$2000$ in allowable deductions. Using the tax table below, find her net weekly pay after income tax and deductions.\n\n| Taxable income | Tax payable |\n|:---|:---|\n| $\\$0 - \\$18\\,200$ | Nil |\n| $\\$18\\,201 - \\$45\\,000$ | $19$ c for each $\\$1$ over $\\$18\\,200$ |\n| $\\$45\\,001 - \\$120\\,000$ | $\\$5092$ plus $32.5$ c for each $\\$1$ over $\\$45\\,000$ |",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate gross annual income from the fortnightly wage.",
+        "working": "$$\\text{Gross annual income} = \\$2600 \\times 26 = \\$67\\,600$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the correct tax bracket and calculate income tax.",
+        "working": "$\\$67\\,600$ falls in the $\\$45\\,001$–$\\$120\\,000$ bracket.\n\nAmount over $\\$45\\,000 = \\$67\\,600 - \\$45\\,000 = \\$22\\,600$\n\n$$\\text{Tax} = \\$5092 + \\$22\\,600 \\times 0.325 = \\$5092 + \\$7345 = \\$12\\,437$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract income tax and deductions to find net annual income.",
+        "working": "$$\\text{Net annual income} = \\$67\\,600 - \\$2000 - \\$12\\,437 = \\$53\\,163$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide by $52$ to find net weekly pay.",
+        "working": "$$\\text{Net weekly pay} = \\frac{\\$53\\,163}{52} \\approx \\$1022.37$$"
+      }
+    ],
+    "answer": "$\\$1022.37$"
+  }
+]

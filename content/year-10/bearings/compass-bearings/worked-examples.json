@@ -1,0 +1,89 @@
+[
+  {
+    "id": "compass-bearings-we-1",
+    "title": "Stating a compass bearing",
+    "difficulty": 1,
+    "problem": "A direction is $55°$ measured from north toward the east. Write this direction as a compass bearing.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the reference pole.",
+        "working": "The direction is measured from north, so the first letter is N."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the angle.",
+        "working": "The angle is $55°$."
+      },
+      {
+        "step": 3,
+        "instruction": "Identify which side the direction moves toward.",
+        "working": "The direction moves toward the east, so the last letter is E."
+      },
+      {
+        "step": 4,
+        "instruction": "Write the compass bearing in N/S–angle–E/W notation.",
+        "working": "Combining these: the compass bearing is N$55°$E."
+      }
+    ],
+    "answer": "The compass bearing is N$55°$E."
+  },
+  {
+    "id": "compass-bearings-we-2",
+    "title": "Converting a compass bearing to a true bearing",
+    "difficulty": 2,
+    "problem": "Convert the compass bearing S$35°$E to a true bearing.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the reference pole and determine its true bearing.",
+        "working": "The reference pole is south, which is $180°$ on the true bearing scale."
+      },
+      {
+        "step": 2,
+        "instruction": "Determine the direction of the angle from the reference pole.",
+        "working": "S[x]°E means the direction is x° measured from south toward the east. Moving toward east from south means moving anti-clockwise, so the true bearing will be less than $180°$."
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the true bearing.",
+        "working": "$$\\text{True bearing} = 180° - 35° = 145°$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check the answer is in the correct quadrant.",
+        "working": "$145°$ lies between $90°$ (east) and $180°$ (south), which is the SE quadrant. A direction east of south should be in the SE quadrant — this is consistent."
+      }
+    ],
+    "answer": "The true bearing is $145°$."
+  },
+  {
+    "id": "compass-bearings-we-3",
+    "title": "Converting a compass bearing and identifying the quadrant",
+    "difficulty": 3,
+    "problem": "A compass bearing of N$72°$W is given. Convert it to a true bearing and state the quadrant in which the direction lies.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the reference pole and its true bearing value.",
+        "working": "The reference pole is north, which is $360°$ (equivalently $0°$) on the true bearing scale."
+      },
+      {
+        "step": 2,
+        "instruction": "Determine the direction of the angle from north.",
+        "working": "N[x]°W means x° measured from north toward the west. Moving from north toward the west is anti-clockwise, so the true bearing will be less than $360°$ but greater than $270°$. Equivalently, subtract x° from $360°$."
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the true bearing.",
+        "working": "$$\\text{True bearing} = 360° - 72° = 288°$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Identify the quadrant.",
+        "working": "$288°$ lies between $270°$ (west) and $360°$ (north). This places the direction in the NW quadrant, which is consistent with a compass bearing that starts with N and ends with W."
+      }
+    ],
+    "answer": "The true bearing is $288°$. The direction lies in the NW quadrant."
+  }
+]

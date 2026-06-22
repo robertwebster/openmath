@@ -1,0 +1,11 @@
+{
+  "id": "non-linear-relationships",
+  "title": "Non-linear relationships",
+  "year": 10,
+  "stage": "5",
+  "extension": false,
+  "strand": "Algebra",
+  "syllabusOutcome": "MA5-NLI-C-01",
+  "description": "Graph and interpret parabolas, exponential curves and compare types of relationships.",
+  "subtopics": ["parabolas", "exponential-graphs", "comparing-relationships"]
+}

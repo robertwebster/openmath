@@ -1,0 +1,206 @@
+[
+  {
+    "id": "compass-bearings-1",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A direction makes an angle of $45°$ measured from north toward the east. Which compass bearing describes this direction?",
+    "options": [
+      "N45°E",
+      "N45°W",
+      "S45°E",
+      "S45°W"
+    ],
+    "answer": "N45°E",
+    "tolerance": 0,
+    "hint": "Compass bearings are written as: the reference pole (N or S), then the angle, then the side (E or W). The direction starts from north and moves toward east.",
+    "explanation": "Compass bearings start with the nearest pole: here, north (N). The angle is $45°$ and the direction moves toward the east (E). The compass bearing is N$45°$E."
+  },
+  {
+    "id": "compass-bearings-2",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A direction is $30°$ west of south. Which compass bearing describes this direction?",
+    "options": [
+      "S30°W",
+      "N30°W",
+      "S30°E",
+      "N30°E"
+    ],
+    "answer": "S30°W",
+    "tolerance": 0,
+    "hint": "The direction is measured from south (S) and moves toward the west (W).",
+    "explanation": "The reference pole is south (S), the angle is $30°$, and the side is west (W). The compass bearing is S$30°$W."
+  },
+  {
+    "id": "compass-bearings-3",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A direction is $60°$ measured from north toward the west. Which compass bearing describes it?",
+    "options": [
+      "N60°W",
+      "N60°E",
+      "S60°W",
+      "S60°E"
+    ],
+    "answer": "N60°W",
+    "tolerance": 0,
+    "hint": "The direction starts from north (N) and is measured $60°$ toward the west (W).",
+    "explanation": "Starting from north (N) and measuring $60°$ toward the west (W) gives the compass bearing N$60°$W."
+  },
+  {
+    "id": "compass-bearings-4",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A ship heads in a direction that is $25°$ from south toward the east. Which compass bearing describes its heading?",
+    "options": [
+      "S25°E",
+      "N25°E",
+      "S25°W",
+      "N25°W"
+    ],
+    "answer": "S25°E",
+    "tolerance": 0,
+    "hint": "The reference pole is south (S) and the direction moves toward the east (E).",
+    "explanation": "Starting from south (S) and measuring $25°$ toward the east (E) gives the compass bearing S$25°$E."
+  },
+  {
+    "id": "compass-bearings-5",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Convert the compass bearing N$55°$E to a true bearing.",
+    "answer": 55,
+    "tolerance": 0,
+    "hint": "N[x]°E means x° measured clockwise from north toward the east. True bearings are measured clockwise from north, so N[x]°E gives a true bearing of x°.",
+    "explanation": "N$55°$E means $55°$ measured from north toward the east. True bearings are measured clockwise from north, and east is clockwise from north, so the true bearing is $55°$."
+  },
+  {
+    "id": "compass-bearings-6",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Convert the compass bearing S$40°$W to a true bearing.",
+    "answer": 220,
+    "tolerance": 0,
+    "hint": "South is at $180°$ on the true bearing scale. S[x]°W means x° past south toward the west (continuing clockwise), so add x° to 180°.",
+    "explanation": "South is at $180°$ on the true bearing scale. S$40°$W means $40°$ past south continuing clockwise toward the west. True bearing $= 180° + 40° = 220°$."
+  },
+  {
+    "id": "compass-bearings-7",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A direction has a true bearing of $290°$. Which compass bearing is equivalent?",
+    "options": [
+      "N70°W",
+      "N70°E",
+      "S70°W",
+      "S70°E"
+    ],
+    "answer": "N70°W",
+    "tolerance": 0,
+    "hint": "$290°$ is in the NW quadrant (between $270°$ and $360°$). Find the angle from north: $360° - 290° = 70°$. Since the direction is west of north, the bearing starts with N and ends with W.",
+    "explanation": "$290°$ is between west ($270°$) and north ($360°$), so it lies in the NW quadrant. The angle from north is $360° - 290° = 70°$. The direction is west of north, so the compass bearing is N$70°$W."
+  },
+  {
+    "id": "compass-bearings-8",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Convert the compass bearing S$65°$E to a true bearing.",
+    "answer": 115,
+    "tolerance": 0,
+    "hint": "South is at $180°$. S[x]°E means x° before south approaching from the east (anti-clockwise from south), so subtract x° from 180°.",
+    "explanation": "S$65°$E means $65°$ measured from south toward the east. East of south corresponds to true bearings less than $180°$, so the true bearing $= 180° - 65° = 115°$."
+  },
+  {
+    "id": "compass-bearings-9",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A surveyor records a compass bearing of S$72°$W. What is the equivalent true bearing, and in which quadrant does this direction lie?",
+    "options": [
+      "252°, SW quadrant",
+      "108°, SE quadrant",
+      "252°, NW quadrant",
+      "288°, NW quadrant"
+    ],
+    "answer": "252°, SW quadrant",
+    "tolerance": 0,
+    "hint": "S[x]°W: south is $180°$, and the direction continues x° further clockwise toward the west. Add x° to 180°. S and W together place the direction in the SW quadrant.",
+    "explanation": "S$72°$W: south is $180°$ and the direction continues $72°$ past south toward the west (clockwise). True bearing $= 180° + 72° = 252°$. This lies between south ($180°$) and west ($270°$), which is the SW quadrant."
+  },
+  {
+    "id": "compass-bearings-10",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A trail heads on a compass bearing of N$35°$W. What is the equivalent true bearing, and in which quadrant does this direction lie?",
+    "options": [
+      "325°, NW quadrant",
+      "35°, NE quadrant",
+      "145°, SE quadrant",
+      "215°, SW quadrant"
+    ],
+    "answer": "325°, NW quadrant",
+    "tolerance": 0,
+    "hint": "N[x]°W: north is at $360°$ (equivalently $0°$). The direction is x° short of north on the western side, so subtract x° from 360°. N and W together place the direction in the NW quadrant.",
+    "explanation": "N$35°$W: north is at $360°$ and the direction is $35°$ back toward the west (anti-clockwise from north). True bearing $= 360° - 35° = 325°$. This lies between west ($270°$) and north ($360°$), which is the NW quadrant."
+  },
+  {
+    "id": "compass-bearings-11",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Convert the compass bearing S$48°$E to a true bearing.",
+    "answer": 132,
+    "tolerance": 0,
+    "hint": "S[x]°E: south is $180°$ and the direction is x° back toward the east (anti-clockwise from south). Subtract x° from 180°.",
+    "explanation": "S$48°$E means $48°$ measured from south toward the east. East of south corresponds to true bearings between $90°$ and $180°$, so the true bearing $= 180° - 48° = 132°$. This lies in the SE quadrant, consistent with a direction east of south."
+  },
+  {
+    "id": "compass-bearings-12",
+    "subtopic": "compass-bearings",
+    "topic": "bearings",
+    "year": 10,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A true bearing of $203°$ is given. Which compass bearing is equivalent, and in which quadrant does this direction lie?",
+    "options": [
+      "S23°W, SW quadrant",
+      "N23°E, NE quadrant",
+      "S23°E, SE quadrant",
+      "N23°W, NW quadrant"
+    ],
+    "answer": "S23°W, SW quadrant",
+    "tolerance": 0,
+    "hint": "$203°$ is between $180°$ (south) and $270°$ (west), placing it in the SW quadrant. The angle past south is $203° - 180° = 23°$, and since the direction moves toward the west, write S[23°]W.",
+    "explanation": "$203°$ lies between south ($180°$) and west ($270°$), so it is in the SW quadrant. Angle past south $= 203° - 180° = 23°$. The direction moves from south toward the west, giving the compass bearing S$23°$W."
+  }
+]

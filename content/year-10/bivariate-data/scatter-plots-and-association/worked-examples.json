@@ -1,0 +1,74 @@
+[
+  {
+    "id": "scatter-plots-and-association-example-1",
+    "title": "Identifying the direction of association from a data table",
+    "difficulty": 1,
+    "problem": "The table below shows the number of days of sprint training and a student's 100 m time (in seconds).\n\n$$\\begin{array}{c|ccccc} \\text{Days of training} & 5 & 10 & 15 & 20 & 25 \\\\ \\hline \\text{Sprint time (s)} & 16.2 & 15.4 & 14.9 & 14.3 & 13.8 \\end{array}$$\n\n(a) Plot the data on a scatter plot with days of training on the horizontal axis.\n(b) Describe the direction of association.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Examine how the sprint times change as the number of training days increases.",
+        "working": "Days of training: 5, 10, 15, 20, 25 (increasing).\nSprint times: 16.2, 15.4, 14.9, 14.3, 13.8 (decreasing).\n\nAs the number of training days increases, the sprint time decreases."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the direction of association.",
+        "working": "One variable increases (days of training) while the other decreases (sprint time). When the two variables move in opposite directions, the association is negative."
+      },
+      {
+        "step": 3,
+        "instruction": "Write a sentence describing the association in context.",
+        "working": "As the number of days of training increases, the student's sprint time decreases (they run faster). This is a negative association."
+      }
+    ],
+    "answer": "Negative association — as the number of days of training increases, the sprint time decreases."
+  },
+  {
+    "id": "scatter-plots-and-association-example-2",
+    "title": "Describing association using form, direction and strength",
+    "difficulty": 2,
+    "problem": "Two scatter plots are described below. For each one, describe the association using form, direction and strength.\n\n(a) A scatter plot comparing the number of customers who visit a coffee shop each day and the daily profit ($). The points are fairly closely clustered around an upward-sloping straight line, though a few points deviate noticeably.\n\n(b) A scatter plot comparing monthly rainfall (mm) and the number of people who visit a beach. The points are widely spread and show no clear upward or downward trend.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "For scatter plot (a), identify the form.",
+        "working": "The problem states the points cluster around an upward-sloping straight line. The form is linear (not curved)."
+      },
+      {
+        "step": 2,
+        "instruction": "For scatter plot (a), identify the direction and strength.",
+        "working": "Direction: the line slopes upward — as the number of customers increases, the profit increases. The direction is positive.\n\nStrength: the points are fairly closely clustered but a few deviate noticeably. This is not tight enough for strong, but there is still a clear trend. The strength is moderate.\n\nFull description: moderate positive linear association."
+      },
+      {
+        "step": 3,
+        "instruction": "For scatter plot (b), identify the association.",
+        "working": "There is no clear upward or downward trend and the points are widely spread. There is no consistent direction, so the association is: no association.\n\n(Note: form and strength only apply when an association exists.)"
+      }
+    ],
+    "answer": "(a) Moderate positive linear association. (b) No association."
+  },
+  {
+    "id": "scatter-plots-and-association-example-3",
+    "title": "Identifying expected association and distinguishing association from causation",
+    "difficulty": 3,
+    "problem": "A study collects data on the number of books owned by a household and the academic results of children in that household and finds a positive association.\n\n(a) Describe the expected association using all three components.\n(b) A newspaper headline reads: \"Buy more books — it makes children smarter!\" Explain why this conclusion may not be justified.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Predict the form of the association.",
+        "working": "Book ownership and academic results are both continuous numerical variables. There is no obvious reason for a curved pattern, so the form is likely linear."
+      },
+      {
+        "step": 2,
+        "instruction": "Predict the direction and strength.",
+        "working": "Households that own more books tend to value education, encouraging more reading and learning. As book count increases, academic results tend to increase — the direction is positive.\n\nMany other factors also affect results (school quality, individual effort, tutoring), so the relationship would be imperfect. The strength is likely moderate."
+      },
+      {
+        "step": 3,
+        "instruction": "Explain why the newspaper's causal claim is not justified.",
+        "working": "A positive association does not prove causation. Both variables may be driven by a third factor: parental education level or household income.\n\nHighly educated or higher-income parents tend to own more books AND provide more educational support (tutoring, school choice, homework help). The books themselves may not be the cause of the academic results — the underlying family circumstances drive both.\n\nThis is the key principle: correlation does not imply causation."
+      }
+    ],
+    "answer": "(a) Moderate positive linear association — as book ownership increases, academic results tend to increase, following a roughly linear pattern. (b) The conclusion is not justified. Both variables may be driven by a third factor (parental education or income), not by the books themselves. Association does not imply causation."
+  }
+]
