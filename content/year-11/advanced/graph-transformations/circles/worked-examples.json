@@ -1,0 +1,104 @@
+[
+  {
+    "id": "circles-we-1",
+    "title": "Identifying centre, radius, domain and range from standard form",
+    "difficulty": 1,
+    "problem": "A circle has equation $(x - 3)^2 + (y + 2)^2 = 49$. State the centre and radius, then write the domain and range.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Compare the equation with the standard form $(x - a)^2 + (y - b)^2 = r^2$ to read off $a$, $b$ and $r^2$.",
+        "working": "$$a = 3, \\quad b = -2, \\quad r^2 = 49$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the radius by taking the positive square root of $r^2$.",
+        "working": "$$r = \\sqrt{49} = 7$$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the centre and radius.",
+        "working": "$$\\text{Centre } (3, -2), \\quad \\text{radius } 7$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the domain. The x-values extend $r$ units either side of the centre's x-coordinate.",
+        "working": "$$\\text{Domain: } [3 - 7,\\; 3 + 7] = [-4, 10]$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Find the range. The y-values extend $r$ units either side of the centre's y-coordinate.",
+        "working": "$$\\text{Range: } [-2 - 7,\\; -2 + 7] = [-9, 5]$$"
+      }
+    ],
+    "answer": "Centre $(3, -2)$, radius $7$, domain $[-4, 10]$, range $[-9, 5]$"
+  },
+  {
+    "id": "circles-we-2",
+    "title": "Completing the square to find standard form",
+    "difficulty": 2,
+    "problem": "Rewrite $x^2 + y^2 - 10x + 6y + 18 = 0$ in standard form and state the centre and radius.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Group the $x$ terms and $y$ terms together and move the constant to the right.",
+        "working": "$$(x^2 - 10x) + (y^2 + 6y) = -18$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Complete the square for $x$: take half the coefficient of $x$, square it, and add it to both sides. Half of $-10$ is $-5$, and $(-5)^2 = 25$.",
+        "working": "$$(x^2 - 10x + 25) + (y^2 + 6y) = -18 + 25$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Complete the square for $y$: half of $6$ is $3$, and $3^2 = 9$. Add $9$ to both sides.",
+        "working": "$$(x^2 - 10x + 25) + (y^2 + 6y + 9) = -18 + 25 + 9$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write each group as a perfect square and simplify the right-hand side.",
+        "working": "$$(x - 5)^2 + (y + 3)^2 = 16$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Read off the centre and radius from the standard form $(x - a)^2 + (y - b)^2 = r^2$.",
+        "working": "$$a = 5, \\quad b = -3, \\quad r = \\sqrt{16} = 4$$"
+      }
+    ],
+    "answer": "$(x - 5)^2 + (y + 3)^2 = 16$; centre $(5, -3)$, radius $4$"
+  },
+  {
+    "id": "circles-we-3",
+    "title": "Finding the equation of a circle from its centre and a point, then finding intercepts",
+    "difficulty": 3,
+    "problem": "A circle has centre $(0, 3)$ and passes through the point $(4, 0)$. Find the equation of the circle in standard form, then state all x- and y-intercepts.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find $r^2$ using the distance formula from the centre $(0, 3)$ to the point $(4, 0)$.",
+        "working": "$$r^2 = (4 - 0)^2 + (0 - 3)^2 = 16 + 9 = 25$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the equation of the circle in standard form $(x - a)^2 + (y - b)^2 = r^2$ with centre $(0, 3)$.",
+        "working": "$$x^2 + (y - 3)^2 = 25$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the x-intercepts by substituting $y = 0$ and solving for $x$.",
+        "working": "$$x^2 + (0 - 3)^2 = 25$$\n$$x^2 + 9 = 25$$\n$$x^2 = 16$$\n$$x = \\pm 4$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the y-intercepts by substituting $x = 0$ and solving for $y$.",
+        "working": "$$0^2 + (y - 3)^2 = 25$$\n$$(y - 3)^2 = 25$$\n$$y - 3 = \\pm 5$$\n$$y = 8 \\quad \\text{or} \\quad y = -2$$"
+      },
+      {
+        "step": 5,
+        "instruction": "State all intercepts.",
+        "working": "$$\\text{x-intercepts: } (4, 0) \\text{ and } (-4, 0)$$\n$$\\text{y-intercepts: } (0, 8) \\text{ and } (0, -2)$$"
+      }
+    ],
+    "answer": "Equation: $x^2 + (y - 3)^2 = 25$; x-intercepts: $(4, 0)$ and $(-4, 0)$; y-intercepts: $(0, 8)$ and $(0, -2)$"
+  }
+]

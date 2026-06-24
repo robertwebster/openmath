@@ -1,0 +1,94 @@
+[
+  {
+    "id": "non-right-we-1",
+    "title": "Finding an unknown side using the sine rule",
+    "difficulty": 1,
+    "problem": "In triangle $ABC$, $\\angle A = 50°$, $\\angle B = 70°$ and $a = 8$ cm. Find the length of side $b$ to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the sine rule connecting sides $a$ and $b$.",
+        "working": "$$\\frac{a}{\\sin A} = \\frac{b}{\\sin B}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values.",
+        "working": "$$\\frac{8}{\\sin 50°} = \\frac{b}{\\sin 70°}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Rearrange to make $b$ the subject.",
+        "working": "$$b = \\frac{8\\sin 70°}{\\sin 50°}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Evaluate using a calculator.",
+        "working": "$$b = \\frac{8 \\times 0.9397}{0.7660} \\approx 9.81 \\text{ cm}$$"
+      }
+    ],
+    "answer": "$b \\approx 9.81$ cm"
+  },
+  {
+    "id": "non-right-we-2",
+    "title": "Applying the cosine rule and finding triangle area",
+    "difficulty": 2,
+    "problem": "In triangle $ABC$, $a = 7$, $b = 10$ and $\\angle C = 60°$. Find side $c$ and the area of the triangle.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the cosine rule for side $c$ opposite angle $C$.",
+        "working": "$$c^2 = a^2 + b^2 - 2ab\\cos C$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values and simplify. Use the exact value $\\cos 60° = \\dfrac{1}{2}$.",
+        "working": "$$c^2 = 7^2 + 10^2 - 2(7)(10) \\times \\frac{1}{2} = 49 + 100 - 70 = 79$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find $c$ by taking the positive square root.",
+        "working": "$$c = \\sqrt{79} \\approx 8.89$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply the area formula. The included angle $C$ lies between sides $a$ and $b$.",
+        "working": "$$A = \\frac{1}{2}ab\\sin C = \\frac{1}{2}(7)(10)\\sin 60° = 35 \\times \\frac{\\sqrt{3}}{2} \\approx 30.31 \\text{ square units}$$"
+      }
+    ],
+    "answer": "$c = \\sqrt{79} \\approx 8.89$; area $= \\dfrac{35\\sqrt{3}}{2} \\approx 30.31$ square units"
+  },
+  {
+    "id": "non-right-we-3",
+    "title": "Solving the ambiguous case",
+    "difficulty": 3,
+    "problem": "In triangle $ABC$, $a = 10$, $b = 12$ and $\\angle A = 40°$. Determine how many triangles satisfy these conditions and find both possible values of $\\angle B$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the sine rule to find $\\sin B$.",
+        "working": "$$\\frac{\\sin B}{b} = \\frac{\\sin A}{a} \\implies \\sin B = \\frac{12\\sin 40°}{10} \\approx \\frac{12 \\times 0.6428}{10} \\approx 0.7714$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the first solution using the inverse sine.",
+        "working": "$$B_1 = \\arcsin(0.7714) \\approx 50.5°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the second potential solution using the supplementary angle identity $\\sin(180° - \\theta) = \\sin\\theta$.",
+        "working": "$$B_2 = 180° - 50.5° = 129.5°$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check whether each solution gives a valid triangle by verifying that $A + B < 180°$.",
+        "working": "Triangle 1: $40° + 50.5° = 90.5° < 180°$ — valid.\\\nTriangle 2: $40° + 129.5° = 169.5° < 180°$ — valid."
+      },
+      {
+        "step": 5,
+        "instruction": "State the conclusion.",
+        "working": "Both triangles are valid. The two possible values of $\\angle B$ are approximately $50.5°$ and $129.5°$."
+      }
+    ],
+    "answer": "Two triangles are possible: $\\angle B \\approx 50.5°$ or $\\angle B \\approx 129.5°$."
+  }
+]

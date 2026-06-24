@@ -1,0 +1,99 @@
+[
+  {
+    "id": "intro-func-we-1",
+    "title": "Finding the domain and range of a function",
+    "difficulty": 1,
+    "problem": "For the function $f(x) = \\sqrt{x - 1}$, state the domain and range in interval notation and explain why it passes the vertical line test.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the domain by determining which $x$-values make the expression defined. The square root requires a non-negative radicand.",
+        "working": "$$x - 1 \\geq 0 \\implies x \\geq 1$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the domain in interval notation.",
+        "working": "$$\\text{Domain} = [1, \\infty)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the range. Since $\\sqrt{x - 1} \\geq 0$ for all $x$ in the domain, and the square root can grow without bound, determine the smallest and largest possible output values.",
+        "working": "$$\\text{When } x = 1: f(1) = \\sqrt{0} = 0 \\qquad \\text{As } x \\to \\infty: f(x) \\to \\infty$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write the range in interval notation.",
+        "working": "$$\\text{Range} = [0, \\infty)$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Explain the vertical line test. For each $x \\geq 1$, the rule $f(x) = \\sqrt{x-1}$ produces exactly one output, so every vertical line meets the graph at most once.",
+        "working": "$$\\text{Each } x \\text{ in } [1, \\infty) \\text{ maps to exactly one value } \\sqrt{x-1} \\geq 0.$$"
+      }
+    ],
+    "answer": "Domain $= [1, \\infty)$, Range $= [0, \\infty)$. The graph passes the vertical line test because each $x$-value produces exactly one output."
+  },
+  {
+    "id": "intro-func-we-2",
+    "title": "Evaluating a function and finding its zeroes",
+    "difficulty": 2,
+    "problem": "Let $f(x) = x^2 - 5x + 4$. Find $f(2)$, $f(-2)$ and all zeroes of $f$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Evaluate $f(2)$ by substituting $x = 2$ into the rule.",
+        "working": "$$f(2) = (2)^2 - 5(2) + 4 = 4 - 10 + 4 = -2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate $f(-2)$ by substituting $x = -2$ into the rule.",
+        "working": "$$f(-2) = (-2)^2 - 5(-2) + 4 = 4 + 10 + 4 = 18$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the zeroes by setting $f(x) = 0$ and solving the equation.",
+        "working": "$$x^2 - 5x + 4 = 0$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Factorise the quadratic by finding two numbers that multiply to $4$ and add to $-5$.",
+        "working": "$$(x - 1)(x - 4) = 0$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Apply the null factor law to find each zero.",
+        "working": "$$x - 1 = 0 \\implies x = 1 \\qquad \\text{or} \\qquad x - 4 = 0 \\implies x = 4$$"
+      }
+    ],
+    "answer": "$f(2) = -2$, $f(-2) = 18$. The zeroes of $f$ are $x = 1$ and $x = 4$."
+  },
+  {
+    "id": "intro-func-we-3",
+    "title": "Classifying a function as even, odd or neither",
+    "difficulty": 3,
+    "problem": "Determine whether $f(x) = x^4 - 3x^2 + 2$ is even, odd or neither. Describe the symmetry of its graph.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Compute $f(-x)$ by replacing every $x$ with $-x$ in the rule.",
+        "working": "$$f(-x) = (-x)^4 - 3(-x)^2 + 2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Simplify each term using the fact that even powers of $-x$ equal the corresponding power of $x$.",
+        "working": "$$(-x)^4 = x^4, \\quad (-x)^2 = x^2 \\implies f(-x) = x^4 - 3x^2 + 2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare $f(-x)$ with $f(x)$.",
+        "working": "$$f(-x) = x^4 - 3x^2 + 2 = f(x) \\quad \\text{for all } x \\in \\mathbb{R}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Since $f(-x) = f(x)$, the function is even. State the geometric interpretation.",
+        "working": "$$f(-x) = f(x) \\implies \\text{the graph is symmetric about the } y\\text{-axis.}$$"
+      }
+    ],
+    "answer": "$f$ is even because $f(-x) = f(x)$ for all $x \\in \\mathbb{R}$. The graph of $y = x^4 - 3x^2 + 2$ is symmetric about the $y$-axis."
+  }
+]

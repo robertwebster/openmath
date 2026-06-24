@@ -1,0 +1,16 @@
+{
+  "id": "probability-and-data",
+  "title": "Probability and data",
+  "year": 11,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Statistics and Probability",
+  "syllabusOutcome": "MAV-11-09",
+  "description": "Use sets and Venn diagrams, apply probability rules and conditional probability, and classify random variables.",
+  "subtopics": [
+    "sets-and-venn-diagrams",
+    "probability-rules",
+    "conditional-probability",
+    "data-and-random-variables"
+  ]
+}

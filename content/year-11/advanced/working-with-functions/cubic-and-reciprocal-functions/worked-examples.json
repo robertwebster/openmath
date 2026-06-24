@@ -1,0 +1,84 @@
+[
+  {
+    "id": "cub-rec-we-1",
+    "title": "Finding x-intercepts and end behaviour of a cubic",
+    "difficulty": 1,
+    "problem": "For $f(x) = (x + 2)(x - 1)(x - 4)$, state the x-intercepts and describe the end behaviour.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the x-intercepts by setting each factor equal to zero.",
+        "working": "$$x + 2 = 0 \\implies x = -2, \\qquad x - 1 = 0 \\implies x = 1, \\qquad x - 4 = 0 \\implies x = 4$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the leading term by multiplying the leading term from each factor.",
+        "working": "$$x \\cdot x \\cdot x = x^3 \\quad (\\text{positive leading coefficient})$$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the end behaviour. A positive leading coefficient means the graph behaves like $y = x^3$: it falls to the left and rises to the right.",
+        "working": "$$\\text{As } x \\to +\\infty,\\; f(x) \\to +\\infty \\qquad \\text{As } x \\to -\\infty,\\; f(x) \\to -\\infty$$"
+      }
+    ],
+    "answer": "x-intercepts at $x = -2$, $x = 1$ and $x = 4$. As $x \\to +\\infty$, $f(x) \\to +\\infty$; as $x \\to -\\infty$, $f(x) \\to -\\infty$."
+  },
+  {
+    "id": "cub-rec-we-2",
+    "title": "Graphing a reciprocal function",
+    "difficulty": 2,
+    "problem": "For $f(x) = \\dfrac{-3}{x}$, state the asymptotes, domain and range, and which quadrants the graph occupies.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the vertical asymptote. This occurs where the denominator equals zero.",
+        "working": "$$x = 0 \\quad (\\text{vertical asymptote})$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the horizontal asymptote by considering what happens to $f(x)$ as $|x|$ becomes very large.",
+        "working": "$$\\text{As } |x| \\to \\infty,\\; \\frac{-3}{x} \\to 0 \\quad (\\text{horizontal asymptote } y = 0)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the domain and range. Neither $x$ nor $y$ can equal zero.",
+        "working": "$$\\text{Domain: } x \\in \\mathbb{R},\\; x \\neq 0 \\qquad \\text{Range: } y \\in \\mathbb{R},\\; y \\neq 0$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Determine which quadrants the graph occupies by checking the sign of $f(x)$ for positive and negative $x$.",
+        "working": "$$x > 0:\\; f(x) = \\frac{-3}{x} < 0 \\implies \\text{Quadrant IV} \\qquad x < 0:\\; f(x) = \\frac{-3}{x} > 0 \\implies \\text{Quadrant II}$$"
+      }
+    ],
+    "answer": "Vertical asymptote $x = 0$; horizontal asymptote $y = 0$. Domain: $x \\neq 0$. Range: $y \\neq 0$. The graph lies in Quadrants II and IV."
+  },
+  {
+    "id": "cub-rec-we-3",
+    "title": "Finding a cubic equation from graph features",
+    "difficulty": 3,
+    "problem": "A cubic graph has x-intercepts at $x = -2$, $x = 0$ and $x = 3$, and as $x \\to +\\infty$, $y \\to -\\infty$. Find the equation of the cubic in fully factored form.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the corresponding factor for each x-intercept.",
+        "working": "$$x = -2 \\implies (x + 2), \\qquad x = 0 \\implies x, \\qquad x = 3 \\implies (x - 3)$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the general factored form with an unknown leading coefficient $a$.",
+        "working": "$$f(x) = a \\cdot x(x + 2)(x - 3)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Determine the sign of $a$ from the end behaviour. As $x \\to +\\infty$, $y \\to -\\infty$ means the leading term is negative, so $a < 0$. Take $a = -1$.",
+        "working": "$$\\text{Leading term: } a \\cdot x^3 < 0 \\text{ for large positive } x \\implies a = -1$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write the final equation and verify the end behaviour.",
+        "working": "$$f(x) = -x(x + 2)(x - 3) \\qquad \\text{As } x \\to +\\infty,\\; -x^3 \\to -\\infty \\checkmark$$"
+      }
+    ],
+    "answer": "$f(x) = -x(x + 2)(x - 3)$"
+  }
+]

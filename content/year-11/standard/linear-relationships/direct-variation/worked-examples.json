@@ -1,0 +1,84 @@
+[
+  {
+    "id": "dv-ex-1",
+    "title": "Identifying direct variation and stating k",
+    "difficulty": 1,
+    "problem": "A table of values shows: when $x = 2$, $y = 8$; when $x = 4$, $y = 16$; when $x = 6$, $y = 24$; when $x = 8$, $y = 32$. Determine whether $y$ varies directly with $x$ and, if so, state the constant of variation $k$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the ratio $\\frac{y}{x}$ for each pair of values.",
+        "working": "$$\\frac{8}{2} = 4, \\quad \\frac{16}{4} = 4, \\quad \\frac{24}{6} = 4, \\quad \\frac{32}{8} = 4$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Check whether all ratios are equal.",
+        "working": "Every ratio equals $4$, so the ratio $\\frac{y}{x}$ is constant."
+      },
+      {
+        "step": 3,
+        "instruction": "State the conclusion and the value of $k$.",
+        "working": "Since $\\frac{y}{x}$ is constant, $y$ varies directly with $x$. The constant of variation is $k = 4$, and the equation is $y = 4x$."
+      }
+    ],
+    "answer": "Yes, $y$ varies directly with $x$ with constant of variation $k = 4$."
+  },
+  {
+    "id": "dv-ex-2",
+    "title": "Finding k and using y = kx to find a missing value",
+    "difficulty": 2,
+    "problem": "$y$ varies directly with $x$. When $x = 5$, $y = 35$. Find the value of $y$ when $x = 12$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the constant of variation $k$.",
+        "working": "$$k = \\frac{y}{x} = \\frac{35}{5} = 7$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the direct variation equation.",
+        "working": "$$y = 7x$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $x = 12$ into the equation.",
+        "working": "$$y = 7 \\times 12 = 84$$"
+      }
+    ],
+    "answer": "When $x = 12$, $y = 84$."
+  },
+  {
+    "id": "dv-ex-3",
+    "title": "Multi-step direct variation problem with unit conversion",
+    "difficulty": 3,
+    "problem": "The volume of water $V$ (in litres) pumped varies directly with time $t$ (in minutes). A pump moves 840 litres in 24 minutes. How many kilolitres does the pump move in 1.5 hours?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the constant of variation $k$ (litres per minute).",
+        "working": "$$k = \\frac{V}{t} = \\frac{840}{24} = 35 \\text{ L/min}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the direct variation equation.",
+        "working": "$$V = 35t$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Convert 1.5 hours to minutes so the units match.",
+        "working": "$$1.5 \\text{ hours} = 1.5 \\times 60 = 90 \\text{ minutes}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Substitute $t = 90$ into the equation.",
+        "working": "$$V = 35 \\times 90 = 3150 \\text{ L}$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Convert litres to kilolitres ($1 \\text{ kL} = 1000 \\text{ L}$).",
+        "working": "$$3150 \\div 1000 = 3.15 \\text{ kL}$$"
+      }
+    ],
+    "answer": "The pump moves $3.15$ kL in $1.5$ hours."
+  }
+]

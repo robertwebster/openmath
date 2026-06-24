@@ -1,0 +1,84 @@
+[
+  {
+    "id": "lal-ex-1",
+    "title": "Reading latitude and longitude coordinates",
+    "difficulty": 1,
+    "problem": "Buenos Aires, Argentina, is located at approximately $34°\\text{S},\\ 58°\\text{W}$. (a) In which hemisphere (north or south) is Buenos Aires? (b) Is Buenos Aires east or west of the Prime Meridian? (c) State the latitude as a positive number of degrees.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Read the latitude coordinate and identify the hemisphere.",
+        "working": "The latitude is $34°\\text{S}$. The letter S indicates south of the equator, so Buenos Aires is in the Southern hemisphere."
+      },
+      {
+        "step": 2,
+        "instruction": "Read the longitude coordinate and identify the direction from the Prime Meridian.",
+        "working": "The longitude is $58°\\text{W}$. The letter W indicates west of the Prime Meridian ($0°$), so Buenos Aires is west of the Prime Meridian."
+      },
+      {
+        "step": 3,
+        "instruction": "State the latitude as a positive number.",
+        "working": "The latitude is $34°\\text{S}$, so the positive value is $34°$."
+      }
+    ],
+    "answer": "(a) Southern hemisphere; (b) West of the Prime Meridian; (c) $34°$"
+  },
+  {
+    "id": "lal-ex-2",
+    "title": "Calculating time difference from longitudes",
+    "difficulty": 2,
+    "problem": "City P is at longitude $30°\\text{E}$ and City Q is at longitude $105°\\text{E}$. Using the rule that $15°$ of longitude corresponds to $1$ hour of time difference, find the time difference between the two cities. If it is $06{:}00$ in City P, what is the local time in City Q?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the difference in longitude between the two cities.",
+        "working": "$$\\text{Longitude difference} = 105° - 30° = 75°$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Divide the longitude difference by 15 to find the time difference in hours.",
+        "working": "$$\\text{Time difference} = 75° \\div 15 = 5 \\text{ hours}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Determine which city is ahead. The city further east has the later local time.",
+        "working": "City Q ($105°\\text{E}$) is east of City P ($30°\\text{E}$), so City Q is $5$ hours ahead."
+      },
+      {
+        "step": 4,
+        "instruction": "Add the time difference to the time in City P to find the local time in City Q.",
+        "working": "$$06{:}00 + 5\\text{ h} = 11{:}00$$"
+      }
+    ],
+    "answer": "The time difference is $5$ hours. It is $11{:}00$ in City Q."
+  },
+  {
+    "id": "lal-ex-3",
+    "title": "Local arrival time for a westward flight",
+    "difficulty": 3,
+    "problem": "A flight departs from City A at longitude $75°\\text{E}$ at $10{:}00$ local time and flies west to City B at longitude $15°\\text{W}$. The flight takes $9$ hours. Using $15°$ of longitude $= 1$ hour, determine the local time in City B when the plane arrives.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the longitude difference. Since City A is east and City B is west, add the two longitude values.",
+        "working": "$$\\text{Longitude difference} = 75° + 15° = 90°$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the time difference and note the direction.",
+        "working": "$$\\text{Time difference} = 90° \\div 15 = 6 \\text{ hours}$$\nCity B is west of City A, so City B is $6$ hours behind City A."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the arrival time in City A's local time by adding the flight duration to the departure time.",
+        "working": "$$10{:}00 + 9\\text{ h} = 19{:}00 \\text{ (City A local time)}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Convert to City B's local time by subtracting the time difference (City B is behind).",
+        "working": "$$19{:}00 - 6\\text{ h} = 13{:}00$$"
+      }
+    ],
+    "answer": "The plane arrives at $13{:}00$ local time in City B."
+  }
+]

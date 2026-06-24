@@ -1,0 +1,89 @@
+[
+  {
+    "id": "bud-worked-1",
+    "title": "Calculating weekly surplus",
+    "difficulty": 1,
+    "problem": "Jade earns $\\$1{,}100$ per week. Her weekly expenses are: rent $\\$500$, groceries $\\$110$, transport $\\$75$, utilities $\\$40$, and phone $\\$25$. Calculate her weekly surplus.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Add all weekly expenses.",
+        "working": "$500 + 110 + 75 + 40 + 25 = \\$750$"
+      },
+      {
+        "step": 2,
+        "instruction": "Subtract total expenses from weekly income.",
+        "working": "$\\text{Weekly surplus} = 1{,}100 - 750 = \\$350$"
+      }
+    ],
+    "answer": "$\\$350$"
+  },
+  {
+    "id": "bud-worked-2",
+    "title": "Categorising expenses and calculating savings rate",
+    "difficulty": 2,
+    "problem": "A household has a monthly income of $\\$5{,}000$. Their monthly expenses include: rent $\\$1{,}400$, car insurance $\\$110$, health insurance $\\$130$, internet $\\$60$, phone $\\$50$ (all fixed); groceries $\\$450$, transport $\\$180$, entertainment $\\$220$, dining out $\\$150$, clothing $\\$100$, and personal care $\\$150$ (all variable). Calculate the total fixed expenses, total variable expenses, and the monthly savings rate.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Add all fixed expenses.",
+        "working": "$1{,}400 + 110 + 130 + 60 + 50 = \\$1{,}750$"
+      },
+      {
+        "step": 2,
+        "instruction": "Add all variable expenses.",
+        "working": "$450 + 180 + 220 + 150 + 100 + 150 = \\$1{,}250$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find total monthly expenses.",
+        "working": "$1{,}750 + 1{,}250 = \\$3{,}000$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the monthly surplus.",
+        "working": "$5{,}000 - 3{,}000 = \\$2{,}000$"
+      },
+      {
+        "step": 5,
+        "instruction": "Express the surplus as a percentage of income.",
+        "working": "$\\dfrac{2{,}000}{5{,}000} \\times 100 = 40\\%$"
+      }
+    ],
+    "answer": "Fixed expenses: $\\$1{,}750$. Variable expenses: $\\$1{,}250$. Monthly savings rate: $40\\%$."
+  },
+  {
+    "id": "bud-worked-3",
+    "title": "Saving an emergency fund",
+    "difficulty": 3,
+    "problem": "Ryan earns $\\$4{,}800$ per month. His total monthly expenses are $\\$4{,}000$. He wants to build a 3-month emergency fund. How many months will it take at his current savings rate? If he also reduces his entertainment spending by $\\$400$ per month, how many months will it then take?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the emergency fund target.",
+        "working": "$3 \\times 4{,}000 = \\$12{,}000$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the current monthly surplus.",
+        "working": "$4{,}800 - 4{,}000 = \\$800$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate months at the current rate.",
+        "working": "$\\dfrac{12{,}000}{800} = 15 \\text{ months}$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the new surplus after reducing entertainment spending.",
+        "working": "$800 + 400 = \\$1{,}200$"
+      },
+      {
+        "step": 5,
+        "instruction": "Calculate months at the new rate.",
+        "working": "$\\dfrac{12{,}000}{1{,}200} = 10 \\text{ months}$"
+      }
+    ],
+    "answer": "At his current rate Ryan will take 15 months to save his emergency fund. By reducing entertainment spending by $\\$400$ per month, he can reach his goal in 10 months — 5 months sooner."
+  }
+]

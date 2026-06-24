@@ -1,0 +1,74 @@
+[
+  {
+    "id": "svd-we-1",
+    "title": "Finding the union and intersection of two sets",
+    "difficulty": 1,
+    "problem": "Sets $A = \\{1, 3, 5, 7, 9\\}$ and $B = \\{5, 7, 9, 11, 13\\}$.\n\n(a) List $A \\cap B$ and state $|A \\cap B|$.\n(b) List $A \\cup B$ and state $|A \\cup B|$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify $A \\cap B$ by listing elements that appear in both sets.",
+        "working": "$$A = \\{1, 3, 5, 7, 9\\}, \\quad B = \\{5, 7, 9, 11, 13\\}$$\n$$A \\cap B = \\{5, 7, 9\\}, \\quad |A \\cap B| = 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find $A \\cup B$ by listing all distinct elements from either set.",
+        "working": "$$A \\cup B = \\{1, 3, 5, 7, 9, 11, 13\\}$$\nElements $5$, $7$ and $9$ are shared and counted once only.\n$$|A \\cup B| = 7$$"
+      }
+    ],
+    "answer": "(a) $A \\cap B = \\{5, 7, 9\\}$, $|A \\cap B| = 3$. (b) $A \\cup B = \\{1, 3, 5, 7, 9, 11, 13\\}$, $|A \\cup B| = 7$."
+  },
+  {
+    "id": "svd-we-2",
+    "title": "Applying the inclusion-exclusion principle",
+    "difficulty": 2,
+    "problem": "In a year group of 80 students, 48 study Drama and 35 study Music. If 12 students study both subjects, how many students study neither?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the inclusion-exclusion principle for two sets.",
+        "working": "$$|D \\cup M| = |D| + |M| - |D \\cap M|$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values to find $|D \\cup M|$.",
+        "working": "$$|D \\cup M| = 48 + 35 - 12 = 71$$\nSeventy-one students study at least one of the two subjects."
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract from the total to find students who study neither.",
+        "working": "$$\\text{Neither} = 80 - 71 = 9$$"
+      }
+    ],
+    "answer": "9 students study neither Drama nor Music."
+  },
+  {
+    "id": "svd-we-3",
+    "title": "Solving a three-set Venn diagram problem",
+    "difficulty": 3,
+    "problem": "In a group of 60 people, 32 like coffee, 28 like tea and 20 like juice. 14 like coffee and tea, 10 like coffee and juice, 8 like tea and juice, and 4 like all three beverages. Find:\n\n(a) the number who like exactly one beverage\n(b) the number who like none of the three beverages.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the number who like only coffee by subtracting all overlaps and adding back those counted twice.",
+        "working": "$$\\text{Only coffee} = |C| - |C \\cap T| - |C \\cap J| + |C \\cap T \\cap J|$$\n$$= 32 - 14 - 10 + 4 = 12$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the same formula for only tea and only juice.",
+        "working": "$$\\text{Only tea} = 28 - 14 - 8 + 4 = 10$$\n$$\\text{Only juice} = 20 - 10 - 8 + 4 = 6$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Sum the three 'only' regions to answer part (a).",
+        "working": "$$\\text{Exactly one beverage} = 12 + 10 + 6 = 28$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply the three-set inclusion-exclusion formula to find $|C \\cup T \\cup J|$, then subtract from 60 for part (b).",
+        "working": "$$|C \\cup T \\cup J| = 32 + 28 + 20 - 14 - 10 - 8 + 4 = 52$$\n$$\\text{None} = 60 - 52 = 8$$"
+      }
+    ],
+    "answer": "(a) 28 people like exactly one beverage. (b) 8 people like none of the three beverages."
+  }
+]

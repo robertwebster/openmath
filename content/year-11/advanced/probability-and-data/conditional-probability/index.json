@@ -1,0 +1,9 @@
+{
+  "id": "conditional-probability",
+  "title": "Conditional probability",
+  "topic": "probability-and-data",
+  "year": 11,
+  "strand": "Statistics and Probability",
+  "syllabusOutcome": "MAV-11-09",
+  "description": "Identify restricted sample spaces, apply the conditional probability formula $P(A \\mid B) = \\dfrac{P(A \\cap B)}{P(B)}$, and solve problems involving sequential events and independence."
+}

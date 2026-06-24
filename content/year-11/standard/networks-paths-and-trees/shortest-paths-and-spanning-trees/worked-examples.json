@@ -1,0 +1,84 @@
+[
+  {
+    "id": "sps-ex-1",
+    "title": "Identifying trees and counting edges in a spanning tree",
+    "difficulty": 1,
+    "problem": "A connected network has $6$ vertices. (a) How many edges must a spanning tree of this network have? (b) A connected subgraph of this network has $6$ vertices and $6$ edges. Is this subgraph a spanning tree? Give a reason.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the formula for the number of edges in a spanning tree.",
+        "working": "A spanning tree on $n$ vertices has exactly $n - 1$ edges. Here $n = 6$, so a spanning tree has $6 - 1 = 5$ edges."
+      },
+      {
+        "step": 2,
+        "instruction": "Compare the number of edges in the subgraph with the number required for a spanning tree.",
+        "working": "The subgraph has $6$ edges but a spanning tree on $6$ vertices must have exactly $5$ edges. The subgraph has one edge too many."
+      },
+      {
+        "step": 3,
+        "instruction": "State the conclusion using the definition of a tree.",
+        "working": "A tree is connected and contains no cycles. Having $6$ edges on $6$ vertices means the subgraph contains at least one cycle, so it is not a spanning tree."
+      }
+    ],
+    "answer": "(a) A spanning tree of this network has $5$ edges. (b) No — the subgraph has $6$ edges, but a spanning tree on $6$ vertices must have exactly $5$; the extra edge creates a cycle."
+  },
+  {
+    "id": "sps-ex-2",
+    "title": "Finding the minimum spanning tree using Kruskal's algorithm",
+    "difficulty": 2,
+    "problem": "A network has vertices $A$, $B$, $C$, $D$, $E$ with edges $AB$ (weight $4$), $AC$ (weight $2$), $BC$ (weight $1$), $BD$ (weight $5$), $CD$ (weight $3$) and $CE$ (weight $4$). Find the minimum spanning tree and state its total weight.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "List all edges in ascending order of weight.",
+        "working": "$BC$ (1), $AC$ (2), $CD$ (3), $AB$ (4), $CE$ (4), $BD$ (5)"
+      },
+      {
+        "step": 2,
+        "instruction": "Add the smallest edge. It connects two separate vertices, so no cycle is formed.",
+        "working": "Add $BC$ (weight $1$). Connected components: $B$–$C$ and the isolated vertices $A$, $D$, $E$."
+      },
+      {
+        "step": 3,
+        "instruction": "Continue adding edges in order, skipping any that would create a cycle.",
+        "working": "Add $AC$ (weight $2$): connects $A$ to the $B$–$C$ component. Components: $A$–$B$–$C$, $D$, $E$.\nAdd $CD$ (weight $3$): connects $D$. Components: $A$–$B$–$C$–$D$, $E$.\nSkip $AB$ (weight $4$): both $A$ and $B$ are already in the same component — adding this edge would create a cycle.\nAdd $CE$ (weight $4$): connects $E$. All $5$ vertices are now connected — stop."
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the total weight of the minimum spanning tree.",
+        "working": "MST edges: $BC$ (1), $AC$ (2), $CD$ (3), $CE$ (4).\n$$\\text{Total weight} = 1 + 2 + 3 + 4 = 10$$"
+      }
+    ],
+    "answer": "The minimum spanning tree uses edges $BC$, $AC$, $CD$ and $CE$ with total weight $10$."
+  },
+  {
+    "id": "sps-ex-3",
+    "title": "Finding the minimum spanning tree and shortest path",
+    "difficulty": 3,
+    "problem": "A network has vertices $A$, $B$, $C$, $D$, $E$ with edges $AB$ (weight $2$), $AC$ (weight $6$), $BC$ (weight $3$), $BD$ (weight $8$), $CD$ (weight $4$), $CE$ (weight $7$) and $DE$ (weight $5$). (a) Find the minimum spanning tree and state its total weight. (b) Find the shortest path from $A$ to $E$ and state its length. (c) Explain in one sentence why the path from $A$ to $E$ through the MST may differ from the shortest path.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Sort all edges by weight to prepare for Kruskal's algorithm.",
+        "working": "$AB$ (2), $BC$ (3), $CD$ (4), $DE$ (5), $AC$ (6), $CE$ (7), $BD$ (8)"
+      },
+      {
+        "step": 2,
+        "instruction": "Build the MST by adding edges one at a time, skipping any that create a cycle.",
+        "working": "Add $AB$ (2): connects $A$ and $B$.\nAdd $BC$ (3): connects $C$ to the $A$–$B$ component.\nAdd $CD$ (4): connects $D$.\nAdd $DE$ (5): connects $E$. All $5$ vertices are now connected — stop.\nMST edges: $AB$, $BC$, $CD$, $DE$.\n$$\\text{MST total weight} = 2 + 3 + 4 + 5 = 14$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the shortest path from $A$ to $E$ by evaluating all simple paths.",
+        "working": "$A$–$B$–$C$–$D$–$E$: $2 + 3 + 4 + 5 = 14$\n$A$–$B$–$C$–$E$: $2 + 3 + 7 = 12$\n$A$–$B$–$D$–$E$: $2 + 8 + 5 = 15$\n$A$–$C$–$E$: $6 + 7 = 13$\n$A$–$C$–$D$–$E$: $6 + 4 + 5 = 15$\nShortest path: $A$–$B$–$C$–$E$ with length $12$."
+      },
+      {
+        "step": 4,
+        "instruction": "Explain why the MST path and shortest path may differ.",
+        "working": "The MST excluded edge $CE$ (weight $7$) in favour of $DE$ (weight $5$) to keep the overall tree weight as low as possible. However, for travelling from $A$ to $E$ specifically, using $CE$ produces a shorter route. The MST optimises across the whole network; the shortest path optimises between two specific vertices."
+      }
+    ],
+    "answer": "(a) MST edges: $AB$, $BC$, $CD$, $DE$; total weight $= 14$. (b) Shortest path: $A$–$B$–$C$–$E$ with length $12$. (c) The MST minimises the total weight of edges connecting all vertices, not the distance between any specific pair, so an edge excluded from the MST may still lie on the shortest path between two vertices."
+  }
+]

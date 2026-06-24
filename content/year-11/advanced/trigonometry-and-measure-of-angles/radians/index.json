@@ -1,0 +1,11 @@
+{
+  "id": "radians",
+  "title": "Radians",
+  "topic": "trigonometry-and-measure-of-angles",
+  "year": 11,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Functions",
+  "syllabusOutcome": "MAV-11-04",
+  "description": "Convert between degrees and radians, apply radian measure to find arc length and sector area, and calculate segment area in composite problems."
+}

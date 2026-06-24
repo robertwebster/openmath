@@ -1,0 +1,74 @@
+[
+  {
+    "id": "pr-we-1",
+    "title": "Finding a probability and its complement",
+    "difficulty": 1,
+    "problem": "A bag contains 5 red counters, 3 blue counters and 2 yellow counters. A counter is drawn at random.\n\n(a) Find $P(\\text{red})$.\n(b) Find $P(\\text{not red})$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Count the total number of counters in the bag.",
+        "working": "$$|S| = 5 + 3 + 2 = 10$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply $P(A) = \\dfrac{|A|}{|S|}$ to find $P(\\text{red})$.",
+        "working": "$$P(\\text{red}) = \\frac{5}{10} = \\frac{1}{2}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the complement rule $P(\\bar{A}) = 1 - P(A)$ to find $P(\\text{not red})$.",
+        "working": "$$P(\\text{not red}) = 1 - \\frac{1}{2} = \\frac{1}{2}$$"
+      }
+    ],
+    "answer": "(a) $P(\\text{red}) = \\dfrac{1}{2}$. (b) $P(\\text{not red}) = \\dfrac{1}{2}$."
+  },
+  {
+    "id": "pr-we-2",
+    "title": "Applying the addition rule",
+    "difficulty": 2,
+    "problem": "In a class, the probability that a student owns a dog is $0.45$, the probability they own a cat is $0.30$, and the probability they own both is $0.15$. Find the probability that a student owns a dog or a cat.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the addition rule for two events.",
+        "working": "$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the values: $P(\\text{dog}) = 0.45$, $P(\\text{cat}) = 0.30$, $P(\\text{both}) = 0.15$.",
+        "working": "Let $D$ = owns a dog and $C$ = owns a cat.\n$$P(D) = 0.45, \\quad P(C) = 0.30, \\quad P(D \\cap C) = 0.15$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute into the addition rule.",
+        "working": "$$P(D \\cup C) = 0.45 + 0.30 - 0.15 = 0.60$$"
+      }
+    ],
+    "answer": "$P(\\text{dog or cat}) = 0.60$."
+  },
+  {
+    "id": "pr-we-3",
+    "title": "Using a two-way table and checking independence",
+    "difficulty": 3,
+    "problem": "The two-way table below classifies 80 students by whether they play sport and whether they play a musical instrument.\n\n| | Plays sport | Does not play sport | Total |\n|---|---|---|---|\n| Plays an instrument | 24 | 16 | 40 |\n| Does not play an instrument | 20 | 20 | 40 |\n| Total | 44 | 36 | 80 |\n\n(a) Find $P(\\text{plays sport AND plays an instrument})$.\n(b) Find $P(\\text{plays sport OR plays an instrument})$.\n(c) Determine whether playing sport and playing an instrument are independent events.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Read the joint frequency from the table to find part (a).",
+        "working": "$$P(\\text{sport} \\cap \\text{instrument}) = \\frac{24}{80} = \\frac{3}{10}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the marginal probabilities, then apply the addition rule for part (b).",
+        "working": "$$P(\\text{sport}) = \\frac{44}{80} = \\frac{11}{20}, \\quad P(\\text{instrument}) = \\frac{40}{80} = \\frac{1}{2}$$\n$$P(\\text{sport} \\cup \\text{instrument}) = \\frac{11}{20} + \\frac{1}{2} - \\frac{3}{10} = \\frac{11}{20} + \\frac{10}{20} - \\frac{6}{20} = \\frac{15}{20} = \\frac{3}{4}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Test independence by checking whether $P(A \\cap B) = P(A) \\times P(B)$ for part (c).",
+        "working": "$$P(\\text{sport}) \\times P(\\text{instrument}) = \\frac{11}{20} \\times \\frac{1}{2} = \\frac{11}{40}$$\n$$P(\\text{sport} \\cap \\text{instrument}) = \\frac{3}{10} = \\frac{12}{40}$$\nSince $\\dfrac{11}{40} \\ne \\dfrac{12}{40}$, the events are not independent."
+      }
+    ],
+    "answer": "(a) $\\dfrac{3}{10}$. (b) $\\dfrac{3}{4}$. (c) Not independent, since $P(\\text{sport}) \\times P(\\text{instrument}) = \\dfrac{11}{40} \\ne \\dfrac{3}{10} = P(\\text{sport} \\cap \\text{instrument})$."
+  }
+]

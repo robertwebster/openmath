@@ -1,0 +1,14 @@
+{
+  "id": "linear-relationships",
+  "title": "Linear relationships",
+  "year": 11,
+  "stage": "6",
+  "course": "standard",
+  "strand": "Algebra",
+  "syllabusOutcome": "MST-11-02",
+  "description": "Model linear relationships using gradient-intercept form and apply direct variation.",
+  "subtopics": [
+    "linear-modelling",
+    "direct-variation"
+  ]
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "dd-worked-1",
+    "title": "Classifying a variable and constructing a frequency table",
+    "difficulty": 1,
+    "problem": "A librarian records the number of books borrowed by each of 12 students during one week: $0, 2, 1, 0, 3, 2, 1, 0, 2, 1, 0, 3$.\n\n(a) Classify the variable \"number of books borrowed\" as categorical, numerical (discrete) or numerical (continuous).\n(b) Construct a frequency table for the data.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Decide whether the variable is categorical or numerical.",
+        "working": "The number of books borrowed is found by counting. It takes number values that can be ordered and compared in size, so it is a numerical variable."
+      },
+      {
+        "step": 2,
+        "instruction": "Decide whether the numerical variable is discrete or continuous.",
+        "working": "You can only borrow a whole number of books — values such as 1.5 are not possible. The variable can only take isolated whole-number values, so it is numerical (discrete)."
+      },
+      {
+        "step": 3,
+        "instruction": "List the distinct values that appear in the dataset.",
+        "working": "Reading through the data, the values that appear are $0, 1, 2$ and $3$. List these in order as the rows of the frequency table."
+      },
+      {
+        "step": 4,
+        "instruction": "Count the frequency of each value.",
+        "working": "Tally each value in the list $0, 2, 1, 0, 3, 2, 1, 0, 2, 1, 0, 3$:\n\n| Number of books | Frequency |\n|---|---|\n| $0$ | $4$ |\n| $1$ | $3$ |\n| $2$ | $3$ |\n| $3$ | $2$ |\n| **Total** | **12** |"
+      },
+      {
+        "step": 5,
+        "instruction": "Check that the frequencies sum to the total number of students.",
+        "working": "$4 + 3 + 3 + 2 = 12$ ✓"
+      }
+    ],
+    "answer": "The variable is numerical (discrete). Frequency table: $0 \\to 4$, $1 \\to 3$, $2 \\to 3$, $3 \\to 2$ (total: 12 students)."
+  },
+  {
+    "id": "dd-worked-2",
+    "title": "Describing distribution shape and calculating relative frequency",
+    "difficulty": 2,
+    "problem": "The frequency table below shows the distances (in km) that 25 Year 11 students travel to school each day.\n\n| Distance (km) | Frequency |\n|---|---|\n| $0$–$<5$ | $10$ |\n| $5$–$<10$ | $8$ |\n| $10$–$<15$ | $4$ |\n| $15$–$<20$ | $2$ |\n| $20$–$<25$ | $1$ |\n\n(a) Describe the shape of the histogram drawn from this table.\n(b) Find the relative frequency of the class $0$–$<5$ km, expressed as a simplified fraction.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Read the frequencies to identify where the data is concentrated.",
+        "working": "The frequencies are $10, 8, 4, 2, 1$ — they decrease steadily from the first class to the last. Most students travel a short distance; very few travel $15$ km or more."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the tail and describe the shape.",
+        "working": "The data is concentrated at the left (lower values) with a long tail extending to the right (higher values). This is a positively skewed distribution."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the total frequency.",
+        "working": "Total $= 10 + 8 + 4 + 2 + 1 = 25$ students."
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the relative frequency of the $0$–$<5$ km class.",
+        "working": "Relative frequency $= \\dfrac{\\text{class frequency}}{\\text{total frequency}} = \\dfrac{10}{25} = \\dfrac{2}{5}$"
+      }
+    ],
+    "answer": "The distribution is positively skewed. The relative frequency of the $0$–$<5$ km class is $\\dfrac{2}{5}$."
+  },
+  {
+    "id": "dd-worked-3",
+    "title": "Identifying a misleading feature in a graph",
+    "difficulty": 3,
+    "problem": "A local council presents a bar chart showing the number of potholes repaired each quarter. The vertical axis begins at $180$ rather than $0$, and shows four bars: Q1 $= 183$, Q2 $= 186$, Q3 $= 185$, Q4 $= 189$. The council spokesperson claims: \"Our repair rate tripled from Q1 to Q4.\"\n\nIdentify the misleading feature of the chart and explain whether the spokesperson's claim is justified.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the misleading feature of the chart.",
+        "working": "The vertical axis begins at $180$ rather than at $0$. This is called a truncated axis — it cuts off the lower portion of the scale."
+      },
+      {
+        "step": 2,
+        "instruction": "Determine the visual impression created by the truncated axis.",
+        "working": "With the axis starting at $180$, the visible bar heights above the baseline are:\n- Q1: $183 - 180 = 3$ units\n- Q4: $189 - 180 = 9$ units\n\nThe Q4 bar appears $\\dfrac{9}{3} = 3$ times taller than the Q1 bar in the chart."
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the actual change in the number of potholes repaired.",
+        "working": "Actual increase $= 189 - 183 = 6$ potholes.\n\nPercentage increase $= \\dfrac{6}{183} \\times 100 \\approx 3.3\\%$"
+      },
+      {
+        "step": 4,
+        "instruction": "Compare the visual impression with the actual data and evaluate the claim.",
+        "working": "The chart makes Q4 look three times as high as Q1, but the actual increase is only about $3.3\\%$ — far from a tripling. The spokesperson's claim is not justified. If the axis started at $0$, all four bars would be nearly identical in height, accurately showing that the number of repairs changed very little across the year."
+      }
+    ],
+    "answer": "The misleading feature is the truncated vertical axis, which starts at $180$ instead of $0$. The Q4 bar appears three times taller than Q1 in the chart (9 vs. 3 units above the baseline), creating the impression of a tripling. The actual increase is $6$ potholes — approximately $3.3\\%$. The spokesperson's claim is not justified."
+  }
+]

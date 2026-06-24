@@ -1,0 +1,109 @@
+[
+  {
+    "id": "qbo-worked-1",
+    "title": "Finding quartiles and IQR",
+    "difficulty": 1,
+    "problem": "The number of hours of screen time recorded for 7 students, listed in order, are: $5, 9, 13, 17, 21, 25, 29$. Find $Q_1$, $Q_2$, $Q_3$ and the IQR.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Count the values and locate the median ($Q_2$).",
+        "working": "There are 7 values. The median is the middle (4th) value.\n\n$$5, 9, 13, \\mathbf{17}, 21, 25, 29$$\n\n$Q_2 = 17$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the lower half (values below $Q_2$) and find $Q_1$.",
+        "working": "Lower half: $5, 9, 13$\n\n$Q_1$ is the middle value of the lower half: $Q_1 = 9$"
+      },
+      {
+        "step": 3,
+        "instruction": "Identify the upper half (values above $Q_2$) and find $Q_3$.",
+        "working": "Upper half: $21, 25, 29$\n\n$Q_3$ is the middle value of the upper half: $Q_3 = 25$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the interquartile range.",
+        "working": "$$\\text{IQR} = Q_3 - Q_1 = 25 - 9 = 16$$"
+      }
+    ],
+    "answer": "$Q_1 = 9$, $Q_2 = 17$, $Q_3 = 25$, IQR $= 16$"
+  },
+  {
+    "id": "qbo-worked-2",
+    "title": "Five-number summary and outlier test",
+    "difficulty": 2,
+    "problem": "A dataset of 8 values, listed in order, is: $10, 14, 18, 22, 26, 30, 34, 60$. Construct the five-number summary and determine whether 60 is an outlier.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the median ($Q_2$). With 8 values, it is the average of the 4th and 5th values.",
+        "working": "$$Q_2 = \\frac{22 + 26}{2} = 24$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find $Q_1$ as the median of the lower half: $10, 14, 18, 22$.",
+        "working": "$$Q_1 = \\frac{14 + 18}{2} = 16$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find $Q_3$ as the median of the upper half: $26, 30, 34, 60$.",
+        "working": "$$Q_3 = \\frac{30 + 34}{2} = 32$$"
+      },
+      {
+        "step": 4,
+        "instruction": "State the five-number summary.",
+        "working": "$$\\{\\text{min},\\ Q_1,\\ Q_2,\\ Q_3,\\ \\text{max}\\} = \\{10,\\ 16,\\ 24,\\ 32,\\ 60\\}$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Calculate the IQR and find the upper fence.",
+        "working": "$$\\text{IQR} = 32 - 16 = 16$$\n\n$$\\text{Upper fence} = Q_3 + 1.5 \\times \\text{IQR} = 32 + 1.5 \\times 16 = 32 + 24 = 56$$"
+      },
+      {
+        "step": 6,
+        "instruction": "Compare the maximum value to the upper fence.",
+        "working": "$60 > 56$, so the value 60 lies beyond the upper fence. It is an outlier."
+      }
+    ],
+    "answer": "Five-number summary: $\\{10, 16, 24, 32, 60\\}$. The value 60 is an outlier (upper fence $= 56$)."
+  },
+  {
+    "id": "qbo-worked-3",
+    "title": "Interpreting parallel box plots and the effect of removing an outlier",
+    "difficulty": 3,
+    "problem": "Two datasets are displayed as parallel box plots with the following five-number summaries.\n\nDataset A: min $= 20$, $Q_1 = 35$, $Q_2 = 45$, $Q_3 = 65$, max $= 80$\n\nDataset B: min $= 30$, $Q_1 = 50$, $Q_2 = 65$, $Q_3 = 75$, max $= 85$\n\n(a) Compare the centre, spread and shape of the two distributions.\n\n(b) Dataset B consists of 6 values with a mean of 62. The value 85 is removed as an outlier. Find the mean of the remaining 5 values.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Compare the medians (centre).",
+        "working": "$Q_2$ for Dataset A $= 45$; $Q_2$ for Dataset B $= 65$.\n\nDataset B has a higher centre — a typical value in Dataset B is about 20 units higher than in Dataset A."
+      },
+      {
+        "step": 2,
+        "instruction": "Compare the IQRs (spread of the middle 50%).",
+        "working": "$$\\text{IQR}_A = 65 - 35 = 30$$\n\n$$\\text{IQR}_B = 75 - 50 = 25$$\n\nDataset A has a greater IQR, so its middle 50% of values are more spread out."
+      },
+      {
+        "step": 3,
+        "instruction": "Assess the shape of Dataset A.",
+        "working": "Distance from $Q_1$ to $Q_2$: $45 - 35 = 10$\n\nDistance from $Q_2$ to $Q_3$: $65 - 45 = 20$\n\nThe median is closer to $Q_1$, indicating a longer upper section. Dataset A is positively skewed."
+      },
+      {
+        "step": 4,
+        "instruction": "Assess the shape of Dataset B.",
+        "working": "Distance from $Q_1$ to $Q_2$: $65 - 50 = 15$\n\nDistance from $Q_2$ to $Q_3$: $75 - 65 = 10$\n\nThe median is closer to $Q_3$, indicating a longer lower section. Dataset B is negatively skewed."
+      },
+      {
+        "step": 5,
+        "instruction": "Find the total sum for Dataset B before removing the outlier.",
+        "working": "$$\\text{Sum} = n \\times \\bar{x} = 6 \\times 62 = 372$$"
+      },
+      {
+        "step": 6,
+        "instruction": "Remove the outlier and find the new mean.",
+        "working": "$$\\text{New sum} = 372 - 85 = 287$$\n\n$$\\text{New mean} = \\frac{287}{5} = 57.4$$\n\nRemoving the outlier of 85 reduces the mean from 62 to 57.4."
+      }
+    ],
+    "answer": "Dataset B has a higher median; Dataset A has a greater IQR. Dataset A is positively skewed; Dataset B is negatively skewed. After removing 85, the mean of Dataset B is $57.4$."
+  }
+]

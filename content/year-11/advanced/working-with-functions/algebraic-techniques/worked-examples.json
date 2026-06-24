@@ -1,0 +1,84 @@
+[
+  {
+    "id": "alg-tech-we-1",
+    "title": "Simplifying an expression using index laws",
+    "difficulty": 1,
+    "problem": "Simplify $\\dfrac{(x^2)^3 \\times x^4}{x^2}$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the power of a power law $(x^m)^n = x^{mn}$ to the numerator's first factor.",
+        "working": "$$(x^2)^3 = x^{2 \\times 3} = x^6$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the multiplication law $x^m \\times x^n = x^{m+n}$ to multiply the two powers in the numerator.",
+        "working": "$$x^6 \\times x^4 = x^{6+4} = x^{10}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the division law $\\dfrac{x^m}{x^n} = x^{m-n}$ to divide by the denominator.",
+        "working": "$$\\frac{x^{10}}{x^2} = x^{10-2} = x^8$$"
+      }
+    ],
+    "answer": "$\\dfrac{(x^2)^3 \\times x^4}{x^2} = x^8$"
+  },
+  {
+    "id": "alg-tech-we-2",
+    "title": "Factorising a quadratic fully",
+    "difficulty": 2,
+    "problem": "Factorise $2x^2 + 2x - 12$ fully.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify and take out the highest common factor (HCF) of all three terms.",
+        "working": "$$2x^2 + 2x - 12 = 2(x^2 + x - 6)$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Factorise the trinomial $x^2 + x - 6$ by finding two numbers that multiply to $-6$ and add to $1$.",
+        "working": "$$3 \\times (-2) = -6 \\quad \\text{and} \\quad 3 + (-2) = 1$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the factorised form of the trinomial.",
+        "working": "$$x^2 + x - 6 = (x + 3)(x - 2)$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Include the common factor to give the complete factorisation.",
+        "working": "$$2x^2 + 2x - 12 = 2(x + 3)(x - 2)$$"
+      }
+    ],
+    "answer": "$2x^2 + 2x - 12 = 2(x+3)(x-2)$"
+  },
+  {
+    "id": "alg-tech-we-3",
+    "title": "Using the discriminant to determine the nature of roots",
+    "difficulty": 3,
+    "problem": "For the quadratic $y = 3x^2 - 6x + 4$, calculate the discriminant and determine how many $x$-intercepts the parabola has.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the values of $a$, $b$ and $c$ from $y = ax^2 + bx + c$.",
+        "working": "$$a = 3, \\quad b = -6, \\quad c = 4$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute into the discriminant formula $\\Delta = b^2 - 4ac$.",
+        "working": "$$\\Delta = (-6)^2 - 4(3)(4) = 36 - 48 = -12$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the sign of $\\Delta$. Since $\\Delta < 0$, the quadratic has no real roots.",
+        "working": "$$\\Delta = -12 < 0 \\implies \\text{no real roots}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "State the geometric interpretation: the number of $x$-intercepts equals the number of real roots.",
+        "working": "$$\\text{No real roots} \\implies \\text{the parabola does not cross or touch the } x\\text{-axis}$$"
+      }
+    ],
+    "answer": "$\\Delta = -12$. Since $\\Delta < 0$, the parabola $y = 3x^2 - 6x + 4$ has no $x$-intercepts."
+  }
+]

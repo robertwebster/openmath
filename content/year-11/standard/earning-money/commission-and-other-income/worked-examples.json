@@ -1,0 +1,94 @@
+[
+  {
+    "id": "cai-ex-1",
+    "title": "Flat-rate commission on total sales",
+    "difficulty": 1,
+    "problem": "A real estate agent earns a commission of $2.2\\%$ on all property sales. In one month they sold properties totalling $\\$1\\,350\\,000$. Calculate the agent's commission for the month.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the commission rate and total sales value.",
+        "working": "Commission rate $= 2.2\\% = 0.022$, total sales $= \\$1\\,350\\,000$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the formula: commission $=$ rate $\\times$ total sales.",
+        "working": "$$\\text{Commission} = 0.022 \\times \\$1\\,350\\,000$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the commission.",
+        "working": "$$\\text{Commission} = \\$29\\,700.00$$"
+      }
+    ],
+    "answer": "$\\$29\\,700.00$"
+  },
+  {
+    "id": "cai-ex-2",
+    "title": "Sliding-scale commission across three brackets",
+    "difficulty": 2,
+    "problem": "A salesperson earns commission on a sliding scale: $2\\%$ on the first $\\$20\\,000$ of monthly sales, $4\\%$ on the next $\\$30\\,000$, and $6\\%$ on any sales above $\\$50\\,000$. In June they achieved sales of $\\$75\\,000$. Calculate their total commission.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate commission on the first bracket: $2\\%$ on $\\$20\\,000$.",
+        "working": "$$2\\% \\times \\$20\\,000 = 0.02 \\times \\$20\\,000 = \\$400$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate commission on the second bracket: $4\\%$ on the next $\\$30\\,000$.",
+        "working": "$$4\\% \\times \\$30\\,000 = 0.04 \\times \\$30\\,000 = \\$1\\,200$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the sales above $\\$50\\,000$ and apply the $6\\%$ rate.",
+        "working": "$$\\$75\\,000 - \\$50\\,000 = \\$25\\,000$$\n$$6\\% \\times \\$25\\,000 = 0.06 \\times \\$25\\,000 = \\$1\\,500$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add the three bracket amounts to find the total commission.",
+        "working": "$$\\text{Total commission} = \\$400 + \\$1\\,200 + \\$1\\,500 = \\$3\\,100$$"
+      }
+    ],
+    "answer": "$\\$3\\,100.00$"
+  },
+  {
+    "id": "cai-ex-3",
+    "title": "Retainer plus sliding-scale commission compared with a salary",
+    "difficulty": 3,
+    "problem": "Daniela works as a sales consultant. She receives a monthly retainer of $\\$1\\,800$ plus commission at $2\\%$ on the first $\\$30\\,000$ of monthly sales and $4.5\\%$ on any sales above $\\$30\\,000$. In a typical month, Daniela achieves sales of $\\$55\\,000$.\n\n(a) Calculate Daniela's typical monthly income.\n\n(b) A competitor offers Daniela a salaried position paying $\\$48\\,000$ per year. Which option pays more annually, and by how much?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate commission on the first bracket: $2\\%$ on $\\$30\\,000$.",
+        "working": "$$2\\% \\times \\$30\\,000 = 0.02 \\times \\$30\\,000 = \\$600$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the sales above $\\$30\\,000$ and apply the $4.5\\%$ rate.",
+        "working": "$$\\$55\\,000 - \\$30\\,000 = \\$25\\,000$$\n$$4.5\\% \\times \\$25\\,000 = 0.045 \\times \\$25\\,000 = \\$1\\,125$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the total monthly commission.",
+        "working": "$$\\text{Total commission} = \\$600 + \\$1\\,125 = \\$1\\,725$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add the retainer to find the total monthly income.",
+        "working": "$$\\text{Monthly income} = \\$1\\,800 + \\$1\\,725 = \\$3\\,525$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Multiply the monthly income by $12$ to find the annual income.",
+        "working": "$$\\text{Annual income} = \\$3\\,525 \\times 12 = \\$42\\,300$$"
+      },
+      {
+        "step": 6,
+        "instruction": "Compare the annual commission-based income with the salary offer.",
+        "working": "$$\\$48\\,000 - \\$42\\,300 = \\$5\\,700$$\n\nThe salaried position pays $\\$5\\,700$ more per year."
+      }
+    ],
+    "answer": "(a) $\\$3\\,525.00$ per month. (b) The salaried position pays more, by $\\$5\\,700$ per year."
+  }
+]

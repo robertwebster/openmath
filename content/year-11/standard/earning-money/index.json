@@ -1,0 +1,15 @@
+{
+  "id": "earning-money",
+  "title": "Earning money",
+  "year": 11,
+  "stage": "6",
+  "course": "standard",
+  "strand": "Number",
+  "syllabusOutcome": "MST-11-03",
+  "description": "Calculate wages, salaries, commission, piecework, and taxation to find net income.",
+  "subtopics": [
+    "wages-and-salaries",
+    "commission-and-other-income",
+    "taxation"
+  ]
+}

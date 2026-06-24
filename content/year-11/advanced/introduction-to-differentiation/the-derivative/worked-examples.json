@@ -1,0 +1,79 @@
+[
+  {
+    "id": "deriv-worked-1",
+    "title": "Using the power rule to find the gradient at a point",
+    "difficulty": 1,
+    "problem": "Let $f(x) = 5x^3$. Find $f'(x)$ and state the gradient of the curve at $x = 2$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the power rule and identify $n$.",
+        "working": "The power rule states $\\dfrac{d}{dx}(x^n) = nx^{n-1}$. Here $f(x) = 5x^3$, so $n = 3$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the scalar multiple rule to differentiate.",
+        "working": "$f'(x) = 5 \\times 3x^{3-1} = 15x^2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate the derivative at $x = 2$ to find the gradient.",
+        "working": "$f'(2) = 15 \\times (2)^2 = 15 \\times 4 = 60$"
+      }
+    ],
+    "answer": "The gradient of $y = 5x^3$ at $x = 2$ is $60$."
+  },
+  {
+    "id": "deriv-worked-2",
+    "title": "Differentiating a polynomial and evaluating the gradient of the tangent",
+    "difficulty": 2,
+    "problem": "Let $f(x) = 2x^3 - 5x^2 + 4x - 1$. Find $f'(x)$ and the gradient of the tangent at $x = 3$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Differentiate each term using the power rule and sum rule.",
+        "working": "$\\dfrac{d}{dx}(2x^3) = 6x^2, \\quad \\dfrac{d}{dx}(-5x^2) = -10x, \\quad \\dfrac{d}{dx}(4x) = 4, \\quad \\dfrac{d}{dx}(-1) = 0$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the full derivative.",
+        "working": "$f'(x) = 6x^2 - 10x + 4$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $x = 3$ to find the gradient of the tangent.",
+        "working": "$f'(3) = 6(3)^2 - 10(3) + 4 = 54 - 30 + 4 = 28$"
+      }
+    ],
+    "answer": "The gradient of the tangent at $x = 3$ is $28$."
+  },
+  {
+    "id": "deriv-worked-3",
+    "title": "Finding the derivative from first principles",
+    "difficulty": 3,
+    "problem": "Use the definition $f'(x) = \\lim_{h \\to 0} \\dfrac{f(x+h) - f(x)}{h}$ to find the derivative of $f(x) = x^2 + 3x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find $f(x + h)$ by substituting $x + h$ into the rule for $f$.",
+        "working": "$f(x+h) = (x+h)^2 + 3(x+h) = x^2 + 2xh + h^2 + 3x + 3h$"
+      },
+      {
+        "step": 2,
+        "instruction": "Subtract $f(x)$ to form the numerator of the difference quotient.",
+        "working": "$f(x+h) - f(x) = (x^2 + 2xh + h^2 + 3x + 3h) - (x^2 + 3x) = 2xh + h^2 + 3h$"
+      },
+      {
+        "step": 3,
+        "instruction": "Divide by $h$. Factor $h$ from the numerator and cancel.",
+        "working": "$\\dfrac{f(x+h) - f(x)}{h} = \\dfrac{h(2x + h + 3)}{h} = 2x + h + 3$"
+      },
+      {
+        "step": 4,
+        "instruction": "Take the limit as $h \\to 0$. The term $h$ vanishes.",
+        "working": "$f'(x) = \\lim_{h \\to 0}(2x + h + 3) = 2x + 3$"
+      }
+    ],
+    "answer": "$f'(x) = 2x + 3$"
+  }
+]

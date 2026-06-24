@@ -1,0 +1,18 @@
+{
+  "id": "working-with-functions",
+  "title": "Working with functions",
+  "year": 11,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Algebra and Functions",
+  "syllabusOutcome": "MAV-11-01",
+  "description": "Apply algebraic techniques and work with linear, quadratic, cubic, reciprocal, absolute value and piecewise functions.",
+  "subtopics": [
+    "algebraic-techniques",
+    "introduction-to-functions",
+    "linear-and-quadratic-functions",
+    "cubic-and-reciprocal-functions",
+    "properties-of-functions",
+    "variation-and-modelling"
+  ]
+}

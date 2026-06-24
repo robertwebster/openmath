@@ -1,0 +1,15 @@
+{
+  "id": "managing-money",
+  "title": "Managing money",
+  "year": 11,
+  "stage": "6",
+  "course": "standard",
+  "strand": "Number",
+  "syllabusOutcome": "MST-11-04",
+  "description": "Calculate discounts, GST, currency exchange, vehicle costs and create personal budgets.",
+  "subtopics": [
+    "purchasing-goods",
+    "vehicle-costs",
+    "budgeting"
+  ]
+}

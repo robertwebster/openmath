@@ -1,0 +1,15 @@
+{
+  "id": "trigonometric-identities-and-equations",
+  "title": "Trigonometric identities and equations",
+  "year": 11,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Functions",
+  "syllabusOutcome": "MAV-11-05",
+  "description": "Define reciprocal trig ratios, apply Pythagorean and complementary identities, and prove and solve trig equations.",
+  "subtopics": [
+    "reciprocal-trig-ratios",
+    "trigonometric-identities",
+    "trigonometric-equations"
+  ]
+}

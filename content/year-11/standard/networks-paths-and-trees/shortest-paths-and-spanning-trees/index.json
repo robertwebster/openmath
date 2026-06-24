@@ -1,0 +1,9 @@
+{
+  "id": "shortest-paths-and-spanning-trees",
+  "title": "Shortest paths and spanning trees",
+  "topic": "networks-paths-and-trees",
+  "year": 11,
+  "strand": "Discrete Mathematics",
+  "syllabusOutcome": "MST-11-07",
+  "description": "Identify trees and spanning trees in a network; find the minimum spanning tree and the shortest path between two vertices and explain why these may differ."
+}

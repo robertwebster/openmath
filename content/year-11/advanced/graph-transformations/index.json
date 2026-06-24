@@ -1,0 +1,11 @@
+{
+  "id": "graph-transformations",
+  "title": "Graph transformations",
+  "year": 11,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Functions",
+  "syllabusOutcome": "MAV-11-03",
+  "description": "Apply reflections, translations, dilations and combined transformations; work with circles.",
+  "subtopics": ["reflections-and-translations", "dilations-and-combined-transformations", "circles"]
+}

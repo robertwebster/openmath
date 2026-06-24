@@ -1,0 +1,178 @@
+[
+  {
+    "id": "drv-1-1",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which of the following is a discrete random variable?",
+    "options": [
+      "The height of a randomly selected student",
+      "The time taken to run 400 m",
+      "The number of cars passing through an intersection in one hour",
+      "The volume of water in a tank"
+    ],
+    "answer": "The number of cars passing through an intersection in one hour",
+    "hint": "A discrete variable takes countable values (e.g. 0, 1, 2, 3, ...). A continuous variable takes any value in an interval.",
+    "explanation": "The number of cars is a count and can only take non-negative integer values (0, 1, 2, 3, ...), so it is a discrete random variable. Height, time and volume are measured quantities that can take any value in a range, making them continuous."
+  },
+  {
+    "id": "drv-1-2",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which of the following is a continuous random variable?",
+    "options": [
+      "The number of goals scored in a match",
+      "The number of students absent from school on a given day",
+      "The mass (in kg) of a randomly selected orange",
+      "The number of text messages sent in a day"
+    ],
+    "answer": "The mass (in kg) of a randomly selected orange",
+    "hint": "Ask yourself: can the variable take any value in a range, or only specific separate values?",
+    "explanation": "Mass is a measured quantity that can take any value within a range (e.g. 0.142 kg, 0.1423 kg), so it is continuous. Goals, absent students and text messages are all counts and can only take non-negative integer values, making them discrete."
+  },
+  {
+    "id": "drv-1-3",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The number of siblings reported by 10 students is listed below.\n\n$$0,\\; 2,\\; 1,\\; 2,\\; 0,\\; 3,\\; 2,\\; 1,\\; 0,\\; 1$$\n\nHow many students reported having 2 siblings?",
+    "answer": 3,
+    "tolerance": 0,
+    "hint": "Work through the list and count every time the value 2 appears.",
+    "explanation": "Going through the list: $0, \\mathbf{2}, 1, \\mathbf{2}, 0, 3, \\mathbf{2}, 1, 0, 1$. The value 2 appears at positions 2, 4 and 7 — a total of 3 times."
+  },
+  {
+    "id": "drv-1-4",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 1,
+    "type": "fraction",
+    "stem": "The number of siblings reported by 10 students is listed below.\n\n$$0,\\; 2,\\; 1,\\; 2,\\; 0,\\; 3,\\; 2,\\; 1,\\; 0,\\; 1$$\n\nExpress the relative frequency of reporting 0 siblings as a fraction in simplest form.",
+    "answer": "3/10",
+    "tolerance": 0,
+    "hint": "Count how many times 0 appears, then divide by the total number of students.",
+    "explanation": "The value 0 appears at positions 1, 5 and 9 — a total of 3 times out of 10 students. The relative frequency is $\\dfrac{3}{10}$, which is already in simplest form."
+  },
+  {
+    "id": "drv-2-1",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "The number of books read last month by 25 students is summarised in the table below.\n\n| Books | Frequency | Relative frequency | Cumulative relative frequency |\n|---|---|---|---|\n| 0 | 3 | 0.12 | 0.12 |\n| 1 | 7 | 0.28 | 0.40 |\n| 2 | 9 | 0.36 | 0.76 |\n| 3 | 4 | 0.16 | 0.92 |\n| 4 | 2 | 0.08 | 1.00 |\n\nWhat is the cumulative relative frequency for 2 books or fewer?",
+    "answer": 0.76,
+    "tolerance": 0.01,
+    "hint": "Add the relative frequencies for 0, 1 and 2 books, or read the value directly from the cumulative relative frequency column.",
+    "explanation": "The cumulative relative frequency for 2 books or fewer is $0.12 + 0.28 + 0.36 = 0.76$. This means 76% of students read 2 or fewer books."
+  },
+  {
+    "id": "drv-2-2",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "The number of books read last month by 25 students is summarised in the table below.\n\n| Books | Frequency | Relative frequency | Cumulative relative frequency |\n|---|---|---|---|\n| 0 | 3 | 0.12 | 0.12 |\n| 1 | 7 | 0.28 | 0.40 |\n| 2 | 9 | 0.36 | 0.76 |\n| 3 | 4 | 0.16 | 0.92 |\n| 4 | 2 | 0.08 | 1.00 |\n\nUsing the cumulative relative frequency, estimate the median number of books read. The median is the first value at which the cumulative relative frequency reaches or exceeds 0.50.",
+    "answer": 2,
+    "tolerance": 0,
+    "hint": "Find the first row where the cumulative relative frequency is at least 0.50.",
+    "explanation": "The cumulative relative frequency is 0.40 at 1 book (below 0.50) and 0.76 at 2 books (at or above 0.50). The median is therefore estimated as 2 books."
+  },
+  {
+    "id": "drv-2-3",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Twenty students sat a quiz scored out of 5. Their scores are summarised below.\n\n| Score | Frequency | Relative frequency | Cumulative relative frequency |\n|---|---|---|---|\n| 1 | 2 | 0.10 | 0.10 |\n| 2 | 4 | 0.20 | 0.30 |\n| 3 | 8 | 0.40 | 0.70 |\n| 4 | 5 | 0.25 | 0.95 |\n| 5 | 1 | 0.05 | 1.00 |\n\nEstimate the lower quartile $Q_1$. The lower quartile is the first value at which the cumulative relative frequency reaches or exceeds 0.25.",
+    "answer": 2,
+    "tolerance": 0,
+    "hint": "Find the first score whose cumulative relative frequency is at least 0.25.",
+    "explanation": "The cumulative relative frequency is 0.10 at score 1 (below 0.25) and 0.30 at score 2 (at or above 0.25). So $Q_1 = 2$."
+  },
+  {
+    "id": "drv-2-4",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Twenty students sat a quiz scored out of 5. Their scores are summarised below.\n\n| Score | Frequency | Relative frequency | Cumulative relative frequency |\n|---|---|---|---|\n| 1 | 2 | 0.10 | 0.10 |\n| 2 | 4 | 0.20 | 0.30 |\n| 3 | 8 | 0.40 | 0.70 |\n| 4 | 5 | 0.25 | 0.95 |\n| 5 | 1 | 0.05 | 1.00 |\n\nEstimate the upper quartile $Q_3$. The upper quartile is the first value at which the cumulative relative frequency reaches or exceeds 0.75.",
+    "answer": 4,
+    "tolerance": 0,
+    "hint": "Find the first score whose cumulative relative frequency is at least 0.75.",
+    "explanation": "The cumulative relative frequency is 0.70 at score 3 (below 0.75) and 0.95 at score 4 (at or above 0.75). So $Q_3 = 4$."
+  },
+  {
+    "id": "drv-3-1",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 3,
+    "type": "fraction",
+    "stem": "A four-sector spinner labelled 1, 2, 3 and 4 is spun 80 times. Sector 3 lands face up 16 times. Using relative frequency as an estimate of probability, find $P(\\text{sector 3})$ from this experiment. Give your answer as a fraction in simplest form.",
+    "answer": "1/5",
+    "tolerance": 0,
+    "hint": "Relative frequency = number of times the event occurred $\\div$ total number of trials.",
+    "explanation": "The relative frequency estimate is $\\dfrac{16}{80} = \\dfrac{1}{5}$. This is used as an estimate for the probability of landing on sector 3 based on this experiment."
+  },
+  {
+    "id": "drv-3-2",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "For a fair four-sector spinner, the theoretical probability of landing on any one sector is $\\dfrac{1}{4} = 0.25$. In 80 spins, sector 3 appeared 16 times, giving a relative frequency of $\\dfrac{1}{5} = 0.20$. Which statement best explains the discrepancy between these two values?",
+    "options": [
+      "The spinner must be biased, since the relative frequency differs from the theoretical probability.",
+      "With a larger number of spins, the relative frequency would be expected to be closer to $\\dfrac{1}{4}$.",
+      "Relative frequency always equals the theoretical probability when the spinner is fair.",
+      "The theoretical probability should be recalculated using the experimental data."
+    ],
+    "answer": "With a larger number of spins, the relative frequency would be expected to be closer to $\\dfrac{1}{4}$.",
+    "hint": "Consider what happens to relative frequency as the number of trials increases.",
+    "explanation": "A discrepancy between relative frequency and theoretical probability is expected with a small sample. As the number of trials increases, the relative frequency tends to approach the theoretical probability. A single experiment with 80 trials is not sufficient to conclude that the spinner is biased."
+  },
+  {
+    "id": "drv-3-3",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 3,
+    "type": "fraction",
+    "stem": "A factory tests 150 light bulbs from a production run and finds 9 defective bulbs. Use relative frequency to estimate the probability that a randomly selected bulb from this production run is defective. Give your answer as a fraction in simplest form.",
+    "answer": "3/50",
+    "tolerance": 0,
+    "hint": "Divide the number of defective bulbs by the total number tested.",
+    "explanation": "The relative frequency estimate is $\\dfrac{9}{150} = \\dfrac{3}{50}$. This serves as an estimate of the probability that a randomly selected bulb is defective."
+  },
+  {
+    "id": "drv-3-4",
+    "subtopic": "data-and-random-variables",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A fair die is rolled in two experiments.\n\n- Experiment A: 30 rolls, a 6 appears 3 times. Relative frequency $= \\dfrac{3}{30} = 0.100$.\n- Experiment B: 300 rolls, a 6 appears 42 times. Relative frequency $= \\dfrac{42}{300} = 0.140$.\n\nThe theoretical probability of rolling a 6 is $\\dfrac{1}{6} \\approx 0.167$. Which experiment gives a relative frequency closer to the theoretical probability?",
+    "options": [
+      "Experiment A, since fewer rolls means the result is more reliable.",
+      "Experiment B, since the larger sample gives a relative frequency closer to $\\dfrac{1}{6}$.",
+      "Both experiments are equally reliable.",
+      "Neither experiment is reliable because neither result equals $\\dfrac{1}{6}$ exactly."
+    ],
+    "answer": "Experiment B, since the larger sample gives a relative frequency closer to $\\dfrac{1}{6}$.",
+    "hint": "Calculate how far each relative frequency is from $\\dfrac{1}{6} \\approx 0.167$.",
+    "explanation": "The deviation of Experiment A from the theoretical probability is $|0.100 - 0.167| = 0.067$. The deviation of Experiment B is $|0.140 - 0.167| = 0.027$. Experiment B is closer. A larger sample generally produces a relative frequency closer to the theoretical probability."
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "log-fn-we-1",
+    "title": "Converting between index and logarithmic form",
+    "difficulty": 1,
+    "problem": "Write $4^3 = 64$ in logarithmic form. Hence evaluate $\\log_4 64$ and $\\log_4 1$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the definition connecting index and logarithmic form.",
+        "working": "$$a^x = y \\iff \\log_a y = x$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the definition to $4^3 = 64$ (here $a = 4$, $x = 3$, $y = 64$).",
+        "working": "$$4^3 = 64 \\iff \\log_4 64 = 3$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate $\\log_4 1$ using the identity $\\log_a 1 = 0$, which holds because $a^0 = 1$ for any valid base.",
+        "working": "$$4^0 = 1 \\implies \\log_4 1 = 0$$"
+      }
+    ],
+    "answer": "$\\log_4 64 = 3$ and $\\log_4 1 = 0$."
+  },
+  {
+    "id": "log-fn-we-2",
+    "title": "Applying log laws to simplify an expression",
+    "difficulty": 2,
+    "problem": "Simplify $\\log_2 48 - \\log_2 3 + \\log_2 4$ without a calculator.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the quotient law to the first two terms: $\\log_a m - \\log_a n = \\log_a\\!\\left(\\dfrac{m}{n}\\right)$.",
+        "working": "$$\\log_2 48 - \\log_2 3 = \\log_2\\!\\left(\\frac{48}{3}\\right) = \\log_2 16$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the product law to combine with the remaining term: $\\log_a m + \\log_a n = \\log_a(mn)$.",
+        "working": "$$\\log_2 16 + \\log_2 4 = \\log_2(16 \\times 4) = \\log_2 64$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate $\\log_2 64$ by expressing $64$ as a power of $2$.",
+        "working": "$$2^6 = 64 \\implies \\log_2 64 = 6$$"
+      }
+    ],
+    "answer": "$\\log_2 48 - \\log_2 3 + \\log_2 4 = 6$."
+  },
+  {
+    "id": "log-fn-we-3",
+    "title": "Solving an exponential equation using logarithms",
+    "difficulty": 3,
+    "problem": "Solve $4^x = 100$, giving the answer correct to 2 decimal places. Then describe the relationship between $y = \\log_4 x$ and $y = 4^x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Take the base-10 logarithm of both sides and apply the power law $\\log(a^x) = x\\log a$.",
+        "working": "$$\\log(4^x) = \\log 100 \\implies x\\log 4 = 2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Solve for $x$ by dividing both sides by $\\log 4$.",
+        "working": "$$x = \\frac{2}{\\log 4} = \\frac{2}{0.6021} \\approx 3.32$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Verify: substitute $x \\approx 3.32$ back into $4^x$.",
+        "working": "$$4^{3.32} = e^{3.32\\ln 4} = e^{3.32 \\times 1.3863} = e^{4.602} \\approx 99.7 \\approx 100 \\checkmark$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Describe the relationship between $y = \\log_4 x$ and $y = 4^x$. Since they are inverse functions, their graphs are reflections of each other in the line $y = x$.",
+        "working": "$$\\text{Key features of } y = \\log_4 x:\\quad \\text{x-intercept } (1,\\, 0),\\quad \\text{passes through } (4,\\, 1)$$\n$$\\text{Domain: } x > 0,\\quad \\text{Range: all real numbers}$$\n$$\\text{Vertical asymptote: } x = 0$$"
+      }
+    ],
+    "answer": "$x \\approx 3.32$. The graph of $y = \\log_4 x$ is the reflection of $y = 4^x$ in the line $y = x$."
+  }
+]

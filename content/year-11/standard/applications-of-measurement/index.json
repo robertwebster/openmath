@@ -1,0 +1,11 @@
+{
+  "id": "applications-of-measurement",
+  "title": "Applications of measurement",
+  "year": 11,
+  "stage": "6",
+  "course": "standard",
+  "strand": "Measurement",
+  "syllabusOutcome": "MST-11-05",
+  "description": "Convert metric units, calculate perimeter, area, volume and capacity using formulas.",
+  "subtopics": ["metric-units-and-conversions", "perimeter-and-area", "volume-and-capacity"]
+}

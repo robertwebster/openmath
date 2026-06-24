@@ -1,0 +1,89 @@
+[
+  {
+    "id": "rtr-we-1",
+    "title": "Evaluating reciprocal trig ratios for 45°",
+    "difficulty": 1,
+    "problem": "Find the exact values of $\\sec 45°$, $\\csc 45°$ and $\\cot 45°$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the exact values of $\\sin 45°$, $\\cos 45°$ and $\\tan 45°$.",
+        "working": "$$\\sin 45° = \\cos 45° = \\frac{\\sqrt{2}}{2}, \\qquad \\tan 45° = 1$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the definition $\\sec\\theta = \\dfrac{1}{\\cos\\theta}$.",
+        "working": "$$\\sec 45° = \\frac{1}{\\cos 45°} = \\frac{1}{\\tfrac{\\sqrt{2}}{2}} = \\frac{2}{\\sqrt{2}} = \\frac{2\\sqrt{2}}{2} = \\sqrt{2}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the definition $\\csc\\theta = \\dfrac{1}{\\sin\\theta}$.",
+        "working": "$$\\csc 45° = \\frac{1}{\\sin 45°} = \\frac{1}{\\tfrac{\\sqrt{2}}{2}} = \\sqrt{2}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply the definition $\\cot\\theta = \\dfrac{\\cos\\theta}{\\sin\\theta}$.",
+        "working": "$$\\cot 45° = \\frac{\\cos 45°}{\\sin 45°} = \\frac{\\tfrac{\\sqrt{2}}{2}}{\\tfrac{\\sqrt{2}}{2}} = 1$$"
+      }
+    ],
+    "answer": "$\\sec 45° = \\sqrt{2}$, $\\csc 45° = \\sqrt{2}$, $\\cot 45° = 1$"
+  },
+  {
+    "id": "rtr-we-2",
+    "title": "Simplifying an expression using reciprocal identities",
+    "difficulty": 2,
+    "problem": "Simplify $\\dfrac{\\sec\\theta}{\\csc\\theta}$, expressing your answer as a single standard trigonometric ratio.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write each reciprocal ratio in terms of $\\sin\\theta$ and $\\cos\\theta$.",
+        "working": "$$\\sec\\theta = \\frac{1}{\\cos\\theta}, \\qquad \\csc\\theta = \\frac{1}{\\sin\\theta}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute into the expression.",
+        "working": "$$\\frac{\\sec\\theta}{\\csc\\theta} = \\frac{\\tfrac{1}{\\cos\\theta}}{\\tfrac{1}{\\sin\\theta}}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Divide by multiplying by the reciprocal of the denominator.",
+        "working": "$$= \\frac{1}{\\cos\\theta} \\times \\frac{\\sin\\theta}{1} = \\frac{\\sin\\theta}{\\cos\\theta}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Recognise the result as a standard ratio.",
+        "working": "$$\\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$$"
+      }
+    ],
+    "answer": "$\\dfrac{\\sec\\theta}{\\csc\\theta} = \\tan\\theta$"
+  },
+  {
+    "id": "rtr-we-3",
+    "title": "Proving an identity involving reciprocal ratios",
+    "difficulty": 3,
+    "problem": "Prove the identity $\\sec^2\\theta - \\tan^2\\theta = 1$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Work with the left side only. Write $\\sec^2\\theta$ and $\\tan^2\\theta$ in terms of $\\sin\\theta$ and $\\cos\\theta$.",
+        "working": "$$\\text{LHS} = \\sec^2\\theta - \\tan^2\\theta = \\frac{1}{\\cos^2\\theta} - \\frac{\\sin^2\\theta}{\\cos^2\\theta}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Combine the two fractions over the common denominator $\\cos^2\\theta$.",
+        "working": "$$= \\frac{1 - \\sin^2\\theta}{\\cos^2\\theta}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$ to replace $1 - \\sin^2\\theta$ with $\\cos^2\\theta$.",
+        "working": "$$= \\frac{\\cos^2\\theta}{\\cos^2\\theta}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Simplify and conclude.",
+        "working": "$$= 1 = \\text{RHS} \\qquad \\checkmark$$"
+      }
+    ],
+    "answer": "$\\sec^2\\theta - \\tan^2\\theta = 1$ (proven)"
+  }
+]

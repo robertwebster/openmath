@@ -1,0 +1,79 @@
+[
+  {
+    "id": "tax-ex-1",
+    "title": "Finding taxable income",
+    "difficulty": 1,
+    "problem": "James earns a gross income of $\\$72\\,000$ per year and claims allowable deductions of $\\$3\\,500$. Find his taxable income.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for taxable income.",
+        "working": "$$\\text{Taxable income} = \\text{Gross income} - \\text{Allowable deductions}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the values.",
+        "working": "$$\\text{Taxable income} = \\$72\\,000 - \\$3\\,500$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract to find the taxable income.",
+        "working": "$$= \\$68\\,500$$"
+      }
+    ],
+    "answer": "$\\$68\\,500$"
+  },
+  {
+    "id": "tax-ex-2",
+    "title": "Medicare levy and annual PAYG tax withheld",
+    "difficulty": 2,
+    "problem": "Aisha's annual taxable income is $\\$69\\,000$. The Medicare levy is $2\\%$ of taxable income. A fortnightly tax table shows that $\\$489$ is withheld each fortnight in PAYG tax. Calculate (i) the Medicare levy and (ii) the total PAYG tax withheld over the year.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the Medicare levy using the rate of 2%.",
+        "working": "$$\\text{Medicare levy} = 0.02 \\times \\$69\\,000 = \\$1\\,380$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the number of fortnights in a year.",
+        "working": "$52 \\div 2 = 26$ fortnights per year"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply the fortnightly PAYG amount by 26 to find the annual total.",
+        "working": "$$\\text{Annual PAYG} = \\$489 \\times 26 = \\$12\\,714$$"
+      }
+    ],
+    "answer": "(i) $\\$1\\,380$; (ii) $\\$12\\,714$"
+  },
+  {
+    "id": "tax-ex-3",
+    "title": "Net income and tax refund from a tax return",
+    "difficulty": 3,
+    "problem": "Raj's taxable income is $\\$65\\,000$. His employer withheld $\\$14\\,000$ in PAYG tax during the year. Using the tax table below and a Medicare levy of $2\\%$, determine whether Raj receives a refund or owes a payment, and state the amount.\n\n| Taxable income | Tax on this income |\n|---|---|\n| $\\$45\\,001$ – $\\$120\\,000$ | $\\$5\\,092$ plus $32.5$ cents for each $\\$1$ over $\\$45\\,000$ |",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the tax bracket and calculate income tax.",
+        "working": "Amount over $\\$45\\,000$: $\\$65\\,000 - \\$45\\,000 = \\$20\\,000$\n\n$$\\text{Income tax} = \\$5\\,092 + 0.325 \\times \\$20\\,000 = \\$5\\,092 + \\$6\\,500 = \\$11\\,592$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the Medicare levy.",
+        "working": "$$\\text{Medicare levy} = 0.02 \\times \\$65\\,000 = \\$1\\,300$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find total tax liability by adding income tax and Medicare levy.",
+        "working": "$$\\text{Total tax} = \\$11\\,592 + \\$1\\,300 = \\$12\\,892$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Compare total tax with PAYG withheld to determine refund or payment.",
+        "working": "$\\$14\\,000 > \\$12\\,892$, so Raj has overpaid.\n\n$$\\text{Refund} = \\$14\\,000 - \\$12\\,892 = \\$1\\,108$$"
+      }
+    ],
+    "answer": "Raj receives a refund of $\\$1\\,108$."
+  }
+]

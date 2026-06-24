@@ -1,0 +1,16 @@
+{
+  "id": "data-analysis",
+  "title": "Data analysis",
+  "year": 11,
+  "stage": "6",
+  "course": "standard",
+  "strand": "Statistics",
+  "syllabusOutcome": "MST-11-08",
+  "description": "Design statistical investigations, display and summarise data using measures of centre, spread and box plots.",
+  "subtopics": [
+    "statistical-investigation-and-sampling",
+    "displaying-data",
+    "measures-of-centre-and-spread",
+    "quartiles-box-plots-and-outliers"
+  ]
+}

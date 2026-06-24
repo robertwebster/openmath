@@ -1,0 +1,84 @@
+[
+  {
+    "id": "pa-worked-1",
+    "title": "Area of a trapezium",
+    "difficulty": 1,
+    "problem": "A driveway is shaped like a trapezium with parallel sides of $8$ m and $5$ m and a perpendicular height of $4$ m. Find the area of the driveway.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for the area of a trapezium.",
+        "working": "$$A = \\frac{1}{2}(a + b)h$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the values: $a = 8$ m, $b = 5$ m, $h = 4$ m.",
+        "working": "$a = 8$, $\\; b = 5$, $\\; h = 4$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the values and evaluate.",
+        "working": "$A = \\frac{1}{2}(8 + 5) \\times 4 = \\frac{1}{2} \\times 13 \\times 4 = 26$ m²"
+      }
+    ],
+    "answer": "$26$ m²"
+  },
+  {
+    "id": "pa-worked-2",
+    "title": "Area of a composite shape",
+    "difficulty": 2,
+    "problem": "The end section of a running track consists of a rectangle $15$ m long and $6$ m wide joined to a semicircle of diameter $6$ m. Find the total area of this shape, to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the area of the rectangle.",
+        "working": "$A_{\\text{rect}} = 15 \\times 6 = 90$ m²"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the radius of the semicircle.",
+        "working": "$r = 6 \\div 2 = 3$ m"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the area of the semicircle using $A = \\frac{1}{2}\\pi r^2$.",
+        "working": "$A_{\\text{semi}} = \\frac{1}{2} \\times \\pi \\times 3^2 = \\frac{9\\pi}{2} \\approx 14.14$ m²"
+      },
+      {
+        "step": 4,
+        "instruction": "Add the two areas to find the total.",
+        "working": "$A_{\\text{total}} = 90 + 14.14 = 104.14$ m²"
+      }
+    ],
+    "answer": "$104.14$ m²"
+  },
+  {
+    "id": "pa-worked-3",
+    "title": "Arc length and sector area",
+    "difficulty": 3,
+    "problem": "A sector of a circle has a radius of $12$ cm and a central angle of $45°$. Find (a) the arc length and (b) the area of the sector. Give answers to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula for arc length and substitute the values.",
+        "working": "$l = \\frac{\\theta}{360} \\times 2\\pi r = \\frac{45}{360} \\times 2\\pi \\times 12 = \\frac{1}{8} \\times 24\\pi = 3\\pi$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate the arc length to 2 decimal places.",
+        "working": "$l = 3\\pi \\approx 9.42$ cm"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the formula for the area of a sector and substitute the values.",
+        "working": "$A = \\frac{\\theta}{360} \\times \\pi r^2 = \\frac{45}{360} \\times \\pi \\times 12^2 = \\frac{1}{8} \\times 144\\pi = 18\\pi$"
+      },
+      {
+        "step": 4,
+        "instruction": "Evaluate the sector area to 2 decimal places.",
+        "working": "$A = 18\\pi \\approx 56.55$ cm²"
+      }
+    ],
+    "answer": "(a) $9.42$ cm $\\quad$ (b) $56.55$ cm²"
+  }
+]
