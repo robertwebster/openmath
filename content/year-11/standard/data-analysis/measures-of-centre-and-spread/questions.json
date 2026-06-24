@@ -1,0 +1,182 @@
+[
+  {
+    "id": "mcs-1-1",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The daily temperatures (°C) recorded over five days were $18, 21, 21, 24$ and $26$. Find the mean temperature.",
+    "answer": 22,
+    "tolerance": 0,
+    "hint": "Add all five values together, then divide by 5.",
+    "explanation": "$$\\bar{x} = \\frac{18 + 21 + 21 + 24 + 26}{5} = \\frac{110}{5} = 22$$\n\nThe mean temperature is $22$ °C."
+  },
+  {
+    "id": "mcs-1-2",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Find the median of the dataset: $5, 8, 9, 12, 14, 17$.",
+    "answer": 10.5,
+    "tolerance": 0.01,
+    "hint": "The data is already ordered. With 6 values, the median is the average of the 3rd and 4th values.",
+    "explanation": "The dataset is already in ascending order: $5, 8, 9, 12, 14, 17$.\n\nWith $n = 6$ values, the median is the average of the 3rd and 4th values:\n$$\\text{Median} = \\frac{9 + 12}{2} = \\frac{21}{2} = 10.5$$"
+  },
+  {
+    "id": "mcs-1-3",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A dataset contains the values $3, 5, 5, 6, 8, 52$. Which measure of centre is most affected by the extreme value $52$?",
+    "options": [
+      "Mean",
+      "Median",
+      "Mode",
+      "All three equally"
+    ],
+    "answer": "Mean",
+    "tolerance": 0,
+    "hint": "Consider how each measure is calculated and whether removing 52 would change it significantly.",
+    "explanation": "The mean uses every value in its calculation, so a very large value like $52$ pulls it upward significantly.\n\nWithout $52$: $\\bar{x} = \\frac{3+5+5+6+8}{5} = 5.4$\n\nWith $52$: $\\bar{x} = \\frac{3+5+5+6+8+52}{6} \\approx 13.2$\n\nThe median changes from $5$ to $5.5$ — a much smaller shift. The mode ($5$) is unchanged. The mean is most affected by extreme values."
+  },
+  {
+    "id": "mcs-1-4",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The number of customers served each hour over seven hours were: $4, 6, 7, 7, 9, 10, 7$. Find the mode.",
+    "answer": 7,
+    "tolerance": 0,
+    "hint": "The mode is the value that appears most often.",
+    "explanation": "Counting the frequency of each value:\n- $4$: once\n- $6$: once\n- $7$: three times\n- $9$: once\n- $10$: once\n\nThe value $7$ appears most often, so the mode is $7$."
+  },
+  {
+    "id": "mcs-2-1",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "The dataset $3, 5, 5, 7$ has a mean of $5$. Using the population standard deviation formula\n$$\\sigma = \\sqrt{\\dfrac{\\sum(x - \\bar{x})^2}{n}}$$\ncalculate $\\sigma$ correct to 2 decimal places.",
+    "answer": 1.41,
+    "tolerance": 0.01,
+    "hint": "Find $(x - 5)^2$ for each value, add them up, divide by 4, then take the square root.",
+    "explanation": "Find each squared deviation from the mean ($\\bar{x} = 5$):\n\n| $x$ | $x - \\bar{x}$ | $(x - \\bar{x})^2$ |\n|---|---|---|\n| $3$ | $-2$ | $4$ |\n| $5$ | $0$ | $0$ |\n| $5$ | $0$ | $0$ |\n| $7$ | $2$ | $4$ |\n\n$$\\sigma = \\sqrt{\\frac{4 + 0 + 0 + 4}{4}} = \\sqrt{\\frac{8}{4}} = \\sqrt{2} \\approx 1.41$$"
+  },
+  {
+    "id": "mcs-2-2",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A machine produces metal rods. The diameters (mm) of five rods are $10.0, 10.2, 10.4, 10.6$ and $10.8$. The mean diameter is $10.4$ mm. Calculate the population standard deviation correct to 2 decimal places.",
+    "answer": 0.28,
+    "tolerance": 0.01,
+    "hint": "Find $(x - 10.4)^2$ for each diameter, then apply $\\sigma = \\sqrt{\\frac{\\sum(x-\\bar{x})^2}{n}}$.",
+    "explanation": "Squared deviations from the mean ($\\bar{x} = 10.4$):\n\n| $x$ | $x - \\bar{x}$ | $(x - \\bar{x})^2$ |\n|---|---|---|\n| $10.0$ | $-0.4$ | $0.16$ |\n| $10.2$ | $-0.2$ | $0.04$ |\n| $10.4$ | $0$ | $0$ |\n| $10.6$ | $0.2$ | $0.04$ |\n| $10.8$ | $0.4$ | $0.16$ |\n\n$$\\sigma = \\sqrt{\\frac{0.16+0.04+0+0.04+0.16}{5}} = \\sqrt{\\frac{0.40}{5}} = \\sqrt{0.08} \\approx 0.28 \\text{ mm}$$"
+  },
+  {
+    "id": "mcs-2-3",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "For a dataset with $n = 6$ values, the sum of squared deviations from the mean is $54$. Calculate the population standard deviation.",
+    "answer": 3,
+    "tolerance": 0.01,
+    "hint": "Population variance $= \\frac{\\sum(x-\\bar{x})^2}{n}$. Then take the square root.",
+    "explanation": "$$\\text{Variance} = \\frac{\\sum(x - \\bar{x})^2}{n} = \\frac{54}{6} = 9$$\n\n$$\\sigma = \\sqrt{9} = 3$$\n\nThe population standard deviation is $3$."
+  },
+  {
+    "id": "mcs-2-4",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Two classes sit the same test. Class A has mean $72$ and standard deviation $4$. Class B has mean $72$ and standard deviation $15$. Which statement is correct?",
+    "options": [
+      "Class A's scores are more consistent than Class B's.",
+      "Class B's scores are more consistent than Class A's.",
+      "Class A's scores are more spread out than Class B's.",
+      "Both classes performed equally in all respects."
+    ],
+    "answer": "Class A's scores are more consistent than Class B's.",
+    "tolerance": 0,
+    "hint": "A smaller standard deviation means scores are closer together — that is, more consistent.",
+    "explanation": "Both classes have the same mean ($72$), so their average performance is equal. However, the standard deviation measures spread around the mean.\n\nClass A: $\\sigma = 4$ (scores clustered tightly around $72$)\nClass B: $\\sigma = 15$ (scores much more spread out)\n\nClass A's scores are more consistent because they vary less from the mean."
+  },
+  {
+    "id": "mcs-3-1",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Dataset A is $4, 6, 8, 10, 12$. The mean is $8$. Calculate the population standard deviation of Dataset A correct to 2 decimal places.",
+    "answer": 2.83,
+    "tolerance": 0.01,
+    "hint": "Find $(x - 8)^2$ for each value, sum them, divide by $n = 5$, then take the square root.",
+    "explanation": "Squared deviations from the mean ($\\bar{x} = 8$):\n\n$(4-8)^2 = 16, \\quad (6-8)^2 = 4, \\quad (8-8)^2 = 0, \\quad (10-8)^2 = 4, \\quad (12-8)^2 = 16$\n\n$$\\sigma_A = \\sqrt{\\frac{16+4+0+4+16}{5}} = \\sqrt{\\frac{40}{5}} = \\sqrt{8} \\approx 2.83$$"
+  },
+  {
+    "id": "mcs-3-2",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Dataset B is $1, 5, 8, 11, 15$. The mean is $8$. Calculate the population standard deviation of Dataset B correct to 2 decimal places.",
+    "answer": 4.82,
+    "tolerance": 0.01,
+    "hint": "Find $(x - 8)^2$ for each value, sum them, divide by $n = 5$, then take the square root.",
+    "explanation": "Squared deviations from the mean ($\\bar{x} = 8$):\n\n$(1-8)^2 = 49, \\quad (5-8)^2 = 9, \\quad (8-8)^2 = 0, \\quad (11-8)^2 = 9, \\quad (15-8)^2 = 49$\n\n$$\\sigma_B = \\sqrt{\\frac{49+9+0+9+49}{5}} = \\sqrt{\\frac{116}{5}} = \\sqrt{23.2} \\approx 4.82$$"
+  },
+  {
+    "id": "mcs-3-3",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Dataset A is $4, 6, 8, 10, 12$ (mean $= 8$, $\\sigma \\approx 2.83$) and Dataset B is $1, 5, 8, 11, 15$ (mean $= 8$, $\\sigma \\approx 4.82$). Which conclusion is correct?",
+    "options": [
+      "Dataset B has greater spread than Dataset A.",
+      "Dataset A has greater spread than Dataset B.",
+      "Both datasets have the same spread.",
+      "Dataset A has a higher mean than Dataset B."
+    ],
+    "answer": "Dataset B has greater spread than Dataset A.",
+    "tolerance": 0,
+    "hint": "Compare the standard deviations. A larger $\\sigma$ means the values are more spread out from the mean.",
+    "explanation": "Both datasets have the same mean ($8$), so they are centred at the same value.\n\nHowever, $\\sigma_B \\approx 4.82 > \\sigma_A \\approx 2.83$, which means the values in Dataset B are more spread out from the mean than those in Dataset A.\n\nDataset B has greater spread."
+  },
+  {
+    "id": "mcs-3-4",
+    "subtopic": "measures-of-centre-and-spread",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A real estate agent records house sale prices ($\\$000$s) in a suburb: $480, 510, 525, 540, 1200$. The mean is $\\$651\\,000$ and the median is $\\$525\\,000$. Which measure of centre is most appropriate for representing the typical sale price, and why?",
+    "options": [
+      "Median, because it is less affected by the extreme sale price of $\\$1\\,200\\,000$.",
+      "Mean, because it uses all five values in its calculation.",
+      "Mode, because it is the most frequently occurring value.",
+      "Mean, because it is always larger than the median."
+    ],
+    "answer": "Median, because it is less affected by the extreme sale price of $\\$1\\,200\\,000$.",
+    "tolerance": 0,
+    "hint": "Consider how the sale price of $\\$1\\,200\\,000$ affects each measure. Which one stays closer to the four typical prices?",
+    "explanation": "The sale price of $\\$1\\,200\\,000$ is an extreme value (outlier) that pulls the mean up to $\\$651\\,000$, which is higher than four of the five actual prices.\n\nThe median ($\\$525\\,000$) is the middle value in the ordered dataset and is not distorted by the outlier. It better represents the price a typical buyer would pay.\n\nThe mode cannot be calculated here because all values are distinct. The median is the most appropriate measure."
+  }
+]

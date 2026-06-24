@@ -1,0 +1,84 @@
+[
+  {
+    "id": "dst-ex-1",
+    "title": "Finding distance using D = ST",
+    "difficulty": 1,
+    "problem": "A car travels at 70 km/h for 3 hours. Find the distance travelled.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula.",
+        "working": "$$D = S \\times T$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the values: speed $S = 70$ km/h and time $T = 3$ hours.",
+        "working": "$S = 70$, $T = 3$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute and evaluate.",
+        "working": "$$D = 70 \\times 3 = 210 \\text{ km}$$"
+      }
+    ],
+    "answer": "$210 \\text{ km}$"
+  },
+  {
+    "id": "dst-ex-2",
+    "title": "Average speed for a two-leg journey",
+    "difficulty": 2,
+    "problem": "A car travels 100 km at 50 km/h, then a further 150 km at 75 km/h. Find the average speed for the whole journey.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the time for the first leg using $T = D \\div S$.",
+        "working": "$$T_1 = \\frac{100}{50} = 2 \\text{ hours}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the time for the second leg.",
+        "working": "$$T_2 = \\frac{150}{75} = 2 \\text{ hours}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the total distance and total time.",
+        "working": "Total distance $= 100 + 150 = 250$ km\n\nTotal time $= 2 + 2 = 4$ hours"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate the average speed.",
+        "working": "$$\\text{Average speed} = \\frac{\\text{total distance}}{\\text{total time}} = \\frac{250}{4} = 62.5 \\text{ km/h}$$"
+      }
+    ],
+    "answer": "$62.5 \\text{ km/h}$"
+  },
+  {
+    "id": "dst-ex-3",
+    "title": "Comparing stopping distances using a formula",
+    "difficulty": 3,
+    "problem": "The stopping distance $d$ metres for a vehicle travelling at $v$ km/h is given by $d = 0.7v + 0.06v^2$. Find the stopping distances at 50 km/h and 100 km/h. By how many metres does the stopping distance increase when speed doubles?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Substitute $v = 50$ into the formula.",
+        "working": "$$d = 0.7(50) + 0.06(50)^2 = 35 + 0.06 \\times 2500 = 35 + 150 = 185 \\text{ m}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $v = 100$ into the formula.",
+        "working": "$$d = 0.7(100) + 0.06(100)^2 = 70 + 0.06 \\times 10\\,000 = 70 + 600 = 670 \\text{ m}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the increase in stopping distance.",
+        "working": "$$670 - 185 = 485 \\text{ m}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Interpret the result.",
+        "working": "Doubling the speed from 50 km/h to 100 km/h increases the stopping distance by 485 m. The stopping distance at 100 km/h is $670 \\div 185 \\approx 3.6$ times the stopping distance at 50 km/h — far more than double — because the $0.06v^2$ term grows with the square of speed."
+      }
+    ],
+    "answer": "Stopping distance increases by $485 \\text{ m}$"
+  }
+]

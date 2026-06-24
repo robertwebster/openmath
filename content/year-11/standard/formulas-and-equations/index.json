@@ -1,0 +1,16 @@
+{
+  "id": "formulas-and-equations",
+  "title": "Formulas and equations",
+  "year": 11,
+  "stage": "6",
+  "course": "standard",
+  "strand": "Number",
+  "syllabusOutcome": "MST-11-01",
+  "description": "Substitute into formulas, solve distance-speed-time problems, apply BAC and medication formulas, and change the subject.",
+  "subtopics": [
+    "substituting-into-formulas",
+    "distance-speed-and-time",
+    "bac-and-medication-formulas",
+    "changing-the-subject"
+  ]
+}

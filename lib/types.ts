@@ -55,6 +55,7 @@ export interface TopicMeta {
   title: string;
   year: number;
   stage: string;
+  course?: string;
   extension?: boolean;
   strand: string;
   syllabusOutcome: string;

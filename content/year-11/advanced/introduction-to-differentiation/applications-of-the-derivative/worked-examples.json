@@ -1,0 +1,89 @@
+[
+  {
+    "id": "app-der-worked-1",
+    "title": "Finding stationary points and increasing/decreasing intervals",
+    "difficulty": 1,
+    "problem": "For $f(x) = x^2 - 4x + 7$, find the stationary point and determine the intervals on which $f$ is increasing and decreasing.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Differentiate $f(x)$.",
+        "working": "$f'(x) = 2x - 4$"
+      },
+      {
+        "step": 2,
+        "instruction": "Solve $f'(x) = 0$ to find the $x$-coordinate of the stationary point.",
+        "working": "$2x - 4 = 0 \\implies x = 2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the $y$-coordinate of the stationary point.",
+        "working": "$f(2) = (2)^2 - 4(2) + 7 = 4 - 8 + 7 = 3$\n\nStationary point: $(2,\\, 3)$"
+      },
+      {
+        "step": 4,
+        "instruction": "Determine where $f$ is increasing and decreasing using the sign of $f'(x)$.",
+        "working": "For $x < 2$: test $x = 0 \\Rightarrow f'(0) = -4 < 0$ — $f$ is **decreasing**.\n\nFor $x > 2$: test $x = 3 \\Rightarrow f'(3) = 2 > 0$ — $f$ is **increasing**."
+      }
+    ],
+    "answer": "Stationary point at $(2, 3)$. $f$ is decreasing for $x < 2$ and increasing for $x > 2$."
+  },
+  {
+    "id": "app-der-worked-2",
+    "title": "Classifying stationary points using a sign test",
+    "difficulty": 2,
+    "problem": "Find and classify all stationary points of $f(x) = x^3 - 3x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Differentiate and solve $f'(x) = 0$.",
+        "working": "$f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x - 1)(x + 1)$\n\nSetting $f'(x) = 0$: $x = -1$ or $x = 1$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply a sign test to classify $x = -1$.",
+        "working": "Test $x = -2$: $f'(-2) = 3(4) - 3 = 9 > 0$ — increasing.\n\nTest $x = 0$: $f'(0) = -3 < 0$ — decreasing.\n\nSign changes from $+$ to $-$, so $x = -1$ is a **local maximum**."
+      },
+      {
+        "step": 3,
+        "instruction": "Apply a sign test to classify $x = 1$.",
+        "working": "Test $x = 0$: $f'(0) = -3 < 0$ — decreasing.\n\nTest $x = 2$: $f'(2) = 3(4) - 3 = 9 > 0$ — increasing.\n\nSign changes from $-$ to $+$, so $x = 1$ is a **local minimum**."
+      },
+      {
+        "step": 4,
+        "instruction": "Find the $y$-coordinates of each stationary point.",
+        "working": "$f(-1) = (-1)^3 - 3(-1) = -1 + 3 = 2 \\quad \\Rightarrow \\quad$ local max at $(-1,\\, 2)$\n\n$f(1) = (1)^3 - 3(1) = 1 - 3 = -2 \\quad \\Rightarrow \\quad$ local min at $(1,\\, -2)$"
+      }
+    ],
+    "answer": "Local maximum at $(-1,\\, 2)$; local minimum at $(1,\\, -2)$."
+  },
+  {
+    "id": "app-der-worked-3",
+    "title": "Interpreting velocity and rest from a position function",
+    "difficulty": 3,
+    "problem": "The displacement of a particle is $x(t) = t^3 - 6t^2 + 9t$ metres at time $t \\geq 0$ seconds. Find when the particle is at rest, and determine the direction of motion on each interval between rest times.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Differentiate to find the velocity function.",
+        "working": "$v(t) = x'(t) = 3t^2 - 12t + 9$"
+      },
+      {
+        "step": 2,
+        "instruction": "Solve $v(t) = 0$ to find when the particle is at rest.",
+        "working": "$3t^2 - 12t + 9 = 0$\n\n$3(t^2 - 4t + 3) = 0$\n\n$3(t - 1)(t - 3) = 0$\n\n$t = 1$ or $t = 3$"
+      },
+      {
+        "step": 3,
+        "instruction": "Determine the sign of $v(t)$ on each interval to find the direction of motion.",
+        "working": "For $0 < t < 1$: test $t = 0.5 \\Rightarrow v(0.5) = 3(0.25) - 6 + 9 = 3.75 > 0$ — moving in the **positive direction**.\n\nFor $1 < t < 3$: test $t = 2 \\Rightarrow v(2) = 12 - 24 + 9 = -3 < 0$ — moving in the **negative direction**.\n\nFor $t > 3$: test $t = 4 \\Rightarrow v(4) = 48 - 48 + 9 = 9 > 0$ — moving in the **positive direction**."
+      },
+      {
+        "step": 4,
+        "instruction": "State the displacements at the rest times for a complete picture.",
+        "working": "$x(1) = 1 - 6 + 9 = 4$ m\n\n$x(3) = 27 - 54 + 27 = 0$ m\n\nThe particle starts at $x(0) = 0$, moves right to $x = 4$ m, turns around, moves left back to $x = 0$ m at $t = 3$, then continues moving right."
+      }
+    ],
+    "answer": "The particle is at rest at $t = 1$ s and $t = 3$ s. It moves in the positive direction for $0 < t < 1$, in the negative direction for $1 < t < 3$, and in the positive direction for $t > 3$."
+  }
+]

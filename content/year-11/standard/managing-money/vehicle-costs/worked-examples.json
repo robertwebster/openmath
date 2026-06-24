@@ -1,0 +1,74 @@
+[
+  {
+    "id": "vc-worked-1",
+    "title": "Calculating stamp duty",
+    "difficulty": 1,
+    "problem": "A car is purchased for $\\$24{,}000$. Stamp duty is charged at 3% of the purchase price. Calculate the stamp duty payable.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the stamp duty rate as a decimal.",
+        "working": "$3\\% = 0.03$"
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply the purchase price by the rate.",
+        "working": "$\\text{Stamp duty} = 0.03 \\times 24{,}000 = 720$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the answer with units.",
+        "working": "Stamp duty $= \\$720$"
+      }
+    ],
+    "answer": "$\\$720$"
+  },
+  {
+    "id": "vc-worked-2",
+    "title": "Total on-road costs",
+    "difficulty": 2,
+    "problem": "A car has a purchase price of $\\$30{,}000$. Stamp duty is 3% of the purchase price, registration costs $\\$380$ and CTP insurance costs $\\$650$. Calculate the total on-road cost.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate stamp duty.",
+        "working": "$\\text{Stamp duty} = 0.03 \\times 30{,}000 = \\$900$"
+      },
+      {
+        "step": 2,
+        "instruction": "Add all costs together.",
+        "working": "$\\text{Total} = 30{,}000 + 900 + 380 + 650 = \\$31{,}930$"
+      }
+    ],
+    "answer": "$\\$31{,}930$"
+  },
+  {
+    "id": "vc-worked-3",
+    "title": "Comparing outright purchase with a loan",
+    "difficulty": 3,
+    "problem": "A car has a cash price of $\\$24{,}000$. A loan option requires a $\\$4{,}000$ deposit and 48 monthly repayments of $\\$490$. Calculate the total interest paid and express it as a percentage of the cash price.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the total of all monthly repayments.",
+        "working": "$48 \\times 490 = \\$23{,}520$"
+      },
+      {
+        "step": 2,
+        "instruction": "Add the deposit to find the total amount paid under the loan.",
+        "working": "$4{,}000 + 23{,}520 = \\$27{,}520$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the interest paid by subtracting the cash price from the total loan cost.",
+        "working": "$27{,}520 - 24{,}000 = \\$3{,}520$"
+      },
+      {
+        "step": 4,
+        "instruction": "Express the interest as a percentage of the cash price.",
+        "working": "$\\dfrac{3{,}520}{24{,}000} \\times 100 \\approx 14.67\\%$"
+      }
+    ],
+    "answer": "The total interest paid is $\\$3{,}520$, which is approximately $14.67\\%$ of the cash price. The loan option costs $\\$3{,}520$ more than paying cash."
+  }
+]

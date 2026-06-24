@@ -1,0 +1,89 @@
+[
+  {
+    "id": "ti-we-1",
+    "title": "Finding a trig ratio using the Pythagorean identity",
+    "difficulty": 1,
+    "problem": "Given that $\\cos\\theta = \\dfrac{4}{5}$ and $\\theta$ is in the first quadrant, find $\\sin\\theta$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the Pythagorean identity.",
+        "working": "$$\\sin^2\\theta + \\cos^2\\theta = 1$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $\\cos\\theta = \\dfrac{4}{5}$.",
+        "working": "$$\\sin^2\\theta + \\left(\\frac{4}{5}\\right)^2 = 1 \\implies \\sin^2\\theta + \\frac{16}{25} = 1$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $\\sin^2\\theta$.",
+        "working": "$$\\sin^2\\theta = 1 - \\frac{16}{25} = \\frac{25}{25} - \\frac{16}{25} = \\frac{9}{25}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Take the square root. Since $\\theta$ is in the first quadrant, $\\sin\\theta > 0$.",
+        "working": "$$\\sin\\theta = \\sqrt{\\frac{9}{25}} = \\frac{3}{5}$$"
+      }
+    ],
+    "answer": "$\\sin\\theta = \\dfrac{3}{5}$"
+  },
+  {
+    "id": "ti-we-2",
+    "title": "Applying a Pythagorean identity and a complementary angle identity",
+    "difficulty": 2,
+    "problem": "Given that $\\tan\\theta = \\dfrac{5}{12}$ and $\\theta$ is acute, find $\\sec\\theta$ using $\\sec^2\\theta = 1 + \\tan^2\\theta$. Then evaluate $\\sin(90° - \\theta)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the identity $\\sec^2\\theta = 1 + \\tan^2\\theta$.",
+        "working": "$$\\sec^2\\theta = 1 + \\left(\\frac{5}{12}\\right)^2 = 1 + \\frac{25}{144} = \\frac{144}{144} + \\frac{25}{144} = \\frac{169}{144}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Take the positive square root, since $\\theta$ is acute so $\\sec\\theta > 0$.",
+        "working": "$$\\sec\\theta = \\sqrt{\\frac{169}{144}} = \\frac{13}{12}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find $\\cos\\theta$ from $\\sec\\theta$.",
+        "working": "$$\\cos\\theta = \\frac{1}{\\sec\\theta} = \\frac{12}{13}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply the complementary angle identity $\\sin(90° - \\theta) = \\cos\\theta$.",
+        "working": "$$\\sin(90° - \\theta) = \\cos\\theta = \\frac{12}{13}$$"
+      }
+    ],
+    "answer": "$\\sec\\theta = \\dfrac{13}{12}$ and $\\sin(90° - \\theta) = \\dfrac{12}{13}$"
+  },
+  {
+    "id": "ti-we-3",
+    "title": "Proving a two-step identity",
+    "difficulty": 3,
+    "problem": "Prove the identity $\\dfrac{\\cos\\theta}{1 - \\sin\\theta} + \\dfrac{\\cos\\theta}{1 + \\sin\\theta} = 2\\sec\\theta$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Work on the left side only. Combine the two fractions over the common denominator $(1 - \\sin\\theta)(1 + \\sin\\theta)$.",
+        "working": "$$\\text{LHS} = \\frac{\\cos\\theta(1 + \\sin\\theta) + \\cos\\theta(1 - \\sin\\theta)}{(1 - \\sin\\theta)(1 + \\sin\\theta)}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Expand the numerator and simplify.",
+        "working": "$$= \\frac{\\cos\\theta + \\cos\\theta\\sin\\theta + \\cos\\theta - \\cos\\theta\\sin\\theta}{(1 - \\sin\\theta)(1 + \\sin\\theta)} = \\frac{2\\cos\\theta}{(1 - \\sin\\theta)(1 + \\sin\\theta)}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Expand the denominator and apply the Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$.",
+        "working": "$$= \\frac{2\\cos\\theta}{1 - \\sin^2\\theta} = \\frac{2\\cos\\theta}{\\cos^2\\theta}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Cancel one factor of $\\cos\\theta$ and recognise $\\dfrac{1}{\\cos\\theta} = \\sec\\theta$.",
+        "working": "$$= \\frac{2}{\\cos\\theta} = 2\\sec\\theta = \\text{RHS} \\qquad \\checkmark$$"
+      }
+    ],
+    "answer": "$\\dfrac{\\cos\\theta}{1 - \\sin\\theta} + \\dfrac{\\cos\\theta}{1 + \\sin\\theta} = 2\\sec\\theta$ (proven)"
+  }
+]

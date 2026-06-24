@@ -1,0 +1,79 @@
+[
+  {
+    "id": "drv-we-1",
+    "title": "Classifying a variable and constructing a frequency table",
+    "difficulty": 1,
+    "problem": "The scores for 15 students on a maths quiz (out of 5) are listed below.\n\n$$3,\\; 5,\\; 4,\\; 2,\\; 3,\\; 5,\\; 4,\\; 3,\\; 5,\\; 2,\\; 4,\\; 3,\\; 5,\\; 4,\\; 3$$\n\n(a) Is quiz score a discrete or continuous variable? Give a reason.\n(b) Construct a frequency table showing the frequency and relative frequency of each score.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Decide whether quiz score is discrete or continuous.",
+        "working": "Quiz scores can only be the whole numbers 0, 1, 2, 3, 4 or 5 — they cannot take values such as 3.7. They are counted, not measured. Therefore quiz score is a discrete variable."
+      },
+      {
+        "step": 2,
+        "instruction": "Tally the frequency of each score from the list.",
+        "working": "$$\\text{Score 2: } 2 \\text{ times} \\qquad \\text{Score 3: } 5 \\text{ times} \\qquad \\text{Score 4: } 4 \\text{ times} \\qquad \\text{Score 5: } 4 \\text{ times}$$\n$$\\text{Total: } 2 + 5 + 4 + 4 = 15 \\checkmark$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Divide each frequency by the total (15) to find the relative frequency.",
+        "working": "| Score | Frequency | Relative frequency |\n|---|---|---|\n| 2 | 2 | $\\dfrac{2}{15}$ |\n| 3 | 5 | $\\dfrac{5}{15} = \\dfrac{1}{3}$ |\n| 4 | 4 | $\\dfrac{4}{15}$ |\n| 5 | 4 | $\\dfrac{4}{15}$ |"
+      }
+    ],
+    "answer": "(a) Discrete, because scores can only take whole-number values and are counted, not measured. (b) See table above: relative frequencies are $\\dfrac{2}{15}$, $\\dfrac{1}{3}$, $\\dfrac{4}{15}$ and $\\dfrac{4}{15}$ for scores 2, 3, 4 and 5 respectively."
+  },
+  {
+    "id": "drv-we-2",
+    "title": "Reading the median and quartiles from a cumulative relative frequency table",
+    "difficulty": 2,
+    "problem": "Twenty-five students recorded the number of hours they spent studying in a week. The results are in the frequency table below.\n\n| Hours | Frequency |\n|---|---|\n| 0 | 2 |\n| 1 | 5 |\n| 2 | 8 |\n| 3 | 6 |\n| 4 | 4 |\n\n(a) Complete the relative frequency and cumulative relative frequency columns.\n(b) Estimate the median.\n(c) Estimate the lower quartile $Q_1$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the relative frequency for each row by dividing by the total of 25.",
+        "working": "$$\\frac{2}{25} = 0.08, \\quad \\frac{5}{25} = 0.20, \\quad \\frac{8}{25} = 0.32, \\quad \\frac{6}{25} = 0.24, \\quad \\frac{4}{25} = 0.16$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Build the cumulative relative frequency column by accumulating the relative frequencies.",
+        "working": "| Hours | Frequency | Relative frequency | Cumulative relative frequency |\n|---|---|---|---|\n| 0 | 2 | 0.08 | 0.08 |\n| 1 | 5 | 0.20 | 0.28 |\n| 2 | 8 | 0.32 | 0.60 |\n| 3 | 6 | 0.24 | 0.84 |\n| 4 | 4 | 0.16 | 1.00 |"
+      },
+      {
+        "step": 3,
+        "instruction": "Estimate the median: find the first value at which the cumulative relative frequency reaches or exceeds 0.50.",
+        "working": "At $h = 1$: cumulative relative frequency $= 0.28 < 0.50$.\n\nAt $h = 2$: cumulative relative frequency $= 0.60 \\ge 0.50$.\n\nThe median is $2$ hours."
+      },
+      {
+        "step": 4,
+        "instruction": "Estimate $Q_1$: find the first value at which the cumulative relative frequency reaches or exceeds 0.25.",
+        "working": "At $h = 0$: cumulative relative frequency $= 0.08 < 0.25$.\n\nAt $h = 1$: cumulative relative frequency $= 0.28 \\ge 0.25$.\n\nSo $Q_1 = 1$ hour."
+      }
+    ],
+    "answer": "(a) See table in step 2. (b) Median $= 2$ hours. (c) $Q_1 = 1$ hour."
+  },
+  {
+    "id": "drv-we-3",
+    "title": "Using relative frequency as a probability estimate",
+    "difficulty": 3,
+    "problem": "A fair six-sided die is rolled 90 times. The frequency of each face is shown in the table.\n\n| Face | 1 | 2 | 3 | 4 | 5 | 6 |\n|---|---|---|---|---|---|---|\n| Frequency | 17 | 14 | 16 | 13 | 15 | 15 |\n\n(a) Find the relative frequency of rolling an even number.\n(b) The theoretical probability of rolling an even number on a fair die is $\\dfrac{1}{2}$. Compare this with the relative frequency from part (a) and explain any discrepancy.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the even-numbered faces and sum their frequencies.",
+        "working": "Even faces: 2, 4 and 6.\n$$f(\\text{even}) = 14 + 13 + 15 = 42$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Divide by the total number of rolls to find the relative frequency.",
+        "working": "$$\\text{Relative frequency of even} = \\frac{42}{90} = \\frac{7}{15} \\approx 0.467$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the relative frequency to the theoretical probability and explain the difference.",
+        "working": "Theoretical probability: $P(\\text{even}) = \\dfrac{1}{2} = 0.500$.\n\nRelative frequency: $\\dfrac{7}{15} \\approx 0.467$.\n\nThe discrepancy of approximately 0.033 is expected. With only 90 trials, random variation causes the relative frequency to differ from the theoretical value. With a much larger number of rolls, the relative frequency would be expected to converge to $\\dfrac{1}{2}$."
+      }
+    ],
+    "answer": "(a) $\\dfrac{7}{15} \\approx 0.467$. (b) The relative frequency (0.467) is close to but not equal to the theoretical probability (0.500). This is expected with 90 trials — random variation in a finite sample causes the relative frequency to differ from the theoretical value; larger samples produce closer agreement."
+  }
+]

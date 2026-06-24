@@ -1,0 +1,182 @@
+[
+  {
+    "id": "qbo-1-1",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The data values below are listed in order.\n$$3, 7, 9, 12, 15, 18, 21$$\nFind the median ($Q_2$).",
+    "answer": 12,
+    "tolerance": 0,
+    "hint": "The median is the middle value. With 7 values, it is the 4th value.",
+    "explanation": "There are 7 values. The median is the middle (4th) value: $Q_2 = 12$."
+  },
+  {
+    "id": "qbo-1-2",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The data values below are listed in order.\n$$5, 8, 11, 14, 17, 20, 23$$\nFind the lower quartile ($Q_1$).",
+    "answer": 8,
+    "tolerance": 0,
+    "hint": "Find the median first (the 4th value), then find the median of the lower half.",
+    "explanation": "There are 7 values. The median is the 4th value: $Q_2 = 14$. The lower half (values below the median) is $5, 8, 11$. The median of the lower half is the middle value: $Q_1 = 8$."
+  },
+  {
+    "id": "qbo-1-3",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The data values below are listed in order.\n$$2, 5, 8, 11, 14, 17$$\nFind the interquartile range (IQR).",
+    "answer": 9,
+    "tolerance": 0,
+    "hint": "Split the six values into two equal halves. Find the median of each half to get Q1 and Q3, then calculate $\\text{IQR} = Q_3 - Q_1$.",
+    "explanation": "There are 6 values. Split into lower half $2, 5, 8$ and upper half $11, 14, 17$. $Q_1 = 5$ (middle of lower half) and $Q_3 = 14$ (middle of upper half). $\\text{IQR} = 14 - 5 = 9$."
+  },
+  {
+    "id": "qbo-1-4",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The data values below are listed in order.\n$$4, 6, 8, 10, 12, 14, 16, 18$$\nFind the upper quartile ($Q_3$).",
+    "answer": 15,
+    "tolerance": 0,
+    "hint": "With 8 values, split into two groups of 4. Find the median of the upper group.",
+    "explanation": "There are 8 values. Lower half: $4, 6, 8, 10$ gives $Q_1 = \\frac{6+8}{2} = 7$. Upper half: $12, 14, 16, 18$ gives $Q_3 = \\frac{14+16}{2} = 15$."
+  },
+  {
+    "id": "qbo-2-1",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "The data values below are listed in order.\n$$12, 15, 18, 21, 24, 27, 30$$\nFind the interquartile range (IQR).",
+    "answer": 12,
+    "tolerance": 0,
+    "hint": "Find Q1 (median of the lower half) and Q3 (median of the upper half), then subtract.",
+    "explanation": "There are 7 values. $Q_2 = 21$ (4th value). Lower half: $12, 15, 18$ gives $Q_1 = 15$. Upper half: $24, 27, 30$ gives $Q_3 = 27$. $\\text{IQR} = 27 - 15 = 12$."
+  },
+  {
+    "id": "qbo-2-2",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A dataset has lower quartile $Q_1 = 14$ and upper quartile $Q_3 = 26$. Calculate the upper fence for identifying outliers using $Q_3 + 1.5 \\times \\text{IQR}$.",
+    "answer": 44,
+    "tolerance": 0,
+    "hint": "First find the IQR, then apply the formula $Q_3 + 1.5 \\times \\text{IQR}$.",
+    "explanation": "$\\text{IQR} = Q_3 - Q_1 = 26 - 14 = 12$. Upper fence $= 26 + 1.5 \\times 12 = 26 + 18 = 44$. Any value above 44 is an outlier."
+  },
+  {
+    "id": "qbo-2-3",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A dataset has $Q_1 = 8$ and $Q_3 = 20$. A student claims that the value 42 is an outlier. Is the student correct?",
+    "options": [
+      "Yes, because 42 is above the upper fence of 38",
+      "No, because 42 is below the upper fence of 50",
+      "Yes, because 42 is above the upper fence of 34",
+      "No, because 42 equals the upper fence"
+    ],
+    "answer": "Yes, because 42 is above the upper fence of 38",
+    "tolerance": 0,
+    "hint": "Calculate IQR, then find the upper fence using $Q_3 + 1.5 \\times \\text{IQR}$. Compare 42 to the fence.",
+    "explanation": "$\\text{IQR} = 20 - 8 = 12$. Upper fence $= 20 + 1.5 \\times 12 = 20 + 18 = 38$. Since $42 > 38$, the value 42 is an outlier. The student is correct."
+  },
+  {
+    "id": "qbo-2-4",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A dataset has lower quartile $Q_1 = 35$ and upper quartile $Q_3 = 55$. Calculate the lower fence for identifying outliers using $Q_1 - 1.5 \\times \\text{IQR}$.",
+    "answer": 5,
+    "tolerance": 0,
+    "hint": "First find the IQR, then apply the formula $Q_1 - 1.5 \\times \\text{IQR}$.",
+    "explanation": "$\\text{IQR} = 55 - 35 = 20$. Lower fence $= 35 - 1.5 \\times 20 = 35 - 30 = 5$. Any value below 5 is an outlier."
+  },
+  {
+    "id": "qbo-3-1",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Two classes sit a mathematics test. Their results are summarised below.\n\nClass A: $Q_1 = 45$, $Q_2 = 60$, $Q_3 = 75$\n\nClass B: $Q_1 = 50$, $Q_2 = 68$, $Q_3 = 80$\n\nWhich class has the higher median score?",
+    "options": [
+      "Class A",
+      "Class B",
+      "Both classes have the same median",
+      "Cannot be determined from the information given"
+    ],
+    "answer": "Class B",
+    "tolerance": 0,
+    "hint": "The median is $Q_2$. Compare the $Q_2$ values for each class.",
+    "explanation": "Class A has $Q_2 = 60$ and Class B has $Q_2 = 68$. Since $68 > 60$, Class B has the higher median score."
+  },
+  {
+    "id": "qbo-3-2",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Two datasets are summarised using five-number summaries.\n\nDataset P: min $= 10$, $Q_1 = 42$, $Q_2 = 55$, $Q_3 = 72$, max $= 90$\n\nDataset Q: min $= 15$, $Q_1 = 50$, $Q_2 = 62$, $Q_3 = 74$, max $= 88$\n\nWhich dataset has the greater interquartile range?",
+    "options": [
+      "Dataset P",
+      "Dataset Q",
+      "Both datasets have the same IQR",
+      "Cannot be determined"
+    ],
+    "answer": "Dataset P",
+    "tolerance": 0,
+    "hint": "Calculate $\\text{IQR} = Q_3 - Q_1$ for each dataset.",
+    "explanation": "$\\text{IQR}_P = 72 - 42 = 30$. $\\text{IQR}_Q = 74 - 50 = 24$. Since $30 > 24$, Dataset P has the greater interquartile range, meaning the middle 50% of its values are more spread out."
+  },
+  {
+    "id": "qbo-3-3",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A box plot has $Q_1 = 20$, $Q_2 = 30$, $Q_3 = 55$. What does the position of the median suggest about the shape of the distribution?",
+    "options": [
+      "Symmetric, because the median lies between Q1 and Q3",
+      "Positively skewed, because the median is closer to Q1 than to Q3",
+      "Negatively skewed, because the median is closer to Q1 than to Q3",
+      "Positively skewed, because the median is closer to Q3 than to Q1"
+    ],
+    "answer": "Positively skewed, because the median is closer to Q1 than to Q3",
+    "tolerance": 0,
+    "hint": "Compare the distance from Q1 to Q2 with the distance from Q2 to Q3. A longer upper section suggests a longer upper tail.",
+    "explanation": "Distance from $Q_1$ to $Q_2$: $30 - 20 = 10$. Distance from $Q_2$ to $Q_3$: $55 - 30 = 25$. The median is much closer to $Q_1$ than to $Q_3$, indicating the upper part of the box is stretched. This suggests a longer upper tail — a positively skewed distribution."
+  },
+  {
+    "id": "qbo-3-4",
+    "subtopic": "quartiles-box-plots-and-outliers",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A dataset of 10 values has a mean of $12$. The value $48$ is identified as an outlier and removed. Find the mean of the remaining 9 values.",
+    "answer": 8,
+    "tolerance": 0,
+    "hint": "Use the mean to find the total sum of all 10 values. Subtract the outlier, then divide by the new number of values.",
+    "explanation": "Total sum $= 10 \\times 12 = 120$. After removing $48$: new sum $= 120 - 48 = 72$. New mean $= \\frac{72}{9} = 8$. Removing the large outlier substantially lowers the mean."
+  }
+]

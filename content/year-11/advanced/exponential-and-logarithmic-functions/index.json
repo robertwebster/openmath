@@ -1,0 +1,14 @@
+{
+  "id": "exponential-and-logarithmic-functions",
+  "title": "Exponential and logarithmic functions",
+  "year": 11,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Functions",
+  "syllabusOutcome": "MAV-11-07",
+  "description": "Graph and interpret exponential and logarithmic functions, apply log laws and solve equations.",
+  "subtopics": [
+    "exponential-functions",
+    "logarithmic-functions"
+  ]
+}

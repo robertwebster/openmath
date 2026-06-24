@@ -1,0 +1,84 @@
+[
+  {
+    "id": "dil-comb-we-1",
+    "title": "Applying a vertical dilation",
+    "difficulty": 1,
+    "problem": "The function $y = \\sin x$ is dilated vertically by a factor of 2. Write the equation of the new function and state whether this is an enlargement or a reduction.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the rule for a vertical dilation: a factor of $k$ maps $y = f(x)$ to $y = k\\,f(x)$.",
+        "working": "$$\\text{With } k = 2 \\text{ and } f(x) = \\sin x: \\quad y = 2\\sin x$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Classify the dilation by comparing the scale factor to 1.",
+        "working": "$$k = 2 > 1 \\implies \\text{vertical enlargement (graph is stretched away from the } x\\text{-axis)}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Verify with a key point. The maximum of $y = \\sin x$ is 1; check the maximum of the new function.",
+        "working": "$$\\text{Maximum of } y = 2\\sin x \\text{ is } 2 \\times 1 = 2 \\checkmark$$"
+      }
+    ],
+    "answer": "$y = 2\\sin x$; vertical enlargement with scale factor 2."
+  },
+  {
+    "id": "dil-comb-we-2",
+    "title": "Combining a dilation and a translation",
+    "difficulty": 2,
+    "problem": "Starting from $y = \\sqrt{x}$, apply (i) a horizontal dilation by factor 4, then (ii) a translation of 1 unit to the left and 2 units up. Write the equation of the resulting function and state its domain and range.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the horizontal dilation by factor 4. Replace $x$ with $\\dfrac{x}{4}$ in the equation.",
+        "working": "$$y = \\sqrt{\\frac{x}{4}} = \\frac{\\sqrt{x}}{2} = \\frac{1}{2}\\sqrt{x}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the translation 1 unit left and 2 units up. Replace $x$ with $x + 1$ and add 2.",
+        "working": "$$y = \\frac{1}{2}\\sqrt{x + 1} + 2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the domain. The radicand must be non-negative.",
+        "working": "$$x + 1 \\geq 0 \\implies x \\geq -1$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the range. Since $\\frac{1}{2}\\sqrt{x+1} \\geq 0$, find the minimum value of $y$.",
+        "working": "$$\\text{At } x = -1: \\quad y = \\tfrac{1}{2}(0) + 2 = 2 \\implies y \\geq 2$$"
+      }
+    ],
+    "answer": "$y = \\dfrac{1}{2}\\sqrt{x+1} + 2$; domain $x \\geq -1$; range $y \\geq 2$."
+  },
+  {
+    "id": "dil-comb-we-3",
+    "title": "Identifying all transformations from an equation",
+    "difficulty": 3,
+    "problem": "The equation $y = -2(x + 3)^2 - 1$ is obtained from $y = x^2$ by a sequence of transformations. Identify all transformations applied, stating the type, direction and magnitude.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the coefficient outside the bracket. The factor $-2$ combines a vertical dilation and a reflection in the $x$-axis.",
+        "working": "$$\\text{Factor } {-2}: \\text{ vertical dilation by scale factor } 2 \\text{ and reflection in the } x\\text{-axis}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the horizontal translation from $(x + 3)$. The graph shifts in the direction opposite to the sign.",
+        "working": "$$x \\to x + 3 \\implies \\text{horizontal translation 3 units to the left}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Identify the vertical translation from the constant term $-1$ added outside the square.",
+        "working": "$$y \\to y - 1 \\implies \\text{vertical translation 1 unit down}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Summarise all four transformations applied to $y = x^2$.",
+        "working": "$$\\text{(1) horizontal translation left 3} \\to \\text{(2) vertical dilation by factor 2} \\to \\text{(3) reflection in } x\\text{-axis} \\to \\text{(4) vertical translation down 1}$$"
+      }
+    ],
+    "answer": "Starting from $y = x^2$: horizontal translation 3 units left, vertical dilation by factor 2, reflection in the $x$-axis, vertical translation 1 unit down."
+  }
+]

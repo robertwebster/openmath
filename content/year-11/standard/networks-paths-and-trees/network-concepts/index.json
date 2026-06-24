@@ -1,0 +1,9 @@
+{
+  "id": "network-concepts",
+  "title": "Network concepts",
+  "topic": "networks-paths-and-trees",
+  "year": 11,
+  "strand": "Discrete Mathematics",
+  "syllabusOutcome": "MST-11-07",
+  "description": "Identify vertices, edges and vertex degrees in a network; classify networks as connected or disconnected; apply the handshaking lemma and distinguish between paths and walks."
+}

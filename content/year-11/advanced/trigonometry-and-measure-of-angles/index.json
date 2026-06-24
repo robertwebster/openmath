@@ -1,0 +1,16 @@
+{
+  "id": "trigonometry-and-measure-of-angles",
+  "title": "Trigonometry and measure of angles",
+  "year": 11,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Functions",
+  "syllabusOutcome": "MAV-11-04",
+  "description": "Apply trig ratios, sine and cosine rules, and work with radians and trigonometric graphs.",
+  "subtopics": [
+    "trig-with-acute-angles",
+    "non-right-angled-triangles",
+    "trigonometry-with-any-angle",
+    "radians"
+  ]
+}

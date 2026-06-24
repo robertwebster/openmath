@@ -1,0 +1,74 @@
+[
+  {
+    "id": "trig-any-angle-we-1",
+    "title": "Determining the sign of a trig ratio from the quadrant",
+    "difficulty": 1,
+    "problem": "Without using a calculator, determine the sign of $\\sin 250°$ and state which quadrant the angle lies in.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the quadrant by comparing $250°$ with the quadrant boundaries.",
+        "working": "The quadrant boundaries are $0°$, $90°$, $180°$, $270°$, $360°$. Since $180° < 250° < 270°$, the angle lies in the third quadrant."
+      },
+      {
+        "step": 2,
+        "instruction": "Recall which ratios are positive in the third quadrant using the ASTC rule.",
+        "working": "ASTC: All positive (Q1), Sin positive (Q2), Tan positive (Q3), Cos positive (Q4). In the third quadrant, only $\\tan$ is positive; $\\sin$ and $\\cos$ are both negative."
+      },
+      {
+        "step": 3,
+        "instruction": "State the sign of $\\sin 250°$.",
+        "working": "Since $250°$ is in the third quadrant and $\\sin$ is negative there, $\\sin 250° < 0$."
+      }
+    ],
+    "answer": "$\\sin 250°$ is negative (third quadrant)."
+  },
+  {
+    "id": "trig-any-angle-we-2",
+    "title": "Using the supplementary angle identity for an obtuse angle",
+    "difficulty": 2,
+    "problem": "Find the exact value of $\\cos 135°$ using the supplementary angle identity.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Express $135°$ in the form $180° - \\theta$ to identify the related acute angle.",
+        "working": "$135° = 180° - 45°$, so the related acute angle is $\\theta = 45°$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the supplementary angle identity $\\cos(180° - \\theta) = -\\cos\\theta$.",
+        "working": "$$\\cos 135° = \\cos(180° - 45°) = -\\cos 45°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the exact value $\\cos 45° = \\dfrac{\\sqrt{2}}{2}$.",
+        "working": "$$\\cos 135° = -\\frac{\\sqrt{2}}{2}$$"
+      }
+    ],
+    "answer": "$\\cos 135° = -\\dfrac{\\sqrt{2}}{2}$"
+  },
+  {
+    "id": "trig-any-angle-we-3",
+    "title": "Simplifying an expression using reflection identities",
+    "difficulty": 3,
+    "problem": "Use the identities $\\sin(360° - \\theta) = -\\sin\\theta$ and $\\cos(-\\theta) = \\cos\\theta$ to simplify and evaluate $\\sin(360° - 30°) \\times \\cos(-60°)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the identity $\\sin(360° - \\theta) = -\\sin\\theta$ with $\\theta = 30°$ to simplify the first factor.",
+        "working": "$$\\sin(360° - 30°) = -\\sin 30° = -\\frac{1}{2}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the identity $\\cos(-\\theta) = \\cos\\theta$ with $\\theta = 60°$ to simplify the second factor.",
+        "working": "$$\\cos(-60°) = \\cos 60° = \\frac{1}{2}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply the two simplified values to find the exact result.",
+        "working": "$$\\sin(360° - 30°) \\times \\cos(-60°) = \\left(-\\frac{1}{2}\\right) \\times \\frac{1}{2} = -\\frac{1}{4}$$"
+      }
+    ],
+    "answer": "$\\sin(360° - 30°) \\times \\cos(-60°) = -\\dfrac{1}{4}$"
+  }
+]

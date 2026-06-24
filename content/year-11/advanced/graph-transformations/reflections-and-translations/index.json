@@ -1,0 +1,9 @@
+{
+  "id": "reflections-and-translations",
+  "title": "Reflections and translations",
+  "topic": "graph-transformations",
+  "year": 11,
+  "strand": "Functions",
+  "syllabusOutcome": "MAV-11-03",
+  "description": "Apply reflections in the x- and y-axes and horizontal and vertical translations to functions; determine transformation parameters from equations written in the form $y - b = f(x - a)$."
+}

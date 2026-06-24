@@ -1,0 +1,84 @@
+[
+  {
+    "id": "sif-ex-1",
+    "title": "Simple interest using I = Prn",
+    "difficulty": 1,
+    "problem": "Find the simple interest earned when $P = \\$5000$, $r = 0.06$ and $n = 3$ using the formula $I = Prn$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the values to substitute.",
+        "working": "$P = 5000$, $r = 0.06$, $n = 3$"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the formula.",
+        "working": "$$I = Prn$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the values and evaluate.",
+        "working": "$$I = 5000 \\times 0.06 \\times 3 = \\$900$$"
+      }
+    ],
+    "answer": "$\\$900$"
+  },
+  {
+    "id": "sif-ex-2",
+    "title": "Compound interest with n = 2",
+    "difficulty": 2,
+    "problem": "Find $A$ using $A = P(1+r)^n$ when $P = \\$8000$, $r = 0.04$ and $n = 2$. Give your answer to the nearest cent.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the values to substitute.",
+        "working": "$P = 8000$, $r = 0.04$, $n = 2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate $(1 + r)^n$.",
+        "working": "$$(1 + 0.04)^2 = (1.04)^2 = 1.0816$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply $P$ by this result.",
+        "working": "$$A = 8000 \\times 1.0816 = \\$8652.80$$"
+      }
+    ],
+    "answer": "$\\$8652.80$"
+  },
+  {
+    "id": "sif-ex-3",
+    "title": "Reducing balance depreciation",
+    "difficulty": 3,
+    "problem": "A car is purchased for $C = \\$24\\,000$ and depreciates at $r = 0.20$ per year. Use $V = C(1-r)^n$ to find its value after $n = 3$ years. Interpret the result.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the values to substitute.",
+        "working": "$C = 24\\,000$, $r = 0.20$, $n = 3$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate $(1 - r)$.",
+        "working": "$$1 - 0.20 = 0.80$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Raise $0.80$ to the power of $3$.",
+        "working": "$$(0.80)^2 = 0.64$$\n$$(0.80)^3 = 0.64 \\times 0.80 = 0.512$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Multiply by $C$ to find the value.",
+        "working": "$$V = 24\\,000 \\times 0.512 = \\$12\\,288$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Interpret the result.",
+        "working": "The car has lost $\\$24\\,000 - \\$12\\,288 = \\$11\\,712$ in value over 3 years."
+      }
+    ],
+    "answer": "$\\$12\\,288$"
+  }
+]

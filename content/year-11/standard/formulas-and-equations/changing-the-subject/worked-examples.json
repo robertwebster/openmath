@@ -1,0 +1,84 @@
+[
+  {
+    "id": "cts-ex-1",
+    "title": "Make P the subject of I = Prt",
+    "difficulty": 1,
+    "problem": "The simple interest formula is $I = Prt$, where $I$ is interest earned, $P$ is the principal, $r$ is the annual interest rate and $t$ is time in years. Make $P$ the subject. Find $P$ when $I = \\$180$, $r = 0.04$ and $t = 3$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify what is being done to $P$ in the formula.",
+        "working": "In $I = Prt$, $P$ is multiplied by $r$ and then by $t$. To isolate $P$, divide both sides by $rt$."
+      },
+      {
+        "step": 2,
+        "instruction": "Divide both sides by $rt$.",
+        "working": "$$\\frac{I}{rt} = \\frac{Prt}{rt} \\implies P = \\frac{I}{rt}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $I = 180$, $r = 0.04$ and $t = 3$.",
+        "working": "$$P = \\frac{180}{0.04 \\times 3} = \\frac{180}{0.12} = \\$1500$$"
+      }
+    ],
+    "answer": "$P = \\$1500$"
+  },
+  {
+    "id": "cts-ex-2",
+    "title": "Make r the subject of A = pi r squared",
+    "difficulty": 2,
+    "problem": "The area of a circle is $A = \\pi r^2$, where $r > 0$. Make $r$ the subject. Find $r$ when $A = 153.94\\,\\text{cm}^2$. Use $\\pi = 3.14159$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify what is being done to $r$.",
+        "working": "In $A = \\pi r^2$, $r$ is first squared and then multiplied by $\\pi$. Reverse the operations in the opposite order."
+      },
+      {
+        "step": 2,
+        "instruction": "Divide both sides by $\\pi$.",
+        "working": "$$r^2 = \\frac{A}{\\pi}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the positive square root of both sides (since $r > 0$).",
+        "working": "$$r = \\sqrt{\\frac{A}{\\pi}}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Substitute $A = 153.94$ and $\\pi = 3.14159$.",
+        "working": "$$r = \\sqrt{\\frac{153.94}{3.14159}} = \\sqrt{49.0} = 7\\,\\text{cm}$$"
+      }
+    ],
+    "answer": "$r = 7\\,\\text{cm}$"
+  },
+  {
+    "id": "cts-ex-3",
+    "title": "Make h the subject of SA = 2pi r(r + h)",
+    "difficulty": 3,
+    "problem": "The total surface area of a closed cylinder is $SA = 2\\pi r(r + h)$. Make $h$ the subject. Find $h$ when $SA = 376.99\\,\\text{cm}^2$ and $r = 4\\,\\text{cm}$. Use $\\pi = 3.14159$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Divide both sides by $2\\pi r$ to isolate the bracket containing $h$.",
+        "working": "$$\\frac{SA}{2\\pi r} = r + h$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Subtract $r$ from both sides to make $h$ the subject.",
+        "working": "$$h = \\frac{SA}{2\\pi r} - r$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $SA = 376.99$, $r = 4$ and $\\pi = 3.14159$.",
+        "working": "$$h = \\frac{376.99}{2 \\times 3.14159 \\times 4} - 4 = \\frac{376.99}{25.133} - 4$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Evaluate and interpret the result.",
+        "working": "$$h = 15.0 - 4 = 11\\,\\text{cm}$$\n\nThe cylinder has a height of $11\\,\\text{cm}$."
+      }
+    ],
+    "answer": "$h = 11\\,\\text{cm}$"
+  }
+]

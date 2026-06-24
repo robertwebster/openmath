@@ -1,0 +1,200 @@
+[
+  {
+    "id": "rtr-1-1",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Find the exact value of $\\csc 30°$.",
+    "answer": 2,
+    "tolerance": 0,
+    "hint": "Use $\\csc\\theta = \\dfrac{1}{\\sin\\theta}$ and recall that $\\sin 30° = \\dfrac{1}{2}$.",
+    "explanation": "$$\\csc 30° = \\frac{1}{\\sin 30°} = \\frac{1}{\\tfrac{1}{2}} = 2$$"
+  },
+  {
+    "id": "rtr-1-2",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Find the exact value of $\\cot 45°$.",
+    "answer": 1,
+    "tolerance": 0,
+    "hint": "Use $\\cot\\theta = \\dfrac{\\cos\\theta}{\\sin\\theta}$ and recall that $\\sin 45° = \\cos 45° = \\dfrac{\\sqrt{2}}{2}$.",
+    "explanation": "$$\\cot 45° = \\frac{\\cos 45°}{\\sin 45°} = \\frac{\\tfrac{\\sqrt{2}}{2}}{\\tfrac{\\sqrt{2}}{2}} = 1$$\nSince $\\sin 45° = \\cos 45°$, their ratio is $1$."
+  },
+  {
+    "id": "rtr-1-3",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Find the exact value of $\\sec 60°$.",
+    "answer": 2,
+    "tolerance": 0,
+    "hint": "Use $\\sec\\theta = \\dfrac{1}{\\cos\\theta}$ and recall that $\\cos 60° = \\dfrac{1}{2}$.",
+    "explanation": "$$\\sec 60° = \\frac{1}{\\cos 60°} = \\frac{1}{\\tfrac{1}{2}} = 2$$"
+  },
+  {
+    "id": "rtr-1-4",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which of the following is the exact value of $\\sec 30°$?",
+    "options": [
+      "$\\dfrac{\\sqrt{3}}{2}$",
+      "$\\dfrac{2\\sqrt{3}}{3}$",
+      "$\\sqrt{3}$",
+      "$2$"
+    ],
+    "answer": "$\\dfrac{2\\sqrt{3}}{3}$",
+    "tolerance": 0,
+    "hint": "Use $\\sec 30° = \\dfrac{1}{\\cos 30°}$ and recall that $\\cos 30° = \\dfrac{\\sqrt{3}}{2}$.",
+    "explanation": "$$\\sec 30° = \\frac{1}{\\cos 30°} = \\frac{1}{\\tfrac{\\sqrt{3}}{2}} = \\frac{2}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3}$$\nThe last step rationalises the denominator by multiplying by $\\dfrac{\\sqrt{3}}{\\sqrt{3}}$."
+  },
+  {
+    "id": "rtr-2-1",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Simplify $\\dfrac{\\sec\\theta}{\\tan\\theta}$ using the reciprocal identities.",
+    "options": [
+      "$\\sec\\theta$",
+      "$\\csc\\theta$",
+      "$\\tan\\theta$",
+      "$\\cot\\theta$"
+    ],
+    "answer": "$\\csc\\theta$",
+    "tolerance": 0,
+    "hint": "Write $\\sec\\theta = \\dfrac{1}{\\cos\\theta}$ and $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$, then divide.",
+    "explanation": "$$\\frac{\\sec\\theta}{\\tan\\theta} = \\frac{\\tfrac{1}{\\cos\\theta}}{\\tfrac{\\sin\\theta}{\\cos\\theta}} = \\frac{1}{\\cos\\theta} \\times \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{1}{\\sin\\theta} = \\csc\\theta$$"
+  },
+  {
+    "id": "rtr-2-2",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Simplify $\\dfrac{\\cot\\theta}{\\csc\\theta}$ using the reciprocal identities.",
+    "options": [
+      "$\\sin\\theta$",
+      "$\\cos\\theta$",
+      "$\\tan\\theta$",
+      "$\\sec\\theta$"
+    ],
+    "answer": "$\\cos\\theta$",
+    "tolerance": 0,
+    "hint": "Write $\\cot\\theta = \\dfrac{\\cos\\theta}{\\sin\\theta}$ and $\\csc\\theta = \\dfrac{1}{\\sin\\theta}$, then divide.",
+    "explanation": "$$\\frac{\\cot\\theta}{\\csc\\theta} = \\frac{\\tfrac{\\cos\\theta}{\\sin\\theta}}{\\tfrac{1}{\\sin\\theta}} = \\frac{\\cos\\theta}{\\sin\\theta} \\times \\sin\\theta = \\cos\\theta$$"
+  },
+  {
+    "id": "rtr-2-3",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Evaluate $\\sin\\theta \\cdot \\csc\\theta + \\cos\\theta \\cdot \\sec\\theta$ for any value of $\\theta$ where both expressions are defined.",
+    "answer": 2,
+    "tolerance": 0,
+    "hint": "Apply $\\csc\\theta = \\dfrac{1}{\\sin\\theta}$ and $\\sec\\theta = \\dfrac{1}{\\cos\\theta}$ to simplify each product first.",
+    "explanation": "$$\\sin\\theta \\cdot \\csc\\theta + \\cos\\theta \\cdot \\sec\\theta = \\sin\\theta \\cdot \\frac{1}{\\sin\\theta} + \\cos\\theta \\cdot \\frac{1}{\\cos\\theta} = 1 + 1 = 2$$\nThe expression equals $2$ for all valid $\\theta$, regardless of the specific angle."
+  },
+  {
+    "id": "rtr-2-4",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Simplify $\\dfrac{\\sin^2\\theta \\cdot \\sec\\theta}{\\tan\\theta}$ using the reciprocal identities.",
+    "options": [
+      "$\\cos\\theta$",
+      "$\\sin\\theta$",
+      "$\\tan\\theta$",
+      "$\\sec\\theta$"
+    ],
+    "answer": "$\\sin\\theta$",
+    "tolerance": 0,
+    "hint": "Replace $\\sec\\theta$ with $\\dfrac{1}{\\cos\\theta}$ and $\\tan\\theta$ with $\\dfrac{\\sin\\theta}{\\cos\\theta}$, then simplify.",
+    "explanation": "$$\\frac{\\sin^2\\theta \\cdot \\sec\\theta}{\\tan\\theta} = \\frac{\\sin^2\\theta \\cdot \\tfrac{1}{\\cos\\theta}}{\\tfrac{\\sin\\theta}{\\cos\\theta}} = \\frac{\\tfrac{\\sin^2\\theta}{\\cos\\theta}}{\\tfrac{\\sin\\theta}{\\cos\\theta}} = \\frac{\\sin^2\\theta}{\\cos\\theta} \\times \\frac{\\cos\\theta}{\\sin\\theta} = \\sin\\theta$$"
+  },
+  {
+    "id": "rtr-3-1",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Prove the identity $\\sec^2\\theta - \\tan^2\\theta = 1$ by expressing each term in terms of $\\sin\\theta$ and $\\cos\\theta$. What is the value of $\\sec^2\\theta - \\tan^2\\theta$?",
+    "answer": 1,
+    "tolerance": 0,
+    "hint": "Write $\\sec^2\\theta = \\dfrac{1}{\\cos^2\\theta}$ and $\\tan^2\\theta = \\dfrac{\\sin^2\\theta}{\\cos^2\\theta}$, then combine over a common denominator.",
+    "explanation": "$$\\sec^2\\theta - \\tan^2\\theta = \\frac{1}{\\cos^2\\theta} - \\frac{\\sin^2\\theta}{\\cos^2\\theta} = \\frac{1 - \\sin^2\\theta}{\\cos^2\\theta}$$\nUsing the Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$, so $1 - \\sin^2\\theta = \\cos^2\\theta$:\n$$= \\frac{\\cos^2\\theta}{\\cos^2\\theta} = 1$$\nThis holds for all $\\theta$ where $\\cos\\theta \\ne 0$."
+  },
+  {
+    "id": "rtr-3-2",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Simplify $\\dfrac{\\sec^2\\theta}{\\tan\\theta + \\cot\\theta}$ by expressing all ratios in terms of $\\sin\\theta$ and $\\cos\\theta$.",
+    "options": [
+      "$\\sin\\theta$",
+      "$\\cos\\theta$",
+      "$\\tan\\theta$",
+      "$\\cot\\theta$"
+    ],
+    "answer": "$\\tan\\theta$",
+    "tolerance": 0,
+    "hint": "First simplify $\\tan\\theta + \\cot\\theta$ by combining over the common denominator $\\sin\\theta\\cos\\theta$.",
+    "explanation": "**Step 1:** Simplify $\\tan\\theta + \\cot\\theta$.\n$$\\tan\\theta + \\cot\\theta = \\frac{\\sin\\theta}{\\cos\\theta} + \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{\\sin^2\\theta + \\cos^2\\theta}{\\sin\\theta\\cos\\theta} = \\frac{1}{\\sin\\theta\\cos\\theta}$$\n**Step 2:** Substitute and simplify.\n$$\\frac{\\sec^2\\theta}{\\tan\\theta + \\cot\\theta} = \\frac{\\tfrac{1}{\\cos^2\\theta}}{\\tfrac{1}{\\sin\\theta\\cos\\theta}} = \\frac{1}{\\cos^2\\theta} \\times \\sin\\theta\\cos\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$$"
+  },
+  {
+    "id": "rtr-3-3",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Expand and simplify $(\\sec\\theta - 1)(\\sec\\theta + 1)$, expressing your answer as a single trigonometric ratio.",
+    "options": [
+      "$\\sin^2\\theta$",
+      "$\\tan^2\\theta$",
+      "$\\csc^2\\theta - 1$",
+      "$\\cos^2\\theta$"
+    ],
+    "answer": "$\\tan^2\\theta$",
+    "tolerance": 0,
+    "hint": "Use the difference of two squares: $(a - 1)(a + 1) = a^2 - 1$. Then express $\\sec^2\\theta - 1$ in terms of $\\sin\\theta$ and $\\cos\\theta$.",
+    "explanation": "$$(\\sec\\theta - 1)(\\sec\\theta + 1) = \\sec^2\\theta - 1 = \\frac{1}{\\cos^2\\theta} - 1 = \\frac{1 - \\cos^2\\theta}{\\cos^2\\theta} = \\frac{\\sin^2\\theta}{\\cos^2\\theta} = \\tan^2\\theta$$\nThe step $1 - \\cos^2\\theta = \\sin^2\\theta$ uses the Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$."
+  },
+  {
+    "id": "rtr-3-4",
+    "subtopic": "reciprocal-trig-ratios",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Simplify $\\dfrac{\\csc\\theta}{\\cot\\theta + \\tan\\theta}$ by expressing all terms in terms of $\\sin\\theta$ and $\\cos\\theta$.",
+    "options": [
+      "$\\sin\\theta$",
+      "$\\cos\\theta$",
+      "$\\tan\\theta$",
+      "$\\csc\\theta$"
+    ],
+    "answer": "$\\cos\\theta$",
+    "tolerance": 0,
+    "hint": "First simplify $\\cot\\theta + \\tan\\theta$ by finding a common denominator of $\\sin\\theta\\cos\\theta$.",
+    "explanation": "**Step 1:** Simplify the denominator.\n$$\\cot\\theta + \\tan\\theta = \\frac{\\cos\\theta}{\\sin\\theta} + \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{\\cos^2\\theta + \\sin^2\\theta}{\\sin\\theta\\cos\\theta} = \\frac{1}{\\sin\\theta\\cos\\theta}$$\n**Step 2:** Substitute $\\csc\\theta = \\dfrac{1}{\\sin\\theta}$ and simplify.\n$$\\frac{\\csc\\theta}{\\cot\\theta + \\tan\\theta} = \\frac{\\tfrac{1}{\\sin\\theta}}{\\tfrac{1}{\\sin\\theta\\cos\\theta}} = \\frac{1}{\\sin\\theta} \\times \\sin\\theta\\cos\\theta = \\cos\\theta$$"
+  }
+]

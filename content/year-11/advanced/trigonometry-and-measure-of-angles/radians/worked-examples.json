@@ -1,0 +1,74 @@
+[
+  {
+    "id": "rad-we-1",
+    "title": "Converting between degrees and radians",
+    "difficulty": 1,
+    "problem": "Convert (a) $150°$ to radians and (b) $\\dfrac{7\\pi}{6}$ radians to degrees.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "To convert degrees to radians, multiply by $\\dfrac{\\pi}{180°}$.",
+        "working": "$$150° \\times \\frac{\\pi}{180°} = \\frac{150\\pi}{180} = \\frac{5\\pi}{6}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "To convert radians to degrees, multiply by $\\dfrac{180°}{\\pi}$.",
+        "working": "$$\\frac{7\\pi}{6} \\times \\frac{180°}{\\pi} = \\frac{7 \\times 180°}{6} = 7 \\times 30° = 210°$$"
+      }
+    ],
+    "answer": "(a) $150° = \\dfrac{5\\pi}{6}$ radians; (b) $\\dfrac{7\\pi}{6} = 210°$"
+  },
+  {
+    "id": "rad-we-2",
+    "title": "Finding arc length and sector area",
+    "difficulty": 2,
+    "problem": "A sector has radius $9$ cm and central angle $\\dfrac{5\\pi}{6}$ radians. Find (a) the arc length and (b) the area of the sector. Give answers to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the arc length formula $l = r\\theta$ with $r = 9$ and $\\theta = \\dfrac{5\\pi}{6}$.",
+        "working": "$$l = 9 \\times \\frac{5\\pi}{6} = \\frac{45\\pi}{6} = \\frac{15\\pi}{2} \\approx 23.56 \\text{ cm}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the sector area formula $A = \\dfrac{1}{2}r^2\\theta$ with $r = 9$ and $\\theta = \\dfrac{5\\pi}{6}$.",
+        "working": "$$A = \\frac{1}{2} \\times 81 \\times \\frac{5\\pi}{6} = \\frac{81 \\times 5\\pi}{12} = \\frac{405\\pi}{12} = \\frac{135\\pi}{4}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate the area numerically.",
+        "working": "$$A = \\frac{135\\pi}{4} \\approx 106.03 \\text{ cm}^2$$"
+      }
+    ],
+    "answer": "Arc length $= \\dfrac{15\\pi}{2} \\approx 23.56$ cm; Sector area $= \\dfrac{135\\pi}{4} \\approx 106.03$ cm²"
+  },
+  {
+    "id": "rad-we-3",
+    "title": "Segment area and arc length — composite problem",
+    "difficulty": 3,
+    "problem": "A circle has radius $7$ cm. A chord subtends a central angle of $\\dfrac{\\pi}{2}$ radians. Find (a) the area of the minor segment and (b) the arc length of the minor arc. Give answers to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the sector area using $A_{\\text{sector}} = \\dfrac{1}{2}r^2\\theta$.",
+        "working": "$$A_{\\text{sector}} = \\frac{1}{2} \\times 49 \\times \\frac{\\pi}{2} = \\frac{49\\pi}{4} \\approx 38.48 \\text{ cm}^2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the triangle area using $A_{\\triangle} = \\dfrac{1}{2}r^2\\sin\\theta$.",
+        "working": "$$A_{\\triangle} = \\frac{1}{2} \\times 49 \\times \\sin\\frac{\\pi}{2} = \\frac{49}{2} \\times 1 = 24.5 \\text{ cm}^2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Subtract to find the segment area: segment $=$ sector $-$ triangle.",
+        "working": "$$A_{\\text{segment}} = \\frac{49\\pi}{4} - \\frac{49}{2} = \\frac{49(\\pi - 2)}{4} \\approx 38.48 - 24.50 \\approx 13.98 \\text{ cm}^2$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the arc length using $l = r\\theta$.",
+        "working": "$$l = 7 \\times \\frac{\\pi}{2} = \\frac{7\\pi}{2} \\approx 11.00 \\text{ cm}$$"
+      }
+    ],
+    "answer": "Segment area $= \\dfrac{49(\\pi-2)}{4} \\approx 13.98$ cm²; Arc length $= \\dfrac{7\\pi}{2} \\approx 11.00$ cm"
+  }
+]

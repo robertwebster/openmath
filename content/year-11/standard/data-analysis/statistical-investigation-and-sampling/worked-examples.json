@@ -1,0 +1,79 @@
+[
+  {
+    "id": "sis-worked-1",
+    "title": "Identifying a sampling method",
+    "difficulty": 1,
+    "problem": "A Year 11 class of 30 students wants to select 6 students to represent them at a school council meeting. The teacher writes each student's name on a separate slip of paper, places all slips in a bag, shakes it, and draws out 6 slips without looking. Identify the sampling method used and explain why it is appropriate.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Determine whether every student has an equal chance of being selected.",
+        "working": "All 30 names are in the bag. Each draw is made without looking, so every student has an equal chance of $\\dfrac{1}{30}$ on the first draw."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the sampling method.",
+        "working": "Selection is entirely by chance with no fixed pattern and no grouping of students — this is random sampling."
+      },
+      {
+        "step": 3,
+        "instruction": "Explain why the method is appropriate.",
+        "working": "Every student could be chosen, so no individual or group is favoured. The sample is unlikely to be systematically biased."
+      }
+    ],
+    "answer": "The sampling method is random sampling. It is appropriate because every student has an equal chance of being selected, which reduces bias in choosing representatives."
+  },
+  {
+    "id": "sis-worked-2",
+    "title": "Identifying and improving a flawed survey question",
+    "difficulty": 2,
+    "problem": "A student writes this survey question to investigate screen time: \"Do you spend too much time on your phone and does it stop you from sleeping?\" Identify two flaws in this question and suggest a specific improvement for each flaw.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Check whether the question is neutral or assumes a particular answer.",
+        "working": "The phrase \"too much\" assumes the respondent has a problem with phone use. This steers respondents towards agreeing, making it a leading question."
+      },
+      {
+        "step": 2,
+        "instruction": "Suggest an improvement for the leading language.",
+        "working": "Replace \"too much\" with a neutral phrase. For example: \"On average, how many hours per day do you spend on your phone? (Less than 2 / 2 to 4 / More than 4)\""
+      },
+      {
+        "step": 3,
+        "instruction": "Check whether the question asks about more than one topic.",
+        "working": "The question asks about phone usage and sleep in the same item. A respondent who uses their phone a lot but sleeps well cannot answer truthfully. This is a double-barrelled question."
+      },
+      {
+        "step": 4,
+        "instruction": "Suggest an improvement for the double-barrelled structure.",
+        "working": "Split into two separate questions: (1) \"On average, how many hours per day do you spend on your phone?\" and (2) \"Does using your phone at night affect how well you sleep? (Yes / No / Sometimes)\""
+      }
+    ],
+    "answer": "The question has two flaws. First, it is leading — \"too much\" assumes excessive use. Second, it is double-barrelled — it asks about phone use and sleep in one item. Each flaw is addressed by rewriting as a separate, neutral question."
+  },
+  {
+    "id": "sis-worked-3",
+    "title": "Evaluating representativeness and identifying an ethical concern",
+    "difficulty": 3,
+    "problem": "A researcher wants to study healthy eating habits across a city. She surveys 200 people attending a farmers market on a Saturday morning. Explain whether this sample is likely to be representative of the city's population, and identify one ethical concern with the investigation.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Consider the characteristics of people who attend a farmers market on a Saturday morning.",
+        "working": "Farmers market attendees tend to be people who value fresh or locally produced food and have free time on Saturday mornings. This excludes shift workers, people with lower disposable incomes who shop elsewhere, and those who are less focused on healthy eating."
+      },
+      {
+        "step": 2,
+        "instruction": "Conclude whether the sample represents the broader city population.",
+        "working": "The sample is drawn from a self-selected group with above-average interest in healthy food. It overrepresents health-conscious consumers and is unlikely to reflect the full range of eating habits across the city."
+      },
+      {
+        "step": 3,
+        "instruction": "Identify one ethical concern.",
+        "working": "Participants approached in a public setting may feel social pressure to respond. They may not realise they are free to decline, which means consent may not be fully informed or voluntary."
+      }
+    ],
+    "answer": "The sample is unlikely to be representative — farmers market shoppers tend to have stronger interest in healthy eating than the general population, so the data will overestimate healthy eating habits city-wide. An ethical concern is that participants approached in public may not feel free to decline, raising questions about whether their consent is genuinely voluntary."
+  }
+]

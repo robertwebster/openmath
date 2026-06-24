@@ -1,0 +1,9 @@
+{
+  "id": "time-zones-and-utc",
+  "title": "Time zones and UTC",
+  "topic": "time-and-location",
+  "year": 11,
+  "strand": "Measurement",
+  "syllabusOutcome": "MST-11-06",
+  "description": "Convert between 12-hour and 24-hour time, work with Australian time zones and daylight saving, and solve multi-timezone problems using UTC offsets."
+}

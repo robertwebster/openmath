@@ -1,0 +1,79 @@
+[
+  {
+    "id": "var-mod-we-1",
+    "title": "Identifying the type of variation",
+    "difficulty": 1,
+    "problem": "State whether each relationship represents direct variation, inverse variation, or neither, and give the general form in each case.\n\n(a) $y = 4x^2$ \n(b) $y = \\dfrac{9}{x^3}$ \n(c) $y = 2x + 5$",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Check (a): compare $y = 4x^2$ with the direct variation form $y = kx^n$.",
+        "working": "$$y = 4x^2 \\text{ matches } y = kx^n \\text{ with } k = 4,\\ n = 2.$$\n$$\\text{This is direct variation ($y$ varies directly as $x^2$).}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Check (b): compare $y = \\dfrac{9}{x^3}$ with the inverse variation form $y = \\dfrac{k}{x^n}$.",
+        "working": "$$y = \\frac{9}{x^3} \\text{ matches } y = \\frac{k}{x^n} \\text{ with } k = 9,\\ n = 3.$$\n$$\\text{This is inverse variation ($y$ varies inversely as $x^3$).}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Check (c): $y = 2x + 5$ has a non-zero constant term added. Compare with both forms.",
+        "working": "$$y = 2x + 5 \\text{ is neither } y = kx^n \\text{ nor } y = \\frac{k}{x^n}.$$\n$$\\text{The constant term }+5\\text{ means it is neither direct nor inverse variation.}$$"
+      }
+    ],
+    "answer": "(a) Direct variation, $y = 4x^2$. (b) Inverse variation, $y = 9/x^3$. (c) Neither."
+  },
+  {
+    "id": "var-mod-we-2",
+    "title": "Finding the constant of variation and using the model",
+    "difficulty": 2,
+    "problem": "$y$ varies directly as $x^2$. When $x = 4$, $y = 80$. Find the constant of variation $k$ and use the model to find $y$ when $x = 7$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the general direct variation equation for $y$ varying as $x^2$.",
+        "working": "$$y = kx^2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values $x = 4$ and $y = 80$ to find $k$.",
+        "working": "$$80 = k(4)^2 = 16k \\implies k = \\frac{80}{16} = 5$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the specific model and substitute $x = 7$.",
+        "working": "$$y = 5x^2 \\implies y = 5(7)^2 = 5 \\times 49 = 245$$"
+      }
+    ],
+    "answer": "$k = 5$; when $x = 7$, $y = 245$."
+  },
+  {
+    "id": "var-mod-we-3",
+    "title": "Constructing a variation model from two data points",
+    "difficulty": 3,
+    "problem": "It is known that $y$ varies inversely as $x$. Two measurements give $y = 20$ when $x = 3$, and $y = 15$ when $x = 4$. Verify that the model is consistent with both data points, then predict $y$ when $x = 12$ and comment on the reliability of the prediction.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the inverse variation model and find $k$ from the first data point.",
+        "working": "$$y = \\frac{k}{x} \\implies k = xy = 3 \\times 20 = 60$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Verify $k$ using the second data point.",
+        "working": "$$k = xy = 4 \\times 15 = 60 \\checkmark$$\n$$\\text{Both data points give } k = 60,\\text{ so the model is consistent.}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the specific model and substitute $x = 12$.",
+        "working": "$$y = \\frac{60}{x} \\implies y = \\frac{60}{12} = 5$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Comment on the reliability of the prediction.",
+        "working": "$$\\text{The model is internally consistent (both data points agree).}$$\n$$\\text{However, } x = 12 \\text{ is well beyond the observed range of 3 to 4,}$$\n$$\\text{so this is extrapolation. The prediction is reliable only if the}$$\n$$\\text{inverse variation relationship continues to hold for larger values of } x.$$"
+      }
+    ],
+    "answer": "$k = 60$; the model is $y = 60/x$; when $x = 12$, $y = 5$. The prediction involves extrapolation beyond the observed data range and should be verified with additional measurements."
+  }
+]

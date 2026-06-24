@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tzu-ex-1",
+    "title": "Converting between 12-hour and 24-hour time and finding elapsed time",
+    "difficulty": 1,
+    "problem": "A cinema session starts at $7{:}45\\text{ pm}$ and ends at $9{:}50\\text{ pm}$. Write both times in 24-hour format and find the duration of the session in minutes.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Convert the start time from 12-hour to 24-hour format.",
+        "working": "For pm times from $1{:}00\\text{ pm}$ onwards, add 12 to the hour. $7 + 12 = 19$, so $7{:}45\\text{ pm} = 19{:}45$."
+      },
+      {
+        "step": 2,
+        "instruction": "Convert the end time from 12-hour to 24-hour format.",
+        "working": "$9 + 12 = 21$, so $9{:}50\\text{ pm} = 21{:}50$."
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the elapsed time in minutes.",
+        "working": "From $19{:}45$ to $21{:}45$ is $2$ hours $= 120$ minutes. From $21{:}45$ to $21{:}50$ is $5$ minutes. Total duration $= 120 + 5 = 125$ minutes."
+      }
+    ],
+    "answer": "Start: $19{:}45$; End: $21{:}50$; Duration: $125$ minutes."
+  },
+  {
+    "id": "tzu-ex-2",
+    "title": "Converting between Australian time zones and expressing UTC offsets",
+    "difficulty": 2,
+    "problem": "It is $4{:}30\\text{ pm}$ AEDT (UTC+11) in Sydney. Find the current time in Perth (AWST, UTC+8) and state the equivalent UTC time.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Convert Sydney AEDT to UTC by subtracting the UTC offset.",
+        "working": "AEDT is UTC+11, so subtract 11 hours. $16{:}30 - 11 = 05{:}30$ UTC."
+      },
+      {
+        "step": 2,
+        "instruction": "Convert UTC to Perth time by adding Perth's UTC offset.",
+        "working": "AWST is UTC+8, so add 8 hours. $05{:}30 + 8 = 13{:}30$. Perth time is $1{:}30\\text{ pm}$ (13:30)."
+      },
+      {
+        "step": 3,
+        "instruction": "State the UTC time and summarise.",
+        "working": "The UTC time is $05{:}30$. Sydney (AEDT, UTC+11) is $3$ hours ahead of Perth (AWST, UTC+8), since $11 - 8 = 3$."
+      }
+    ],
+    "answer": "UTC time: $05{:}30$; Perth time: $1{:}30\\text{ pm}$ (13:30)."
+  },
+  {
+    "id": "tzu-ex-3",
+    "title": "Solving a multi-timezone flight problem using UTC",
+    "difficulty": 3,
+    "problem": "A flight departs Auckland (NZST, UTC+12) at $9{:}00\\text{ am}$ on Saturday and takes 11 hours to reach Dubai (UTC+4). What is the local Dubai arrival time?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Convert the Auckland departure time to UTC.",
+        "working": "NZST is UTC+12, so subtract 12 hours. $09{:}00 - 12 = -03{:}00$, which means $21{:}00$ (9:00 pm) on Friday UTC. (Going back 12 hours from 9:00 am Saturday crosses midnight.)"
+      },
+      {
+        "step": 2,
+        "instruction": "Add the flight duration to find the arrival time in UTC.",
+        "working": "$21{:}00$ Friday UTC $+ 11$ hours $= 32{:}00 \\to 08{:}00$ Saturday UTC."
+      },
+      {
+        "step": 3,
+        "instruction": "Convert the UTC arrival time to Dubai local time.",
+        "working": "Dubai is UTC+4, so add 4 hours. $08{:}00 + 4 = 12{:}00$ Saturday. The flight arrives at noon local time in Dubai."
+      }
+    ],
+    "answer": "The flight arrives at $12{:}00\\text{ pm}$ (noon) on Saturday in Dubai."
+  }
+]

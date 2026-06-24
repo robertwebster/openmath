@@ -1,0 +1,84 @@
+[
+  {
+    "id": "muc-worked-1",
+    "title": "Converting between metric units of length",
+    "difficulty": 1,
+    "problem": "Convert $4.2$ km to centimetres.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Convert kilometres to metres by multiplying by $1000$.",
+        "working": "$4.2 \\times 1000 = 4200$ m"
+      },
+      {
+        "step": 2,
+        "instruction": "Convert metres to centimetres by multiplying by $100$.",
+        "working": "$4200 \\times 100 = 420\\,000$ cm"
+      },
+      {
+        "step": 3,
+        "instruction": "State the answer with units.",
+        "working": "$4.2$ km $= 420\\,000$ cm"
+      }
+    ],
+    "answer": "$420\\,000$ cm"
+  },
+  {
+    "id": "muc-worked-2",
+    "title": "Converting between units of volume and capacity",
+    "difficulty": 2,
+    "problem": "A fish tank has a volume of $48\\,000$ cm³. Express this volume in litres and in kilolitres.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Convert cm³ to mL using the fact that $1$ cm³ $= 1$ mL.",
+        "working": "$48\\,000$ cm³ $= 48\\,000$ mL"
+      },
+      {
+        "step": 2,
+        "instruction": "Convert mL to L by dividing by $1000$.",
+        "working": "$48\\,000 \\div 1000 = 48$ L"
+      },
+      {
+        "step": 3,
+        "instruction": "Convert L to kL by dividing by $1000$.",
+        "working": "$48 \\div 1000 = 0.048$ kL"
+      },
+      {
+        "step": 4,
+        "instruction": "State both answers with units.",
+        "working": "$48\\,000$ cm³ $= 48$ L $= 0.048$ kL"
+      }
+    ],
+    "answer": "$48$ L or $0.048$ kL"
+  },
+  {
+    "id": "muc-worked-3",
+    "title": "Multi-step conversion — volume in litres",
+    "difficulty": 3,
+    "problem": "A rectangular garden bed is $240$ cm long, $120$ cm wide and $25$ cm deep. Find the volume of soil needed in litres.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the volume of the garden bed in cm³.",
+        "working": "$V = 240 \\times 120 \\times 25 = 720\\,000$ cm³"
+      },
+      {
+        "step": 2,
+        "instruction": "Convert cm³ to mL using $1$ cm³ $= 1$ mL.",
+        "working": "$720\\,000$ cm³ $= 720\\,000$ mL"
+      },
+      {
+        "step": 3,
+        "instruction": "Convert mL to L by dividing by $1000$.",
+        "working": "$720\\,000 \\div 1000 = 720$ L"
+      },
+      {
+        "step": 4,
+        "instruction": "State the answer with units.",
+        "working": "Volume of soil $= 720$ L"
+      }
+    ],
+    "answer": "$720$ L"
+  }
+]

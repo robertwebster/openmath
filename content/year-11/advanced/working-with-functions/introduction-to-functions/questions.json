@@ -1,0 +1,194 @@
+[
+  {
+    "id": "intro-func-1-1",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "The vertical line test is used to decide whether a graph represents a function. Which statement correctly describes when a graph IS a function?",
+    "options": [
+      "Every horizontal line crosses the graph at most once.",
+      "Every vertical line crosses the graph at most once.",
+      "Every vertical line crosses the graph at least once.",
+      "The graph passes through the origin."
+    ],
+    "answer": "Every vertical line crosses the graph at most once.",
+    "tolerance": 0,
+    "hint": "A function assigns exactly one output to each input. Think about what that means for vertical lines.",
+    "explanation": "A graph represents a function if and only if every vertical line meets the graph at most once. This guarantees each $x$-value maps to no more than one $y$-value. Option A describes the horizontal line test, which is used to check if a function is one-to-one, not whether it is a function at all."
+  },
+  {
+    "id": "intro-func-1-2",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "The graph of $x^2 + y^2 = 25$ is a circle centred at the origin with radius $5$. Does this graph represent a function of $x$?",
+    "options": [
+      "Yes, because it is a smooth, closed curve.",
+      "No, because a vertical line such as $x = 3$ crosses the circle at two points.",
+      "Yes, because every $x$-value in $[-5, 5]$ appears on the graph.",
+      "No, because the graph does not pass the horizontal line test."
+    ],
+    "answer": "No, because a vertical line such as $x = 3$ crosses the circle at two points.",
+    "tolerance": 0,
+    "hint": "Apply the vertical line test: draw a vertical line at any $x$-value inside the circle and count intersections.",
+    "explanation": "At $x = 3$, substituting into $x^2 + y^2 = 25$ gives $9 + y^2 = 25$, so $y = \\pm 4$. The vertical line $x = 3$ meets the circle at $(3, 4)$ and $(3, -4)$ — two points. Because one $x$-value maps to two $y$-values, the circle does not represent a function."
+  },
+  {
+    "id": "intro-func-1-3",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The domain of $f(x) = \\sqrt{x - 4}$ can be written as $x \\geq k$. What is the value of $k$?",
+    "answer": 4,
+    "tolerance": 0,
+    "hint": "The expression under a square root must be greater than or equal to zero.",
+    "explanation": "For $f(x) = \\sqrt{x - 4}$ to be defined, we need $x - 4 \\geq 0$, which gives $x \\geq 4$. So the domain is $[4, \\infty)$ and $k = 4$."
+  },
+  {
+    "id": "intro-func-1-4",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The range of $f(x) = x^2 + 3$ for all real $x$ can be written as $y \\geq k$. What is the value of $k$?",
+    "answer": 3,
+    "tolerance": 0,
+    "hint": "What is the smallest possible value of $x^2$, and what does that make $f(x)$?",
+    "explanation": "Since $x^2 \\geq 0$ for all real $x$, the smallest value of $f(x) = x^2 + 3$ is $0 + 3 = 3$, achieved at $x = 0$. The range is $[3, \\infty)$ and $k = 3$."
+  },
+  {
+    "id": "intro-func-2-1",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Let $f(x) = 3x^2 - 2x + 5$. Find $f(3)$.",
+    "answer": 26,
+    "tolerance": 0,
+    "hint": "Substitute $x = 3$ into the rule and evaluate each term.",
+    "explanation": "Substituting $x = 3$: $f(3) = 3(3)^2 - 2(3) + 5 = 3 \\times 9 - 6 + 5 = 27 - 6 + 5 = 26$."
+  },
+  {
+    "id": "intro-func-2-2",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Let $f(x) = 3x^2 - 2x + 5$. Find $f(-3)$.",
+    "answer": 38,
+    "tolerance": 0,
+    "hint": "Substitute $x = -3$ and be careful with the signs.",
+    "explanation": "Substituting $x = -3$: $f(-3) = 3(-3)^2 - 2(-3) + 5 = 3 \\times 9 + 6 + 5 = 27 + 6 + 5 = 38$."
+  },
+  {
+    "id": "intro-func-2-3",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Find the zero of $f(x) = 4x - 8$ by solving $f(x) = 0$. What is the value of $x$?",
+    "answer": 2,
+    "tolerance": 0,
+    "hint": "Set the function equal to zero and solve the resulting equation.",
+    "explanation": "Setting $f(x) = 0$: $4x - 8 = 0 \\Rightarrow 4x = 8 \\Rightarrow x = 2$. The zero is at $x = 2$, which is also the $x$-intercept of the graph."
+  },
+  {
+    "id": "intro-func-2-4",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Find the positive zero of $f(x) = x^2 - 16$ by solving $f(x) = 0$. What is the positive value of $x$?",
+    "answer": 4,
+    "tolerance": 0,
+    "hint": "Set $x^2 - 16 = 0$ and use the difference of two squares or take the square root of both sides.",
+    "explanation": "Setting $f(x) = 0$: $x^2 - 16 = 0 \\Rightarrow x^2 = 16 \\Rightarrow x = \\pm 4$. The positive zero is $x = 4$."
+  },
+  {
+    "id": "intro-func-3-1",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Let $f(x) = 2x^2 - 5$. Compute $f(-x)$ and classify the function as even, odd or neither.",
+    "options": [
+      "Even, because $f(-x) = f(x)$ for all $x$.",
+      "Odd, because $f(-x) = -f(x)$ for all $x$.",
+      "Neither even nor odd, because $f(-x) \\neq f(x)$ and $f(-x) \\neq -f(x)$.",
+      "Both even and odd."
+    ],
+    "answer": "Even, because $f(-x) = f(x)$ for all $x$.",
+    "tolerance": 0,
+    "hint": "Replace $x$ with $-x$ in the rule and simplify. Then compare with $f(x)$ and $-f(x)$.",
+    "explanation": "Computing $f(-x) = 2(-x)^2 - 5 = 2x^2 - 5 = f(x)$. Since $f(-x) = f(x)$ for all real $x$, the function is even. Geometrically, the graph of $y = 2x^2 - 5$ is a parabola symmetric about the $y$-axis."
+  },
+  {
+    "id": "intro-func-3-2",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Let $f(x) = 4x^3 - 2x$. Compute $f(-x)$ and classify the function as even, odd or neither.",
+    "options": [
+      "Even, because $f(-x) = f(x)$ for all $x$.",
+      "Odd, because $f(-x) = -f(x)$ for all $x$.",
+      "Neither even nor odd.",
+      "Cannot be determined without a graph."
+    ],
+    "answer": "Odd, because $f(-x) = -f(x)$ for all $x$.",
+    "tolerance": 0,
+    "hint": "Replace $x$ with $-x$. Recall that $(-x)^3 = -x^3$.",
+    "explanation": "Computing $f(-x) = 4(-x)^3 - 2(-x) = -4x^3 + 2x = -(4x^3 - 2x) = -f(x)$. Since $f(-x) = -f(x)$ for all real $x$, the function is odd. Geometrically, the graph has rotational symmetry of $180°$ about the origin."
+  },
+  {
+    "id": "intro-func-3-3",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Let $f(x) = x^2 + 2x + 1$. Compute $f(-x)$ and classify the function as even, odd or neither.",
+    "options": [
+      "Even, because $f(-x) = f(x)$.",
+      "Odd, because $f(-x) = -f(x)$.",
+      "Neither even nor odd, because $f(-x) \\neq f(x)$ and $f(-x) \\neq -f(x)$.",
+      "Both even and odd."
+    ],
+    "answer": "Neither even nor odd, because $f(-x) \\neq f(x)$ and $f(-x) \\neq -f(x)$.",
+    "tolerance": 0,
+    "hint": "Compute $f(-x)$ and compare it to $f(x)$ and $-f(x)$ separately.",
+    "explanation": "Computing $f(-x) = (-x)^2 + 2(-x) + 1 = x^2 - 2x + 1$. Comparing: $f(x) = x^2 + 2x + 1 \\neq x^2 - 2x + 1 = f(-x)$, so $f$ is not even. Also $-f(x) = -x^2 - 2x - 1 \\neq x^2 - 2x + 1 = f(-x)$, so $f$ is not odd. The function is neither even nor odd, which can be seen from the fact that $f(x) = (x+1)^2$ is a parabola shifted left, not centred on the $y$-axis."
+  },
+  {
+    "id": "intro-func-3-4",
+    "subtopic": "introduction-to-functions",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "An even function satisfies $f(-x) = f(x)$ and an odd function satisfies $f(-x) = -f(x)$. Which statement correctly describes the symmetry of each type?",
+    "options": [
+      "An even function has symmetry about the $x$-axis; an odd function has symmetry about the $y$-axis.",
+      "An even function has symmetry about the $y$-axis; an odd function has rotational symmetry about the origin.",
+      "An even function has rotational symmetry about the origin; an odd function has symmetry about the $y$-axis.",
+      "An even function has symmetry about the $y$-axis; an odd function has symmetry about the $x$-axis."
+    ],
+    "answer": "An even function has symmetry about the $y$-axis; an odd function has rotational symmetry about the origin.",
+    "tolerance": 0,
+    "hint": "Think about what $f(-x) = f(x)$ means geometrically: the left and right sides of the graph are mirror images.",
+    "explanation": "If $f(-x) = f(x)$, then the point $(-x, f(x))$ lies on the graph whenever $(x, f(x))$ does. This means the graph is symmetric about the $y$-axis (a mirror reflection). If $f(-x) = -f(x)$, then $(-x, -f(x))$ lies on the graph whenever $(x, f(x))$ does. Reflecting through the origin maps $(x, y)$ to $(-x, -y)$, so the graph has $180°$ rotational symmetry about the origin."
+  }
+]

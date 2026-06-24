@@ -1,0 +1,188 @@
+[
+  {
+    "id": "tzu-q1",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Convert $8{:}15\\text{ pm}$ to 24-hour time.",
+    "options": [
+      "08:15",
+      "18:15",
+      "20:15",
+      "21:15"
+    ],
+    "answer": "20:15",
+    "tolerance": null,
+    "hint": "For pm times from 1:00 pm onwards, add 12 to the hour.",
+    "explanation": "Add 12 to the hour: $8 + 12 = 20$. The minutes stay the same, so $8{:}15\\text{ pm} = 20{:}15$."
+  },
+  {
+    "id": "tzu-q2",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Convert $13{:}40$ (24-hour time) to 12-hour time.",
+    "options": [
+      "1:40 am",
+      "1:40 pm",
+      "3:40 pm",
+      "11:40 am"
+    ],
+    "answer": "1:40 pm",
+    "tolerance": null,
+    "hint": "For hours from 13 to 23, subtract 12 to get the pm time.",
+    "explanation": "Subtract 12 from the hour: $13 - 12 = 1$. The minutes stay the same, so $13{:}40 = 1{:}40\\text{ pm}$."
+  },
+  {
+    "id": "tzu-q3",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A bus departs at $10{:}25$ and arrives at $13{:}10$ the same day. How many minutes does the journey take?",
+    "answer": 165,
+    "tolerance": 0,
+    "hint": "Find the difference in hours and minutes separately, then convert to minutes.",
+    "explanation": "From $10{:}25$ to $13{:}25$ is $3$ hours $= 180$ minutes. From $13{:}25$ back to $13{:}10$ is $-15$ minutes. So the journey takes $180 - 15 = 165$ minutes."
+  },
+  {
+    "id": "tzu-q4",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A film starts at $19{:}15$ and ends at $21{:}50$. How many minutes long is the film?",
+    "answer": 155,
+    "tolerance": 0,
+    "hint": "Calculate hours difference then minutes difference separately.",
+    "explanation": "From $19{:}15$ to $21{:}15$ is $2$ hours $= 120$ minutes. From $21{:}15$ to $21{:}50$ is $35$ minutes. Total: $120 + 35 = 155$ minutes."
+  },
+  {
+    "id": "tzu-q5",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Sydney uses AEST (UTC+10). When it is $3{:}00\\text{ pm}$ (15:00) in Sydney, what is the UTC time?",
+    "options": [
+      "1:00 am",
+      "5:00 am",
+      "1:00 pm",
+      "5:00 pm"
+    ],
+    "answer": "5:00 am",
+    "tolerance": null,
+    "hint": "UTC+10 means Sydney is 10 hours ahead of UTC. Subtract 10 hours to convert to UTC.",
+    "explanation": "Sydney (AEST) is UTC+10, meaning Sydney is 10 hours ahead of UTC. Subtract 10 hours: $15{:}00 - 10 = 05{:}00$ UTC $= 5{:}00\\text{ am}$."
+  },
+  {
+    "id": "tzu-q6",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which UTC offset corresponds to AEDT (Australian Eastern Daylight Time), observed during summer in NSW and Victoria?",
+    "options": [
+      "UTC+9",
+      "UTC+10",
+      "UTC+11",
+      "UTC+12"
+    ],
+    "answer": "UTC+11",
+    "tolerance": null,
+    "hint": "Daylight saving adds 1 hour to the standard time offset. AEST is UTC+10.",
+    "explanation": "AEST (standard time) is UTC+10. During daylight saving, clocks move forward 1 hour, making AEDT = $\\text{UTC}+10+1 = \\text{UTC}+11$."
+  },
+  {
+    "id": "tzu-q7",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Adelaide uses ACST (UTC+9:30). How many minutes ahead of UTC is Adelaide?",
+    "answer": 570,
+    "tolerance": 0,
+    "hint": "Convert 9 hours 30 minutes to minutes.",
+    "explanation": "ACST is UTC+9:30, meaning Adelaide is $9$ hours and $30$ minutes ahead of UTC. Converting: $9 \\times 60 + 30 = 540 + 30 = 570$ minutes."
+  },
+  {
+    "id": "tzu-q8",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "During daylight saving, Sydney observes AEDT (UTC+11) and Perth uses AWST (UTC+8). How many hours ahead of Perth is Sydney during this period?",
+    "answer": 3,
+    "tolerance": 0,
+    "hint": "Subtract the smaller UTC offset from the larger one.",
+    "explanation": "Sydney is UTC+11 and Perth is UTC+8. The difference is $11 - 8 = 3$ hours. Sydney is $3$ hours ahead of Perth."
+  },
+  {
+    "id": "tzu-q9",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A flight departs Sydney (AEST, UTC+10) at $9{:}00\\text{ pm}$ on Monday and takes 8 hours to reach Singapore (SGT, UTC+8). At what hour does the flight arrive in Singapore? Give your answer as a whole number in 24-hour format (e.g. enter $14$ for $2{:}00\\text{ pm}$ or $3$ for $3{:}00\\text{ am}$).",
+    "answer": 3,
+    "tolerance": 0,
+    "hint": "Convert the departure to UTC first, add the flight duration, then convert to Singapore time.",
+    "explanation": "Departure: $21{:}00$ AEST (UTC+10) $\\to$ UTC: $21 - 10 = 11{:}00$ UTC Monday. Add 8 hours: $11{:}00 + 8 = 19{:}00$ UTC Monday. Convert to Singapore (UTC+8): $19 + 8 = 27{:}00 \\to 03{:}00$ Tuesday. The flight arrives at $3{:}00\\text{ am}$ (03:00) in Singapore."
+  },
+  {
+    "id": "tzu-q10",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A live concert in New York (UTC$-$5) begins at $8{:}00\\text{ pm}$ on Saturday. At what hour (24-hour format, as a whole number) does the concert begin for a viewer in Melbourne observing AEDT (UTC+11)?",
+    "answer": 12,
+    "tolerance": 0,
+    "hint": "Convert the New York time to UTC first (add 5 hours), then add 11 hours for Melbourne.",
+    "explanation": "New York (UTC$-$5): $20{:}00 \\to$ UTC: $20 + 5 = 01{:}00$ Sunday. Melbourne (AEDT, UTC+11): $01{:}00 + 11 = 12{:}00$ Sunday. The concert starts at $12{:}00$ noon (12) on Sunday in Melbourne."
+  },
+  {
+    "id": "tzu-q11",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A flight departs Tokyo (JST, UTC+9) at $11{:}00\\text{ am}$ on Wednesday and takes 10 hours to reach London (UTC+0). At what local London time does the flight arrive?",
+    "options": [
+      "12:00 pm (noon)",
+      "9:00 pm",
+      "2:00 am",
+      "8:00 pm"
+    ],
+    "answer": "12:00 pm (noon)",
+    "tolerance": null,
+    "hint": "Convert the Tokyo departure to UTC, then add the flight duration. London is UTC+0, so its time equals UTC.",
+    "explanation": "Departure: $11{:}00$ JST (UTC+9) $\\to$ UTC: $11 - 9 = 02{:}00$ UTC Wednesday. Add 10 hours: $02{:}00 + 10 = 12{:}00$ UTC. Since London is UTC+0, arrival is $12{:}00$ noon local time on Wednesday."
+  },
+  {
+    "id": "tzu-q12",
+    "subtopic": "time-zones-and-utc",
+    "topic": "time-and-location",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A webinar is scheduled for $10{:}00\\text{ am}$ UTC on Thursday. A participant in Dubai (UTC+4) wants to know their local start time. At what hour (24-hour format, as a whole number) does the webinar begin in Dubai?",
+    "answer": 14,
+    "tolerance": 0,
+    "hint": "UTC+4 means Dubai is 4 hours ahead of UTC. Add 4 hours to the UTC time.",
+    "explanation": "Dubai is UTC+4, meaning Dubai time $=$ UTC time $+ 4$ hours. $10{:}00 + 4 = 14{:}00$. The webinar begins at $14{:}00$ (2:00 pm) in Dubai."
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "id": "exp-fn-we-1",
+    "title": "Evaluating an exponential function and identifying key features",
+    "difficulty": 1,
+    "problem": "For $y = 2^x$, evaluate $y$ at $x = -2, -1, 0, 1, 2$. Hence state the y-intercept and the equation of the horizontal asymptote.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Evaluate $y = 2^x$ at each negative $x$-value using the rule $a^{-n} = \\dfrac{1}{a^n}$.",
+        "working": "$$2^{-2} = \\frac{1}{2^2} = \\frac{1}{4}, \\qquad 2^{-1} = \\frac{1}{2}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate at $x = 0$ using $a^0 = 1$.",
+        "working": "$$2^0 = 1$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate at each positive $x$-value.",
+        "working": "$$2^1 = 2, \\qquad 2^2 = 4$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Identify the y-intercept (the value of $y$ when $x = 0$) and the horizontal asymptote (the value $y$ approaches as $x \\to -\\infty$).",
+        "working": "$$\\text{y-intercept: } y = 2^0 = 1 \\implies (0,\\, 1)$$\n$$\\text{As } x \\to -\\infty,\\; 2^x \\to 0 \\implies \\text{asymptote: } y = 0$$"
+      }
+    ],
+    "answer": "The y-intercept is $(0, 1)$ and the horizontal asymptote is $y = 0$."
+  },
+  {
+    "id": "exp-fn-we-2",
+    "title": "Identifying exponential growth or decay and stating key features",
+    "difficulty": 2,
+    "problem": "For $y = 5 \\cdot (0.5)^x$, determine whether the function shows exponential growth or decay. State its domain, range and the equation of its horizontal asymptote.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the base $a$ and the coefficient $k$.",
+        "working": "$$y = k \\cdot a^x \\text{ where } k = 5 \\text{ and } a = 0.5$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Since $0 < a < 1$, classify the function as exponential decay.",
+        "working": "$$0 < 0.5 < 1 \\implies \\text{exponential decay}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the domain. Exponential functions are defined for all real $x$.",
+        "working": "$$\\text{Domain: } x \\in (-\\infty,\\, \\infty)$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Determine the range. Since $k = 5 > 0$ and $(0.5)^x > 0$ for all $x$, the function is always positive. As $x \\to \\infty$, $y \\to 0$; as $x \\to -\\infty$, $y \\to \\infty$.",
+        "working": "$$\\text{Range: } y \\in (0,\\, \\infty)$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Identify the horizontal asymptote: the value $y$ approaches but never reaches.",
+        "working": "$$\\text{As } x \\to \\infty,\\; y \\to 0 \\implies \\text{asymptote: } y = 0$$"
+      }
+    ],
+    "answer": "Exponential decay. Domain: all real numbers. Range: $y > 0$. Horizontal asymptote: $y = 0$."
+  },
+  {
+    "id": "exp-fn-we-3",
+    "title": "Exploring the unique property of $y = e^x$ and sketching key features",
+    "difficulty": 3,
+    "problem": "The exponential function $y = e^x$ has the unique property that its gradient at every point equals its y-value at that point. State $\\dfrac{d}{dx}(e^x)$ and hence describe the key features of both $y = e^x$ and $y = e^{-x}$, including y-intercept, asymptote and behaviour.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the derivative using the unique property of $e^x$.",
+        "working": "$$\\frac{d}{dx}(e^x) = e^x$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the y-intercept of $y = e^x$ by substituting $x = 0$.",
+        "working": "$$y = e^0 = 1 \\implies \\text{y-intercept: } (0,\\, 1)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the behaviour and asymptote of $y = e^x$. The gradient is always positive (since $e^x > 0$), so the function is always increasing.",
+        "working": "$$\\text{As } x \\to -\\infty,\\; e^x \\to 0 \\implies \\text{asymptote: } y = 0$$\n$$\\text{As } x \\to \\infty,\\; e^x \\to \\infty$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the y-intercept of $y = e^{-x}$ and determine its behaviour. Note that $e^{-x}$ is the reflection of $e^x$ in the y-axis.",
+        "working": "$$y = e^{-0} = 1 \\implies \\text{y-intercept: } (0,\\, 1)$$\n$$\\text{As } x \\to \\infty,\\; e^{-x} \\to 0 \\implies \\text{asymptote: } y = 0$$\n$$\\text{As } x \\to -\\infty,\\; e^{-x} \\to \\infty$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Summarise the relationship between the two curves.",
+        "working": "$$y = e^{-x} \\text{ is the reflection of } y = e^x \\text{ in the y-axis.}$$\n$$\\text{Both pass through } (0, 1) \\text{ and have asymptote } y = 0.$$\n$$y = e^x \\text{ increases; } y = e^{-x} \\text{ decreases.}$$"
+      }
+    ],
+    "answer": "$\\dfrac{d}{dx}(e^x) = e^x$. Both $y = e^x$ and $y = e^{-x}$ have y-intercept $(0, 1)$ and horizontal asymptote $y = 0$. They are reflections of each other in the y-axis: $y = e^x$ increases and $y = e^{-x}$ decreases as $x$ increases."
+  }
+]

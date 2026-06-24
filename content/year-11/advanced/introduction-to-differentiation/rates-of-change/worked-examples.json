@@ -1,0 +1,89 @@
+[
+  {
+    "id": "rc-we-1",
+    "title": "Finding and interpreting average rate of change",
+    "difficulty": 1,
+    "problem": "Find the average rate of change of $f(x) = x^2 + 3$ from $x = 1$ to $x = 4$. Interpret your answer geometrically.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Evaluate the function at both endpoints.",
+        "working": "$$f(1) = 1^2 + 3 = 4$$\n$$f(4) = 4^2 + 3 = 19$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the average rate of change formula with $a = 1$ and $b = 4$.",
+        "working": "$$\\frac{f(b) - f(a)}{b - a} = \\frac{f(4) - f(1)}{4 - 1} = \\frac{19 - 4}{3} = \\frac{15}{3} = 5$$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the geometric interpretation.",
+        "working": "The average rate of change of $5$ is the gradient of the secant line joining $(1,\\, 4)$ and $(4,\\, 19)$ on the graph of $f$."
+      }
+    ],
+    "answer": "The average rate of change is $5$. Geometrically, this is the gradient of the secant through $(1, 4)$ and $(4, 19)$."
+  },
+  {
+    "id": "rc-we-2",
+    "title": "Estimating instantaneous rate of change using smaller intervals",
+    "difficulty": 2,
+    "problem": "For $f(x) = x^2$, estimate the instantaneous rate of change at $x = 3$ by calculating the average rate of change over $[3,\\, 3+h]$ for $h = 1$, $h = 0.1$, and $h = 0.01$. Hence state the value the instantaneous rate of change appears to approach.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the average rate of change for $h = 1$ using $[3, 4]$.",
+        "working": "$$f(3) = 9, \\quad f(4) = 16$$\n$$\\frac{f(4) - f(3)}{4 - 3} = \\frac{16 - 9}{1} = 7$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the average rate of change for $h = 0.1$ using $[3, 3.1]$.",
+        "working": "$$f(3.1) = (3.1)^2 = 9.61$$\n$$\\frac{f(3.1) - f(3)}{3.1 - 3} = \\frac{9.61 - 9}{0.1} = \\frac{0.61}{0.1} = 6.1$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the average rate of change for $h = 0.01$ using $[3, 3.01]$.",
+        "working": "$$f(3.01) = (3.01)^2 = 9.0601$$\n$$\\frac{f(3.01) - f(3)}{3.01 - 3} = \\frac{9.0601 - 9}{0.01} = \\frac{0.0601}{0.01} = 6.01$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Identify the value that the average rates are approaching as $h \\to 0$.",
+        "working": "$$h = 1 \\implies 7, \\quad h = 0.1 \\implies 6.1, \\quad h = 0.01 \\implies 6.01$$\nThe values are approaching $6$."
+      }
+    ],
+    "answer": "The instantaneous rate of change of $f(x) = x^2$ at $x = 3$ is approximately $6$. (The exact value, found by differentiation, is $f'(3) = 2 \\times 3 = 6$.)"
+  },
+  {
+    "id": "rc-we-3",
+    "title": "Average and instantaneous velocity in context",
+    "difficulty": 3,
+    "problem": "A particle moves along a straight line. Its position in metres is $s(t) = -t^2 + 6t$ at time $t$ seconds. Find the average velocity from $t = 1$ to $t = 5$, and estimate the instantaneous velocity at $t = 2$ using the interval $[2,\\, 2.01]$. Explain the physical meaning of each result.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find $s(1)$ and $s(5)$.",
+        "working": "$$s(1) = -(1)^2 + 6(1) = -1 + 6 = 5 \\text{ m}$$\n$$s(5) = -(5)^2 + 6(5) = -25 + 30 = 5 \\text{ m}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the average velocity from $t = 1$ to $t = 5$.",
+        "working": "$$\\text{Average velocity} = \\frac{s(5) - s(1)}{5 - 1} = \\frac{5 - 5}{4} = \\frac{0}{4} = 0 \\text{ m/s}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the average velocity. A result of $0$ m/s does not mean the particle was stationary.",
+        "working": "The particle was at $5$ m at $t = 1$ and also at $5$ m at $t = 5$. The net displacement over the interval was zero, so the average velocity is $0$ m/s. The particle moved during the interval but returned to the same position."
+      },
+      {
+        "step": 4,
+        "instruction": "Estimate the instantaneous velocity at $t = 2$ using the interval $[2, 2.01]$. First calculate $s(2)$ and $s(2.01)$.",
+        "working": "$$s(2) = -(2)^2 + 6(2) = -4 + 12 = 8 \\text{ m}$$\n$$s(2.01) = -(2.01)^2 + 6(2.01) = -4.0401 + 12.06 = 8.0199 \\text{ m}$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Divide the change in position by the time interval to estimate the instantaneous velocity.",
+        "working": "$$\\text{Instantaneous velocity} \\approx \\frac{s(2.01) - s(2)}{0.01} = \\frac{8.0199 - 8}{0.01} = \\frac{0.0199}{0.01} \\approx 1.99 \\text{ m/s}$$\nThis is very close to $2$ m/s. (The derivative $s'(t) = -2t + 6$ gives $s'(2) = 2$ m/s exactly.)"
+      }
+    ],
+    "answer": "Average velocity from $t = 1$ to $t = 5$ is $0$ m/s (the particle returned to its position at $t = 1$, so net displacement is zero). Instantaneous velocity at $t = 2$ is approximately $1.99$ m/s, which approaches $2$ m/s as the interval shrinks."
+  }
+]

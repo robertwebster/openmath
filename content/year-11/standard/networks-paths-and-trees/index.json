@@ -1,0 +1,14 @@
+{
+  "id": "networks-paths-and-trees",
+  "title": "Networks, paths and trees",
+  "year": 11,
+  "stage": "6",
+  "course": "standard",
+  "strand": "Discrete Mathematics",
+  "syllabusOutcome": "MST-11-07",
+  "description": "Define and interpret network diagrams, find minimum spanning trees and shortest paths.",
+  "subtopics": [
+    "network-concepts",
+    "shortest-paths-and-spanning-trees"
+  ]
+}

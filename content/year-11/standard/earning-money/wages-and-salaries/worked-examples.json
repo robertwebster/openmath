@@ -1,0 +1,84 @@
+[
+  {
+    "id": "was-ex-1",
+    "title": "Weekly pay from an annual salary",
+    "difficulty": 1,
+    "problem": "An employee earns an annual salary of $\\$62\\,400$. Calculate their weekly pay.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the annual salary and the number of weeks in a year.",
+        "working": "Annual salary $= \\$62\\,400$, weeks per year $= 52$"
+      },
+      {
+        "step": 2,
+        "instruction": "Use the formula: weekly pay $=$ annual salary $\\div\\ 52$.",
+        "working": "$$\\text{Weekly pay} = \\frac{\\$62\\,400}{52}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Divide to find the weekly pay.",
+        "working": "$$\\frac{62\\,400}{52} = \\$1\\,200.00$$"
+      }
+    ],
+    "answer": "$\\$1\\,200.00$"
+  },
+  {
+    "id": "was-ex-2",
+    "title": "Gross weekly pay including time-and-a-half overtime",
+    "difficulty": 2,
+    "problem": "Hamish earns $\\$25.00$ per hour for a standard $38$-hour week. He works $6$ hours overtime at time-and-a-half. Calculate his total gross weekly pay.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate ordinary pay for the standard 38 hours.",
+        "working": "$$\\text{Ordinary pay} = 38 \\times \\$25.00 = \\$950.00$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the time-and-a-half rate by multiplying the hourly rate by 1.5.",
+        "working": "$$\\text{Overtime rate} = \\$25.00 \\times 1.5 = \\$37.50 \\text{ per hour}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate overtime pay for the 6 extra hours.",
+        "working": "$$\\text{Overtime pay} = 6 \\times \\$37.50 = \\$225.00$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add ordinary pay and overtime pay.",
+        "working": "$$\\text{Total gross pay} = \\$950.00 + \\$225.00 = \\$1\\,175.00$$"
+      }
+    ],
+    "answer": "$\\$1\\,175.00$"
+  },
+  {
+    "id": "was-ex-3",
+    "title": "Fortnightly gross income with weekend and public holiday penalty rates",
+    "difficulty": 3,
+    "problem": "Nadia earns $\\$32.00$ per hour. In a fortnight she works $76$ ordinary hours, $6$ hours on Saturday at time-and-a-half and $4$ hours on a public holiday at double time. Calculate her fortnightly gross income.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate ordinary fortnightly pay.",
+        "working": "$$\\text{Ordinary pay} = 76 \\times \\$32.00 = \\$2\\,432.00$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the Saturday penalty rate (time-and-a-half) and calculate Saturday pay.",
+        "working": "$$\\text{Saturday rate} = \\$32.00 \\times 1.5 = \\$48.00 \\text{ per hour}$$\n$$\\text{Saturday pay} = 6 \\times \\$48.00 = \\$288.00$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the public holiday rate (double time) and calculate public holiday pay.",
+        "working": "$$\\text{Public holiday rate} = \\$32.00 \\times 2 = \\$64.00 \\text{ per hour}$$\n$$\\text{Public holiday pay} = 4 \\times \\$64.00 = \\$256.00$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Add all three components to find the fortnightly gross income.",
+        "working": "$$\\text{Fortnightly gross} = \\$2\\,432.00 + \\$288.00 + \\$256.00 = \\$2\\,976.00$$"
+      }
+    ],
+    "answer": "$\\$2\\,976.00$"
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "pg-ex-1",
+    "title": "Calculating a discounted price",
+    "difficulty": 1,
+    "problem": "A jacket costs $\\$150$ and is discounted by 20%. Find the sale price.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the discount rate as a decimal.",
+        "working": "Discount rate $= 20\\% = 0.20$"
+      },
+      {
+        "step": 2,
+        "instruction": "Subtract the discount rate from 1 to find the multiplier.",
+        "working": "$1 - 0.20 = 0.80$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply the original price by the multiplier.",
+        "working": "$$\\text{Sale price} = \\$150 \\times 0.80 = \\$120$$"
+      }
+    ],
+    "answer": "$\\$120$"
+  },
+  {
+    "id": "pg-ex-2",
+    "title": "Converting currency using an exchange rate",
+    "difficulty": 2,
+    "problem": "The exchange rate is $1 \\text{ AUD} = 0.72 \\text{ USD}$. A traveller converts $\\$1200$ AUD to USD. How many USD will they receive?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the exchange rate.",
+        "working": "Exchange rate: $1 \\text{ AUD} = 0.72 \\text{ USD}$"
+      },
+      {
+        "step": 2,
+        "instruction": "To convert AUD to USD, multiply the AUD amount by the exchange rate.",
+        "working": "$$\\text{USD} = 1200 \\times 0.72$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate.",
+        "working": "$$\\text{USD} = 864$$"
+      }
+    ],
+    "answer": "USD $864$"
+  },
+  {
+    "id": "pg-ex-3",
+    "title": "Hire purchase cost and interest as a percentage of the cash price",
+    "difficulty": 3,
+    "problem": "A laptop has a cash price of $\\$1600$. On hire purchase, there is a 15% deposit and 24 monthly repayments of $\\$70$. Calculate the total hire purchase cost and express the extra amount paid as a percentage of the cash price, correct to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the deposit.",
+        "working": "$$\\text{Deposit} = 0.15 \\times \\$1\\,600 = \\$240$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the total monthly repayments.",
+        "working": "$$\\text{Total repayments} = 24 \\times \\$70 = \\$1\\,680$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the deposit and total repayments to find the total hire purchase cost.",
+        "working": "$$\\text{Total HP cost} = \\$240 + \\$1\\,680 = \\$1\\,920$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the extra amount paid compared with the cash price.",
+        "working": "$$\\text{Extra paid} = \\$1\\,920 - \\$1\\,600 = \\$320$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Express the extra amount as a percentage of the cash price.",
+        "working": "$$\\text{Percentage} = \\frac{320}{1600} \\times 100 = 20\\%$$"
+      }
+    ],
+    "answer": "Total hire purchase cost $= \\$1\\,920$; extra paid as a percentage of the cash price $= 20\\%$."
+  }
+]

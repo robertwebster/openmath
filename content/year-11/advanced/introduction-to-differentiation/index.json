@@ -1,0 +1,16 @@
+{
+  "id": "introduction-to-differentiation",
+  "title": "Introduction to differentiation",
+  "year": 11,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Calculus",
+  "syllabusOutcome": "MAV-11-06",
+  "description": "Find derivatives using first principles and differentiation rules; apply to tangents, normals and rates of change.",
+  "subtopics": [
+    "rates-of-change",
+    "the-derivative",
+    "differentiation-rules",
+    "applications-of-the-derivative"
+  ]
+}

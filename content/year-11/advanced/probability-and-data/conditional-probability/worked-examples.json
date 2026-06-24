@@ -1,0 +1,84 @@
+[
+  {
+    "id": "cp-we-1",
+    "title": "Finding conditional probability from a restricted sample space",
+    "difficulty": 1,
+    "problem": "A class of 30 students sat both a maths test and a science test. 20 students passed maths, 15 passed science, and 10 passed both tests. A student who passed science is chosen at random. Find the probability they also passed maths.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the restricted sample space.",
+        "working": "The condition is that the student passed science. Only students who passed science are considered, so the restricted sample space has 15 outcomes."
+      },
+      {
+        "step": 2,
+        "instruction": "Count the favourable outcomes within the restricted sample space.",
+        "working": "Favourable outcomes are students who passed both maths and science. There are 10 such students."
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the conditional probability.",
+        "working": "$$P(\\text{maths} \\mid \\text{science}) = \\frac{\\text{favourable outcomes in restricted space}}{\\text{size of restricted space}} = \\frac{10}{15} = \\frac{2}{3}$$"
+      }
+    ],
+    "answer": "$P(\\text{maths} \\mid \\text{science}) = \\dfrac{2}{3}$."
+  },
+  {
+    "id": "cp-we-2",
+    "title": "Applying the conditional probability formula",
+    "difficulty": 2,
+    "problem": "For events $A$ and $B$: $P(A) = 0.5$, $P(B) = 0.4$, and $P(A \\cap B) = 0.24$.\n\n(a) Find $P(A \\mid B)$.\n(b) State whether knowing that $B$ has occurred makes $A$ more or less likely, and explain why.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the conditional probability formula.",
+        "working": "$$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the given values.",
+        "working": "$$P(A \\mid B) = \\frac{0.24}{0.40}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate $P(A \\mid B)$.",
+        "working": "$$P(A \\mid B) = 0.6$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Compare $P(A \\mid B)$ to $P(A)$ to answer part (b).",
+        "working": "Since $P(A \\mid B) = 0.6 > 0.5 = P(A)$, knowing that $B$ has occurred makes $A$ more likely. The events are positively associated."
+      }
+    ],
+    "answer": "(a) $P(A \\mid B) = 0.6$. (b) Knowing $B$ occurred makes $A$ more likely, since $P(A \\mid B) = 0.6 > P(A) = 0.5$."
+  },
+  {
+    "id": "cp-we-3",
+    "title": "Conditional probability with sequential draws",
+    "difficulty": 3,
+    "problem": "A bag contains 4 red and 6 blue marbles. Two marbles are drawn without replacement. Let $A$ be the event 'second marble is red' and let $B$ be the event 'first marble is red'.\n\n(a) Find $P(A \\mid B)$.\n(b) Find $P(A)$ using the law of total probability.\n(c) Determine whether $A$ and $B$ are independent.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find $P(B)$ and $P(A \\cap B)$ for part (a).",
+        "working": "$$P(B) = \\frac{4}{10} = \\frac{2}{5}$$\n\nIf the first marble is red, 9 marbles remain with 3 red:\n$$P(A \\cap B) = \\frac{4}{10} \\times \\frac{3}{9} = \\frac{12}{90} = \\frac{2}{15}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the conditional probability formula to find $P(A \\mid B)$.",
+        "working": "$$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\dfrac{2}{15}}{\\dfrac{2}{5}} = \\frac{2}{15} \\times \\frac{5}{2} = \\frac{1}{3}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find $P(A)$ using the law of total probability for part (b). Consider two cases: first marble red or first marble blue.",
+        "working": "Let $B^c$ = 'first marble is blue'. Then $P(B^c) = \\dfrac{6}{10} = \\dfrac{3}{5}$.\n\nIf the first marble is blue, 9 remain with 4 red:\n$$P(A \\mid B^c) = \\frac{4}{9}$$\n\nApplying the law of total probability:\n$$P(A) = P(A \\mid B)\\,P(B) + P(A \\mid B^c)\\,P(B^c) = \\frac{1}{3} \\times \\frac{2}{5} + \\frac{4}{9} \\times \\frac{3}{5} = \\frac{2}{15} + \\frac{12}{45} = \\frac{6}{45} + \\frac{12}{45} = \\frac{18}{45} = \\frac{2}{5}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Compare $P(A \\mid B)$ and $P(A)$ to determine independence for part (c).",
+        "working": "$$P(A \\mid B) = \\frac{1}{3} \\ne \\frac{2}{5} = P(A)$$\n\nSince $P(A \\mid B) \\ne P(A)$, the events $A$ and $B$ are not independent. Knowing the first marble was red reduces the probability the second is also red (from $\\dfrac{2}{5}$ to $\\dfrac{1}{3}$), because one red marble has already been removed."
+      }
+    ],
+    "answer": "(a) $P(A \\mid B) = \\dfrac{1}{3}$. (b) $P(A) = \\dfrac{2}{5}$. (c) $A$ and $B$ are not independent, since $P(A \\mid B) = \\dfrac{1}{3} \\ne \\dfrac{2}{5} = P(A)$."
+  }
+]

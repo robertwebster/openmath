@@ -1,0 +1,182 @@
+[
+  {
+    "id": "exp-fn-1-1",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Evaluate $y = 2^x$ when $x = 4$. What is the value of $y$?",
+    "answer": 16,
+    "tolerance": 0,
+    "hint": "Multiply $2$ by itself four times.",
+    "explanation": "$2^4 = 2 \\times 2 \\times 2 \\times 2 = 16$."
+  },
+  {
+    "id": "exp-fn-1-2",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "fraction",
+    "stem": "Evaluate $y = 2^x$ when $x = -3$. Write your answer as a fraction.",
+    "answer": "1/8",
+    "tolerance": 0,
+    "hint": "A negative exponent means the reciprocal: $a^{-n} = \\dfrac{1}{a^n}$.",
+    "explanation": "$2^{-3} = \\dfrac{1}{2^3} = \\dfrac{1}{8}$."
+  },
+  {
+    "id": "exp-fn-1-3",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "What is the y-intercept of the graph of $y = 3^x$?",
+    "answer": 1,
+    "tolerance": 0,
+    "hint": "Substitute $x = 0$ and recall that $a^0 = 1$ for any non-zero $a$.",
+    "explanation": "The y-intercept occurs at $x = 0$: $y = 3^0 = 1$. This is true for any exponential function $y = a^x$, since $a^0 = 1$."
+  },
+  {
+    "id": "exp-fn-1-4",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "As $x \\to -\\infty$, the function $y = 4^x$ approaches a horizontal asymptote. What is the equation of this asymptote?",
+    "options": [
+      "$y = -4$",
+      "$y = 0$",
+      "$y = 1$",
+      "$y = 4$"
+    ],
+    "answer": "$y = 0$",
+    "tolerance": 0,
+    "hint": "Think about what happens to $4^x$ when $x$ is a very large negative number, such as $x = -100$.",
+    "explanation": "As $x \\to -\\infty$, $4^x \\to 0$ (the values get smaller and smaller but never reach zero). The graph approaches the x-axis from above, so the horizontal asymptote is $y = 0$."
+  },
+  {
+    "id": "exp-fn-2-1",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Evaluate $y = 3 \\cdot 2^x$ when $x = 4$.",
+    "answer": 48,
+    "tolerance": 0,
+    "hint": "First evaluate $2^4$, then multiply by $3$.",
+    "explanation": "$y = 3 \\cdot 2^4 = 3 \\cdot 16 = 48$."
+  },
+  {
+    "id": "exp-fn-2-2",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Evaluate $y = 80 \\cdot (0.5)^x$ when $x = 4$.",
+    "answer": 5,
+    "tolerance": 0,
+    "hint": "First evaluate $(0.5)^4$, then multiply by $80$.",
+    "explanation": "$(0.5)^4 = \\dfrac{1}{16}$, so $y = 80 \\times \\dfrac{1}{16} = 5$."
+  },
+  {
+    "id": "exp-fn-2-3",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which of the following exponential functions shows exponential decay?",
+    "options": [
+      "$y = 2^x$",
+      "$y = e^x$",
+      "$y = (0.25)^x$",
+      "$y = 5 \\cdot 3^x$"
+    ],
+    "answer": "$y = (0.25)^x$",
+    "tolerance": 0,
+    "hint": "An exponential function $y = a^x$ shows decay when $0 < a < 1$.",
+    "explanation": "For $y = a^x$, exponential decay occurs when the base $a$ satisfies $0 < a < 1$. Here, $a = 0.25$, which lies in this range, so $y = (0.25)^x$ decreases as $x$ increases. The other options all have bases greater than $1$ (since $e \\approx 2.718$), so they show exponential growth."
+  },
+  {
+    "id": "exp-fn-2-4",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "What is the y-intercept of $y = 7 \\cdot 5^x$?",
+    "answer": 7,
+    "tolerance": 0,
+    "hint": "Substitute $x = 0$ and use $5^0 = 1$.",
+    "explanation": "At $x = 0$: $y = 7 \\cdot 5^0 = 7 \\cdot 1 = 7$. For any function of the form $y = k \\cdot a^x$, the y-intercept is always $k$."
+  },
+  {
+    "id": "exp-fn-3-1",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "The unique property of $y = e^x$ is that the gradient of the curve at every point equals the y-value at that point, so $\\dfrac{d}{dx}(e^x) = e^x$. Using this property, find the gradient of $y = e^x$ at $x = 0$.",
+    "answer": 1,
+    "tolerance": 0,
+    "hint": "The gradient at $x = 0$ equals $e^0$.",
+    "explanation": "Since $\\dfrac{d}{dx}(e^x) = e^x$, the gradient at $x = 0$ is $e^0 = 1$. This also means the tangent to $y = e^x$ at its y-intercept $(0, 1)$ has gradient $1$."
+  },
+  {
+    "id": "exp-fn-3-2",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "What is the equation of the horizontal asymptote of $y = e^x$?",
+    "options": [
+      "$y = 1$",
+      "$y = 0$",
+      "$y = e$",
+      "$x = 0$"
+    ],
+    "answer": "$y = 0$",
+    "tolerance": 0,
+    "hint": "Consider what happens to $e^x$ as $x$ becomes a very large negative number.",
+    "explanation": "As $x \\to -\\infty$, $e^x \\to 0$. The graph gets closer and closer to the x-axis but never touches it, so the horizontal asymptote is $y = 0$. Note that $e^x > 0$ for all $x$, confirming the function never reaches the asymptote."
+  },
+  {
+    "id": "exp-fn-3-3",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Both $y = e^x$ and $y = e^{-x}$ are graphed on the same axes. They pass through a common point on the y-axis. What is the y-coordinate of this shared y-intercept?",
+    "answer": 1,
+    "tolerance": 0,
+    "hint": "Substitute $x = 0$ into each equation and use $e^0 = 1$.",
+    "explanation": "For $y = e^x$ at $x = 0$: $y = e^0 = 1$. For $y = e^{-x}$ at $x = 0$: $y = e^0 = 1$. Both curves pass through the point $(0, 1)$. This is because $e^{-x}$ is the reflection of $e^x$ in the y-axis, and reflections in the y-axis preserve the y-intercept."
+  },
+  {
+    "id": "exp-fn-3-4",
+    "subtopic": "exponential-functions",
+    "topic": "exponential-and-logarithmic-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Which statement correctly describes the behaviour of $y = e^{-x}$ as $x$ increases?",
+    "options": [
+      "It increases without bound.",
+      "It decreases towards $y = 0$ but never reaches it.",
+      "It reaches a minimum value of $-1$.",
+      "It remains constant."
+    ],
+    "answer": "It decreases towards $y = 0$ but never reaches it.",
+    "tolerance": 0,
+    "hint": "Consider that $e^{-x} = \\dfrac{1}{e^x}$. As $x$ increases, $e^x$ increases, so $\\dfrac{1}{e^x}$ decreases.",
+    "explanation": "Since $e^{-x} = \\dfrac{1}{e^x}$, as $x$ increases, $e^x$ grows without bound, so $e^{-x}$ decreases towards $0$. Because $e^{-x} > 0$ for all $x$, the function never actually reaches $0$. The horizontal asymptote is $y = 0$."
+  }
+]

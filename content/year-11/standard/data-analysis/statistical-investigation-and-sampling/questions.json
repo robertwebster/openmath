@@ -1,0 +1,230 @@
+[
+  {
+    "id": "sis-1-1",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A school principal wants to survey 40 students from a school of 800. She places all student names in a box, mixes them thoroughly, and draws out 40 names. What type of sampling method is this?",
+    "options": [
+      "Random",
+      "Systematic",
+      "Self-selected",
+      "Stratified"
+    ],
+    "answer": "Random",
+    "tolerance": 0,
+    "hint": "Consider whether every student has an equal chance of being selected.",
+    "explanation": "Every student's name is in the box and each has an equal chance of being drawn. This is random sampling — selection is determined entirely by chance with no pattern or grouping."
+  },
+  {
+    "id": "sis-1-2",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A market researcher stands at a shopping centre entrance and surveys every 10th person who enters. What type of sampling method is this?",
+    "options": [
+      "Random",
+      "Systematic",
+      "Self-selected",
+      "Stratified"
+    ],
+    "answer": "Systematic",
+    "tolerance": 0,
+    "hint": "Consider whether there is a fixed pattern to how participants are selected.",
+    "explanation": "Selecting every 10th person follows a fixed, regular interval — this is systematic sampling. The starting point may be random, but after that, every 10th person is chosen according to a set rule."
+  },
+  {
+    "id": "sis-1-3",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A television news channel posts a poll on its website asking viewers: \"Should public transport be free?\" and invites them to vote. What type of sampling method does this represent?",
+    "options": [
+      "Random",
+      "Systematic",
+      "Self-selected",
+      "Stratified"
+    ],
+    "answer": "Self-selected",
+    "tolerance": 0,
+    "hint": "Consider who decides to participate in this poll.",
+    "explanation": "Only viewers who choose to visit the website and click the poll will respond. Participants decide for themselves whether to take part — this is self-selected sampling, also called voluntary response sampling."
+  },
+  {
+    "id": "sis-1-4",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A hospital employs 300 nurses and 100 doctors. A researcher randomly selects 30 nurses and 10 doctors to participate in a workplace satisfaction survey. What type of sampling method is this?",
+    "options": [
+      "Random",
+      "Systematic",
+      "Self-selected",
+      "Stratified"
+    ],
+    "answer": "Stratified",
+    "tolerance": 0,
+    "hint": "Consider whether the population has been divided into distinct groups before selecting.",
+    "explanation": "The population is first divided into two groups (strata) — nurses and doctors — and then a proportional sample is drawn from each group. This is stratified sampling. The sampling fraction is $\\frac{30}{300} = \\frac{10}{100} = 10\\%$ from each stratum."
+  },
+  {
+    "id": "sis-2-1",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A survey question reads: \"Don't you agree that social media is harmful to teenagers?\" What is the main flaw in this question?",
+    "options": [
+      "It uses complex statistical terminology",
+      "It is a leading question that implies a preferred response",
+      "It asks two separate questions at once",
+      "It is too short to gather useful data"
+    ],
+    "answer": "It is a leading question that implies a preferred response",
+    "tolerance": 0,
+    "hint": "Does the wording of the question suggest what answer the researcher expects?",
+    "explanation": "The phrase \"Don't you agree\" steers respondents towards answering yes, which biases the results. A neutral version would be: \"Do you think social media is harmful to teenagers? Yes / No / Unsure.\""
+  },
+  {
+    "id": "sis-2-2",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A questionnaire includes the question: \"Do you eat a healthy diet and exercise regularly?\" What is the main flaw in this question?",
+    "options": [
+      "It is a leading question",
+      "It asks two separate questions at once",
+      "The response scale is absent",
+      "It uses technical jargon"
+    ],
+    "answer": "It asks two separate questions at once",
+    "tolerance": 0,
+    "hint": "Count how many separate topics the question is asking about.",
+    "explanation": "This is a double-barrelled question — it asks about diet and exercise in a single item. A respondent who eats well but does not exercise regularly cannot answer truthfully with a single yes or no. Each topic should be a separate question."
+  },
+  {
+    "id": "sis-2-3",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A researcher emails a survey to 500 employees but only 60 (12%) respond. What is the main concern with using these results to represent all employees?",
+    "options": [
+      "The sample size of 500 is too large",
+      "Non-response bias — respondents may differ systematically from non-respondents",
+      "Stratified sampling should have been used instead",
+      "The survey should have been conducted in person"
+    ],
+    "answer": "Non-response bias — respondents may differ systematically from non-respondents",
+    "tolerance": 0,
+    "hint": "Consider why only 12% of employees responded and whether they might differ from those who did not.",
+    "explanation": "When a large proportion of the sample does not respond, the results may reflect only those with strong opinions or particular characteristics. This is non-response bias. For example, dissatisfied employees may be more likely to complete the survey than satisfied ones, skewing the results."
+  },
+  {
+    "id": "sis-2-4",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A researcher surveys 30 students sitting in the school library at lunchtime to represent the views of all 900 students in the school. Which specific improvement would best address the main flaw in this approach?",
+    "options": [
+      "Survey 60 students in the library instead of 30",
+      "Randomly select 30 students from the full school roll",
+      "Survey students in the library at two different lunchtimes",
+      "Ask the librarian to recommend students for the survey"
+    ],
+    "answer": "Randomly select 30 students from the full school roll",
+    "tolerance": 0,
+    "hint": "The main flaw is that library users may not represent all students. What would give every student an equal chance of being selected?",
+    "explanation": "The main flaw is convenience sampling — only library users at lunchtime are surveyed, which may not reflect the views of all 900 students. Randomly selecting from the full school roll gives every student an equal chance of being chosen, addressing the bias. Doubling the library sample or changing the time still restricts the pool to library users."
+  },
+  {
+    "id": "sis-3-1",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A study of smartphone usage recruits participants by placing an advertisement on a popular social media platform. Which statement best explains why this sample may not represent all Australian adults?",
+    "options": [
+      "The advertisement reached too many people",
+      "Australians who do not use social media are excluded from the study",
+      "Social media advertisements cannot be used for research",
+      "The study should have used systematic sampling"
+    ],
+    "answer": "Australians who do not use social media are excluded from the study",
+    "tolerance": 0,
+    "hint": "Consider who cannot see or respond to an advertisement placed only on social media.",
+    "explanation": "Adults who do not use the platform — including those without internet access, older Australians, or those who have opted out of social media — cannot see the advertisement and are therefore excluded. Because the study is about smartphone usage, excluding people less engaged with technology is a significant source of bias and makes the sample unrepresentative."
+  },
+  {
+    "id": "sis-3-2",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A fitness company surveys 1 000 of its gym members to draw conclusions about the exercise habits of all Australians. Why is this sample unlikely to be representative of the general population?",
+    "options": [
+      "1 000 people is not enough for a reliable national survey",
+      "Gym members are likely more physically active than the general population",
+      "The company should have used stratified sampling across all gym members",
+      "Exercise habits cannot be accurately measured through surveys"
+    ],
+    "answer": "Gym members are likely more physically active than the general population",
+    "tolerance": 0,
+    "hint": "Consider what gym members have in common that most Australians do not.",
+    "explanation": "Gym members have self-selected into a physically active lifestyle, so they are not typical of all Australians. Using this sample to draw conclusions about general exercise habits introduces selection bias — the sample overrepresents active people. A representative sample would need to include people across a wide range of activity levels."
+  },
+  {
+    "id": "sis-3-3",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A school collects student responses to a mental health survey. Each response is linked to the student's name, and the results are later shared with prospective employers without the students' knowledge. What is the most significant concern with this investigation?",
+    "options": [
+      "The survey was distributed during class time",
+      "Student responses are identifiable and were shared without consent",
+      "Mental health surveys should only be conducted by registered health professionals",
+      "The survey questions may not be valid measures of mental health"
+    ],
+    "answer": "Student responses are identifiable and were shared without consent",
+    "tolerance": 0,
+    "hint": "Consider whether students knew their answers could be seen by employers and whether they agreed to this.",
+    "explanation": "Linking responses to names means the data is not anonymous. Sharing identifiable health information with employers without students' knowledge or consent violates privacy. Participants should be informed of how their data will be used before the investigation begins, and sensitive personal data requires explicit consent before sharing with third parties."
+  },
+  {
+    "id": "sis-3-4",
+    "subtopic": "statistical-investigation-and-sampling",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A researcher films shoppers in a supermarket without their knowledge to study purchasing behaviour. Which ethical concern is most significant?",
+    "options": [
+      "The sample of shoppers may not represent all consumers",
+      "Participants were not informed of the study or given the opportunity to consent",
+      "Filmed observations produce less accurate data than written surveys",
+      "Supermarket shopping data is already publicly available"
+    ],
+    "answer": "Participants were not informed of the study or given the opportunity to consent",
+    "tolerance": 0,
+    "hint": "Ethical research requires that participants know they are being observed and agree to take part.",
+    "explanation": "Conducting research without participants' knowledge denies them the opportunity to give informed consent — a fundamental requirement of ethical research. Even if the behaviour observed is in a public place, recording individuals for a research study without disclosure is an ethical breach. Ethical approval and participant consent are required before data collection begins."
+  }
+]

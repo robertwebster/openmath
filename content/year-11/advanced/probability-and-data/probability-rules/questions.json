@@ -1,0 +1,173 @@
+[
+  {
+    "id": "pr-1-1",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A fair six-sided die is rolled. The sample space is $S = \\{1, 2, 3, 4, 5, 6\\}$. What is the probability of rolling a number less than 3?",
+    "options": [
+      "$\\dfrac{1}{6}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{2}{3}$"
+    ],
+    "answer": "$\\dfrac{1}{3}$",
+    "hint": "Count the outcomes less than 3, then divide by the total number of outcomes.",
+    "explanation": "The outcomes less than 3 are $\\{1, 2\\}$, giving 2 favourable outcomes out of 6 equally likely outcomes. So $P(\\text{less than 3}) = \\dfrac{2}{6} = \\dfrac{1}{3}$."
+  },
+  {
+    "id": "pr-1-2",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 1,
+    "type": "fraction",
+    "stem": "A bag contains 4 red marbles, 3 green marbles and 3 blue marbles. A marble is drawn at random. Find the probability of drawing a red marble. Give your answer as a fraction in simplest form.",
+    "answer": "2/5",
+    "tolerance": 0,
+    "hint": "Count the total number of marbles, then use $P(A) = \\dfrac{|A|}{|S|}$.",
+    "explanation": "There are $4 + 3 + 3 = 10$ marbles in total. There are 4 red marbles, so $P(\\text{red}) = \\dfrac{4}{10} = \\dfrac{2}{5}$."
+  },
+  {
+    "id": "pr-1-3",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The probability that a student passes a test is $0.72$. Find the probability that the student does not pass.",
+    "answer": 0.28,
+    "tolerance": 0.01,
+    "hint": "Use the complement rule: $P(\\bar{A}) = 1 - P(A)$.",
+    "explanation": "Using the complement rule: $P(\\text{not pass}) = 1 - P(\\text{pass}) = 1 - 0.72 = 0.28$."
+  },
+  {
+    "id": "pr-1-4",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 1,
+    "type": "fraction",
+    "stem": "In a school of 200 students, 125 catch the bus to school. A student is chosen at random. Find the probability that the chosen student does not catch the bus. Give your answer as a fraction in simplest form.",
+    "answer": "3/8",
+    "tolerance": 0,
+    "hint": "Find how many students do not catch the bus, then apply $P(A) = \\dfrac{|A|}{|S|}$.",
+    "explanation": "The number of students who do not catch the bus is $200 - 125 = 75$. So $P(\\text{not bus}) = \\dfrac{75}{200} = \\dfrac{3}{8}$."
+  },
+  {
+    "id": "pr-2-1",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "For events $A$ and $B$: $P(A) = 0.5$, $P(B) = 0.4$ and $P(A \\cap B) = 0.2$. Find $P(A \\cup B)$.",
+    "answer": 0.7,
+    "tolerance": 0.01,
+    "hint": "Apply the addition rule: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.",
+    "explanation": "Using the addition rule:\n$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B) = 0.5 + 0.4 - 0.2 = 0.7$$"
+  },
+  {
+    "id": "pr-2-2",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Events $C$ and $D$ are mutually exclusive. $P(C) = 0.3$ and $P(D) = 0.45$. Find $P(C \\cup D)$.",
+    "answer": 0.75,
+    "tolerance": 0.01,
+    "hint": "For mutually exclusive events, $P(C \\cap D) = 0$, so the addition rule simplifies.",
+    "explanation": "Since $C$ and $D$ are mutually exclusive, $P(C \\cap D) = 0$. Therefore:\n$$P(C \\cup D) = P(C) + P(D) = 0.3 + 0.45 = 0.75$$"
+  },
+  {
+    "id": "pr-2-3",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "For events $A$ and $B$: $P(A) = 0.6$, $P(B) = 0.35$ and $P(A \\cup B) = 0.8$. Find $P(A \\cap B)$.",
+    "answer": 0.15,
+    "tolerance": 0.01,
+    "hint": "Rearrange the addition rule to make $P(A \\cap B)$ the subject.",
+    "explanation": "Rearranging the addition rule:\n$$P(A \\cap B) = P(A) + P(B) - P(A \\cup B) = 0.6 + 0.35 - 0.8 = 0.15$$"
+  },
+  {
+    "id": "pr-2-4",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Events $E$ and $F$ have $P(E) = 0.3$, $P(F) = 0.5$ and $P(E \\cup F) = 0.8$. Which statement is correct?",
+    "options": [
+      "$E$ and $F$ are mutually exclusive since $P(E \\cap F) = 0$.",
+      "$E$ and $F$ are not mutually exclusive since $P(E \\cup F) = 0.8$.",
+      "$E$ and $F$ are independent since $P(E) + P(F) = 0.8$.",
+      "$E$ and $F$ overlap since $P(E \\cup F) < 1$."
+    ],
+    "answer": "$E$ and $F$ are mutually exclusive since $P(E \\cap F) = 0$.",
+    "hint": "Use the addition rule to find $P(E \\cap F)$ first.",
+    "explanation": "From the addition rule: $P(E \\cap F) = P(E) + P(F) - P(E \\cup F) = 0.3 + 0.5 - 0.8 = 0$. Since $P(E \\cap F) = 0$, the events cannot occur together, so $E$ and $F$ are mutually exclusive."
+  },
+  {
+    "id": "pr-3-1",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 3,
+    "type": "fraction",
+    "stem": "A fair coin is tossed and a fair four-sided spinner with faces numbered 1 to 4 is spun. The sample space has 8 equally likely outcomes. Find the probability of getting a tail and an even number. Give your answer as a fraction in simplest form.",
+    "answer": "1/4",
+    "tolerance": 0,
+    "hint": "List the outcomes that give a tail paired with an even number from $\\{1, 2, 3, 4\\}$.",
+    "explanation": "The 8 equally likely outcomes are: $(H,1), (H,2), (H,3), (H,4), (T,1), (T,2), (T,3), (T,4)$. The outcomes with a tail and an even number are $(T,2)$ and $(T,4)$ — that is, 2 favourable outcomes. So $P(\\text{tail and even}) = \\dfrac{2}{8} = \\dfrac{1}{4}$."
+  },
+  {
+    "id": "pr-3-2",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 3,
+    "type": "fraction",
+    "stem": "In a survey of 200 adults, 120 regularly read a newspaper, 80 regularly listen to a podcast, and 50 do both. Find the probability that a randomly selected adult reads a newspaper or listens to a podcast. Give your answer as a fraction in simplest form.",
+    "answer": "3/4",
+    "tolerance": 0,
+    "hint": "Apply the addition rule with $|S| = 200$.",
+    "explanation": "Using the addition rule:\n$$|\\text{newspaper} \\cup \\text{podcast}| = 120 + 80 - 50 = 150$$\n$$P(\\text{newspaper or podcast}) = \\frac{150}{200} = \\frac{3}{4}$$"
+  },
+  {
+    "id": "pr-3-3",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Events $A$ and $B$ have $P(A) = 0.4$, $P(B) = 0.5$ and $P(A \\cap B) = 0.2$. Which statement correctly describes $A$ and $B$?",
+    "options": [
+      "$A$ and $B$ are independent because $P(A \\cap B) = P(A) \\times P(B)$.",
+      "$A$ and $B$ are not independent because $P(A \\cap B) \\ne P(A) + P(B)$.",
+      "$A$ and $B$ are mutually exclusive because $P(A) + P(B) = 0.9$.",
+      "$A$ and $B$ are independent because $P(A \\cup B) = 1$."
+    ],
+    "answer": "$A$ and $B$ are independent because $P(A \\cap B) = P(A) \\times P(B)$.",
+    "hint": "Check whether $P(A) \\times P(B)$ equals $P(A \\cap B)$.",
+    "explanation": "Checking the independence condition: $P(A) \\times P(B) = 0.4 \\times 0.5 = 0.20$. Since $P(A \\cap B) = 0.20 = P(A) \\times P(B)$, events $A$ and $B$ are independent."
+  },
+  {
+    "id": "pr-3-4",
+    "subtopic": "probability-rules",
+    "topic": "probability-and-data",
+    "year": 11,
+    "difficulty": 3,
+    "type": "fraction",
+    "stem": "The two-way table below shows 100 students classified by exercise habit and breakfast habit.\n\n| | Eats breakfast | Skips breakfast | Total |\n|---|---|---|---|\n| Exercises regularly | 45 | 15 | 60 |\n| Does not exercise | 20 | 20 | 40 |\n| Total | 65 | 35 | 100 |\n\nFind the probability that a randomly selected student both exercises regularly and eats breakfast. Give your answer as a fraction in simplest form.",
+    "answer": "9/20",
+    "tolerance": 0,
+    "hint": "Read the joint frequency from the table and divide by the total.",
+    "explanation": "From the table, 45 out of 100 students both exercise regularly and eat breakfast. So $P(\\text{exercises and eats breakfast}) = \\dfrac{45}{100} = \\dfrac{9}{20}$."
+  }
+]

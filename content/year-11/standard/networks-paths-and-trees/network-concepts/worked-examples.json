@@ -1,0 +1,89 @@
+[
+  {
+    "id": "nc-ex-1",
+    "title": "Finding the degree of each vertex in a network",
+    "difficulty": 1,
+    "problem": "A network has vertices $A$, $B$, $C$, $D$ with edges $AB$, $BC$, $CD$, $DA$ and $BD$. State the number of edges in the network and find the degree of each vertex.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Count the edges by listing them.",
+        "working": "Edges: $AB$, $BC$, $CD$, $DA$, $BD$ — there are $5$ edges."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the degree of $A$ by listing every edge that includes $A$.",
+        "working": "$AB$, $DA$ — degree of $A = 2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the degree of $B$ by listing every edge that includes $B$.",
+        "working": "$AB$, $BC$, $BD$ — degree of $B = 3$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the degree of $C$ by listing every edge that includes $C$.",
+        "working": "$BC$, $CD$ — degree of $C = 2$"
+      },
+      {
+        "step": 5,
+        "instruction": "Find the degree of $D$ by listing every edge that includes $D$.",
+        "working": "$CD$, $DA$, $BD$ — degree of $D = 3$"
+      }
+    ],
+    "answer": "The network has $5$ edges. $\\deg(A) = 2$, $\\deg(B) = 3$, $\\deg(C) = 2$, $\\deg(D) = 3$."
+  },
+  {
+    "id": "nc-ex-2",
+    "title": "Classifying a network as connected or disconnected",
+    "difficulty": 2,
+    "problem": "A network has $5$ vertices $P$, $Q$, $R$, $S$, $T$ with edges $PQ$ (weight 6), $PR$ (weight 4), $QR$ (weight 5) and $QT$ (weight 8). (a) Is this network connected? (b) What is the total weight of all edges?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "List all vertices and check which ones appear in at least one edge.",
+        "working": "Vertices in edges: $P$ (in $PQ$, $PR$), $Q$ (in $PQ$, $QR$, $QT$), $R$ (in $PR$, $QR$), $T$ (in $QT$). Vertex $S$ does not appear in any edge."
+      },
+      {
+        "step": 2,
+        "instruction": "Since $S$ has no edges, determine whether the network is connected.",
+        "working": "Vertex $S$ is isolated — there is no path from $S$ to any other vertex. The network is disconnected."
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the total weight of all edges.",
+        "working": "$$\\text{Total weight} = 6 + 4 + 5 + 8 = 23$$"
+      }
+    ],
+    "answer": "(a) The network is disconnected — vertex $S$ is isolated. (b) The total weight is $23$."
+  },
+  {
+    "id": "nc-ex-3",
+    "title": "Applying the handshaking lemma and identifying paths and walks",
+    "difficulty": 3,
+    "problem": "A network has $5$ vertices. Four of the vertices have degrees $4$, $3$, $2$ and $3$. The network has $7$ edges. (a) Use the handshaking lemma to find the degree of the fifth vertex. (b) A network with vertices $A$, $B$, $C$, $D$ and edges $AB$, $BC$, $CD$, $DA$, $AC$ has the proposed vertex sequence $B, C, A, B, D$. Explain whether this sequence is a valid path or walk.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the handshaking lemma to find the sum of all vertex degrees.",
+        "working": "$$\\text{Sum of all degrees} = 2 \\times \\text{number of edges} = 2 \\times 7 = 14$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the degree of the fifth vertex by subtracting the four known degrees.",
+        "working": "$$\\text{Degree of fifth vertex} = 14 - (4 + 3 + 2 + 3) = 14 - 12 = 2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Check whether every consecutive pair in the sequence $B, C, A, B, D$ is connected by an edge.",
+        "working": "$BC$ ✓, $CA$ (same as $AC$) ✓, $AB$ ✓, $BD$ — edge $BD$ does not exist in the network. The sequence is neither a valid walk nor a valid path."
+      },
+      {
+        "step": 4,
+        "instruction": "If the sequence were a valid walk, determine whether it would also be a valid path.",
+        "working": "Vertex $B$ appears at positions 1 and 4. Even if all edges existed, the repeated vertex $B$ would mean it could not be a path. A path requires every vertex to appear at most once."
+      }
+    ],
+    "answer": "(a) The degree of the fifth vertex is $2$. (b) The sequence $B, C, A, B, D$ is not a valid walk (edge $BD$ does not exist) and therefore also not a valid path. Even if the edge existed, the repeated vertex $B$ would disqualify it as a path."
+  }
+]

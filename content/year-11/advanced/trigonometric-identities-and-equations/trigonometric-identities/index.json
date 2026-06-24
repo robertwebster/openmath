@@ -1,0 +1,9 @@
+{
+  "id": "trigonometric-identities",
+  "title": "Trigonometric identities",
+  "topic": "trigonometric-identities-and-equations",
+  "year": 11,
+  "strand": "Functions",
+  "syllabusOutcome": "MAV-11-05",
+  "description": "Verify the Pythagorean identity; use it to find unknown trig ratios given one ratio and the quadrant; apply the identities $1 + \\tan^2\\theta = \\sec^2\\theta$ and $1 + \\cot^2\\theta = \\csc^2\\theta$; use complementary angle identities; prove two-step identities by expressing everything in terms of $\\sin\\theta$ and $\\cos\\theta$."
+}

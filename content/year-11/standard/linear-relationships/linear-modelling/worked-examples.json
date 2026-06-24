@@ -1,0 +1,84 @@
+[
+  {
+    "id": "lm-ex-1",
+    "title": "Identifying gradient and y-intercept in context",
+    "difficulty": 1,
+    "problem": "A parking station charges according to $C = 5t + 8$, where $C$ is the total charge in dollars and $t$ is the number of hours parked. Identify the gradient and y-intercept and interpret each in the context of the parking station.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the equation in $y = mx + c$ form and identify $m$ and $c$.",
+        "working": "$C = 5t + 8$ is already in the form $y = mx + c$ with $m = 5$ and $c = 8$."
+      },
+      {
+        "step": 2,
+        "instruction": "Interpret the gradient $m = 5$ in context.",
+        "working": "The gradient is $5$. Since $C$ is in dollars and $t$ is in hours, the gradient means the parking cost increases by $\\$5$ for each additional hour — that is, the hourly rate is $\\$5$ per hour."
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the y-intercept $c = 8$ in context.",
+        "working": "The y-intercept is $8$. When $t = 0$, $C = \\$8$. This means there is an $\\$8$ entry fee charged regardless of how long the car is parked."
+      }
+    ],
+    "answer": "Gradient $= 5$: the hourly parking rate is $\\$5$ per hour. Y-intercept $= 8$: there is a fixed entry fee of $\\$8$."
+  },
+  {
+    "id": "lm-ex-2",
+    "title": "Constructing a linear model from two data points",
+    "difficulty": 2,
+    "problem": "A catering company charges $\\$350$ for 20 guests and $\\$550$ for 40 guests. Assuming the cost is linear, construct a model in the form $C = mn + c$, where $C$ is the total cost in dollars and $n$ is the number of guests.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the two data points.",
+        "working": "$(n_1,\\ C_1) = (20,\\ 350)$ and $(n_2,\\ C_2) = (40,\\ 550)$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the gradient using the gradient formula.",
+        "working": "$$m = \\frac{C_2 - C_1}{n_2 - n_1} = \\frac{550 - 350}{40 - 20} = \\frac{200}{20} = 10$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute one data point and $m = 10$ into $C = mn + c$ to find $c$.",
+        "working": "Using $(20,\\ 350)$: $$350 = 10(20) + c \\implies 350 = 200 + c \\implies c = 150$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write the complete linear model.",
+        "working": "$$C = 10n + 150$$"
+      }
+    ],
+    "answer": "$C = 10n + 150$. The cost per guest is $\\$10$ and the fixed charge is $\\$150$."
+  },
+  {
+    "id": "lm-ex-3",
+    "title": "Writing and interpreting a linear model with a stated limitation",
+    "difficulty": 3,
+    "problem": "A gym charges a joining fee of $\\$80$ and a monthly membership fee of $\\$45$. Write a linear equation for the total amount paid $C$ after $m$ months of membership. Interpret the gradient and state one limitation of the model.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the fixed cost and the rate of change.",
+        "working": "Fixed joining fee (y-intercept) $= \\$80$. Monthly fee (gradient) $= \\$45$ per month."
+      },
+      {
+        "step": 2,
+        "instruction": "Write the linear equation in the form $C = 45m + 80$.",
+        "working": "$$C = 45m + 80$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the gradient in context.",
+        "working": "The gradient is $45$. This means the total amount paid increases by $\\$45$ for each additional month of membership — that is, the rate of change is $\\$45$ per month."
+      },
+      {
+        "step": 4,
+        "instruction": "State one limitation of the model.",
+        "working": "The model assumes the monthly fee remains constant at $\\$45$ indefinitely. In practice, the gym may change its pricing, offer promotional rates, or the member may cancel — so the model may not accurately represent costs beyond a certain period."
+      }
+    ],
+    "answer": "$C = 45m + 80$. The gradient of $45$ means the total cost rises by $\\$45$ each month. One limitation: the model assumes the monthly fee never changes, which may not hold over many years."
+  }
+]

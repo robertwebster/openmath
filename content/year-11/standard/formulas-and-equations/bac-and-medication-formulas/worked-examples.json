@@ -1,0 +1,94 @@
+[
+  {
+    "id": "bac-med-ex-1",
+    "title": "Calculating BAC using the male formula",
+    "difficulty": 1,
+    "problem": "A male weighing 80 kg has consumed 4 standard drinks over 2 hours. Use $\\text{BAC}_\\text{male} = \\dfrac{10N - 7.5H}{6.8M}$ to find his blood alcohol content correct to 3 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula and identify the values.",
+        "working": "$\\text{BAC}_\\text{male} = \\dfrac{10N - 7.5H}{6.8M}$, where $N = 4$, $H = 2$, $M = 80$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate the numerator.",
+        "working": "$10(4) - 7.5(2) = 40 - 15 = 25$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate the denominator.",
+        "working": "$6.8 \\times 80 = 544$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide and round to 3 decimal places.",
+        "working": "$$\\text{BAC}_\\text{male} = \\frac{25}{544} \\approx 0.046$$"
+      }
+    ],
+    "answer": "$\\text{BAC} \\approx 0.046$"
+  },
+  {
+    "id": "bac-med-ex-2",
+    "title": "Finding a child's dose using Young's rule",
+    "difficulty": 2,
+    "problem": "A 10-year-old child requires medication. The adult dose is 440 mg. Use Young's rule $\\left(\\text{dose} = \\dfrac{\\text{age (years)} \\times \\text{adult dose}}{\\text{age (years)} + 12}\\right)$ to find the child's recommended dose.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write Young's rule and identify the values.",
+        "working": "$\\text{dose} = \\dfrac{\\text{age} \\times \\text{adult dose}}{\\text{age} + 12}$, where age $= 10$ and adult dose $= 440$ mg"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate the numerator.",
+        "working": "$10 \\times 440 = 4400$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate the denominator.",
+        "working": "$10 + 12 = 22$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide to find the child's dose.",
+        "working": "$$\\text{dose} = \\frac{4400}{22} = 200 \\text{ mg}$$"
+      }
+    ],
+    "answer": "$200 \\text{ mg}$"
+  },
+  {
+    "id": "bac-med-ex-3",
+    "title": "Finding the minimum wait time before driving",
+    "difficulty": 3,
+    "problem": "A female weighing 55 kg consumes 7 standard drinks at 8:00 pm and drinks nothing after that. Her BAC at $H$ hours after 8:00 pm is given by $\\text{BAC}_\\text{female} = \\dfrac{10N - 7.5H}{5.5M}$. Find the minimum number of complete hours she must wait before her BAC falls below 0.05.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Substitute $N = 7$ and $M = 55$ into the formula.",
+        "working": "$$\\text{BAC}_\\text{female} = \\frac{10(7) - 7.5H}{5.5(55)} = \\frac{70 - 7.5H}{302.5}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Set the BAC expression less than 0.05 and multiply both sides by 302.5.",
+        "working": "$$\\frac{70 - 7.5H}{302.5} < 0.05 \\implies 70 - 7.5H < 15.125$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve the inequality for $H$.",
+        "working": "$$7.5H > 70 - 15.125 = 54.875 \\implies H > \\frac{54.875}{7.5} \\approx 7.32$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Round up to the next complete hour.",
+        "working": "Since $H$ must be a whole number of complete hours, the minimum wait is $H = 8$ hours."
+      },
+      {
+        "step": 5,
+        "instruction": "Verify by checking $H = 8$ and $H = 7$.",
+        "working": "At $H = 8$: $\\text{BAC} = \\dfrac{70 - 60}{302.5} = \\dfrac{10}{302.5} \\approx 0.033 < 0.05$ (below limit)\n\nAt $H = 7$: $\\text{BAC} = \\dfrac{70 - 52.5}{302.5} = \\dfrac{17.5}{302.5} \\approx 0.058 > 0.05$ (still above limit)"
+      }
+    ],
+    "answer": "Minimum wait time is $8$ complete hours"
+  }
+]

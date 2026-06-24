@@ -1,0 +1,79 @@
+[
+  {
+    "id": "prop-fn-we-1",
+    "title": "Evaluating a composite function",
+    "difficulty": 1,
+    "problem": "Let $f(x) = x^2 + 2$ and $g(x) = 4x - 1$. Find $f(g(2))$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Evaluate the inner function $g(2)$ first.",
+        "working": "$$g(2) = 4(2) - 1 = 8 - 1 = 7$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the result into the outer function $f$.",
+        "working": "$$f(g(2)) = f(7) = 7^2 + 2 = 49 + 2 = 51$$"
+      }
+    ],
+    "answer": "$f(g(2)) = 51$"
+  },
+  {
+    "id": "prop-fn-we-2",
+    "title": "Analysing a piecewise function for continuity",
+    "difficulty": 2,
+    "problem": "Consider the piecewise function $$f(x) = \\begin{cases} x^2 & \\text{if } x < 2 \\\\ 3x - 2 & \\text{if } x \\geq 2 \\end{cases}$$ Evaluate $f(2)$, find the left-hand limit at $x = 2$, and determine whether the function is continuous at $x = 2$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find $f(2)$ by identifying which piece applies when $x = 2$. Since $x = 2$ satisfies $x \\geq 2$, use the second piece.",
+        "working": "$$f(2) = 3(2) - 2 = 6 - 2 = 4$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the left-hand limit: the value $f(x)$ approaches as $x \\to 2$ from the left. Substitute $x = 2$ into the first piece $x^2$.",
+        "working": "$$\\lim_{x \\to 2^-} f(x) = 2^2 = 4$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the left-hand limit with $f(2)$.",
+        "working": "$$\\lim_{x \\to 2^-} f(x) = 4 = f(2)$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Since the left-hand limit equals $f(2)$, state the conclusion about continuity.",
+        "working": "$$\\text{The left and right values agree, so } f \\text{ is continuous at } x = 2.$$"
+      }
+    ],
+    "answer": "$f(2) = 4$, $\\lim_{x \\to 2^-} f(x) = 4$. The function is continuous at $x = 2$."
+  },
+  {
+    "id": "prop-fn-we-3",
+    "title": "Solving an absolute value equation and finding the vertex",
+    "difficulty": 3,
+    "problem": "Solve $|2x + 3| = 11$ and find the vertex of the graph $y = |2x + 3|$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write two cases. Since $|\\text{expression}| = k$ means the expression equals $k$ or $-k$, set up both equations.",
+        "working": "$$2x + 3 = 11 \\qquad \\text{or} \\qquad 2x + 3 = -11$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Solve Case 1.",
+        "working": "$$2x + 3 = 11 \\Rightarrow 2x = 8 \\Rightarrow x = 4$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve Case 2.",
+        "working": "$$2x + 3 = -11 \\Rightarrow 2x = -14 \\Rightarrow x = -7$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the vertex of $y = |2x + 3|$. The vertex occurs where the expression inside the absolute value equals zero. Set $2x + 3 = 0$ and solve.",
+        "working": "$$2x + 3 = 0 \\Rightarrow x = -\\frac{3}{2}, \\quad y = \\left|2\\left(-\\frac{3}{2}\\right) + 3\\right| = 0$$"
+      }
+    ],
+    "answer": "$x = 4$ or $x = -7$. The vertex of $y = |2x + 3|$ is at $\\left(-\\dfrac{3}{2},\\, 0\\right)$."
+  }
+]

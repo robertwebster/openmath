@@ -1,0 +1,99 @@
+[
+  {
+    "id": "mcs-worked-1",
+    "title": "Finding mean, median and mode",
+    "difficulty": 1,
+    "problem": "Five students scored $14, 17, 17, 19$ and $23$ on a quiz. Find the mean, median and mode of their scores.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the mean by adding all values and dividing by the number of values.",
+        "working": "$$\\bar{x} = \\frac{14 + 17 + 17 + 19 + 23}{5} = \\frac{90}{5} = 18$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the median. The data is already in ascending order. With 5 values, the median is the 3rd value.",
+        "working": "Ordered data: $14, 17, \\mathbf{17}, 19, 23$\n\nThe middle (3rd) value is $\\mathbf{17}$, so the median is $17$."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the mode by identifying the value that appears most often.",
+        "working": "The value $17$ appears twice; all other values appear once. The mode is $17$."
+      },
+      {
+        "step": 4,
+        "instruction": "Consider which measure would change most if a student scored 95 instead of 23.",
+        "working": "New mean $= \\frac{14+17+17+19+95}{5} = \\frac{162}{5} = 32.4$ — a large increase from $18$.\n\nNew median: ordered data is $14, 17, 17, 19, 95$ — the 3rd value is still $17$, unchanged.\n\nMode is still $17$, unchanged.\n\nThe mean is most sensitive to the extreme value."
+      }
+    ],
+    "answer": "Mean $= 18$, median $= 17$, mode $= 17$. The mean is most affected by an extreme value."
+  },
+  {
+    "id": "mcs-worked-2",
+    "title": "Calculating population standard deviation",
+    "difficulty": 2,
+    "problem": "The weights (kg) of five packages are $2, 5, 6, 7$ and $10$. The mean weight is $6$ kg. Calculate the population standard deviation correct to 2 decimal places and interpret the result.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write down the population standard deviation formula.",
+        "working": "$$\\sigma = \\sqrt{\\frac{\\sum(x - \\bar{x})^2}{n}}$$\n\nwhere $\\bar{x} = 6$ and $n = 5$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the deviation of each weight from the mean and square it.",
+        "working": "| $x$ | $x - \\bar{x}$ | $(x - \\bar{x})^2$ |\n|---|---|---|\n| $2$ | $-4$ | $16$ |\n| $5$ | $-1$ | $1$ |\n| $6$ | $0$ | $0$ |\n| $7$ | $1$ | $1$ |\n| $10$ | $4$ | $16$ |"
+      },
+      {
+        "step": 3,
+        "instruction": "Sum the squared deviations.",
+        "working": "$$\\sum(x - \\bar{x})^2 = 16 + 1 + 0 + 1 + 16 = 34$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Divide by $n$ to find the variance, then take the square root.",
+        "working": "$$\\sigma = \\sqrt{\\frac{34}{5}} = \\sqrt{6.8} \\approx 2.61 \\text{ kg}$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Interpret the result in context.",
+        "working": "A standard deviation of $2.61$ kg means that the package weights typically differ from the mean of $6$ kg by about $2.61$ kg. The relatively large spread (compared to the mean) indicates the weights vary considerably."
+      }
+    ],
+    "answer": "$\\sigma \\approx 2.61$ kg. Package weights typically differ from the mean by about $2.61$ kg."
+  },
+  {
+    "id": "mcs-worked-3",
+    "title": "Comparing datasets using mean and standard deviation",
+    "difficulty": 3,
+    "problem": "Two mechanics record their daily repair times (minutes) over one week.\n\nMechanic A: $38, 44, 46, 48, 54$\nMechanic B: $20, 40, 46, 52, 72$\n\n(a) Calculate the mean and population standard deviation for each mechanic correct to 2 decimal places.\n(b) Compare the two mechanics and state which has more consistent repair times.\n(c) State the most appropriate measure of centre for this data and justify your choice.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the mean for each mechanic.",
+        "working": "$$\\bar{x}_A = \\frac{38 + 44 + 46 + 48 + 54}{5} = \\frac{230}{5} = 46 \\text{ min}$$\n\n$$\\bar{x}_B = \\frac{20 + 40 + 46 + 52 + 72}{5} = \\frac{230}{5} = 46 \\text{ min}$$\n\nBoth mechanics have the same mean repair time."
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the population standard deviation for Mechanic A.",
+        "working": "Squared deviations from $\\bar{x}_A = 46$:\n\n$(38-46)^2 = 64, \\quad (44-46)^2 = 4, \\quad (46-46)^2 = 0, \\quad (48-46)^2 = 4, \\quad (54-46)^2 = 64$\n\n$$\\sigma_A = \\sqrt{\\frac{64+4+0+4+64}{5}} = \\sqrt{\\frac{136}{5}} = \\sqrt{27.2} \\approx 5.22 \\text{ min}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the population standard deviation for Mechanic B.",
+        "working": "Squared deviations from $\\bar{x}_B = 46$:\n\n$(20-46)^2 = 676, \\quad (40-46)^2 = 36, \\quad (46-46)^2 = 0, \\quad (52-46)^2 = 36, \\quad (72-46)^2 = 676$\n\n$$\\sigma_B = \\sqrt{\\frac{676+36+0+36+676}{5}} = \\sqrt{\\frac{1424}{5}} = \\sqrt{284.8} \\approx 16.88 \\text{ min}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Compare the two mechanics.",
+        "working": "Both mechanics average $46$ min per repair, but:\n- Mechanic A: $\\sigma_A \\approx 5.22$ min (times clustered closely around $46$ min)\n- Mechanic B: $\\sigma_B \\approx 16.88$ min (times vary widely — from $20$ to $72$ min)\n\nMechanic A has more consistent repair times."
+      },
+      {
+        "step": 5,
+        "instruction": "Choose the most appropriate measure of centre and justify.",
+        "working": "Neither dataset contains extreme outliers that would significantly distort the mean. The mean ($46$ min) is the most appropriate measure of centre here because it uses all values and gives an accurate picture of the typical repair time for each mechanic."
+      }
+    ],
+    "answer": "Mean A $= 46$ min, $\\sigma_A \\approx 5.22$ min; Mean B $= 46$ min, $\\sigma_B \\approx 16.88$ min. Mechanic A is more consistent. The mean is the most appropriate measure of centre for both datasets."
+  }
+]

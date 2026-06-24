@@ -1,0 +1,9 @@
+{
+  "id": "applications-of-the-derivative",
+  "title": "Applications of the derivative",
+  "topic": "introduction-to-differentiation",
+  "year": 11,
+  "strand": "Calculus",
+  "syllabusOutcome": "MAV-11-06",
+  "description": "Determine intervals where a function is increasing or decreasing using the sign of f'(x), find and classify stationary points of polynomials using sign tests, and interpret the derivative in context including position and velocity."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "non-right-angled-triangles",
+  "title": "Non-right-angled triangles",
+  "topic": "trigonometry-and-measure-of-angles",
+  "year": 11,
+  "strand": "Functions",
+  "syllabusOutcome": "MAV-11-04",
+  "description": "Apply the sine rule and cosine rule to find unknown sides and angles in non-right-angled triangles, calculate triangle area using $A = \\frac{1}{2}ab\\sin C$, and identify and solve the ambiguous case."
+}

@@ -1,0 +1,206 @@
+[
+  {
+    "id": "dd-1-1",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A survey asks students how many text messages they send each day. Which type of variable is \"number of text messages sent per day\"?",
+    "options": [
+      "Numerical (discrete)",
+      "Numerical (continuous)",
+      "Categorical (nominal)",
+      "Categorical (ordinal)"
+    ],
+    "answer": "Numerical (discrete)",
+    "tolerance": 0,
+    "hint": "Can you send half a text message? What kind of values are possible?",
+    "explanation": "The number of text messages must be a whole number — you cannot send 2.7 messages. It is numerical because it is found by counting, and discrete because only whole-number values are possible."
+  },
+  {
+    "id": "dd-1-2",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "An athletics coach records the time taken by each student to run 100 metres. Which type of variable is \"time to run 100 m\"?",
+    "options": [
+      "Numerical (continuous)",
+      "Numerical (discrete)",
+      "Categorical (nominal)",
+      "Categorical (ordinal)"
+    ],
+    "answer": "Numerical (continuous)",
+    "tolerance": 0,
+    "hint": "Can the time take any value within a range, or only whole-number values?",
+    "explanation": "Time can take any value within a range — for example, 13.47 s or 13.472 s. It is numerical because it is measured, and continuous because any value is theoretically possible within the range, not just whole numbers."
+  },
+  {
+    "id": "dd-1-3",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Eight students reported the number of books they read last month: $2, 5, 2, 3, 5, 2, 3, 5$. How many students read exactly $2$ books?",
+    "answer": 3,
+    "tolerance": 0,
+    "hint": "Go through the list and tally every time the value 2 appears.",
+    "explanation": "Reading through the list: $\\mathbf{2}, 5, \\mathbf{2}, 3, 5, \\mathbf{2}, 3, 5$. The value 2 appears three times, so its frequency is $3$."
+  },
+  {
+    "id": "dd-1-4",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Ten quiz scores were recorded: $8, 10, 8, 6, 10, 8, 6, 10, 8, 6$. How many scores of $8$ are there?",
+    "answer": 4,
+    "tolerance": 0,
+    "hint": "Count the number of times 8 appears in the list.",
+    "explanation": "Reading through the list: $\\mathbf{8}, 10, \\mathbf{8}, 6, 10, \\mathbf{8}, 6, 10, \\mathbf{8}, 6$. The value 8 appears at positions 1, 3, 6 and 9, giving a frequency of $4$."
+  },
+  {
+    "id": "dd-2-1",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A frequency table shows the number of hours per week that 30 students spend on social media:\n\n| Hours per week | Frequency |\n|---|---|\n| $0$–$<5$ | $3$ |\n| $5$–$<10$ | $6$ |\n| $10$–$<15$ | $12$ |\n| $15$–$<20$ | $6$ |\n| $20$–$<25$ | $3$ |\n\nWhich description best matches the shape of the histogram drawn from this table?",
+    "options": [
+      "Approximately symmetric",
+      "Positively skewed",
+      "Negatively skewed",
+      "Uniform"
+    ],
+    "answer": "Approximately symmetric",
+    "tolerance": 0,
+    "hint": "Compare the frequencies on either side of the tallest bar.",
+    "explanation": "The data peaks in the middle class ($10$–$<15$ hours, frequency $12$). The frequencies on either side are mirror images: $3, 6$ below the peak and $6, 3$ above it. The distribution is approximately symmetric — neither tail is longer than the other."
+  },
+  {
+    "id": "dd-2-2",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A researcher records how long customers wait in a queue at a bank. Most customers wait between 1 and 4 minutes, but a small number of customers wait much longer — up to 25 minutes. Which description best matches the shape of the histogram of waiting times?",
+    "options": [
+      "Positively skewed",
+      "Negatively skewed",
+      "Approximately symmetric",
+      "Bimodal"
+    ],
+    "answer": "Positively skewed",
+    "tolerance": 0,
+    "hint": "Consider which direction the long tail extends.",
+    "explanation": "Most values are clustered near the lower end (1–4 minutes) with a few very large values extending to 25 minutes. This long tail stretches to the right (towards higher values), so the distribution is positively skewed."
+  },
+  {
+    "id": "dd-2-3",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A frequency table records Year 11 test scores:\n\n| Score | Frequency |\n|---|---|\n| $40$–$<50$ | $3$ |\n| $50$–$<60$ | $8$ |\n| $60$–$<70$ | $11$ |\n| $70$–$<80$ | $6$ |\n| $80$–$<90$ | $2$ |\n\nHow many students sat the test in total?",
+    "answer": 30,
+    "tolerance": 0,
+    "hint": "Add all the frequencies together.",
+    "explanation": "Total $= 3 + 8 + 11 + 6 + 2 = 30$ students."
+  },
+  {
+    "id": "dd-2-4",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 2,
+    "type": "fraction",
+    "stem": "In a class of $24$ students, a frequency table shows that $8$ students scored in the range $50$–$<60$. Express the relative frequency of this class as a simplified fraction.",
+    "answer": "1/3",
+    "tolerance": 0,
+    "hint": "Relative frequency $=$ class frequency $\\div$ total frequency. Then simplify.",
+    "explanation": "Relative frequency $= \\dfrac{8}{24}$. Dividing numerator and denominator by $8$ gives $\\dfrac{1}{3}$."
+  },
+  {
+    "id": "dd-3-1",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A bar chart displays the average monthly electricity bills for four households. The vertical axis begins at $\\$200$ rather than $\\$0$ and shows values $\\$204$, $\\$218$, $\\$212$ and $\\$224$. Which statement best identifies the misleading feature and explains its effect?",
+    "options": [
+      "The vertical axis starts at $\\$200$ rather than $\\$0$, making the differences between bills appear much larger than they actually are",
+      "The chart uses dollars, which makes comparison between households impossible",
+      "The vertical axis should begin at $\\$100$ for a fair comparison",
+      "Using average monthly bills rather than total annual bills distorts the data"
+    ],
+    "answer": "The vertical axis starts at $\\$200$ rather than $\\$0$, making the differences between bills appear much larger than they actually are",
+    "tolerance": 0,
+    "hint": "Consider what a reader would conclude without carefully reading the axis values.",
+    "explanation": "When the axis starts at $\\$200$, the visible bar heights above the baseline are very small differences (e.g., $\\$4$ vs $\\$24$), which are magnified visually. A reader glancing at the chart would think the highest bill ($\\$224$) is many times larger than the lowest ($\\$204$), when it is actually only about $10\\%$ more. Starting the axis at $\\$0$ would show all bars nearly equal in height, reflecting the small actual differences."
+  },
+  {
+    "id": "dd-3-2",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A histogram displays income data for 20 employees using unequal class intervals. The class $\\$20\\,000$–$<\\$40\\,000$ has a frequency of $8$ (width $\\$20\\,000$) and the class $\\$40\\,000$–$<\\$80\\,000$ has a frequency of $10$ (width $\\$40\\,000$). Bar heights are drawn equal to frequency. A colleague says: \"Incomes are more concentrated in the $\\$40\\,000$–$<\\$80\\,000$ class because its bar is taller.\" Which response correctly evaluates this claim?",
+    "options": [
+      "The claim is incorrect — the $\\$40\\,000$–$<\\$80\\,000$ class is twice as wide, so its frequency density ($10 \\div 40 = 0.25$ per $\\$1000$) is lower than that of $\\$20\\,000$–$<\\$40\\,000$ ($8 \\div 20 = 0.40$ per $\\$1000$), meaning incomes are actually more concentrated in the lower class",
+      "The claim is correct — a taller bar always indicates a higher concentration of data",
+      "The claim is incorrect — both bars should be drawn with the same height when class widths differ",
+      "The claim is correct, but only when all class widths are equal"
+    ],
+    "answer": "The claim is incorrect — the $\\$40\\,000$–$<\\$80\\,000$ class is twice as wide, so its frequency density ($10 \\div 40 = 0.25$ per $\\$1000$) is lower than that of $\\$20\\,000$–$<\\$40\\,000$ ($8 \\div 20 = 0.40$ per $\\$1000$), meaning incomes are actually more concentrated in the lower class",
+    "tolerance": 0,
+    "hint": "When class widths differ, compare frequency density (frequency $\\div$ class width), not raw frequency.",
+    "explanation": "Frequency density measures how many data values fall per unit of the class interval. For $\\$20\\,000$–$<\\$40\\,000$: $8 \\div 20 = 0.40$ per $\\$1000$. For $\\$40\\,000$–$<\\$80\\,000$: $10 \\div 40 = 0.25$ per $\\$1000$. The lower class has a higher density — incomes are more concentrated there. Using bar height equal to raw frequency when class widths differ gives a misleading visual impression of concentration."
+  },
+  {
+    "id": "dd-3-3",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A 3D pie chart is used in a report to compare the market share of four companies: A $= 25\\%$, B $= 25\\%$, C $= 25\\%$, D $= 25\\%$. Due to the 3D perspective, the front slices (C and D) appear larger than the back slices (A and B). Which statement best explains why this is misleading?",
+    "options": [
+      "The 3D perspective distorts the apparent size of slices — front slices look larger than back slices even when they represent equal values, so a reader incorrectly concludes that C and D have greater market share than A and B",
+      "A pie chart cannot display more than three categories",
+      "Market share data must always be shown as a bar chart",
+      "The percentages no longer add to $100\\%$ when a 3D effect is applied"
+    ],
+    "answer": "The 3D perspective distorts the apparent size of slices — front slices look larger than back slices even when they represent equal values, so a reader incorrectly concludes that C and D have greater market share than A and B",
+    "tolerance": 0,
+    "hint": "When all shares are equal, all slices should appear the same size. Does the 3D effect achieve this?",
+    "explanation": "All four companies hold exactly $25\\%$ market share, so each slice should be identical in size. The 3D tilt makes slices near the front of the chart appear wider and larger than slices at the back, even though they represent the same value. A reader would incorrectly conclude that C and D dominate the market. A flat (2D) pie chart would display all four slices equally and avoid this distortion."
+  },
+  {
+    "id": "dd-3-4",
+    "subtopic": "displaying-data",
+    "topic": "data-analysis",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A student surveys 30 classmates about their favourite music genre (Pop, Rock, Jazz, Classical) and plots the results as a line graph, connecting the four data points with straight lines. A teacher says the graph is misleading. Which statement best explains why?",
+    "options": [
+      "A line graph implies that values change continuously between categories, suggesting a trend that does not exist — genre is a categorical variable with no meaningful order or numerical relationship between categories",
+      "A line graph can only display two data points at a time",
+      "The line should be drawn as a curve, not straight segments",
+      "Frequency data can only be shown as a table, never as a graph"
+    ],
+    "answer": "A line graph implies that values change continuously between categories, suggesting a trend that does not exist — genre is a categorical variable with no meaningful order or numerical relationship between categories",
+    "tolerance": 0,
+    "hint": "Line graphs are used for data measured over a continuous scale, such as time. Is genre data continuous?",
+    "explanation": "Line graphs are appropriate when the horizontal axis represents a continuous or ordered scale (such as time or temperature), so the line between points carries meaning. Genre is a categorical variable — the categories Pop, Rock, Jazz and Classical have no numerical order. Connecting them with a line falsely implies a continuous trend between genres. A bar chart or column graph would correctly display these frequencies without suggesting any relationship between the categories."
+  }
+]

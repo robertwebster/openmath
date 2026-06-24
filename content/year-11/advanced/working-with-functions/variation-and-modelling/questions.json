@@ -1,0 +1,178 @@
+[
+  {
+    "id": "var-mod-1-1",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which type of variation does the equation $y = 5x^3$ represent?",
+    "options": [
+      "Direct variation",
+      "Inverse variation",
+      "Neither direct nor inverse variation",
+      "Linear variation"
+    ],
+    "answer": "Direct variation",
+    "hint": "Compare the equation with the general form $y = kx^n$.",
+    "explanation": "The equation $y = 5x^3$ has the form $y = kx^n$ with $k = 5$ and $n = 3$. This is direct variation — $y$ varies directly as the cube of $x$."
+  },
+  {
+    "id": "var-mod-1-2",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which type of variation does the equation $y = \\dfrac{8}{x^2}$ represent?",
+    "options": [
+      "Direct variation",
+      "Inverse variation",
+      "Neither direct nor inverse variation",
+      "Exponential variation"
+    ],
+    "answer": "Inverse variation",
+    "hint": "Compare the equation with the general form $y = \\dfrac{k}{x^n}$.",
+    "explanation": "The equation $y = \\dfrac{8}{x^2}$ has the form $y = \\dfrac{k}{x^n}$ with $k = 8$ and $n = 2$. This is inverse variation — as $x$ increases, $y$ decreases."
+  },
+  {
+    "id": "var-mod-1-3",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "The table below shows values of $x$ and $y$.\n\n| $x$ | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| $y$ | 5 | 10 | 15 | 20 |\n\nWhich type of variation does the table represent?",
+    "options": [
+      "Direct variation",
+      "Inverse variation",
+      "Neither direct nor inverse variation",
+      "Quadratic variation"
+    ],
+    "answer": "Direct variation",
+    "hint": "Check whether the ratio $y/x$ is constant.",
+    "explanation": "Dividing each $y$-value by the corresponding $x$-value gives $5/1 = 5$, $10/2 = 5$, $15/3 = 5$, $20/4 = 5$. The ratio $y/x = 5$ is constant, so this is direct variation with $k = 5$, that is $y = 5x$."
+  },
+  {
+    "id": "var-mod-1-4",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "The table below shows values of $x$ and $y$.\n\n| $x$ | 2 | 4 | 5 | 10 |\n|---|---|---|---|---|\n| $y$ | 15 | 7.5 | 6 | 3 |\n\nWhich type of variation does the table represent?",
+    "options": [
+      "Direct variation",
+      "Inverse variation",
+      "Neither direct nor inverse variation",
+      "Linear variation"
+    ],
+    "answer": "Inverse variation",
+    "hint": "Check whether the product $xy$ is constant.",
+    "explanation": "Multiplying each pair: $2 \\times 15 = 30$, $4 \\times 7.5 = 30$, $5 \\times 6 = 30$, $10 \\times 3 = 30$. The product $xy = 30$ is constant, so this is inverse variation with $k = 30$, that is $y = \\dfrac{30}{x}$."
+  },
+  {
+    "id": "var-mod-2-1",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "$y$ varies directly as $x$. When $x = 6$, $y = 24$. Find the constant of variation $k$.",
+    "answer": 4,
+    "tolerance": 0,
+    "hint": "Write the model as $y = kx$ and substitute the given values.",
+    "explanation": "Since $y$ varies directly as $x$, write $y = kx$. Substituting $x = 6$ and $y = 24$: $24 = 6k$, so $k = 4$."
+  },
+  {
+    "id": "var-mod-2-2",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "$y$ varies directly as $x^2$. When $x = 3$, $y = 45$. Find the constant of variation $k$.",
+    "answer": 5,
+    "tolerance": 0,
+    "hint": "Write the model as $y = kx^2$ and substitute the given values.",
+    "explanation": "Since $y$ varies directly as $x^2$, write $y = kx^2$. Substituting $x = 3$ and $y = 45$: $45 = k(3)^2 = 9k$, so $k = 5$."
+  },
+  {
+    "id": "var-mod-2-3",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "$y$ varies inversely as $x$. When $x = 4$, $y = 9$. Find the value of $y$ when $x = 6$.",
+    "answer": 6,
+    "tolerance": 0,
+    "hint": "Find $k$ from the given data point, then substitute $x = 6$ into the model.",
+    "explanation": "Since $y$ varies inversely as $x$, write $y = \\dfrac{k}{x}$. From $x = 4$, $y = 9$: $k = 4 \\times 9 = 36$. The model is $y = \\dfrac{36}{x}$. When $x = 6$: $y = \\dfrac{36}{6} = 6$."
+  },
+  {
+    "id": "var-mod-2-4",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "$y$ varies directly as $x^2$ with constant of variation $k = 3$. Find the value of $y$ when $x = 5$.",
+    "answer": 75,
+    "tolerance": 0,
+    "hint": "Substitute $k = 3$ and $x = 5$ into the model $y = kx^2$.",
+    "explanation": "The model is $y = 3x^2$. When $x = 5$: $y = 3 \\times 5^2 = 3 \\times 25 = 75$."
+  },
+  {
+    "id": "var-mod-3-1",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "It is known that $y = kx^2$. Two measurements give $y = 12$ when $x = 2$, and $y = 27$ when $x = 3$. Verify that both data points give the same value of $k$, then find $y$ when $x = 5$.",
+    "answer": 75,
+    "tolerance": 0,
+    "hint": "Find $k$ separately from each data point. If they agree, the model is consistent. Then substitute $x = 5$.",
+    "explanation": "From $(2, 12)$: $k = \\dfrac{12}{2^2} = \\dfrac{12}{4} = 3$. From $(3, 27)$: $k = \\dfrac{27}{3^2} = \\dfrac{27}{9} = 3$. Both give $k = 3$, confirming the model $y = 3x^2$ is consistent. When $x = 5$: $y = 3 \\times 5^2 = 3 \\times 25 = 75$."
+  },
+  {
+    "id": "var-mod-3-2",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "It is known that $y = \\dfrac{k}{x}$. Two measurements give $y = 6$ when $x = 4$, and $y = 4$ when $x = 6$. Verify that both data points give the same value of $k$, then find $y$ when $x = 12$.",
+    "answer": 2,
+    "tolerance": 0,
+    "hint": "Compute $k = xy$ from each data point, check they agree, then substitute $x = 12$.",
+    "explanation": "From $(4, 6)$: $k = 4 \\times 6 = 24$. From $(6, 4)$: $k = 6 \\times 4 = 24$. Both give $k = 24$, so the model $y = \\dfrac{24}{x}$ is consistent. When $x = 12$: $y = \\dfrac{24}{12} = 2$."
+  },
+  {
+    "id": "var-mod-3-3",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "The time $T$ hours to complete a task varies inversely with the number of workers $n$. When $n = 4$, $T = 6$ hours, and when $n = 6$, $T = 4$ hours. Verify that both data points give the same value of $k$, then find $T$ when $n = 8$.",
+    "answer": 3,
+    "tolerance": 0,
+    "hint": "Write $T = k/n$. Compute $k = nT$ from each data point, check they agree, then substitute $n = 8$.",
+    "explanation": "Write $T = \\dfrac{k}{n}$. From $(n = 4, T = 6)$: $k = 4 \\times 6 = 24$. From $(n = 6, T = 4)$: $k = 6 \\times 4 = 24$. Both give $k = 24$, so the model $T = \\dfrac{24}{n}$ is consistent with both data points. When $n = 8$: $T = \\dfrac{24}{8} = 3$ hours. The model's prediction is reliable here since the relationship holds across both observed data points."
+  },
+  {
+    "id": "var-mod-3-4",
+    "subtopic": "variation-and-modelling",
+    "topic": "working-with-functions",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "The braking distance $d$ metres of a car varies directly as the square of its speed $v$ km/h. When $v = 20$, $d = 8$, and when $v = 30$, $d = 18$. Verify that both data points give the same value of $k$, then find $d$ when $v = 50$.",
+    "answer": 50,
+    "tolerance": 0,
+    "hint": "Write $d = kv^2$. Find $k = d/v^2$ from each data point, check they agree, then substitute $v = 50$.",
+    "explanation": "Write $d = kv^2$. From $(v = 20, d = 8)$: $k = \\dfrac{8}{20^2} = \\dfrac{8}{400} = 0.02$. From $(v = 30, d = 18)$: $k = \\dfrac{18}{30^2} = \\dfrac{18}{900} = 0.02$. Both give $k = 0.02$, confirming the model $d = 0.02v^2$. When $v = 50$: $d = 0.02 \\times 50^2 = 0.02 \\times 2500 = 50$ metres. Because both data points are consistent, the model is reliable for interpolation, though extrapolation to higher speeds should be treated with caution."
+  }
+]

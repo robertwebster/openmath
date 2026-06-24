@@ -1,0 +1,194 @@
+[
+  {
+    "id": "nc-q1",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A network has vertices $A$, $B$, $C$, $D$ with edges $AB$, $BC$, $CD$, $DA$ and $AC$. How many edges does the network have?",
+    "answer": 5,
+    "tolerance": 0,
+    "hint": "Count each listed edge once.",
+    "explanation": "The edges are $AB$, $BC$, $CD$, $DA$ and $AC$. Counting each edge once gives $5$ edges."
+  },
+  {
+    "id": "nc-q2",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A network has vertices $P$, $Q$, $R$, $S$ with edges $PQ$, $PR$, $QR$, $QS$ and $RS$. What is the degree of vertex $Q$?",
+    "answer": 3,
+    "tolerance": 0,
+    "hint": "The degree of a vertex is the number of edges connected to it. List every edge that includes $Q$.",
+    "explanation": "Vertex $Q$ appears in edges $PQ$, $QR$ and $QS$. The degree of $Q$ is $3$."
+  },
+  {
+    "id": "nc-q3",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A network has vertices $A$, $B$, $C$, $D$, $E$ with edges $AB$, $BC$, $CD$, $CE$ and $DE$. What is the degree of vertex $C$?",
+    "answer": 3,
+    "tolerance": 0,
+    "hint": "List every edge that includes $C$ and count them.",
+    "explanation": "Vertex $C$ appears in edges $BC$, $CD$ and $CE$. The degree of $C$ is $3$."
+  },
+  {
+    "id": "nc-q4",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "In a network diagram, what does the degree of a vertex represent?",
+    "options": [
+      "The number of edges connected to that vertex",
+      "The total number of vertices in the network",
+      "The weight of the shortest path from that vertex",
+      "The number of cycles passing through that vertex"
+    ],
+    "answer": "The number of edges connected to that vertex",
+    "tolerance": 0,
+    "hint": "The degree counts the connections at one vertex.",
+    "explanation": "The degree of a vertex is the number of edges that are connected to (or incident at) that vertex."
+  },
+  {
+    "id": "nc-q5",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A network has 6 vertices $A$, $B$, $C$, $D$, $E$, $F$ with edges $AB$, $BC$, $CD$, $DE$. Which statement correctly describes this network?",
+    "options": [
+      "Connected, because every vertex has at least one edge",
+      "Disconnected, because vertex $F$ has no edges",
+      "Connected, because the edges form a chain from $A$ to $E$",
+      "Disconnected, because the network has fewer edges than vertices"
+    ],
+    "answer": "Disconnected, because vertex $F$ has no edges",
+    "tolerance": 0,
+    "hint": "A connected network has a path between every pair of vertices. Check whether every vertex can be reached from $A$.",
+    "explanation": "Vertices $A$, $B$, $C$, $D$, $E$ are all linked by the chain $A$–$B$–$C$–$D$–$E$, but vertex $F$ has no edges so it cannot be reached from any other vertex. The network is disconnected."
+  },
+  {
+    "id": "nc-q6",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A network has vertices $A$, $B$, $C$, $D$, $E$ with edges $AB$ (weight 5), $BC$ (weight 3), $CD$ (weight 7) and $BE$ (weight 2). Is this network connected?",
+    "options": [
+      "Yes, because there is a path from $A$ to every other vertex",
+      "No, because vertex $D$ has degree 1",
+      "No, because vertex $E$ is only directly connected to $B$",
+      "Yes, because every vertex has degree at least 1"
+    ],
+    "answer": "Yes, because there is a path from $A$ to every other vertex",
+    "tolerance": 0,
+    "hint": "Check whether every vertex can be reached from $A$ by following edges.",
+    "explanation": "From $A$: $A$–$B$ reaches $B$; $A$–$B$–$C$ reaches $C$; $A$–$B$–$C$–$D$ reaches $D$; $A$–$B$–$E$ reaches $E$. Every vertex is reachable from $A$, so the network is connected."
+  },
+  {
+    "id": "nc-q7",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A connected network has vertices $W$, $X$, $Y$, $Z$ with edges $WX$ (weight 8), $WY$ (weight 5), $XY$ (weight 3), $XZ$ (weight 6) and $YZ$ (weight 4). What is the total weight of all edges?",
+    "answer": 26,
+    "tolerance": 0,
+    "hint": "Add the weight of each edge.",
+    "explanation": "$$\\text{Total weight} = 8 + 5 + 3 + 6 + 4 = 26$$"
+  },
+  {
+    "id": "nc-q8",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A network has vertices $P$, $Q$, $R$, $S$ with edges $PQ$, $PR$, $QR$ and $QS$. Is this network connected?",
+    "options": [
+      "No, because vertex $S$ is only directly connected to one other vertex",
+      "Yes, because there is a path between every pair of vertices",
+      "No, because not all vertices have the same degree",
+      "Yes, because the network contains a cycle through $P$, $Q$ and $R$"
+    ],
+    "answer": "Yes, because there is a path between every pair of vertices",
+    "tolerance": 0,
+    "hint": "Check whether a path exists from $S$ to each of $P$, $Q$ and $R$.",
+    "explanation": "From $S$: $S$–$Q$ reaches $Q$; $S$–$Q$–$P$ reaches $P$; $S$–$Q$–$R$ reaches $R$. Every pair of vertices has a path between them, so the network is connected. A vertex with degree 1 can still belong to a connected network."
+  },
+  {
+    "id": "nc-q9",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A network has $5$ vertices. The degrees of four of the vertices are $3$, $2$, $4$ and $2$. The network has $7$ edges. Using the handshaking lemma, find the degree of the fifth vertex.",
+    "answer": 3,
+    "tolerance": 0,
+    "hint": "The handshaking lemma states: sum of all vertex degrees $= 2 \\times$ number of edges.",
+    "explanation": "By the handshaking lemma:\n$$\\text{Sum of all degrees} = 2 \\times 7 = 14$$\nThe sum of the four known degrees is $3 + 2 + 4 + 2 = 11$.\n$$\\text{Degree of fifth vertex} = 14 - 11 = 3$$"
+  },
+  {
+    "id": "nc-q10",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A network has $5$ vertices $A$, $B$, $C$, $D$, $E$ and $8$ edges. The degrees of $A$, $B$, $C$ and $D$ are $4$, $3$, $2$ and $4$ respectively. Using the handshaking lemma, find the degree of vertex $E$.",
+    "answer": 3,
+    "tolerance": 0,
+    "hint": "Apply $\\text{sum of all degrees} = 2 \\times \\text{number of edges}$, then subtract the known degrees.",
+    "explanation": "By the handshaking lemma:\n$$\\text{Sum of all degrees} = 2 \\times 8 = 16$$\nThe sum of the four known degrees is $4 + 3 + 2 + 4 = 13$.\n$$\\text{Degree of } E = 16 - 13 = 3$$"
+  },
+  {
+    "id": "nc-q11",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A network has vertices $A$, $B$, $C$, $D$ with edges $AB$, $BC$, $CD$, $DA$ and $AC$. Consider the vertex sequence $A, B, C, A, D$. Is this a valid path?",
+    "options": [
+      "Yes, because every consecutive pair is connected by an edge",
+      "No, because vertex $A$ appears more than once",
+      "Yes, because the sequence visits four different edges",
+      "No, because the sequence does not return to the starting vertex"
+    ],
+    "answer": "No, because vertex $A$ appears more than once",
+    "tolerance": 0,
+    "hint": "A path cannot revisit any vertex.",
+    "explanation": "Checking the edges: $AB$ ✓, $BC$ ✓, $CA$ (same as $AC$) ✓, $AD$ (same as $DA$) ✓ — so every consecutive pair is connected. However, vertex $A$ appears at positions 1 and 4, so the sequence is not a valid path. It is, however, a valid walk."
+  },
+  {
+    "id": "nc-q12",
+    "subtopic": "network-concepts",
+    "topic": "networks-paths-and-trees",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A network has vertices $A$, $B$, $C$, $D$ with edges $AB$, $BC$, $CD$ and $DA$. Consider the vertex sequence $A, B, C, D, A$. Which statement is correct?",
+    "options": [
+      "It is a valid path because no edge is repeated",
+      "It is a valid walk but not a valid path because vertex $A$ is repeated",
+      "It is neither a walk nor a path because it uses more edges than vertices",
+      "It is a valid path because all four vertices are visited"
+    ],
+    "answer": "It is a valid walk but not a valid path because vertex $A$ is repeated",
+    "tolerance": 0,
+    "hint": "A walk allows repeated vertices; a path does not.",
+    "explanation": "Checking the edges: $AB$ ✓, $BC$ ✓, $CD$ ✓, $DA$ ✓ — all exist, so the sequence is a valid walk. However, vertex $A$ appears at both the start (position 1) and the end (position 5), so the sequence is not a valid path. It is a valid closed walk (a cycle)."
+  }
+]

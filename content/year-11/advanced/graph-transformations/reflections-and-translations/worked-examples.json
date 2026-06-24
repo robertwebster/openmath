@@ -1,0 +1,84 @@
+[
+  {
+    "id": "ref-trans-we-1",
+    "title": "Reflecting a function in the y-axis",
+    "difficulty": 1,
+    "problem": "The graph of $y = x^3 - 2$ is reflected in the $y$-axis. Write the equation of the new graph.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the rule for reflection in the $y$-axis: replace every $x$ in the equation with $-x$.",
+        "working": "$$\\text{Replace } x \\text{ with } -x: \\quad y = (-x)^3 - 2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Simplify $(-x)^3$ using the rule $(-x)^n = -x^n$ for odd $n$.",
+        "working": "$$(-x)^3 = -x^3$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the final equation.",
+        "working": "$$y = -x^3 - 2$$"
+      }
+    ],
+    "answer": "$y = -x^3 - 2$"
+  },
+  {
+    "id": "ref-trans-we-2",
+    "title": "Identifying a translation from the equation $y - b = f(x - a)$",
+    "difficulty": 2,
+    "problem": "The function $f(x) = x^2$ is transformed to give $y + 5 = f(x - 3)$. Write the equation of the new graph, state the coordinates of the vertex, and state the domain and range.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Rearrange into the standard form $y = f(x - a) + b$ by isolating $y$.",
+        "working": "$$y = f(x - 3) - 5 = (x - 3)^2 - 5$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Read off the translations: $a = 3$ (right by 3) and $b = -5$ (down by 5).",
+        "working": "$$\\text{The vertex of } y = x^2 \\text{ is } (0, 0). \\text{ It moves to } (0 + 3,\\; 0 - 5) = (3, -5).$$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the domain. A parabola is defined for all real $x$.",
+        "working": "$$\\text{Domain: } x \\in \\mathbb{R}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "State the range. The parabola opens upward with vertex $y$-value $-5$, so $y$ cannot go below $-5$.",
+        "working": "$$\\text{Range: } y \\geq -5$$"
+      }
+    ],
+    "answer": "$y = (x - 3)^2 - 5$; vertex $(3, -5)$; domain $x \\in \\mathbb{R}$; range $y \\geq -5$."
+  },
+  {
+    "id": "ref-trans-we-3",
+    "title": "Applying a sequence of two transformations",
+    "difficulty": 3,
+    "problem": "Starting from $y = \\sqrt{x}$, apply (i) a reflection in the $x$-axis, then (ii) a translation of 4 units to the right. Write the equation of the resulting graph and state its domain and range.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the reflection in the $x$-axis first. Replace $y$ with $-y$, which is equivalent to multiplying the right-hand side by $-1$.",
+        "working": "$$y = \\sqrt{x} \\xrightarrow{\\text{reflect in } x\\text{-axis}} y = -\\sqrt{x}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the translation of 4 units to the right to the result from Step 1. Replace $x$ with $(x - 4)$.",
+        "working": "$$y = -\\sqrt{x} \\xrightarrow{\\text{translate right 4}} y = -\\sqrt{x - 4}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the domain. The expression under the square root must be non-negative.",
+        "working": "$$x - 4 \\geq 0 \\implies x \\geq 4$$"
+      },
+      {
+        "step": 4,
+        "instruction": "State the range. Since $\\sqrt{x - 4} \\geq 0$, multiplying by $-1$ gives $y \\leq 0$.",
+        "working": "$$\\text{Range: } y \\leq 0$$"
+      }
+    ],
+    "answer": "$y = -\\sqrt{x - 4}$; domain $x \\geq 4$; range $y \\leq 0$."
+  }
+]

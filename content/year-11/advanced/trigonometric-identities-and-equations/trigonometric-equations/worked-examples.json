@@ -1,0 +1,99 @@
+[
+  {
+    "id": "te-we-1",
+    "title": "Solving a basic trigonometric equation",
+    "difficulty": 1,
+    "problem": "Solve $\\cos\\theta = \\dfrac{1}{2}$ for $0° \\leq \\theta \\leq 360°$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the reference angle.",
+        "working": "$$\\theta_r = \\cos^{-1}\\left(\\frac{1}{2}\\right) = 60°$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the quadrants where cosine is positive.",
+        "working": "Cosine is positive in the first and fourth quadrants (Q1 and Q4)."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the solution in the first quadrant.",
+        "working": "$$\\theta = 60°$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write the solution in the fourth quadrant.",
+        "working": "$$\\theta = 360° - 60° = 300°$$"
+      }
+    ],
+    "answer": "$\\theta = 60°$ and $\\theta = 300°$"
+  },
+  {
+    "id": "te-we-2",
+    "title": "Solving using a Pythagorean identity substitution",
+    "difficulty": 2,
+    "problem": "Solve $2\\cos^2\\theta + 5\\sin\\theta + 1 = 0$ for $0° \\leq \\theta \\leq 360°$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Replace $\\cos^2\\theta$ using the identity $\\cos^2\\theta = 1 - \\sin^2\\theta$.",
+        "working": "$$2(1 - \\sin^2\\theta) + 5\\sin\\theta + 1 = 0$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Expand and collect terms.",
+        "working": "$$2 - 2\\sin^2\\theta + 5\\sin\\theta + 1 = 0$$\n$$-2\\sin^2\\theta + 5\\sin\\theta + 3 = 0$$\n$$2\\sin^2\\theta - 5\\sin\\theta - 3 = 0$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Factorise the quadratic in $\\sin\\theta$.",
+        "working": "$$(2\\sin\\theta + 1)(\\sin\\theta - 3) = 0$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Solve each factor. Reject any value outside $[-1, 1]$.",
+        "working": "$\\sin\\theta = -\\dfrac{1}{2}$ or $\\sin\\theta = 3$ (impossible, since $-1 \\leq \\sin\\theta \\leq 1$)"
+      },
+      {
+        "step": 5,
+        "instruction": "Find all angles where $\\sin\\theta = -\\dfrac{1}{2}$ in $[0°, 360°]$. Sine is negative in Q3 and Q4.",
+        "working": "Reference angle: $\\sin^{-1}\\left(\\dfrac{1}{2}\\right) = 30°$\n$$\\theta = 180° + 30° = 210° \\quad \\text{and} \\quad \\theta = 360° - 30° = 330°$$"
+      }
+    ],
+    "answer": "$\\theta = 210°$ and $\\theta = 330°$"
+  },
+  {
+    "id": "te-we-3",
+    "title": "Solving a quadratic trigonometric equation",
+    "difficulty": 3,
+    "problem": "Solve $2\\cos^2\\theta - \\cos\\theta - 1 = 0$ for $0 \\leq \\theta \\leq 2\\pi$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recognise the equation as a quadratic in $\\cos\\theta$. Let $u = \\cos\\theta$.",
+        "working": "$$2u^2 - u - 1 = 0$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Factorise.",
+        "working": "$$(2u + 1)(u - 1) = 0$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute back and state the two equations to solve.",
+        "working": "$$\\cos\\theta = -\\frac{1}{2} \\quad \\text{or} \\quad \\cos\\theta = 1$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find all angles where $\\cos\\theta = -\\dfrac{1}{2}$ in $[0, 2\\pi]$. Cosine is negative in Q2 and Q3.",
+        "working": "Reference angle: $\\cos^{-1}\\left(\\dfrac{1}{2}\\right) = \\dfrac{\\pi}{3}$\n$$\\theta = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3} \\quad \\text{and} \\quad \\theta = \\pi + \\frac{\\pi}{3} = \\frac{4\\pi}{3}$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Find all angles where $\\cos\\theta = 1$ in $[0, 2\\pi]$.",
+        "working": "$$\\theta = 0 \\quad \\text{and} \\quad \\theta = 2\\pi$$"
+      }
+    ],
+    "answer": "$\\theta = 0, \\dfrac{2\\pi}{3}, \\dfrac{4\\pi}{3}, 2\\pi$"
+  }
+]

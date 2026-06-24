@@ -1,0 +1,74 @@
+[
+  {
+    "id": "trig-acute-we-1",
+    "title": "Finding an unknown side using the sine ratio",
+    "difficulty": 1,
+    "problem": "In a right-angled triangle, the hypotenuse is $20$ cm and one angle is $40°$. Find the side opposite the $40°$ angle, to 2 decimal places.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the known and unknown sides relative to the given angle.",
+        "working": "Known: hypotenuse $= 20$ cm, angle $= 40°$. Unknown: opposite side $= x$."
+      },
+      {
+        "step": 2,
+        "instruction": "Write the sine ratio connecting the opposite side and the hypotenuse.",
+        "working": "$$\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} \\implies \\sin 40° = \\frac{x}{20}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $x$ by multiplying both sides by $20$.",
+        "working": "$$x = 20\\sin 40° \\approx 20 \\times 0.6428 \\approx 12.86 \\text{ cm}$$"
+      }
+    ],
+    "answer": "$x = 20\\sin 40° \\approx 12.86$ cm"
+  },
+  {
+    "id": "trig-acute-we-2",
+    "title": "Using exact trig values to find a northward distance from a bearing",
+    "difficulty": 2,
+    "problem": "A ship sails on a bearing of $030°$ for $20$ km from port $P$. Find the exact northward distance the ship travels.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Draw a diagram. A bearing of $030°$ means the ship travels $30°$ clockwise from north.",
+        "working": "The angle between the ship's path and the north direction is $30°$."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify which trig ratio gives the northward component. The northward distance is the side adjacent to the $30°$ angle.",
+        "working": "$$\\text{northward distance} = 20\\cos 30°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the exact value $\\cos 30° = \\dfrac{\\sqrt{3}}{2}$ and simplify.",
+        "working": "$$\\text{northward distance} = 20 \\times \\frac{\\sqrt{3}}{2} = 10\\sqrt{3} \\text{ km}$$"
+      }
+    ],
+    "answer": "The northward distance is $10\\sqrt{3}$ km (approximately $17.32$ km)."
+  },
+  {
+    "id": "trig-acute-we-3",
+    "title": "Multi-step navigation using Pythagoras and trigonometry",
+    "difficulty": 3,
+    "problem": "A boat travels $9$ km due east from port $P$ to point $A$, then $12$ km due north to point $B$. Find the distance $PB$ and the bearing of $B$ from $P$, to the nearest degree.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the direct distance $PB$ using Pythagoras' theorem. The eastward leg $PA$ and northward leg $AB$ are the two shorter sides of a right-angled triangle.",
+        "working": "$$PB = \\sqrt{9^2 + 12^2} = \\sqrt{81 + 144} = \\sqrt{225} = 15 \\text{ km}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "To find the bearing of $B$ from $P$, identify the angle $\\alpha$ that $PB$ makes with north. The eastward leg is opposite $\\alpha$ and the northward leg is adjacent.",
+        "working": "$$\\tan\\alpha = \\frac{9}{12} = 0.75 \\implies \\alpha = \\tan^{-1}(0.75) \\approx 36.87° \\approx 37°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "State the bearing. Since $B$ is north-east of $P$, the bearing is $\\alpha$ degrees east of north.",
+        "working": "$$\\text{Bearing of } B \\text{ from } P = 037°\\text{T}$$"
+      }
+    ],
+    "answer": "$PB = 15$ km and the bearing of $B$ from $P$ is $037°$T."
+  }
+]

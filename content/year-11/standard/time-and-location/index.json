@@ -1,0 +1,14 @@
+{
+  "id": "time-and-location",
+  "title": "Time and location",
+  "year": 11,
+  "stage": "6",
+  "course": "standard",
+  "strand": "Measurement",
+  "syllabusOutcome": "MST-11-06",
+  "description": "Use latitude, longitude and time zones including UTC to solve time difference problems.",
+  "subtopics": [
+    "latitude-and-longitude",
+    "time-zones-and-utc"
+  ]
+}

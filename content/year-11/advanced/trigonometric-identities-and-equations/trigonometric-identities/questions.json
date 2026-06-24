@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ti-1-1",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Using exact values, compute $\\cos^2 60° + \\sin^2 60°$.",
+    "answer": 1,
+    "tolerance": 0,
+    "hint": "Recall $\\cos 60° = \\dfrac{1}{2}$ and $\\sin 60° = \\dfrac{\\sqrt{3}}{2}$, then substitute into $\\cos^2 60° + \\sin^2 60°$.",
+    "explanation": "$$\\cos^2 60° + \\sin^2 60° = \\left(\\frac{1}{2}\\right)^2 + \\left(\\frac{\\sqrt{3}}{2}\\right)^2 = \\frac{1}{4} + \\frac{3}{4} = 1$$\nThis confirms the Pythagorean identity $\\cos^2\\theta + \\sin^2\\theta = 1$ for $\\theta = 60°$."
+  },
+  {
+    "id": "ti-1-2",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 1,
+    "type": "fraction",
+    "stem": "If $\\cos\\theta = \\dfrac{4}{5}$ and $\\theta$ is in the first quadrant, find $\\sin\\theta$.",
+    "answer": "3/5",
+    "tolerance": 0,
+    "hint": "Use $\\sin^2\\theta + \\cos^2\\theta = 1$. Substitute $\\cos\\theta = \\dfrac{4}{5}$, solve for $\\sin^2\\theta$, then take the positive square root (since $\\theta$ is in the first quadrant).",
+    "explanation": "$$\\sin^2\\theta + \\cos^2\\theta = 1 \\implies \\sin^2\\theta = 1 - \\left(\\frac{4}{5}\\right)^2 = 1 - \\frac{16}{25} = \\frac{9}{25}$$\nSince $\\theta$ is in the first quadrant, $\\sin\\theta > 0$:\n$$\\sin\\theta = \\sqrt{\\frac{9}{25}} = \\frac{3}{5}$$"
+  },
+  {
+    "id": "ti-1-3",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 1,
+    "type": "fraction",
+    "stem": "If $\\sin\\theta = \\dfrac{12}{13}$ and $\\theta$ is acute, find $\\cos\\theta$.",
+    "answer": "5/13",
+    "tolerance": 0,
+    "hint": "Use $\\sin^2\\theta + \\cos^2\\theta = 1$. Substitute $\\sin\\theta = \\dfrac{12}{13}$, solve for $\\cos^2\\theta$, then take the positive root (since $\\theta$ is acute).",
+    "explanation": "$$\\cos^2\\theta = 1 - \\sin^2\\theta = 1 - \\left(\\frac{12}{13}\\right)^2 = 1 - \\frac{144}{169} = \\frac{25}{169}$$\nSince $\\theta$ is acute, $\\cos\\theta > 0$:\n$$\\cos\\theta = \\frac{5}{13}$$"
+  },
+  {
+    "id": "ti-1-4",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "If $\\cos\\theta = -\\dfrac{\\sqrt{3}}{2}$ and $\\theta$ is in the second quadrant, what is $\\sin\\theta$?",
+    "options": [
+      "$-\\dfrac{1}{2}$",
+      "$-\\dfrac{\\sqrt{3}}{2}$",
+      "$\\dfrac{\\sqrt{3}}{2}$",
+      "$\\dfrac{1}{2}$"
+    ],
+    "answer": "$\\dfrac{1}{2}$",
+    "tolerance": 0,
+    "hint": "Use $\\sin^2\\theta = 1 - \\cos^2\\theta$ and recall that $\\sin\\theta > 0$ in the second quadrant.",
+    "explanation": "$$\\sin^2\\theta = 1 - \\cos^2\\theta = 1 - \\left(-\\frac{\\sqrt{3}}{2}\\right)^2 = 1 - \\frac{3}{4} = \\frac{1}{4}$$\nIn the second quadrant, $\\sin\\theta > 0$, so:\n$$\\sin\\theta = \\frac{1}{2}$$"
+  },
+  {
+    "id": "ti-2-1",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "If $\\tan\\theta = 3$, use the identity $\\sec^2\\theta = 1 + \\tan^2\\theta$ to find $\\sec^2\\theta$.",
+    "answer": 10,
+    "tolerance": 0,
+    "hint": "Substitute $\\tan\\theta = 3$ directly into $\\sec^2\\theta = 1 + \\tan^2\\theta$.",
+    "explanation": "$$\\sec^2\\theta = 1 + \\tan^2\\theta = 1 + 3^2 = 1 + 9 = 10$$"
+  },
+  {
+    "id": "ti-2-2",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 2,
+    "type": "fraction",
+    "stem": "If $\\cot\\theta = \\dfrac{2}{3}$, use the identity $\\csc^2\\theta = 1 + \\cot^2\\theta$ to find $\\csc^2\\theta$.",
+    "answer": "13/9",
+    "tolerance": 0,
+    "hint": "Substitute $\\cot\\theta = \\dfrac{2}{3}$ into $\\csc^2\\theta = 1 + \\cot^2\\theta$ and simplify.",
+    "explanation": "$$\\csc^2\\theta = 1 + \\cot^2\\theta = 1 + \\left(\\frac{2}{3}\\right)^2 = 1 + \\frac{4}{9} = \\frac{9}{9} + \\frac{4}{9} = \\frac{13}{9}$$"
+  },
+  {
+    "id": "ti-2-3",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "If $\\sec\\theta = \\dfrac{5}{3}$, use the identity $\\tan^2\\theta = \\sec^2\\theta - 1$ to find $\\tan^2\\theta$.",
+    "options": [
+      "$\\dfrac{4}{3}$",
+      "$\\dfrac{4}{9}$",
+      "$\\dfrac{16}{9}$",
+      "$\\dfrac{25}{9}$"
+    ],
+    "answer": "$\\dfrac{16}{9}$",
+    "tolerance": 0,
+    "hint": "Square $\\sec\\theta = \\dfrac{5}{3}$ first, then apply $\\tan^2\\theta = \\sec^2\\theta - 1$.",
+    "explanation": "$$\\sec^2\\theta = \\left(\\frac{5}{3}\\right)^2 = \\frac{25}{9}$$\n$$\\tan^2\\theta = \\sec^2\\theta - 1 = \\frac{25}{9} - 1 = \\frac{25}{9} - \\frac{9}{9} = \\frac{16}{9}$$"
+  },
+  {
+    "id": "ti-2-4",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Simplify $\\sin(90° - \\theta) \\cdot \\sec\\theta$ for all valid values of $\\theta$.",
+    "answer": 1,
+    "tolerance": 0,
+    "hint": "Apply the complementary angle identity $\\sin(90° - \\theta) = \\cos\\theta$, then simplify.",
+    "explanation": "Using the complementary angle identity:\n$$\\sin(90° - \\theta) = \\cos\\theta$$\nSo:\n$$\\sin(90° - \\theta) \\cdot \\sec\\theta = \\cos\\theta \\cdot \\frac{1}{\\cos\\theta} = 1$$\nThis result holds for all $\\theta$ where $\\cos\\theta \\ne 0$."
+  },
+  {
+    "id": "ti-3-1",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Simplify $\\dfrac{\\sin^2\\theta}{1 - \\cos\\theta}$ by expressing $\\sin^2\\theta$ in terms of $\\cos\\theta$.",
+    "options": [
+      "$1 - \\cos\\theta$",
+      "$1 + \\cos\\theta$",
+      "$\\cos\\theta$",
+      "$\\tan\\theta$"
+    ],
+    "answer": "$1 + \\cos\\theta$",
+    "tolerance": 0,
+    "hint": "Step 1: Replace $\\sin^2\\theta$ using the Pythagorean identity $\\sin^2\\theta = 1 - \\cos^2\\theta$. Step 2: Factorise the numerator as a difference of two squares.",
+    "explanation": "**Step 1:** Apply the Pythagorean identity $\\sin^2\\theta = 1 - \\cos^2\\theta$.\n$$\\frac{\\sin^2\\theta}{1 - \\cos\\theta} = \\frac{1 - \\cos^2\\theta}{1 - \\cos\\theta}$$\n**Step 2:** Factorise the numerator.\n$$= \\frac{(1 - \\cos\\theta)(1 + \\cos\\theta)}{1 - \\cos\\theta}$$\nCancel the common factor $(1 - \\cos\\theta)$ (valid when $\\cos\\theta \\ne 1$):\n$$= 1 + \\cos\\theta$$"
+  },
+  {
+    "id": "ti-3-2",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "What is the value of $(1 - \\sin^2\\theta)(1 + \\tan^2\\theta)$ for all valid $\\theta$?",
+    "answer": 1,
+    "tolerance": 0,
+    "hint": "Step 1: Use $1 - \\sin^2\\theta = \\cos^2\\theta$ (Pythagorean identity). Step 2: Use $1 + \\tan^2\\theta = \\sec^2\\theta$ (another Pythagorean identity), then combine.",
+    "explanation": "**Step 1:** Apply the Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$.\n$$(1 - \\sin^2\\theta)(1 + \\tan^2\\theta) = \\cos^2\\theta \\cdot (1 + \\tan^2\\theta)$$\n**Step 2:** Apply $1 + \\tan^2\\theta = \\sec^2\\theta = \\dfrac{1}{\\cos^2\\theta}$.\n$$= \\cos^2\\theta \\cdot \\frac{1}{\\cos^2\\theta} = 1$$\nThis holds for all $\\theta$ where $\\cos\\theta \\ne 0$."
+  },
+  {
+    "id": "ti-3-3",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Simplify $\\dfrac{\\cos\\theta}{1 - \\sin\\theta} + \\dfrac{\\cos\\theta}{1 + \\sin\\theta}$.",
+    "options": [
+      "$\\sec\\theta$",
+      "$2\\tan\\theta$",
+      "$2\\csc\\theta$",
+      "$2\\sec\\theta$"
+    ],
+    "answer": "$2\\sec\\theta$",
+    "tolerance": 0,
+    "hint": "Step 1: Add the fractions over the common denominator $(1 - \\sin\\theta)(1 + \\sin\\theta)$. Step 2: Recognise that $(1 - \\sin\\theta)(1 + \\sin\\theta) = 1 - \\sin^2\\theta = \\cos^2\\theta$.",
+    "explanation": "**Step 1:** Add the fractions over the common denominator $(1 - \\sin\\theta)(1 + \\sin\\theta)$.\n$$\\frac{\\cos\\theta(1 + \\sin\\theta) + \\cos\\theta(1 - \\sin\\theta)}{(1 - \\sin\\theta)(1 + \\sin\\theta)} = \\frac{2\\cos\\theta}{1 - \\sin^2\\theta}$$\n**Step 2:** Apply the Pythagorean identity $1 - \\sin^2\\theta = \\cos^2\\theta$.\n$$= \\frac{2\\cos\\theta}{\\cos^2\\theta} = \\frac{2}{\\cos\\theta} = 2\\sec\\theta$$"
+  },
+  {
+    "id": "ti-3-4",
+    "subtopic": "trigonometric-identities",
+    "topic": "trigonometric-identities-and-equations",
+    "year": 11,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "What is the value of $\\dfrac{\\sin\\theta}{\\csc\\theta} + \\dfrac{\\cos\\theta}{\\sec\\theta}$ for all valid $\\theta$?",
+    "answer": 1,
+    "tolerance": 0,
+    "hint": "Step 1: Apply $\\csc\\theta = \\dfrac{1}{\\sin\\theta}$ so that $\\dfrac{\\sin\\theta}{\\csc\\theta} = \\sin^2\\theta$. Step 2: Apply $\\sec\\theta = \\dfrac{1}{\\cos\\theta}$ so that $\\dfrac{\\cos\\theta}{\\sec\\theta} = \\cos^2\\theta$. Then use the Pythagorean identity.",
+    "explanation": "**Step 1:** Simplify each term using reciprocal identities.\n$$\\frac{\\sin\\theta}{\\csc\\theta} = \\sin\\theta \\cdot \\sin\\theta = \\sin^2\\theta$$\n$$\\frac{\\cos\\theta}{\\sec\\theta} = \\cos\\theta \\cdot \\cos\\theta = \\cos^2\\theta$$\n**Step 2:** Add and apply the Pythagorean identity.\n$$\\sin^2\\theta + \\cos^2\\theta = 1$$"
+  }
+]

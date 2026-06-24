@@ -1,0 +1,99 @@
+[
+  {
+    "id": "diff-rules-worked-1",
+    "title": "Applying the product rule",
+    "difficulty": 1,
+    "problem": "Let $f(x) = x^3(2x + 1)$. Use the product rule to find $f'(x)$, then evaluate $f'(-1)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify $u$, $v$, $u'$ and $v'$.",
+        "working": "Let $u = x^3$ and $v = 2x + 1$.\n\nDifferentiating: $u' = 3x^2$ and $v' = 2$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the product rule $f'(x) = u'v + uv'$.",
+        "working": "$f'(x) = 3x^2(2x + 1) + x^3(2) = 6x^3 + 3x^2 + 2x^3$"
+      },
+      {
+        "step": 3,
+        "instruction": "Collect like terms.",
+        "working": "$f'(x) = 8x^3 + 3x^2$"
+      },
+      {
+        "step": 4,
+        "instruction": "Substitute $x = -1$ to find the gradient.",
+        "working": "$f'(-1) = 8(-1)^3 + 3(-1)^2 = -8 + 3 = -5$"
+      }
+    ],
+    "answer": "The gradient at $x = -1$ is $-5$."
+  },
+  {
+    "id": "diff-rules-worked-2",
+    "title": "Applying the chain rule to a composite function",
+    "difficulty": 2,
+    "problem": "Let $f(x) = (x^2 - 3)^4$. Use the chain rule to find $f'(x)$, then evaluate $f'(2)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the outer function and inner function.",
+        "working": "Let $u = x^2 - 3$ (inner), so $y = u^4$ (outer)."
+      },
+      {
+        "step": 2,
+        "instruction": "Differentiate the outer and inner functions separately.",
+        "working": "$\\dfrac{dy}{du} = 4u^3, \\qquad \\dfrac{du}{dx} = 2x$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the chain rule $\\dfrac{dy}{dx} = \\dfrac{dy}{du} \\cdot \\dfrac{du}{dx}$.",
+        "working": "$f'(x) = 4(x^2 - 3)^3 \\times 2x = 8x(x^2 - 3)^3$"
+      },
+      {
+        "step": 4,
+        "instruction": "Substitute $x = 2$.",
+        "working": "$f'(2) = 8(2)(2^2 - 3)^3 = 16(4 - 3)^3 = 16 \\times 1^3 = 16$"
+      }
+    ],
+    "answer": "$f'(x) = 8x(x^2 - 3)^3$ and $f'(2) = 16$."
+  },
+  {
+    "id": "diff-rules-worked-3",
+    "title": "Finding equations of the tangent and normal",
+    "difficulty": 3,
+    "problem": "Find the equations of the tangent and normal to $y = x^2 + 2x$ at $x = 1$. Verify that the product of their gradients is $-1$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Differentiate to find the gradient of the tangent.",
+        "working": "$y' = 2x + 2$\n\nAt $x = 1$: $m_t = 2(1) + 2 = 4$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the point on the curve.",
+        "working": "$y = (1)^2 + 2(1) = 3 \\quad \\Rightarrow \\quad \\text{point } (1,\\, 3)$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write the tangent equation using point-gradient form.",
+        "working": "$y - 3 = 4(x - 1) \\implies y = 4x - 1$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the gradient of the normal as the negative reciprocal of $m_t$.",
+        "working": "$m_n = -\\dfrac{1}{m_t} = -\\dfrac{1}{4}$"
+      },
+      {
+        "step": 5,
+        "instruction": "Write the normal equation.",
+        "working": "$y - 3 = -\\dfrac{1}{4}(x - 1) \\implies y = -\\dfrac{x}{4} + \\dfrac{1}{4} + 3 = -\\dfrac{x}{4} + \\dfrac{13}{4}$"
+      },
+      {
+        "step": 6,
+        "instruction": "Verify the product of the gradients equals $-1$.",
+        "working": "$m_t \\times m_n = 4 \\times \\left(-\\dfrac{1}{4}\\right) = -1$ ✓"
+      }
+    ],
+    "answer": "Tangent: $y = 4x - 1$; Normal: $y = -\\dfrac{x}{4} + \\dfrac{13}{4}$. Product of gradients $= -1$ ✓"
+  }
+]

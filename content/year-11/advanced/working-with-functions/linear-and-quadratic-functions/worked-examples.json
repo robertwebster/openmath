@@ -1,0 +1,99 @@
+[
+  {
+    "id": "lin-quad-we-1",
+    "title": "Identifying parallel and perpendicular lines",
+    "difficulty": 1,
+    "problem": "The equations of two lines are $y = 3x - 2$ and $2y = 6x + 5$. Determine whether the lines are parallel, perpendicular or neither.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Read the gradient of the first line directly from its gradient-intercept form.",
+        "working": "$$y = 3x - 2 \\implies m_1 = 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rearrange the second equation into gradient-intercept form $y = mx + c$ by dividing both sides by $2$.",
+        "working": "$$2y = 6x + 5 \\implies y = 3x + \\frac{5}{2} \\implies m_2 = 3$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the gradients. Equal gradients with different y-intercepts means the lines are parallel. Check the y-intercepts to confirm they are not the same line.",
+        "working": "$$m_1 = m_2 = 3, \\quad c_1 = -2 \\neq c_2 = \\frac{5}{2}$$"
+      }
+    ],
+    "answer": "The lines are parallel: they have equal gradients ($m = 3$) but different y-intercepts."
+  },
+  {
+    "id": "lin-quad-we-2",
+    "title": "Converting a quadratic to vertex form by completing the square",
+    "difficulty": 2,
+    "problem": "Convert $y = x^2 - 6x + 2$ to vertex form by completing the square. State the vertex and axis of symmetry.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Group the $x^2$ and $x$ terms together, leaving the constant separate.",
+        "working": "$$y = (x^2 - 6x) + 2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the value to complete the square: halve the coefficient of $x$ and square it.",
+        "working": "$$\\left(\\frac{-6}{2}\\right)^2 = (-3)^2 = 9$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Add and subtract $9$ inside the bracket so the expression is unchanged.",
+        "working": "$$y = (x^2 - 6x + 9) - 9 + 2$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Write the trinomial as a perfect square and simplify the constants.",
+        "working": "$$y = (x - 3)^2 - 7$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Read off the vertex $(h, k)$ from the form $y = (x - h)^2 + k$, and state the axis of symmetry.",
+        "working": "$$\\text{Vertex: } (3,\\, -7) \\qquad \\text{Axis of symmetry: } x = 3$$"
+      }
+    ],
+    "answer": "Vertex form: $y = (x - 3)^2 - 7$. Vertex: $(3, -7)$. Axis of symmetry: $x = 3$."
+  },
+  {
+    "id": "lin-quad-we-3",
+    "title": "Solving a linear-quadratic system by substitution",
+    "difficulty": 3,
+    "problem": "Find the coordinates of the intersection points of $y = x + 4$ and $y = x^2 - 2$ by substitution. Interpret the result geometrically.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Since both expressions equal $y$, set them equal to each other.",
+        "working": "$$x + 4 = x^2 - 2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Rearrange into standard quadratic form by moving all terms to one side.",
+        "working": "$$0 = x^2 - x - 6$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Factorise the quadratic by finding two integers that multiply to $-6$ and add to $-1$.",
+        "working": "$$0 = (x - 3)(x + 2)$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply the null factor law to find the x-coordinates.",
+        "working": "$$x - 3 = 0 \\implies x = 3 \\qquad \\text{or} \\qquad x + 2 = 0 \\implies x = -2$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Substitute each x-value into the simpler equation $y = x + 4$ to find the corresponding y-values.",
+        "working": "$$x = 3: \\quad y = 3 + 4 = 7 \\qquad x = -2: \\quad y = -2 + 4 = 2$$"
+      },
+      {
+        "step": 6,
+        "instruction": "State the intersection points and interpret geometrically. Two solutions mean the line crosses the parabola at two distinct points.",
+        "working": "$$\\text{Intersection points: } (-2,\\, 2) \\text{ and } (3,\\, 7)$$"
+      }
+    ],
+    "answer": "The line $y = x + 4$ and the parabola $y = x^2 - 2$ intersect at $(-2, 2)$ and $(3, 7)$. Two intersection points occur because the line crosses the parabola at two distinct locations."
+  }
+]
