@@ -1,0 +1,73 @@
+# Projectile motion — Worked examples
+
+A **projectile** is any object launched into the air with an initial velocity and then subject only to gravity (no air resistance). The key insight is to treat horizontal and vertical motion **independently**.
+
+Taking up as positive and the launch point as the origin, with initial speed $u$ and launch angle $\alpha$:
+
+| Quantity | Formula |
+|---|---|
+| Horizontal position | $x = (u\cos\alpha)\,t$ |
+| Vertical position | $y = (u\sin\alpha)\,t - \tfrac{1}{2}gt^2$ |
+| Horizontal velocity | $v_x = u\cos\alpha$ (constant) |
+| Vertical velocity | $v_y = u\sin\alpha - gt$ |
+| Time to max height | $t_{\max} = \dfrac{u\sin\alpha}{g}$ |
+| Maximum height | $H = \dfrac{u^2\sin^2\!\alpha}{2g}$ |
+| Time of flight | $T = \dfrac{2u\sin\alpha}{g}$ |
+| Range | $R = \dfrac{u^2\sin 2\alpha}{g}$ |
+
+Use $g = 10$ m/s² unless told otherwise.
+
+---
+
+## Example 1 — Time of flight, range, and maximum height
+
+**A ball is projected at 20 m/s at 30° above the horizontal. Take $g = 10$ m/s². Find:**
+**(a) the time of flight, (b) the range, (c) the maximum height.**
+
+**(a) Time of flight:**
+
+$$T = \frac{2u\sin\alpha}{g} = \frac{2 \times 20 \times \sin 30°}{10} = \frac{2 \times 20 \times 0.5}{10} = \frac{20}{10} = 2 \text{ s}$$
+
+**(b) Range:**
+
+$$R = \frac{u^2\sin 2\alpha}{g} = \frac{400\sin 60°}{10} = \frac{400 \times \frac{\sqrt{3}}{2}}{10} = 20\sqrt{3} \approx 34.64 \text{ m}$$
+
+**(c) Maximum height:**
+
+$$H = \frac{u^2\sin^2\!\alpha}{2g} = \frac{400 \times (0.5)^2}{20} = \frac{400 \times 0.25}{20} = \frac{100}{20} = 5 \text{ m}$$
+
+---
+
+## Example 2 — Velocity at a given time
+
+**A ball is projected at 25 m/s with $\sin\alpha = \tfrac{3}{5}$ and $\cos\alpha = \tfrac{4}{5}$. Take $g = 10$ m/s². Find the velocity vector and speed at $t = 2$ s.**
+
+**Horizontal velocity (constant):**
+
+$$v_x = u\cos\alpha = 25 \times \frac{4}{5} = 20 \text{ m/s}$$
+
+**Vertical velocity at $t = 2$ s:**
+
+$$v_y = u\sin\alpha - gt = 25 \times \frac{3}{5} - 10 \times 2 = 15 - 20 = -5 \text{ m/s}$$
+
+The negative value means the ball is **moving downward** at $t = 2$ s.
+
+**Speed:**
+
+$$\text{speed} = \sqrt{v_x^2 + v_y^2} = \sqrt{20^2 + (-5)^2} = \sqrt{400 + 25} = \sqrt{425} = 5\sqrt{17} \approx 20.62 \text{ m/s}$$
+
+---
+
+## Example 3 — Working backwards from range
+
+**A ball is kicked at 45° and lands 90 m away on level ground. Take $g = 10$ m/s². Find the initial speed.**
+
+Rearranging the range formula:
+
+$$R = \frac{u^2\sin 2\alpha}{g} \implies u^2 = \frac{Rg}{\sin 2\alpha}$$
+
+$$u^2 = \frac{90 \times 10}{\sin 90°} = \frac{900}{1} = 900$$
+
+$$u = 30 \text{ m/s}$$
+
+> **Tip:** The maximum range is achieved at 45° because $\sin 2\alpha$ is maximised when $2\alpha = 90°$, giving $R_{\max} = \dfrac{u^2}{g}$.

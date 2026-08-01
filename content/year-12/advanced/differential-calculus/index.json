@@ -1,0 +1,15 @@
+{
+  "id": "differential-calculus",
+  "title": "Differential calculus",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Calculus",
+  "syllabusOutcome": "MAV-12-04",
+  "description": "Extend differentiation to exponential, logarithmic and trigonometric functions; apply the product, quotient and chain rules; find second derivatives.",
+  "subtopics": [
+    "differentiating-exponential-and-logarithmic-functions",
+    "differentiating-trigonometric-functions",
+    "combining-the-rules"
+  ]
+}

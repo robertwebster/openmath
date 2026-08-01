@@ -1,0 +1,122 @@
+[
+  {
+    "id": "y12-ext1-pbmi-mi-q01",
+    "subtopic": "mathematical-induction",
+    "topic": "proof-by-mathematical-induction",
+    "year": 12,
+    "difficulty": 1,
+    "type": "proof",
+    "stem": "Prove by mathematical induction that for all integers $n \\geq 1$:\n$$\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}$$",
+    "answer": null,
+    "hint": "Base case: check $n = 1$. Inductive step: assume true for $n = m$, then add the $(m+1)$-th term to both sides.",
+    "explanation": "**Proposition:** $P(n)$: $\\displaystyle\\sum_{k=1}^{n} k = \\dfrac{n(n+1)}{2}$\n\n**Base case** ($n = 1$):\nLHS $= 1$. RHS $= \\dfrac{1 \\times 2}{2} = 1$. ✓\n\n**Inductive hypothesis:** Assume $P(m)$ is true for some integer $m \\geq 1$:\n$$1 + 2 + \\cdots + m = \\frac{m(m+1)}{2}$$\n\n**Inductive step:** We must show $P(m+1)$ is true, i.e., $\\displaystyle\\sum_{k=1}^{m+1} k = \\dfrac{(m+1)(m+2)}{2}$.\n\nStarting from the left-hand side of $P(m+1)$:\n$$\\sum_{k=1}^{m+1} k = \\underbrace{\\sum_{k=1}^{m} k}_{= \\frac{m(m+1)}{2} \\text{ by IH}} + (m+1)$$\n$$= \\frac{m(m+1)}{2} + (m+1) = (m+1)\\left(\\frac{m}{2} + 1\\right) = (m+1)\\cdot\\frac{m+2}{2} = \\frac{(m+1)(m+2)}{2}$$\n\nThis is exactly the RHS of $P(m+1)$. ✓\n\n**Conclusion:** By the principle of mathematical induction, $P(n)$ is true for all integers $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "y12-ext1-pbmi-mi-q02",
+    "subtopic": "mathematical-induction",
+    "topic": "proof-by-mathematical-induction",
+    "year": 12,
+    "difficulty": 1,
+    "type": "proof",
+    "stem": "Prove by mathematical induction that for all integers $n \\geq 1$, the sum of the first $n$ odd numbers equals $n^2$:\n$$1 + 3 + 5 + \\cdots + (2n-1) = n^2$$",
+    "answer": null,
+    "hint": "The $(m+1)$-th odd number is $2(m+1) - 1 = 2m+1$. Add this to both sides of the inductive hypothesis.",
+    "explanation": "**Proposition:** $P(n)$: $\\displaystyle\\sum_{k=1}^{n}(2k-1) = n^2$\n\n**Base case** ($n = 1$):\nLHS $= 1$. RHS $= 1^2 = 1$. ✓\n\n**Inductive hypothesis:** Assume $P(m)$ is true:\n$$1 + 3 + \\cdots + (2m-1) = m^2$$\n\n**Inductive step:** Show $P(m+1)$ is true.\n\nThe next odd number in the sequence is $2(m+1) - 1 = 2m + 1$. Adding it:\n$$1 + 3 + \\cdots + (2m-1) + (2m+1) = \\underbrace{m^2}_{\\text{by IH}} + (2m+1) = m^2 + 2m + 1 = (m+1)^2$$\n\nThis equals $(m+1)^2$, the RHS of $P(m+1)$. ✓\n\n**Conclusion:** By the principle of mathematical induction, $P(n)$ is true for all integers $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "y12-ext1-pbmi-mi-q03",
+    "subtopic": "mathematical-induction",
+    "topic": "proof-by-mathematical-induction",
+    "year": 12,
+    "difficulty": 1,
+    "type": "proof",
+    "stem": "Prove by mathematical induction that $6^n - 1$ is divisible by 5 for all integers $n \\geq 1$.",
+    "answer": null,
+    "hint": "Write $6^{m+1} - 1 = 6 \\cdot 6^m - 1$. Add and subtract 6 to use the inductive hypothesis.",
+    "explanation": "**Proposition:** $P(n)$: $5 \\mid (6^n - 1)$, i.e., $6^n - 1 = 5q$ for some integer $q$.\n\n**Base case** ($n = 1$):\n$6^1 - 1 = 5 = 5 \\times 1$. Divisible by 5. ✓\n\n**Inductive hypothesis:** Assume $P(m)$ is true: $6^m - 1 = 5q$ for some integer $q$, i.e., $6^m = 5q + 1$.\n\n**Inductive step:** Show $P(m+1)$ is true, i.e., $5 \\mid (6^{m+1} - 1)$.\n\n$$6^{m+1} - 1 = 6 \\cdot 6^m - 1 = 6(5q + 1) - 1 = 30q + 6 - 1 = 30q + 5 = 5(6q + 1)$$\n\nSince $6q + 1$ is an integer, $6^{m+1} - 1$ is divisible by 5. ✓\n\n**Conclusion:** By the principle of mathematical induction, $5 \\mid (6^n - 1)$ for all integers $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "y12-ext1-pbmi-mi-q04",
+    "subtopic": "mathematical-induction",
+    "topic": "proof-by-mathematical-induction",
+    "year": 12,
+    "difficulty": 2,
+    "type": "proof",
+    "stem": "Prove by mathematical induction that $4^n - 1$ is divisible by 3 for all integers $n \\geq 1$.",
+    "answer": null,
+    "hint": "Write $4^{m+1} - 1 = 4 \\cdot 4^m - 1$. Express $4^m$ in terms of the inductive hypothesis and simplify.",
+    "explanation": "**Proposition:** $P(n)$: $3 \\mid (4^n - 1)$.\n\n**Base case** ($n = 1$):\n$4^1 - 1 = 3$. Divisible by 3. ✓\n\n**Inductive hypothesis:** Assume $P(m)$ is true: $4^m - 1 = 3q$ for some integer $q$, so $4^m = 3q + 1$.\n\n**Inductive step:** Show $3 \\mid (4^{m+1} - 1)$.\n\n$$4^{m+1} - 1 = 4 \\cdot 4^m - 1 = 4(3q + 1) - 1 = 12q + 4 - 1 = 12q + 3 = 3(4q + 1)$$\n\nSince $4q + 1$ is an integer, $4^{m+1} - 1$ is divisible by 3. ✓\n\n**Conclusion:** By the principle of mathematical induction, $3 \\mid (4^n - 1)$ for all integers $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "y12-ext1-pbmi-mi-q05",
+    "subtopic": "mathematical-induction",
+    "topic": "proof-by-mathematical-induction",
+    "year": 12,
+    "difficulty": 2,
+    "type": "proof",
+    "stem": "Prove by mathematical induction that for all integers $n \\geq 1$:\n$$\\sum_{k=1}^{n} \\frac{1}{k(k+1)} = \\frac{n}{n+1}$$",
+    "answer": null,
+    "hint": "After applying the inductive hypothesis, add the $(m+1)$-th term $\\dfrac{1}{(m+1)(m+2)}$ and simplify by finding a common denominator.",
+    "explanation": "**Proposition:** $P(n)$: $\\displaystyle\\sum_{k=1}^{n} \\frac{1}{k(k+1)} = \\frac{n}{n+1}$\n\n**Base case** ($n = 1$):\nLHS $= \\dfrac{1}{1 \\times 2} = \\dfrac{1}{2}$. RHS $= \\dfrac{1}{2}$. ✓\n\n**Inductive hypothesis:** Assume $P(m)$ is true:\n$$\\sum_{k=1}^{m} \\frac{1}{k(k+1)} = \\frac{m}{m+1}$$\n\n**Inductive step:** Show $P(m+1)$ is true.\n\n$$\\sum_{k=1}^{m+1} \\frac{1}{k(k+1)} = \\underbrace{\\sum_{k=1}^{m} \\frac{1}{k(k+1)}}_{= \\frac{m}{m+1}} + \\frac{1}{(m+1)(m+2)}$$\n\n$$= \\frac{m}{m+1} + \\frac{1}{(m+1)(m+2)} = \\frac{m(m+2)}{(m+1)(m+2)} + \\frac{1}{(m+1)(m+2)}$$\n\n$$= \\frac{m(m+2) + 1}{(m+1)(m+2)} = \\frac{m^2 + 2m + 1}{(m+1)(m+2)} = \\frac{(m+1)^2}{(m+1)(m+2)} = \\frac{m+1}{m+2}$$\n\nThis equals $\\dfrac{(m+1)}{(m+1)+1}$, which is the RHS of $P(m+1)$. ✓\n\n**Conclusion:** By the principle of mathematical induction, $P(n)$ is true for all integers $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "y12-ext1-pbmi-mi-q06",
+    "subtopic": "mathematical-induction",
+    "topic": "proof-by-mathematical-induction",
+    "year": 12,
+    "difficulty": 2,
+    "type": "proof",
+    "stem": "Prove by mathematical induction that $n^3 + 2n$ is divisible by 3 for all integers $n \\geq 1$.",
+    "answer": null,
+    "hint": "Express $(m+1)^3 + 2(m+1)$ by expanding and grouping to extract $(m^3 + 2m)$ plus a multiple of 3.",
+    "explanation": "**Proposition:** $P(n)$: $3 \\mid (n^3 + 2n)$.\n\n**Base case** ($n = 1$):\n$1^3 + 2(1) = 3$. Divisible by 3. ✓\n\n**Inductive hypothesis:** Assume $P(m)$ is true: $m^3 + 2m = 3q$ for some integer $q$.\n\n**Inductive step:** Show $3 \\mid ((m+1)^3 + 2(m+1))$.\n\nExpand:\n$$(m+1)^3 + 2(m+1) = m^3 + 3m^2 + 3m + 1 + 2m + 2$$\n$$= (m^3 + 2m) + 3m^2 + 3m + 3$$\n$$= (m^3 + 2m) + 3(m^2 + m + 1)$$\n\nBy the inductive hypothesis, $m^3 + 2m = 3q$, so:\n$$(m+1)^3 + 2(m+1) = 3q + 3(m^2 + m + 1) = 3(q + m^2 + m + 1)$$\n\nThis is divisible by 3. ✓\n\n**Conclusion:** By the principle of mathematical induction, $3 \\mid (n^3 + 2n)$ for all integers $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "y12-ext1-pbmi-mi-q07",
+    "subtopic": "mathematical-induction",
+    "topic": "proof-by-mathematical-induction",
+    "year": 12,
+    "difficulty": 2,
+    "type": "proof",
+    "stem": "Prove by mathematical induction that for all integers $n \\geq 1$:\n$$\\sum_{k=1}^{n} k^2 = \\frac{n(n+1)(2n+1)}{6}$$",
+    "answer": null,
+    "hint": "After applying the inductive hypothesis, add $(m+1)^2$ and factor out $(m+1)$ to simplify.",
+    "explanation": "**Proposition:** $P(n)$: $\\displaystyle\\sum_{k=1}^{n} k^2 = \\dfrac{n(n+1)(2n+1)}{6}$\n\n**Base case** ($n = 1$):\nLHS $= 1$. RHS $= \\dfrac{1 \\times 2 \\times 3}{6} = 1$. ✓\n\n**Inductive hypothesis:** Assume $P(m)$ is true:\n$$1^2 + 2^2 + \\cdots + m^2 = \\frac{m(m+1)(2m+1)}{6}$$\n\n**Inductive step:** Show $P(m+1)$ is true.\n\n$$\\sum_{k=1}^{m+1} k^2 = \\frac{m(m+1)(2m+1)}{6} + (m+1)^2$$\n\n$$= \\frac{m(m+1)(2m+1)}{6} + \\frac{6(m+1)^2}{6}$$\n\n$$= \\frac{(m+1)\\bigl[m(2m+1) + 6(m+1)\\bigr]}{6}$$\n\n$$= \\frac{(m+1)(2m^2 + m + 6m + 6)}{6} = \\frac{(m+1)(2m^2 + 7m + 6)}{6}$$\n\nFactoring the quadratic: $2m^2 + 7m + 6 = (m+2)(2m+3)$.\n\n$$= \\frac{(m+1)(m+2)(2m+3)}{6}$$\n\nThis equals $\\dfrac{(m+1)\\bigl((m+1)+1\\bigr)\\bigl(2(m+1)+1\\bigr)}{6}$, the RHS of $P(m+1)$. ✓\n\n**Conclusion:** By the principle of mathematical induction, $P(n)$ is true for all integers $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "y12-ext1-pbmi-mi-q08",
+    "subtopic": "mathematical-induction",
+    "topic": "proof-by-mathematical-induction",
+    "year": 12,
+    "difficulty": 3,
+    "type": "proof",
+    "stem": "Prove by mathematical induction that $2^n > n$ for all integers $n \\geq 1$.",
+    "answer": null,
+    "hint": "In the inductive step, you know $2^m > m$. Multiply both sides by 2, then show $2m \\geq m + 1$ for $m \\geq 1$.",
+    "explanation": "**Proposition:** $P(n)$: $2^n > n$.\n\n**Base case** ($n = 1$):\n$2^1 = 2 > 1$. ✓\n\n**Inductive hypothesis:** Assume $P(m)$ is true for some $m \\geq 1$: $2^m > m$.\n\n**Inductive step:** Show $P(m+1)$ is true, i.e., $2^{m+1} > m + 1$.\n\nFrom the inductive hypothesis:\n$$2^m > m$$\n\nMultiply both sides by 2 (both sides are positive):\n$$2^{m+1} = 2 \\times 2^m > 2m$$\n\nNow observe that for $m \\geq 1$:\n$$2m = m + m \\geq m + 1$$\n\n(since $m \\geq 1$).\n\nTherefore:\n$$2^{m+1} > 2m \\geq m + 1$$\n\nSo $2^{m+1} > m + 1$. ✓\n\n**Conclusion:** By the principle of mathematical induction, $2^n > n$ for all integers $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "y12-ext1-pbmi-mi-q09",
+    "subtopic": "mathematical-induction",
+    "topic": "proof-by-mathematical-induction",
+    "year": 12,
+    "difficulty": 3,
+    "type": "proof",
+    "stem": "Prove by mathematical induction that $n(n+1)(n+2)$ is divisible by 6 for all integers $n \\geq 1$.",
+    "answer": null,
+    "hint": "In the inductive step, write $(m+1)(m+2)(m+3)$ and factor out to expose $m(m+1)(m+2)$. Show that the remaining term is also divisible by 6.",
+    "explanation": "**Proposition:** $P(n)$: $6 \\mid n(n+1)(n+2)$.\n\n**Base case** ($n = 1$):\n$1 \\times 2 \\times 3 = 6$. Divisible by 6. ✓\n\n**Inductive hypothesis:** Assume $P(m)$ is true: $m(m+1)(m+2) = 6q$ for some integer $q$.\n\n**Inductive step:** Show $6 \\mid (m+1)(m+2)(m+3)$.\n\n$$(m+1)(m+2)(m+3) = m(m+1)(m+2) + 3(m+1)(m+2)$$\n\n(This uses the identity $A \\cdot B \\cdot C = (A-1) \\cdot B \\cdot C + B \\cdot C$, i.e., $(m+3) = m + 3$.)\n\nBy the inductive hypothesis, $m(m+1)(m+2) = 6q$, so:\n$$(m+1)(m+2)(m+3) = 6q + 3(m+1)(m+2)$$\n\nNow $(m+1)$ and $(m+2)$ are consecutive integers, so one of them must be even. Therefore $(m+1)(m+2)$ is divisible by 2, and $3(m+1)(m+2)$ is divisible by 6.\n\nLet $3(m+1)(m+2) = 6r$ for some integer $r$. Then:\n$$(m+1)(m+2)(m+3) = 6q + 6r = 6(q + r)$$\n\nDivisible by 6. ✓\n\n**Conclusion:** By the principle of mathematical induction, $6 \\mid n(n+1)(n+2)$ for all integers $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "y12-ext1-pbmi-mi-q10",
+    "subtopic": "mathematical-induction",
+    "topic": "proof-by-mathematical-induction",
+    "year": 12,
+    "difficulty": 3,
+    "type": "proof",
+    "stem": "Prove by mathematical induction that $3^n > 2n$ for all integers $n \\geq 1$.",
+    "answer": null,
+    "hint": "From $3^m > 2m$, multiply by 3 to get $3^{m+1} > 6m$. Then show $6m \\geq 2(m+1)$ for $m \\geq 1$.",
+    "explanation": "**Proposition:** $P(n)$: $3^n > 2n$.\n\n**Base case** ($n = 1$):\n$3^1 = 3 > 2 = 2(1)$. ✓\n\n**Inductive hypothesis:** Assume $P(m)$ is true for some $m \\geq 1$: $3^m > 2m$.\n\n**Inductive step:** Show $P(m+1)$ is true, i.e., $3^{m+1} > 2(m+1)$.\n\nFrom the inductive hypothesis:\n$$3^m > 2m$$\n\nMultiply both sides by 3:\n$$3^{m+1} = 3 \\cdot 3^m > 3 \\cdot 2m = 6m$$\n\nNow check: for $m \\geq 1$:\n$$6m = 2m + 4m \\geq 2m + 4 > 2m + 2 = 2(m + 1)$$\n\n(since $4m \\geq 4 > 2$ for all $m \\geq 1$).\n\nTherefore:\n$$3^{m+1} > 6m \\geq 2(m+1)$$\n\nSo $3^{m+1} > 2(m+1)$. ✓\n\n**Conclusion:** By the principle of mathematical induction, $3^n > 2n$ for all integers $n \\geq 1$. $\\square$"
+  }
+]

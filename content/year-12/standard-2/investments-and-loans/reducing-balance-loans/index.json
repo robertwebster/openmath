@@ -1,0 +1,9 @@
+{
+  "id": "reducing-balance-loans",
+  "title": "Reducing-balance loans",
+  "topic": "investments-and-loans",
+  "year": 12,
+  "strand": "Financial Mathematics",
+  "syllabusOutcome": "MS-F4",
+  "description": "Model reducing-balance loans using a recurrence relation; track repayments and interest using a table; compare loan options; analyse credit cards and interest-free periods."
+}

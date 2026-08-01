@@ -1,0 +1,15 @@
+{
+  "id": "integral-calculus",
+  "title": "Integral calculus",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Calculus",
+  "syllabusOutcome": "MAV-12-05",
+  "description": "Develop anti-differentiation and integration skills; evaluate definite integrals using the fundamental theorem of calculus; calculate exact areas and use the trapezoidal rule.",
+  "subtopics": [
+    "anti-differentiation",
+    "the-definite-integral",
+    "areas-and-the-trapezoidal-rule"
+  ]
+}

@@ -1,0 +1,79 @@
+# Language and methods of proof — Worked examples
+
+Rigorous mathematics requires precise language. This sub-topic introduces the building blocks of logical argument: the types of statements we make, how to negate and relate them, and how to identify valid reasoning.
+
+---
+
+## Key definitions
+
+| Term | Meaning | Example |
+|---|---|---|
+| **Implication** $P \Rightarrow Q$ | "If $P$, then $Q$" | "If $n$ is even, then $n^2$ is even." |
+| **Converse** | $Q \Rightarrow P$ | "If $n^2$ is even, then $n$ is even." |
+| **Contrapositive** | $\lnot Q \Rightarrow \lnot P$ | "If $n^2$ is odd, then $n$ is odd." |
+| **Inverse** | $\lnot P \Rightarrow \lnot Q$ | "If $n$ is odd, then $n^2$ is odd." |
+| **Equivalence** $P \Leftrightarrow Q$ | $P \Rightarrow Q$ **and** $Q \Rightarrow P$ | "$n$ is even $\Leftrightarrow$ $n^2$ is even." |
+
+**Critical fact:** A statement and its **contrapositive** are always logically equivalent. The converse and inverse are equivalent to each other, but not to the original.
+
+---
+
+## Example 1 — Identifying the contrapositive and converse
+
+**Statement:** "If it is raining ($P$), then the ground is wet ($Q$)."
+
+| Relation | Form | Statement |
+|---|---|---|
+| Original | $P \Rightarrow Q$ | If it is raining, then the ground is wet. |
+| Converse | $Q \Rightarrow P$ | If the ground is wet, then it is raining. |
+| Contrapositive | $\lnot Q \Rightarrow \lnot P$ | If the ground is not wet, then it is not raining. |
+| Inverse | $\lnot P \Rightarrow \lnot Q$ | If it is not raining, then the ground is not wet. |
+
+The original and contrapositive are both true (in fact logically equivalent). The converse and inverse are both false — the ground could be wet because someone watered the garden.
+
+---
+
+## Example 2 — Proof by contrapositive
+
+**Prove that if $n^2$ is odd, then $n$ is odd.**
+
+**Strategy:** The direct approach (assuming $n^2$ is odd and deducing $n$ is odd) is awkward. The contrapositive is easier.
+
+**Contrapositive:** "If $n$ is even, then $n^2$ is even."
+
+**Proof of the contrapositive:**
+
+Assume $n$ is even. Then $n = 2k$ for some integer $k$.
+
+$$n^2 = (2k)^2 = 4k^2 = 2(2k^2)$$
+
+Since $2k^2$ is an integer, $n^2$ is even. ✓
+
+**Conclusion:** We have proved the contrapositive. Therefore, by logical equivalence, if $n^2$ is odd then $n$ is odd. $\square$
+
+---
+
+## Example 3 — Quantifiers and counterexamples
+
+**Quantifiers** make the scope of a statement precise:
+- $\forall x$: "for all $x$" (universal)
+- $\exists x$: "there exists an $x$" (existential)
+
+**Negating quantified statements:**
+
+| Statement | Negation |
+|---|---|
+| $\forall x,\; P(x)$ | $\exists x,\; \lnot P(x)$ |
+| $\exists x,\; P(x)$ | $\forall x,\; \lnot P(x)$ |
+
+**Example:** Disprove "For all positive integers $n$, the number $n^2 - n + 41$ is prime."
+
+The statement is $\forall n \in \mathbb{Z}^+:\; n^2 - n + 41$ is prime.
+
+To disprove it, we need one counterexample — a single $n$ for which $n^2 - n + 41$ is not prime.
+
+Try $n = 41$: $41^2 - 41 + 41 = 41^2 = 1681 = 41 \times 41$.
+
+This is not prime. So $n = 41$ is a counterexample. $\square$
+
+> **Note:** A single counterexample is sufficient to disprove a universally quantified statement. To prove such a statement, however, a counterexample is useless — you must argue for all values of $n$.

@@ -1,0 +1,60 @@
+# Arithmetic sequences and series
+
+## Example 1 — Finding the $n$th term
+
+**Problem:** An arithmetic sequence has first term $a = 3$ and common difference $d = 5$. Find $T_{10}$ and find which term equals 98.
+
+**Step 1 — Write the general term formula.**
+
+$$T_n = a + (n-1)d = 3 + (n-1) \times 5 = 5n - 2$$
+
+**Step 2 — Find $T_{10}$.**
+
+$$T_{10} = 5(10) - 2 = 48$$
+
+**Step 3 — Find which term equals 98.**
+
+Set $T_n = 98$:
+$$5n - 2 = 98$$
+$$5n = 100$$
+$$n = 20$$
+
+So 98 is the 20th term.
+
+---
+
+## Example 2 — Finding the sum of a series
+
+**Problem:** Find the sum of the arithmetic series $6 + 11 + 16 + \ldots + 96$.
+
+**Step 1 — Identify $a$, $d$, and $l$ (the last term).**
+
+$a = 6$, $d = 5$, $l = 96$.
+
+**Step 2 — Find the number of terms.**
+
+$$T_n = 6 + (n-1) \times 5 = 96 \implies (n-1) = 18 \implies n = 19$$
+
+**Step 3 — Apply the sum formula.**
+
+$$S_n = \frac{n}{2}(a + l) = \frac{19}{2}(6 + 96) = \frac{19}{2} \times 102 = 19 \times 51 = 969$$
+
+---
+
+## Example 3 — Using $S_n$ to find a term
+
+**Problem:** The sum of the first $n$ terms of a series is $S_n = 2n^2 + n$. Show that the series is arithmetic and find the common difference.
+
+**Step 1 — Find the general term $T_n$.**
+
+For $n \geq 2$:
+$$T_n = S_n - S_{n-1} = (2n^2 + n) - (2(n-1)^2 + (n-1))$$
+$$= 2n^2 + n - 2n^2 + 4n - 2 - n + 1 = 4n - 1$$
+
+Check $T_1$: $S_1 = 2(1)^2 + 1 = 3 = T_1$. Also $4(1) - 1 = 3$. ✓
+
+**Step 2 — Show it is arithmetic by finding a constant difference.**
+
+$$T_{n+1} - T_n = (4(n+1) - 1) - (4n - 1) = 4$$
+
+The common difference is $d = 4$, confirming this is an arithmetic series.

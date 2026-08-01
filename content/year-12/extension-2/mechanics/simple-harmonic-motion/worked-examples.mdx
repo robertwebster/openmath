@@ -1,0 +1,54 @@
+# Simple Harmonic Motion — Worked Examples
+
+## Example 1: Reading the parameters from a displacement equation
+
+**Problem:** A particle has displacement $x = 6\sin(2t - \pi/3)$ m. Find the (a) amplitude, (b) period, (c) maximum speed, and (d) maximum acceleration.
+
+**Solution:**
+
+The displacement is in the standard form $x = A\sin(nt + \alpha)$, with $A = 6$ and $n = 2$.
+
+**(a) Amplitude:** $A = 6$ m
+
+**(b) Period:** $T = \dfrac{2\pi}{n} = \dfrac{2\pi}{2} = \pi \approx 3.14$ s
+
+**(c) Maximum speed** (at the centre, $x=0$):
+$$v_{\max} = nA = 2 \times 6 = 12 \text{ m/s}$$
+
+**(d) Maximum acceleration** (at the endpoints, $x = \pm A$):
+$$|a|_{\max} = n^2 A = 4 \times 6 = 24 \text{ m/s}^2$$
+
+---
+
+## Example 2: Deriving and using the velocity–displacement formula
+
+**Problem:** A particle satisfies $\ddot{x} = -4x$ and starts from rest at $x = 5$ m. Find its speed when it is at $x = 3$ m.
+
+**Solution:**
+
+**Step 1 — Identify parameters.** $n^2 = 4 \Rightarrow n = 2$. Starting from rest at $x = 5$ means $A = 5$.
+
+**Step 2 — Use the derived formula** $v^2 = n^2(A^2 - x^2)$:
+
+$$v^2 = 4(25 - 9) = 4 \times 16 = 64$$
+$$v = 8 \text{ m/s}$$
+
+**Derivation reminder** (if the formula isn't available): use $v\dfrac{dv}{dx} = -4x$, integrate to $\dfrac{v^2}{2} = -2x^2 + C$, and apply $v=0$ at $x=5$ to get $C = 50$. Then $v^2 = 100 - 4x^2 = 4(25-x^2)$, confirming the result.
+
+---
+
+## Example 3: Finding displacement as a function of time from initial conditions
+
+**Problem:** A particle starts at the centre of its oscillation ($x=0$) moving in the positive direction with speed $10$ m/s, in SHM with period $\pi$ s. Write $x$ as a function of $t$.
+
+**Solution:**
+
+**Step 1 — Find $n$.** $T = \pi \Rightarrow n = \dfrac{2\pi}{\pi} = 2$.
+
+**Step 2 — Find the amplitude.** Maximum speed $v_{\max} = nA$:
+$$10 = 2A \implies A = 5 \text{ m}$$
+
+**Step 3 — Write $x$.** The particle starts at $x=0$ moving positively, so:
+$$x = A\sin(nt) = 5\sin(2t) \text{ m}$$
+
+**Check:** At $t=0$: $x = 5\sin 0 = 0\checkmark$; $v = \dot{x} = 10\cos(0) = 10\checkmark$.

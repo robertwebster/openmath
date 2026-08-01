@@ -1,0 +1,15 @@
+{
+  "id": "sequences-and-series",
+  "title": "Sequences and series",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Algebra / Functions",
+  "syllabusOutcome": "MAV-12-03",
+  "description": "Find the $n$th term and partial sums of arithmetic and geometric sequences; apply the limiting sum of an infinite geometric series; model growth, decay and financial situations using recurrence relations and series.",
+  "subtopics": [
+    "arithmetic-sequences-and-series",
+    "geometric-sequences-and-series",
+    "applications-of-series"
+  ]
+}

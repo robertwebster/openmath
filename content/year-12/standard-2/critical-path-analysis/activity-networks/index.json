@@ -1,0 +1,9 @@
+{
+  "id": "activity-networks",
+  "title": "Activity networks",
+  "topic": "critical-path-analysis",
+  "year": 12,
+  "strand": "Networks",
+  "syllabusOutcome": "MS-N3",
+  "description": "Represent a project as an activity network (activity-on-node) from a precedence table; identify immediate predecessors and successors; recognise when a dummy activity is required."
+}

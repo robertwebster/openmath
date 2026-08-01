@@ -1,0 +1,68 @@
+# Roots and identities — Worked examples
+
+This sub-topic covers two related ideas: finding $n$th roots of complex numbers, and using De Moivre's theorem to derive exact trigonometric identities.
+
+---
+
+## Key ideas
+
+**$n$th roots of $z = re^{i\theta}$:** there are exactly $n$ complex $n$th roots, given by
+$$z_k = r^{1/n}\,e^{i(\theta + 2\pi k)/n}, \quad k = 0, 1, 2, \ldots, n-1$$
+
+They are equally spaced on a circle of radius $r^{1/n}$ in the Argand plane.
+
+**Roots of unity:** the $n$th roots of $1$ are $e^{2\pi ik/n}$ for $k = 0, 1, \ldots, n-1$. Their sum is always $0$.
+
+**De Moivre for identities:** expand $(\cos\theta+i\sin\theta)^n$ with the binomial theorem, then equate real and imaginary parts with $\cos n\theta$ and $\sin n\theta$.
+
+---
+
+## Example 1 — Finding cube roots of a complex number
+
+**Find the three cube roots of $z = 8i$.**
+
+**Step 1:** Write $8i$ in exponential form.
+$$8i = 8e^{i\pi/2} \quad \text{(since } |8i|=8 \text{ and } \arg(8i) = 90° = \pi/2)$$
+
+**Step 2:** Apply the formula. The three cube roots are:
+$$z_k = 8^{1/3}\,e^{i(\pi/2+2\pi k)/3} = 2e^{i(\pi/6+2\pi k/3)}, \quad k = 0, 1, 2$$
+
+- $k=0$: $z_0 = 2e^{i\pi/6} = 2(\cos 30°+i\sin 30°) = \sqrt{3}+i$
+- $k=1$: $z_1 = 2e^{i\pi/6+2\pi i/3} = 2e^{i5\pi/6} = 2(\cos 150°+i\sin 150°) = -\sqrt{3}+i$
+- $k=2$: $z_2 = 2e^{i\pi/6+4\pi i/3} = 2e^{i3\pi/2} = 2(\cos 270°+i\sin 270°) = -2i$
+
+**Check:** $(-2i)^3 = -8i^3 = -8(-i) = 8i$ ✓
+
+---
+
+## Example 2 — Deriving $\cos 2\theta$ and $\sin 2\theta$
+
+**Use De Moivre's theorem to express $\cos 2\theta$ and $\sin 2\theta$ in terms of $\sin\theta$ and $\cos\theta$.**
+
+By De Moivre:
+$$(\cos\theta+i\sin\theta)^2 = \cos 2\theta+i\sin 2\theta$$
+
+Expand the left side:
+$$(\cos\theta+i\sin\theta)^2 = \cos^2\theta + 2i\cos\theta\sin\theta + i^2\sin^2\theta = (\cos^2\theta-\sin^2\theta)+i(2\cos\theta\sin\theta)$$
+
+Equating real and imaginary parts:
+$$\cos 2\theta = \cos^2\theta-\sin^2\theta$$
+$$\sin 2\theta = 2\sin\theta\cos\theta$$
+
+These are the standard double-angle formulas, derived directly from De Moivre.
+
+---
+
+## Example 3 — Proving the sum of roots of unity is zero
+
+**Prove that $1+\omega+\omega^2+\cdots+\omega^{n-1} = 0$, where $\omega = e^{2\pi i/n}$.**
+
+The left side is a geometric series: first term $1$, common ratio $\omega$, $n$ terms.
+
+By the geometric sum formula:
+$$1+\omega+\omega^2+\cdots+\omega^{n-1} = \frac{1-\omega^n}{1-\omega}$$
+
+Since $\omega^n = \left(e^{2\pi i/n}\right)^n = e^{2\pi i} = 1$:
+$$= \frac{1-1}{1-\omega} = 0 \qquad (\text{since } \omega \neq 1 \text{ for } n \geq 2) \quad \square$$
+
+This has a nice geometric interpretation: the $n$ roots are equally spaced vectors pointing outwards from the origin, so they cancel in pairs (or all together).

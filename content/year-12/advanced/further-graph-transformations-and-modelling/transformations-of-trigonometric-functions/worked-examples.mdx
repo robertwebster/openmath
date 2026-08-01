@@ -1,0 +1,86 @@
+# Transformations of trigonometric functions
+
+## Example 1 — Identifying key features from the equation
+
+**Problem:** For $y = -2\sin(3x + \pi) + 1$, state the amplitude, period, phase shift and vertical shift. Then state the range.
+
+**Step 1 — Rewrite in standard form $y = a\sin(b(x-c)) + d$.**
+
+Factor out the coefficient of $x$ from the argument:
+$$y = -2\sin\!\left(3\!\left(x + \frac{\pi}{3}\right)\right) + 1$$
+
+Now $a = -2$, $b = 3$, $c = -\pi/3$, $d = 1$.
+
+**Step 2 — Identify each feature.**
+
+| Feature | Formula | Value |
+|---|---|---|
+| Amplitude | $|a|$ | $2$ |
+| Period | $\dfrac{2\pi}{b}$ | $\dfrac{2\pi}{3}$ |
+| Phase shift | $c$ | $\dfrac{\pi}{3}$ to the **left** (since $c < 0$) |
+| Vertical shift | $d$ | $1$ up |
+
+**Step 3 — State the range.**
+
+Maximum: $d + |a| = 1 + 2 = 3$.  
+Minimum: $d - |a| = 1 - 2 = -1$.  
+Range: $[-1,\; 3]$.
+
+---
+
+## Example 2 — Solving a trigonometric equation in a given domain
+
+**Problem:** Solve $2\sin(2x) = \sqrt{3}$ for $x \in [0,\, 2\pi]$.
+
+**Step 1 — Isolate $\sin(2x)$.**
+
+$$\sin(2x) = \frac{\sqrt{3}}{2}$$
+
+**Step 2 — Substitute $u = 2x$ and find the domain for $u$.**
+
+Since $x \in [0,\, 2\pi]$, we have $u = 2x \in [0,\, 4\pi]$.
+
+**Step 3 — Solve $\sin u = \dfrac{\sqrt{3}}{2}$ in $[0,\, 4\pi]$.**
+
+Reference angle: $\alpha = \dfrac{\pi}{3}$ (since $\sin\dfrac{\pi}{3} = \dfrac{\sqrt{3}}{2}$).
+
+Sine is positive in the 1st and 2nd quadrants, so in each full period:
+$$u = \frac{\pi}{3},\quad u = \pi - \frac{\pi}{3} = \frac{2\pi}{3}$$
+
+Over $[0, 4\pi]$ there are two complete periods, giving four solutions:
+$$u = \frac{\pi}{3},\quad \frac{2\pi}{3},\quad \frac{\pi}{3} + 2\pi = \frac{7\pi}{3},\quad \frac{2\pi}{3} + 2\pi = \frac{8\pi}{3}$$
+
+**Step 4 — Convert back to $x = u/2$.**
+
+$$x = \frac{\pi}{6},\quad \frac{\pi}{3},\quad \frac{7\pi}{6},\quad \frac{4\pi}{3}$$
+
+---
+
+## Example 3 — Finding the equation from a description
+
+**Problem:** A trigonometric function $y = a\sin(b(x-c)) + d$ has:
+- maximum value $5$, minimum value $-3$
+- period $\pi$
+- first maximum at $x = \pi/4$ (with $a > 0$, $b > 0$)
+
+Find $a$, $b$, $c$, $d$ and write the equation.
+
+**Step 1 — Find amplitude and vertical shift.**
+
+$$a = \frac{\text{max} - \text{min}}{2} = \frac{5 - (-3)}{2} = 4$$
+$$d = \frac{\text{max} + \text{min}}{2} = \frac{5 + (-3)}{2} = 1$$
+
+**Step 2 — Find $b$ from the period.**
+
+$$\frac{2\pi}{b} = \pi \implies b = 2$$
+
+**Step 3 — Find the phase shift $c$.**
+
+The first maximum of $\sin$ occurs at $\dfrac{\pi}{2}$, i.e. $b(x - c) = \dfrac{\pi}{2}$ when $x = \dfrac{\pi}{4}$:
+$$2\!\left(\frac{\pi}{4} - c\right) = \frac{\pi}{2} \implies \frac{\pi}{2} - 2c = \frac{\pi}{2} \implies c = 0$$
+
+**The equation:**
+
+$$y = 4\sin(2x) + 1$$
+
+Check: at $x = \pi/4$, $y = 4\sin(\pi/2) + 1 = 4(1) + 1 = 5$ ✓ (maximum).

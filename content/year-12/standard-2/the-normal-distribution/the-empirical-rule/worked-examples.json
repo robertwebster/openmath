@@ -1,0 +1,74 @@
+[
+  {
+    "id": "emp-worked-1",
+    "title": "Applying the 68–95–99.7% rule",
+    "difficulty": 1,
+    "problem": "IQ scores are normally distributed with a mean of 100 and a standard deviation of 15. What percentage of people have IQ scores between 70 and 130? What percentage have a score above 130?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Determine how many standard deviations the boundaries are from the mean.",
+        "working": "$70 = 100 - 2 \\times 15 = \\mu - 2\\sigma$\n\n$130 = 100 + 2 \\times 15 = \\mu + 2\\sigma$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the empirical rule for 2 standard deviations.",
+        "working": "95% of values lie within $\\mu \\pm 2\\sigma$.\n\nSo 95% of people have IQ scores between 70 and 130."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the percentage above 130.",
+        "working": "The remaining $100 - 95 = 5\\%$ lies outside this range.\n\nBy symmetry, half of 5% lies above $\\mu + 2\\sigma = 130$.\n\nPercentage above 130 $= 2.5\\%$"
+      }
+    ],
+    "answer": "95% of people have IQ scores between 70 and 130. About 2.5% have a score above 130."
+  },
+  {
+    "id": "emp-worked-2",
+    "title": "Finding a percentile using the empirical rule",
+    "difficulty": 2,
+    "problem": "In a fitness test, scores are normally distributed with a mean of 50 and standard deviation of 8. What score represents the 16th percentile (i.e., 16% of scores fall below this value)?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the empirical rule and the symmetry of the normal distribution.",
+        "working": "68% of scores lie between $\\mu - \\sigma$ and $\\mu + \\sigma$.\n\nBy symmetry, 34% lie between $\\mu - \\sigma$ and the mean, and 34% lie between the mean and $\\mu + \\sigma$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the proportion below $\\mu - \\sigma$.",
+        "working": "50% of scores lie below the mean.\n\nOf these, 34% lie between $\\mu - \\sigma$ and the mean.\n\nSo: $50\\% - 34\\% = 16\\%$ lie below $\\mu - \\sigma$."
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate $\\mu - \\sigma$.",
+        "working": "$$\\mu - \\sigma = 50 - 8 = 42$$\n\nThe 16th percentile is a score of 42."
+      }
+    ],
+    "answer": "A score of 42 represents the 16th percentile."
+  },
+  {
+    "id": "emp-worked-3",
+    "title": "Expected counts in a sample",
+    "difficulty": 3,
+    "problem": "The lifetime of a brand of light bulb is normally distributed with a mean of 1200 hours and a standard deviation of 100 hours. A company orders 5000 bulbs. How many are expected to last between 1000 and 1100 hours?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the z-scores for the boundaries.",
+        "working": "$z_{1000} = \\dfrac{1000 - 1200}{100} = -2$ (i.e., $\\mu - 2\\sigma$)\n\n$z_{1100} = \\dfrac{1100 - 1200}{100} = -1$ (i.e., $\\mu - \\sigma$)"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the proportion between these boundaries using the empirical rule.",
+        "working": "By the empirical rule:\n- 95% lie within $\\mu \\pm 2\\sigma$ — so 47.5% lie between $\\mu - 2\\sigma$ and the mean\n- 68% lie within $\\mu \\pm \\sigma$ — so 34% lie between $\\mu - \\sigma$ and the mean\n\nProportion between $\\mu - 2\\sigma$ and $\\mu - \\sigma$:\n$$47.5\\% - 34\\% = 13.5\\%$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the expected number of bulbs.",
+        "working": "$$\\text{Expected count} = 0.135 \\times 5000 = 675 \\text{ bulbs}$$"
+      }
+    ],
+    "answer": "Approximately 675 bulbs are expected to last between 1000 and 1100 hours."
+  }
+]

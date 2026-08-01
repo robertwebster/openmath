@@ -1,0 +1,9 @@
+{
+  "id": "curve-sketching",
+  "title": "Curve sketching",
+  "topic": "applications-of-calculus",
+  "year": 12,
+  "strand": "Calculus",
+  "syllabusOutcome": "MAV-12-06",
+  "description": "Find stationary points and determine their nature using first and second derivative tests; identify concavity and points of inflection; determine increasing and decreasing intervals; sketch curves from derivative information."
+}

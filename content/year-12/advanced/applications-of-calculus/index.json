@@ -1,0 +1,15 @@
+{
+  "id": "applications-of-calculus",
+  "title": "Applications of calculus",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Calculus",
+  "syllabusOutcome": "MAV-12-06",
+  "description": "Use differentiation and integration to sketch curves, solve optimisation problems, and analyse rates of change and motion.",
+  "subtopics": [
+    "curve-sketching",
+    "optimisation",
+    "rates-of-change-and-motion"
+  ]
+}

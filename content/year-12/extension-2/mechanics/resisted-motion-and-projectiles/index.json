@@ -1,0 +1,11 @@
+{
+  "id": "resisted-motion-and-projectiles",
+  "title": "Resisted motion and projectiles",
+  "topic": "mechanics",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Mechanics",
+  "syllabusOutcome": "MEX-12-04",
+  "description": "Model motion with resistance proportional to velocity ($R = mkv$) or $v^2$ ($R = mkv^2$); solve the resulting separable differential equations; find and interpret terminal velocity; model projectile motion incorporating air resistance."
+}

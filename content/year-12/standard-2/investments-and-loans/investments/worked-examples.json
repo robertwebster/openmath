@@ -1,0 +1,79 @@
+[
+  {
+    "id": "inv-worked-1",
+    "title": "Simple vs compound interest",
+    "difficulty": 1,
+    "problem": "\\$5000 is invested for 3 years. Option A earns 6% per annum simple interest. Option B earns 5.8% per annum compound interest, compounded annually. Which option gives a higher final value?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the final value under Option A (simple interest).",
+        "working": "$$A = P(1 + rt) = 5000(1 + 0.06 \\times 3) = 5000 \\times 1.18 = \\$5900$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the final value under Option B (compound interest).",
+        "working": "$$A = P(1+r)^n = 5000 \\times (1.058)^3$$\n\n$(1.058)^3 = 1.058 \\times 1.058 \\times 1.058 = 1.184464...$\n\n$$A = 5000 \\times 1.184464 = \\$5922.32$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the two options.",
+        "working": "Option A: \\$5900.00\n\nOption B: \\$5922.32\n\nOption B gives \\$22.32 more over 3 years."
+      }
+    ],
+    "answer": "Option B (compound at 5.8%) gives a higher final value of \\$5922.32, compared to \\$5900.00 for Option A (simple at 6%)."
+  },
+  {
+    "id": "inv-worked-2",
+    "title": "Present value and future value",
+    "difficulty": 2,
+    "problem": "How much must be invested now at 5% per annum compound interest, compounded annually, to have \\$8000 in 4 years?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write down the known values and the formula.",
+        "working": "$A = 8000$, $r = 0.05$, $n = 4$\n\n$$A = P(1+r)^n \\implies P = \\frac{A}{(1+r)^n}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the denominator $(1.05)^4$.",
+        "working": "$$(1.05)^2 = 1.1025$$\n$$(1.05)^4 = (1.1025)^2 = 1.21550625$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Divide to find the present value.",
+        "working": "$$P = \\frac{8000}{1.21550625} = \\$6582.07$$"
+      }
+    ],
+    "answer": "\\$6582.07 must be invested now."
+  },
+  {
+    "id": "inv-worked-3",
+    "title": "Shares, dividend yield and total return",
+    "difficulty": 3,
+    "problem": "An investor buys 200 shares at \\$8.40 each. After one year the share price is \\$9.10 and the company pays a dividend of \\$0.25 per share.\n(a) Calculate the dividend yield at the time of purchase.\n(b) Calculate the investor's total profit.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the dividend yield.",
+        "working": "$$\\text{Dividend yield} = \\frac{\\text{annual dividend}}{\\text{share price}} \\times 100\\% = \\frac{0.25}{8.40} \\times 100\\% \\approx 2.98\\%$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the capital gain.",
+        "working": "$$\\text{Capital gain} = (9.10 - 8.40) \\times 200 = 0.70 \\times 200 = \\$140$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the total dividends received.",
+        "working": "$$\\text{Dividends} = 0.25 \\times 200 = \\$50$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Sum the capital gain and dividends for total profit.",
+        "working": "$$\\text{Total profit} = 140 + 50 = \\$190$$"
+      }
+    ],
+    "answer": "(a) Dividend yield $\\approx 2.98\\%$. (b) Total profit $= \\$190$."
+  }
+]

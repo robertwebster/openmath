@@ -1,0 +1,15 @@
+{
+  "id": "critical-path-analysis",
+  "title": "Critical path analysis",
+  "year": 12,
+  "stage": "6",
+  "course": "standard-2",
+  "strand": "Networks",
+  "syllabusOutcome": "MS-N3",
+  "description": "Represent and analyse projects as activity networks; perform forward and backward scans to find earliest and latest start times; identify the critical path and minimum project completion time.",
+  "subtopics": [
+    "activity-networks",
+    "forward-and-backward-scanning",
+    "the-critical-path"
+  ]
+}

@@ -1,0 +1,47 @@
+# Cosine rule — worked examples
+
+## Example 1: Finding an unknown side
+
+In triangle $ABC$, $a = 7$ cm, $b = 10$ cm and $C = 55°$. Find side $c$.
+
+<WorkedExample>
+  <Step>Write down the cosine rule for side $c$.</Step>
+  <Step>$$c^2 = a^2 + b^2 - 2ab\cos C$$</Step>
+  <Step>Substitute the known values: $a = 7$, $b = 10$, $C = 55°$.</Step>
+  <Step>$$c^2 = 7^2 + 10^2 - 2(7)(10)\cos 55°$$</Step>
+  <Step>Evaluate each term. Use $\cos 55° \approx 0.5736$.</Step>
+  <Step>$$c^2 = 49 + 100 - 140 \times 0.5736 = 149 - 80.30 = 68.70$$</Step>
+  <Step>Take the square root.</Step>
+  <Step>$$c = \sqrt{68.70} \approx 8.29 \text{ cm}$$</Step>
+</WorkedExample>
+
+---
+
+## Example 2: Finding an unknown angle
+
+In triangle $PQR$, $p = 6$ m, $q = 9$ m and $r = 11$ m. Find angle $R$.
+
+<WorkedExample>
+  <Step>The angle $R$ is opposite side $r$. Rearrange the cosine rule to find $\cos R$.</Step>
+  <Step>$$\cos R = \frac{p^2 + q^2 - r^2}{2pq}$$</Step>
+  <Step>Substitute the known values.</Step>
+  <Step>$$\cos R = \frac{6^2 + 9^2 - 11^2}{2 \times 6 \times 9} = \frac{36 + 81 - 121}{108} = \frac{-4}{108} \approx -0.0370$$</Step>
+  <Step>The negative value tells us $R$ is obtuse. Find the angle.</Step>
+  <Step>$$R = \cos^{-1}(-0.0370) \approx 92.1°$$</Step>
+</WorkedExample>
+
+---
+
+## Example 3: Real-world application
+
+From a lighthouse $L$, boat $A$ is 24 km away on a bearing of 035° and boat $B$ is 18 km away on a bearing of 105°. Find the distance between the two boats.
+
+<WorkedExample>
+  <Step>Find the angle $\angle ALB$ at the lighthouse. The two bearings differ by $105° - 35° = 70°$, so $\angle ALB = 70°$.</Step>
+  <Step>The triangle has $LA = 24$ km, $LB = 18$ km and included angle $70°$. Apply the cosine rule to find $AB$.</Step>
+  <Step>$$AB^2 = LA^2 + LB^2 - 2(LA)(LB)\cos(\angle ALB)$$</Step>
+  <Step>$$AB^2 = 24^2 + 18^2 - 2(24)(18)\cos 70°$$</Step>
+  <Step>Evaluate: $\cos 70° \approx 0.3420$.</Step>
+  <Step>$$AB^2 = 576 + 324 - 864 \times 0.3420 = 900 - 295.5 = 604.5$$</Step>
+  <Step>$$AB = \sqrt{604.5} \approx 24.59 \text{ km}$$</Step>
+</WorkedExample>

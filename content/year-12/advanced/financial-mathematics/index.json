@@ -1,0 +1,14 @@
+{
+  "id": "financial-mathematics",
+  "title": "Financial mathematics",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Algebra / Functions",
+  "syllabusOutcome": "MAV-12-08",
+  "description": "Apply geometric series to calculate future and present values of annuities; analyse reducing-balance loans using recurrence relations; compare investment and loan scenarios.",
+  "subtopics": [
+    "annuities-and-superannuation",
+    "loans-and-investments"
+  ]
+}

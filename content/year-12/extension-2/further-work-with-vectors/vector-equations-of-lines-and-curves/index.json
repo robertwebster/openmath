@@ -1,0 +1,11 @@
+{
+  "id": "vector-equations-of-lines-and-curves",
+  "title": "Vector equations of lines and curves",
+  "topic": "further-work-with-vectors",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Vectors",
+  "syllabusOutcome": "MEX-12-05",
+  "description": "Write lines in vector form $\\mathbf{r} = \\mathbf{a}+\\lambda\\mathbf{b}$ and parametric form; convert between forms; find points on a line; determine whether two lines are parallel, intersecting or skew; find intersection points and angles between lines; model simple curves parametrically."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "arithmetic-sequences-and-series",
+  "title": "Arithmetic sequences and series",
+  "topic": "sequences-and-series",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Algebra / Functions",
+  "syllabusOutcome": "MAV-12-03",
+  "description": "Find the $n$th term using $T_n = a + (n-1)d$ and partial sums using $S_n = \\frac{n}{2}(2a + (n-1)d)$; identify and work with arithmetic sequences in applied contexts."
+}

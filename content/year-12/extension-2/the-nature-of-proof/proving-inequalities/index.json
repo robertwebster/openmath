@@ -1,0 +1,11 @@
+{
+  "id": "proving-inequalities",
+  "title": "Proving inequalities",
+  "topic": "the-nature-of-proof",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Proof",
+  "syllabusOutcome": "MEX-12-01",
+  "description": "Prove algebraic inequalities using the identity $a^2 \\geq 0$ for all real $a$; apply the AM-GM inequality in two and three variables; prove and apply inequalities involving two or more variables."
+}

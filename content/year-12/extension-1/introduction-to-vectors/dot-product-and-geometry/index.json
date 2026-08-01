@@ -1,0 +1,11 @@
+{
+  "id": "dot-product-and-geometry",
+  "title": "Dot product and geometry",
+  "topic": "introduction-to-vectors",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Vectors",
+  "syllabusOutcome": "ME-12-03",
+  "description": "Calculate the scalar (dot) product of two vectors; find the angle between vectors; test for perpendicularity and parallelism; find scalar and vector projections; prove geometric results using vectors."
+}

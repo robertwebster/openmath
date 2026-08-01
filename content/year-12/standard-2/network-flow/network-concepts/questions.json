@@ -1,0 +1,191 @@
+[
+  {
+    "id": "y12-std2-nf-nc-q01",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A network has 5 vertices and 7 edges. How many edges does it have?",
+    "answer": "7",
+    "tolerance": 0,
+    "hint": "The number of edges is given directly.",
+    "explanation": "The network has **7 edges**. An edge connects two vertices; here, the 5 vertices are joined by 7 edges."
+  },
+  {
+    "id": "y12-std2-nf-nc-q02",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "In a network diagram, vertex A is connected to vertices B, C and D. What is the degree of vertex A?",
+    "answer": "3",
+    "tolerance": 0,
+    "hint": "The degree of a vertex is the number of edges that meet at that vertex.",
+    "explanation": "Vertex A is connected to B, C and D — that is 3 edges meeting at A.\n\nThe **degree** of vertex A = **3**."
+  },
+  {
+    "id": "y12-std2-nf-nc-q03",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "In a directed network, what does an arrow on an edge represent?",
+    "options": [
+      "The weight (capacity) of the edge",
+      "The direction that flow or travel is permitted along the edge",
+      "That the edge has been traversed",
+      "That the two vertices are the same"
+    ],
+    "answer": "The direction that flow or travel is permitted along the edge",
+    "hint": "Directed means one-way.",
+    "explanation": "In a **directed** network (also called a digraph), each edge has an arrow showing the **direction** in which flow or travel is allowed. Flow cannot travel against the arrow."
+  },
+  {
+    "id": "y12-std2-nf-nc-q04",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A network has 4 vertices: P, Q, R and S. The edges are PQ, PR, QR and QS. What is the degree of vertex Q?",
+    "answer": "3",
+    "tolerance": 0,
+    "hint": "List every edge that touches Q.",
+    "explanation": "The edges touching Q are: PQ, QR and QS — that is 3 edges.\n\nDegree of Q = **3**."
+  },
+  {
+    "id": "y12-std2-nf-nc-q05",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A weighted network has numbers assigned to each edge. What do these numbers typically represent in a flow-network context?",
+    "options": [
+      "The number of vertices in the network",
+      "The capacity (maximum flow) along that edge",
+      "The length of time the network has been in use",
+      "The degree of the vertex at each end"
+    ],
+    "answer": "The capacity (maximum flow) along that edge",
+    "hint": "In flow problems, the weight on an edge limits how much can travel through it.",
+    "explanation": "In a **flow network**, the number (weight) on each edge represents its **capacity** — the maximum amount of flow that can pass along that edge per unit time. For example, an edge labelled 8 can carry at most 8 units of flow."
+  },
+  {
+    "id": "y12-std2-nf-nc-q06",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A network has 6 vertices. The degrees of five of the vertices are 2, 3, 2, 4 and 1. The sum of all degrees in any network equals twice the number of edges. If the total degree sum is 16, what is the degree of the sixth vertex?",
+    "answer": "4",
+    "tolerance": 0,
+    "hint": "The sum of degrees = 16. Add up the five known degrees and subtract from 16.",
+    "explanation": "Sum of the five known degrees: $2 + 3 + 2 + 4 + 1 = 12$.\n\nThe sixth vertex must have degree $16 - 12 = 4$.\n\n(As a check: $16 \\div 2 = 8$ edges.)"
+  },
+  {
+    "id": "y12-std2-nf-nc-q07",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A connected network has 5 vertices with degrees 2, 4, 3, 3 and 2. Using the handshaking lemma, how many edges does this network have?\n\nHandshaking lemma: sum of all degrees = $2 \\times$ (number of edges).",
+    "answer": "7",
+    "tolerance": 0,
+    "hint": "Find the total degree sum, then divide by 2.",
+    "explanation": "Sum of degrees: $2 + 4 + 3 + 3 + 2 = 14$.\n$$\\text{Number of edges} = \\frac{14}{2} = 7$$"
+  },
+  {
+    "id": "y12-std2-nf-nc-q08",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "In a flow network, what is the **source** vertex?",
+    "options": [
+      "A vertex where all edges point inward (no outgoing edges)",
+      "A vertex where all edges point outward (no incoming edges), where flow originates",
+      "A vertex with the highest capacity edge attached",
+      "Any vertex in the middle of the network"
+    ],
+    "answer": "A vertex where all edges point outward (no incoming edges), where flow originates",
+    "hint": "Think of a tap: water flows out, not in.",
+    "explanation": "The **source** is where flow originates. In a directed flow network, all edges at the source point **outward** — no flow enters it from elsewhere. It is usually labelled S.\n\nThe **sink** is the opposite: all edges point **inward** to it (usually labelled T)."
+  },
+  {
+    "id": "y12-std2-nf-nc-q09",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A pipeline network has a source S and a sink T. The edges leaving S have capacities 5, 8 and 3. What is the maximum possible flow that can leave S?",
+    "answer": "16",
+    "tolerance": 0,
+    "hint": "Add the capacities of all edges leaving the source.",
+    "explanation": "The edges leaving S carry at most $5 + 8 + 3 = 16$ units of flow in total.\n\nMaximum possible flow out of S = **16 units**.\n\n(The actual maximum flow through the network may be less than 16, depending on bottlenecks elsewhere.)"
+  },
+  {
+    "id": "y12-std2-nf-nc-q10",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A directed network has 4 vertices (S, A, B, T) and directed edges S→A (capacity 6), S→B (capacity 4), A→T (capacity 5), B→T (capacity 7) and A→B (capacity 3). What is the total capacity of all edges entering the sink T?",
+    "answer": "12",
+    "tolerance": 0,
+    "hint": "Identify the edges that end at T, then sum their capacities.",
+    "explanation": "The edges entering T are:\n- A→T with capacity 5\n- B→T with capacity 7\n\nTotal capacity into T: $5 + 7 = 12$ units."
+  },
+  {
+    "id": "y12-std2-nf-nc-q11",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A network is described as **connected**. Which of the following correctly defines a connected network?",
+    "options": [
+      "Every vertex has the same degree",
+      "There is a path between every pair of vertices",
+      "The network has no cycles",
+      "Every edge is directed"
+    ],
+    "answer": "There is a path between every pair of vertices",
+    "hint": "No vertex is isolated — you can reach any vertex from any other vertex.",
+    "explanation": "A **connected** network is one in which there is a path from every vertex to every other vertex. If any vertex is isolated (no edges), or if the network splits into separate pieces with no path between them, it is not connected."
+  },
+  {
+    "id": "y12-std2-nf-nc-q12",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A directed network models water flow in a irrigation system. The source S has two outgoing pipes: S→A (capacity 10 L/min) and S→B (capacity 6 L/min). A has two outgoing pipes: A→C (capacity 7 L/min) and A→B (capacity 4 L/min). B has one outgoing pipe: B→T (capacity 9 L/min). C has one outgoing pipe: C→T (capacity 8 L/min).\n\nWhat is the total capacity of edges that enter the sink T?",
+    "answer": "17",
+    "tolerance": 0,
+    "hint": "Find all edges that end at T and add their capacities.",
+    "explanation": "Edges entering T:\n- B→T: capacity 9 L/min\n- C→T: capacity 8 L/min\n\nTotal capacity into T: $9 + 8 = 17$ L/min."
+  },
+  {
+    "id": "y12-std2-nf-nc-q13",
+    "subtopic": "network-concepts",
+    "topic": "network-flow",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A connected network has 7 edges. Using the handshaking lemma, what is the total sum of the degrees of all vertices?",
+    "answer": "14",
+    "tolerance": 0,
+    "hint": "Each edge contributes 2 to the total degree sum.",
+    "explanation": "By the handshaking lemma:\n$$\\text{Sum of all degrees} = 2 \\times \\text{number of edges} = 2 \\times 7 = 14$$"
+  }
+]

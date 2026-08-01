@@ -1,0 +1,16 @@
+{
+  "id": "further-work-with-vectors",
+  "title": "Further work with vectors",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Vectors",
+  "syllabusOutcome": "MEX-12-05",
+  "description": "Extend two-dimensional vector work into three dimensions: component form using $\\mathbf{i}$, $\\mathbf{j}$, $\\mathbf{k}$; the dot product and angles in 3D; vector equations of lines and parametric form; intersection and skew lines; geometric and coordinate-geometry proofs using vectors.",
+  "customRenderer": null,
+  "subtopics": [
+    "three-dimensional-vectors",
+    "vector-equations-of-lines-and-curves",
+    "geometric-proof-with-vectors"
+  ]
+}

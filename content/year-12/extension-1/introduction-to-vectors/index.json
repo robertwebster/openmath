@@ -1,0 +1,16 @@
+{
+  "id": "introduction-to-vectors",
+  "title": "Introduction to vectors",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Vectors",
+  "syllabusOutcome": "ME-12-03",
+  "description": "Represent quantities as vectors in component and magnitude–direction form; perform vector arithmetic; apply dot products, projections, and geometric proofs with vectors; model projectile motion using vector components.",
+  "customRenderer": null,
+  "subtopics": [
+    "vector-concepts",
+    "dot-product-and-geometry",
+    "projectile-motion"
+  ]
+}

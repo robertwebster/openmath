@@ -1,0 +1,11 @@
+{
+  "id": "standard-integral-forms",
+  "title": "Standard integral forms",
+  "topic": "further-calculus-skills",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Calculus",
+  "syllabusOutcome": "ME-12-04",
+  "description": "Integrate to inverse-trigonometric and logarithmic standard forms; evaluate integrals of $\\sin^2 x$ and $\\cos^2 x$ using double-angle identities; recognise and apply the standard results $\\int \\frac{1}{\\sqrt{a^2-x^2}}\\,dx$ and $\\int \\frac{1}{a^2+x^2}\\,dx$."
+}

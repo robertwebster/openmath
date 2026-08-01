@@ -1,0 +1,70 @@
+# Forward and backward scanning — worked examples
+
+## Example 1: Forward scan — finding earliest start times
+
+A project has the following activities. Perform a forward scan to find the EST and EFT of each activity.
+
+| Activity | Predecessors | Duration (days) |
+|---|---|---|
+| A | — | 4 |
+| B | — | 6 |
+| C | A | 3 |
+| D | A, B | 5 |
+| E | C, D | 2 |
+
+<WorkedExample>
+  <Step>**Rule:** For activities with no predecessors, EST = 0. For all others, EST = maximum of the EFTs of all immediate predecessors. EFT = EST + duration.</Step>
+  <Step>Activities A and B have no predecessors:
+  $$\text{EST}_A = 0,\quad \text{EFT}_A = 0 + 4 = 4$$
+  $$\text{EST}_B = 0,\quad \text{EFT}_B = 0 + 6 = 6$$</Step>
+  <Step>Activity C follows A only:
+  $$\text{EST}_C = \text{EFT}_A = 4,\quad \text{EFT}_C = 4 + 3 = 7$$</Step>
+  <Step>Activity D follows both A and B — it must wait for the later finish:
+  $$\text{EST}_D = \max(\text{EFT}_A,\ \text{EFT}_B) = \max(4, 6) = 6,\quad \text{EFT}_D = 6 + 5 = 11$$</Step>
+  <Step>Activity E follows both C and D:
+  $$\text{EST}_E = \max(\text{EFT}_C,\ \text{EFT}_D) = \max(7, 11) = 11,\quad \text{EFT}_E = 11 + 2 = 13$$</Step>
+  <Step>The minimum project completion time is the EFT of the last activity: **13 days**.</Step>
+</WorkedExample>
+
+---
+
+## Example 2: Backward scan — finding latest start times
+
+Using the same project from Example 1 (minimum duration = 13 days), perform a backward scan to find the LST of each activity.
+
+<WorkedExample>
+  <Step>**Rule:** For the last activity, LST = project duration − duration of that activity. For all others, LST = minimum of the LSTs of all immediate successors, minus this activity's duration.</Step>
+  <Step>Activity E is last:
+  $$\text{LST}_E = 13 - 2 = 11$$</Step>
+  <Step>Activity D — only E follows D:
+  $$\text{LST}_D = \text{LST}_E - \text{dur}_D = 11 - 5 = 6$$</Step>
+  <Step>Activity C — only E follows C:
+  $$\text{LST}_C = \text{LST}_E - \text{dur}_C = 11 - 3 = 8$$</Step>
+  <Step>Activity B — only D follows B:
+  $$\text{LST}_B = \text{LST}_D - \text{dur}_B = 6 - 6 = 0$$</Step>
+  <Step>Activity A — both C and D follow A. Take the minimum:
+  $$\text{LST}_A = \min(\text{LST}_C, \text{LST}_D) - \text{dur}_A = \min(8, 6) - 4 = 6 - 4 = 2$$</Step>
+</WorkedExample>
+
+---
+
+## Example 3: Calculating float
+
+Using the ESTs from Example 1 and LSTs from Example 2, calculate the float of each activity and identify which have zero float.
+
+Float = LST − EST. An activity with float = 0 is on the critical path.
+
+<WorkedExample>
+  <Step>Tabulate EST and LST for each activity:
+
+  | Activity | EST | LST | Float = LST − EST |
+  |---|---|---|---|
+  | A | 0 | 2 | 2 |
+  | B | 0 | 0 | 0 |
+  | C | 4 | 8 | 4 |
+  | D | 6 | 6 | 0 |
+  | E | 11 | 11 | 0 |</Step>
+  <Step>Activities B, D and E all have float = 0. These are on the **critical path**.</Step>
+  <Step>Activity A has 2 days of float — it can start up to 2 days late without delaying the project. Activity C has 4 days of float.</Step>
+  <Step>The critical path is **B → D → E**, with total duration $6 + 5 + 2 = 13$ days, confirming the minimum project time.</Step>
+</WorkedExample>

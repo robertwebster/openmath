@@ -1,0 +1,50 @@
+[
+  {
+    "id": "bda-sc-worked-1",
+    "title": "Describing a scatterplot",
+    "difficulty": 1,
+    "problem": "A researcher records the number of hours students spend exercising per week ($x$) and their resting heart rate in beats per minute ($y$). The scatterplot shows points sloping downward from left to right, clustered fairly closely around the trend. Describe the association in terms of direction, form and strength.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the direction of the association.",
+        "working": "As exercise hours ($x$) increase, resting heart rate ($y$) decreases. The points slope **downward** from left to right.\n\n**Direction: negative**"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the form of the association.",
+        "working": "The points follow a roughly straight-line trend (no obvious curve).\n\n**Form: linear**"
+      },
+      {
+        "step": 3,
+        "instruction": "Identify the strength of the association.",
+        "working": "The points are clustered fairly closely around the trend line — there is not a lot of scatter.\n\n**Strength: moderate to strong** (the value of $r$ would be between approximately $-0.7$ and $-0.9$)"
+      }
+    ],
+    "answer": "The association is a **moderate to strong, negative, linear** association: as weekly exercise hours increase, resting heart rate tends to decrease."
+  },
+  {
+    "id": "bda-sc-worked-2",
+    "title": "Interpreting Pearson's r and identifying correlation vs causation",
+    "difficulty": 2,
+    "problem": "A study of 50 primary school children finds $r = 0.91$ between shoe size ($x$) and reading level ($y$). A teacher concludes that having larger feet causes children to read better and recommends buying children bigger shoes.\n\n(a) Describe the association indicated by $r = 0.91$.\n(b) Is the teacher's conclusion valid? Explain.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Describe the association from the value of $r$.",
+        "working": "$r = 0.91$ is close to $1$, indicating a **strong positive linear** association: children with larger shoe sizes tend to have higher reading levels."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify whether the teacher's causal conclusion is valid.",
+        "working": "The teacher's conclusion is **not valid**. A high value of $r$ shows correlation but does **not** prove causation.\n\nBoth shoe size and reading ability increase as children grow older. **Age** is the confounding variable driving both outcomes."
+      },
+      {
+        "step": 3,
+        "instruction": "State the correct explanation.",
+        "working": "Older children have bigger feet (because they are taller) and also read at a higher level (because they have had more schooling and practice). The correlation between shoe size and reading level exists because both are caused by the child's age — not because bigger shoes make children read better."
+      }
+    ],
+    "answer": "(a) $r = 0.91$ indicates a strong positive linear association between shoe size and reading level.\n(b) The conclusion is not valid. Correlation does not imply causation. Age is a confounding variable that causes both shoe size and reading ability to increase together."
+  }
+]

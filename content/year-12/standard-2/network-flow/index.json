@@ -1,0 +1,14 @@
+{
+  "id": "network-flow",
+  "title": "Network flow",
+  "year": 12,
+  "stage": "6",
+  "course": "standard-2",
+  "strand": "Networks",
+  "syllabusOutcome": "MS-N2",
+  "description": "Analyse directed networks with capacities; apply the maximum-flow minimum-cut theorem to find the maximum flow through a network.",
+  "subtopics": [
+    "network-concepts",
+    "flow-problems"
+  ]
+}

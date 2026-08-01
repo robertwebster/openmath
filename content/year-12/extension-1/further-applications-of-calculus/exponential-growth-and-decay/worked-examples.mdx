@@ -1,0 +1,77 @@
+# Exponential growth and decay — Worked examples
+
+When a quantity grows or shrinks at a rate proportional to its current size, it obeys the differential equation $\dfrac{dN}{dt} = kN$. The solution is an **exponential function**.
+
+| Sign of $k$ | Behaviour |
+|---|---|
+| $k > 0$ | Exponential **growth** |
+| $k < 0$ | Exponential **decay** |
+
+The general solution is $N = N_0 e^{kt}$, where $N_0 = N(0)$ is the initial value.
+
+---
+
+## Example 1 — Basic growth: finding a future value
+
+**A bacterial culture starts with 300 cells and grows at a rate satisfying $\dfrac{dN}{dt} = 0.25N$. How many cells are present after 8 hours?**
+
+**Step 1 — Write the solution.**
+
+$$N(t) = N_0\,e^{kt} = 300\,e^{0.25t}$$
+
+**Step 2 — Substitute $t = 8$.**
+
+$$N(8) = 300\,e^{0.25 \times 8} = 300\,e^{2} \approx 300 \times 7.389 \approx 2217 \text{ cells}$$
+
+> **Rule of thumb:** A growth rate of $k$ means the quantity multiplies by $e^k \approx 1 + k$ per unit time (for small $k$). Here $k = 0.25$ means roughly 25% growth per hour in the short run.
+
+---
+
+## Example 2 — Finding $k$ from two data points, then predicting
+
+**A radioactive substance has 600 g initially and 400 g after 5 years. Find the mass after 12 years, to the nearest gram.**
+
+**Step 1 — Set up the model.**
+
+$$M(t) = 600\,e^{kt}$$
+
+**Step 2 — Use $M(5) = 400$ to find $k$.**
+
+$$600\,e^{5k} = 400 \implies e^{5k} = \frac{2}{3} \implies 5k = \ln\!\left(\frac{2}{3}\right)$$
+$$k = \frac{\ln(2/3)}{5} \approx \frac{-0.4055}{5} \approx -0.0811$$
+
+**Step 3 — Evaluate $M(12)$.**
+
+$$M(12) = 600\,e^{12k} = 600 \times \left(\frac{2}{3}\right)^{12/5}$$
+
+$$\left(\frac{2}{3}\right)^{2.4} \approx 0.4214$$
+
+$$M(12) \approx 600 \times 0.4214 \approx 253 \text{ g}$$
+
+> **Tip:** Express $e^{12k}$ as $\left(\frac{2}{3}\right)^{12/5}$ using $e^{5k} = \frac{2}{3}$ — this avoids rounding $k$ mid-calculation and gives a more accurate result.
+
+---
+
+## Example 3 — Newton's law of cooling
+
+**A cup of coffee at 95°C is placed in a 20°C room. After 5 minutes its temperature is 65°C. Find the temperature after 15 minutes.**
+
+Newton's law of cooling: $\dfrac{dT}{dt} = -k(T - T_s)$, where $T_s$ is the surrounding temperature.
+
+**Step 1 — Write the solution.**
+
+The solution is $T(t) = T_s + (T_0 - T_s)\,e^{-kt}$, here:
+
+$$T(t) = 20 + 75\,e^{-kt}$$
+
+**Step 2 — Find $e^{-5k}$ from $T(5) = 65$.**
+
+$$20 + 75\,e^{-5k} = 65 \implies 75\,e^{-5k} = 45 \implies e^{-5k} = \frac{45}{75} = 0.6$$
+
+**Step 3 — Evaluate $T(15)$ without explicitly finding $k$.**
+
+$$T(15) = 20 + 75\,e^{-15k} = 20 + 75\,(e^{-5k})^3 = 20 + 75 \times (0.6)^3$$
+
+$$= 20 + 75 \times 0.216 = 20 + 16.2 = 36.2°\text{C}$$
+
+> **Key shortcut:** Raise $e^{-5k}$ to the appropriate power rather than finding $k$ and rounding. Here $(0.6)^3$ gives the exact factor for $t = 15$.

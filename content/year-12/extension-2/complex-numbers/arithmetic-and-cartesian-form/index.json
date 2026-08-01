@@ -1,0 +1,11 @@
+{
+  "id": "arithmetic-and-cartesian-form",
+  "title": "Arithmetic and Cartesian form",
+  "topic": "complex-numbers",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Complex numbers",
+  "syllabusOutcome": "MEX-12-02",
+  "description": "Define $i$ where $i^2 = -1$; add, subtract, multiply and divide complex numbers in the form $a+bi$; find the conjugate and modulus; plot complex numbers on the Argand diagram."
+}

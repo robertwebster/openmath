@@ -1,0 +1,11 @@
+{
+  "id": "related-rates-and-volumes",
+  "title": "Related rates and volumes of revolution",
+  "topic": "further-applications-of-calculus",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Calculus",
+  "syllabusOutcome": "ME-12-05",
+  "description": "Apply the chain rule to problems involving related rates of change; calculate volumes of solids of revolution by integrating $\\pi y^2$ (rotation about the $x$-axis) or $\\pi x^2$ (rotation about the $y$-axis)."
+}

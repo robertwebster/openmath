@@ -1,0 +1,16 @@
+{
+  "id": "mechanics",
+  "title": "Mechanics",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Mechanics",
+  "syllabusOutcome": "MEX-12-04",
+  "description": "Apply calculus to motion problems: use all forms of acceleration ($\\frac{dv}{dt}$, $v\\frac{dv}{dx}$, $\\frac{d}{dx}(\\frac{1}{2}v^2)$); analyse simple harmonic motion including derivation of displacement and velocity; solve motion problems with resistance proportional to velocity or $v^2$, including terminal velocity and projectile motion with air resistance.",
+  "customRenderer": null,
+  "subtopics": [
+    "velocity-acceleration-and-calculus",
+    "simple-harmonic-motion",
+    "resisted-motion-and-projectiles"
+  ]
+}

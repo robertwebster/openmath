@@ -1,0 +1,11 @@
+{
+  "id": "projectile-motion",
+  "title": "Projectile motion",
+  "topic": "introduction-to-vectors",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Vectors",
+  "syllabusOutcome": "ME-12-03",
+  "description": "Model projectile motion using horizontal and vertical vector components; derive and apply equations for time of flight, range, and maximum height; interpret results in real-world contexts."
+}

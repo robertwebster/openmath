@@ -1,0 +1,15 @@
+{
+  "id": "the-binomial-distribution",
+  "title": "The binomial distribution",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Statistical Analysis",
+  "syllabusOutcome": "ME-12-06",
+  "description": "Model repeated independent trials using the binomial distribution; calculate and interpret probabilities; find expected value and variance; use the normal approximation for large samples and understand the sampling distribution of the mean.",
+  "customRenderer": null,
+  "subtopics": [
+    "the-binomial-distribution",
+    "sampling-distribution-of-the-mean"
+  ]
+}

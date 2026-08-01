@@ -1,0 +1,79 @@
+[
+  {
+    "id": "trig-sr-worked-1",
+    "title": "Finding an unknown side using the sine rule",
+    "difficulty": 1,
+    "problem": "In triangle $ABC$, angle $A = 42°$, angle $B = 65°$, and side $a = 9$ cm. Find side $b$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write down the sine rule and identify the known and unknown quantities.",
+        "working": "Sine rule: $\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B}$\n\nKnown: $a = 9$ cm, $A = 42°$, $B = 65°$. Find: $b$."
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values.",
+        "working": "$$\\frac{9}{\\sin 42°} = \\frac{b}{\\sin 65°}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $b$.",
+        "working": "$$b = \\frac{9 \\times \\sin 65°}{\\sin 42°} = \\frac{9 \\times 0.9063}{0.6691} = \\frac{8.157}{0.6691} \\approx 12.19 \\text{ cm}$$"
+      }
+    ],
+    "answer": "Side $b \\approx 12.19$ cm."
+  },
+  {
+    "id": "trig-sr-worked-2",
+    "title": "Finding an unknown angle using the sine rule",
+    "difficulty": 2,
+    "problem": "In triangle $PQR$, $p = 7$ cm, $q = 10$ cm, and angle $P = 35°$. Find angle $Q$ (assuming it is acute).",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the sine rule rearranged to find $\\sin Q$.",
+        "working": "$$\\frac{\\sin Q}{q} = \\frac{\\sin P}{p} \\implies \\sin Q = \\frac{q \\sin P}{p}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values.",
+        "working": "$$\\sin Q = \\frac{10 \\times \\sin 35°}{7} = \\frac{10 \\times 0.5736}{7} = \\frac{5.736}{7} = 0.8194$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find angle $Q$ using the inverse sine function.",
+        "working": "$$Q = \\sin^{-1}(0.8194) \\approx 55.0°$$\n\nSince the question states $Q$ is acute, we take this first-quadrant value."
+      }
+    ],
+    "answer": "Angle $Q \\approx 55.0°$."
+  },
+  {
+    "id": "trig-sr-worked-3",
+    "title": "The ambiguous case — two possible triangles",
+    "difficulty": 3,
+    "problem": "In triangle $ABC$, $a = 9$ cm, $b = 12$ cm, and angle $A = 42°$. Show that two triangles are possible and find both possible values of angle $B$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Use the sine rule to find $\\sin B$.",
+        "working": "$$\\sin B = \\frac{b \\sin A}{a} = \\frac{12 \\times \\sin 42°}{9} = \\frac{12 \\times 0.6691}{9} = \\frac{8.029}{9} = 0.8921$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the first possible angle $B_1$.",
+        "working": "$$B_1 = \\sin^{-1}(0.8921) \\approx 63.2°$$\nCheck: $A + B_1 = 42° + 63.2° = 105.2° < 180°$ ✓\nSo $C_1 = 180° - 105.2° = 74.8°$ — a valid triangle."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the second possible angle $B_2$ (the ambiguous case).",
+        "working": "Since $\\sin(180° - \\theta) = \\sin \\theta$, a second solution exists:\n$$B_2 = 180° - 63.2° = 116.8°$$\nCheck: $A + B_2 = 42° + 116.8° = 158.8° < 180°$ ✓\nSo $C_2 = 180° - 158.8° = 21.2°$ — also a valid triangle."
+      },
+      {
+        "step": 4,
+        "instruction": "State the conclusion.",
+        "working": "Both triangles are geometrically valid. Without additional information (e.g. a diagram or the size of angle $B$), we cannot determine which triangle is the intended one."
+      }
+    ],
+    "answer": "Two triangles are possible:\n- Triangle 1: $B \\approx 63.2°$, $C \\approx 74.8°$\n- Triangle 2: $B \\approx 116.8°$, $C \\approx 21.2°$"
+  }
+]

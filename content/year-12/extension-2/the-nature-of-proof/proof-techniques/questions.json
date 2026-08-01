@@ -1,0 +1,170 @@
+[
+  {
+    "id": "y12-ext2-nop-pt-q01",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 1,
+    "type": "proof",
+    "stem": "Prove by contradiction that $\\sqrt{2}$ is irrational.",
+    "answer": null,
+    "hint": "Assume $\\sqrt{2} = \\frac{p}{q}$ in lowest terms (so $p$ and $q$ share no common factor). Square both sides and derive a contradiction by showing $p$ and $q$ are both even.",
+    "explanation": "**Proof by contradiction:**\n\nAssume $\\sqrt{2}$ is rational. Then $\\sqrt{2} = \\dfrac{p}{q}$ for integers $p$ and $q$ with $q \\neq 0$ and $\\gcd(p, q) = 1$ (the fraction is in lowest terms).\n\nSquare both sides:\n$$2 = \\frac{p^2}{q^2} \\implies p^2 = 2q^2$$\n\nTherefore $p^2$ is even (it equals $2q^2$). Since the square of an odd integer is odd, $p$ must be even. Write $p = 2m$ for some integer $m$.\n\nSubstitute:\n$$(2m)^2 = 2q^2 \\implies 4m^2 = 2q^2 \\implies q^2 = 2m^2$$\n\nTherefore $q^2$ is even, so $q$ is even.\n\nBut now both $p$ and $q$ are even, contradicting $\\gcd(p, q) = 1$.\n\n**Conclusion:** The assumption that $\\sqrt{2}$ is rational leads to a contradiction. Therefore $\\sqrt{2}$ is irrational. $\\square$"
+  },
+  {
+    "id": "y12-ext2-nop-pt-q02",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "In a proof by contradiction that $\\sqrt{3}$ is irrational, which is the correct first assumption?",
+    "options": [
+      "Assume $\\sqrt{3}$ is irrational.",
+      "Assume $\\sqrt{3} = \\dfrac{p}{q}$ for integers $p, q$ with $\\gcd(p,q)=1$ and $q \\neq 0$.",
+      "Assume $3$ is not a perfect square.",
+      "Assume $p^2 = 3q^2$ for some integers $p$ and $q$."
+    ],
+    "answer": "b",
+    "hint": "In proof by contradiction, you assume the **opposite** of what you want to prove. What is the opposite of 'irrational'?",
+    "explanation": "To prove $\\sqrt{3}$ is irrational by contradiction, you assume it is **rational**.\n\nA rational number can be written as $\\dfrac{p}{q}$ where $p, q$ are integers, $q \\neq 0$, and — importantly — the fraction is in **lowest terms** (i.e., $\\gcd(p,q) = 1$). This last condition is what delivers the contradiction later, when you show both $p$ and $q$ must be divisible by 3.\n\nOption (a) assumes exactly what you want to prove — that would be circular.\nOption (c) is a true fact but is not the starting assumption of the proof.\nOption (d) is a consequence of option (b), not the starting assumption."
+  },
+  {
+    "id": "y12-ext2-nop-pt-q03",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which of the following correctly describes a proof of **uniqueness** of the additive inverse of a real number $a$?",
+    "options": [
+      "Show that $-a$ exists and that $a + (-a) = 0$.",
+      "Show that if $a + x = 0$ and $a + y = 0$, then $x = y$.",
+      "Show that $a + 0 = a$ for all real $a$.",
+      "Show that there is no real number $b$ such that $a + b \\neq 0$."
+    ],
+    "answer": "b",
+    "hint": "A uniqueness proof shows there is at most one object with the required property. Assume two such objects exist and deduce they must be equal.",
+    "explanation": "**Option (b)** is the correct structure for a uniqueness proof.\n\nThe standard technique: assume two elements $x$ and $y$ both satisfy the defining property, then prove $x = y$.\n\nHere:\n- Suppose $a + x = 0$ and $a + y = 0$.\n- From the first equation: $x = -a + 0 = -a$.\n- From the second: $y = -a + 0 = -a$.\n- Therefore $x = y$.\n\nThis shows the additive inverse, if it exists, is unique.\n\nOption (a) is an **existence** proof, not uniqueness. Option (c) is the definition of the additive identity, unrelated. Option (d) is incorrectly stated."
+  },
+  {
+    "id": "y12-ext2-nop-pt-q04",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 2,
+    "type": "proof",
+    "stem": "Prove by contradiction that $\\sqrt{5}$ is irrational.",
+    "answer": null,
+    "hint": "Assume $\\sqrt{5} = p/q$ in lowest terms and square. Show that $p$ must be divisible by 5, then derive the same for $q$, giving a contradiction.",
+    "explanation": "**Proof by contradiction:**\n\nAssume $\\sqrt{5}$ is rational. Write $\\sqrt{5} = \\dfrac{p}{q}$ with $p, q \\in \\mathbb{Z}$, $q \\neq 0$, $\\gcd(p,q)=1$.\n\nSquare both sides:\n$$5 = \\frac{p^2}{q^2} \\implies p^2 = 5q^2$$\n\nSo $5 \\mid p^2$. Since 5 is prime, $5 \\mid p$ (if a prime divides a square, it divides the base). Write $p = 5m$.\n\nSubstitute:\n$$(5m)^2 = 5q^2 \\implies 25m^2 = 5q^2 \\implies q^2 = 5m^2$$\n\nSo $5 \\mid q^2$, hence $5 \\mid q$.\n\nBut then both $p$ and $q$ are divisible by 5, contradicting $\\gcd(p,q)=1$.\n\n**Conclusion:** $\\sqrt{5}$ is irrational. $\\square$\n\n**Note:** The key step — \"$5 \\mid p^2 \\Rightarrow 5 \\mid p$\" — holds because 5 is prime. For composite numbers this may fail (e.g., $4 \\mid 6^2$ but $4 \\nmid 6$)."
+  },
+  {
+    "id": "y12-ext2-nop-pt-q05",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 2,
+    "type": "proof",
+    "stem": "Prove that the sum of a rational number and an irrational number is irrational.",
+    "answer": null,
+    "hint": "Let the rational be $r$ and the irrational be $x$. Assume the sum $r + x$ is rational and derive a contradiction by isolating $x$.",
+    "explanation": "**Proof by contradiction:**\n\nLet $r$ be rational and $x$ be irrational. Assume, for contradiction, that $r + x$ is rational.\n\nSince $r$ is rational, $-r$ is rational (the negative of a rational is rational).\n\nThe sum of two rationals is rational, so:\n$$(r + x) + (-r) = x$$\n\nis rational.\n\nBut this contradicts the assumption that $x$ is irrational.\n\n**Conclusion:** The sum of a rational and an irrational number is irrational. $\\square$\n\n**Example:** $3 + \\sqrt{2}$ is irrational since $3$ is rational and $\\sqrt{2}$ is irrational."
+  },
+  {
+    "id": "y12-ext2-nop-pt-q06",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 2,
+    "type": "proof",
+    "stem": "Prove by contradiction that $\\log_2 3$ is irrational.",
+    "answer": null,
+    "hint": "Assume $\\log_2 3 = p/q$ for positive integers $p, q$. Rewrite in exponential form and consider what $2^p = 3^q$ implies about the prime factorisation of each side.",
+    "explanation": "**Proof by contradiction:**\n\nAssume $\\log_2 3$ is rational. Then $\\log_2 3 = \\dfrac{p}{q}$ for some positive integers $p$ and $q$.\n\n(Note: $\\log_2 3 > 0$ since $3 > 1$, so we may take $p, q > 0$.)\n\nRewrite in exponential form:\n$$2^{p/q} = 3 \\implies 2^p = 3^q$$\n\nThe left-hand side $2^p$ is a power of 2, so it is **even**.\n\nThe right-hand side $3^q$ is a power of 3, so it is **odd** (since 3 is odd and any power of an odd number is odd).\n\nAn even number cannot equal an odd number — contradiction.\n\n**Conclusion:** $\\log_2 3$ is irrational. $\\square$\n\n**Remark:** The same argument applies more generally: $\\log_a b$ is irrational whenever $a$ and $b$ are positive integers and $b$ is not an integer power of $a$."
+  },
+  {
+    "id": "y12-ext2-nop-pt-q07",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which of the following numbers is rational?",
+    "options": [
+      "$\\sqrt{7}$",
+      "$\\pi$",
+      "$\\dfrac{22}{7}$",
+      "$\\sqrt{2} + \\sqrt{3}$"
+    ],
+    "answer": "c",
+    "hint": "A rational number can be expressed exactly as a fraction $\\frac{p}{q}$ with $p, q$ integers and $q \\neq 0$.",
+    "explanation": "$\\dfrac{22}{7}$ is a fraction of two integers, so it is **rational** (option c).\n\nNote: $\\dfrac{22}{7}$ is a common approximation of $\\pi$ but is not equal to $\\pi$. $\\pi$ itself is irrational (and in fact transcendental).\n\n- $\\sqrt{7}$: irrational (7 is not a perfect square)\n- $\\pi$: irrational and transcendental\n- $\\sqrt{2} + \\sqrt{3}$: irrational (this requires a proof — see the difficulty 3 question in this sub-topic)\n- $\\dfrac{22}{7}$: rational ✓\n\nDecimal expansions: $\\dfrac{22}{7} = 3.142857142857\\ldots$ (repeating) and $\\pi = 3.14159265\\ldots$ (non-repeating, non-terminating)."
+  },
+  {
+    "id": "y12-ext2-nop-pt-q08",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 2,
+    "type": "proof",
+    "stem": "Prove by contradiction: \"If $n^2$ is odd, then $n$ is odd.\"\n\n(This can also be proved by contrapositive — here, use a direct proof by contradiction instead.)",
+    "answer": null,
+    "hint": "Assume $n^2$ is odd but $n$ is even. Write $n = 2k$ and compute $n^2$ to derive a contradiction.",
+    "explanation": "**Proof by contradiction:**\n\nAssume $n^2$ is odd but $n$ is **even**. Write $n = 2k$ for some integer $k$.\n\nThen:\n$$n^2 = (2k)^2 = 4k^2 = 2(2k^2)$$\n\nThis is even (it is $2$ times an integer), which contradicts the assumption that $n^2$ is odd.\n\n**Conclusion:** The assumption that $n$ is even leads to a contradiction. Therefore, if $n^2$ is odd, then $n$ is odd. $\\square$\n\n**Compare with proof by contrapositive:** The contrapositive approach (\"if $n$ is even, show $n^2$ is even\") leads to essentially the same computation. Both are valid; proof by contradiction is sometimes preferred when the structure is more natural."
+  },
+  {
+    "id": "y12-ext2-nop-pt-q09",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 3,
+    "type": "proof",
+    "stem": "Prove that $\\sqrt{2} + \\sqrt{3}$ is irrational.",
+    "answer": null,
+    "hint": "Assume $\\sqrt{2} + \\sqrt{3} = r$ for some rational $r$. Isolate one surd, square both sides, and use the fact that $\\sqrt{6}$ is irrational to derive a contradiction.",
+    "explanation": "**Proof by contradiction:**\n\nAssume $\\sqrt{2} + \\sqrt{3}$ is rational. Call it $r$, so $r = \\sqrt{2} + \\sqrt{3}$ for some $r \\in \\mathbb{Q}$.\n\nIsolate $\\sqrt{3}$:\n$$\\sqrt{3} = r - \\sqrt{2}$$\n\nSquare both sides:\n$$3 = r^2 - 2r\\sqrt{2} + 2$$\n\nRearrange:\n$$1 = r^2 - 2r\\sqrt{2} \\implies 2r\\sqrt{2} = r^2 - 1 \\implies \\sqrt{2} = \\frac{r^2 - 1}{2r}$$\n\n(We need $r \\neq 0$; since $\\sqrt{2} + \\sqrt{3} > 0$, we have $r > 0$.)\n\nThe right-hand side $\\dfrac{r^2-1}{2r}$ is rational (ratio of rationals). But $\\sqrt{2}$ is irrational — contradiction.\n\n**Conclusion:** $\\sqrt{2} + \\sqrt{3}$ is irrational. $\\square$"
+  },
+  {
+    "id": "y12-ext2-nop-pt-q10",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 3,
+    "type": "proof",
+    "stem": "Prove that the product of a non-zero rational number and an irrational number is irrational.",
+    "answer": null,
+    "hint": "Let the rational be $r \\neq 0$ and the irrational be $x$. Assume $rx$ is rational and isolate $x$.",
+    "explanation": "**Proof by contradiction:**\n\nLet $r \\in \\mathbb{Q}$ with $r \\neq 0$, and let $x$ be irrational. Assume, for contradiction, that $rx$ is rational.\n\nSince $r \\neq 0$ and $r$ is rational, $\\dfrac{1}{r}$ is also rational (the reciprocal of a non-zero rational is rational).\n\nThe product of two rationals is rational, so:\n$$\\frac{1}{r} \\cdot (rx) = x$$\n\nis rational.\n\nThis contradicts the assumption that $x$ is irrational.\n\n**Conclusion:** The product of a non-zero rational and an irrational number is irrational. $\\square$\n\n**Example:** $3\\sqrt{2}$ is irrational since $3$ is a non-zero rational and $\\sqrt{2}$ is irrational.\n\n**Note:** The condition $r \\neq 0$ is essential: $0 \\times x = 0$, which is rational."
+  },
+  {
+    "id": "y12-ext2-nop-pt-q11",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 3,
+    "type": "proof",
+    "stem": "Prove that there is no rational number $x$ such that $x^2 = 12$.",
+    "answer": null,
+    "hint": "Assume $x = p/q$ in lowest terms and square. Show $p$ must be divisible by 2, then by 4, then derive a contradiction with $q$.",
+    "explanation": "**Proof by contradiction:**\n\nAssume there exists a rational $x$ with $x^2 = 12$. Write $x = \\dfrac{p}{q}$ with $p, q \\in \\mathbb{Z}$, $q \\neq 0$, $\\gcd(p,q)=1$.\n\nThen:\n$$\\frac{p^2}{q^2} = 12 \\implies p^2 = 12q^2 = 4 \\cdot 3q^2$$\n\nSo $4 \\mid p^2$, which means $2 \\mid p$ (since if $p = 2s+1$ is odd, $p^2 = 4s^2+4s+1$ is odd). Write $p = 2m$.\n\n$$(2m)^2 = 12q^2 \\implies 4m^2 = 12q^2 \\implies m^2 = 3q^2$$\n\nSo $3 \\mid m^2$, hence $3 \\mid m$ (since 3 is prime). Write $m = 3t$.\n\nThen $p = 2m = 6t$, so $6 \\mid p$. Also:\n$$m^2 = 3q^2 \\implies 9t^2 = 3q^2 \\implies q^2 = 3t^2$$\n\nSo $3 \\mid q^2$, hence $3 \\mid q$.\n\nBut then both $p$ and $q$ are divisible by 3, contradicting $\\gcd(p,q) = 1$.\n\n**Conclusion:** There is no rational $x$ with $x^2 = 12$, i.e., $\\sqrt{12}$ is irrational. $\\square$"
+  },
+  {
+    "id": "y12-ext2-nop-pt-q12",
+    "subtopic": "proof-techniques",
+    "topic": "the-nature-of-proof",
+    "year": 12,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Proof by **construction** (direct existence proof) means:",
+    "options": [
+      "Assuming the desired object does not exist, then deriving a contradiction.",
+      "Proving that the object's properties follow logically from axioms.",
+      "Directly exhibiting or building an example that satisfies the required condition.",
+      "Using mathematical induction to show existence for all natural numbers."
+    ],
+    "answer": "c",
+    "hint": "Think about what 'construction' means literally — you are building or specifying the object.",
+    "explanation": "**Option (c)** is correct.\n\nA proof by construction (also called a direct existence proof or constructive existence proof) proves $\\exists x\\, P(x)$ by explicitly producing an $x$ that satisfies $P(x)$.\n\n**Example:** Prove there exists an irrational number $x$ such that $x^2 = 2$.\n\n*Construction:* Let $x = \\sqrt{2}$. Then $x^2 = 2$, and $\\sqrt{2}$ is irrational (proved separately by contradiction). $\\square$\n\n**Compare with:**\n- Option (a): proof by contradiction (non-constructive — it shows the object must exist without naming it).\n- Option (d): mathematical induction (proves statements about all positive integers, not existence in general).\n\nConstruction is often the cleaner option when an explicit example is available. Contradiction is used when no explicit example is apparent."
+  }
+]

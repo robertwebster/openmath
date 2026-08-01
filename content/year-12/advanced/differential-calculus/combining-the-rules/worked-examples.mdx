@@ -1,0 +1,47 @@
+# Combining the differentiation rules
+
+## Example 1 — Product rule
+
+**Problem:** Find $\dfrac{d}{dx}\left(x^2\ln x\right)$.
+
+**The product rule:** if $y = u\,v$, then $\dfrac{dy}{dx} = u'v + uv'$.
+
+Let $u = x^2$ and $v = \ln x$:
+
+$$u' = 2x \qquad v' = \frac{1}{x}$$
+
+$$\frac{dy}{dx} = 2x \cdot \ln x + x^2 \cdot \frac{1}{x} = 2x\ln x + x$$
+
+This can be written as $x(2\ln x + 1)$.
+
+---
+
+## Example 2 — Quotient rule
+
+**Problem:** Find $\dfrac{d}{dx}\left(\dfrac{x}{\cos x}\right)$.
+
+**The quotient rule:** if $y = \dfrac{u}{v}$, then $\dfrac{dy}{dx} = \dfrac{u'v - uv'}{v^2}$.
+
+Let $u = x$ and $v = \cos x$:
+
+$$u' = 1 \qquad v' = -\sin x$$
+
+$$\frac{dy}{dx} = \frac{1 \cdot \cos x - x \cdot (-\sin x)}{\cos^2 x} = \frac{\cos x + x\sin x}{\cos^2 x}$$
+
+---
+
+## Example 3 — Chain rule inside a product
+
+**Problem:** Find $\dfrac{d}{dx}\left(e^{2x}\sin x\right)$.
+
+This requires the product rule, but the first factor also needs the chain rule.
+
+Let $u = e^{2x}$ and $v = \sin x$:
+
+$$u' = 2e^{2x} \qquad v' = \cos x$$
+
+Apply the product rule:
+
+$$\frac{d}{dx}(e^{2x}\sin x) = 2e^{2x}\sin x + e^{2x}\cos x = e^{2x}(2\sin x + \cos x)$$
+
+Factoring out $e^{2x}$ gives a cleaner form.

@@ -1,0 +1,17 @@
+{
+  "id": "complex-numbers",
+  "title": "Complex numbers",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Complex numbers",
+  "syllabusOutcome": "MEX-12-02",
+  "description": "Extend the number system to complex numbers: arithmetic and Cartesian form, polar and exponential form, De Moivre's theorem, roots of unity, and loci in the Argand plane.",
+  "customRenderer": null,
+  "subtopics": [
+    "arithmetic-and-cartesian-form",
+    "polar-and-exponential-form",
+    "roots-and-identities",
+    "curves-and-regions"
+  ]
+}

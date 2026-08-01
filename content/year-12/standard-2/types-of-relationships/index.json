@@ -1,0 +1,14 @@
+{
+  "id": "types-of-relationships",
+  "title": "Types of relationships",
+  "year": 12,
+  "stage": "6",
+  "course": "standard-2",
+  "strand": "Algebra",
+  "syllabusOutcome": "MS-A4",
+  "description": "Construct and interpret graphs of practical non-linear relationships; solve simultaneous linear equations graphically and algebraically; model and interpret break-even points and real-world applications.",
+  "subtopics": [
+    "graphs-of-practical-situations",
+    "simultaneous-linear-equations"
+  ]
+}

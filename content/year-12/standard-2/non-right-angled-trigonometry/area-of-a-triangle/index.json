@@ -1,0 +1,9 @@
+{
+  "id": "area-of-a-triangle",
+  "title": "Area of a triangle",
+  "topic": "non-right-angled-trigonometry",
+  "year": 12,
+  "strand": "Measurement",
+  "syllabusOutcome": "MS-M6",
+  "description": "Calculate the area of any triangle using $A = \\tfrac{1}{2}ab\\sin C$; choose the appropriate formula for a given configuration, including using the cosine rule to find an unknown angle before applying the area formula."
+}

@@ -1,0 +1,78 @@
+# Resisted Motion and Projectiles — Worked Examples
+
+## Example 1: Horizontal motion with resistance proportional to velocity
+
+**Problem:** A particle of mass $3$ kg moves horizontally. The only horizontal force is air resistance $R = 6v$ N (opposing motion). Given $v = 15$ m/s at $t = 0$, find (a) $v$ as a function of $t$, and (b) the distance travelled until the particle's speed halves.
+
+**Solution:**
+
+**(a) Velocity as a function of time**
+
+Equation of motion:
+$$m\dot{v} = -6v \implies 3\dot{v} = -6v \implies \dot{v} = -2v$$
+
+Separate variables:
+$$\frac{dv}{v} = -2\,dt \implies \ln v = -2t + C$$
+
+Apply $v = 15$ at $t = 0$: $C = \ln 15$.
+
+$$v = 15e^{-2t} \text{ m/s}$$
+
+**(b) Distance until $v = 7.5$ m/s**
+
+Use $a = v\dfrac{dv}{dx}$: the equation of motion becomes $v\dfrac{dv}{dx} = -2v$, so $\dfrac{dv}{dx} = -2$.
+
+Integrate: $v = 15 - 2x$. Set $v = 7.5$:
+$$7.5 = 15 - 2x \implies x = 3.75 \text{ m}$$
+
+---
+
+## Example 2: Falling body with resistance, finding terminal velocity and motion
+
+**Problem:** A particle of mass $1$ kg falls from rest. Air resistance is $R = 0.2v$ N (taking downward as positive, $g = 10$ m/s²). Find the terminal velocity and show that $v = 50(1-e^{-0.2t})$.
+
+**Solution:**
+
+**Terminal velocity** (set $\dot{v} = 0$):
+$$10 - 0.2v_T = 0 \implies v_T = 50 \text{ m/s}$$
+
+**Equation of motion:**
+$$\dot{v} = 10 - 0.2v$$
+
+Separate variables:
+$$\frac{dv}{10-0.2v} = dt$$
+$$-5\ln|10-0.2v| = t + C$$
+
+At $t=0$, $v=0$: $C = -5\ln 10$.
+
+$$5\ln\frac{10}{10-0.2v} = t \implies \frac{10}{10-0.2v} = e^{t/5}$$
+
+Solving for $v$:
+$$10 - 0.2v = 10e^{-t/5} \implies v = 50(1-e^{-t/5}) = 50(1-e^{-0.2t}) \qquad \checkmark$$
+
+---
+
+## Example 3: Resistance proportional to $v^2$ — using the $v$–$x$ form
+
+**Problem:** A particle of mass $2$ kg falls from rest with resistance $R = 0.08v^2$ N. Using $g = 10$ m/s², find the speed after falling $20$ m.
+
+**Solution:**
+
+Equation of motion (use $a = v\dfrac{dv}{dx}$, downward positive):
+$$2v\,\frac{dv}{dx} = 2(10) - 0.08v^2 = 20 - 0.08v^2$$
+$$v\,\frac{dv}{dx} = 10 - 0.04v^2 = 0.04(250 - v^2)$$
+
+Separate variables:
+$$\frac{v\,dv}{250-v^2} = 0.04\,dx$$
+
+Integrate (noting $\int\dfrac{v\,dv}{250-v^2} = -\dfrac{1}{2}\ln|250-v^2|$):
+$$-\frac{1}{2}\ln(250-v^2) = 0.04x + C$$
+
+At $x=0$, $v=0$: $C = -\dfrac{1}{2}\ln 250$.
+
+$$\ln\frac{250}{250-v^2} = 0.08x$$
+
+At $x = 20$: $\dfrac{250}{250-v^2} = e^{1.6}$
+
+$$250 - v^2 = 250e^{-1.6} \implies v^2 = 250(1-e^{-1.6}) \approx 250 \times 0.7981 \approx 199.5$$
+$$v \approx 14.1 \text{ m/s}$$

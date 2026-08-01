@@ -1,0 +1,11 @@
+{
+  "id": "applications-of-series",
+  "title": "Applications of series",
+  "topic": "sequences-and-series",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Algebra / Functions",
+  "syllabusOutcome": "MAV-12-03",
+  "description": "Model growth, decay and financial problems using recurrence relations and geometric series; find limiting values of recurrence relations; apply compound interest and depreciation as geometric sequences."
+}

@@ -1,0 +1,69 @@
+# Vector concepts — Worked examples
+
+A **vector** is a quantity with both magnitude and direction. Vectors are written in component form as $\mathbf{v} = a\mathbf{i} + b\mathbf{j}$ (or $(a, b)$), where $\mathbf{i}$ and $\mathbf{j}$ are unit vectors along the positive $x$- and $y$-axes.
+
+| Operation | Formula |
+|---|---|
+| Magnitude | $|\mathbf{v}| = \sqrt{a^2 + b^2}$ |
+| Unit vector | $\hat{\mathbf{v}} = \dfrac{\mathbf{v}}{|\mathbf{v}|}$ |
+| Addition | $(a, b) + (c, d) = (a+c, b+d)$ |
+| Scalar multiple | $\lambda(a, b) = (\lambda a, \lambda b)$ |
+| Direction angle | $\theta = \arctan\!\left(\dfrac{b}{a}\right)$ — check quadrant |
+
+---
+
+## Example 1 — Magnitude, unit vector, direction angle
+
+**For $\mathbf{v} = (-4, 3)$, find (a) the magnitude, (b) the unit vector, and (c) the angle $\mathbf{v}$ makes with the positive $x$-axis.**
+
+**(a) Magnitude:**
+
+$$|\mathbf{v}| = \sqrt{(-4)^2 + 3^2} = \sqrt{16 + 9} = \sqrt{25} = 5$$
+
+**(b) Unit vector:**
+
+$$\hat{\mathbf{v}} = \frac{1}{5}(-4, 3) = \left(-\frac{4}{5},\; \frac{3}{5}\right) = -0.8\mathbf{i} + 0.6\mathbf{j}$$
+
+**(c) Direction angle:**
+
+The vector is in the **second quadrant** ($x < 0$, $y > 0$). The reference angle is:
+$$\alpha = \arctan\!\left(\frac{3}{4}\right) \approx 36.87°$$
+
+$$\theta = 180° - 36.87° \approx 143.13°$$
+
+> **Quadrant check:** always check the signs of $a$ and $b$ before using $\arctan$.
+
+---
+
+## Example 2 — Vector arithmetic
+
+**Given $\mathbf{a} = 3\mathbf{i} - \mathbf{j}$ and $\mathbf{b} = -\mathbf{i} + 4\mathbf{j}$, find $2\mathbf{a} - 3\mathbf{b}$ and its magnitude.**
+
+**Step 1 — Compute scalar multiples.**
+
+$$2\mathbf{a} = 2(3, -1) = (6, -2)$$
+$$3\mathbf{b} = 3(-1, 4) = (-3, 12)$$
+
+**Step 2 — Subtract.**
+
+$$2\mathbf{a} - 3\mathbf{b} = (6 - (-3),\; -2 - 12) = (9, -14)$$
+
+**Step 3 — Find the magnitude.**
+
+$$|2\mathbf{a} - 3\mathbf{b}| = \sqrt{9^2 + (-14)^2} = \sqrt{81 + 196} = \sqrt{277} \approx 16.64$$
+
+---
+
+## Example 3 — Magnitude–direction form to components
+
+**A boat is travelling at 12 km/h on a bearing of 060° (measured clockwise from north). Express the velocity as a component vector in the form $a\mathbf{i} + b\mathbf{j}$, where $\mathbf{i}$ is east and $\mathbf{j}$ is north.**
+
+Bearing 060° means 60° clockwise from north, which is 30° from the east axis (positive $x$-axis). But measured from the north (positive $y$-axis):
+
+$$\text{East component (x):} \quad 12\sin 60° = 12 \times \frac{\sqrt{3}}{2} = 6\sqrt{3} \approx 10.39 \text{ km/h}$$
+
+$$\text{North component (y):} \quad 12\cos 60° = 12 \times \frac{1}{2} = 6 \text{ km/h}$$
+
+$$\mathbf{v} = 6\sqrt{3}\,\mathbf{i} + 6\mathbf{j} \approx 10.39\mathbf{i} + 6\mathbf{j} \text{ km/h}$$
+
+> **Bearing vs angle:** A bearing of $B°$ (clockwise from north) gives east-component $|\mathbf{v}|\sin B°$ and north-component $|\mathbf{v}|\cos B°$. This is the opposite of standard angle conventions.

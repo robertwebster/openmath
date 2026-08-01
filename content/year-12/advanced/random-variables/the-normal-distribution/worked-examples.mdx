@@ -1,0 +1,77 @@
+# The normal distribution
+
+## Example 1 — Standardising and interpreting a z-score
+
+**Problem:** $X \sim N(60, 25)$, so $\mu = 60$ and $\sigma = 5$.
+
+(a) Find the $z$-score for $x = 72.5$.  
+(b) Interpret what this z-score means.
+
+**Part (a) — Calculate the z-score.**
+
+$$z = \frac{x - \mu}{\sigma} = \frac{72.5 - 60}{5} = \frac{12.5}{5} = 2.5$$
+
+**Part (b) — Interpret the z-score.**
+
+A z-score of 2.5 means that $x = 72.5$ is 2.5 standard deviations above the mean.
+
+You can also reverse the process: if someone tells you $z = -1.4$, the corresponding raw value is:
+
+$$x = \mu + z\sigma = 60 + (-1.4)(5) = 60 - 7 = 53$$
+
+---
+
+## Example 2 — Applying the empirical rule (combining regions)
+
+**Problem:** $X \sim N(100, 64)$, so $\mu = 100$ and $\sigma = 8$.
+
+Using the empirical rule, find $P(84 \le X \le 116)$.
+
+**Step 1 — Identify how many standard deviations each endpoint is from the mean.**
+
+$$84 = 100 - 16 = \mu - 2\sigma \qquad 116 = 100 + 16 = \mu + 2\sigma$$
+
+**Step 2 — Apply the empirical rule.**
+
+The empirical rule states that in any normal distribution:
+
+$$P(\mu - \sigma \le X \le \mu + \sigma) \approx 0.68$$
+$$P(\mu - 2\sigma \le X \le \mu + 2\sigma) \approx 0.95$$
+$$P(\mu - 3\sigma \le X \le \mu + 3\sigma) \approx 0.997$$
+
+So:
+
+$$P(84 \le X \le 116) = P(\mu - 2\sigma \le X \le \mu + 2\sigma) \approx 0.95$$
+
+**What about asymmetric intervals?** Suppose you need $P(84 \le X \le 108)$, where $108 = \mu + \sigma$.
+
+Split at the mean:
+
+$$P(84 \le X \le 100) = \frac{0.95}{2} = 0.475$$
+$$P(100 \le X \le 108) = \frac{0.68}{2} = 0.34$$
+$$P(84 \le X \le 108) = 0.475 + 0.34 = 0.815$$
+
+---
+
+## Example 3 — Comparing values across two distributions
+
+**Problem:** Alice sat two exams:
+
+| Exam    | Her score | Class mean $\mu$ | Class SD $\sigma$ |
+|---------|-----------|------------------|-------------------|
+| English | 74        | 65               | 12                |
+| History | 88        | 80               | 6                 |
+
+In which exam did she perform better relative to her class?
+
+**Calculate both z-scores.**
+
+$$z_{\text{English}} = \frac{74 - 65}{12} = \frac{9}{12} = 0.75$$
+
+$$z_{\text{History}} = \frac{88 - 80}{6} = \frac{8}{6} = 1.\overline{3} \approx 1.33$$
+
+**Interpret.**
+
+Alice's History z-score ($\approx 1.33$) is higher than her English z-score ($0.75$), so she performed better *relative to her class* in History, even though her raw score in English is closer to the mean in number.
+
+The z-score strips away the effect of different means and spreads, making scores from different distributions comparable.

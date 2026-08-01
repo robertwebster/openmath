@@ -1,0 +1,159 @@
+[
+  {
+    "id": "y12-adv-rates-q01",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A particle moves along a line so that its displacement at time $t$ seconds is $x(t) = t^2 - 4t + 3$ metres. What is the velocity at $t = 1$?",
+    "options": [
+      "$-2$ m/s",
+      "$0$ m/s",
+      "$2$ m/s",
+      "$4$ m/s"
+    ],
+    "answer": "$-2$ m/s",
+    "hint": "Velocity $v = x'(t)$. Differentiate $x(t)$ and substitute $t = 1$.",
+    "explanation": "$v(t) = x'(t) = 2t - 4$\n\n$v(1) = 2(1) - 4 = -2$ m/s\n\nThe negative sign indicates the particle is moving in the negative direction at $t = 1$."
+  },
+  {
+    "id": "y12-adv-rates-q02",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A particle has displacement $x(t) = t^2 - 4t + 3$ metres at time $t$ seconds. At what time (in seconds) is the particle momentarily at rest?",
+    "answer": "2",
+    "hint": "A particle is at rest when $v(t) = x'(t) = 0$.",
+    "explanation": "$v(t) = 2t - 4$\n\nSetting $v(t) = 0$: $2t - 4 = 0 \\Rightarrow t = 2$ seconds.\n\nThe particle is momentarily at rest at $t = 2$ s."
+  },
+  {
+    "id": "y12-adv-rates-q03",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A particle has velocity $v(t) = 3t^2 - 12$ m/s. Find the acceleration at $t = 2$ seconds, in m/s².",
+    "answer": "12",
+    "hint": "Acceleration $a = v'(t)$. Differentiate $v(t)$ and substitute $t = 2$.",
+    "explanation": "$a(t) = v'(t) = 6t$\n\n$a(2) = 6(2) = 12$ m/s²"
+  },
+  {
+    "id": "y12-adv-rates-q04",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A particle moves so that its velocity at time $t$ is $v(t) = 2t - 6$ m/s. When is the particle moving in the positive direction?",
+    "options": [
+      "$t < 3$",
+      "$t > 3$",
+      "$t = 3$",
+      "Always"
+    ],
+    "answer": "$t > 3$",
+    "hint": "The particle moves in the positive direction when $v(t) > 0$.",
+    "explanation": "$v(t) = 2t - 6 > 0 \\Rightarrow 2t > 6 \\Rightarrow t > 3$\n\nThe particle moves in the positive direction for $t > 3$ s."
+  },
+  {
+    "id": "y12-adv-rates-q05",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A particle's displacement is $x(t) = t^3 - 6t^2 + 9t$ metres, where $t \\geq 0$. Find the displacement (in metres) at the first time the particle is at rest.",
+    "answer": "4",
+    "hint": "Find when $v(t) = x'(t) = 0$, pick the smallest positive $t$, then evaluate $x$ there.",
+    "explanation": "$v(t) = 3t^2 - 12t + 9 = 3(t^2 - 4t + 3) = 3(t-1)(t-3)$\n\n$v(t) = 0$ at $t = 1$ and $t = 3$. The first time is $t = 1$.\n\n$x(1) = 1 - 6 + 9 = 4$ metres."
+  },
+  {
+    "id": "y12-adv-rates-q06",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A particle's velocity is $v(t) = 6 - 2t$ m/s. It starts at position $x = 3$ m at $t = 0$. Find its displacement (in metres) at $t = 4$.",
+    "answer": "11",
+    "hint": "Integrate $v(t)$ to get displacement, then use the initial condition $x(0) = 3$ to find the constant.",
+    "explanation": "$$x(t) = \\int (6 - 2t)\\,dt = 6t - t^2 + C$$\n\nUsing $x(0) = 3$: $C = 3$, so $x(t) = 6t - t^2 + 3$.\n\n$x(4) = 24 - 16 + 3 = 11$ metres."
+  },
+  {
+    "id": "y12-adv-rates-q07",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A water tank is being drained. The volume of water (in litres) at time $t$ minutes is $V(t) = 500 - 20t - t^2$ for $0 \\leq t \\leq 10$. Find the rate at which water is draining (in litres per minute) at $t = 3$.",
+    "answer": "26",
+    "hint": "The rate of draining is $-V'(t)$ (since $V$ is decreasing). Find $V'(3)$ then take its magnitude.",
+    "explanation": "$V'(t) = -20 - 2t$\n\n$V'(3) = -20 - 6 = -26$ litres/min\n\nThe rate of draining is $|V'(3)| = 26$ litres per minute. (The negative sign confirms the volume is decreasing.)"
+  },
+  {
+    "id": "y12-adv-rates-q08",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A particle's acceleration is $a(t) = 6t - 4$ m/s². Its initial velocity is $v(0) = 5$ m/s. Find the velocity (in m/s) at $t = 3$.",
+    "answer": "20",
+    "hint": "Integrate $a(t)$ to find $v(t)$, then use $v(0) = 5$ to find the constant of integration.",
+    "explanation": "$$v(t) = \\int (6t - 4)\\,dt = 3t^2 - 4t + C$$\n\nUsing $v(0) = 5$: $C = 5$, so $v(t) = 3t^2 - 4t + 5$.\n\n$v(3) = 3(9) - 4(3) + 5 = 27 - 12 + 5 = 20$ m/s."
+  },
+  {
+    "id": "y12-adv-rates-q09",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "The population of a town grows at a rate of $\\dfrac{dP}{dt} = 200 + 30t$ people per year. If the population is 5000 at $t = 0$, find the population after 4 years.",
+    "answer": "6040",
+    "hint": "Integrate $\\dfrac{dP}{dt}$ with respect to $t$ and use $P(0) = 5000$ to find $C$.",
+    "explanation": "$$P(t) = \\int (200 + 30t)\\,dt = 200t + 15t^2 + C$$\n\nUsing $P(0) = 5000$: $C = 5000$.\n\n$$P(t) = 200t + 15t^2 + 5000$$\n\n$P(4) = 200(4) + 15(16) + 5000 = 800 + 240 + 5000 = 6040$."
+  },
+  {
+    "id": "y12-adv-rates-q10",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A particle moves in a straight line with displacement $x(t) = t^3 - 6t^2 + 9t$ metres. Find the total distance (in metres) travelled in the first 3 seconds.",
+    "answer": "8",
+    "hint": "Find when the particle reverses direction (when $v = 0$). Calculate the distance in each direction separately, then add.",
+    "explanation": "$v(t) = 3t^2 - 12t + 9 = 3(t-1)(t-3)$\n\nThe particle reverses direction at $t = 1$ s and $t = 3$ s.\n\nPositions:\n- $x(0) = 0$ m\n- $x(1) = 1 - 6 + 9 = 4$ m\n- $x(3) = 27 - 54 + 27 = 0$ m\n\nFrom $t = 0$ to $t = 1$: moves from $0$ to $4$ m → distance $= 4$ m.\nFrom $t = 1$ to $t = 3$: moves from $4$ m back to $0$ m → distance $= 4$ m.\n\nTotal distance $= 4 + 4 = 8$ m.\n\n**Note:** Total distance ($8$ m) $\\neq$ displacement ($0$ m) because the particle reversed direction."
+  },
+  {
+    "id": "y12-adv-rates-q11",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A particle moves so that its velocity is $v(t) = t^3 - 6t^2 + 9t$ m/s ($t \\geq 0$). Find the acceleration (in m/s²) at $t = 2$.",
+    "answer": "-3",
+    "hint": "Acceleration $a(t) = v'(t)$. Differentiate and substitute $t = 2$.",
+    "explanation": "$a(t) = v'(t) = 3t^2 - 12t + 9$\n\n$a(2) = 3(4) - 12(2) + 9 = 12 - 24 + 9 = -3$ m/s²\n\nThe negative acceleration at $t = 2$ means the velocity is decreasing at that instant."
+  },
+  {
+    "id": "y12-adv-rates-q12",
+    "subtopic": "rates-of-change-and-motion",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Oil leaks from a tanker at a rate of $R(t) = 50e^{-0.1t}$ litres per hour, where $t$ is hours after the leak starts. How many litres leak in the first 10 hours? Give your answer to the nearest whole number.\n\n(Use $e^{-1} \\approx 0.3679$.)",
+    "answer": "316",
+    "tolerance": 2,
+    "hint": "Integrate $R(t)$ from $t = 0$ to $t = 10$. Recall $\\int e^{-0.1t}\\,dt = \\dfrac{e^{-0.1t}}{-0.1} + C$.",
+    "explanation": "$$\\text{Volume} = \\int_0^{10} 50e^{-0.1t}\\,dt = 50 \\left[\\frac{e^{-0.1t}}{-0.1}\\right]_0^{10}$$\n\n$$= 50 \\times (-10)\\left[e^{-0.1t}\\right]_0^{10}$$\n\n$$= -500\\left(e^{-1} - e^{0}\\right) = -500(0.3679 - 1) = -500(-0.6321)$$\n\n$$= 316.1 \\approx 316 \\text{ litres}$$"
+  }
+]

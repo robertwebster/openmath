@@ -1,0 +1,11 @@
+{
+  "id": "three-dimensional-vectors",
+  "title": "Three-dimensional vectors",
+  "topic": "further-work-with-vectors",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Vectors",
+  "syllabusOutcome": "MEX-12-05",
+  "description": "Represent vectors in 3D using components $\\mathbf{i}$, $\\mathbf{j}$, $\\mathbf{k}$; find magnitudes and unit vectors; compute the dot product; find angles between vectors in 3D; determine perpendicularity and parallelism."
+}

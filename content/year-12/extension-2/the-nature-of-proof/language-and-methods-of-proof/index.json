@@ -1,0 +1,11 @@
+{
+  "id": "language-and-methods-of-proof",
+  "title": "Language and methods of proof",
+  "topic": "the-nature-of-proof",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Proof",
+  "syllabusOutcome": "MEX-12-01",
+  "description": "Use the language of logic precisely: implication, converse, contrapositive, negation and equivalence; apply quantifiers ($\\forall$, $\\exists$); construct and evaluate counterexamples; identify valid argument forms."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "future-value-of-annuities",
+  "title": "Future value of annuities",
+  "topic": "annuities",
+  "year": 12,
+  "strand": "Financial Mathematics",
+  "syllabusOutcome": "MS-F5",
+  "description": "Recognise an annuity as a series of equal periodic contributions; calculate future value using a recurrence relation or the formula $FV = M \\cdot \\frac{(1+r)^n - 1}{r}$; apply to superannuation and savings goals."
+}

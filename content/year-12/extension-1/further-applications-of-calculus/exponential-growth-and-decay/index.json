@@ -1,0 +1,11 @@
+{
+  "id": "exponential-growth-and-decay",
+  "title": "Exponential growth and decay",
+  "topic": "further-applications-of-calculus",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Calculus",
+  "syllabusOutcome": "ME-12-05",
+  "description": "Solve and interpret exponential growth and decay models of the form $\\frac{dN}{dt} = kN$ and $\\frac{dN}{dt} = k(N-P)$; apply Newton's law of cooling; use logarithms to find unknown times and rates."
+}

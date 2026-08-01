@@ -1,0 +1,9 @@
+{
+  "id": "differentiating-exponential-and-logarithmic-functions",
+  "title": "Differentiating exponential and logarithmic functions",
+  "topic": "differential-calculus",
+  "year": 12,
+  "strand": "Calculus",
+  "syllabusOutcome": "MAV-12-04",
+  "description": "Differentiate $e^x$, $e^{f(x)}$, $\\ln x$ and $\\ln f(x)$ using the standard results and the chain rule."
+}

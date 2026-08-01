@@ -1,0 +1,57 @@
+# Three-dimensional vectors — Worked examples
+
+In three dimensions, a vector is written as $\mathbf{v} = a\mathbf{i}+b\mathbf{j}+c\mathbf{k}$ or equivalently as the column $(a, b, c)$. The rules for addition, scalar multiplication, magnitude and the dot product all extend naturally from 2D.
+
+---
+
+## Key definitions
+
+| Concept | Formula | Example with $\mathbf{u} = (3,-2,6)$ |
+|---|---|---|
+| Magnitude | $|\mathbf{u}| = \sqrt{a^2+b^2+c^2}$ | $\sqrt{9+4+36} = 7$ |
+| Unit vector | $\hat{\mathbf{u}} = \dfrac{\mathbf{u}}{|\mathbf{u}|}$ | $\tfrac{1}{7}(3,-2,6)$ |
+| Dot product | $\mathbf{u}\cdot\mathbf{v} = a_1a_2+b_1b_2+c_1c_2$ | $(3)(1)+(-2)(2)+(6)(-1) = -5$ |
+| Angle | $\cos\theta = \dfrac{\mathbf{u}\cdot\mathbf{v}}{|\mathbf{u}||\mathbf{v}|}$ | see Example 2 |
+
+Two vectors are **perpendicular** when $\mathbf{u}\cdot\mathbf{v} = 0$, and **parallel** when one is a scalar multiple of the other.
+
+---
+
+## Example 1 — Magnitude, dot product and perpendicularity
+
+**Given $\mathbf{a} = (1,2,-2)$ and $\mathbf{b} = (2,-1,0)$, find $|\mathbf{a}|$, $\mathbf{a}\cdot\mathbf{b}$, and determine whether they are perpendicular.**
+
+**Magnitude:**
+$$|\mathbf{a}| = \sqrt{1^2+2^2+(-2)^2} = \sqrt{1+4+4} = \sqrt{9} = 3$$
+
+**Dot product:**
+$$\mathbf{a}\cdot\mathbf{b} = (1)(2)+(2)(-1)+(-2)(0) = 2-2+0 = 0$$
+
+Since $\mathbf{a}\cdot\mathbf{b} = 0$, the vectors **are perpendicular**.
+
+---
+
+## Example 2 — Angle between two vectors
+
+**Find the angle between $\mathbf{p} = (1,0,1)$ and $\mathbf{q} = (1,1,0)$.**
+
+$$\mathbf{p}\cdot\mathbf{q} = (1)(1)+(0)(1)+(1)(0) = 1$$
+
+$$|\mathbf{p}| = \sqrt{1+0+1} = \sqrt{2}, \qquad |\mathbf{q}| = \sqrt{1+1+0} = \sqrt{2}$$
+
+$$\cos\theta = \frac{1}{\sqrt{2}\cdot\sqrt{2}} = \frac{1}{2}$$
+
+$$\theta = \cos^{-1}\!\left(\tfrac{1}{2}\right) = 60°$$
+
+---
+
+## Example 3 — Finding an unknown component
+
+**Find the value of $t$ such that $\mathbf{u} = (t,1,2)$ and $\mathbf{v} = (3,t,-1)$ are perpendicular.**
+
+Set $\mathbf{u}\cdot\mathbf{v} = 0$:
+$$(t)(3)+(1)(t)+(2)(-1) = 3t+t-2 = 4t-2 = 0$$
+
+$$t = \frac{1}{2}$$
+
+**Verify:** $\mathbf{u} = (\tfrac{1}{2},1,2)$ and $\mathbf{v} = (3,\tfrac{1}{2},-1)$, so $\mathbf{u}\cdot\mathbf{v} = \tfrac{3}{2}+\tfrac{1}{2}-2 = 0$ ✓

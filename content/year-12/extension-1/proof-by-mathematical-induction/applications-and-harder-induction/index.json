@@ -1,0 +1,11 @@
+{
+  "id": "applications-and-harder-induction",
+  "title": "Applications and harder induction",
+  "topic": "proof-by-mathematical-induction",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Proof",
+  "syllabusOutcome": "ME-12-01",
+  "description": "Extend mathematical induction to inequalities, geometric series and recursive sequences; recognise when induction is the appropriate proof technique for harder problems."
+}

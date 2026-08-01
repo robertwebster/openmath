@@ -1,0 +1,15 @@
+{
+  "id": "further-applications-of-calculus",
+  "title": "Further applications of calculus",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Calculus",
+  "syllabusOutcome": "ME-12-05",
+  "description": "Apply calculus to differential equations, exponential growth and decay models, related rates of change, and volumes of solids of revolution.",
+  "subtopics": [
+    "differential-equations",
+    "exponential-growth-and-decay",
+    "related-rates-and-volumes"
+  ]
+}

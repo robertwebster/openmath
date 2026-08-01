@@ -1,0 +1,55 @@
+[
+  {
+    "id": "bda-lr-worked-1",
+    "title": "Using a regression equation to make a prediction",
+    "difficulty": 1,
+    "problem": "The least-squares regression line for the relationship between daily temperature ($x$, °C) and electricity usage ($y$, kWh) for a household is:\n$$\\hat{y} = -1.8x + 62$$\nA day is forecast to reach 25°C. Predict the household's electricity usage on that day.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the known value and what is being predicted.",
+        "working": "Known: $x = 25$ (temperature in °C)\nFind: $\\hat{y}$ (predicted electricity usage in kWh)"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $x = 25$ into the regression equation.",
+        "working": "$$\\hat{y} = -1.8(25) + 62 = -45 + 62 = 17$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the result in context.",
+        "working": "A predicted usage of $17$ kWh makes sense: the negative gradient ($-1.8$) shows that hotter days reduce electricity usage, presumably because heating is needed less.\n\nThe $y$-intercept $62$ kWh would be the predicted usage on a $0$°C day."
+      }
+    ],
+    "answer": "The model predicts the household will use $17$ kWh of electricity on a 25°C day."
+  },
+  {
+    "id": "bda-lr-worked-2",
+    "title": "Interpreting gradient and y-intercept; identifying interpolation vs extrapolation",
+    "difficulty": 2,
+    "problem": "A regression line fitted to data for 30 school canteens (with between 200 and 800 students enrolled) is:\n$$\\hat{y} = 0.45x + 120$$\nwhere $x$ is the number of students enrolled and $y$ is the number of lunch orders per day.\n\n(a) Interpret the gradient and $y$-intercept in context.\n(b) Predict the number of lunch orders for a canteen with 500 students.\n(c) A large secondary school has 1200 students. Is using this model to predict their lunch orders reliable? Explain.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Interpret the gradient.",
+        "working": "Gradient $= 0.45$: for each additional student enrolled, the model predicts $0.45$ more lunch orders per day."
+      },
+      {
+        "step": 2,
+        "instruction": "Interpret the $y$-intercept.",
+        "working": "$y$-intercept $= 120$: the model predicts 120 lunch orders when enrolment is 0.\n\nNote: this is outside the data range (200–800 students), so the intercept does not have a meaningful practical interpretation here."
+      },
+      {
+        "step": 3,
+        "instruction": "Predict lunch orders for 500 students.",
+        "working": "$x = 500$ is within the data range (200 to 800), so this is **interpolation**.\n\n$$\\hat{y} = 0.45(500) + 120 = 225 + 120 = 345$$\n\nPredicted orders: 345 per day."
+      },
+      {
+        "step": 4,
+        "instruction": "Assess the reliability of predicting for 1200 students.",
+        "working": "$x = 1200$ is well outside the data range of 200–800. This is **extrapolation**.\n\nThe linear relationship between enrolment and orders may not continue to hold beyond 800 students (e.g. canteen capacity limits, different school structures). The prediction is unreliable."
+      }
+    ],
+    "answer": "(a) Gradient: for each additional student, there are 0.45 more predicted lunch orders. $y$-intercept: 120 predicted orders with zero enrolment (not practically meaningful).\n(b) 345 lunch orders predicted for 500 students.\n(c) Not reliable — 1200 students is outside the data range (extrapolation), and the linear model may not hold."
+  }
+]

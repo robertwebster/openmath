@@ -1,0 +1,11 @@
+{
+  "id": "mathematical-induction",
+  "title": "Mathematical induction",
+  "topic": "proof-by-mathematical-induction",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Proof",
+  "syllabusOutcome": "ME-12-01",
+  "description": "Apply the principle of mathematical induction: prove summation formulas and divisibility results by establishing a base case, assuming the result for $n = k$, and proving it for $n = k + 1$."
+}

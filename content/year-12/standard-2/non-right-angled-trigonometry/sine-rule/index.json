@@ -1,0 +1,9 @@
+{
+  "id": "sine-rule",
+  "title": "Sine rule",
+  "topic": "non-right-angled-trigonometry",
+  "year": 12,
+  "strand": "Measurement",
+  "syllabusOutcome": "MS-M6",
+  "description": "Apply the sine rule $\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B} = \\dfrac{c}{\\sin C}$ to find unknown sides and angles in non-right-angled triangles; recognise and solve the ambiguous case where two triangles are possible."
+}

@@ -1,0 +1,61 @@
+# Proving inequalities — Worked examples
+
+Inequality proofs at Extension 2 level use two core tools: the **non-negativity of squares** ($a^2 \geq 0$ for all real $a$) and the **AM-GM inequality**. Almost every result in this sub-topic can be traced back to one of these.
+
+---
+
+## Core principle: $a^2 \geq 0$
+
+For any real number $a$, $a^2 \geq 0$. Equality holds iff $a = 0$.
+
+This single fact powers a surprising range of proofs. The strategy is:
+
+1. Identify the inequality you want to prove: LHS $\geq$ RHS.
+2. Rearrange to show LHS $-$ RHS $\geq 0$.
+3. Express LHS $-$ RHS as a sum of squares (or a single square).
+
+---
+
+## Example 1 — Basic inequality from a perfect square
+
+**Prove that $a^2 + b^2 \geq 2ab$ for all real $a$, $b$.**
+
+We need to show $a^2 + b^2 - 2ab \geq 0$.
+
+$$a^2 + b^2 - 2ab = (a - b)^2 \geq 0 \qquad \square$$
+
+Equality holds iff $a = b$.
+
+---
+
+## Example 2 — Proving AM-GM for two variables
+
+**Prove: for all non-negative $a$, $b$, $\dfrac{a+b}{2} \geq \sqrt{ab}$.**
+
+Let $u = \sqrt{a}$, $v = \sqrt{b}$ (both $\geq 0$). Then:
+
+$$(u - v)^2 \geq 0$$
+$$u^2 - 2uv + v^2 \geq 0$$
+$$a - 2\sqrt{ab} + b \geq 0$$
+$$a + b \geq 2\sqrt{ab}$$
+$$\frac{a+b}{2} \geq \sqrt{ab} \qquad \square$$
+
+Equality holds iff $u = v$ iff $a = b$.
+
+---
+
+## Example 3 — Applying AM-GM to find an extremum
+
+**Find the minimum value of $x + \dfrac{9}{x}$ for $x > 0$.**
+
+By AM-GM applied to the two positive terms $x$ and $\dfrac{9}{x}$:
+
+$$\frac{x + \frac{9}{x}}{2} \geq \sqrt{x \cdot \frac{9}{x}} = \sqrt{9} = 3$$
+
+$$x + \frac{9}{x} \geq 6$$
+
+The minimum is $6$, achieved when $x = \dfrac{9}{x}$, i.e., $x^2 = 9$, i.e., $x = 3$.
+
+**Verification:** $3 + \dfrac{9}{3} = 3 + 3 = 6$ ✓
+
+> **Pattern:** When minimising an expression of the form $x + \dfrac{k}{x}$, the minimum is $2\sqrt{k}$, achieved at $x = \sqrt{k}$. This is AM-GM with the two terms equal.

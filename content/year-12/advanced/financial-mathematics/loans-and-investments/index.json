@@ -1,0 +1,11 @@
+{
+  "id": "loans-and-investments",
+  "title": "Loans and investments",
+  "topic": "financial-mathematics",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Algebra / Functions",
+  "syllabusOutcome": "MAV-12-08",
+  "description": "Analyse reducing-balance loans using recurrence relations and geometric series; calculate loan repayments and outstanding balances; compare investment and loan scenarios."
+}

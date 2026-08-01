@@ -1,0 +1,9 @@
+{
+  "id": "the-definite-integral",
+  "title": "The definite integral",
+  "topic": "integral-calculus",
+  "year": 12,
+  "strand": "Calculus",
+  "syllabusOutcome": "MAV-12-05",
+  "description": "Evaluate definite integrals using the fundamental theorem of calculus; interpret the definite integral as the signed area under a curve; work with regions above and below the $x$-axis."
+}
