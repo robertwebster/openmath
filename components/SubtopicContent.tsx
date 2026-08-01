@@ -169,7 +169,9 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
                   {/* Card header */}
                   <div className="px-6 py-4 flex items-center justify-between gap-4">
                     <div>
-                      <h3 className="font-medium text-slate-900">{ex.title}</h3>
+                      <h3 className="font-medium text-slate-900">
+                        <MathText as="span" text={ex.title} />
+                      </h3>
                       <p className="text-xs text-slate-400 mt-0.5">{difficultyLabel(ex.difficulty)}</p>
                     </div>
                     <button
@@ -351,7 +353,7 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
                               disabled={qs.submitted}
                               className="accent-indigo-600"
                             />
-                            <span className="text-sm text-slate-700">{opt}</span>
+                            <MathText as="span" text={opt} className="text-sm text-slate-700" />
                           </label>
                         ))}
                       </div>
