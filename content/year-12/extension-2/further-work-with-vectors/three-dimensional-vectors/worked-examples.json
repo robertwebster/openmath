@@ -1,0 +1,74 @@
+[
+  {
+    "id": "vectors-3d-worked-1",
+    "title": "Magnitude, dot product and perpendicularity",
+    "difficulty": 1,
+    "problem": "Given $\\mathbf{a} = (1,2,-2)$ and $\\mathbf{b} = (2,-1,0)$, find $|\\mathbf{a}|$, $\\mathbf{a}\\cdot\\mathbf{b}$, and determine whether they are perpendicular.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Compute the magnitude of $\\mathbf{a}$.",
+        "working": "$|\\mathbf{a}| = \\sqrt{1^2+2^2+(-2)^2} = \\sqrt{1+4+4} = \\sqrt{9} = 3$"
+      },
+      {
+        "step": 2,
+        "instruction": "Compute the dot product $\\mathbf{a}\\cdot\\mathbf{b}$.",
+        "working": "$\\mathbf{a}\\cdot\\mathbf{b} = (1)(2)+(2)(-1)+(-2)(0) = 2-2+0 = 0$"
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the result.",
+        "working": "Since $\\mathbf{a}\\cdot\\mathbf{b} = 0$, the vectors are perpendicular."
+      }
+    ],
+    "answer": "$|\\mathbf{a}|=3$, $\\mathbf{a}\\cdot\\mathbf{b}=0$, so $\\mathbf{a}$ and $\\mathbf{b}$ are perpendicular."
+  },
+  {
+    "id": "vectors-3d-worked-2",
+    "title": "Angle between two vectors",
+    "difficulty": 2,
+    "problem": "Find the angle between $\\mathbf{p} = (1,0,1)$ and $\\mathbf{q} = (1,1,0)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Compute the dot product.",
+        "working": "$\\mathbf{p}\\cdot\\mathbf{q} = (1)(1)+(0)(1)+(1)(0) = 1$"
+      },
+      {
+        "step": 2,
+        "instruction": "Compute the magnitudes of each vector.",
+        "working": "$|\\mathbf{p}| = \\sqrt{1+0+1} = \\sqrt{2}$, $|\\mathbf{q}| = \\sqrt{1+1+0} = \\sqrt{2}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the angle formula.",
+        "working": "$\\cos\\theta = \\frac{1}{\\sqrt{2}\\cdot\\sqrt{2}} = \\frac{1}{2} \\implies \\theta = \\cos^{-1}\\!\\left(\\tfrac{1}{2}\\right) = 60°$"
+      }
+    ],
+    "answer": "The angle between $\\mathbf{p}$ and $\\mathbf{q}$ is $60°$."
+  },
+  {
+    "id": "vectors-3d-worked-3",
+    "title": "Finding an unknown component",
+    "difficulty": 3,
+    "problem": "Find the value of $t$ such that $\\mathbf{u} = (t,1,2)$ and $\\mathbf{v} = (3,t,-1)$ are perpendicular.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Set the dot product equal to zero.",
+        "working": "$\\mathbf{u}\\cdot\\mathbf{v} = (t)(3)+(1)(t)+(2)(-1) = 3t+t-2 = 4t-2 = 0$"
+      },
+      {
+        "step": 2,
+        "instruction": "Solve for $t$.",
+        "working": "$t = \\frac{1}{2}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Verify the result.",
+        "working": "$\\mathbf{u} = (\\tfrac{1}{2},1,2)$ and $\\mathbf{v} = (3,\\tfrac{1}{2},-1)$, so $\\mathbf{u}\\cdot\\mathbf{v} = \\tfrac{3}{2}+\\tfrac{1}{2}-2 = 0$ ✓"
+      }
+    ],
+    "answer": "$t = \\dfrac{1}{2}$."
+  }
+]

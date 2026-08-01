@@ -1,0 +1,84 @@
+[
+  {
+    "id": "vector-proof-worked-1",
+    "title": "Proving a quadrilateral is a parallelogram",
+    "difficulty": 1,
+    "problem": "$ABCD$ is a quadrilateral. $P$, $Q$, $R$, $S$ are the midpoints of $AB$, $BC$, $CD$, $DA$ respectively. Prove $PQRS$ is a parallelogram.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write position vectors for the midpoints.",
+        "working": "$P = \\frac{\\mathbf{a}+\\mathbf{b}}{2}, \\quad Q = \\frac{\\mathbf{b}+\\mathbf{c}}{2}, \\quad R = \\frac{\\mathbf{c}+\\mathbf{d}}{2}, \\quad S = \\frac{\\mathbf{d}+\\mathbf{a}}{2}$"
+      },
+      {
+        "step": 2,
+        "instruction": "Compute the side vectors $\\overrightarrow{PQ}$ and $\\overrightarrow{SR}$.",
+        "working": "$\\overrightarrow{PQ} = Q-P = \\frac{\\mathbf{c}-\\mathbf{a}}{2}, \\qquad \\overrightarrow{SR} = R-S = \\frac{\\mathbf{c}-\\mathbf{a}}{2}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Conclude from the equality of the side vectors.",
+        "working": "Since $\\overrightarrow{PQ} = \\overrightarrow{SR}$, sides $PQ$ and $SR$ are parallel and equal in length. Therefore $PQRS$ is a parallelogram. $\\square$"
+      }
+    ],
+    "answer": "$PQRS$ is a parallelogram, since $\\overrightarrow{PQ}=\\overrightarrow{SR}=\\dfrac{\\mathbf{c}-\\mathbf{a}}{2}$."
+  },
+  {
+    "id": "vector-proof-worked-2",
+    "title": "Angle in a semicircle",
+    "difficulty": 2,
+    "problem": "A circle has centre $O$ at the origin and radius $r$. Diameter $AB$ has $A = -r\\mathbf{i}$, $B = r\\mathbf{i}$. $P$ is any point on the circle with $|\\mathbf{p}| = r$. Prove $\\angle APB = 90°$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the vectors from $P$ to $A$ and from $P$ to $B$.",
+        "working": "$\\overrightarrow{PA} = -r\\mathbf{i}-\\mathbf{p}, \\qquad \\overrightarrow{PB} = r\\mathbf{i}-\\mathbf{p}$"
+      },
+      {
+        "step": 2,
+        "instruction": "Compute the dot product $\\overrightarrow{PA}\\cdot\\overrightarrow{PB}$.",
+        "working": "$\\overrightarrow{PA}\\cdot\\overrightarrow{PB} = (-r\\mathbf{i}-\\mathbf{p})\\cdot(r\\mathbf{i}-\\mathbf{p})$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the difference of squares identity $(\\mathbf{u}+\\mathbf{v})\\cdot(\\mathbf{u}-\\mathbf{v}) = |\\mathbf{u}|^2-|\\mathbf{v}|^2$.",
+        "working": "$= -(r\\mathbf{i}+\\mathbf{p})\\cdot(r\\mathbf{i}-\\mathbf{p}) = -(r^2-|\\mathbf{p}|^2) = -(r^2-r^2) = 0$"
+      },
+      {
+        "step": 4,
+        "instruction": "Conclude from the dot product being zero.",
+        "working": "Since the dot product is zero, $\\angle APB = 90°$. $\\square$"
+      }
+    ],
+    "answer": "$\\angle APB = 90°$ for any point $P$ on the circle."
+  },
+  {
+    "id": "vector-proof-worked-3",
+    "title": "Medians of a triangle are concurrent",
+    "difficulty": 3,
+    "problem": "Triangle $ABC$ has position vectors $\\mathbf{a}$, $\\mathbf{b}$, $\\mathbf{c}$. Show all three medians meet at $G = \\frac{\\mathbf{a}+\\mathbf{b}+\\mathbf{c}}{3}$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the median from $A$.",
+        "working": "The median from $A$ goes to $M = \\frac{\\mathbf{b}+\\mathbf{c}}{2}$, the midpoint of $BC$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the point dividing $AM$ in ratio $2:1$ from $A$.",
+        "working": "$G = \\mathbf{a} + \\frac{2}{3}(M-\\mathbf{a}) = \\mathbf{a} + \\frac{2}{3}\\cdot\\frac{\\mathbf{b}+\\mathbf{c}-2\\mathbf{a}}{2} = \\frac{\\mathbf{a}+\\mathbf{b}+\\mathbf{c}}{3}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Use symmetry to extend the result to the other two medians.",
+        "working": "By symmetry, the same calculation from $B$ (to the midpoint of $AC$) and from $C$ (to the midpoint of $AB$) also gives $\\frac{\\mathbf{a}+\\mathbf{b}+\\mathbf{c}}{3}$."
+      },
+      {
+        "step": 4,
+        "instruction": "Conclude.",
+        "working": "All three medians pass through $G$, so they are concurrent. $\\square$"
+      }
+    ],
+    "answer": "All three medians meet at $G=\\dfrac{\\mathbf{a}+\\mathbf{b}+\\mathbf{c}}{3}$, so they are concurrent."
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "complex-arithmetic-worked-1",
+    "title": "Multiplying complex numbers",
+    "difficulty": 1,
+    "problem": "Find $(2+3i)(1-5i)$, expressing the answer in the form $a+bi$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Expand the product using FOIL.",
+        "working": "$(2+3i)(1-5i) = 2(1) + 2(-5i) + 3i(1) + 3i(-5i) = 2 - 10i + 3i - 15i^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $i^2 = -1$ and simplify.",
+        "working": "$= 2 - 7i - 15(-1) = 2 - 7i + 15 = 17 - 7i$"
+      }
+    ],
+    "answer": "$(2+3i)(1-5i) = 17-7i$."
+  },
+  {
+    "id": "complex-arithmetic-worked-2",
+    "title": "Dividing complex numbers",
+    "difficulty": 2,
+    "problem": "Express $\\dfrac{2+i}{3-2i}$ in the form $a+bi$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Multiply the numerator and denominator by the conjugate of the denominator.",
+        "working": "$\\dfrac{2+i}{3-2i} = \\dfrac{(2+i)(3+2i)}{(3-2i)(3+2i)}$, using $\\overline{3-2i} = 3+2i$."
+      },
+      {
+        "step": 2,
+        "instruction": "Simplify the denominator, which becomes real.",
+        "working": "$(3-2i)(3+2i) = 3^2+2^2 = 13$"
+      },
+      {
+        "step": 3,
+        "instruction": "Expand the numerator.",
+        "working": "$(2+i)(3+2i) = 6+4i+3i+2i^2 = 6+7i-2 = 4+7i$"
+      },
+      {
+        "step": 4,
+        "instruction": "Combine into the form $a+bi$.",
+        "working": "$\\dfrac{2+i}{3-2i} = \\dfrac{4+7i}{13} = \\dfrac{4}{13} + \\dfrac{7}{13}i$"
+      }
+    ],
+    "answer": "$\\dfrac{2+i}{3-2i} = \\dfrac{4}{13}+\\dfrac{7}{13}i$."
+  },
+  {
+    "id": "complex-arithmetic-worked-3",
+    "title": "Finding a complex square root",
+    "difficulty": 3,
+    "problem": "Find all $z \\in \\mathbb{C}$ satisfying $z^2 = 3+4i$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Let $z = a+bi$ and expand $z^2$.",
+        "working": "$z^2 = (a+bi)^2 = a^2 - b^2 + 2abi$"
+      },
+      {
+        "step": 2,
+        "instruction": "Equate real and imaginary parts with $3+4i$.",
+        "working": "$a^2 - b^2 = 3 \\quad \\cdots (1)$, and $2ab = 4 \\implies ab = 2 \\quad \\cdots (2)$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute (2) into (1) and solve for $a$.",
+        "working": "From (2), $b = \\dfrac{2}{a}$. Substitute into (1): $a^2 - \\dfrac{4}{a^2} = 3 \\implies a^4 - 3a^2 - 4 = 0 \\implies (a^2-4)(a^2+1) = 0$. Since $a \\in \\mathbb{R}$, $a^2 = 4$, so $a = \\pm 2$."
+      },
+      {
+        "step": 4,
+        "instruction": "Find the corresponding values of $b$ and hence $z$.",
+        "working": "$a = 2 \\Rightarrow b = 1$: $z = 2+i$. $a = -2 \\Rightarrow b = -1$: $z = -2-i$."
+      },
+      {
+        "step": 5,
+        "instruction": "Check the solution.",
+        "working": "$(2+i)^2 = 4+4i+i^2 = 4+4i-1 = 3+4i$ ✓"
+      }
+    ],
+    "answer": "The two square roots of $3+4i$ are $z=2+i$ and $z=-2-i$."
+  }
+]

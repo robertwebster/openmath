@@ -1,0 +1,69 @@
+[
+  {
+    "id": "trig-deriv-worked-1",
+    "title": "Standard derivatives",
+    "difficulty": 1,
+    "problem": "Find $\\dfrac{dy}{dx}$ for $y = 2\\sin x - 3\\cos x$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall the three fundamental trigonometric derivatives (all angles in radians).",
+        "working": "$$\\frac{d}{dx}(\\sin x) = \\cos x \\qquad \\frac{d}{dx}(\\cos x) = -\\sin x \\qquad \\frac{d}{dx}(\\tan x) = \\sec^2 x$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Differentiate each term of $y = 2\\sin x - 3\\cos x$.",
+        "working": "$$\\frac{dy}{dx} = 2\\cos x - 3 \\times (-\\sin x) = 2\\cos x + 3\\sin x$$"
+      }
+    ],
+    "answer": "$\\dfrac{dy}{dx} = 2\\cos x + 3\\sin x$"
+  },
+  {
+    "id": "trig-deriv-worked-2",
+    "title": "Chain rule with trigonometric functions",
+    "difficulty": 2,
+    "problem": "Find $\\dfrac{d}{dx}\\left(\\cos(4x - \\pi)\\right)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the inner function.",
+        "working": "Inner function: $u = 4x - \\pi$, so $\\dfrac{du}{dx} = 4$."
+      },
+      {
+        "step": 2,
+        "instruction": "Differentiate using the chain rule.",
+        "working": "$$\\frac{d}{dx}(\\cos u) = -\\sin u \\cdot \\frac{du}{dx}$$ $$\\frac{d}{dx}\\!\\left(\\cos(4x - \\pi)\\right) = -\\sin(4x - \\pi) \\times 4 = -4\\sin(4x - \\pi)$$"
+      }
+    ],
+    "answer": "$\\dfrac{d}{dx}\\left(\\cos(4x - \\pi)\\right) = -4\\sin(4x - \\pi)$"
+  },
+  {
+    "id": "trig-deriv-worked-3",
+    "title": "Finding stationary points",
+    "difficulty": 3,
+    "problem": "Find the stationary points of $y = \\sin(2x)$ for $0 \\leq x \\leq \\pi$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Differentiate.",
+        "working": "$$\\frac{dy}{dx} = 2\\cos(2x)$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Set the derivative equal to zero.",
+        "working": "$$2\\cos(2x) = 0 \\implies \\cos(2x) = 0$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $x$.",
+        "working": "$2x = \\dfrac{\\pi}{2}$ or $2x = \\dfrac{3\\pi}{2}$ (within $0 \\leq 2x \\leq 2\\pi$), so $$x = \\frac{\\pi}{4} \\quad \\text{or} \\quad x = \\frac{3\\pi}{4}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the $y$-values.",
+        "working": "At $x = \\dfrac{\\pi}{4}$: $y = \\sin\\!\\left(\\dfrac{\\pi}{2}\\right) = 1$ (maximum). At $x = \\dfrac{3\\pi}{4}$: $y = \\sin\\!\\left(\\dfrac{3\\pi}{2}\\right) = -1$ (minimum)."
+      }
+    ],
+    "answer": "The stationary points are a maximum at $\\left(\\dfrac{\\pi}{4},\\, 1\\right)$ and a minimum at $\\left(\\dfrac{3\\pi}{4},\\, -1\\right)$."
+  }
+]

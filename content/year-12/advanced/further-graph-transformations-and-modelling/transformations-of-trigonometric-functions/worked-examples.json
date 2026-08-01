@@ -1,0 +1,79 @@
+[
+  {
+    "id": "trig-transformations-worked-1",
+    "title": "Identifying key features from the equation",
+    "difficulty": 1,
+    "problem": "For $y = -2\\sin(3x + \\pi) + 1$, state the amplitude, period, phase shift and vertical shift. Then state the range.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Rewrite in standard form $y = a\\sin(b(x-c)) + d$ by factoring out the coefficient of $x$ from the argument.",
+        "working": "$$y = -2\\sin\\!\\left(3\\!\\left(x + \\frac{\\pi}{3}\\right)\\right) + 1$$ Now $a = -2$, $b = 3$, $c = -\\pi/3$, $d = 1$."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify each feature using $|a|$, $\\dfrac{2\\pi}{b}$, $c$ and $d$.",
+        "working": "Amplitude $= |a| = 2$. Period $= \\dfrac{2\\pi}{b} = \\dfrac{2\\pi}{3}$. Phase shift $= c = \\dfrac{\\pi}{3}$ to the left (since $c < 0$). Vertical shift $= d = 1$ up."
+      },
+      {
+        "step": 3,
+        "instruction": "State the range using the maximum $d + |a|$ and minimum $d - |a|$.",
+        "working": "Maximum: $d + |a| = 1 + 2 = 3$. Minimum: $d - |a| = 1 - 2 = -1$. Range: $[-1,\\; 3]$."
+      }
+    ],
+    "answer": "Amplitude $2$, period $\\dfrac{2\\pi}{3}$, phase shift $\\dfrac{\\pi}{3}$ to the left, vertical shift $1$ up, and range $[-1, 3]$."
+  },
+  {
+    "id": "trig-transformations-worked-2",
+    "title": "Solving a trigonometric equation in a given domain",
+    "difficulty": 2,
+    "problem": "Solve $2\\sin(2x) = \\sqrt{3}$ for $x \\in [0,\\, 2\\pi]$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Isolate $\\sin(2x)$.",
+        "working": "$$\\sin(2x) = \\frac{\\sqrt{3}}{2}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $u = 2x$ and find the domain for $u$.",
+        "working": "Since $x \\in [0,\\, 2\\pi]$, we have $u = 2x \\in [0,\\, 4\\pi]$."
+      },
+      {
+        "step": 3,
+        "instruction": "Solve $\\sin u = \\dfrac{\\sqrt{3}}{2}$ in $[0,\\, 4\\pi]$.",
+        "working": "Reference angle: $\\alpha = \\dfrac{\\pi}{3}$ (since $\\sin\\dfrac{\\pi}{3} = \\dfrac{\\sqrt{3}}{2}$). Sine is positive in the 1st and 2nd quadrants, so in each full period: $$u = \\frac{\\pi}{3},\\quad u = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$$ Over $[0, 4\\pi]$ there are two complete periods, giving four solutions: $$u = \\frac{\\pi}{3},\\quad \\frac{2\\pi}{3},\\quad \\frac{\\pi}{3} + 2\\pi = \\frac{7\\pi}{3},\\quad \\frac{2\\pi}{3} + 2\\pi = \\frac{8\\pi}{3}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Convert back to $x = u/2$.",
+        "working": "$$x = \\frac{\\pi}{6},\\quad \\frac{\\pi}{3},\\quad \\frac{7\\pi}{6},\\quad \\frac{4\\pi}{3}$$"
+      }
+    ],
+    "answer": "$x = \\dfrac{\\pi}{6},\\ \\dfrac{\\pi}{3},\\ \\dfrac{7\\pi}{6},\\ \\dfrac{4\\pi}{3}$"
+  },
+  {
+    "id": "trig-transformations-worked-3",
+    "title": "Finding the equation from a description",
+    "difficulty": 3,
+    "problem": "A trigonometric function $y = a\\sin(b(x-c)) + d$ has maximum value $5$, minimum value $-3$, period $\\pi$, and first maximum at $x = \\pi/4$ (with $a > 0$, $b > 0$). Find $a$, $b$, $c$, $d$ and write the equation.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the amplitude and vertical shift from the maximum and minimum.",
+        "working": "$$a = \\frac{\\text{max} - \\text{min}}{2} = \\frac{5 - (-3)}{2} = 4$$ $$d = \\frac{\\text{max} + \\text{min}}{2} = \\frac{5 + (-3)}{2} = 1$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find $b$ from the period.",
+        "working": "$$\\frac{2\\pi}{b} = \\pi \\implies b = 2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the phase shift $c$ using the position of the first maximum.",
+        "working": "The first maximum of $\\sin$ occurs at $\\dfrac{\\pi}{2}$, i.e. $b(x - c) = \\dfrac{\\pi}{2}$ when $x = \\dfrac{\\pi}{4}$: $$2\\!\\left(\\frac{\\pi}{4} - c\\right) = \\frac{\\pi}{2} \\implies \\frac{\\pi}{2} - 2c = \\frac{\\pi}{2} \\implies c = 0$$ The equation is $$y = 4\\sin(2x) + 1$$ Check: at $x = \\pi/4$, $y = 4\\sin(\\pi/2) + 1 = 4(1) + 1 = 5$, confirming this is the maximum."
+      }
+    ],
+    "answer": "$y = 4\\sin(2x) + 1$"
+  }
+]

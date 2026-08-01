@@ -1,0 +1,64 @@
+[
+  {
+    "id": "samplingdist-worked-1",
+    "title": "Standard error of the sample mean",
+    "difficulty": 1,
+    "problem": "Random samples of size $n = 100$ are taken from a population with $\\mu = 60$ and $\\sigma = 15$. Find the standard error of $\\bar{X}$ and describe the distribution of $\\bar{X}$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Compute the standard error using $\\text{SE}(\\bar{X}) = \\dfrac{\\sigma}{\\sqrt{n}}$.",
+        "working": "$$\\text{SE}(\\bar{X}) = \\frac{\\sigma}{\\sqrt{n}} = \\frac{15}{\\sqrt{100}} = \\frac{15}{10} = 1.5$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Since $n = 100$ is large, apply the Central Limit Theorem to describe the distribution of $\\bar{X}$.",
+        "working": "$$\\bar{X} \\approx N(60,\\; 1.5^2) = N(60, 2.25)$$"
+      }
+    ],
+    "answer": "The standard error is $1.5$, and $\\bar{X}$ is approximately normally distributed with mean 60 and standard deviation 1.5."
+  },
+  {
+    "id": "samplingdist-worked-2",
+    "title": "Normal approximation to the binomial",
+    "difficulty": 2,
+    "problem": "$X \\sim B(100, 0.4)$. Using the normal approximation, find $P(X < 35)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Check the normal approximation is valid ($np \\geq 5$ and $n(1-p) \\geq 5$), then find the mean and standard deviation.",
+        "working": "$np = 40 \\geq 5$ and $n(1-p) = 60 \\geq 5$, so the approximation is valid. Mean: $\\mu = np = 100 \\times 0.4 = 40$. Standard deviation: $\\sigma = \\sqrt{np(1-p)} = \\sqrt{100 \\times 0.4 \\times 0.6} = \\sqrt{24} \\approx 4.90$"
+      },
+      {
+        "step": 2,
+        "instruction": "Standardise to a $z$-score.",
+        "working": "$$z = \\frac{35 - 40}{4.90} \\approx \\frac{-5}{4.90} \\approx -1.02$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Use the standard normal table to find the probability.",
+        "working": "From a standard normal table, $P(Z < -1.02) \\approx 0.154$."
+      }
+    ],
+    "answer": "$P(X < 35) \\approx 0.154$"
+  },
+  {
+    "id": "samplingdist-worked-3",
+    "title": "Using the empirical rule",
+    "difficulty": 3,
+    "problem": "$X \\sim B(400, 0.5)$ is approximated by $N(200, 100)$ (SD = 10). Use the empirical rule to find $P(180 \\leq X \\leq 220)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Express the interval in terms of standard deviations from the mean.",
+        "working": "The interval $(180, 220) = (200 - 20,\\; 200 + 20) = \\mu \\pm 2\\sigma$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the empirical (68–95–99.7) rule: approximately 95% of values lie within two standard deviations of the mean.",
+        "working": "$$P(180 \\leq X \\leq 220) \\approx 0.95$$"
+      }
+    ],
+    "answer": "$P(180 \\leq X \\leq 220) \\approx 0.95$. (Empirical rule: within 1 SD ≈ 68%, within 2 SD ≈ 95%, within 3 SD ≈ 99.7%.)"
+  }
+]

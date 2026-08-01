@@ -1,0 +1,74 @@
+[
+  {
+    "id": "induction-worked-1",
+    "title": "Summation formula",
+    "difficulty": 1,
+    "problem": "Prove that $\\displaystyle\\sum_{k=1}^{n} k = \\dfrac{n(n+1)}{2}$ for all integers $n \\geq 1$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Verify the base case $n = 1$.",
+        "working": "LHS $= 1$. RHS $= \\dfrac{1 \\times 2}{2} = 1$. The two sides are equal, so the base case holds."
+      },
+      {
+        "step": 2,
+        "instruction": "State the inductive hypothesis: assume the statement is true for $n = m$.",
+        "working": "$$1 + 2 + \\cdots + m = \\frac{m(m+1)}{2}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Inductive step: use the hypothesis to prove the statement for $n = m+1$, i.e. show $1 + 2 + \\cdots + m + (m+1) = \\dfrac{(m+1)(m+2)}{2}$.",
+        "working": "$$\\sum_{k=1}^{m+1} k = \\underbrace{\\sum_{k=1}^{m} k}_{\\displaystyle= \\frac{m(m+1)}{2}} + (m+1) = \\frac{m(m+1)}{2} + (m+1) = (m+1)\\left(\\frac{m}{2} + 1\\right) = \\frac{(m+1)(m+2)}{2}$$ This is the required RHS."
+      }
+    ],
+    "answer": "By the principle of mathematical induction, $\\displaystyle\\sum_{k=1}^{n} k = \\dfrac{n(n+1)}{2}$ for all integers $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "induction-worked-2",
+    "title": "Divisibility proof",
+    "difficulty": 2,
+    "problem": "Prove that $5^n - 1$ is divisible by 4 for all integers $n \\geq 1$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Verify the base case $n = 1$.",
+        "working": "$5^1 - 1 = 4$, which is divisible by 4."
+      },
+      {
+        "step": 2,
+        "instruction": "State the inductive hypothesis: assume true for $n = m$.",
+        "working": "$$5^m - 1 = 4q \\quad \\text{for some integer } q$$ Equivalently, $5^m = 4q + 1$."
+      },
+      {
+        "step": 3,
+        "instruction": "Inductive step: show $4 \\mid (5^{m+1} - 1)$.",
+        "working": "$$5^{m+1} - 1 = 5 \\cdot 5^m - 1 = 5(4q + 1) - 1 = 20q + 5 - 1 = 20q + 4 = 4(5q + 1)$$ Since $5q + 1$ is an integer, $5^{m+1} - 1$ is divisible by 4."
+      }
+    ],
+    "answer": "By the principle of mathematical induction, $4 \\mid (5^n - 1)$ for all integers $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "induction-worked-3",
+    "title": "Inequality proof",
+    "difficulty": 3,
+    "problem": "Prove that $2^n \\geq n + 1$ for all integers $n \\geq 1$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Verify the base case $n = 1$.",
+        "working": "$2^1 = 2 \\geq 1 + 1 = 2$, so the base case holds."
+      },
+      {
+        "step": 2,
+        "instruction": "State the inductive hypothesis: assume true for $n = m$.",
+        "working": "$2^m \\geq m + 1$."
+      },
+      {
+        "step": 3,
+        "instruction": "Inductive step: show $2^{m+1} \\geq (m+1) + 1 = m + 2$.",
+        "working": "$$2^{m+1} = 2 \\cdot 2^m \\geq 2(m + 1) = 2m + 2$$ Now, for $m \\geq 1$: $2m + 2 = m + (m + 2) \\geq m + 2$ (since $m \\geq 0$). Therefore $2^{m+1} \\geq m + 2$."
+      }
+    ],
+    "answer": "By the principle of mathematical induction, $2^n \\geq n + 1$ for all integers $n \\geq 1$. $\\square$ (Always write \"assume $P(m)$ is true\" for a fixed but arbitrary integer $m$, not the variable you are trying to prove for.)"
+  }
+]

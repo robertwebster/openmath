@@ -1,0 +1,64 @@
+[
+  {
+    "id": "log-scales-worked-1",
+    "title": "Decibel calculations",
+    "difficulty": 1,
+    "problem": "A busy restaurant has a background noise intensity of $10^{-5}$ W/m\u00b2. A quiet library has intensity $10^{-9}$ W/m\u00b2. Calculate the loudness of each in decibels, and find the difference in loudness. Use $L = 10\\log_{10}\\!\\left(\\dfrac{I}{I_0}\\right)$ with $I_0 = 10^{-12}$ W/m\u00b2.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate the restaurant's loudness.",
+        "working": "$$\\frac{I}{I_0} = \\frac{10^{-5}}{10^{-12}} = 10^7$$ $$L_{\\text{restaurant}} = 10\\log_{10}(10^7) = 70 \\text{ dB}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the library's loudness.",
+        "working": "$$\\frac{I}{I_0} = \\frac{10^{-9}}{10^{-12}} = 10^3$$ $$L_{\\text{library}} = 10\\log_{10}(10^3) = 30 \\text{ dB}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the difference in loudness.",
+        "working": "$$\\Delta L = 70 - 30 = 40 \\text{ dB}$$ Although $40$ dB sounds modest, the intensities differ by a factor of $10^4 = 10\\,000$."
+      }
+    ],
+    "answer": "The restaurant is $70$ dB, the library is $30$ dB, and the difference in loudness is $40$ dB."
+  },
+  {
+    "id": "log-scales-worked-2",
+    "title": "Richter scale comparison",
+    "difficulty": 2,
+    "problem": "An earthquake of magnitude $5.0$ causes minor damage. How much stronger (in terms of wave amplitude) would a magnitude $7.5$ earthquake be? Round to 1 decimal place.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the amplitude ratio using the Richter magnitude formula $M = \\log_{10}(A/A_0)$.",
+        "working": "$$\\frac{A_2}{A_1} = 10^{M_2 - M_1}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the ratio.",
+        "working": "$$\\frac{A_2}{A_1} = 10^{7.5 - 5.0} = 10^{2.5} = \\sqrt{10^5} \\approx 316.2$$"
+      }
+    ],
+    "answer": "The magnitude-$7.5$ earthquake has wave amplitudes about $316.2$ times larger."
+  },
+  {
+    "id": "log-scales-worked-3",
+    "title": "pH and hydrogen ion concentration",
+    "difficulty": 3,
+    "problem": "A swimming pool manager measures pH $7.8$ (slightly alkaline). Adding a chemical lowers the pH to $6.8$. By what factor does the $[\\text{H}^+]$ concentration increase? Round to 1 decimal place.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Express the hydrogen ion concentrations using $[\\text{H}^+] = 10^{-\\text{pH}}$.",
+        "working": "$$[\\text{H}^+]_{\\text{before}} = 10^{-7.8}, \\qquad [\\text{H}^+]_{\\text{after}} = 10^{-6.8}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the ratio of the concentrations.",
+        "working": "$$\\frac{[\\text{H}^+]_{\\text{after}}}{[\\text{H}^+]_{\\text{before}}} = \\frac{10^{-6.8}}{10^{-7.8}} = 10^{-6.8 + 7.8} = 10^{1.0} = 10$$"
+      }
+    ],
+    "answer": "The hydrogen ion concentration increases by a factor of $10$. A drop of $1$ pH unit always corresponds to a $10\\times$ increase in hydrogen ion concentration."
+  }
+]

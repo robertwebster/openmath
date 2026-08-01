@@ -1,0 +1,74 @@
+[
+  {
+    "id": "vectorconcepts-worked-1",
+    "title": "Magnitude, unit vector, direction angle",
+    "difficulty": 1,
+    "problem": "For $\\mathbf{v} = (-4, 3)$, find (a) the magnitude, (b) the unit vector, and (c) the angle $\\mathbf{v}$ makes with the positive $x$-axis.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the magnitude using $|\\mathbf{v}| = \\sqrt{a^2+b^2}$.",
+        "working": "$$|\\mathbf{v}| = \\sqrt{(-4)^2 + 3^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the unit vector by dividing $\\mathbf{v}$ by its magnitude.",
+        "working": "$$\\hat{\\mathbf{v}} = \\frac{1}{5}(-4, 3) = \\left(-\\frac{4}{5},\\; \\frac{3}{5}\\right) = -0.8\\mathbf{i} + 0.6\\mathbf{j}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Determine the direction angle, checking the quadrant first ($x < 0$, $y > 0$ places $\\mathbf{v}$ in the second quadrant).",
+        "working": "The reference angle is $\\alpha = \\arctan\\!\\left(\\frac{3}{4}\\right) \\approx 36.87°$. $$\\theta = 180° - 36.87° \\approx 143.13°$$"
+      }
+    ],
+    "answer": "(a) $|\\mathbf{v}| = 5$. (b) $\\hat{\\mathbf{v}} = -0.8\\mathbf{i} + 0.6\\mathbf{j}$. (c) $\\theta \\approx 143.13°$."
+  },
+  {
+    "id": "vectorconcepts-worked-2",
+    "title": "Vector arithmetic",
+    "difficulty": 2,
+    "problem": "Given $\\mathbf{a} = 3\\mathbf{i} - \\mathbf{j}$ and $\\mathbf{b} = -\\mathbf{i} + 4\\mathbf{j}$, find $2\\mathbf{a} - 3\\mathbf{b}$ and its magnitude.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Compute the scalar multiples $2\\mathbf{a}$ and $3\\mathbf{b}$.",
+        "working": "$$2\\mathbf{a} = 2(3, -1) = (6, -2)$$ $$3\\mathbf{b} = 3(-1, 4) = (-3, 12)$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Subtract to find $2\\mathbf{a} - 3\\mathbf{b}$.",
+        "working": "$$2\\mathbf{a} - 3\\mathbf{b} = (6 - (-3),\\; -2 - 12) = (9, -14)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the magnitude of the result.",
+        "working": "$$|2\\mathbf{a} - 3\\mathbf{b}| = \\sqrt{9^2 + (-14)^2} = \\sqrt{81 + 196} = \\sqrt{277} \\approx 16.64$$"
+      }
+    ],
+    "answer": "$2\\mathbf{a} - 3\\mathbf{b} = (9, -14)$, with magnitude $\\sqrt{277} \\approx 16.64$."
+  },
+  {
+    "id": "vectorconcepts-worked-3",
+    "title": "Magnitude-direction form to components",
+    "difficulty": 3,
+    "problem": "A boat is travelling at 12 km/h on a bearing of 060° (measured clockwise from north). Express the velocity as a component vector in the form $a\\mathbf{i} + b\\mathbf{j}$, where $\\mathbf{i}$ is east and $\\mathbf{j}$ is north.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall that for a bearing of $B°$ (clockwise from north), the east-component is $|\\mathbf{v}|\\sin B°$ and the north-component is $|\\mathbf{v}|\\cos B°$ — the opposite of standard angle conventions.",
+        "working": "Bearing 060° means 60° clockwise from north."
+      },
+      {
+        "step": 2,
+        "instruction": "Compute the east component.",
+        "working": "$$\\text{East component (x):} \\quad 12\\sin 60° = 12 \\times \\frac{\\sqrt{3}}{2} = 6\\sqrt{3} \\approx 10.39 \\text{ km/h}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compute the north component.",
+        "working": "$$\\text{North component (y):} \\quad 12\\cos 60° = 12 \\times \\frac{1}{2} = 6 \\text{ km/h}$$"
+      }
+    ],
+    "answer": "$\\mathbf{v} = 6\\sqrt{3}\\,\\mathbf{i} + 6\\mathbf{j} \\approx 10.39\\mathbf{i} + 6\\mathbf{j}$ km/h."
+  }
+]

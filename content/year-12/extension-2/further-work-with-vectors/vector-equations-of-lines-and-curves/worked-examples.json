@@ -1,0 +1,84 @@
+[
+  {
+    "id": "vector-lines-worked-1",
+    "title": "Reading off a point and converting to parametric form",
+    "difficulty": 1,
+    "problem": "A line has equation $\\mathbf{r} = (2,-1,3)+\\lambda(1,2,-1)$. Find the point where $\\lambda = 3$, and write parametric equations.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the parametric equations from the vector equation.",
+        "working": "$x = 2+\\lambda, \\quad y = -1+2\\lambda, \\quad z = 3-\\lambda$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute $\\lambda = 3$ to find the point.",
+        "working": "$x = 2+3 = 5, \\quad y = -1+6 = 5, \\quad z = 3-3 = 0$"
+      }
+    ],
+    "answer": "The parametric equations are $x=2+\\lambda$, $y=-1+2\\lambda$, $z=3-\\lambda$, and the point at $\\lambda=3$ is $(5, 5, 0)$."
+  },
+  {
+    "id": "vector-lines-worked-2",
+    "title": "Intersection of two lines",
+    "difficulty": 2,
+    "problem": "Determine whether $L_1: \\mathbf{r} = (1,2,3)+\\lambda(2,0,1)$ and $L_2: \\mathbf{r} = (3,2,4)+\\mu(-1,0,2)$ intersect, and if so find the point.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write parametric equations for each line and note the $y$-equations match automatically.",
+        "working": "$L_1$: $x=1+2\\lambda$, $y=2$, $z=3+\\lambda$. $L_2$: $x=3-\\mu$, $y=2$, $z=4+2\\mu$. The $y$-equations match automatically."
+      },
+      {
+        "step": 2,
+        "instruction": "Equate the $x$-components.",
+        "working": "$1+2\\lambda = 3-\\mu \\implies 2\\lambda+\\mu = 2$ … (i)"
+      },
+      {
+        "step": 3,
+        "instruction": "Equate the $z$-components.",
+        "working": "$3+\\lambda = 4+2\\mu \\implies \\lambda-2\\mu = 1$ … (ii)"
+      },
+      {
+        "step": 4,
+        "instruction": "Solve the simultaneous equations.",
+        "working": "From (ii), $\\lambda = 1+2\\mu$. Substitute into (i): $2+4\\mu+\\mu = 2 \\implies \\mu = 0$, $\\lambda = 1$."
+      },
+      {
+        "step": 5,
+        "instruction": "Find the intersection point and verify.",
+        "working": "$(1+2, 2, 3+1) = (3, 2, 4)$ — verified on $L_2$ with $\\mu = 0$ ✓"
+      }
+    ],
+    "answer": "The lines intersect at the point $(3, 2, 4)$."
+  },
+  {
+    "id": "vector-lines-worked-3",
+    "title": "Identifying skew lines",
+    "difficulty": 3,
+    "problem": "Show that $L_1: \\mathbf{r} = (0,0,0)+\\lambda(1,0,0)$ and $L_2: \\mathbf{r} = (0,1,1)+\\mu(0,1,0)$ are skew.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write parametric equations for each line.",
+        "working": "$L_1$: $x = \\lambda$, $y = 0$, $z = 0$. $L_2$: $x = 0$, $y = 1+\\mu$, $z = 1$"
+      },
+      {
+        "step": 2,
+        "instruction": "Check whether the lines are parallel.",
+        "working": "$(1,0,0)$ and $(0,1,0)$ are not scalar multiples of each other — not parallel."
+      },
+      {
+        "step": 3,
+        "instruction": "Check for intersection using the $z$-components.",
+        "working": "$L_1$ always has $z = 0$; $L_2$ always has $z = 1$. These can never be equal, so no solution exists."
+      },
+      {
+        "step": 4,
+        "instruction": "Conclude.",
+        "working": "The lines do not intersect. Since they are also not parallel, they are skew."
+      }
+    ],
+    "answer": "$L_1$ and $L_2$ are skew lines."
+  }
+]

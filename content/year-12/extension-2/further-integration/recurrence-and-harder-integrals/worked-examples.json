@@ -1,0 +1,74 @@
+[
+  {
+    "id": "recurrence-integrals-worked-1",
+    "title": "Deriving a reduction formula",
+    "difficulty": 1,
+    "problem": "Let $I_n = \\displaystyle\\int_0^{\\pi/2} \\sin^n x\\,dx$. Derive the reduction formula $I_n = \\dfrac{n-1}{n}\\,I_{n-2}$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write $\\sin^n x$ as a product and apply integration by parts.",
+        "working": "Write $\\sin^n x = \\sin^{n-1}x \\cdot \\sin x$. Let $u = \\sin^{n-1}x$ and $dv = \\sin x\\,dx$, so $du = (n-1)\\sin^{n-2}x\\cos x\\,dx$ and $v = -\\cos x$. $I_n = \\Big[-\\sin^{n-1}x\\cos x\\Big]_0^{\\pi/2} + (n-1)\\int_0^{\\pi/2}\\sin^{n-2}x\\cos^2 x\\,dx$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate the boundary term and substitute $\\cos^2 x = 1 - \\sin^2 x$.",
+        "working": "The boundary term vanishes at both limits. $I_n = (n-1)\\int_0^{\\pi/2}\\sin^{n-2}x(1 - \\sin^2 x)\\,dx = (n-1)(I_{n-2} - I_n)$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve the resulting equation for $I_n$.",
+        "working": "$I_n + (n-1)I_n = (n-1)I_{n-2} \\implies n\\,I_n = (n-1)I_{n-2} \\implies I_n = \\dfrac{n-1}{n}\\,I_{n-2}$"
+      }
+    ],
+    "answer": "$I_n = \\dfrac{n-1}{n}\\,I_{n-2}$."
+  },
+  {
+    "id": "recurrence-integrals-worked-2",
+    "title": "Applying a reduction formula",
+    "difficulty": 2,
+    "problem": "Evaluate $\\displaystyle\\int_0^{\\pi/2} \\sin^5 x\\,dx$ using $I_n = \\dfrac{n-1}{n}\\,I_{n-2}$ with $I_1 = 1$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply the formula to find $I_3$.",
+        "working": "$I_3 = \\frac{2}{3}\\,I_1 = \\frac{2}{3}\\cdot 1 = \\frac{2}{3}$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the formula again to find $I_5$.",
+        "working": "$I_5 = \\frac{4}{5}\\,I_3 = \\frac{4}{5}\\cdot\\frac{2}{3} = \\frac{8}{15}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Check the result is consistent with $\\{I_n\\}$ being a decreasing sequence.",
+        "working": "$\\frac{8}{15} \\approx 0.533$. This is less than $I_4 \\approx 0.589$ and greater than $I_6 \\approx 0.491$, which is consistent since $\\{I_n\\}$ is decreasing. ✓"
+      }
+    ],
+    "answer": "$\\displaystyle\\int_0^{\\pi/2} \\sin^5 x\\,dx = \\frac{8}{15}$."
+  },
+  {
+    "id": "recurrence-integrals-worked-3",
+    "title": "Choosing the right technique",
+    "difficulty": 3,
+    "problem": "Evaluate $\\displaystyle\\int_1^e \\frac{(\\ln x)^3}{x}\\,dx$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recognise the form of the integrand and choose a substitution.",
+        "working": "The integrand has the form $[\\text{function of }\\ln x]\\cdot\\dfrac{1}{x}$, which suggests the substitution $u = \\ln x$, so $du = \\dfrac{1}{x}\\,dx$."
+      },
+      {
+        "step": 2,
+        "instruction": "Convert the limits of integration.",
+        "working": "When $x = 1$: $u = 0$. When $x = e$: $u = 1$."
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute and integrate.",
+        "working": "$\\int_1^e \\frac{(\\ln x)^3}{x}\\,dx = \\int_0^1 u^3\\,du = \\left[\\frac{u^4}{4}\\right]_0^1 = \\frac{1}{4}$"
+      }
+    ],
+    "answer": "$\\displaystyle\\int_1^e \\frac{(\\ln x)^3}{x}\\,dx = \\frac{1}{4}$."
+  }
+]

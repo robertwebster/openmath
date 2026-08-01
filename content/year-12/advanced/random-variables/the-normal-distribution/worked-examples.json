@@ -1,0 +1,64 @@
+[
+  {
+    "id": "normal-dist-worked-1",
+    "title": "Standardising and interpreting a z-score",
+    "difficulty": 1,
+    "problem": "$X \\sim N(60, 25)$, so $\\mu = 60$ and $\\sigma = 5$. (a) Find the $z$-score for $x = 72.5$. (b) Interpret what this z-score means.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Part (a): Calculate the z-score using $z = \\dfrac{x - \\mu}{\\sigma}$.",
+        "working": "$$z = \\frac{x - \\mu}{\\sigma} = \\frac{72.5 - 60}{5} = \\frac{12.5}{5} = 2.5$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Part (b): Interpret the z-score, and show how to reverse the process.",
+        "working": "A z-score of 2.5 means that $x = 72.5$ is 2.5 standard deviations above the mean. You can also reverse the process: if someone tells you $z = -1.4$, the corresponding raw value is: $$x = \\mu + z\\sigma = 60 + (-1.4)(5) = 60 - 7 = 53$$"
+      }
+    ],
+    "answer": "$z = 2.5$, meaning $x = 72.5$ is 2.5 standard deviations above the mean."
+  },
+  {
+    "id": "normal-dist-worked-2",
+    "title": "Applying the empirical rule (combining regions)",
+    "difficulty": 2,
+    "problem": "$X \\sim N(100, 64)$, so $\\mu = 100$ and $\\sigma = 8$. Using the empirical rule, find $P(84 \\le X \\le 116)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify how many standard deviations each endpoint is from the mean.",
+        "working": "$$84 = 100 - 16 = \\mu - 2\\sigma \\qquad 116 = 100 + 16 = \\mu + 2\\sigma$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the empirical rule.",
+        "working": "The empirical rule states that in any normal distribution: $$P(\\mu - \\sigma \\le X \\le \\mu + \\sigma) \\approx 0.68$$ $$P(\\mu - 2\\sigma \\le X \\le \\mu + 2\\sigma) \\approx 0.95$$ $$P(\\mu - 3\\sigma \\le X \\le \\mu + 3\\sigma) \\approx 0.997$$ So: $$P(84 \\le X \\le 116) = P(\\mu - 2\\sigma \\le X \\le \\mu + 2\\sigma) \\approx 0.95$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Consider the asymmetric case $P(84 \\le X \\le 108)$, where $108 = \\mu + \\sigma$, by splitting at the mean.",
+        "working": "$$P(84 \\le X \\le 100) = \\frac{0.95}{2} = 0.475$$ $$P(100 \\le X \\le 108) = \\frac{0.68}{2} = 0.34$$ $$P(84 \\le X \\le 108) = 0.475 + 0.34 = 0.815$$"
+      }
+    ],
+    "answer": "$P(84 \\le X \\le 116) \\approx 0.95$."
+  },
+  {
+    "id": "normal-dist-worked-3",
+    "title": "Comparing values across two distributions",
+    "difficulty": 3,
+    "problem": "Alice sat two exams: English, where her score was 74 against a class mean of 65 and class SD of 12; and History, where her score was 88 against a class mean of 80 and class SD of 6. In which exam did she perform better relative to her class?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate both z-scores.",
+        "working": "$$z_{\\text{English}} = \\frac{74 - 65}{12} = \\frac{9}{12} = 0.75$$ $$z_{\\text{History}} = \\frac{88 - 80}{6} = \\frac{8}{6} = 1.\\overline{3} \\approx 1.33$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Compare the z-scores to interpret relative performance.",
+        "working": "Alice's History z-score ($\\approx 1.33$) is higher than her English z-score ($0.75$), so she performed better relative to her class in History, even though her raw score in English is closer to the mean in number. The z-score strips away the effect of different means and spreads, making scores from different distributions comparable."
+      }
+    ],
+    "answer": "Alice performed better relative to her class in History (z ≈ 1.33) than in English (z = 0.75)."
+  }
+]

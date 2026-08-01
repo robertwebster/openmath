@@ -1,0 +1,69 @@
+[
+  {
+    "id": "exp-log-deriv-worked-1",
+    "title": "Differentiating $e^{f(x)}$ using the chain rule",
+    "difficulty": 1,
+    "problem": "Find $\\dfrac{d}{dx}\\left(e^{4x - 1}\\right)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the inner function.",
+        "working": "The outer function is $e^u$ and the inner function is $u = 4x - 1$."
+      },
+      {
+        "step": 2,
+        "instruction": "Differentiate the inner function.",
+        "working": "$$\\frac{du}{dx} = 4$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the chain rule.",
+        "working": "$$\\frac{d}{dx}\\left(e^{f(x)}\\right) = f'(x)\\,e^{f(x)}$$ so $$\\frac{d}{dx}\\left(e^{4x-1}\\right) = 4e^{4x-1}$$"
+      }
+    ],
+    "answer": "$\\dfrac{d}{dx}\\left(e^{4x-1}\\right) = 4e^{4x-1}$"
+  },
+  {
+    "id": "exp-log-deriv-worked-2",
+    "title": "Differentiating $\\ln f(x)$ using the chain rule",
+    "difficulty": 2,
+    "problem": "Find $\\dfrac{d}{dx}\\left(\\ln(x^2 + 3x)\\right)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify $f(x)$ and find $f'(x)$.",
+        "working": "$$f(x) = x^2 + 3x \\quad \\Rightarrow \\quad f'(x) = 2x + 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the standard result $\\dfrac{d}{dx}\\left(\\ln f(x)\\right) = \\dfrac{f'(x)}{f(x)}$.",
+        "working": "$$\\frac{d}{dx}\\left(\\ln(x^2 + 3x)\\right) = \\frac{2x + 3}{x^2 + 3x}$$ This can be factored as $\\dfrac{2x+3}{x(x+3)}$, but either form is acceptable."
+      }
+    ],
+    "answer": "$\\dfrac{d}{dx}\\left(\\ln(x^2 + 3x)\\right) = \\dfrac{2x + 3}{x^2 + 3x}$, equivalently $\\dfrac{2x+3}{x(x+3)}$."
+  },
+  {
+    "id": "exp-log-deriv-worked-3",
+    "title": "Finding a gradient and tangent equation",
+    "difficulty": 3,
+    "problem": "Find the equation of the tangent to $y = 3e^{2x}$ at the point where $x = 0$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the point on the curve.",
+        "working": "At $x = 0$: $y = 3e^0 = 3 \\times 1 = 3$. Point: $(0,\\,3)$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the gradient using the derivative.",
+        "working": "$$\\frac{dy}{dx} = 3 \\times 2\\,e^{2x} = 6e^{2x}$$ At $x = 0$: $\\dfrac{dy}{dx} = 6e^0 = 6$."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the tangent equation using $y - y_1 = m(x - x_1)$ with $m = 6$ and $(x_1, y_1) = (0, 3)$.",
+        "working": "$$y - 3 = 6(x - 0)$$ $$y = 6x + 3$$"
+      }
+    ],
+    "answer": "$y = 6x + 3$"
+  }
+]

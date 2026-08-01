@@ -1,0 +1,84 @@
+[
+  {
+    "id": "cr-worked-1",
+    "title": "Finding an unknown side",
+    "difficulty": 1,
+    "problem": "In triangle $ABC$, $a = 7$ cm, $b = 10$ cm and $C = 55°$. Find side $c$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write down the cosine rule for side $c$.",
+        "working": "$$c^2 = a^2 + b^2 - 2ab\\cos C$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values: $a = 7$, $b = 10$, $C = 55°$.",
+        "working": "$$c^2 = 7^2 + 10^2 - 2(7)(10)\\cos 55°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate each term, using $\\cos 55° \\approx 0.5736$.",
+        "working": "$$c^2 = 49 + 100 - 140 \\times 0.5736 = 149 - 80.30 = 68.70$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Take the square root.",
+        "working": "$$c = \\sqrt{68.70} \\approx 8.29 \\text{ cm}$$"
+      }
+    ],
+    "answer": "Side $c$ is approximately 8.29 cm."
+  },
+  {
+    "id": "cr-worked-2",
+    "title": "Finding an unknown angle",
+    "difficulty": 2,
+    "problem": "In triangle $PQR$, $p = 6$ m, $q = 9$ m and $r = 11$ m. Find angle $R$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "The angle $R$ is opposite side $r$. Rearrange the cosine rule to find $\\cos R$.",
+        "working": "$$\\cos R = \\frac{p^2 + q^2 - r^2}{2pq}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values.",
+        "working": "$$\\cos R = \\frac{6^2 + 9^2 - 11^2}{2 \\times 6 \\times 9} = \\frac{36 + 81 - 121}{108} = \\frac{-4}{108} \\approx -0.0370$$"
+      },
+      {
+        "step": 3,
+        "instruction": "The negative value tells us $R$ is obtuse. Find the angle.",
+        "working": "$$R = \\cos^{-1}(-0.0370) \\approx 92.1°$$"
+      }
+    ],
+    "answer": "Angle $R$ is approximately 92.1°."
+  },
+  {
+    "id": "cr-worked-3",
+    "title": "Real-world application",
+    "difficulty": 3,
+    "problem": "From a lighthouse $L$, boat $A$ is 24 km away on a bearing of 035° and boat $B$ is 18 km away on a bearing of 105°. Find the distance between the two boats.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the angle $\\angle ALB$ at the lighthouse. The two bearings differ by $105° - 35° = 70°$.",
+        "working": "$$\\angle ALB = 70°$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the cosine rule to triangle $ALB$ with $LA = 24$ km, $LB = 18$ km and included angle $70°$.",
+        "working": "$$AB^2 = LA^2 + LB^2 - 2(LA)(LB)\\cos(\\angle ALB)$$\n$$AB^2 = 24^2 + 18^2 - 2(24)(18)\\cos 70°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate, using $\\cos 70° \\approx 0.3420$.",
+        "working": "$$AB^2 = 576 + 324 - 864 \\times 0.3420 = 900 - 295.5 = 604.5$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Take the square root to find $AB$.",
+        "working": "$$AB = \\sqrt{604.5} \\approx 24.59 \\text{ km}$$"
+      }
+    ],
+    "answer": "The distance between the two boats is approximately 24.59 km."
+  }
+]

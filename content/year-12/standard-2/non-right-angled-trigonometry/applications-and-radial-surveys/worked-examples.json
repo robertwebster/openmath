@@ -1,0 +1,94 @@
+[
+  {
+    "id": "ars-worked-1",
+    "title": "Bearings and the cosine rule",
+    "difficulty": 1,
+    "problem": "From a lighthouse $L$, boat $A$ is 18 km away on a bearing of 045° and boat $B$ is 22 km away on a bearing of 105°. Find the distance between the two boats.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the angle at the lighthouse between $LA$ and $LB$.",
+        "working": "$$\\angle ALB = 105° - 045° = 60°$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the cosine rule in triangle $ALB$, with $LA = 18$ km, $LB = 22$ km and included angle $60°$.",
+        "working": "$$AB^2 = LA^2 + LB^2 - 2(LA)(LB)\\cos(\\angle ALB)$$\n$$AB^2 = 18^2 + 22^2 - 2(18)(22)\\cos 60°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate.",
+        "working": "$$AB^2 = 324 + 484 - 792 \\times 0.5 = 808 - 396 = 412$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Take the square root to find $AB$.",
+        "working": "$$AB = \\sqrt{412} \\approx 20.30 \\text{ km}$$"
+      }
+    ],
+    "answer": "The distance between the two boats is approximately 20.30 km."
+  },
+  {
+    "id": "ars-worked-2",
+    "title": "Radial survey — area of a section",
+    "difficulty": 2,
+    "problem": "In a radial survey from central point $O$, two boundary posts are recorded: $OA = 50$ m on a bearing of 030° and $OB = 40$ m on a bearing of 095°. Find the area of triangle $OAB$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the angle at $O$ between the two directions.",
+        "working": "$$\\angle AOB = 095° - 030° = 65°$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the triangle area formula with the two known sides and included angle.",
+        "working": "$$\\text{Area} = \\tfrac{1}{2}(OA)(OB)\\sin(\\angle AOB)$$\n$$\\text{Area} = \\tfrac{1}{2}(50)(40)\\sin 65°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate.",
+        "working": "$$\\text{Area} = 1000 \\times 0.9063 \\approx 906 \\text{ m}^2$$"
+      }
+    ],
+    "answer": "The area of triangle $OAB$ is approximately 906 m²."
+  },
+  {
+    "id": "ars-worked-3",
+    "title": "Two-leg journey — finding the interior angle",
+    "difficulty": 3,
+    "problem": "A drone flies 25 km from base $P$ on a bearing of 055° to point $A$. It then flies 30 km on a bearing of 135° to point $B$. Find the straight-line distance from $P$ to $B$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the interior angle of the triangle at $A$. The drone flew to $A$ on bearing 055°, so find the backward direction (from $A$ toward $P$).",
+        "working": "Backward direction $= 055° + 180° = 235°$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the interior angle at $A$ between the backward direction and the forward direction to $B$ (bearing 135°).",
+        "working": "$$\\angle PAB = 235° - 135° = 100°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the cosine rule in triangle $PAB$ with $PA = 25$ km, $AB = 30$ km and $\\angle PAB = 100°$.",
+        "working": "$$PB^2 = 25^2 + 30^2 - 2(25)(30)\\cos 100°$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Evaluate $\\cos 100°$ and the middle term.",
+        "working": "$\\cos 100° = -\\cos 80° \\approx -0.1736$, so the term $-2(25)(30)(-0.1736) = +260.4$."
+      },
+      {
+        "step": 5,
+        "instruction": "Substitute and evaluate $PB^2$.",
+        "working": "$$PB^2 = 625 + 900 + 260.4 = 1785.4$$"
+      },
+      {
+        "step": 6,
+        "instruction": "Take the square root to find $PB$.",
+        "working": "$$PB = \\sqrt{1785.4} \\approx 42.25 \\text{ km}$$"
+      }
+    ],
+    "answer": "The straight-line distance from $P$ to $B$ is approximately 42.25 km."
+  }
+]

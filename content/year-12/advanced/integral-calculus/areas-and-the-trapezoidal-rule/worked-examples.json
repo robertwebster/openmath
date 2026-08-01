@@ -1,0 +1,79 @@
+[
+  {
+    "id": "areas-trapezoidal-worked-1",
+    "title": "Area between two curves",
+    "difficulty": 1,
+    "problem": "Find the area of the region enclosed between $y = x + 2$ and $y = x^2$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the intersection points.",
+        "working": "Set the expressions equal: $$x^2 = x + 2 \\quad \\Rightarrow \\quad x^2 - x - 2 = 0 \\quad \\Rightarrow \\quad (x-2)(x+1) = 0$$ Intersections at $x = -1$ and $x = 2$."
+      },
+      {
+        "step": 2,
+        "instruction": "Determine which curve is on top.",
+        "working": "At $x = 0$: the line gives $y = 2$ and the parabola gives $y = 0$. So $y = x + 2$ lies above $y = x^2$ on $(-1, 2)$."
+      },
+      {
+        "step": 3,
+        "instruction": "Integrate (top $-$ bottom) between the limits.",
+        "working": "$$\\text{Area} = \\int_{-1}^{2}\\big[(x+2) - x^2\\big]\\,dx = \\int_{-1}^{2}(-x^2 + x + 2)\\,dx$$ $$= \\left[-\\frac{x^3}{3} + \\frac{x^2}{2} + 2x\\right]_{-1}^{2}$$ $$= \\left(-\\frac{8}{3} + 2 + 4\\right) - \\left(\\frac{1}{3} + \\frac{1}{2} - 2\\right)$$ $$= \\frac{10}{3} - \\left(-\\frac{7}{6}\\right) = \\frac{20}{6} + \\frac{7}{6} = \\frac{27}{6} = \\frac{9}{2}$$"
+      }
+    ],
+    "answer": "The area enclosed is $\\dfrac{9}{2}$ square units."
+  },
+  {
+    "id": "areas-trapezoidal-worked-2",
+    "title": "Area when the curve dips below the $x$-axis",
+    "difficulty": 2,
+    "problem": "Find the total area enclosed between $y = x^2 - 4$ and the $x$-axis.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find where the curve crosses the $x$-axis.",
+        "working": "$$x^2 - 4 = 0 \\quad \\Rightarrow \\quad x = \\pm 2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Determine the sign of the function between the zeros.",
+        "working": "At $x = 0$: $y = -4 < 0$, so the curve lies below the $x$-axis on $(-2, 2)$."
+      },
+      {
+        "step": 3,
+        "instruction": "Integrate and take the absolute value.",
+        "working": "$$\\int_{-2}^{2}(x^2 - 4)\\,dx = \\left[\\frac{x^3}{3} - 4x\\right]_{-2}^{2} = \\left(\\frac{8}{3} - 8\\right) - \\left(-\\frac{8}{3} + 8\\right) = -\\frac{32}{3}$$ The signed integral is $-\\dfrac{32}{3}$; since the region lies below the $x$-axis, the area is: $$\\text{Area} = \\left|-\\frac{32}{3}\\right| = \\frac{32}{3}$$"
+      }
+    ],
+    "answer": "The total enclosed area is $\\dfrac{32}{3}$ square units."
+  },
+  {
+    "id": "areas-trapezoidal-worked-3",
+    "title": "The trapezoidal rule",
+    "difficulty": 3,
+    "problem": "Use the trapezoidal rule with $n = 4$ sub-intervals to approximate $\\displaystyle\\int_0^1 e^x\\,dx$, and compare with the exact value.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Set up the sub-intervals.",
+        "working": "$h = \\dfrac{1-0}{4} = 0.25$. The $x$-values are $0,\\ 0.25,\\ 0.5,\\ 0.75,\\ 1$."
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate $f(x) = e^x$ at each $x$-value.",
+        "working": "$f(0) = 1$, $f(0.25) = e^{0.25} \\approx 1.2840$, $f(0.5) = e^{0.5} \\approx 1.6487$, $f(0.75) = e^{0.75} \\approx 2.1170$, $f(1) = e \\approx 2.7183$."
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the trapezoidal rule.",
+        "working": "$$T = \\frac{h}{2}\\big[f(x_0) + 2f(x_1) + 2f(x_2) + 2f(x_3) + f(x_4)\\big]$$ $$= \\frac{0.25}{2}\\big[1 + 2(1.2840) + 2(1.6487) + 2(2.1170) + 2.7183\\big]$$ $$= 0.125 \\times 13.8177 \\approx 1.7272$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Compare with the exact value.",
+        "working": "$$\\int_0^1 e^x\\,dx = \\Big[e^x\\Big]_0^1 = e - 1 \\approx 1.7183$$ The trapezoidal approximation ($1.7272$) slightly overestimates because $y = e^x$ is concave up. Using more sub-intervals reduces this error."
+      }
+    ],
+    "answer": "The trapezoidal rule gives $T \\approx 1.7272$, compared with the exact value $e - 1 \\approx 1.7183$."
+  }
+]

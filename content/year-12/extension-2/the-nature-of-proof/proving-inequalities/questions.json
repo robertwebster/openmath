@@ -37,7 +37,7 @@
       "$a + b \\geq ab$, with equality iff $a = b = 1$",
       "$\\sqrt{ab} \\geq \\dfrac{a+b}{2}$, with equality iff $a = b$"
     ],
-    "answer": "b",
+    "answer": "$\\dfrac{a + b}{2} \\geq \\sqrt{ab}$, with equality iff $a = b$",
     "hint": "AM stands for arithmetic mean $\\frac{a+b}{2}$; GM stands for geometric mean $\\sqrt{ab}$. The AM is always at least as large as the GM.",
     "explanation": "**Option (b)** is correct: for all non-negative reals $a$ and $b$,\n$$\\frac{a+b}{2} \\geq \\sqrt{ab}$$\nwith equality if and only if $a = b$.\n\nThe left side is the **arithmetic mean** (AM) and the right side is the **geometric mean** (GM).\n\n**Quick verification:** Let $a = 4$, $b = 9$.\n- AM $= \\frac{4+9}{2} = 6.5$\n- GM $= \\sqrt{4 \\times 9} = \\sqrt{36} = 6$\n- $6.5 \\geq 6$ ✓\n\nThe equality case: $a = b = 4$.\n- AM $= 4$, GM $= 4$. ✓"
   },

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "integration-techniques-worked-1",
+    "title": "Integration by parts — choosing $u$ and $dv$",
+    "difficulty": 1,
+    "problem": "Evaluate $\\displaystyle\\int_0^1 x^2 e^x\\,dx$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply integration by parts, $\\int u\\,dv = uv - \\int v\\,du$, with $u = x^2$, $dv = e^x\\,dx$.",
+        "working": "$du = 2x\\,dx$, $v = e^x$. $\\int_0^1 x^2 e^x\\,dx = \\Big[x^2 e^x\\Big]_0^1 - 2\\int_0^1 x e^x\\,dx = e - 2\\int_0^1 x e^x\\,dx$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply integration by parts a second time to $\\int_0^1 xe^x\\,dx$, with $u = x$, $dv = e^x\\,dx$.",
+        "working": "$\\int_0^1 x e^x\\,dx = \\Big[xe^x\\Big]_0^1 - \\int_0^1 e^x\\,dx = e - \\Big[e^x\\Big]_0^1 = e - (e-1) = 1$"
+      },
+      {
+        "step": 3,
+        "instruction": "Combine the results.",
+        "working": "$\\int_0^1 x^2 e^x\\,dx = e - 2(1) = e - 2 \\approx 0.72$"
+      }
+    ],
+    "answer": "$\\displaystyle\\int_0^1 x^2 e^x\\,dx = e-2 \\approx 0.72$."
+  },
+  {
+    "id": "integration-techniques-worked-2",
+    "title": "Partial fractions with a repeated linear factor",
+    "difficulty": 2,
+    "problem": "Evaluate $\\displaystyle\\int_1^2 \\frac{1}{x(x+1)^2}\\,dx$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Set up the partial fraction decomposition and clear denominators.",
+        "working": "$\\dfrac{1}{x(x+1)^2} = \\dfrac{A}{x} + \\dfrac{B}{x+1} + \\dfrac{C}{(x+1)^2}$. Multiplying both sides by $x(x+1)^2$: $1 = A(x+1)^2 + Bx(x+1) + Cx$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find $A$, $B$ and $C$ by substituting convenient values and comparing coefficients.",
+        "working": "Setting $x = 0$: $1 = A$. Setting $x = -1$: $1 = -C$, so $C = -1$. Comparing coefficients of $x^2$: $0 = A + B$, so $B = -1$."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the decomposition.",
+        "working": "$\\dfrac{1}{x(x+1)^2} = \\dfrac{1}{x} - \\dfrac{1}{x+1} - \\dfrac{1}{(x+1)^2}$"
+      },
+      {
+        "step": 4,
+        "instruction": "Integrate and evaluate between the limits.",
+        "working": "$\\left[\\ln x - \\ln(x+1) + \\dfrac{1}{x+1}\\right]_1^2 = \\left(\\ln 2 - \\ln 3 + \\dfrac{1}{3}\\right) - \\left(0 - \\ln 2 + \\dfrac{1}{2}\\right) = \\ln\\dfrac{4}{3} - \\dfrac{1}{6} \\approx 0.12$"
+      }
+    ],
+    "answer": "$\\displaystyle\\int_1^2 \\frac{1}{x(x+1)^2}\\,dx = \\ln\\frac{4}{3}-\\frac{1}{6} \\approx 0.12$."
+  },
+  {
+    "id": "integration-techniques-worked-3",
+    "title": "The Weierstrass ($t$-)substitution",
+    "difficulty": 3,
+    "problem": "Evaluate $\\displaystyle\\int_0^{\\pi/2} \\frac{1}{2 + \\cos x}\\,dx$ using $t = \\tan\\!\\left(\\tfrac{x}{2}\\right)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write $\\cos x$ and $dx$ in terms of $t$, and convert the limits.",
+        "working": "$\\cos x = \\dfrac{1-t^2}{1+t^2}$, $dx = \\dfrac{2}{1+t^2}\\,dt$. When $x = 0$, $t = 0$; when $x = \\pi/2$, $t = 1$."
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute into the integral.",
+        "working": "$\\int_0^1 \\frac{1}{2 + \\frac{1-t^2}{1+t^2}} \\cdot \\frac{2}{1+t^2}\\,dt = \\int_0^1 \\frac{1+t^2}{2(1+t^2) + (1-t^2)} \\cdot \\frac{2}{1+t^2}\\,dt$"
+      },
+      {
+        "step": 3,
+        "instruction": "Simplify the integrand.",
+        "working": "$= \\int_0^1 \\frac{2}{t^2 + 3}\\,dt$"
+      },
+      {
+        "step": 4,
+        "instruction": "Integrate using the standard arctangent form and evaluate.",
+        "working": "$= \\frac{2}{\\sqrt{3}}\\Big[\\arctan\\!\\left(\\tfrac{t}{\\sqrt{3}}\\right)\\Big]_0^1 = \\frac{2}{\\sqrt{3}} \\cdot \\frac{\\pi}{6} = \\frac{\\pi}{3\\sqrt{3}} \\approx 0.605$"
+      }
+    ],
+    "answer": "$\\displaystyle\\int_0^{\\pi/2} \\frac{1}{2+\\cos x}\\,dx = \\frac{\\pi}{3\\sqrt{3}} \\approx 0.605$."
+  }
+]

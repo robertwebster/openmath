@@ -1,0 +1,89 @@
+[
+  {
+    "id": "resisted-motion-worked-1",
+    "title": "Horizontal motion with resistance proportional to velocity",
+    "difficulty": 1,
+    "problem": "A particle of mass $3$ kg moves horizontally. The only horizontal force is air resistance $R = 6v$ N (opposing motion). Given $v = 15$ m/s at $t = 0$, find (a) $v$ as a function of $t$, and (b) the distance travelled until the particle's speed halves.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the equation of motion.",
+        "working": "$m\\dot{v} = -6v \\implies 3\\dot{v} = -6v \\implies \\dot{v} = -2v$"
+      },
+      {
+        "step": 2,
+        "instruction": "Separate variables and integrate to find $v(t)$.",
+        "working": "$\\frac{dv}{v} = -2\\,dt \\implies \\ln v = -2t + C$. Applying $v=15$ at $t=0$: $C = \\ln 15$, so $v = 15e^{-2t}$ m/s"
+      },
+      {
+        "step": 3,
+        "instruction": "For the distance, use $a = v\\dfrac{dv}{dx}$ to rewrite the equation of motion in terms of $x$.",
+        "working": "$v\\dfrac{dv}{dx} = -2v \\implies \\dfrac{dv}{dx} = -2$. Integrating: $v = 15 - 2x$"
+      },
+      {
+        "step": 4,
+        "instruction": "Set $v$ equal to half its initial value and solve for $x$.",
+        "working": "$7.5 = 15 - 2x \\implies x = 3.75$ m"
+      }
+    ],
+    "answer": "(a) $v = 15e^{-2t}$ m/s; (b) the particle travels $3.75$ m before its speed halves."
+  },
+  {
+    "id": "resisted-motion-worked-2",
+    "title": "Falling body with resistance, finding terminal velocity and motion",
+    "difficulty": 2,
+    "problem": "A particle of mass $1$ kg falls from rest. Air resistance is $R = 0.2v$ N (taking downward as positive, $g = 10$ m/s²). Find the terminal velocity and show that $v = 50(1-e^{-0.2t})$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the terminal velocity by setting $\\dot{v} = 0$ in the equation of motion.",
+        "working": "$10 - 0.2v_T = 0 \\implies v_T = 50$ m/s"
+      },
+      {
+        "step": 2,
+        "instruction": "Write the equation of motion and separate variables.",
+        "working": "$\\dot{v} = 10 - 0.2v \\implies \\frac{dv}{10-0.2v} = dt$"
+      },
+      {
+        "step": 3,
+        "instruction": "Integrate and apply the initial condition.",
+        "working": "$-5\\ln|10-0.2v| = t + C$. At $t=0$, $v=0$: $C = -5\\ln 10$"
+      },
+      {
+        "step": 4,
+        "instruction": "Solve for $v$ as a function of $t$.",
+        "working": "$5\\ln\\frac{10}{10-0.2v} = t \\implies \\frac{10}{10-0.2v} = e^{t/5} \\implies 10 - 0.2v = 10e^{-t/5} \\implies v = 50(1-e^{-t/5}) = 50(1-e^{-0.2t})$"
+      }
+    ],
+    "answer": "Terminal velocity is $50$ m/s, and $v = 50(1-e^{-0.2t})$ m/s."
+  },
+  {
+    "id": "resisted-motion-worked-3",
+    "title": "Resistance proportional to $v^2$ — using the $v$–$x$ form",
+    "difficulty": 3,
+    "problem": "A particle of mass $2$ kg falls from rest with resistance $R = 0.08v^2$ N. Using $g = 10$ m/s², find the speed after falling $20$ m.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the equation of motion using $a = v\\dfrac{dv}{dx}$ (downward positive).",
+        "working": "$2v\\,\\frac{dv}{dx} = 2(10) - 0.08v^2 = 20 - 0.08v^2 \\implies v\\,\\frac{dv}{dx} = 10 - 0.04v^2 = 0.04(250 - v^2)$"
+      },
+      {
+        "step": 2,
+        "instruction": "Separate variables.",
+        "working": "$\\frac{v\\,dv}{250-v^2} = 0.04\\,dx$"
+      },
+      {
+        "step": 3,
+        "instruction": "Integrate, using $\\int\\dfrac{v\\,dv}{250-v^2} = -\\dfrac{1}{2}\\ln|250-v^2|$, and apply the initial condition.",
+        "working": "$-\\frac{1}{2}\\ln(250-v^2) = 0.04x + C$. At $x=0$, $v=0$: $C = -\\dfrac{1}{2}\\ln 250$, giving $\\ln\\dfrac{250}{250-v^2} = 0.08x$"
+      },
+      {
+        "step": 4,
+        "instruction": "Substitute $x = 20$ and solve for $v$.",
+        "working": "$\\dfrac{250}{250-v^2} = e^{1.6} \\implies 250 - v^2 = 250e^{-1.6} \\implies v^2 = 250(1-e^{-1.6}) \\approx 250 \\times 0.7981 \\approx 199.5 \\implies v \\approx 14.1$ m/s"
+      }
+    ],
+    "answer": "The speed after falling $20$ m is approximately $14.1$ m/s."
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "velocity-acceleration-worked-1",
+    "title": "Choosing the right form of acceleration",
+    "difficulty": 1,
+    "problem": "A particle moves along the $x$-axis with $v = 4x^3$ m/s. Find the acceleration when $x = 1$ m.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recognise that since $v$ is given as a function of $x$, the form $a = v\\dfrac{dv}{dx}$ is most direct, and differentiate $v$.",
+        "working": "$v = 4x^3 \\implies \\dfrac{dv}{dx} = 12x^2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply $a = v\\,\\dfrac{dv}{dx}$.",
+        "working": "$a = (4x^3)(12x^2) = 48x^5$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $x = 1$.",
+        "working": "$a = 48(1)^5 = 48 \\text{ m/s}^2$"
+      }
+    ],
+    "answer": "The acceleration at $x=1$ m is $48$ m/s²."
+  },
+  {
+    "id": "velocity-acceleration-worked-2",
+    "title": "Finding velocity from acceleration using the energy form",
+    "difficulty": 2,
+    "problem": "A particle starts from rest at $x = 0$. Its acceleration is $a = 3 - x$ m/s² (for $x \\geq 0$). Find the speed when $x = 2$ m.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Use the energy form $\\dfrac{d}{dx}\\!\\left(\\dfrac{1}{2}v^2\\right) = 3 - x$ and integrate.",
+        "working": "$\\frac{1}{2}v^2 = \\int(3-x)\\,dx = 3x - \\frac{x^2}{2} + C$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the initial condition to find $C$.",
+        "working": "$v = 0$ at $x = 0$ gives $C = 0$, so $v^2 = 6x - x^2$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $x = 2$ to find the speed.",
+        "working": "$v^2 = 12 - 4 = 8 \\implies v = 2\\sqrt{2} \\approx 2.83 \\text{ m/s}$"
+      }
+    ],
+    "answer": "The speed at $x=2$ m is $2\\sqrt{2} \\approx 2.83$ m/s."
+  },
+  {
+    "id": "velocity-acceleration-worked-3",
+    "title": "Solving a separable ODE for velocity as a function of time",
+    "difficulty": 3,
+    "problem": "A particle moves with acceleration $a = 5 - v$ m/s². It starts from rest. Find $v$ as a function of $t$, and find the time to reach $v = 3$ m/s.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Since $a$ depends on $v$, use $\\dfrac{dv}{dt} = 5 - v$ and separate variables.",
+        "working": "$\\frac{dv}{5-v} = dt$"
+      },
+      {
+        "step": 2,
+        "instruction": "Integrate and apply the initial condition $v=0$ at $t=0$.",
+        "working": "$-\\ln|5-v| = t + C$. From $v=0$: $-\\ln 5 = C$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $v$ as a function of $t$.",
+        "working": "$\\ln\\frac{5}{5-v} = t \\implies v = 5(1 - e^{-t})$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the time when $v = 3$.",
+        "working": "$3 = 5(1-e^{-t}) \\implies e^{-t} = \\frac{2}{5} \\implies t = \\ln\\frac{5}{2} \\approx 0.92 \\text{ s}$"
+      }
+    ],
+    "answer": "$v = 5(1-e^{-t})$ m/s, and the particle reaches $v=3$ m/s at $t = \\ln\\frac{5}{2} \\approx 0.92$ s (the terminal velocity is $5$ m/s)."
+  }
+]

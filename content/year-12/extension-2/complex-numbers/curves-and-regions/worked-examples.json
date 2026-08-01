@@ -1,0 +1,74 @@
+[
+  {
+    "id": "complex-curves-worked-1",
+    "title": "Identifying a circle from a modulus condition",
+    "difficulty": 1,
+    "problem": "Describe the locus $|z - 3 + 2i| = 4$ and state its centre and radius.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Rewrite the equation to match the standard form $|z - w| = r$.",
+        "working": "$|z - (3 - 2i)| = 4$"
+      },
+      {
+        "step": 2,
+        "instruction": "Read off the centre and radius from the standard form.",
+        "working": "Centre: $w = 3 - 2i$, corresponding to the point $(3, -2)$ in the Argand plane. Radius: $r = 4$."
+      }
+    ],
+    "answer": "The locus is a circle with centre $(3,-2)$ and radius $4$."
+  },
+  {
+    "id": "complex-curves-worked-2",
+    "title": "Perpendicular bisector locus",
+    "difficulty": 2,
+    "problem": "Describe and find the Cartesian equation of the locus $|z - 1 - 3i| = |z + 5 + i|$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Interpret the equation geometrically.",
+        "working": "$z$ is equidistant from $A = 1 + 3i$ (the point $(1, 3)$) and $B = -5 - i$ (the point $(-5, -1)$), so the locus is the perpendicular bisector of $AB$."
+      },
+      {
+        "step": 2,
+        "instruction": "Let $z = x+iy$ and write the distance equation.",
+        "working": "$\\sqrt{(x-1)^2 + (y-3)^2} = \\sqrt{(x+5)^2 + (y+1)^2}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Square both sides and expand.",
+        "working": "$(x-1)^2 + (y-3)^2 = (x+5)^2 + (y+1)^2$, giving $x^2 - 2x + 1 + y^2 - 6y + 9 = x^2 + 10x + 25 + y^2 + 2y + 1$"
+      },
+      {
+        "step": 4,
+        "instruction": "Simplify and collect terms.",
+        "working": "$-2x - 6y + 10 = 10x + 2y + 26 \\implies -12x - 8y = 16 \\implies 3x + 2y = -4$"
+      }
+    ],
+    "answer": "The locus is the straight line $3x + 2y = -4$."
+  },
+  {
+    "id": "complex-curves-worked-3",
+    "title": "Region defined by a modulus inequality",
+    "difficulty": 3,
+    "problem": "Sketch and describe the region $|z - 2 + i| < 3$, and find the range of values of $|z|$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the boundary circle and describe the region.",
+        "working": "The boundary is the circle $|z - 2 + i| = 3$, with centre $2 - i$ (the point $(2,-1)$) and radius $3$. The inequality $|z-2+i|<3$ represents all points strictly inside this circle (not including the boundary)."
+      },
+      {
+        "step": 2,
+        "instruction": "Use the triangle inequality to bound $|z|$ above.",
+        "working": "$|z| \\le |z - (2 - i)| + |2 - i| < 3 + \\sqrt{4+1} = 3 + \\sqrt{5}$"
+      },
+      {
+        "step": 3,
+        "instruction": "Use the reverse triangle inequality to bound $|z|$ below.",
+        "working": "$|z| \\ge |2 - i| - |z - (2-i)| > \\sqrt{5} - 3$. Since $\\sqrt{5} \\approx 2.24$, this bound is negative; because $|z| \\ge 0$ always (and $z=0$ satisfies $|0-2+i|=\\sqrt{5}<3$, so the origin is in the region), the effective lower bound is $0$."
+      }
+    ],
+    "answer": "The region is the open disc centred at $(2,-1)$ with radius $3$, and $|z|$ ranges over $0 \\le |z| < 3+\\sqrt{5} \\approx 5.24$."
+  }
+]

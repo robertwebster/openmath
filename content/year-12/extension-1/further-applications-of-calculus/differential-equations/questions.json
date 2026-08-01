@@ -171,4 +171,3 @@
     "explanation": "Separating:\n$$\\frac{dv}{4-v} = dt$$\n\nIntegrating:\n$$-\\ln|4-v| = t + C_1$$\n\n$$4 - v = Ae^{-t}$$\n\nApplying $v(0) = 0$: $4 = A$.\n\n$$v = 4(1 - e^{-t})$$\n\nSet $v = 2$:\n$$2 = 4(1 - e^{-t}) \\implies e^{-t} = \\frac{1}{2} \\implies -t = -\\ln 2 \\implies t = \\ln 2 \\approx \\mathbf{0.6931}$$"
   }
 ]
-]

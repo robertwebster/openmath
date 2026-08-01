@@ -1,0 +1,74 @@
+[
+  {
+    "id": "induction-app-worked-1",
+    "title": "Inequality proof (Bernoulli's inequality)",
+    "difficulty": 1,
+    "problem": "Prove that $(1 + x)^n \\geq 1 + nx$ for all integers $n \\geq 1$ and all $x > -1$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Verify the base case $n = 1$.",
+        "working": "$(1 + x)^1 = 1 + x = 1 + 1 \\cdot x$. Equality holds, so the base case is true."
+      },
+      {
+        "step": 2,
+        "instruction": "State the inductive hypothesis: assume true for $n = m$.",
+        "working": "$(1 + x)^m \\geq 1 + mx$ for all $x > -1$."
+      },
+      {
+        "step": 3,
+        "instruction": "Inductive step: show $(1+x)^{m+1} \\geq 1 + (m+1)x$. Since $x > -1$, $1 + x > 0$, so both sides of the hypothesis can be multiplied by $(1+x)$ without flipping the inequality.",
+        "working": "$$(1+x)^{m+1} = (1+x)(1+x)^m \\geq (1+x)(1+mx)$$ Expanding: $$(1+x)(1+mx) = 1 + mx + x + mx^2 = 1 + (m+1)x + mx^2$$ Since $mx^2 \\geq 0$: $$(1+x)^{m+1} \\geq 1 + (m+1)x + mx^2 \\geq 1 + (m+1)x$$ This is the required inequality."
+      }
+    ],
+    "answer": "By the principle of mathematical induction, $(1 + x)^n \\geq 1 + nx$ for all $n \\geq 1$ and $x > -1$. $\\square$ (The extra $mx^2$ term is non-negative, so it can be safely dropped without weakening the inequality.)"
+  },
+  {
+    "id": "induction-app-worked-2",
+    "title": "Recursive sequence",
+    "difficulty": 2,
+    "problem": "A sequence is defined by $a_1 = 2$ and $a_{n+1} = 2a_n + 1$. Prove that $a_n = 3 \\cdot 2^{n-1} - 1$ for all $n \\geq 1$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Sanity-check the formula against the first two terms, then verify the base case $n = 1$.",
+        "working": "$a_1 = 3 \\cdot 1 - 1 = 2$, matching the definition. $a_2 = 2(2) + 1 = 5 = 3 \\cdot 2 - 1 = 5$, also matching. For the base case, RHS $= 3 \\cdot 2^0 - 1 = 3 - 1 = 2 = a_1$."
+      },
+      {
+        "step": 2,
+        "instruction": "State the inductive hypothesis: assume $a_m = 3 \\cdot 2^{m-1} - 1$.",
+        "working": "$a_m = 3 \\cdot 2^{m-1} - 1$."
+      },
+      {
+        "step": 3,
+        "instruction": "Inductive step: substitute the hypothesis into the recurrence relation to show $a_{m+1} = 3 \\cdot 2^m - 1$.",
+        "working": "$$a_{m+1} = 2a_m + 1 = 2(3 \\cdot 2^{m-1} - 1) + 1 = 3 \\cdot 2^m - 2 + 1 = 3 \\cdot 2^m - 1$$ This equals $3 \\cdot 2^{(m+1)-1} - 1$, the formula for $n = m+1$."
+      }
+    ],
+    "answer": "By the principle of mathematical induction, $a_n = 3 \\cdot 2^{n-1} - 1$ for all $n \\geq 1$. $\\square$"
+  },
+  {
+    "id": "induction-app-worked-3",
+    "title": "Inequality with a non-standard base case",
+    "difficulty": 3,
+    "problem": "Prove that $n! > 2^n$ for all integers $n \\geq 4$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Note that the statement is false for $n = 1, 2, 3$ (since $1 < 2$, $2 < 4$, $6 < 8$), so the base case must be $n = 4$. Verify it.",
+        "working": "$4! = 24$ and $2^4 = 16$. Since $24 > 16$, the statement holds at $n = 4$."
+      },
+      {
+        "step": 2,
+        "instruction": "State the inductive hypothesis: assume $m! > 2^m$ for some $m \\geq 4$.",
+        "working": "$m! > 2^m$ for some $m \\geq 4$."
+      },
+      {
+        "step": 3,
+        "instruction": "Inductive step: show $(m+1)! > 2^{m+1}$, using that $m + 1 > 2$ since $m \\geq 4$.",
+        "working": "$$(m+1)! = (m+1) \\cdot m! > (m+1) \\cdot 2^m > 2 \\cdot 2^m = 2^{m+1}$$ So $(m+1)! > 2^{m+1}$."
+      }
+    ],
+    "answer": "By the principle of mathematical induction, $n! > 2^n$ for all integers $n \\geq 4$. $\\square$ (Always state the base case explicitly and verify it — the induction only guarantees the result from the base case onward.)"
+  }
+]

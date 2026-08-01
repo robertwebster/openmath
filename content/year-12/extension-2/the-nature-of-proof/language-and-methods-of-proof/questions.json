@@ -13,7 +13,7 @@
       "If $n^2$ is odd, then $n$ is odd.",
       "If $n$ is even, then $n^2$ is odd."
     ],
-    "answer": "c",
+    "answer": "If $n^2$ is odd, then $n$ is odd.",
     "hint": "The contrapositive of $P \\Rightarrow Q$ is $\\lnot Q \\Rightarrow \\lnot P$. Negate both the hypothesis and conclusion, then swap them.",
     "explanation": "The statement has the form $P \\Rightarrow Q$ where $P$: \"$n$ is even\" and $Q$: \"$n^2$ is even\".\n\nThe contrapositive is $\\lnot Q \\Rightarrow \\lnot P$:\n- $\\lnot Q$: \"$n^2$ is odd\"\n- $\\lnot P$: \"$n$ is odd\"\n\nSo the contrapositive is **\"If $n^2$ is odd, then $n$ is odd.\"**\n\nNote: the contrapositive is logically equivalent to the original statement. Option (b) is the inverse ($\\lnot P \\Rightarrow \\lnot Q$), which is not equivalent. Option (a) is the converse ($Q \\Rightarrow P$), also not equivalent."
   },
@@ -31,7 +31,7 @@
       "For all integers $x$, $x^2 \\geq 0$.",
       "There exists an integer $x$ such that $x^2 = 0$."
     ],
-    "answer": "c",
+    "answer": "For all integers $x$, $x^2 \\geq 0$.",
     "hint": "The negation of $\\exists x\\, P(x)$ is $\\forall x\\, \\lnot P(x)$. Negate the quantifier and the predicate.",
     "explanation": "The statement has the form $\\exists x\\, P(x)$ where $P(x)$: \"$x^2 < 0$\".\n\nThe negation is $\\lnot(\\exists x\\, P(x)) \\equiv \\forall x\\, \\lnot P(x)$.\n\n$\\lnot(x^2 < 0)$ is $x^2 \\geq 0$.\n\nSo the negation is **\"For all integers $x$, $x^2 \\geq 0$.\"**\n\nThis is in fact a true statement (squares are always non-negative), which is consistent with the original statement being false."
   },
@@ -49,7 +49,7 @@
       "If $a$ is not divisible by 2, then $a$ is not divisible by 6.",
       "If $a$ is divisible by 3, then $a$ is divisible by 6."
     ],
-    "answer": "a",
+    "answer": "If $a$ is divisible by 2, then $a$ is divisible by 6.",
     "hint": "The converse of $P \\Rightarrow Q$ is $Q \\Rightarrow P$. Simply swap the hypothesis and the conclusion.",
     "explanation": "The statement has the form $P \\Rightarrow Q$ where:\n- $P$: \"$a$ is divisible by 6\"\n- $Q$: \"$a$ is divisible by 2\"\n\nThe converse is $Q \\Rightarrow P$: **\"If $a$ is divisible by 2, then $a$ is divisible by 6.\"**\n\nNote that the original statement is **true** (every multiple of 6 is a multiple of 2), but the converse is **false** — for example, $a = 4$ is divisible by 2 but not by 6. The converse of a true statement is not necessarily true.\n\nOption (c) is the contrapositive (which is true and equivalent to the original). Option (b) is the inverse."
   },
@@ -67,7 +67,7 @@
       "$x = \\dfrac{1}{2}$",
       "$x = 10$"
     ],
-    "answer": "c",
+    "answer": "$x = \\dfrac{1}{2}$",
     "hint": "A counterexample is a specific value that makes the statement false. Check each option: does $x^2 > x$ fail for that value?",
     "explanation": "Check each option:\n- $x = 2$: $x^2 = 4 > 2$ ✓ (not a counterexample)\n- $x = -3$: $x^2 = 9 > -3$ ✓ (not a counterexample)\n- $x = \\frac{1}{2}$: $x^2 = \\frac{1}{4}$, and $\\frac{1}{4} < \\frac{1}{2}$, so $x^2 > x$ is **false** ✓ — this is a counterexample\n- $x = 10$: $x^2 = 100 > 10$ ✓ (not a counterexample)\n\nThe counterexample is $x = \\frac{1}{2}$. Note that $x = 0$ and $x = 1$ also work (equality holds at those points), but are not listed."
   },
@@ -85,7 +85,7 @@
       "$P \\Rightarrow Q$; $Q$ is false; therefore $P$ is false.",
       "$P \\Rightarrow Q$; $P$ is false; therefore $Q$ is true."
     ],
-    "answer": "c",
+    "answer": "$P \\Rightarrow Q$; $Q$ is false; therefore $P$ is false.",
     "hint": "Think about which argument uses the contrapositive ($\\lnot Q \\Rightarrow \\lnot P$). The other three options all commit named logical fallacies.",
     "explanation": "**Option (c) is valid.** This is called *modus tollens*: from $P \\Rightarrow Q$ and $\\lnot Q$, we conclude $\\lnot P$. This is equivalent to applying the contrapositive ($\\lnot Q \\Rightarrow \\lnot P$).\n\n**Option (a)** — Affirming the consequent: just because $Q$ is true doesn't mean $P$ was the cause. Invalid.\n\nExample: \"If it rains, the ground is wet; the ground is wet; therefore it rained.\" The ground could be wet for other reasons.\n\n**Option (b)** — Denying the antecedent: $P$ being false says nothing about $Q$. Invalid.\n\n**Option (d)** — Also invalid: a false $P$ gives no information about $Q$ either way."
   },
@@ -103,7 +103,7 @@
       "$P \\Rightarrow \\lnot Q$",
       "$\\lnot Q \\Rightarrow \\lnot P$"
     ],
-    "answer": "d",
+    "answer": "$\\lnot Q \\Rightarrow \\lnot P$",
     "hint": "A statement and its contrapositive are always logically equivalent. The converse and inverse are equivalent to each other, but not to the original.",
     "explanation": "The statement $P \\Rightarrow Q$ is logically equivalent to its contrapositive $\\lnot Q \\Rightarrow \\lnot P$, which is **option (d)**.\n\nYou can verify this with a truth table:\n\n| $P$ | $Q$ | $P \\Rightarrow Q$ | $\\lnot Q \\Rightarrow \\lnot P$ |\n|---|---|---|---|\n| T | T | T | T |\n| T | F | F | F |\n| F | T | T | T |\n| F | F | T | T |\n\nThe columns are identical.\n\n- Option (a) is the converse — not equivalent.\n- Option (b) is the inverse — equivalent to the converse, but not to the original.\n- Option (c) is neither converse nor contrapositive."
   },
@@ -145,7 +145,7 @@
       "$x = 0$",
       "$x = 0.001$"
     ],
-    "answer": "c",
+    "answer": "$x = 0$",
     "hint": "Find a value of $x$ for which $|x|$ is not strictly greater than 0.",
     "explanation": "**$x = 0$ is the counterexample.**\n\n$|0| = 0$, and $0 > 0$ is false.\n\nAll other listed values give $|x| > 0$:\n- $|1| = 1 > 0$ ✓\n- $|-5| = 5 > 0$ ✓\n- $|0.001| = 0.001 > 0$ ✓\n\nThe correct statement would be \"For all real numbers $x \\neq 0$, $|x| > 0$\" — adding the condition $x \\neq 0$ makes it true."
   },

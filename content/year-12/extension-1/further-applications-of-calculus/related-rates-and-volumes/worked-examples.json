@@ -1,0 +1,74 @@
+[
+  {
+    "id": "relatedrates-worked-1",
+    "title": "Related rates: expanding circle",
+    "difficulty": 1,
+    "problem": "Water ripples outward in a circular pattern. The area of the circle is increasing at $12 \\text{ m}^2/\\text{s}$. At what rate is the radius increasing when the radius is 4 m?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the linking equation.",
+        "working": "$$A = \\pi r^2$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Differentiate both sides with respect to $t$.",
+        "working": "$$\\frac{dA}{dt} = 2\\pi r\\,\\frac{dr}{dt}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute the known values $\\dfrac{dA}{dt} = 12$ and $r = 4$, and solve for $\\dfrac{dr}{dt}$.",
+        "working": "$$12 = 2\\pi(4)\\,\\frac{dr}{dt} = 8\\pi\\,\\frac{dr}{dt}$$ $$\\frac{dr}{dt} = \\frac{12}{8\\pi} = \\frac{3}{2\\pi} \\approx 0.477 \\text{ m/s}$$"
+      }
+    ],
+    "answer": "The radius is increasing at $\\dfrac{3}{2\\pi} \\approx 0.477$ m/s when $r = 4$ m."
+  },
+  {
+    "id": "relatedrates-worked-2",
+    "title": "Related rates: conical tank",
+    "difficulty": 2,
+    "problem": "A conical tank (apex down) has height 8 m and base radius 4 m. Water flows in at $3 \\text{ m}^3/\\text{min}$. How fast is the water level rising when the depth is 2 m?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Use similar triangles to express $r$ in terms of $h$, then write $V$ in terms of the single variable $h$.",
+        "working": "By similar triangles: $\\dfrac{r}{h} = \\dfrac{4}{8} = \\dfrac{1}{2}$, so $r = \\dfrac{h}{2}$. $$V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi\\!\\left(\\frac{h}{2}\\right)^{\\!2} h = \\frac{\\pi h^3}{12}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Differentiate with respect to $t$.",
+        "working": "$$\\frac{dV}{dt} = \\frac{\\pi h^2}{4}\\,\\frac{dh}{dt}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $\\dfrac{dV}{dt} = 3$ and $h = 2$, and solve for $\\dfrac{dh}{dt}$.",
+        "working": "$$3 = \\frac{\\pi(4)}{4}\\,\\frac{dh}{dt} = \\pi\\,\\frac{dh}{dt}$$ $$\\frac{dh}{dt} = \\frac{3}{\\pi} \\approx 0.955 \\text{ m/min}$$"
+      }
+    ],
+    "answer": "The water level is rising at $\\dfrac{3}{\\pi} \\approx 0.955$ m/min when the depth is 2 m."
+  },
+  {
+    "id": "relatedrates-worked-3",
+    "title": "Volume of revolution: between two curves",
+    "difficulty": 3,
+    "problem": "Find the volume of the solid formed by rotating the region between $y = x$ and $y = x^2$ (for $0 \\le x \\le 1$) about the $x$-axis.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify which curve is on top on the interval $[0, 1]$.",
+        "working": "On $[0, 1]$: $x \\ge x^2$, so $y = x$ is the outer boundary."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the washer method $V = \\pi\\int_a^b\\left[y_{\\text{outer}}^2 - y_{\\text{inner}}^2\\right]dx$.",
+        "working": "$$V = \\pi\\int_0^1 \\!\\left[x^2 - (x^2)^2\\right] dx = \\pi\\int_0^1 (x^2 - x^4)\\,dx$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Integrate and substitute the limits.",
+        "working": "$$V = \\pi\\left[\\frac{x^3}{3} - \\frac{x^5}{5}\\right]_0^1 = \\pi\\!\\left(\\frac{1}{3} - \\frac{1}{5}\\right) = \\pi \\times \\frac{2}{15} = \\frac{2\\pi}{15} \\approx 0.419 \\text{ units}^3$$"
+      }
+    ],
+    "answer": "The volume is $\\dfrac{2\\pi}{15} \\approx 0.419$ units$^3$."
+  }
+]

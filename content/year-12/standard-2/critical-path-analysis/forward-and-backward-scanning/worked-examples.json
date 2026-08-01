@@ -1,0 +1,104 @@
+[
+  {
+    "id": "fbs-worked-1",
+    "title": "Forward scan — finding earliest start times",
+    "difficulty": 1,
+    "problem": "A project has the following activities. Perform a forward scan to find the EST and EFT of each activity.\n\n| Activity | Predecessors | Duration (days) |\n|---|---|---|\n| A | — | 4 |\n| B | — | 6 |\n| C | A | 3 |\n| D | A, B | 5 |\n| E | C, D | 2 |",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the forward scan rule.",
+        "working": "For activities with no predecessors, EST = 0. For all others, EST = maximum of the EFTs of all immediate predecessors. EFT = EST + duration."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the EST and EFT of A and B, which have no predecessors.",
+        "working": "$$\\text{EST}_A = 0,\\quad \\text{EFT}_A = 0 + 4 = 4$$\n$$\\text{EST}_B = 0,\\quad \\text{EFT}_B = 0 + 6 = 6$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the EST and EFT of C, which follows A only.",
+        "working": "$$\\text{EST}_C = \\text{EFT}_A = 4,\\quad \\text{EFT}_C = 4 + 3 = 7$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the EST and EFT of D, which follows both A and B.",
+        "working": "D must wait for the later finish of its predecessors.\n$$\\text{EST}_D = \\max(\\text{EFT}_A,\\ \\text{EFT}_B) = \\max(4, 6) = 6,\\quad \\text{EFT}_D = 6 + 5 = 11$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Find the EST and EFT of E, which follows both C and D.",
+        "working": "$$\\text{EST}_E = \\max(\\text{EFT}_C,\\ \\text{EFT}_D) = \\max(7, 11) = 11,\\quad \\text{EFT}_E = 11 + 2 = 13$$"
+      }
+    ],
+    "answer": "The minimum project completion time is the EFT of the last activity: 13 days."
+  },
+  {
+    "id": "fbs-worked-2",
+    "title": "Backward scan — finding latest start times",
+    "difficulty": 2,
+    "problem": "Using the same project from Example 1 (minimum duration = 13 days), perform a backward scan to find the LST of each activity.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the backward scan rule.",
+        "working": "For the last activity, LST = project duration − duration of that activity. For all others, LST = minimum of the LSTs of all immediate successors, minus this activity's duration."
+      },
+      {
+        "step": 2,
+        "instruction": "Find the LST of E, the last activity.",
+        "working": "$$\\text{LST}_E = 13 - 2 = 11$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the LST of D, for which only E follows.",
+        "working": "$$\\text{LST}_D = \\text{LST}_E - \\text{dur}_D = 11 - 5 = 6$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the LST of C, for which only E follows.",
+        "working": "$$\\text{LST}_C = \\text{LST}_E - \\text{dur}_C = 11 - 3 = 8$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Find the LST of B, for which only D follows.",
+        "working": "$$\\text{LST}_B = \\text{LST}_D - \\text{dur}_B = 6 - 6 = 0$$"
+      },
+      {
+        "step": 6,
+        "instruction": "Find the LST of A, for which both C and D follow — take the minimum.",
+        "working": "$$\\text{LST}_A = \\min(\\text{LST}_C, \\text{LST}_D) - \\text{dur}_A = \\min(8, 6) - 4 = 6 - 4 = 2$$"
+      }
+    ],
+    "answer": "LST values: A = 2, B = 0, C = 8, D = 6, E = 11."
+  },
+  {
+    "id": "fbs-worked-3",
+    "title": "Calculating float",
+    "difficulty": 3,
+    "problem": "Using the ESTs from Example 1 and LSTs from Example 2, calculate the float of each activity and identify which have zero float. Float = LST − EST. An activity with float = 0 is on the critical path.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Tabulate EST and LST for each activity and compute the float.",
+        "working": "| Activity | EST | LST | Float = LST − EST |\n|---|---|---|---|\n| A | 0 | 2 | 2 |\n| B | 0 | 0 | 0 |\n| C | 4 | 8 | 4 |\n| D | 6 | 6 | 0 |\n| E | 11 | 11 | 0 |"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the activities with zero float.",
+        "working": "Activities B, D and E all have float = 0. These are on the critical path."
+      },
+      {
+        "step": 3,
+        "instruction": "Note the float of the non-critical activities.",
+        "working": "Activity A has 2 days of float — it can start up to 2 days late without delaying the project. Activity C has 4 days of float."
+      },
+      {
+        "step": 4,
+        "instruction": "State the critical path and confirm its total duration.",
+        "working": "The critical path is B → D → E, with total duration $6 + 5 + 2 = 13$ days, confirming the minimum project time."
+      }
+    ],
+    "answer": "The critical path is B → D → E (float = 0), with total duration 13 days."
+  }
+]

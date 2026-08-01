@@ -104,7 +104,7 @@
       "$2\\sin\\theta\\cos\\theta$",
       "$1+2\\cos^2\\theta$"
     ],
-    "answer": "b",
+    "answer": "$\\cos^2\\theta - \\sin^2\\theta$",
     "hint": "Expand $(\\cos\\theta+i\\sin\\theta)^2$ and take the real part.",
     "explanation": "Expanding:\n$$(\\cos\\theta+i\\sin\\theta)^2 = \\cos^2\\theta+2i\\cos\\theta\\sin\\theta+i^2\\sin^2\\theta$$\n$$= (\\cos^2\\theta-\\sin^2\\theta)+i(2\\cos\\theta\\sin\\theta)$$\n\nEquating real parts with $\\cos 2\\theta$:\n$$\\cos 2\\theta = \\cos^2\\theta-\\sin^2\\theta$$\n\nEquating imaginary parts with $\\sin 2\\theta$:\n$$\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$$\n\nNote: option (c) is the expression for $\\sin 2\\theta$, not $\\cos 2\\theta$."
   },
