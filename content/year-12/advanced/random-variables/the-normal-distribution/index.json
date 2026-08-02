@@ -1,0 +1,11 @@
+{
+  "id": "the-normal-distribution",
+  "title": "The normal distribution",
+  "topic": "random-variables",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Statistics and Probability",
+  "syllabusOutcome": "MAV-12-07",
+  "description": "Explore the normal distribution as a continuous probability distribution; standardise values using z-scores; apply the empirical (68–95–99.7%) rule to find probabilities and proportions; compare values across different normal distributions."
+}

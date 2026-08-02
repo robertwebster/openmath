@@ -1,0 +1,16 @@
+{
+  "id": "non-right-angled-trigonometry",
+  "title": "Non-right-angled trigonometry",
+  "year": 12,
+  "stage": "6",
+  "course": "standard-2",
+  "strand": "Measurement",
+  "syllabusOutcome": "MS-M6",
+  "description": "Apply the sine rule, cosine rule and area formula to non-right-angled triangles; solve bearing and radial survey problems.",
+  "subtopics": [
+    "sine-rule",
+    "cosine-rule",
+    "area-of-a-triangle",
+    "applications-and-radial-surveys"
+  ]
+}

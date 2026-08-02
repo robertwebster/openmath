@@ -1,0 +1,9 @@
+{
+  "id": "the-empirical-rule",
+  "title": "The empirical rule",
+  "topic": "the-normal-distribution",
+  "year": 12,
+  "strand": "Statistical Analysis",
+  "syllabusOutcome": "MS-S5",
+  "description": "Apply the 68–95–99.7% rule to find the proportion of data within 1, 2 and 3 standard deviations of the mean; determine percentages in tails and between intervals; calculate expected counts in samples; solve problems using the empirical rule and z-scores together."
+}

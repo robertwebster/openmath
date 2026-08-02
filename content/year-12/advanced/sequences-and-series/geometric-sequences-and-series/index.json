@@ -1,0 +1,11 @@
+{
+  "id": "geometric-sequences-and-series",
+  "title": "Geometric sequences and series",
+  "topic": "sequences-and-series",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Algebra / Functions",
+  "syllabusOutcome": "MAV-12-03",
+  "description": "Find the $n$th term using $T_n = ar^{n-1}$ and partial sums using $S_n = \\frac{a(r^n-1)}{r-1}$; evaluate the limiting sum $S_\\infty = \\frac{a}{1-r}$ when $|r| < 1$."
+}

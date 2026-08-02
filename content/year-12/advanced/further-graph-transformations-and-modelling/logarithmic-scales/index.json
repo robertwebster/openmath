@@ -1,0 +1,11 @@
+{
+  "id": "logarithmic-scales",
+  "title": "Logarithmic scales",
+  "topic": "further-graph-transformations-and-modelling",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Functions",
+  "syllabusOutcome": "MAV-12-01",
+  "description": "Recognise when a logarithmic scale is appropriate for large-range data; solve problems using the decibel scale for sound intensity, the Richter scale for earthquakes, the pH scale for acidity, and stellar magnitude for star brightness."
+}

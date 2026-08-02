@@ -1,0 +1,74 @@
+[
+  {
+    "id": "projectile-worked-1",
+    "title": "Time of flight, range, and maximum height",
+    "difficulty": 1,
+    "problem": "A ball is projected at 20 m/s at 30° above the horizontal. Take $g = 10$ m/s². Find (a) the time of flight, (b) the range, (c) the maximum height.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the time of flight using $T = \\dfrac{2u\\sin\\alpha}{g}$.",
+        "working": "$$T = \\frac{2u\\sin\\alpha}{g} = \\frac{2 \\times 20 \\times \\sin 30°}{10} = \\frac{2 \\times 20 \\times 0.5}{10} = \\frac{20}{10} = 2 \\text{ s}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the range using $R = \\dfrac{u^2\\sin 2\\alpha}{g}$.",
+        "working": "$$R = \\frac{u^2\\sin 2\\alpha}{g} = \\frac{400\\sin 60°}{10} = \\frac{400 \\times \\frac{\\sqrt{3}}{2}}{10} = 20\\sqrt{3} \\approx 34.64 \\text{ m}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the maximum height using $H = \\dfrac{u^2\\sin^2\\!\\alpha}{2g}$.",
+        "working": "$$H = \\frac{u^2\\sin^2\\!\\alpha}{2g} = \\frac{400 \\times (0.5)^2}{20} = \\frac{400 \\times 0.25}{20} = \\frac{100}{20} = 5 \\text{ m}$$"
+      }
+    ],
+    "answer": "(a) The time of flight is $2$ s. (b) The range is $20\\sqrt{3} \\approx 34.64$ m. (c) The maximum height is $5$ m."
+  },
+  {
+    "id": "projectile-worked-2",
+    "title": "Velocity at a given time",
+    "difficulty": 2,
+    "problem": "A ball is projected at 25 m/s with $\\sin\\alpha = \\tfrac{3}{5}$ and $\\cos\\alpha = \\tfrac{4}{5}$. Take $g = 10$ m/s². Find the velocity vector and speed at $t = 2$ s.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the horizontal velocity, which is constant.",
+        "working": "$$v_x = u\\cos\\alpha = 25 \\times \\frac{4}{5} = 20 \\text{ m/s}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the vertical velocity at $t = 2$ s using $v_y = u\\sin\\alpha - gt$.",
+        "working": "$$v_y = u\\sin\\alpha - gt = 25 \\times \\frac{3}{5} - 10 \\times 2 = 15 - 20 = -5 \\text{ m/s}$$ The negative value means the ball is moving downward at $t = 2$ s."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the speed using $\\text{speed} = \\sqrt{v_x^2 + v_y^2}$.",
+        "working": "$$\\text{speed} = \\sqrt{v_x^2 + v_y^2} = \\sqrt{20^2 + (-5)^2} = \\sqrt{400 + 25} = \\sqrt{425} = 5\\sqrt{17} \\approx 20.62 \\text{ m/s}$$"
+      }
+    ],
+    "answer": "The velocity vector at $t = 2$ s is $(20, -5)$ m/s, and the speed is $5\\sqrt{17} \\approx 20.62$ m/s."
+  },
+  {
+    "id": "projectile-worked-3",
+    "title": "Working backwards from range",
+    "difficulty": 3,
+    "problem": "A ball is kicked at 45° and lands 90 m away on level ground. Take $g = 10$ m/s². Find the initial speed.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Rearrange the range formula $R = \\dfrac{u^2\\sin 2\\alpha}{g}$ to make $u^2$ the subject.",
+        "working": "$$R = \\frac{u^2\\sin 2\\alpha}{g} \\implies u^2 = \\frac{Rg}{\\sin 2\\alpha}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values.",
+        "working": "$$u^2 = \\frac{90 \\times 10}{\\sin 90°} = \\frac{900}{1} = 900$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Take the square root to find $u$.",
+        "working": "$$u = 30 \\text{ m/s}$$"
+      }
+    ],
+    "answer": "The initial speed is $30$ m/s. (Note: the maximum range is achieved at 45° because $\\sin 2\\alpha$ is maximised when $2\\alpha = 90°$, giving $R_{\\max} = \\dfrac{u^2}{g}$.)"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "flow-problems",
+  "title": "Flow problems",
+  "topic": "network-flow",
+  "year": 12,
+  "strand": "Networks",
+  "syllabusOutcome": "MS-N2",
+  "description": "Apply the maximum-flow minimum-cut theorem to directed networks; identify cuts, calculate cut capacity, and determine the maximum flow from source to sink."
+}

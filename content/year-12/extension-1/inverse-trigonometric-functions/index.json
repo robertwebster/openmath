@@ -1,0 +1,14 @@
+{
+  "id": "inverse-trigonometric-functions",
+  "title": "Inverse trigonometric functions",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Trigonometric functions",
+  "syllabusOutcome": "ME-12-02",
+  "description": "Define the inverse trigonometric functions with their restricted domains and ranges; evaluate exact values; differentiate and integrate involving inverse trigonometric forms.",
+  "subtopics": [
+    "inverse-trig-functions",
+    "properties-and-calculus"
+  ]
+}

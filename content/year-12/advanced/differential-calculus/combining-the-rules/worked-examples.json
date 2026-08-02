@@ -1,0 +1,59 @@
+[
+  {
+    "id": "combining-rules-worked-1",
+    "title": "Product rule",
+    "difficulty": 1,
+    "problem": "Find $\\dfrac{d}{dx}\\left(x^2\\ln x\\right)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the product rule and identify $u$ and $v$.",
+        "working": "The product rule: if $y = u\\,v$, then $\\dfrac{dy}{dx} = u'v + uv'$. Let $u = x^2$ and $v = \\ln x$: $$u' = 2x \\qquad v' = \\frac{1}{x}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the product rule.",
+        "working": "$$\\frac{dy}{dx} = 2x \\cdot \\ln x + x^2 \\cdot \\frac{1}{x} = 2x\\ln x + x$$ This can be written as $x(2\\ln x + 1)$."
+      }
+    ],
+    "answer": "$\\dfrac{dy}{dx} = 2x\\ln x + x = x(2\\ln x + 1)$"
+  },
+  {
+    "id": "combining-rules-worked-2",
+    "title": "Quotient rule",
+    "difficulty": 2,
+    "problem": "Find $\\dfrac{d}{dx}\\left(\\dfrac{x}{\\cos x}\\right)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the quotient rule and identify $u$ and $v$.",
+        "working": "The quotient rule: if $y = \\dfrac{u}{v}$, then $\\dfrac{dy}{dx} = \\dfrac{u'v - uv'}{v^2}$. Let $u = x$ and $v = \\cos x$: $$u' = 1 \\qquad v' = -\\sin x$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the quotient rule.",
+        "working": "$$\\frac{dy}{dx} = \\frac{1 \\cdot \\cos x - x \\cdot (-\\sin x)}{\\cos^2 x} = \\frac{\\cos x + x\\sin x}{\\cos^2 x}$$"
+      }
+    ],
+    "answer": "$\\dfrac{dy}{dx} = \\dfrac{\\cos x + x\\sin x}{\\cos^2 x}$"
+  },
+  {
+    "id": "combining-rules-worked-3",
+    "title": "Chain rule inside a product",
+    "difficulty": 3,
+    "problem": "Find $\\dfrac{d}{dx}\\left(e^{2x}\\sin x\\right)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify $u$ and $v$, noting that the first factor also needs the chain rule.",
+        "working": "This requires the product rule, but the first factor also needs the chain rule. Let $u = e^{2x}$ and $v = \\sin x$: $$u' = 2e^{2x} \\qquad v' = \\cos x$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the product rule.",
+        "working": "$$\\frac{d}{dx}(e^{2x}\\sin x) = 2e^{2x}\\sin x + e^{2x}\\cos x = e^{2x}(2\\sin x + \\cos x)$$ Factoring out $e^{2x}$ gives a cleaner form."
+      }
+    ],
+    "answer": "$\\dfrac{d}{dx}\\left(e^{2x}\\sin x\\right) = e^{2x}(2\\sin x + \\cos x)$"
+  }
+]

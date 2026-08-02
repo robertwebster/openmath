@@ -1,0 +1,182 @@
+[
+  {
+    "id": "y12-adv-curve-q01",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A function $f(x)$ has $f'(x) = 0$ at $x = 2$ and $f''(2) = -5$. What can you conclude about $x = 2$?",
+    "options": [
+      "Local minimum",
+      "Local maximum",
+      "Point of inflection",
+      "Cannot be determined"
+    ],
+    "answer": "Local maximum",
+    "hint": "The second derivative test: if $f'(c) = 0$ and $f''(c) < 0$, the point is a local maximum.",
+    "explanation": "Since $f'(2) = 0$ (stationary point) and $f''(2) = -5 < 0$ (concave down), the second derivative test tells us $x = 2$ is a **local maximum**."
+  },
+  {
+    "id": "y12-adv-curve-q02",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Find the $x$-coordinate of the stationary point of $f(x) = x^2 - 6x + 11$.",
+    "answer": "3",
+    "hint": "Set $f'(x) = 0$ and solve for $x$.",
+    "explanation": "$f'(x) = 2x - 6$.\n\nSetting $f'(x) = 0$: $2x - 6 = 0 \\Rightarrow x = 3$.\n\nThe stationary point is at $x = 3$."
+  },
+  {
+    "id": "y12-adv-curve-q03",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "For $f(x) = x^3 - 3x^2 + 4$, find the value of $f''(x)$ at $x = 1$.",
+    "answer": "0",
+    "hint": "Find $f'(x)$ then differentiate again to get $f''(x)$, then substitute $x = 1$.",
+    "explanation": "$f'(x) = 3x^2 - 6x$\n\n$f''(x) = 6x - 6$\n\n$f''(1) = 6(1) - 6 = 0$\n\nSince $f''(1) = 0$, the second derivative test is inconclusive at $x = 1$ — further investigation is needed."
+  },
+  {
+    "id": "y12-adv-curve-q04",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A curve has $f''(x) > 0$ on the interval $(1, 4)$. What does this mean?",
+    "options": [
+      "The curve is decreasing on $(1, 4)$",
+      "The curve is concave up on $(1, 4)$",
+      "The curve is concave down on $(1, 4)$",
+      "The curve has a stationary point on $(1, 4)$"
+    ],
+    "answer": "The curve is concave up on $(1, 4)$",
+    "hint": "Positive second derivative means the gradient is increasing — think of a 'cup' shape.",
+    "explanation": "When $f''(x) > 0$, the gradient $f'(x)$ is increasing, and the curve is **concave up** (shaped like a cup $\\cup$). This is independent of whether the curve is increasing or decreasing."
+  },
+  {
+    "id": "y12-adv-curve-q05",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "For $f(x) = x^3 - 3x^2 + 4$, find the $x$-coordinate of the point of inflection.",
+    "answer": "1",
+    "hint": "A point of inflection occurs where $f''(x) = 0$ and the concavity changes sign.",
+    "explanation": "$f'(x) = 3x^2 - 6x$\n\n$f''(x) = 6x - 6$\n\nSetting $f''(x) = 0$: $6x - 6 = 0 \\Rightarrow x = 1$.\n\nCheck sign change: for $x < 1$, $f''(x) < 0$ (concave down); for $x > 1$, $f''(x) > 0$ (concave up). The concavity changes, so $x = 1$ is a point of inflection."
+  },
+  {
+    "id": "y12-adv-curve-q06",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Find the $y$-value at the local minimum of $f(x) = 2x^3 - 9x^2 + 12x - 1$.",
+    "answer": "3",
+    "hint": "Find stationary points by solving $f'(x) = 0$, identify the minimum using $f''(x)$, then evaluate $f(x)$ there.",
+    "explanation": "$f'(x) = 6x^2 - 18x + 12 = 6(x^2 - 3x + 2) = 6(x-1)(x-2)$\n\nStationary points at $x = 1$ and $x = 2$.\n\n$f''(x) = 12x - 18$\n\n$f''(1) = 12 - 18 = -6 < 0$ — local maximum at $x = 1$.\n$f''(2) = 24 - 18 = 6 > 0$ — local minimum at $x = 2$.\n\n$f(2) = 2(8) - 9(4) + 12(2) - 1 = 16 - 36 + 24 - 1 = 3$\n\nThe local minimum value is $3$."
+  },
+  {
+    "id": "y12-adv-curve-q07",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "For $f(x) = 2x^3 - 9x^2 + 12x - 1$, what is the $y$-value at the local maximum?",
+    "answer": "4",
+    "hint": "You found the stationary points in the previous question. Evaluate $f$ at the local maximum.",
+    "explanation": "From differentiating: stationary points are at $x = 1$ (local max) and $x = 2$ (local min).\n\n$f(1) = 2(1) - 9(1) + 12(1) - 1 = 2 - 9 + 12 - 1 = 4$\n\nThe local maximum value is $4$."
+  },
+  {
+    "id": "y12-adv-curve-q08",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "The graph of $f'(x)$ is shown to cross the $x$-axis from negative to positive at $x = -1$, and from positive to negative at $x = 3$. Which statement is correct about $f(x)$?",
+    "options": [
+      "$f(x)$ has a local minimum at $x = -1$ and a local maximum at $x = 3$",
+      "$f(x)$ has a local maximum at $x = -1$ and a local minimum at $x = 3$",
+      "$f(x)$ has points of inflection at $x = -1$ and $x = 3$",
+      "$f(x)$ is concave up at both $x = -1$ and $x = 3$"
+    ],
+    "answer": "$f(x)$ has a local minimum at $x = -1$ and a local maximum at $x = 3$",
+    "hint": "When $f'(x)$ changes from negative to positive, $f(x)$ changes from decreasing to increasing — that's a local minimum.",
+    "explanation": "Using the first derivative test:\n\n- At $x = -1$: $f'(x)$ changes from $-$ to $+$, so $f(x)$ changes from decreasing to increasing → **local minimum**.\n- At $x = 3$: $f'(x)$ changes from $+$ to $-$, so $f(x)$ changes from increasing to decreasing → **local maximum**."
+  },
+  {
+    "id": "y12-adv-curve-q09",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Consider $h(x) = x^3 - 3x$. On which interval is $h(x)$ decreasing?",
+    "options": [
+      "$(-\\infty, -1)$",
+      "$(-1, 1)$",
+      "$(1, \\infty)$",
+      "$(-\\infty, 0)$"
+    ],
+    "answer": "$(-1, 1)$",
+    "hint": "A function is decreasing where $h'(x) < 0$. Find the stationary points first.",
+    "explanation": "$h'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)$\n\nStationary points at $x = -1$ and $x = 1$.\n\nSign of $h'(x)$:\n- $x < -1$: $h'(x) > 0$ (increasing)\n- $-1 < x < 1$: $h'(x) < 0$ (decreasing)\n- $x > 1$: $h'(x) > 0$ (increasing)\n\nSo $h(x)$ is decreasing on $(-1, 1)$."
+  },
+  {
+    "id": "y12-adv-curve-q10",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "For $f(x) = x^3 - 6x^2 + 9x + 1$, find the $x$-value of the point of inflection.",
+    "answer": "2",
+    "hint": "Differentiate twice, set $f''(x) = 0$, and verify the concavity changes.",
+    "explanation": "$f'(x) = 3x^2 - 12x + 9$\n\n$f''(x) = 6x - 12$\n\nSetting $f''(x) = 0$: $6x - 12 = 0 \\Rightarrow x = 2$.\n\nFor $x < 2$: $f''(x) < 0$ (concave down). For $x > 2$: $f''(x) > 0$ (concave up). Concavity changes, so there is a point of inflection at $x = 2$."
+  },
+  {
+    "id": "y12-adv-curve-q11",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "The function $f(x) = x^3 - 6x^2 + 9x + 1$ has two stationary points. Find the sum of their $x$-coordinates.",
+    "answer": "4",
+    "hint": "Solve $f'(x) = 0$. For a quadratic $ax^2 + bx + c = 0$, the sum of roots is $-b/a$.",
+    "explanation": "$f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x - 1)(x - 3)$\n\nStationary points at $x = 1$ and $x = 3$.\n\nSum $= 1 + 3 = 4$.\n\n(Alternatively, by Vieta's formulas for $x^2 - 4x + 3 = 0$, sum of roots $= 4$.)"
+  },
+  {
+    "id": "y12-adv-curve-q12",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "For $f(x) = e^x(x - 2)$, find the $x$-coordinate of the stationary point. Give your answer as an integer.",
+    "answer": "1",
+    "hint": "Use the product rule to differentiate, then set $f'(x) = 0$. Remember $e^x \\neq 0$.",
+    "explanation": "Using the product rule with $u = e^x$ and $v = x - 2$:\n\n$$f'(x) = e^x(x - 2) + e^x(1) = e^x(x - 2 + 1) = e^x(x - 1)$$\n\nSince $e^x > 0$ for all $x$, setting $f'(x) = 0$ gives $x - 1 = 0$, so $x = 1$.\n\n$f''(x) = e^x(x-1) + e^x = e^x(x - 1 + 1) = xe^x$\n\n$f''(1) = e > 0$, confirming a local minimum."
+  },
+  {
+    "id": "y12-adv-curve-q13",
+    "subtopic": "curve-sketching",
+    "topic": "applications-of-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "For $f(x) = \\ln x - x$ (defined for $x > 0$), find the $x$-coordinate of the stationary point.",
+    "answer": "1",
+    "hint": "Differentiate and set equal to zero. Recall $\\frac{d}{dx}(\\ln x) = \\frac{1}{x}$.",
+    "explanation": "$f'(x) = \\dfrac{1}{x} - 1$\n\nSetting $f'(x) = 0$: $\\dfrac{1}{x} - 1 = 0 \\Rightarrow \\dfrac{1}{x} = 1 \\Rightarrow x = 1$.\n\n$f''(x) = -\\dfrac{1}{x^2}$\n\n$f''(1) = -1 < 0$, confirming a local maximum at $x = 1$.\n\nThe maximum value is $f(1) = \\ln 1 - 1 = -1$."
+  }
+]

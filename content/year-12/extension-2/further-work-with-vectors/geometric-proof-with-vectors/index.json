@@ -1,0 +1,11 @@
+{
+  "id": "geometric-proof-with-vectors",
+  "title": "Geometric proof with vectors",
+  "topic": "further-work-with-vectors",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Vectors",
+  "syllabusOutcome": "MEX-12-05",
+  "description": "Prove geometric and coordinate-geometry results using vectors in 2D and 3D; prove perpendicularity using the dot product; prove parallelism using scalar multiples; prove results about midpoints, diagonals, medians, and classic theorems such as the angle in a semicircle."
+}

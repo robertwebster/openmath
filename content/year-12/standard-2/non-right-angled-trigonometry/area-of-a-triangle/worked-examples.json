@@ -1,0 +1,84 @@
+[
+  {
+    "id": "aot-worked-1",
+    "title": "Finding area given two sides and an included angle",
+    "difficulty": 1,
+    "problem": "In triangle $ABC$, $AB = 14$ cm, $AC = 10$ cm and $\\angle BAC = 62°$. Find the area.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the two known sides and the included angle (the angle between them).",
+        "working": "Here the included angle is $\\angle BAC = 62°$, between sides $AB = 14$ cm and $AC = 10$ cm."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the formula $A = \\tfrac{1}{2} \\times AB \\times AC \\times \\sin(\\angle BAC)$.",
+        "working": "$$A = \\tfrac{1}{2}(14)(10)\\sin 62°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate $\\sin 62°$ and the area.",
+        "working": "$\\sin 62° \\approx 0.8829$.\n$$A = 70 \\times 0.8829 \\approx 61.8 \\text{ cm}^2$$"
+      }
+    ],
+    "answer": "The area of triangle $ABC$ is approximately 61.8 cm²."
+  },
+  {
+    "id": "aot-worked-2",
+    "title": "Finding the included angle given area and two sides",
+    "difficulty": 2,
+    "problem": "The area of triangle $PQR$ is 56 cm², $PQ = 16$ cm and $PR = 11$ cm. Find the acute angle $\\angle QPR$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the area formula with the unknown angle.",
+        "working": "$$56 = \\tfrac{1}{2}(16)(11)\\sin(\\angle QPR)$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Simplify the right side.",
+        "working": "$$56 = 88\\sin(\\angle QPR)$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $\\sin(\\angle QPR)$.",
+        "working": "$$\\sin(\\angle QPR) = \\frac{56}{88} = \\frac{7}{11} \\approx 0.6364$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the angle.",
+        "working": "$$\\angle QPR = \\sin^{-1}(0.6364) \\approx 39.5°$$"
+      }
+    ],
+    "answer": "The acute angle $\\angle QPR$ is approximately 39.5°."
+  },
+  {
+    "id": "aot-worked-3",
+    "title": "Multi-step — cosine rule then area formula",
+    "difficulty": 3,
+    "problem": "A triangular paddock has sides 30 m, 40 m and 50 m. Find the area.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "We need an included angle before we can use the area formula. Use the cosine rule to find the angle between the 30 m and 40 m sides (call it $C$, opposite the 50 m side).",
+        "working": "$$\\cos C = \\frac{30^2 + 40^2 - 50^2}{2 \\times 30 \\times 40} = \\frac{900 + 1600 - 2500}{2400} = \\frac{0}{2400} = 0$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find angle $C$.",
+        "working": "$$C = \\cos^{-1}(0) = 90°$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Recognise the triangle type and apply the area formula.",
+        "working": "This is actually a right-angled triangle (a 3-4-5 Pythagorean triple scaled by 10). The area formula confirms:\n$$A = \\tfrac{1}{2}(30)(40)\\sin 90° = 600 \\times 1 = 600 \\text{ m}^2$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check the area using the standard base-height formula.",
+        "working": "The area can also be checked using the standard $A = \\tfrac{1}{2} \\times \\text{base} \\times \\text{height} = \\tfrac{1}{2}(30)(40) = 600$ m²."
+      }
+    ],
+    "answer": "The area of the paddock is 600 m²."
+  }
+]

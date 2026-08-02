@@ -1,0 +1,196 @@
+[
+  {
+    "id": "y12-adv-antidiff-q01",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which expression is equal to $\\displaystyle\\int x^4\\,dx$?",
+    "options": [
+      "$4x^3 + C$",
+      "$\\dfrac{x^5}{5} + C$",
+      "$\\dfrac{x^5}{4} + C$",
+      "$x^5 + C$"
+    ],
+    "answer": "$\\dfrac{x^5}{5} + C$",
+    "hint": "Use the power rule for integration: $\\displaystyle\\int x^n\\,dx = \\dfrac{x^{n+1}}{n+1} + C$.",
+    "explanation": "Applying $\\displaystyle\\int x^n\\,dx = \\dfrac{x^{n+1}}{n+1} + C$ with $n = 4$:\n$$\\int x^4\\,dx = \\frac{x^{4+1}}{4+1} + C = \\frac{x^5}{5} + C$$"
+  },
+  {
+    "id": "y12-adv-antidiff-q02",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which expression is equal to $\\displaystyle\\int e^x\\,dx$?",
+    "options": [
+      "$xe^{x-1} + C$",
+      "$\\ln x + C$",
+      "$e^x + C$",
+      "$e^{x+1} + C$"
+    ],
+    "answer": "$e^x + C$",
+    "hint": "The exponential function $e^x$ is its own derivative — and therefore its own antiderivative.",
+    "explanation": "$$\\int e^x\\,dx = e^x + C$$\nThis follows directly from the fact that $\\dfrac{d}{dx}(e^x) = e^x$."
+  },
+  {
+    "id": "y12-adv-antidiff-q03",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which expression is equal to $\\displaystyle\\int \\frac{1}{x}\\,dx$ for $x > 0$?",
+    "options": [
+      "$-\\dfrac{1}{x^2} + C$",
+      "$\\ln x + C$",
+      "$\\dfrac{1}{x^2} + C$",
+      "$e^x + C$"
+    ],
+    "answer": "$\\ln x + C$",
+    "hint": "Recall that $\\dfrac{d}{dx}(\\ln x) = \\dfrac{1}{x}$.",
+    "explanation": "$$\\int \\frac{1}{x}\\,dx = \\ln x + C \\quad (x > 0)$$\nThis is the standard result obtained by reversing the derivative of the natural logarithm."
+  },
+  {
+    "id": "y12-adv-antidiff-q04",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A function $F(x)$ satisfies $F'(x) = 3x^2$ and $F(0) = 4$. Find $F(2)$.",
+    "answer": "12",
+    "hint": "First find the general antiderivative of $3x^2$, then use $F(0) = 4$ to find the constant $C$.",
+    "explanation": "Anti-differentiate: $F(x) = \\displaystyle\\int 3x^2\\,dx = x^3 + C$.\n\nApply the initial condition: $F(0) = 0^3 + C = 4$, so $C = 4$.\n\nTherefore $F(x) = x^3 + 4$.\n\n$$F(2) = 2^3 + 4 = 8 + 4 = 12$$"
+  },
+  {
+    "id": "y12-adv-antidiff-q05",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A function $F(x)$ satisfies $F'(x) = \\cos x$ and $F(0) = 2$. Find $F\\!\\left(\\dfrac{\\pi}{2}\\right)$.",
+    "answer": "3",
+    "hint": "The antiderivative of $\\cos x$ is $\\sin x + C$. Use $F(0) = 2$ to find $C$.",
+    "explanation": "Anti-differentiate: $F(x) = \\displaystyle\\int \\cos x\\,dx = \\sin x + C$.\n\nApply the initial condition: $F(0) = \\sin 0 + C = 0 + C = 2$, so $C = 2$.\n\nTherefore $F(x) = \\sin x + 2$.\n\n$$F\\!\\left(\\frac{\\pi}{2}\\right) = \\sin\\frac{\\pi}{2} + 2 = 1 + 2 = 3$$"
+  },
+  {
+    "id": "y12-adv-antidiff-q06",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which expression is equal to $\\displaystyle\\int e^{3x}\\,dx$?",
+    "options": [
+      "$3e^{3x} + C$",
+      "$e^{3x} + C$",
+      "$\\dfrac{e^{3x}}{3} + C$",
+      "$\\dfrac{e^{3x+1}}{3x+1} + C$"
+    ],
+    "answer": "$\\dfrac{e^{3x}}{3} + C$",
+    "hint": "The standard result is $\\displaystyle\\int e^{ax+b}\\,dx = \\dfrac{e^{ax+b}}{a} + C$. Here $a = 3$.",
+    "explanation": "Using the standard result $\\displaystyle\\int e^{ax+b}\\,dx = \\dfrac{e^{ax+b}}{a} + C$ with $a = 3$, $b = 0$:\n$$\\int e^{3x}\\,dx = \\frac{e^{3x}}{3} + C$$\nCheck by differentiating: $\\dfrac{d}{dx}\\!\\left(\\dfrac{e^{3x}}{3}\\right) = \\dfrac{3e^{3x}}{3} = e^{3x}$ ✓"
+  },
+  {
+    "id": "y12-adv-antidiff-q07",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A function $F(x)$ satisfies $F'(x) = e^{2x}$ and $F(0) = \\dfrac{1}{2}$. Find $F(1)$, correct to two decimal places.",
+    "answer": "3.69",
+    "tolerance": 0.01,
+    "hint": "Anti-differentiate to get $F(x) = \\dfrac{e^{2x}}{2} + C$, then use $F(0) = \\dfrac{1}{2}$ to find $C$.",
+    "explanation": "Anti-differentiate: $F(x) = \\displaystyle\\int e^{2x}\\,dx = \\dfrac{e^{2x}}{2} + C$.\n\nApply the condition: $F(0) = \\dfrac{e^0}{2} + C = \\dfrac{1}{2} + C = \\dfrac{1}{2}$, so $C = 0$.\n\nTherefore $F(x) = \\dfrac{e^{2x}}{2}$.\n\n$$F(1) = \\frac{e^2}{2} \\approx \\frac{7.3891}{2} \\approx 3.69$$"
+  },
+  {
+    "id": "y12-adv-antidiff-q08",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "fraction",
+    "stem": "A function $F(x)$ satisfies $F'(x) = \\sin(3x)$ and $F(0) = \\dfrac{1}{3}$. Find $F\\!\\left(\\dfrac{\\pi}{6}\\right)$. Give your answer as a fraction.",
+    "answer": "2/3",
+    "hint": "The antiderivative of $\\sin(ax)$ is $-\\dfrac{\\cos(ax)}{a} + C$. Find $C$ from the initial condition, then evaluate at $x = \\dfrac{\\pi}{6}$.",
+    "explanation": "Anti-differentiate: $F(x) = \\displaystyle\\int \\sin(3x)\\,dx = -\\dfrac{\\cos(3x)}{3} + C$.\n\nApply the condition: $F(0) = -\\dfrac{\\cos 0}{3} + C = -\\dfrac{1}{3} + C = \\dfrac{1}{3}$, so $C = \\dfrac{2}{3}$.\n\nTherefore $F(x) = -\\dfrac{\\cos(3x)}{3} + \\dfrac{2}{3}$.\n\n$$F\\!\\left(\\frac{\\pi}{6}\\right) = -\\frac{\\cos\\!\\left(\\frac{\\pi}{2}\\right)}{3} + \\frac{2}{3} = -\\frac{0}{3} + \\frac{2}{3} = \\frac{2}{3}$$"
+  },
+  {
+    "id": "y12-adv-antidiff-q09",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which expression is equal to $\\displaystyle\\int \\sec^2 x\\,dx$?",
+    "options": [
+      "$\\sec x \\tan x + C$",
+      "$2\\sec x + C$",
+      "$\\tan x + C$",
+      "$\\sin^2 x + C$"
+    ],
+    "answer": "$\\tan x + C$",
+    "hint": "Recall that $\\dfrac{d}{dx}(\\tan x) = \\sec^2 x$.",
+    "explanation": "Since $\\dfrac{d}{dx}(\\tan x) = \\sec^2 x$, the reverse gives:\n$$\\int \\sec^2 x\\,dx = \\tan x + C$$"
+  },
+  {
+    "id": "y12-adv-antidiff-q10",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A function $F(x)$ satisfies $F'(x) = \\dfrac{3}{x}$ for $x > 0$, and $F(1) = 0$. Find $F(e^2)$.",
+    "answer": "6",
+    "hint": "Anti-differentiate $\\dfrac{3}{x}$ to get $3\\ln x + C$. Then use $F(1) = 0$ to find $C$.",
+    "explanation": "Anti-differentiate: $F(x) = \\displaystyle\\int \\frac{3}{x}\\,dx = 3\\ln x + C$.\n\nApply the condition: $F(1) = 3\\ln 1 + C = 3(0) + C = 0$, so $C = 0$.\n\nTherefore $F(x) = 3\\ln x$.\n\n$$F(e^2) = 3\\ln(e^2) = 3 \\times 2 = 6$$"
+  },
+  {
+    "id": "y12-adv-antidiff-q11",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Using the reverse chain rule, which expression is equal to $\\displaystyle\\int 2x(x^2 + 1)^5\\,dx$?",
+    "options": [
+      "$10x(x^2+1)^4 + C$",
+      "$\\dfrac{(x^2+1)^6}{6} + C$",
+      "$\\dfrac{(x^2+1)^6}{3} + C$",
+      "$5(x^2+1)^4 + C$"
+    ],
+    "answer": "$\\dfrac{(x^2+1)^6}{6} + C$",
+    "hint": "Notice that $2x$ is the derivative of $x^2 + 1$. Let $u = x^2 + 1$ so that $du = 2x\\,dx$.",
+    "explanation": "Let $u = x^2 + 1$, so $\\dfrac{du}{dx} = 2x$.\n\n$$\\int 2x(x^2+1)^5\\,dx = \\int u^5\\,du = \\frac{u^6}{6} + C = \\frac{(x^2+1)^6}{6} + C$$\n\nCheck by differentiating: $\\dfrac{d}{dx}\\!\\left[\\dfrac{(x^2+1)^6}{6}\\right] = \\dfrac{6(x^2+1)^5 \\cdot 2x}{6} = 2x(x^2+1)^5$ ✓"
+  },
+  {
+    "id": "y12-adv-antidiff-q12",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A function $F(x)$ satisfies $F'(x) = 6x^2 - 4x + 1$ and $F(1) = 3$. Find $F(-1)$.",
+    "answer": "-3",
+    "hint": "Anti-differentiate term by term, then use $F(1) = 3$ to find the constant of integration.",
+    "explanation": "Anti-differentiate: $F(x) = \\displaystyle\\int (6x^2 - 4x + 1)\\,dx = 2x^3 - 2x^2 + x + C$.\n\nApply the condition:\n$$F(1) = 2(1)^3 - 2(1)^2 + 1 + C = 2 - 2 + 1 + C = 1 + C = 3$$\nSo $C = 2$.\n\nTherefore $F(x) = 2x^3 - 2x^2 + x + 2$.\n\n$$F(-1) = 2(-1)^3 - 2(-1)^2 + (-1) + 2 = -2 - 2 - 1 + 2 = -3$$"
+  },
+  {
+    "id": "y12-adv-antidiff-q13",
+    "subtopic": "anti-differentiation",
+    "topic": "integral-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A function $F(x)$ satisfies $F'(x) = e^{-2x}$ and $F(0) = 0$. Find $F(1)$, correct to two decimal places.",
+    "answer": "0.43",
+    "tolerance": 0.01,
+    "hint": "The antiderivative of $e^{-2x}$ is $-\\dfrac{e^{-2x}}{2} + C$. Use $F(0) = 0$ to find $C$.",
+    "explanation": "Anti-differentiate: $F(x) = \\displaystyle\\int e^{-2x}\\,dx = -\\dfrac{e^{-2x}}{2} + C$.\n\nApply the condition: $F(0) = -\\dfrac{e^0}{2} + C = -\\dfrac{1}{2} + C = 0$, so $C = \\dfrac{1}{2}$.\n\nTherefore $F(x) = \\dfrac{1 - e^{-2x}}{2}$.\n\n$$F(1) = \\frac{1 - e^{-2}}{2} \\approx \\frac{1 - 0.1353}{2} \\approx \\frac{0.8647}{2} \\approx 0.43$$"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "anti-diff-worked-1",
+    "title": "Using the power rule and an initial condition",
+    "difficulty": 1,
+    "problem": "A function $F(x)$ satisfies $F'(x) = 4x^3 - 6x$ and $F(1) = 2$. Find $F(x)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the general antiderivative.",
+        "working": "Apply the power rule $\\displaystyle\\int x^n\\,dx = \\dfrac{x^{n+1}}{n+1} + C$ to each term: $$F(x) = \\int (4x^3 - 6x)\\,dx = x^4 - 3x^2 + C$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Use the initial condition to find $C$.",
+        "working": "$$F(1) = 1^4 - 3(1)^2 + C = 1 - 3 + C = -2 + C = 2$$ So $C = 4$."
+      },
+      {
+        "step": 3,
+        "instruction": "Write the particular solution.",
+        "working": "$$F(x) = x^4 - 3x^2 + 4$$"
+      }
+    ],
+    "answer": "$F(x) = x^4 - 3x^2 + 4$"
+  },
+  {
+    "id": "anti-diff-worked-2",
+    "title": "Integrating exponential and reciprocal functions",
+    "difficulty": 2,
+    "problem": "Find $\\displaystyle\\int \\!\\left(e^{5x} + \\frac{4}{x}\\right)dx$ for $x > 0$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Integrate $e^{5x}$ using the standard result $\\displaystyle\\int e^{ax}\\,dx = \\dfrac{e^{ax}}{a} + C$.",
+        "working": "$$\\int e^{5x}\\,dx = \\frac{e^{5x}}{5}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Integrate $\\dfrac{4}{x}$.",
+        "working": "$$\\int \\frac{4}{x}\\,dx = 4\\ln x$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Combine the results.",
+        "working": "$$\\int \\!\\left(e^{5x} + \\frac{4}{x}\\right)dx = \\frac{e^{5x}}{5} + 4\\ln x + C$$"
+      }
+    ],
+    "answer": "$\\displaystyle\\int \\left(e^{5x} + \\dfrac{4}{x}\\right)dx = \\dfrac{e^{5x}}{5} + 4\\ln x + C$"
+  },
+  {
+    "id": "anti-diff-worked-3",
+    "title": "Reverse chain rule",
+    "difficulty": 3,
+    "problem": "Find $\\displaystyle\\int 6x^2(x^3 - 1)^4\\,dx$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Spot the pattern.",
+        "working": "Notice that $6x^2$ is the derivative of $x^3 - 1$. This is the reverse chain rule structure: $\\displaystyle\\int f'(u)\\cdot u'\\,dx$ where $u = x^3 - 1$."
+      },
+      {
+        "step": 2,
+        "instruction": "Let $u = x^3 - 1$.",
+        "working": "$$\\frac{du}{dx} = 3x^2 \\quad \\Rightarrow \\quad 6x^2\\,dx = 2\\,du$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute and integrate.",
+        "working": "$$\\int 6x^2(x^3-1)^4\\,dx = \\int 2u^4\\,du = \\frac{2u^5}{5} + C$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Back-substitute and check by differentiating.",
+        "working": "$$= \\frac{2(x^3-1)^5}{5} + C$$ Check: $\\dfrac{d}{dx}\\!\\left[\\dfrac{2(x^3-1)^5}{5}\\right] = \\dfrac{2 \\cdot 5(x^3-1)^4 \\cdot 3x^2}{5} = 6x^2(x^3-1)^4$, which matches the integrand."
+      }
+    ],
+    "answer": "$\\displaystyle\\int 6x^2(x^3-1)^4\\,dx = \\dfrac{2(x^3-1)^5}{5} + C$"
+  }
+]

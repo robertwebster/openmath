@@ -1,0 +1,11 @@
+{
+  "id": "integration-techniques",
+  "title": "Integration techniques",
+  "topic": "further-integration",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Calculus",
+  "syllabusOutcome": "MEX-12-03",
+  "description": "Integrate using integration by parts ($\\int u\\,dv = uv - \\int v\\,du$); decompose rational functions using partial fractions including repeated and irreducible quadratic factors; apply the $t = \\tan(x/2)$ Weierstrass substitution; evaluate trigonometric integrals and powers."
+}

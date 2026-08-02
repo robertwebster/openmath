@@ -1,0 +1,216 @@
+[
+  {
+    "id": "y12-adv-diff-trig-q01",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "What is $\\dfrac{d}{dx}(\\sin x)$?",
+    "options": [
+      "$-\\sin x$",
+      "$\\cos x$",
+      "$-\\cos x$",
+      "$\\sec^2 x$"
+    ],
+    "answer": "$\\cos x$",
+    "hint": "This is a standard result to memorise.",
+    "explanation": "The standard result: $\\dfrac{d}{dx}(\\sin x) = \\cos x$.\n\nAll angles are measured in radians for this rule to hold."
+  },
+  {
+    "id": "y12-adv-diff-trig-q02",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "What is $\\dfrac{d}{dx}(\\cos x)$?",
+    "options": [
+      "$\\sin x$",
+      "$\\sec^2 x$",
+      "$-\\cos x$",
+      "$-\\sin x$"
+    ],
+    "answer": "$-\\sin x$",
+    "hint": "The derivative of $\\cos x$ introduces a negative sign.",
+    "explanation": "The standard result: $\\dfrac{d}{dx}(\\cos x) = -\\sin x$.\n\nThe negative sign is easy to forget — note that differentiating twice cycles back: $\\sin x \\to \\cos x \\to -\\sin x \\to -\\cos x \\to \\sin x$."
+  },
+  {
+    "id": "y12-adv-diff-trig-q03",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "What is $\\dfrac{d}{dx}(\\tan x)$?",
+    "options": [
+      "$\\sec x$",
+      "$\\cot x$",
+      "$\\sec^2 x$",
+      "$-\\sec^2 x$"
+    ],
+    "answer": "$\\sec^2 x$",
+    "hint": "The derivative of $\\tan x$ involves $\\sec^2 x$.",
+    "explanation": "The standard result: $\\dfrac{d}{dx}(\\tan x) = \\sec^2 x$.\n\nRecall that $\\sec x = \\dfrac{1}{\\cos x}$, so $\\sec^2 x = \\dfrac{1}{\\cos^2 x}$."
+  },
+  {
+    "id": "y12-adv-diff-trig-q04",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Using the chain rule, $\\dfrac{d}{dx}(\\sin 3x) = $",
+    "options": [
+      "$\\cos 3x$",
+      "$3\\cos 3x$",
+      "$-3\\cos 3x$",
+      "$\\dfrac{\\cos 3x}{3}$"
+    ],
+    "answer": "$3\\cos 3x$",
+    "hint": "Apply the chain rule: differentiate $\\sin u$ to get $\\cos u$, then multiply by the derivative of the inner function $u = 3x$.",
+    "explanation": "Let $u = 3x$, so $\\dfrac{du}{dx} = 3$.\n\n$$\\dfrac{d}{dx}(\\sin 3x) = \\cos(3x) \\times 3 = 3\\cos 3x$$"
+  },
+  {
+    "id": "y12-adv-diff-trig-q05",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Find $\\dfrac{d}{dx}(\\cos 5x)$.",
+    "options": [
+      "$5\\sin 5x$",
+      "$-\\sin 5x$",
+      "$-5\\sin 5x$",
+      "$5\\cos 5x$"
+    ],
+    "answer": "$-5\\sin 5x$",
+    "hint": "Chain rule: $\\dfrac{d}{dx}(\\cos f(x)) = -f'(x)\\sin f(x)$.",
+    "explanation": "$$\\dfrac{d}{dx}(\\cos 5x) = -\\sin(5x) \\times 5 = -5\\sin 5x$$"
+  },
+  {
+    "id": "y12-adv-diff-trig-q06",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Find $\\dfrac{d}{dx}\\left(\\sin(x^2)\\right)$.",
+    "options": [
+      "$\\cos(x^2)$",
+      "$2x\\cos(x^2)$",
+      "$-2x\\cos(x^2)$",
+      "$2\\cos(2x)$"
+    ],
+    "answer": "$2x\\cos(x^2)$",
+    "hint": "Use the chain rule with inner function $u = x^2$.",
+    "explanation": "Let $u = x^2$, so $\\dfrac{du}{dx} = 2x$.\n\n$$\\dfrac{d}{dx}(\\sin(x^2)) = \\cos(x^2) \\times 2x = 2x\\cos(x^2)$$"
+  },
+  {
+    "id": "y12-adv-diff-trig-q07",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Find the gradient of $y = \\sin x$ at $x = \\dfrac{\\pi}{3}$. Give an exact answer as a decimal to 2 decimal places.",
+    "answer": "0.50",
+    "tolerance": 0.01,
+    "hint": "Differentiate to get $\\dfrac{dy}{dx} = \\cos x$, then evaluate at $x = \\dfrac{\\pi}{3}$.",
+    "explanation": "$\\dfrac{dy}{dx} = \\cos x$.\n\nAt $x = \\dfrac{\\pi}{3}$: $\\dfrac{dy}{dx} = \\cos\\dfrac{\\pi}{3} = \\dfrac{1}{2} = 0.5$."
+  },
+  {
+    "id": "y12-adv-diff-trig-q08",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Find $\\dfrac{d}{dx}\\left(4\\cos\\left(\\dfrac{x}{2}\\right)\\right)$.",
+    "options": [
+      "$-2\\sin\\left(\\dfrac{x}{2}\\right)$",
+      "$2\\sin\\left(\\dfrac{x}{2}\\right)$",
+      "$-4\\sin\\left(\\dfrac{x}{2}\\right)$",
+      "$4\\sin\\left(\\dfrac{x}{2}\\right)$"
+    ],
+    "answer": "$-2\\sin\\left(\\dfrac{x}{2}\\right)$",
+    "hint": "Apply the chain rule: the inner function is $\\dfrac{x}{2}$, which has derivative $\\dfrac{1}{2}$.",
+    "explanation": "$$\\dfrac{d}{dx}\\left(4\\cos\\left(\\dfrac{x}{2}\\right)\\right) = 4 \\times \\left(-\\sin\\dfrac{x}{2}\\right) \\times \\dfrac{1}{2} = -2\\sin\\left(\\dfrac{x}{2}\\right)$$"
+  },
+  {
+    "id": "y12-adv-diff-trig-q09",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Find $\\dfrac{d}{dx}\\left(\\tan(2x + 1)\\right)$.",
+    "options": [
+      "$\\sec^2(2x+1)$",
+      "$2\\sec^2(2x+1)$",
+      "$2\\tan(2x+1)$",
+      "$-2\\sec^2(2x+1)$"
+    ],
+    "answer": "$2\\sec^2(2x+1)$",
+    "hint": "Chain rule with inner function $u = 2x + 1$: $\\dfrac{d}{dx}(\\tan u) = \\sec^2 u \\cdot \\dfrac{du}{dx}$.",
+    "explanation": "Let $u = 2x + 1$, so $\\dfrac{du}{dx} = 2$.\n\n$$\\dfrac{d}{dx}(\\tan(2x+1)) = \\sec^2(2x+1) \\times 2 = 2\\sec^2(2x+1)$$"
+  },
+  {
+    "id": "y12-adv-diff-trig-q10",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "The function $f(x) = 3\\sin(2x)$ has a stationary point in the interval $0 < x < \\pi$. Find the $x$-value (in radians) of the first stationary point to 3 decimal places.",
+    "answer": "0.785",
+    "tolerance": 0.002,
+    "hint": "Differentiate $f(x)$, set $f'(x) = 0$, and solve $\\cos(2x) = 0$ for $x$ in $0 < x < \\pi$.",
+    "explanation": "$f'(x) = 6\\cos(2x)$.\n\nSet $f'(x) = 0$: $\\cos(2x) = 0$, so $2x = \\dfrac{\\pi}{2}, \\dfrac{3\\pi}{2}, \\ldots$\n\nIn $0 < x < \\pi$, the first solution is $2x = \\dfrac{\\pi}{2}$, giving:\n$$x = \\dfrac{\\pi}{4} \\approx 0.785 \\text{ radians}$$"
+  },
+  {
+    "id": "y12-adv-diff-trig-q11",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Find the gradient of $y = \\cos(x^2)$ at $x = \\sqrt{\\pi}$. Give your answer to 3 decimal places.",
+    "answer": "0.000",
+    "tolerance": 0.001,
+    "hint": "Use the chain rule to differentiate, then substitute $x = \\sqrt{\\pi}$.",
+    "explanation": "$\\dfrac{dy}{dx} = -\\sin(x^2) \\times 2x = -2x\\sin(x^2)$.\n\nAt $x = \\sqrt{\\pi}$:\n$$\\dfrac{dy}{dx} = -2\\sqrt{\\pi}\\,\\sin((\\sqrt{\\pi})^2) = -2\\sqrt{\\pi}\\,\\sin(\\pi) = -2\\sqrt{\\pi} \\times 0 = 0$$"
+  },
+  {
+    "id": "y12-adv-diff-trig-q12",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Find $\\dfrac{d^2y}{dx^2}$ for $y = \\sin(3x)$.",
+    "options": [
+      "$3\\cos(3x)$",
+      "$-3\\cos(3x)$",
+      "$-9\\sin(3x)$",
+      "$9\\sin(3x)$"
+    ],
+    "answer": "$-9\\sin(3x)$",
+    "hint": "Differentiate twice. First find $\\dfrac{dy}{dx}$, then differentiate again.",
+    "explanation": "First derivative: $\\dfrac{dy}{dx} = 3\\cos(3x)$.\n\nSecond derivative: $\\dfrac{d^2y}{dx^2} = 3 \\times (-\\sin(3x)) \\times 3 = -9\\sin(3x)$.\n\nNote: $\\dfrac{d^2y}{dx^2} = -9y$, which means $y = \\sin(3x)$ satisfies a simple harmonic equation."
+  },
+  {
+    "id": "y12-adv-diff-trig-q13",
+    "subtopic": "differentiating-trigonometric-functions",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A particle moves so that its displacement is $x(t) = 2\\cos(3t) + 1$ metres at time $t$ seconds. Find the velocity (in m/s) of the particle at $t = \\dfrac{\\pi}{6}$ seconds.",
+    "answer": "-6",
+    "tolerance": 0,
+    "hint": "Velocity is $v(t) = x'(t)$. Differentiate $x(t)$ with respect to $t$, then substitute $t = \\dfrac{\\pi}{6}$.",
+    "explanation": "$v(t) = x'(t) = -2\\sin(3t) \\times 3 = -6\\sin(3t)$.\n\nAt $t = \\dfrac{\\pi}{6}$:\n$$v\\!\\left(\\dfrac{\\pi}{6}\\right) = -6\\sin\\!\\left(3 \\times \\dfrac{\\pi}{6}\\right) = -6\\sin\\!\\left(\\dfrac{\\pi}{2}\\right) = -6 \\times 1 = -6 \\text{ m/s}$$\n\nThe negative sign means the particle is moving in the negative direction."
+  }
+]

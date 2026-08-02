@@ -1,0 +1,14 @@
+{
+  "id": "further-calculus-skills",
+  "title": "Further calculus skills",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Calculus",
+  "syllabusOutcome": "ME-12-04",
+  "description": "Extend integration technique to include $u$-substitution, the reverse chain rule, inverse-trigonometric and logarithmic standard forms, and integrals of $\\sin^2 x$ and $\\cos^2 x$ via double-angle identities.",
+  "subtopics": [
+    "integration-by-substitution",
+    "standard-integral-forms"
+  ]
+}

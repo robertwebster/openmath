@@ -1,0 +1,79 @@
+[
+  {
+    "id": "nc-worked-1",
+    "title": "Vertices, edges and degree",
+    "difficulty": 1,
+    "problem": "A network has vertices A, B, C, D and E with the following edges: AB, AC, BC, BD and CE. Find (a) the total number of edges, (b) the degree of vertex B, and (c) verify using the handshaking lemma.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Part (a): count the edges.",
+        "working": "List all edges: AB, AC, BC, BD, CE — that is 5 edges."
+      },
+      {
+        "step": 2,
+        "instruction": "Part (b): find the degree of B.",
+        "working": "An edge touches B if B is one of its endpoints. Edges involving B: AB, BC, BD — that is 3 edges, so degree of B = 3."
+      },
+      {
+        "step": 3,
+        "instruction": "Part (c): verify using the handshaking lemma, that the sum of all degrees equals twice the number of edges.",
+        "working": "Degrees: A = 2 (AB, AC), B = 3 (AB, BC, BD), C = 3 (AC, BC, CE), D = 1 (BD), E = 1 (CE).\n$$\\text{Sum} = 2 + 3 + 3 + 1 + 1 = 10 = 2 \\times 5 \\checkmark$$"
+      }
+    ],
+    "answer": "(a) 5 edges. (b) Degree of B = 3. (c) Sum of degrees = 10 = 2 × 5, confirming the handshaking lemma."
+  },
+  {
+    "id": "nc-worked-2",
+    "title": "Directed flow network — source, sink and capacity",
+    "difficulty": 2,
+    "problem": "A directed network models water flow through a treatment plant. The diagram has: source S, intermediate nodes A and B, sink T; directed edges S→A (capacity 8), S→B (capacity 5), A→T (capacity 6), A→B (capacity 3), B→T (capacity 7). Identify (a) the source and sink, (b) the total capacity leaving S, and (c) the total capacity entering T.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Part (a): identify the source and sink.",
+        "working": "The source is the vertex with only outgoing edges: S. The sink is the vertex with only incoming edges: T."
+      },
+      {
+        "step": 2,
+        "instruction": "Part (b): find the total capacity leaving S.",
+        "working": "Edges leaving S: S→A (8) and S→B (5).\n$$\\text{Capacity out of S} = 8 + 5 = 13 \\text{ units}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Part (c): find the total capacity entering T.",
+        "working": "Edges entering T: A→T (6) and B→T (7).\n$$\\text{Capacity into T} = 6 + 7 = 13 \\text{ units}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Comment on the result.",
+        "working": "In this particular network, total capacity out of S equals total capacity into T (both are 13). This is a coincidence of the edge weights — the actual maximum flow may still be less, depending on intermediate constraints."
+      }
+    ],
+    "answer": "(a) Source = S, sink = T. (b) Capacity out of S = 13 units. (c) Capacity into T = 13 units."
+  },
+  {
+    "id": "nc-worked-3",
+    "title": "Interpreting a network in context",
+    "difficulty": 2,
+    "problem": "A road network has five intersections (vertices) A, B, C, D and E. Roads are one-way (directed). The capacities represent vehicles per minute. The network has: A→B (12), A→C (8), B→D (10), C→D (5), C→E (6), D→E (9). A is the entry point; E is the exit. Identify the source, the sink, and determine the maximum possible flow that could leave A.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the source and sink.",
+        "working": "Source: A — all its edges point away from it. Sink: E — all edges point into it (D→E and C→E)."
+      },
+      {
+        "step": 2,
+        "instruction": "Add the capacities of all edges leaving A to find the maximum possible flow leaving A.",
+        "working": "$$12 + 8 = 20 \\text{ vehicles per minute}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Explain why this is only an upper bound.",
+        "working": "This is an upper bound on the flow. The actual maximum flow through the network (from A to E) may be less — it depends on which intermediate edges create a bottleneck. This is determined by the maximum-flow minimum-cut theorem, studied in the next sub-topic."
+      }
+    ],
+    "answer": "Source = A, sink = E. The maximum possible flow leaving A is 20 vehicles per minute (an upper bound on the network's true maximum flow)."
+  }
+]

@@ -1,0 +1,183 @@
+[
+  {
+    "id": "y12-std2-bda-lr-q01",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A regression line for the relationship between hours of study ($x$) and exam mark ($y$) is $y = 8x + 22$. Predict the exam mark for a student who studies for 6 hours.",
+    "answer": "70",
+    "tolerance": 0,
+    "hint": "Substitute $x = 6$ into the equation $y = 8x + 22$.",
+    "explanation": "Substitute $x = 6$:\n$$y = 8(6) + 22 = 48 + 22 = 70$$\n\nThe model predicts an exam mark of $70$ for a student who studies for 6 hours."
+  },
+  {
+    "id": "y12-std2-bda-lr-q02",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "A regression line has equation $y = -2.5x + 85$, where $x$ is the number of staff absent and $y$ is daily production output (units). Predict the output when 8 staff are absent.",
+    "answer": "65",
+    "tolerance": 0,
+    "hint": "Substitute $x = 8$ into the equation.",
+    "explanation": "Substitute $x = 8$:\n$$y = -2.5(8) + 85 = -20 + 85 = 65$$\n\nThe model predicts a daily output of $65$ units when 8 staff are absent."
+  },
+  {
+    "id": "y12-std2-bda-lr-q03",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A regression line for weekly advertising spend ($x$, in \\$) and weekly revenue ($y$, in \\$) is $\\hat{y} = 12x + 800$. What does the gradient $12$ represent?",
+    "options": [
+      "The predicted revenue when advertising spend is zero",
+      "For every additional \\$1 spent on advertising, predicted revenue increases by \\$12",
+      "The maximum possible weekly revenue",
+      "The number of advertising campaigns per week"
+    ],
+    "answer": "For every additional \\$1 spent on advertising, predicted revenue increases by \\$12",
+    "hint": "The gradient is a rate: it tells you how much $y$ changes for each one-unit increase in $x$.",
+    "explanation": "The gradient of a regression line is the **rate of change**: for every additional \\$1 increase in advertising spend ($x$), the predicted weekly revenue ($y$) increases by \\$12.\n\nThis is an *average* effect — the regression line models the typical relationship across all observations."
+  },
+  {
+    "id": "y12-std2-bda-lr-q04",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "In the regression equation $\\hat{y} = 12x + 800$, where $x$ is weekly advertising spend and $y$ is weekly revenue (both in \\$), what does the $y$-intercept $800$ represent?",
+    "options": [
+      "The advertising spend that gives the maximum revenue",
+      "The predicted weekly revenue when there is no advertising spend ($x = 0$)",
+      "The minimum revenue the business can earn",
+      "The number of customers per week"
+    ],
+    "answer": "The predicted weekly revenue when there is no advertising spend ($x = 0$)",
+    "hint": "The $y$-intercept is the value of $y$ when $x = 0$.",
+    "explanation": "The $y$-intercept is the predicted value of $y$ when $x = 0$. Here, it means the model predicts weekly revenue of \\$800 even when nothing is spent on advertising.\n\nThis could represent baseline revenue from repeat customers, but care should be taken: if $x = 0$ is outside the data range, this intercept may not be meaningful to interpret literally."
+  },
+  {
+    "id": "y12-std2-bda-lr-q05",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A regression line is $y = 4.5x + 15$, where $x$ is temperature (°C) and $y$ is daily ice cream sales. A shop owner wants to sell exactly $78$ ice creams. What temperature does the model predict this will occur at? Give your answer to the nearest whole number.",
+    "answer": "14",
+    "tolerance": 0.5,
+    "hint": "Set $y = 78$ and solve for $x$.",
+    "explanation": "Set $y = 78$ and solve for $x$:\n$$78 = 4.5x + 15$$\n$$63 = 4.5x$$\n$$x = \\frac{63}{4.5} = 14$$\n\nThe model predicts ice cream sales of 78 units will occur at a temperature of $14$°C."
+  },
+  {
+    "id": "y12-std2-bda-lr-q06",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "A regression line for arm span ($y$, cm) versus height ($x$, cm) is $\\hat{y} = 0.98x + 4.2$. A student is $165$ cm tall and has an arm span of $166.5$ cm. What is the residual (actual minus predicted) for this student? Give your answer to 1 decimal place.",
+    "answer": "0.6",
+    "tolerance": 0.05,
+    "hint": "Residual = actual value $-$ predicted value. First find the predicted arm span by substituting $x = 165$.",
+    "explanation": "Find the predicted arm span:\n$$\\hat{y} = 0.98(165) + 4.2 = 161.7 + 4.2 = 165.9 \\text{ cm}$$\n\nCalculate the residual:\n$$\\text{Residual} = \\text{actual} - \\text{predicted} = 166.5 - 165.9 = 0.6 \\text{ cm}$$\n\nThe positive residual means this student's arm span is $0.6$ cm longer than the model predicts."
+  },
+  {
+    "id": "y12-std2-bda-lr-q07",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A regression line was fitted to data for students aged 12 to 17, relating weekly reading hours ($x$) to vocabulary score ($y$). Which prediction is more reliable, and why?",
+    "options": [
+      "Predicting vocabulary for a student who reads 6 hours per week, because this is within the data range (interpolation)",
+      "Predicting vocabulary for an adult who reads 6 hours per week, because adults read more carefully",
+      "Predicting vocabulary for a student who reads 50 hours per week, because more data is always better",
+      "Both predictions are equally reliable because they use the same equation"
+    ],
+    "answer": "Predicting vocabulary for a student who reads 6 hours per week, because this is within the data range (interpolation)",
+    "hint": "Predictions within the range of the original data (interpolation) are more reliable than predictions beyond it (extrapolation).",
+    "explanation": "**Interpolation** — predicting within the data range — is more reliable than **extrapolation** — predicting outside it.\n\nThe regression line was fitted to students aged 12–17 reading up to a certain number of hours. Predicting for a student who reads 6 hours per week (within the range) is a valid use of the model.\n\nPredicting for an adult or for 50 hours per week would be extrapolating: the relationship may not hold beyond the original data range, and the model could give misleading results."
+  },
+  {
+    "id": "y12-std2-bda-lr-q08",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Two points that lie on a regression line are $(2, 14)$ and $(6, 26)$. Find the gradient of the regression line.",
+    "answer": "3",
+    "tolerance": 0,
+    "hint": "Use the gradient formula: $m = \\dfrac{y_2 - y_1}{x_2 - x_1}$.",
+    "explanation": "Apply the gradient formula:\n$$m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{26 - 14}{6 - 2} = \\frac{12}{4} = 3$$\n\nThe gradient of the regression line is $3$, meaning for each 1-unit increase in $x$, the predicted $y$ increases by $3$."
+  },
+  {
+    "id": "y12-std2-bda-lr-q09",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "The least-squares regression line for a dataset is $\\hat{y} = 5.4x + 32$, where $x$ is hours studied per day and $y$ is exam score (out of 100). Which statement correctly interprets the gradient $5.4$?",
+    "options": [
+      "A student with no study time is predicted to score $5.4$",
+      "For each additional hour of study per day, the predicted exam score increases by $5.4$ marks",
+      "The maximum possible exam score is $5.4$ more than the minimum",
+      "$5.4\\%$ of students studied for more than one hour per day"
+    ],
+    "answer": "For each additional hour of study per day, the predicted exam score increases by $5.4$ marks",
+    "hint": "The gradient tells you the rate of change of $y$ per one-unit increase in $x$.",
+    "explanation": "The gradient $5.4$ means: for each additional hour of study per day, the predicted exam score increases by $5.4$ marks (on average).\n\nThe $y$-intercept $32$ is the predicted score when study time is zero — though this should only be interpreted if $x = 0$ is within the range of the data."
+  },
+  {
+    "id": "y12-std2-bda-lr-q10",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A regression line for years of experience ($x$) and annual salary in \\$1000s ($y$) is $\\hat{y} = 3.2x + 28.4$. A worker with 12 years of experience earns \\$72\\,000. Find the residual (actual minus predicted salary) in thousands of dollars, to 1 decimal place.",
+    "answer": "5.2",
+    "tolerance": 0.05,
+    "hint": "Convert \\$72\\,000 to thousands (72), then find the predicted salary and subtract.",
+    "explanation": "The actual salary is \\$72\\,000 = $72$ (in thousands).\n\nFind the predicted salary:\n$$\\hat{y} = 3.2(12) + 28.4 = 38.4 + 28.4 = 66.8 \\text{ (thousands)}$$\n\nCalculate the residual:\n$$\\text{Residual} = 72 - 66.8 = 5.2 \\text{ (thousands)}$$\n\nThis worker earns \\$5200 more per year than the regression model predicts for someone with 12 years of experience."
+  },
+  {
+    "id": "y12-std2-bda-lr-q11",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A regression model for house price ($y$, in \\$1000s) versus floor area ($x$, in m²) was built using data for houses between 80 m² and 250 m². Two predictions are made: Prediction A is for a 160 m² house; Prediction B is for a 400 m² house. Which statement is correct?",
+    "options": [
+      "Prediction A is more reliable because 160 m² is within the data range (interpolation)",
+      "Prediction B is more reliable because the house is larger and worth more",
+      "Both predictions are equally reliable because they use the same regression equation",
+      "Prediction A is less reliable because it is closer to the middle of the data range"
+    ],
+    "answer": "Prediction A is more reliable because 160 m² is within the data range (interpolation)",
+    "hint": "Check which prediction falls inside and which falls outside the range of the original data.",
+    "explanation": "The regression model was built on data from 80 m² to 250 m².\n\n- **Prediction A** (160 m²): within the data range — this is **interpolation** and is more reliable.\n- **Prediction B** (400 m²): well outside the data range — this is **extrapolation**. The linear relationship may not hold at such extreme values, so this prediction is much less reliable.\n\nUsing a regression model beyond its data range can produce misleading or meaningless results."
+  },
+  {
+    "id": "y12-std2-bda-lr-q12",
+    "subtopic": "line-of-best-fit-and-regression",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A regression line for vehicle mass ($x$, tonnes) and fuel consumption ($y$, L/100 km) is $\\hat{y} = 6.8x + 2.1$. A car weighs 1.5 tonnes and actually uses 12.6 L/100 km. Find the residual to 1 decimal place.",
+    "answer": "0.3",
+    "tolerance": 0.05,
+    "hint": "Residual = actual $-$ predicted. Substitute $x = 1.5$ to find the predicted fuel consumption.",
+    "explanation": "Find the predicted fuel consumption:\n$$\\hat{y} = 6.8(1.5) + 2.1 = 10.2 + 2.1 = 12.3 \\text{ L/100 km}$$\n\nCalculate the residual:\n$$\\text{Residual} = 12.6 - 12.3 = 0.3 \\text{ L/100 km}$$\n\nThe positive residual means this car uses $0.3$ L/100 km more than the model predicts for a vehicle of its mass."
+  }
+]

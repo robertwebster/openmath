@@ -1,0 +1,14 @@
+{
+  "id": "investments-and-loans",
+  "title": "Investments and loans",
+  "year": 12,
+  "stage": "6",
+  "course": "standard-2",
+  "strand": "Financial Mathematics",
+  "syllabusOutcome": "MS-F4",
+  "description": "Apply simple and compound interest to investments and loans; calculate present and future values; analyse shares, dividends and reducing-balance loans.",
+  "subtopics": [
+    "investments",
+    "reducing-balance-loans"
+  ]
+}

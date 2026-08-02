@@ -1,0 +1,14 @@
+{
+  "id": "annuities",
+  "title": "Annuities",
+  "year": 12,
+  "stage": "6",
+  "course": "standard-2",
+  "strand": "Financial Mathematics",
+  "syllabusOutcome": "MS-F5",
+  "description": "Calculate the future and present value of annuities using recurrence relations and tables; apply to superannuation accumulation, loan repayments and retirement drawdowns.",
+  "subtopics": [
+    "future-value-of-annuities",
+    "present-value-of-annuities"
+  ]
+}

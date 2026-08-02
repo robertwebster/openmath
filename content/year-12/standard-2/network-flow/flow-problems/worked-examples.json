@@ -1,0 +1,79 @@
+[
+  {
+    "id": "fp-worked-1",
+    "title": "Calculating a cut capacity",
+    "difficulty": 1,
+    "problem": "A directed network has source S, sink T, and intermediate vertices A and B: S→A (capacity 8), S→B (capacity 6), A→T (capacity 5), B→T (capacity 7), A→B (capacity 4). Find the capacity of the cut with S-side = {S, A} and T-side = {B, T}.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the rule for which edges cross a cut.",
+        "working": "Identify every edge that crosses from the S-side to the T-side. An edge counts only if it starts on the S-side and ends on the T-side. S-side = {S, A}, T-side = {B, T}."
+      },
+      {
+        "step": 2,
+        "instruction": "Check each edge to see whether it crosses the cut.",
+        "working": "S→A: both S-side — does not cross\nS→B: S is S-side, B is T-side → crosses (capacity 6)\nA→T: A is S-side, T is T-side → crosses (capacity 5)\nA→B: A is S-side, B is T-side → crosses (capacity 4)\nB→T: both T-side — does not cross"
+      },
+      {
+        "step": 3,
+        "instruction": "Add the capacities of the crossing edges.",
+        "working": "Cut capacity = $6 + 5 + 4 = 15$."
+      }
+    ],
+    "answer": "The capacity of the cut is 15."
+  },
+  {
+    "id": "fp-worked-2",
+    "title": "Finding the maximum flow using the minimum-cut theorem",
+    "difficulty": 2,
+    "problem": "For the same network (S→A cap 8, S→B cap 6, A→T cap 5, B→T cap 7, A→B cap 4), find the maximum flow from S to T by evaluating all possible cuts.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "List the meaningful cuts (there are 4 non-trivial ways to split {S, A, B, T} into two groups with S and T on opposite sides) and their capacities.",
+        "working": "Cut 1: S-side = {S}, T-side = {A, B, T}. Edges crossing: S→A (8) + S→B (6) = 14\n\nCut 2: S-side = {S, A}, T-side = {B, T}. Edges crossing: S→B (6) + A→T (5) + A→B (4) = 15\n\nCut 3: S-side = {S, B}, T-side = {A, T}. Edges crossing: S→A (8) + B→T (7) = 15 (A→B goes from T-side to S-side — backward edge, not counted)\n\nCut 4: S-side = {S, A, B}, T-side = {T}. Edges crossing: A→T (5) + B→T (7) = 12"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the minimum cut capacity.",
+        "working": "The cut capacities are: 14, 15, 15, 12. The minimum is 12 (Cut 4)."
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the maximum-flow minimum-cut theorem.",
+        "working": "$$\\text{Maximum flow} = \\text{minimum cut capacity} = 12 \\text{ units}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Verify that a flow of 12 units is achievable.",
+        "working": "The only way to get 12 units from S to T is if both A→T (5) and B→T (7) carry their full capacity simultaneously. Working backwards: A→T uses 5 (so A needs 5 incoming); B→T uses 7 (so B needs 7 incoming). Try S→A = 8, S→B = 4, A→B = 3; then B = 4 + 3 = 7 ✓, A→T = 5 ✓. Total outflow = $8 + 4 = 12$ ✓."
+      }
+    ],
+    "answer": "The maximum flow from S to T is 12 units."
+  },
+  {
+    "id": "fp-worked-3",
+    "title": "Interpreting the minimum cut in context",
+    "difficulty": 3,
+    "problem": "A water supply system has source S (reservoir), sink T (town), and two pump stations A and B: S→A (capacity 10), S→B (capacity 7), A→T (capacity 8), B→T (capacity 6), A→B (capacity 3). Find the maximum flow the system can deliver to the town.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Evaluate the four possible cuts.",
+        "working": "{S}: S→A (10) + S→B (7) = 17\n{S, A}: S→B (7) + A→T (8) + A→B (3) = 18\n{S, B}: S→A (10) + B→T (6) = 16 (A→B is backward here — not counted)\n{S, A, B}: A→T (8) + B→T (6) = 14"
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the minimum cut capacity.",
+        "working": "Minimum cut capacity = 14 (cut through {S, A, B})."
+      },
+      {
+        "step": 3,
+        "instruction": "State the maximum flow and explain the bottleneck.",
+        "working": "Maximum flow = 14 units per unit time. The bottleneck is the total capacity of the pipes leading into the town — A→T (8) and B→T (6) — regardless of how much the earlier pipes can carry."
+      }
+    ],
+    "answer": "The maximum flow the system can deliver to the town is 14 units per unit time."
+  }
+]

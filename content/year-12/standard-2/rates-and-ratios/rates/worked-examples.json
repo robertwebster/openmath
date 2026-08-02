@@ -1,0 +1,69 @@
+[
+  {
+    "id": "rates-worked-1",
+    "title": "Converting compound units (speed)",
+    "difficulty": 1,
+    "problem": "Convert 108 km/h to metres per second.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Convert km/h to m/s by converting km → m (multiply by 1000) and h → s (divide by 3600).",
+        "working": "$$108 \\text{ km/h} = 108 \\times \\frac{1000}{3600} \\text{ m/s} = 108 \\div 3.6 = 30 \\text{ m/s}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Note the reverse conversion, from m/s to km/h.",
+        "working": "To go from m/s to km/h, multiply by 3.6."
+      }
+    ],
+    "answer": "108 km/h is equivalent to 30 m/s."
+  },
+  {
+    "id": "rates-worked-2",
+    "title": "Fuel consumption",
+    "difficulty": 2,
+    "problem": "A car uses 52.5 litres of fuel to drive 700 km. Petrol costs \\$2.05 per litre. (a) Find the fuel consumption in L/100 km. (b) Find the cost to drive 400 km.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Part (a): find the fuel consumption in L/100 km.",
+        "working": "$$\\text{Consumption} = \\frac{52.5}{700} \\times 100 = 7.5 \\text{ L/100 km}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Part (b): use the consumption rate to find the litres needed for 400 km.",
+        "working": "$$\\frac{7.5}{100} \\times 400 = 30 \\text{ L}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Multiply the litres by the price per litre to find the cost.",
+        "working": "$$30 \\times \\$2.05 = \\$61.50$$"
+      }
+    ],
+    "answer": "(a) The fuel consumption is 7.5 L/100 km. (b) The cost to drive 400 km is \\$61.50."
+  },
+  {
+    "id": "rates-worked-3",
+    "title": "Energy rates in context",
+    "difficulty": 3,
+    "problem": "A gym session burns 420 kJ in 20 minutes, then the person rests and burns 80 kJ in 40 minutes. (a) Find the burn rate during exercise in kJ/min. (b) Find the burn rate at rest in kJ/min. (c) Find the average burn rate over the full hour.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Part (a): find the exercise burn rate.",
+        "working": "$$\\text{Exercise rate} = \\frac{420}{20} = 21 \\text{ kJ/min}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Part (b): find the rest burn rate.",
+        "working": "$$\\text{Rest rate} = \\frac{80}{40} = 2 \\text{ kJ/min}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Part (c): find the total energy and total time, then the average rate.",
+        "working": "Total energy = $420 + 80 = 500$ kJ. Total time = $20 + 40 = 60$ min.\n$$\\text{Average rate} = \\frac{500}{60} = 8.3\\overline{3} \\approx 8.33 \\text{ kJ/min}$$"
+      }
+    ],
+    "answer": "(a) 21 kJ/min during exercise. (b) 2 kJ/min at rest. (c) Average rate over the hour ≈ 8.33 kJ/min."
+  }
+]

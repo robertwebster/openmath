@@ -1,0 +1,84 @@
+[
+  {
+    "id": "pva-worked-1",
+    "title": "Finding the present value of an annuity",
+    "difficulty": 1,
+    "problem": "Find the present value of receiving \\$1500 at the end of each year for 3 years, if money earns 6% per annum.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the present value formula and identify the values.",
+        "working": "$M = 1500$, $r = 0.06$, $n = 3$\n\n$$PV = M \\times \\frac{1-(1+r)^{-n}}{r}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate $(1.06)^{-3}$.",
+        "working": "$(1.06)^3 = 1.191016$\n\n$(1.06)^{-3} = \\dfrac{1}{1.191016} = 0.839619$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute into the formula.",
+        "working": "$$PV = 1500 \\times \\frac{1 - 0.839619}{0.06} = 1500 \\times \\frac{0.160381}{0.06} = 1500 \\times 2.67302 = \\$4009.52$$"
+      }
+    ],
+    "answer": "The present value of the annuity is \\$4009.52."
+  },
+  {
+    "id": "pva-worked-2",
+    "title": "Finding the loan repayment amount",
+    "difficulty": 2,
+    "problem": "Hannah takes out a loan of \\$18,000 to be repaid in equal monthly instalments over 36 months (3 years) at 0.5% per month. Find the monthly repayment and total interest paid.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the values and write the repayment formula.",
+        "working": "$PV = 18\\,000$, $r = 0.005$, $n = 36$\n\n$$M = \\frac{PV \\times r}{1-(1+r)^{-n}}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate $(1.005)^{-36}$.",
+        "working": "$(1.005)^{12} = 1.061678$\n\n$(1.005)^{36} = (1.061678)^3 = 1.196681$\n\n$(1.005)^{-36} = \\dfrac{1}{1.196681} = 0.835645$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute to find the monthly repayment.",
+        "working": "$$M = \\frac{18\\,000 \\times 0.005}{1 - 0.835645} = \\frac{90}{0.164355} = \\$547.59 \\text{ per month}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate total interest paid.",
+        "working": "Total paid $= 547.59 \\times 36 = \\$19\\,713.24$\n\nInterest $= 19\\,713.24 - 18\\,000 = \\$1713.24$"
+      }
+    ],
+    "answer": "Monthly repayment: \\$547.59. Total interest paid: \\$1713.24."
+  },
+  {
+    "id": "pva-worked-3",
+    "title": "Retirement drawdown: finding equal annual withdrawals",
+    "difficulty": 3,
+    "problem": "Leon retires with \\$250,000 in his superannuation account earning 5% per annum. He wants to withdraw equal amounts at the end of each year for 15 years, leaving nothing at the end. Find the annual withdrawal amount.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the values. The \\$250,000 is the present value of all future withdrawals.",
+        "working": "$PV = 250\\,000$, $r = 0.05$, $n = 15$\n\n$$M = \\frac{PV \\times r}{1-(1+r)^{-n}}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate $(1.05)^{-15}$.",
+        "working": "$(1.05)^{10} = 1.628895$\n\n$(1.05)^{15} = 1.628895 \\times (1.05)^5 = 1.628895 \\times 1.276282 = 2.078928$\n\n$(1.05)^{-15} = \\dfrac{1}{2.078928} = 0.481017$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate the annual withdrawal.",
+        "working": "$$M = \\frac{250\\,000 \\times 0.05}{1 - 0.481017} = \\frac{12\\,500}{0.518983} = \\$24\\,085.57 \\text{ per year}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Verify the total withdrawn and interpret.",
+        "working": "Total withdrawn over 15 years $= 24\\,085.57 \\times 15 = \\$361\\,283.55$\n\nOf this, \\$250,000 was the principal and the remaining \\$111,283.55 represents interest earned during the drawdown period."
+      }
+    ],
+    "answer": "Leon can withdraw \\$24,085.57 per year for 15 years."
+  }
+]

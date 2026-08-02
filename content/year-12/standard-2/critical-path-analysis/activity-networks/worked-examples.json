@@ -1,0 +1,79 @@
+[
+  {
+    "id": "an-worked-1",
+    "title": "Reading a precedence table",
+    "difficulty": 1,
+    "problem": "A small construction project has the following activities and their immediate predecessors.\n\n| Activity | Description | Duration (days) | Immediate predecessors |\n|---|---|---|---|\n| A | Site preparation | 3 | — |\n| B | Order materials | 2 | — |\n| C | Lay foundations | 4 | A |\n| D | Deliver materials | 3 | B |\n| E | Build frame | 5 | C, D |\n| F | Fit roof | 2 | E |\n\nIdentify: (a) which activities can start immediately, (b) what E depends on, and (c) which activity leads to the finish.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Part (a): find which activities can start immediately.",
+        "working": "Activities with no predecessors can start at time zero. Reading the table: A and B both have a dash in the predecessors column — they can start immediately."
+      },
+      {
+        "step": 2,
+        "instruction": "Part (b): find what activity E depends on.",
+        "working": "Activity E lists C and D as immediate predecessors. E cannot start until both the foundations are laid (C) and the materials have been delivered (D)."
+      },
+      {
+        "step": 3,
+        "instruction": "Part (c): find which activity leads to the finish.",
+        "working": "Activity F is not listed as a predecessor of any other activity, so F leads directly to the finish of the project."
+      }
+    ],
+    "answer": "(a) A and B can start immediately. (b) E depends on C and D. (c) F leads to the finish."
+  },
+  {
+    "id": "an-worked-2",
+    "title": "Identifying a dummy activity",
+    "difficulty": 2,
+    "problem": "Two activities in a project share a complicated dependency: Activity C depends on A only; Activity D depends on both A and B. Explain why a dummy activity is needed and what it represents.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Consider how activity-on-arrow diagrams represent multiple predecessors.",
+        "working": "In an activity-on-arrow network, each activity is drawn as an arrow between two nodes. To show that D requires both A and B, the tail of D must connect to the head-nodes of both A and B."
+      },
+      {
+        "step": 2,
+        "instruction": "Identify the problem with drawing C and D sharing end-nodes.",
+        "working": "If we draw C and D sharing the same pair of end-nodes (because both involve A), the diagram incorrectly shows that C also requires B."
+      },
+      {
+        "step": 3,
+        "instruction": "Introduce a dummy activity to fix the diagram.",
+        "working": "The solution is to draw A ending at node 2, then draw a dummy activity (dashed arrow, 0 days) from node 2 to node 3, and have B also end at node 3. D then starts from node 3. C starts from node 2."
+      },
+      {
+        "step": 4,
+        "instruction": "Explain what the dummy activity represents.",
+        "working": "The dummy arrow carries no duration. It simply says: \"before D can start, you must wait for both A (via node 2 → node 3 dummy) and B (directly into node 3).\" C correctly depends only on A (starting from node 2, before the dummy)."
+      }
+    ],
+    "answer": "A dummy activity (zero duration) is needed to correctly show that D depends on both A and B while C depends only on A, without falsely linking C to B."
+  },
+  {
+    "id": "an-worked-3",
+    "title": "Finding activities with no successors",
+    "difficulty": 2,
+    "problem": "For the project below, identify which activities lead directly to the finish node.\n\n| Activity | Immediate predecessors |\n|---|---|\n| A | — |\n| B | — |\n| C | A |\n| D | A, B |\n| E | C, D |\n| F | B |\n| G | E, F |",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the rule for identifying finish activities.",
+        "working": "An activity leads to the finish if no other activity lists it as a predecessor."
+      },
+      {
+        "step": 2,
+        "instruction": "Check each activity in turn.",
+        "working": "A: listed as predecessor of C and D — not a finish activity.\nB: listed as predecessor of D and F — not a finish activity.\nC: listed as predecessor of E — not a finish activity.\nD: listed as predecessor of E — not a finish activity.\nE: listed as predecessor of G — not a finish activity.\nF: listed as predecessor of G — not a finish activity.\nG: not listed as a predecessor of any activity — G leads to the finish."
+      },
+      {
+        "step": 3,
+        "instruction": "State the conclusion.",
+        "working": "Only activity G leads directly to the finish node. The project ends when G is complete."
+      }
+    ],
+    "answer": "Only activity G leads directly to the finish node."
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "forward-and-backward-scanning",
+  "title": "Forward and backward scanning",
+  "topic": "critical-path-analysis",
+  "year": 12,
+  "strand": "Networks",
+  "syllabusOutcome": "MS-N3",
+  "description": "Apply forward scanning to find earliest start times (EST) and backward scanning to find latest start times (LST); calculate float (slack) time for each activity."
+}

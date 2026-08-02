@@ -1,0 +1,11 @@
+{
+  "id": "differential-equations",
+  "title": "Differential equations",
+  "topic": "further-applications-of-calculus",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Calculus",
+  "syllabusOutcome": "ME-12-05",
+  "description": "Solve differential equations of the form $\\frac{dy}{dx} = f(x)$ by direct integration and separable equations of the form $\\frac{dy}{dx} = g(x)h(y)$; interpret direction fields qualitatively; model and solve simple problems with first-order differential equations."
+}

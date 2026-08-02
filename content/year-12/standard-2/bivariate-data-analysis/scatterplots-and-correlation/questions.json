@@ -1,0 +1,208 @@
+[
+  {
+    "id": "y12-std2-bda-sc-q01",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A scatterplot shows that as temperature increases, ice cream sales also increase. Which term best describes this association?",
+    "options": [
+      "Negative association",
+      "Positive association",
+      "No association",
+      "Non-linear association"
+    ],
+    "answer": "Positive association",
+    "hint": "Think about the direction: as one variable goes up, does the other go up or down?",
+    "explanation": "When both variables increase together, the association is **positive**. The points on the scatterplot slope upward from left to right, indicating a positive association."
+  },
+  {
+    "id": "y12-std2-bda-sc-q02",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Pearson's correlation coefficient is $r = 0$. What does this indicate?",
+    "options": [
+      "A perfect positive linear relationship",
+      "A perfect negative linear relationship",
+      "No linear relationship",
+      "A strong non-linear relationship"
+    ],
+    "answer": "No linear relationship",
+    "hint": "$r = 0$ means the linear association has no strength at all.",
+    "explanation": "$r = 0$ indicates there is **no linear relationship** between the two variables. The points would appear randomly scattered with no discernible trend.\n\nNote: a non-linear (curved) relationship could still exist even when $r = 0$, because Pearson's $r$ only measures linear association."
+  },
+  {
+    "id": "y12-std2-bda-sc-q03",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Four datasets have correlation coefficients $r_1 = 0.45$, $r_2 = -0.82$, $r_3 = 0.31$, and $r_4 = -0.60$. Which dataset has the **strongest** linear association?",
+    "options": [
+      "Dataset 1 ($r_1 = 0.45$)",
+      "Dataset 2 ($r_2 = -0.82$)",
+      "Dataset 3 ($r_3 = 0.31$)",
+      "Dataset 4 ($r_4 = -0.60$)"
+    ],
+    "answer": "Dataset 2 ($r_2 = -0.82$)",
+    "hint": "Strength is measured by the magnitude (absolute value) of $r$, regardless of sign.",
+    "explanation": "The strength of a linear association depends on $|r|$, not the sign of $r$.\n\nAbsolute values: $|0.45| = 0.45$, $|-0.82| = 0.82$, $|0.31| = 0.31$, $|-0.60| = 0.60$.\n\nDataset 2 has the largest $|r| = 0.82$, so it has the strongest linear association."
+  },
+  {
+    "id": "y12-std2-bda-sc-q04",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A scatterplot has all its points lying exactly on a straight line with a downward slope. What is the value of $r$?",
+    "options": [
+      "$r = 1$",
+      "$r = -1$",
+      "$r = 0$",
+      "$r = -0.5$"
+    ],
+    "answer": "$r = -1$",
+    "hint": "A perfect relationship has $|r| = 1$. A downward slope means $r$ is negative.",
+    "explanation": "When all points lie exactly on a straight line, there is a **perfect linear relationship**, so $|r| = 1$. Since the line slopes downward (as $x$ increases, $y$ decreases), the association is negative, giving $r = -1$."
+  },
+  {
+    "id": "y12-std2-bda-sc-q05",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A study finds a strong positive correlation ($r = 0.91$) between the number of fire trucks sent to a fire and the amount of property damage caused. A journalist concludes that fire trucks cause property damage. What is the most accurate response to this conclusion?",
+    "options": [
+      "The value of $r$ is not high enough to draw any conclusion",
+      "Correlation does not imply causation — both variables increase with the size of the fire",
+      "The study should have used a larger sample before any conclusion is drawn",
+      "A negative correlation would be needed to conclude that fire trucks reduce damage"
+    ],
+    "answer": "Correlation does not imply causation — both variables increase with the size of the fire",
+    "hint": "Think about what third variable (the size of the fire) is driving both outcomes.",
+    "explanation": "**Correlation does not imply causation.** Both the number of fire trucks sent and the property damage are driven by the **size of the fire** — a confounding variable. Larger fires require more trucks *and* cause more damage.\n\nSending fewer trucks would not reduce damage; it would make it worse. The observed correlation reflects a common cause, not a direct causal link."
+  },
+  {
+    "id": "y12-std2-bda-sc-q06",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A dataset of 20 students shows a correlation of $r = -0.74$ between hours of social media use per day ($x$) and test scores ($y$). Which statement is best supported by this result?",
+    "options": [
+      "Social media use causes lower test scores",
+      "There is a moderate to strong negative linear association between social media use and test scores",
+      "There is no relationship between social media use and test scores",
+      "Students with high test scores spend more time on social media"
+    ],
+    "answer": "There is a moderate to strong negative linear association between social media use and test scores",
+    "hint": "$r = -0.74$ tells you the direction (negative) and approximate strength (moderate to strong) of the linear association — nothing more.",
+    "explanation": "$r = -0.74$ indicates a **moderate to strong negative linear association**: as social media use increases, test scores tend to decrease.\n\nHowever, this does not prove causation — other factors (sleep, study habits, home environment) may explain the relationship. The value of $r$ describes the association, not its cause."
+  },
+  {
+    "id": "y12-std2-bda-sc-q07",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A scatterplot shows points scattered widely around an upward-sloping trend line. Which description best fits this scatterplot?",
+    "options": [
+      "Strong positive linear association",
+      "Weak positive linear association",
+      "Strong negative linear association",
+      "Perfect positive linear association"
+    ],
+    "answer": "Weak positive linear association",
+    "hint": "The slope direction gives the direction; how tightly clustered the points are gives the strength.",
+    "explanation": "The upward slope indicates a **positive** association (as $x$ increases, $y$ tends to increase). Points scattered widely around the trend (rather than clustering close to it) indicate a **weak** association — $r$ is closer to $0$ than to $1$.\n\nThis is a weak positive linear association."
+  },
+  {
+    "id": "y12-std2-bda-sc-q08",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Two bivariate datasets are analysed. Dataset A has correlation coefficient $r_A = 0.68$, and Dataset B has $r_B = -0.85$. By how much does the absolute value of $r_B$ exceed the absolute value of $r_A$? Give your answer to 2 decimal places.",
+    "answer": "0.17",
+    "tolerance": 0.005,
+    "hint": "Find $|r_A|$ and $|r_B|$ first, then subtract the smaller from the larger.",
+    "explanation": "$|r_A| = 0.68$ and $|r_B| = |-0.85| = 0.85$.\n\nDifference $= 0.85 - 0.68 = 0.17$\n\nDataset B has a stronger linear association by $0.17$. Note: Dataset B's negative sign tells us the direction (as $x$ increases, $y$ decreases), but the strength comparison uses absolute values."
+  },
+  {
+    "id": "y12-std2-bda-sc-q09",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Which of the following pairs of variables is most likely to show a **negative** linear association?",
+    "options": [
+      "Height and weight of adults",
+      "Hours of study per day and exam score",
+      "Speed of a car and travel time for a fixed distance",
+      "Number of pages in a book and total reading time"
+    ],
+    "answer": "Speed of a car and travel time for a fixed distance",
+    "hint": "A negative association means as one variable increases, the other decreases.",
+    "explanation": "As a car's speed increases, the time taken to travel a fixed distance decreases — this is a **negative association** (and follows the direct mathematical relationship $\\text{time} = \\text{distance} \\div \\text{speed}$).\n\nThe other pairs tend to be positive: taller adults tend to weigh more, more study tends to mean higher marks, and more pages in a book means more time to read."
+  },
+  {
+    "id": "y12-std2-bda-sc-q10",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A global study finds that countries with more televisions per capita have longer average life expectancies ($r = 0.88$). A politician uses this to argue that distributing televisions will increase life expectancy. What is the most likely explanation for the correlation?",
+    "options": [
+      "Televisions directly increase life expectancy through health programming",
+      "Both television ownership and life expectancy are associated with national wealth (GDP per capita)",
+      "Longer-lived people have more time to acquire televisions",
+      "The study must be wrong because $r = 0.88$ is not meaningful"
+    ],
+    "answer": "Both television ownership and life expectancy are associated with national wealth (GDP per capita)",
+    "hint": "Think about what underlying factor drives both TV ownership and life expectancy.",
+    "explanation": "This is a classic example of a **confounding variable**. Both television ownership and life expectancy are strongly linked to national wealth (GDP per capita):\n\n- Wealthier countries can afford more consumer goods, including TVs.\n- Wealthier countries also have better healthcare, nutrition and sanitation, leading to longer lives.\n\nThe correlation between TVs and life expectancy exists because both are driven by wealth, not because TVs cause people to live longer. Distributing TVs to poor countries would not extend life expectancy.\n\n**Correlation does not imply causation.**"
+  },
+  {
+    "id": "y12-std2-bda-sc-q11",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Three datasets have correlation coefficients $r_1 = 0.56$, $r_2 = -0.89$, and $r_3 = -0.42$. The dataset with the **strongest** linear association has $|r| = $ ___. Give your answer to 2 decimal places.",
+    "answer": "0.89",
+    "tolerance": 0.005,
+    "hint": "Compute the absolute value of each $r$, then identify the largest.",
+    "explanation": "Compare the absolute values:\n$$|r_1| = 0.56, \\quad |r_2| = |-0.89| = 0.89, \\quad |r_3| = |-0.42| = 0.42$$\n\nThe largest is $|r_2| = 0.89$, so Dataset 2 has the strongest linear association.\n\nNote: the negative sign of $r_2$ tells us the association is negative in direction, but the magnitude $0.89$ measures its strength."
+  },
+  {
+    "id": "y12-std2-bda-sc-q12",
+    "subtopic": "scatterplots-and-correlation",
+    "topic": "bivariate-data-analysis",
+    "year": 12,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A scatterplot shows a clear U-shaped (curved) pattern between two variables. When Pearson's $r$ is calculated, it is found to be close to 0. Which conclusion is correct?",
+    "options": [
+      "There is no relationship between the two variables",
+      "There is a strong relationship, but it is non-linear, so $r \\approx 0$ is misleading",
+      "The data must have been collected incorrectly",
+      "A value of $r \\approx 0$ always means the variables are independent"
+    ],
+    "answer": "There is a strong relationship, but it is non-linear, so $r \\approx 0$ is misleading",
+    "hint": "Pearson's $r$ only measures the strength of a **linear** relationship. What happens to $r$ when the true relationship is curved?",
+    "explanation": "Pearson's correlation coefficient $r$ measures the strength of a **linear** (straight-line) association only. A U-shaped pattern is a strong **non-linear** relationship.\n\nFor a symmetric U-shape, the upward portion on the right roughly cancels the downward portion on the left in the $r$ calculation, giving $r \\approx 0$ even though a clear pattern exists.\n\nThis is why it is important to always **look at the scatterplot** rather than relying solely on $r$ — a value near zero does not always mean no relationship exists."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "modelling-periodic-phenomena",
+  "title": "Modelling periodic phenomena",
+  "topic": "further-graph-transformations-and-modelling",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Functions",
+  "syllabusOutcome": "MAV-12-02",
+  "description": "Model real periodic situations — tides, temperature, daylight hours — using transformed trigonometric functions; fit amplitude, period and phase shift to data; use a model to find values and solve equations in context."
+}

@@ -1,0 +1,9 @@
+{
+  "id": "network-concepts",
+  "title": "Network concepts",
+  "topic": "network-flow",
+  "year": 12,
+  "strand": "Networks",
+  "syllabusOutcome": "MS-N2",
+  "description": "Identify vertices, edges, degree, weighted and directed networks; recognise connected networks; interpret network diagrams in practical contexts."
+}

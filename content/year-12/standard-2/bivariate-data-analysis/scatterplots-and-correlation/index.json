@@ -1,0 +1,9 @@
+{
+  "id": "scatterplots-and-correlation",
+  "title": "Scatterplots and correlation",
+  "topic": "bivariate-data-analysis",
+  "year": 12,
+  "strand": "Statistical Analysis",
+  "syllabusOutcome": "MS-S4",
+  "description": "Construct and interpret scatterplots; describe the direction, form and strength of a linear association; estimate and interpret Pearson's correlation coefficient r; understand that correlation does not imply causation."
+}

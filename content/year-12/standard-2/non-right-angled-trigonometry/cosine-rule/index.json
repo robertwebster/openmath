@@ -1,0 +1,9 @@
+{
+  "id": "cosine-rule",
+  "title": "Cosine rule",
+  "topic": "non-right-angled-trigonometry",
+  "year": 12,
+  "strand": "Measurement",
+  "syllabusOutcome": "MS-M6",
+  "description": "Apply the cosine rule $c^2 = a^2 + b^2 - 2ab\\cos C$ to find unknown sides in non-right-angled triangles; rearrange to find unknown angles using $\\cos C = \\dfrac{a^2+b^2-c^2}{2ab}$."
+}

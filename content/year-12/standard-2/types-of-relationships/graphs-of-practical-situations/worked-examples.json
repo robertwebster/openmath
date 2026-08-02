@@ -1,0 +1,69 @@
+[
+  {
+    "id": "gps-worked-1",
+    "title": "Quadratic model — finding a maximum",
+    "difficulty": 1,
+    "problem": "A ball is thrown upward. Its height $h$ (metres) at time $t$ (seconds) is $h = -5t^2 + 20t$. Find (a) the height at $t = 1$ s and (b) the maximum height.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Part (a): substitute $t = 1$ into the height equation.",
+        "working": "$$h = -5(1)^2 + 20(1) = -5 + 20 = 15 \\text{ m}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Part (b): for a quadratic $h = at^2 + bt + c$, the maximum (when $a < 0$) occurs at $t = -\\dfrac{b}{2a}$.",
+        "working": "$$t = -\\frac{b}{2a} = -\\frac{20}{2 \\times (-5)} = -\\frac{20}{-10} = 2 \\text{ s}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $t = 2$ to find the maximum height.",
+        "working": "$$h = -5(2)^2 + 20(2) = -20 + 40 = 20 \\text{ m}$$"
+      }
+    ],
+    "answer": "(a) The height at $t = 1$ s is 15 m. (b) The maximum height is 20 m, reached at 2 seconds."
+  },
+  {
+    "id": "gps-worked-2",
+    "title": "Exponential model — growth and decay",
+    "difficulty": 2,
+    "problem": "A car purchased for \\$30\\,000 depreciates at 15% per year. Its value after $t$ years is $V = 30\\,000 \\times (0.85)^t$. (a) Find the value after 4 years. (b) After how many years is the car worth less than \\$10\\,000?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Part (a): substitute $t = 4$ into the value equation.",
+        "working": "$$V = 30\\,000 \\times (0.85)^4 = 30\\,000 \\times 0.52200625 \\approx \\$15\\,660.19$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Part (b): try successive values of $t$ to find when the value first drops below \\$10\\,000.",
+        "working": "| $t$ | $(0.85)^t$ | $V$ |\n|-----|------------|-----|\n| 6 | 0.3771 | \\$11\\,313 |\n| 7 | 0.3206 | \\$9\\,617 |\n\nThe value first drops below \\$10\\,000 in year 7."
+      }
+    ],
+    "answer": "(a) The value after 4 years is approximately \\$15\\,660.19. (b) The car is first worth less than \\$10\\,000 in year 7."
+  },
+  {
+    "id": "gps-worked-3",
+    "title": "Reciprocal model",
+    "difficulty": 3,
+    "problem": "The time $t$ (hours) to complete a job varies inversely with the number of workers $n$: $t = \\dfrac{24}{n}$. (a) How long does the job take with 6 workers? (b) How many workers are needed to complete it in 3 hours?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Part (a): substitute $n = 6$ into the model.",
+        "working": "$$t = \\frac{24}{6} = 4 \\text{ hours}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Part (b): substitute $t = 3$ and solve for $n$.",
+        "working": "$$3 = \\frac{24}{n} \\implies n = \\frac{24}{3} = 8 \\text{ workers}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Describe the key feature of reciprocal graphs.",
+        "working": "As $n$ increases, $t$ decreases — but never reaches zero. As $n$ decreases toward zero, $t$ grows without bound. The graph has horizontal and vertical asymptotes at $t = 0$ and $n = 0$."
+      }
+    ],
+    "answer": "(a) With 6 workers, the job takes 4 hours. (b) 8 workers are needed to finish in 3 hours."
+  }
+]

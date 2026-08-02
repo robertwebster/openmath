@@ -1,0 +1,9 @@
+{
+  "id": "z-scores",
+  "title": "z-scores",
+  "topic": "the-normal-distribution",
+  "year": 12,
+  "strand": "Statistical Analysis",
+  "syllabusOutcome": "MS-S5",
+  "description": "Standardise a data value using $z = \\frac{x - \\mu}{\\sigma}$; interpret a z-score as the number of standard deviations from the mean; find original values, means or standard deviations given a z-score; compare values from different distributions."
+}

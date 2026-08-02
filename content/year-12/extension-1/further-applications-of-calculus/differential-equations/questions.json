@@ -1,0 +1,173 @@
+[
+  {
+    "id": "y12-ext1-fac-de-q01",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Which of the following is the general solution of $\\dfrac{dy}{dx} = 3x^2$?",
+    "options": [
+      "$y = x^3 + C$",
+      "$y = 6x + C$",
+      "$y = x^3$",
+      "$y = \\dfrac{x^3}{3} + C$"
+    ],
+    "answer": "$y = x^3 + C$",
+    "hint": "Integrate both sides with respect to $x$. Don't forget the constant of integration.",
+    "explanation": "Integrating both sides:\n$$y = \\int 3x^2\\,dx = x^3 + C$$\n\nThe $+C$ is essential — without it this is only a particular solution. The general solution has a family of curves (one for each value of $C$)."
+  },
+  {
+    "id": "y12-ext1-fac-de-q02",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The differential equation $\\dfrac{dy}{dx} = 2x + 1$ has general solution $y = x^2 + x + C$. If $y = 5$ when $x = 1$, find the value of $C$.",
+    "answer": "3",
+    "tolerance": 0,
+    "hint": "Substitute $x = 1$ and $y = 5$ into $y = x^2 + x + C$ and solve for $C$.",
+    "explanation": "Substituting $x = 1$, $y = 5$:\n\n$$5 = 1^2 + 1 + C = 2 + C$$\n\n$$C = 5 - 2 = \\mathbf{3}$$\n\nThe particular solution is $y = x^2 + x + 3$."
+  },
+  {
+    "id": "y12-ext1-fac-de-q03",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "A differential equation is called **separable** if it can be written in the form $\\dfrac{dy}{dx} = g(x)h(y)$. Which of the following is separable?",
+    "options": [
+      "$\\dfrac{dy}{dx} = \\dfrac{x}{y}$",
+      "$\\dfrac{dy}{dx} = x + y$",
+      "$\\dfrac{dy}{dx} = \\sin(x+y)$",
+      "$\\dfrac{dy}{dx} = x^2 + y^2$"
+    ],
+    "answer": "$\\dfrac{dy}{dx} = \\dfrac{x}{y}$",
+    "hint": "A separable equation has $x$ and $y$ factors that can be completely separated — write it as $g(x)\\cdot h(y)$.",
+    "explanation": "$\\dfrac{dy}{dx} = \\dfrac{x}{y} = x \\cdot \\dfrac{1}{y}$ — this is $g(x) = x$ and $h(y) = \\dfrac{1}{y}$, so it **is** separable.\n\nThe others cannot be factored into a pure $x$-function times a pure $y$-function."
+  },
+  {
+    "id": "y12-ext1-fac-de-q04",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "The differential equation $\\dfrac{dy}{dx} = e^x$ with initial condition $y(0) = 2$ has solution $y = e^x + C$. Find the value of $C$.",
+    "answer": "1",
+    "tolerance": 0,
+    "hint": "Integrate $e^x$ to get $e^x + C$, then substitute $x=0$, $y=2$.",
+    "explanation": "Integrating: $y = e^x + C$.\n\nSubstituting $x = 0$, $y = 2$:\n\n$$2 = e^0 + C = 1 + C$$\n\n$$C = \\mathbf{1}$$\n\nThe particular solution is $y = e^x + 1$."
+  },
+  {
+    "id": "y12-ext1-fac-de-q05",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Solve the separable equation $\\dfrac{dy}{dx} = 2xy$ with initial condition $y(0) = 3$. Find $y(1)$ to 4 decimal places.",
+    "answer": "8.1548",
+    "tolerance": 0.005,
+    "hint": "Separate variables: $\\dfrac{dy}{y} = 2x\\,dx$. Integrate both sides, then use $y(0)=3$ to find $C$.",
+    "explanation": "Separating variables:\n$$\\frac{dy}{y} = 2x\\,dx$$\n\nIntegrating both sides:\n$$\\ln|y| = x^2 + C_1$$\n\n$$y = Ae^{x^2} \\quad (A = e^{C_1})$$\n\nApplying $y(0) = 3$: $3 = Ae^0 = A$, so $A = 3$.\n\n$$y = 3e^{x^2}$$\n\n$$y(1) = 3e^{1^2} = 3e \\approx 3 \\times 2.7183 = \\mathbf{8.1548}$$"
+  },
+  {
+    "id": "y12-ext1-fac-de-q06",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Solve $\\dfrac{dy}{dx} = \\dfrac{x}{y}$ with $y(0) = 2$. Find $y(3)$ to 4 decimal places.",
+    "answer": "3.6056",
+    "tolerance": 0.005,
+    "hint": "Separate: $y\\,dy = x\\,dx$. Integrate both sides. Use $y(0)=2$ to find the constant.",
+    "explanation": "Separating:\n$$y\\,dy = x\\,dx$$\n\nIntegrating:\n$$\\frac{y^2}{2} = \\frac{x^2}{2} + C$$\n\n$$y^2 = x^2 + K \\quad (K = 2C)$$\n\nApplying $y(0) = 2$: $4 = 0 + K$, so $K = 4$.\n\n$$y^2 = x^2 + 4 \\implies y = \\sqrt{x^2+4} \\quad (y > 0)$$\n\n$$y(3) = \\sqrt{9+4} = \\sqrt{13} \\approx \\mathbf{3.6056}$$"
+  },
+  {
+    "id": "y12-ext1-fac-de-q07",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "A direction field (slope field) for $\\dfrac{dy}{dx} = y$ shows line segments with positive slope wherever $y > 0$ and negative slope wherever $y < 0$. Which function family is the general solution?",
+    "options": [
+      "$y = Ce^x$",
+      "$y = Cx$",
+      "$y = C\\ln x$",
+      "$y = x^2 + C$"
+    ],
+    "answer": "$y = Ce^x$",
+    "hint": "Separate variables in $\\dfrac{dy}{dx} = y$ and integrate.",
+    "explanation": "Separating: $\\dfrac{dy}{y} = dx$.\n\nIntegrating: $\\ln|y| = x + C_1$, so $y = Ce^x$.\n\nThis family has the property $\\dfrac{d}{dx}(Ce^x) = Ce^x = y$ ✓ — the slope always equals the $y$-value, consistent with the described direction field."
+  },
+  {
+    "id": "y12-ext1-fac-de-q08",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "The rate of change of a quantity $P$ satisfies $\\dfrac{dP}{dt} = 5 - P$. Find the general solution $P(t)$. If $P(0) = 2$, what is $P(\\ln 2)$ to 2 decimal places?",
+    "answer": "3.5",
+    "tolerance": 0.01,
+    "hint": "Separate: $\\dfrac{dP}{5-P} = dt$. Integrate to get $-\\ln|5-P| = t + C$. Solve for $P$.",
+    "explanation": "Separating:\n$$\\frac{dP}{5-P} = dt$$\n\nIntegrating:\n$$-\\ln|5-P| = t + C_1$$\n\n$$5 - P = Ae^{-t} \\quad (A = e^{-C_1})$$\n\n$$P = 5 - Ae^{-t}$$\n\nApplying $P(0) = 2$: $2 = 5 - A$, so $A = 3$.\n\n$$P = 5 - 3e^{-t}$$\n\n$$P(\\ln 2) = 5 - 3e^{-\\ln 2} = 5 - \\frac{3}{2} = \\mathbf{3.5}$$"
+  },
+  {
+    "id": "y12-ext1-fac-de-q09",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Solve $\\dfrac{dy}{dx} = \\cos x$ with $y(0) = 1$. Find $y\\!\\left(\\dfrac{\\pi}{2}\\right)$.",
+    "answer": "2",
+    "tolerance": 0,
+    "hint": "Integrate $\\cos x$ directly and apply the initial condition.",
+    "explanation": "Integrating:\n$$y = \\int \\cos x\\,dx = \\sin x + C$$\n\nApplying $y(0) = 1$: $1 = \\sin 0 + C = 0 + C$, so $C = 1$.\n\n$$y = \\sin x + 1$$\n\n$$y\\!\\left(\\frac{\\pi}{2}\\right) = \\sin\\frac{\\pi}{2} + 1 = 1 + 1 = \\mathbf{2}$$"
+  },
+  {
+    "id": "y12-ext1-fac-de-q10",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Solve the separable equation $\\dfrac{dy}{dx} = \\dfrac{1-y^2}{y}$ with $y(0) = 2$. Find $y(1)$ to 4 decimal places.",
+    "answer": "1.1858",
+    "tolerance": 0.0005,
+    "hint": "Separate: $\\dfrac{y\\,dy}{1-y^2} = dx$. Integrate both sides. Note that $\\int \\dfrac{y}{1-y^2}\\,dy$ can be handled with the substitution $u = 1-y^2$.",
+    "explanation": "Separating:\n$$\\frac{y\\,dy}{1-y^2} = dx$$\n\nLet $u = 1-y^2$, so $du = -2y\\,dy$, giving $y\\,dy = -\\dfrac{du}{2}$:\n\n$$\\int\\frac{y}{1-y^2}\\,dy = -\\frac{1}{2}\\int\\frac{du}{u} = -\\frac{1}{2}\\ln|u| + C_1 = -\\frac{1}{2}\\ln|1-y^2| + C_1$$\n\nSo: $-\\dfrac{1}{2}\\ln|1-y^2| = x + C_1$, giving $1 - y^2 = Ae^{-2x}$, i.e. $y^2 = 1 - Ae^{-2x}$.\n\nApplying $y(0) = 2$: $4 = 1 - A$, so $A = -3$.\n\n$$y^2 = 1 + 3e^{-2x}$$\n\n$$y(1) = \\sqrt{1 + 3e^{-2}} = \\sqrt{1 + 3(0.1353)} = \\sqrt{1.4060} \\approx \\mathbf{1.1858}$$"
+  },
+  {
+    "id": "y12-ext1-fac-de-q11",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A tank initially contains 100 L of pure water. Salt solution containing 2 g/L flows in at 5 L/min, and the well-mixed solution drains at 5 L/min. The amount of salt $Q$ grams after $t$ minutes satisfies $\\dfrac{dQ}{dt} = 10 - \\dfrac{Q}{20}$. If $Q(0) = 0$, find $Q(20)$ to 2 decimal places.",
+    "answer": "126.42",
+    "tolerance": 0.05,
+    "hint": "This is of the form $\\dfrac{dQ}{dt} = k(L - Q)$ — separate or use the integrating factor. The solution is $Q = 200(1 - e^{-t/20})$.",
+    "explanation": "Separating:\n$$\\frac{dQ}{10 - Q/20} = dt$$\n\nMultiply numerator and denominator by 20:\n$$\\frac{20\\,dQ}{200 - Q} = dt$$\n\nIntegrating:\n$$-20\\ln|200-Q| = t + C_1$$\n\n$$200 - Q = Ae^{-t/20}$$\n\nApplying $Q(0) = 0$: $200 = A$.\n\n$$Q = 200\\left(1 - e^{-t/20}\\right)$$\n\n$$Q(20) = 200\\left(1 - e^{-1}\\right) = 200\\left(1 - 0.3679\\right) = 200 \\times 0.6321 \\approx \\mathbf{126.42}$$"
+  },
+  {
+    "id": "y12-ext1-fac-de-q12",
+    "subtopic": "differential-equations",
+    "topic": "further-applications-of-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "The velocity $v$ (m/s) of a particle satisfies $\\dfrac{dv}{dt} = 4 - v$ with $v(0) = 0$. Find the time $t$ (in seconds, to 4 decimal places) at which $v = 2$.",
+    "answer": "0.6931",
+    "tolerance": 0.0005,
+    "hint": "Solve $\\dfrac{dv}{4-v} = dt$. Integrate to get $v = 4(1-e^{-t})$, then set $v = 2$.",
+    "explanation": "Separating:\n$$\\frac{dv}{4-v} = dt$$\n\nIntegrating:\n$$-\\ln|4-v| = t + C_1$$\n\n$$4 - v = Ae^{-t}$$\n\nApplying $v(0) = 0$: $4 = A$.\n\n$$v = 4(1 - e^{-t})$$\n\nSet $v = 2$:\n$$2 = 4(1 - e^{-t}) \\implies e^{-t} = \\frac{1}{2} \\implies -t = -\\ln 2 \\implies t = \\ln 2 \\approx \\mathbf{0.6931}$$"
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "id": "binomial-worked-1",
+    "title": "Calculating a binomial probability",
+    "difficulty": 1,
+    "problem": "A fair die is rolled 4 times. Find the probability of getting exactly 2 sixes.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the distribution. Let $X$ = number of sixes; each roll is independent with $P(\\text{six}) = \\tfrac{1}{6}$.",
+        "working": "$$X \\sim B\\!\\left(4, \\tfrac{1}{6}\\right)$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the binomial probability formula $P(X = k) = \\binom{n}{k}p^k(1-p)^{n-k}$ with $n = 4$, $k = 2$, $p = \\tfrac{1}{6}$.",
+        "working": "$$P(X = 2) = \\binom{4}{2}\\left(\\frac{1}{6}\\right)^2\\!\\left(\\frac{5}{6}\\right)^2 = 6 \\times \\frac{1}{36} \\times \\frac{25}{36} = \\frac{150}{1296} = \\frac{25}{216} \\approx 0.1157$$"
+      }
+    ],
+    "answer": "$P(X = 2) = \\dfrac{25}{216} \\approx 0.1157$"
+  },
+  {
+    "id": "binomial-worked-2",
+    "title": "Mean, variance and standard deviation",
+    "difficulty": 2,
+    "problem": "$X \\sim B(20, 0.35)$. Find the mean, variance and standard deviation of $X$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the mean using $E(X) = np$.",
+        "working": "$$E(X) = np = 20 \\times 0.35 = 7$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the variance using $\\text{Var}(X) = np(1-p)$.",
+        "working": "$$\\text{Var}(X) = np(1-p) = 20 \\times 0.35 \\times 0.65 = 4.55$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the standard deviation by taking the square root of the variance.",
+        "working": "$$\\text{SD}(X) = \\sqrt{4.55} \\approx 2.13$$"
+      }
+    ],
+    "answer": "$E(X) = 7$, $\\text{Var}(X) = 4.55$, $\\text{SD}(X) \\approx 2.13$."
+  },
+  {
+    "id": "binomial-worked-3",
+    "title": "Using the complement",
+    "difficulty": 3,
+    "problem": "In a clinical trial, 30% of patients respond to a new treatment. 6 patients are enrolled. Find the probability that at least 1 responds.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the distribution. Let $X$ = number who respond; $X \\sim B(6, 0.3)$.",
+        "working": "$X \\sim B(6, 0.3)$."
+      },
+      {
+        "step": 2,
+        "instruction": "Use the complement $P(X \\geq 1) = 1 - P(X = 0) = 1 - (1-p)^n$, which is much more efficient than summing $P(X=1) + \\cdots + P(X=6)$.",
+        "working": "$$P(X \\geq 1) = 1 - P(X = 0) = 1 - (0.7)^6 = 1 - 0.1176\\ldots \\approx 0.8824$$"
+      }
+    ],
+    "answer": "$P(X \\geq 1) \\approx 0.8824$"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "the-critical-path",
+  "title": "The critical path",
+  "topic": "critical-path-analysis",
+  "year": 12,
+  "strand": "Networks",
+  "syllabusOutcome": "MS-N3",
+  "description": "Identify the critical path as the longest path through the activity network; determine the minimum project completion time; interpret the effect of delays to critical and non-critical activities."
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "diffeq-worked-1",
+    "title": "Direct integration (simplest type)",
+    "difficulty": 1,
+    "problem": "Solve $\\dfrac{dy}{dx} = 4x^3 - 2$ with $y(1) = 3$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Integrate both sides with respect to $x$.",
+        "working": "$$y = \\int (4x^3 - 2)\\,dx = x^4 - 2x + C$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the initial condition to find $C$.",
+        "working": "$$3 = 1^4 - 2(1) + C = -1 + C \\implies C = 4$$"
+      }
+    ],
+    "answer": "The particular solution is $y = x^4 - 2x + 4$. (The general solution $y = x^4 - 2x + C$ is a family of curves; the initial condition picks out the one passing through $(1, 3)$.)"
+  },
+  {
+    "id": "diffeq-worked-2",
+    "title": "Separable equation",
+    "difficulty": 2,
+    "problem": "Solve $\\dfrac{dy}{dx} = \\dfrac{y}{x}$ with $y(1) = 5$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Separate variables (move all $y$ terms to one side, all $x$ terms to the other).",
+        "working": "$$\\frac{dy}{y} = \\frac{dx}{x}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Integrate both sides.",
+        "working": "$$\\int \\frac{dy}{y} = \\int \\frac{dx}{x}$$ $$\\ln|y| = \\ln|x| + C_1$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $y$.",
+        "working": "$$|y| = e^{C_1}|x| \\implies y = Ax \\quad (A = \\pm e^{C_1})$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply the initial condition.",
+        "working": "$$5 = A \\cdot 1 \\implies A = 5$$"
+      }
+    ],
+    "answer": "The particular solution is $y = 5x$."
+  },
+  {
+    "id": "diffeq-worked-3",
+    "title": "Mixture / flow problem",
+    "difficulty": 3,
+    "problem": "A tank contains 50 L of pure water. Brine containing 3 g/L flows in at 2 L/min; the well-mixed solution drains at 2 L/min. Set up and solve the differential equation for the salt content $Q(t)$ (grams) at time $t$ minutes.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Set up the rate in / rate out equation.",
+        "working": "$$\\frac{dQ}{dt} = \\underbrace{3 \\times 2}_{\\text{in}} - \\underbrace{\\frac{Q}{50} \\times 2}_{\\text{out}} = 6 - \\frac{Q}{25}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Separate variables.",
+        "working": "$$\\frac{dQ}{6 - Q/25} = dt \\implies \\frac{25\\,dQ}{150 - Q} = dt$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Integrate both sides.",
+        "working": "$$-25\\ln|150 - Q| = t + C_1 \\implies 150 - Q = Ae^{-t/25}$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Apply the initial condition $Q(0) = 0$ to find $A$, then write $Q$ in terms of $t$.",
+        "working": "$Q(0) = 0 \\implies 150 = A$, so $$Q(t) = 150\\left(1 - e^{-t/25}\\right)$$"
+      }
+    ],
+    "answer": "$Q(t) = 150\\left(1 - e^{-t/25}\\right)$ grams. As $t \\to \\infty$, $Q \\to 150$ g — the brine concentration (3 g/L × 50 L) is the long-run equilibrium, as expected."
+  }
+]

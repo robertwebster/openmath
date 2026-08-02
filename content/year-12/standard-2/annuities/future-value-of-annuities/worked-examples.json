@@ -1,0 +1,79 @@
+[
+  {
+    "id": "fva-worked-1",
+    "title": "Future value using a recurrence relation",
+    "difficulty": 1,
+    "problem": "Kate deposits \\$800 at the end of each year into a savings account earning 4% per annum. Find the account balance after 3 years using the recurrence $A_{n+1} = A_n \\times 1.04 + 800$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Start with $A_0 = 0$ and apply the recurrence for year 1.",
+        "working": "$$A_1 = 0 \\times 1.04 + 800 = \\$800$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the recurrence for year 2.",
+        "working": "$$A_2 = 800 \\times 1.04 + 800 = 832 + 800 = \\$1632$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Apply the recurrence for year 3.",
+        "working": "$$A_3 = 1632 \\times 1.04 + 800 = 1697.28 + 800 = \\$2497.28$$"
+      }
+    ],
+    "answer": "The balance after 3 years is \\$2497.28."
+  },
+  {
+    "id": "fva-worked-2",
+    "title": "Future value using the annuity formula",
+    "difficulty": 2,
+    "problem": "A worker contributes \\$500 at the end of each month to their superannuation fund for 3 years (36 months). The fund earns 6% per annum, compounded monthly (0.5% per month). Find the accumulated balance at the end of 3 years.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the values and write the formula.",
+        "working": "$M = 500$, $r = 0.005$ (monthly rate), $n = 36$ months\n\n$$FV = M \\times \\frac{(1+r)^n - 1}{r}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate $(1.005)^{36}$.",
+        "working": "$$(1.005)^{12} = 1.06167781$$\n$$(1.005)^{36} = (1.06167781)^3 = 1.19668052$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute into the formula.",
+        "working": "$$FV = 500 \\times \\frac{1.19668052 - 1}{0.005} = 500 \\times \\frac{0.19668052}{0.005}$$\n$$= 500 \\times 39.3361 = \\$19\\,668.05$$"
+      }
+    ],
+    "answer": "The superannuation balance after 3 years is \\$19\\,668.05."
+  },
+  {
+    "id": "fva-worked-3",
+    "title": "Finding the required monthly contribution",
+    "difficulty": 3,
+    "problem": "How much must be deposited at the end of each month into an account earning 4.8% per annum (0.4% per month) to accumulate \\$50\\,000 in 10 years (120 months)? Given $(1.004)^{120} = 1.6142$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the future value formula and identify the target.",
+        "working": "$FV = 50\\,000$, $r = 0.004$, $n = 120$, $(1.004)^{120} = 1.6142$\n\n$$FV = M \\times \\frac{(1+r)^n - 1}{r}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate the future value interest factor.",
+        "working": "$$\\text{factor} = \\frac{(1.004)^{120} - 1}{0.004} = \\frac{1.6142 - 1}{0.004} = \\frac{0.6142}{0.004} = 153.55$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Rearrange to find $M$.",
+        "working": "$$M = \\frac{FV}{\\text{factor}} = \\frac{50\\,000}{153.55} = \\$325.63$$"
+      },
+      {
+        "step": 4,
+        "instruction": "State the answer and total contributions.",
+        "working": "Monthly deposit: \\$325.63\n\nTotal contributed over 10 years: $325.63 \\times 120 = \\$39\\,075.60$\n\nTotal interest earned: $50\\,000 - 39\\,075.60 = \\$10\\,924.40$"
+      }
+    ],
+    "answer": "A monthly deposit of \\$325.63 is required to accumulate \\$50\\,000 in 10 years."
+  }
+]

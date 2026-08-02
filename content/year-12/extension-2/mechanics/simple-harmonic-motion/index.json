@@ -1,0 +1,11 @@
+{
+  "id": "simple-harmonic-motion",
+  "title": "Simple harmonic motion",
+  "topic": "mechanics",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Mechanics",
+  "syllabusOutcome": "MEX-12-04",
+  "description": "Recognise and solve the SHM equation $\\ddot{x} = -n^2 x$; derive the velocity formula $v^2 = n^2(A^2 - x^2)$ using $a = v\\frac{dv}{dx}$; write displacement in the form $x = A\\sin(nt + \\alpha)$ or $x = A\\cos(nt + \\alpha)$; find amplitude, period, maximum speed and maximum acceleration; solve SHM problems in context."
+}

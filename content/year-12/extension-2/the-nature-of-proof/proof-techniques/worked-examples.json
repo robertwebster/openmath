@@ -1,0 +1,79 @@
+[
+  {
+    "id": "proof-techniques-worked-1",
+    "title": "Proof by contradiction: $\\sqrt{2}$ is irrational",
+    "difficulty": 1,
+    "problem": "Prove that $\\sqrt{2}$ is irrational.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Assume the opposite of what is to be proved.",
+        "working": "Suppose $\\sqrt{2}$ is rational. Then $\\sqrt{2} = \\dfrac{p}{q}$ where $p, q \\in \\mathbb{Z}$, $q \\neq 0$, and $\\gcd(p, q) = 1$ (the fraction is in lowest terms)."
+      },
+      {
+        "step": 2,
+        "instruction": "Square both sides and deduce that $p$ is even.",
+        "working": "$2 = \\dfrac{p^2}{q^2} \\implies p^2 = 2q^2$. So $2 \\mid p^2$, and since squaring preserves parity, $2 \\mid p$. Write $p = 2m$."
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute back and deduce that $q$ is also even.",
+        "working": "$(2m)^2 = 2q^2 \\implies 4m^2 = 2q^2 \\implies q^2 = 2m^2$. So $2 \\mid q^2$, hence $2 \\mid q$."
+      },
+      {
+        "step": 4,
+        "instruction": "Identify the contradiction.",
+        "working": "Both $p$ and $q$ are even, so $\\gcd(p, q) \\geq 2$. This contradicts $\\gcd(p, q) = 1$."
+      }
+    ],
+    "answer": "$\\sqrt{2}$ is irrational. $\\square$"
+  },
+  {
+    "id": "proof-techniques-worked-2",
+    "title": "Irrationality of a logarithm",
+    "difficulty": 2,
+    "problem": "Prove that $\\log_2 5$ is irrational.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Assume the opposite.",
+        "working": "Suppose $\\log_2 5 = \\dfrac{p}{q}$ for positive integers $p$ and $q$."
+      },
+      {
+        "step": 2,
+        "instruction": "Rewrite in exponential form.",
+        "working": "$2^{p/q} = 5 \\implies 2^p = 5^q$."
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the parity of both sides to find the contradiction.",
+        "working": "The left side is even (a power of 2); the right side is odd (a power of 5). An even number cannot equal an odd number — contradiction."
+      }
+    ],
+    "answer": "$\\log_2 5$ is irrational. $\\square$"
+  },
+  {
+    "id": "proof-techniques-worked-3",
+    "title": "Sum of a rational and an irrational number",
+    "difficulty": 3,
+    "problem": "Prove that $5 + \\sqrt{3}$ is irrational.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Assume the opposite, using the general result that rational + irrational = irrational.",
+        "working": "Suppose, for contradiction, that $5 + \\sqrt{3}$ is rational; call it $r$."
+      },
+      {
+        "step": 2,
+        "instruction": "Rearrange to isolate the irrational quantity.",
+        "working": "Then $\\sqrt{3} = r - 5$."
+      },
+      {
+        "step": 3,
+        "instruction": "Identify the contradiction.",
+        "working": "The right-hand side is the difference of two rationals ($r$ and $5$), so it is rational. But $\\sqrt{3}$ is irrational — contradiction."
+      }
+    ],
+    "answer": "$5 + \\sqrt{3}$ is irrational. $\\square$"
+  }
+]

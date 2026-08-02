@@ -1,0 +1,11 @@
+{
+  "id": "inverse-trig-functions",
+  "title": "Inverse trig functions",
+  "topic": "inverse-trigonometric-functions",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Trigonometric functions",
+  "syllabusOutcome": "ME-12-02",
+  "description": "Define $\\sin^{-1}x$, $\\cos^{-1}x$ and $\\tan^{-1}x$ with restricted domains and ranges; sketch the graphs of the inverse trig functions; evaluate exact values using knowledge of the unit circle and special triangles."
+}

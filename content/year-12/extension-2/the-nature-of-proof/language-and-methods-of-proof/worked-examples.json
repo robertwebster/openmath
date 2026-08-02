@@ -1,0 +1,89 @@
+[
+  {
+    "id": "proof-language-worked-1",
+    "title": "Identifying the contrapositive and converse",
+    "difficulty": 1,
+    "problem": "Given the statement \"If it is raining ($P$), then the ground is wet ($Q$),\" write the converse, contrapositive, and inverse of the statement, and determine which of the four statements are true.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "State the original implication in the form $P \\Rightarrow Q$.",
+        "working": "Original: \"If it is raining, then the ground is wet.\""
+      },
+      {
+        "step": 2,
+        "instruction": "State the converse $Q \\Rightarrow P$.",
+        "working": "Converse: \"If the ground is wet, then it is raining.\""
+      },
+      {
+        "step": 3,
+        "instruction": "State the contrapositive $\\lnot Q \\Rightarrow \\lnot P$.",
+        "working": "Contrapositive: \"If the ground is not wet, then it is not raining.\""
+      },
+      {
+        "step": 4,
+        "instruction": "State the inverse $\\lnot P \\Rightarrow \\lnot Q$.",
+        "working": "Inverse: \"If it is not raining, then the ground is not wet.\""
+      },
+      {
+        "step": 5,
+        "instruction": "Determine which statements are true.",
+        "working": "The original and contrapositive are both true, and are logically equivalent. The converse and inverse are both false, since the ground could be wet for another reason (e.g. someone watered the garden)."
+      }
+    ],
+    "answer": "The original and contrapositive are true and logically equivalent; the converse and inverse are false."
+  },
+  {
+    "id": "proof-language-worked-2",
+    "title": "Proof by contrapositive",
+    "difficulty": 2,
+    "problem": "Prove that if $n^2$ is odd, then $n$ is odd.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recognise that a direct proof is awkward, and instead prove the contrapositive.",
+        "working": "Contrapositive: \"If $n$ is even, then $n^2$ is even.\""
+      },
+      {
+        "step": 2,
+        "instruction": "Assume $n$ is even and write it in that form.",
+        "working": "Assume $n$ is even. Then $n = 2k$ for some integer $k$."
+      },
+      {
+        "step": 3,
+        "instruction": "Compute $n^2$ and show it is even.",
+        "working": "$n^2 = (2k)^2 = 4k^2 = 2(2k^2)$. Since $2k^2$ is an integer, $n^2$ is even."
+      },
+      {
+        "step": 4,
+        "instruction": "Conclude using the equivalence of a statement and its contrapositive.",
+        "working": "We have proved the contrapositive. Therefore, by logical equivalence, if $n^2$ is odd then $n$ is odd. $\\square$"
+      }
+    ],
+    "answer": "If $n^2$ is odd, then $n$ is odd, proved via the equivalent contrapositive."
+  },
+  {
+    "id": "proof-language-worked-3",
+    "title": "Disproving a universal statement with a counterexample",
+    "difficulty": 3,
+    "problem": "Disprove the statement: \"For all positive integers $n$, the number $n^2 - n + 41$ is prime.\"",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Recall how to disprove a universally quantified statement.",
+        "working": "The statement is $\\forall n \\in \\mathbb{Z}^+:\\; n^2 - n + 41$ is prime. Its negation is $\\exists n,\\; n^2-n+41$ is not prime, so a single counterexample is sufficient to disprove it."
+      },
+      {
+        "step": 2,
+        "instruction": "Test a value of $n$ likely to break the pattern.",
+        "working": "Try $n = 41$: $41^2 - 41 + 41 = 41^2 = 1681$."
+      },
+      {
+        "step": 3,
+        "instruction": "Show the resulting value is not prime.",
+        "working": "$1681 = 41 \\times 41$, which is not prime. So $n = 41$ is a counterexample. $\\square$"
+      }
+    ],
+    "answer": "$n = 41$ disproves the statement, since $41^2-41+41 = 1681 = 41\\times 41$ is not prime."
+  }
+]

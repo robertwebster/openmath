@@ -1,0 +1,11 @@
+{
+  "id": "continuous-random-variables",
+  "title": "Continuous random variables",
+  "topic": "random-variables",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Statistics and Probability",
+  "syllabusOutcome": "MAV-12-07",
+  "description": "Define a probability density function (pdf); calculate probabilities as definite integrals; find the mean, median and mode of a continuous distribution; work with uniform and simple polynomial pdfs."
+}

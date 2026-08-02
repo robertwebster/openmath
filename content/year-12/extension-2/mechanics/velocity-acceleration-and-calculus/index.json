@@ -1,0 +1,11 @@
+{
+  "id": "velocity-acceleration-and-calculus",
+  "title": "Velocity, acceleration and calculus",
+  "topic": "mechanics",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Mechanics",
+  "syllabusOutcome": "MEX-12-04",
+  "description": "Express acceleration in all three equivalent forms: $\\frac{dv}{dt}$, $v\\frac{dv}{dx}$, and $\\frac{d}{dx}\\!\\left(\\frac{1}{2}v^2\\right)$; solve motion problems by integrating equations of motion with appropriate initial conditions; choose the most efficient form for a given problem."
+}

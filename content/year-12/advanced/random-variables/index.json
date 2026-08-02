@@ -1,0 +1,14 @@
+{
+  "id": "random-variables",
+  "title": "Random variables",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Statistics and Probability",
+  "syllabusOutcome": "MAV-12-07",
+  "description": "Introduce continuous random variables and probability density functions; calculate probabilities as areas under a pdf; find mean, median and mode of continuous distributions; apply the normal distribution including z-scores and the empirical rule.",
+  "subtopics": [
+    "continuous-random-variables",
+    "the-normal-distribution"
+  ]
+}

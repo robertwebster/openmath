@@ -1,0 +1,9 @@
+{
+  "id": "differentiating-trigonometric-functions",
+  "title": "Differentiating trigonometric functions",
+  "topic": "differential-calculus",
+  "year": 12,
+  "strand": "Calculus",
+  "syllabusOutcome": "MAV-12-04",
+  "description": "Differentiate $\\sin x$, $\\cos x$ and $\\tan x$; apply the chain rule to differentiate $\\sin f(x)$, $\\cos f(x)$ and $\\tan f(x)$."
+}

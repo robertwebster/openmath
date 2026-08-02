@@ -1,0 +1,11 @@
+{
+  "id": "vector-concepts",
+  "title": "Vector concepts",
+  "topic": "introduction-to-vectors",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Vectors",
+  "syllabusOutcome": "ME-12-03",
+  "description": "Represent vectors in component form using $\\mathbf{i}$ and $\\mathbf{j}$; find magnitude and direction; perform vector addition, subtraction and scalar multiplication; find unit vectors."
+}

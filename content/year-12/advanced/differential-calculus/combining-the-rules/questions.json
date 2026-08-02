@@ -1,0 +1,221 @@
+[
+  {
+    "id": "y12-adv-diff-combine-q01",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "State the product rule. If $y = u(x)\\,v(x)$, then $\\dfrac{dy}{dx} = $",
+    "options": [
+      "$u'v'$",
+      "$u'v + uv'$",
+      "$u'v - uv'$",
+      "$\\dfrac{u'v - uv'}{v^2}$"
+    ],
+    "answer": "$u'v + uv'$",
+    "hint": "The product rule: differentiate the first and multiply by the second, plus the first times the derivative of the second.",
+    "explanation": "The product rule: if $y = u(x)\\,v(x)$, then\n$$\\frac{dy}{dx} = u'v + uv'$$\nA useful memory aid: \"diff-first × second + first × diff-second\"."
+  },
+  {
+    "id": "y12-adv-diff-combine-q02",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "State the quotient rule. If $y = \\dfrac{u(x)}{v(x)}$, then $\\dfrac{dy}{dx} = $",
+    "options": [
+      "$\\dfrac{u'v + uv'}{v^2}$",
+      "$\\dfrac{u'v - uv'}{v^2}$",
+      "$\\dfrac{u'}{v'}$",
+      "$\\dfrac{uv' - u'v}{v^2}$"
+    ],
+    "answer": "$\\dfrac{u'v - uv'}{v^2}$",
+    "hint": "The quotient rule: \"diff-top times bottom minus top times diff-bottom, all over bottom squared\".",
+    "explanation": "The quotient rule: if $y = \\dfrac{u}{v}$, then\n$$\\frac{dy}{dx} = \\frac{u'v - uv'}{v^2}$$\nNote the order: numerator is $u'v - uv'$ (not $uv' - u'v$)."
+  },
+  {
+    "id": "y12-adv-diff-combine-q03",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Use the product rule to find $\\dfrac{d}{dx}\\left(x\\,e^x\\right)$.",
+    "options": [
+      "$e^x$",
+      "$xe^x$",
+      "$e^x + xe^x$",
+      "$xe^x - e^x$"
+    ],
+    "answer": "$e^x + xe^x$",
+    "hint": "Let $u = x$ and $v = e^x$. Then $u' = 1$ and $v' = e^x$. Apply $u'v + uv'$.",
+    "explanation": "Let $u = x$, $v = e^x$.\n\n$u' = 1$, $v' = e^x$.\n\n$$\\frac{d}{dx}(xe^x) = u'v + uv' = 1 \\cdot e^x + x \\cdot e^x = e^x + xe^x = e^x(1 + x)$$"
+  },
+  {
+    "id": "y12-adv-diff-combine-q04",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Use the product rule to find $\\dfrac{d}{dx}\\left(x^2\\sin x\\right)$.",
+    "options": [
+      "$2x\\cos x$",
+      "$x^2\\cos x + 2x\\sin x$",
+      "$2x\\sin x + x^2\\cos x$",
+      "$x^2\\cos x - 2x\\sin x$"
+    ],
+    "answer": "$2x\\sin x + x^2\\cos x$",
+    "hint": "Let $u = x^2$ and $v = \\sin x$. Apply the product rule $u'v + uv'$.",
+    "explanation": "Let $u = x^2$, $v = \\sin x$.\n\n$u' = 2x$, $v' = \\cos x$.\n\n$$\\frac{d}{dx}(x^2\\sin x) = 2x\\sin x + x^2\\cos x$$"
+  },
+  {
+    "id": "y12-adv-diff-combine-q05",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Use the quotient rule to find $\\dfrac{d}{dx}\\left(\\dfrac{e^x}{x}\\right)$ for $x \\neq 0$.",
+    "options": [
+      "$\\dfrac{e^x(x - 1)}{x^2}$",
+      "$\\dfrac{e^x(x + 1)}{x^2}$",
+      "$\\dfrac{e^x}{x^2}$",
+      "$\\dfrac{xe^x - e^x}{x}$"
+    ],
+    "answer": "$\\dfrac{e^x(x - 1)}{x^2}$",
+    "hint": "Let $u = e^x$ and $v = x$. Apply the quotient rule $\\dfrac{u'v - uv'}{v^2}$.",
+    "explanation": "Let $u = e^x$, $v = x$.\n\n$u' = e^x$, $v' = 1$.\n\n$$\\frac{d}{dx}\\left(\\frac{e^x}{x}\\right) = \\frac{e^x \\cdot x - e^x \\cdot 1}{x^2} = \\frac{xe^x - e^x}{x^2} = \\frac{e^x(x-1)}{x^2}$$"
+  },
+  {
+    "id": "y12-adv-diff-combine-q06",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Find $\\dfrac{d}{dx}\\left(\\dfrac{\\sin x}{x^2}\\right)$.",
+    "options": [
+      "$\\dfrac{x^2\\cos x - 2x\\sin x}{x^4}$",
+      "$\\dfrac{x\\cos x - 2\\sin x}{x^3}$",
+      "$\\dfrac{x^2\\cos x + 2x\\sin x}{x^4}$",
+      "$\\dfrac{\\cos x}{2x}$"
+    ],
+    "answer": "$\\dfrac{x\\cos x - 2\\sin x}{x^3}$",
+    "hint": "Use the quotient rule with $u = \\sin x$ and $v = x^2$. Simplify the result.",
+    "explanation": "Let $u = \\sin x$, $v = x^2$.\n\n$u' = \\cos x$, $v' = 2x$.\n\n$$\\frac{d}{dx}\\left(\\frac{\\sin x}{x^2}\\right) = \\frac{x^2\\cos x - 2x\\sin x}{x^4} = \\frac{x(x\\cos x - 2\\sin x)}{x^4} = \\frac{x\\cos x - 2\\sin x}{x^3}$$"
+  },
+  {
+    "id": "y12-adv-diff-combine-q07",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Find the gradient of $y = x\\ln x$ at $x = e$. Give an exact numeric value.",
+    "answer": "2",
+    "tolerance": 0,
+    "hint": "Use the product rule with $u = x$ and $v = \\ln x$, then substitute $x = e$.",
+    "explanation": "Product rule with $u = x$, $v = \\ln x$:\n\n$u' = 1$, $v' = \\dfrac{1}{x}$.\n\n$$\\frac{dy}{dx} = 1 \\cdot \\ln x + x \\cdot \\frac{1}{x} = \\ln x + 1$$\n\nAt $x = e$: $\\dfrac{dy}{dx} = \\ln e + 1 = 1 + 1 = 2$."
+  },
+  {
+    "id": "y12-adv-diff-combine-q08",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "stem": "Find $\\dfrac{d}{dx}\\left(e^x\\cos x\\right)$.",
+    "options": [
+      "$e^x\\cos x - e^x\\sin x$",
+      "$e^x\\sin x - e^x\\cos x$",
+      "$e^x(\\cos x + \\sin x)$",
+      "$e^x(\\cos x - \\sin x)$"
+    ],
+    "answer": "$e^x(\\cos x - \\sin x)$",
+    "hint": "Use the product rule: $u = e^x$, $v = \\cos x$. Then $u' = e^x$, $v' = -\\sin x$.",
+    "explanation": "Product rule: $u = e^x$, $v = \\cos x$.\n\n$u' = e^x$, $v' = -\\sin x$.\n\n$$\\frac{d}{dx}(e^x\\cos x) = e^x\\cos x + e^x(-\\sin x) = e^x\\cos x - e^x\\sin x = e^x(\\cos x - \\sin x)$$"
+  },
+  {
+    "id": "y12-adv-diff-combine-q09",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Differentiate $y = \\dfrac{\\ln x}{e^x}$.",
+    "options": [
+      "$\\dfrac{1 - x\\ln x}{xe^x}$",
+      "$\\dfrac{\\ln x - 1}{xe^x}$",
+      "$\\dfrac{1 - \\ln x}{xe^x}$",
+      "$\\dfrac{1 + \\ln x}{xe^x}$"
+    ],
+    "answer": "$\\dfrac{1 - x\\ln x}{xe^x}$",
+    "hint": "Apply the quotient rule with $u = \\ln x$ and $v = e^x$.",
+    "explanation": "Quotient rule: $u = \\ln x$, $v = e^x$.\n\n$u' = \\dfrac{1}{x}$, $v' = e^x$.\n\n$$\\frac{dy}{dx} = \\frac{\\dfrac{1}{x} \\cdot e^x - \\ln x \\cdot e^x}{(e^x)^2} = \\frac{e^x\\!\\left(\\dfrac{1}{x} - \\ln x\\right)}{e^{2x}} = \\frac{\\dfrac{1}{x} - \\ln x}{e^x} = \\frac{1 - x\\ln x}{xe^x}$$"
+  },
+  {
+    "id": "y12-adv-diff-combine-q10",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Find the $x$-coordinate of the stationary point of $y = xe^{-x}$ for $x > 0$. Give an exact answer.",
+    "answer": "1",
+    "tolerance": 0,
+    "hint": "Use the product rule to find $\\dfrac{dy}{dx}$, set it to zero, and solve.",
+    "explanation": "Product rule: $u = x$, $v = e^{-x}$.\n\n$u' = 1$, $v' = -e^{-x}$.\n\n$$\\frac{dy}{dx} = e^{-x} + x(-e^{-x}) = e^{-x}(1 - x)$$\n\nSet $\\dfrac{dy}{dx} = 0$: Since $e^{-x} > 0$ always, we need $1 - x = 0$, so $x = 1$."
+  },
+  {
+    "id": "y12-adv-diff-combine-q11",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "Find $\\dfrac{d}{dx}\\left(\\sin(e^x)\\right)$.",
+    "options": [
+      "$\\cos(e^x)$",
+      "$e^x\\cos(e^x)$",
+      "$e^x\\sin(e^x)$",
+      "$-e^x\\cos(e^x)$"
+    ],
+    "answer": "$e^x\\cos(e^x)$",
+    "hint": "Use the chain rule: the outer function is $\\sin u$ and the inner function is $u = e^x$.",
+    "explanation": "Chain rule: let $u = e^x$, so $\\dfrac{du}{dx} = e^x$.\n\n$$\\frac{d}{dx}(\\sin(e^x)) = \\cos(e^x) \\times e^x = e^x\\cos(e^x)$$"
+  },
+  {
+    "id": "y12-adv-diff-combine-q12",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Find the second derivative $f''(x)$ of $f(x) = x^2e^x$ at $x = 0$.",
+    "answer": "2",
+    "tolerance": 0,
+    "hint": "Use the product rule to find $f'(x)$, then differentiate again to get $f''(x)$, and evaluate at $x = 0$.",
+    "explanation": "**First derivative** (product rule, $u = x^2$, $v = e^x$):\n$$f'(x) = 2xe^x + x^2e^x = e^x(2x + x^2)$$\n\n**Second derivative** (product rule on $f'(x) = e^x(2x + x^2)$):\n$$f''(x) = e^x(2x + x^2) + e^x(2 + 2x) = e^x(x^2 + 4x + 2)$$\n\nAt $x = 0$: $f''(0) = e^0(0 + 0 + 2) = 1 \\times 2 = 2$."
+  },
+  {
+    "id": "y12-adv-diff-combine-q13",
+    "subtopic": "combining-the-rules",
+    "topic": "differential-calculus",
+    "year": 12,
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "stem": "A function is defined as $y = \\dfrac{\\cos x}{1 + \\sin x}$. Which expression equals $\\dfrac{dy}{dx}$?",
+    "options": [
+      "$\\dfrac{-1}{1 + \\sin x}$",
+      "$\\dfrac{1}{(1 + \\sin x)^2}$",
+      "$\\dfrac{-\\sin x(1 + \\sin x) - \\cos^2 x}{(1 + \\sin x)^2}$",
+      "$\\dfrac{-1}{(1 + \\sin x)^2}$"
+    ],
+    "answer": "$\\dfrac{-1}{1 + \\sin x}$",
+    "hint": "Apply the quotient rule, then use the Pythagorean identity $\\sin^2 x + \\cos^2 x = 1$ to simplify.",
+    "explanation": "Quotient rule: $u = \\cos x$, $v = 1 + \\sin x$.\n\n$u' = -\\sin x$, $v' = \\cos x$.\n\n$$\\frac{dy}{dx} = \\frac{-\\sin x(1 + \\sin x) - \\cos x \\cdot \\cos x}{(1 + \\sin x)^2}$$\n\nNumerator: $-\\sin x - \\sin^2 x - \\cos^2 x = -\\sin x - (\\sin^2 x + \\cos^2 x) = -\\sin x - 1 = -(1 + \\sin x)$.\n\n$$\\frac{dy}{dx} = \\frac{-(1 + \\sin x)}{(1 + \\sin x)^2} = \\frac{-1}{1 + \\sin x}$$"
+  }
+]

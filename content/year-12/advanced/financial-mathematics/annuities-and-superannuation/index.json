@@ -1,0 +1,11 @@
+{
+  "id": "annuities-and-superannuation",
+  "title": "Annuities and superannuation",
+  "topic": "financial-mathematics",
+  "year": 12,
+  "stage": "6",
+  "course": "advanced",
+  "strand": "Algebra / Functions",
+  "syllabusOutcome": "MAV-12-08",
+  "description": "Calculate future and present values of annuities using geometric series; model superannuation accumulation; solve annuity problems using recurrence relations."
+}

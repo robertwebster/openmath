@@ -1,0 +1,9 @@
+{
+  "id": "anti-differentiation",
+  "title": "Anti-differentiation",
+  "topic": "integral-calculus",
+  "year": 12,
+  "strand": "Calculus",
+  "syllabusOutcome": "MAV-12-05",
+  "description": "Recognise the indefinite integral as the reverse of differentiation; apply the standard results for $x^n$, $e^{ax+b}$, $\\frac{1}{x}$, $\\sin x$, $\\cos x$ and $\\sec^2 x$; use the reverse chain rule."
+}

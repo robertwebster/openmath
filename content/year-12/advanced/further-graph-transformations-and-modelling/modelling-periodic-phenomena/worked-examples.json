@@ -1,0 +1,79 @@
+[
+  {
+    "id": "periodic-modelling-worked-1",
+    "title": "Reading amplitude, period and midline from a model",
+    "difficulty": 1,
+    "problem": "A tide is modelled by $H(t) = 2.8\\sin\\!\\left(\\dfrac{\\pi t}{6}\\right) + 4.2$, where $H$ is height in metres and $t$ is hours after midnight. State the amplitude, period and midline. Find the maximum and minimum heights.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the parameters of the model $H = a\\sin(bt) + d$.",
+        "working": "$a = 2.8$, $b = \\dfrac{\\pi}{6}$, $d = 4.2$."
+      },
+      {
+        "step": 2,
+        "instruction": "Extract the amplitude, period and midline.",
+        "working": "Amplitude $= |a| = 2.8$ m. Period $= \\dfrac{2\\pi}{b} = \\dfrac{2\\pi}{\\pi/6} = 12$ hours. Midline: $H = d = 4.2$ m."
+      },
+      {
+        "step": 3,
+        "instruction": "Find the maximum and minimum heights.",
+        "working": "$$H_{\\max} = d + a = 4.2 + 2.8 = 7.0 \\text{ m}$$ $$H_{\\min} = d - a = 4.2 - 2.8 = 1.4 \\text{ m}$$"
+      }
+    ],
+    "answer": "Amplitude $2.8$ m, period $12$ hours, midline $H = 4.2$ m, maximum height $7.0$ m, minimum height $1.4$ m."
+  },
+  {
+    "id": "periodic-modelling-worked-2",
+    "title": "Fitting a model to data",
+    "difficulty": 2,
+    "problem": "The daily maximum temperature (°C) in a coastal town is recorded each month. The highest average is $32$°C in January (month $1$) and the lowest is $10$°C in July (month $7$). Fit a cosine model of the form $T(m) = a\\cos(b(m - c)) + d$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the amplitude $a$ and midline $d$.",
+        "working": "$$a = \\frac{32 - 10}{2} = 11, \\qquad d = \\frac{32 + 10}{2} = 21$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find $b$ from the period, noting the cycle repeats every 12 months.",
+        "working": "$$b = \\frac{2\\pi}{12} = \\frac{\\pi}{6}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the phase shift $c$, noting cosine achieves its maximum when $b(m-c) = 0$.",
+        "working": "Cosine achieves its maximum when $b(m - c) = 0$, so $m = c$. The maximum occurs in January ($m = 1$), so $c = 1$. The model is: $$T(m) = 11\\cos\\!\\left(\\frac{\\pi(m-1)}{6}\\right) + 21$$ Check at $m = 7$: $T(7) = 11\\cos(\\pi) + 21 = -11 + 21 = 10$°C, which matches."
+      }
+    ],
+    "answer": "$T(m) = 11\\cos\\!\\left(\\dfrac{\\pi(m-1)}{6}\\right) + 21$"
+  },
+  {
+    "id": "periodic-modelling-worked-3",
+    "title": "Using a model to solve for time",
+    "difficulty": 3,
+    "problem": "Using the tidal model $H(t) = 3\\sin\\!\\left(\\dfrac{\\pi t}{6}\\right) + 4$, find all times in the first $24$ hours when $H = 6.5$ m.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Set up the equation and isolate the sine term.",
+        "working": "$$3\\sin\\!\\left(\\frac{\\pi t}{6}\\right) + 4 = 6.5$$ $$\\sin\\!\\left(\\frac{\\pi t}{6}\\right) = \\frac{2.5}{3} = \\frac{5}{6}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the reference angle by substituting $u = \\dfrac{\\pi t}{6}$.",
+        "working": "Let $u = \\dfrac{\\pi t}{6}$, so $\\sin u = \\dfrac{5}{6}$. $$u_{\\text{ref}} = \\arcsin\\!\\left(\\frac{5}{6}\\right) \\approx 0.9853 \\text{ rad}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Write all solutions for $u$ in $[0, 4\\pi]$, since $t \\in [0, 24]$ gives two periods.",
+        "working": "Sine is positive in the 1st and 2nd quadrants, and the domain $t \\in [0, 24]$ means $u \\in [0, 4\\pi]$, so there are two periods to consider: $$u = 0.9853,\\quad \\pi - 0.9853 = 2.1563,\\quad 0.9853 + 2\\pi = 7.2685,\\quad 2.1563 + 2\\pi = 8.4395$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Convert each solution back to $t = \\dfrac{6u}{\\pi}$.",
+        "working": "$$t \\approx \\frac{6 \\times 0.9853}{\\pi} \\approx 1.88 \\text{ h}, \\qquad t \\approx \\frac{6 \\times 2.1563}{\\pi} \\approx 4.12 \\text{ h}$$ $$t \\approx \\frac{6 \\times 7.2685}{\\pi} \\approx 13.88 \\text{ h}, \\qquad t \\approx \\frac{6 \\times 8.4395}{\\pi} \\approx 16.12 \\text{ h}$$"
+      }
+    ],
+    "answer": "The tide reaches $6.5$ m at approximately $t \\approx 1.88$, $4.12$, $13.88$ and $16.12$ hours after midnight."
+  }
+]

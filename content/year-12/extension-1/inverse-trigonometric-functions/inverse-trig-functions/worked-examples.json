@@ -1,0 +1,69 @@
+[
+  {
+    "id": "invtrig-worked-1",
+    "title": "Evaluating inverse trig functions at exact values",
+    "difficulty": 1,
+    "problem": "Find the exact value of each of the following in radians: (a) $\\sin^{-1}\\!\\left(\\dfrac{\\sqrt{3}}{2}\\right)$, (b) $\\cos^{-1}\\!\\left(-\\dfrac{\\sqrt{2}}{2}\\right)$, (c) $\\tan^{-1}\\!\\left(\\dfrac{1}{\\sqrt{3}}\\right)$. (Each inverse trig function has a restricted range: $\\sin^{-1}(x)$ maps to $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$, $\\cos^{-1}(x)$ maps to $[0, \\pi]$, and $\\tan^{-1}(x)$ maps to $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$.)",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Part (a): find $\\theta \\in \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$ with $\\sin\\theta = \\frac{\\sqrt{3}}{2}$.",
+        "working": "From the special triangle, $\\sin\\!\\left(\\dfrac{\\pi}{3}\\right) = \\dfrac{\\sqrt{3}}{2}$, and $\\dfrac{\\pi}{3} \\in \\left[-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right]$. $$\\sin^{-1}\\!\\left(\\frac{\\sqrt{3}}{2}\\right) = \\frac{\\pi}{3}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Part (b): find $\\theta \\in [0, \\pi]$ with $\\cos\\theta = -\\frac{\\sqrt{2}}{2}$.",
+        "working": "Since $\\cos\\!\\left(\\dfrac{\\pi}{4}\\right) = \\dfrac{\\sqrt{2}}{2}$ and cosine is negative in the second quadrant, $\\cos\\!\\left(\\pi - \\dfrac{\\pi}{4}\\right) = \\cos\\!\\left(\\dfrac{3\\pi}{4}\\right) = -\\dfrac{\\sqrt{2}}{2}$, and $\\dfrac{3\\pi}{4} \\in [0, \\pi]$, so $\\cos^{-1}\\!\\left(-\\dfrac{\\sqrt{2}}{2}\\right) = \\dfrac{3\\pi}{4}$."
+      },
+      {
+        "step": 3,
+        "instruction": "Part (c): find $\\theta \\in \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ with $\\tan\\theta = \\frac{1}{\\sqrt{3}}$.",
+        "working": "From the special triangle, $\\tan\\!\\left(\\dfrac{\\pi}{6}\\right) = \\dfrac{1}{\\sqrt{3}}$, and $\\dfrac{\\pi}{6} \\in \\left(-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right)$. $$\\tan^{-1}\\!\\left(\\frac{1}{\\sqrt{3}}\\right) = \\frac{\\pi}{6}$$"
+      }
+    ],
+    "answer": "(a) $\\dfrac{\\pi}{3}$. (b) $\\dfrac{3\\pi}{4}$. (c) $\\dfrac{\\pi}{6}$."
+  },
+  {
+    "id": "invtrig-worked-2",
+    "title": "Domain restrictions and the composition $\\sin^{-1}(\\sin(\\theta))$",
+    "difficulty": 2,
+    "problem": "Evaluate $\\sin^{-1}\\!\\left(\\sin\\!\\left(\\dfrac{7\\pi}{6}\\right)\\right)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Evaluate $\\sin\\!\\left(\\frac{7\\pi}{6}\\right)$, noting $\\frac{7\\pi}{6}$ lies in the third quadrant ($\\pi < \\frac{7\\pi}{6} < \\frac{3\\pi}{2}$).",
+        "working": "$$\\sin\\!\\left(\\frac{7\\pi}{6}\\right) = -\\sin\\!\\left(\\frac{\\pi}{6}\\right) = -\\frac{1}{2}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply $\\sin^{-1}$ to the result, recalling that $\\sin^{-1}$ always returns a value in $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$.",
+        "working": "$$\\sin^{-1}\\!\\left(-\\frac{1}{2}\\right) = -\\frac{\\pi}{6}$$ since $-\\dfrac{\\pi}{6} \\in \\left[-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right]$ and $\\sin\\!\\left(-\\dfrac{\\pi}{6}\\right) = -\\dfrac{1}{2}$. The identity $\\sin^{-1}(\\sin(\\theta)) = \\theta$ does not apply here because $\\dfrac{7\\pi}{6}$ is outside $\\left[-\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}\\right]$."
+      }
+    ],
+    "answer": "$\\sin^{-1}\\!\\left(\\sin\\!\\left(\\dfrac{7\\pi}{6}\\right)\\right) = -\\dfrac{\\pi}{6}$"
+  },
+  {
+    "id": "invtrig-worked-3",
+    "title": "Using inverse trig in a composition",
+    "difficulty": 3,
+    "problem": "Find the exact value of $\\tan\\!\\left(\\sin^{-1}\\!\\left(-\\dfrac{5}{13}\\right)\\right)$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Let $\\theta = \\sin^{-1}\\!\\left(-\\frac{5}{13}\\right)$, so $\\sin\\theta = -\\frac{5}{13}$ and $\\theta \\in \\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$. Since $\\sin\\theta < 0$, $\\theta \\in \\left[-\\frac{\\pi}{2}, 0\\right)$, so $\\cos\\theta > 0$.",
+        "working": "$\\theta$ is a fourth-quadrant-type angle with $\\sin\\theta = -\\dfrac{5}{13}$ and $\\cos\\theta > 0$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find $\\cos\\theta$ using the Pythagorean identity $\\cos^2\\theta = 1 - \\sin^2\\theta$.",
+        "working": "$$\\cos^2\\theta = 1 - \\sin^2\\theta = 1 - \\frac{25}{169} = \\frac{144}{169}$$ $$\\cos\\theta = \\frac{12}{13} \\quad (\\text{positive since } \\theta \\in \\left[-\\tfrac{\\pi}{2}, 0\\right))$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$.",
+        "working": "$$\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{-5/13}{12/13} = -\\frac{5}{12}$$"
+      }
+    ],
+    "answer": "$\\tan\\!\\left(\\sin^{-1}\\!\\left(-\\dfrac{5}{13}\\right)\\right) = -\\dfrac{5}{12}$"
+  }
+]

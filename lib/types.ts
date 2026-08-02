@@ -1,6 +1,8 @@
 export type Difficulty = 1 | 2 | 3;
 
-export type QuestionType = "numeric" | "coordinate" | "fraction" | "multiple-choice";
+// "proof" questions are self-assessed — they have no machine-checkable answer,
+// so they render a reveal-the-solution flow instead of being marked correct/incorrect.
+export type QuestionType = "numeric" | "coordinate" | "fraction" | "multiple-choice" | "proof";
 
 export interface Question {
   id: string;
@@ -10,7 +12,11 @@ export interface Question {
   difficulty: Difficulty;
   type: QuestionType;
   stem: string;
-  answer: string;
+  /**
+   * Numeric answers are stored as JSON numbers; every other type compares as a string.
+   * null for self-assessed "proof" questions, which have no checkable answer.
+   */
+  answer: string | number | null;
   tolerance?: number;
   options?: string[];
   hint: string;

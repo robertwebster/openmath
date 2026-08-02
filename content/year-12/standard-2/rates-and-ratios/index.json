@@ -1,0 +1,14 @@
+{
+  "id": "rates-and-ratios",
+  "title": "Rates and ratios",
+  "year": 12,
+  "stage": "6",
+  "course": "standard-2",
+  "strand": "Measurement",
+  "syllabusOutcome": "MS-M7",
+  "description": "Convert between units and compound units; solve problems involving rates (fuel consumption, heart rate, energy, speed); divide quantities in a given ratio; apply scale factors to lengths, areas and volumes of similar figures.",
+  "subtopics": [
+    "rates",
+    "ratios-and-scale"
+  ]
+}

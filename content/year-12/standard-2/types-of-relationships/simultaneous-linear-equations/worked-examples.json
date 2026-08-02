@@ -1,0 +1,89 @@
+[
+  {
+    "id": "sle-worked-1",
+    "title": "Solving algebraically (elimination)",
+    "difficulty": 1,
+    "problem": "Solve the simultaneous equations $3x + 2y = 13$ and $x - 2y = 3$. Find the values of $x$ and $y$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Look for a variable to eliminate. Both equations have $2y$ (with opposite signs), so adding them eliminates $y$.",
+        "working": "$$(3x + 2y) + (x - 2y) = 13 + 3$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Simplify and solve for $x$.",
+        "working": "$$4x = 16 \\implies x = 4$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $x = 4$ into the simpler equation $x - 2y = 3$ and solve for $y$.",
+        "working": "$$4 - 2y = 3 \\implies 2y = 1 \\implies y = 0.5$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Check the solution in both original equations.",
+        "working": "Check: $3(4) + 2(0.5) = 12 + 1 = 13$ ✓ and $4 - 2(0.5) = 3$ ✓"
+      }
+    ],
+    "answer": "The solution is $x = 4$, $y = 0.5$. The lines intersect at the point $(4,\\ 0.5)$."
+  },
+  {
+    "id": "sle-worked-2",
+    "title": "Break-even analysis",
+    "difficulty": 2,
+    "problem": "A food truck has weekly fixed costs of \\$300 and variable costs of \\$4 per meal. Each meal is sold for \\$9. How many meals must be sold each week to break even?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the revenue and cost equations in terms of $n$, the number of meals sold.",
+        "working": "$$\\text{Revenue: } R = 9n$$\n$$\\text{Total cost: } C = 4n + 300$$"
+      },
+      {
+        "step": 2,
+        "instruction": "The break-even point is where revenue equals cost. Set $R = C$.",
+        "working": "$$9n = 4n + 300$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $n$.",
+        "working": "$$5n = 300$$\n$$n = 60$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Interpret the result.",
+        "working": "The food truck breaks even at 60 meals per week. Selling more than 60 meals generates a profit; fewer than 60 results in a loss."
+      }
+    ],
+    "answer": "The food truck breaks even at 60 meals sold per week."
+  },
+  {
+    "id": "sle-worked-3",
+    "title": "Comparing two options",
+    "difficulty": 3,
+    "problem": "Two internet providers offer the following deals. Provider A: \\$25 per month plus \\$0.50 per GB of data. Provider B: \\$10 per month plus \\$1.00 per GB. After how many GB do the plans cost the same, and which plan is cheaper for heavy data users?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write a cost equation for each provider in terms of $g$ (gigabytes used per month).",
+        "working": "$$C_A = 0.50g + 25$$\n$$C_B = 1.00g + 10$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Set the two costs equal to find the break-even usage.",
+        "working": "$$0.50g + 25 = 1.00g + 10$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $g$.",
+        "working": "$$15 = 0.50g$$\n$$g = 30$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Interpret the result for usage above and below the break-even point.",
+        "working": "At 30 GB the plans cost the same (both cost \\$40). Below 30 GB, Provider B is cheaper. Above 30 GB, Provider A is cheaper — so Provider A is better for heavy users."
+      }
+    ],
+    "answer": "The plans cost the same at 30 GB (\\$40). Provider A is cheaper for heavy data users (above 30 GB)."
+  }
+]

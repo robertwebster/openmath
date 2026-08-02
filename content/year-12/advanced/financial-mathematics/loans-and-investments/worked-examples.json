@@ -1,0 +1,74 @@
+[
+  {
+    "id": "loans-investments-worked-1",
+    "title": "Building a recurrence table",
+    "difficulty": 1,
+    "problem": "A loan of $15,000 is charged at 1% per month. Monthly repayments are $600. Build a repayment table for the first 3 months and find the outstanding balance after 3 months.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the recurrence relation for the balance.",
+        "working": "$A_{n+1} = 1.01\\,A_n - 600$, with $A_0 = 15{,}000$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the recurrence month by month.",
+        "working": "Month 1: opening balance $15{,}000.00$, interest (1%) $150.00$, repayment $600.00$, closing balance $14{,}550.00$. Month 2: opening balance $14{,}550.00$, interest $145.50$, repayment $600.00$, closing balance $14{,}095.50$. Month 3: opening balance $14{,}095.50$, interest $140.96$, repayment $600.00$, closing balance $13{,}636.46$."
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the pattern.",
+        "working": "Each month a slightly larger proportion of the repayment reduces the principal, because the interest charge falls as the balance falls. This is the hallmark of a reducing-balance loan."
+      }
+    ],
+    "answer": "The outstanding balance after 3 months is $\\$13{,}636.46$."
+  },
+  {
+    "id": "loans-investments-worked-2",
+    "title": "Finding the repayment and total interest",
+    "difficulty": 2,
+    "problem": "A borrower takes out a \\$25,000 car loan at 6% per annum (monthly compounding) to be repaid over 4 years. Find (a) the monthly repayment, and (b) the total interest paid.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify parameters.",
+        "working": "Monthly rate: $r = \\frac{0.06}{12} = 0.005$, $n = 48$ months, $P = 25{,}000$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the repayment formula $M = P\\,\\dfrac{r(1+r)^n}{(1+r)^n - 1}$.",
+        "working": "$$M = 25000 \\times \\frac{0.005 \\times (1.005)^{48}}{(1.005)^{48} - 1}$$ $(1.005)^{48} = 1.27049$ $$M = 25000 \\times \\frac{0.005 \\times 1.27049}{0.27049} = 25000 \\times \\frac{0.006352}{0.27049} = 25000 \\times 0.023476 = \\$586.90$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the total interest paid.",
+        "working": "$$\\text{Total paid} = 586.90 \\times 48 = \\$28{,}171.20$$ $$\\text{Total interest} = 28{,}171.20 - 25{,}000 = \\$3171.20$$"
+      }
+    ],
+    "answer": "The monthly repayment is $\\$586.90$ and the total interest paid is $\\$3171.20$."
+  },
+  {
+    "id": "loans-investments-worked-3",
+    "title": "Deriving and using the balance formula",
+    "difficulty": 3,
+    "problem": "Derive the formula for the outstanding balance after $n$ repayments, then use it to find the balance after 2 years (24 months) on the loan from Example 2 ($P = \\$25{,}000$ at 6% p.a. monthly, $M = \\$586.90$).",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Derive the balance formula starting from $A_0 = P$ and $A_{k+1} = (1+r)A_k - M$.",
+        "working": "$$A_1 = (1+r)P - M$$ $$A_2 = (1+r)^2P - M(1+r) - M$$ $$\\vdots$$ $$A_n = (1+r)^n P - M\\bigl[1 + (1+r) + \\cdots + (1+r)^{n-1}\\bigr]$$ The bracket is a geometric series, giving: $$\\boxed{A_n = P(1+r)^n - M\\cdot\\frac{(1+r)^n - 1}{r}}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the formula to the loan from Example 2 ($P = 25{,}000$, $r = 0.005$, $M = 586.90$, $n = 24$).",
+        "working": "$(1.005)^{24} = 1.12716$ $$A_{24} = 25000 \\times 1.12716 - 586.90 \\times \\frac{0.12716}{0.005}$$ $$= 28{,}179 - 586.90 \\times 25.432$$ $$= 28{,}179 - 14{,}926 = \\$13{,}253$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the result.",
+        "working": "After 2 years, roughly half the principal (\\$25,000) remains — reflecting the back-loading of interest in the early repayments."
+      }
+    ],
+    "answer": "$A_n = P(1+r)^n - M\\cdot\\dfrac{(1+r)^n - 1}{r}$, and after 24 months the outstanding balance is approximately $\\$13{,}253$."
+  }
+]

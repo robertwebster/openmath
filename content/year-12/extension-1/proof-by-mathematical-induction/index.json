@@ -1,0 +1,15 @@
+{
+  "id": "proof-by-mathematical-induction",
+  "title": "Proof by mathematical induction",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Proof",
+  "syllabusOutcome": "ME-12-01",
+  "description": "Use the principle of mathematical induction to prove statements about sums, divisibility, and inequalities for all integers; communicate the base case, inductive hypothesis, and inductive step with rigour.",
+  "customRenderer": null,
+  "subtopics": [
+    "mathematical-induction",
+    "applications-and-harder-induction"
+  ]
+}

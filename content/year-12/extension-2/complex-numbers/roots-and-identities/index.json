@@ -1,0 +1,11 @@
+{
+  "id": "roots-and-identities",
+  "title": "Roots and identities",
+  "topic": "complex-numbers",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Complex numbers",
+  "syllabusOutcome": "MEX-12-02",
+  "description": "Find the $n$th roots of a complex number; identify roots of unity and their properties; use De Moivre's theorem to derive trigonometric identities for $\\cos n\\theta$ and $\\sin n\\theta$."
+}

@@ -1,0 +1,173 @@
+[
+  {
+    "id": "y12-ext1-fcs-sub-q01",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "To evaluate $\\displaystyle\\int 2x(x^2+3)^4\\,dx$ using the substitution $u = x^2 + 3$, what is $du$ in terms of $dx$?",
+    "options": [
+      "$du = 2x\\,dx$",
+      "$du = x\\,dx$",
+      "$du = 2\\,dx$",
+      "$du = (x^2+3)\\,dx$"
+    ],
+    "answer": "$du = 2x\\,dx$",
+    "hint": "Differentiate $u = x^2 + 3$ with respect to $x$.",
+    "explanation": "Differentiating $u = x^2 + 3$ gives $\\dfrac{du}{dx} = 2x$, so $du = 2x\\,dx$.\n\nThe integral becomes $\\displaystyle\\int u^4\\,du = \\dfrac{u^5}{5} + C = \\dfrac{(x^2+3)^5}{5} + C$."
+  },
+  {
+    "id": "y12-ext1-fcs-sub-q02",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Using the substitution $u = 3x + 1$, evaluate $\\displaystyle\\int (3x+1)^5\\,dx$. Which of the following is correct?",
+    "options": [
+      "$\\dfrac{(3x+1)^6}{18} + C$",
+      "$\\dfrac{(3x+1)^6}{6} + C$",
+      "$\\dfrac{(3x+1)^6}{3} + C$",
+      "$5(3x+1)^4 + C$"
+    ],
+    "answer": "$\\dfrac{(3x+1)^6}{18} + C$",
+    "hint": "With $u = 3x+1$, you get $du = 3\\,dx$, so $dx = \\dfrac{du}{3}$.",
+    "explanation": "Let $u = 3x+1$, so $du = 3\\,dx$ and $dx = \\dfrac{du}{3}$.\n\n$$\\int (3x+1)^5\\,dx = \\int u^5 \\cdot \\frac{du}{3} = \\frac{1}{3}\\cdot\\frac{u^6}{6} + C = \\frac{(3x+1)^6}{18} + C$$"
+  },
+  {
+    "id": "y12-ext1-fcs-sub-q03",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 1,
+    "type": "numeric",
+    "stem": "Evaluate $\\displaystyle\\int_0^1 2x(x^2+1)^3\\,dx$. Give your answer as a fraction in the form $p/q$ (enter the decimal equivalent to 2 decimal places).",
+    "answer": "3.75",
+    "tolerance": 0.005,
+    "hint": "Use $u = x^2 + 1$. Change the limits: when $x = 0$, $u = 1$; when $x = 1$, $u = 2$.",
+    "explanation": "Let $u = x^2 + 1$, so $du = 2x\\,dx$.\n\nNew limits: $x = 0 \\Rightarrow u = 1$; $x = 1 \\Rightarrow u = 2$.\n\n$$\\int_0^1 2x(x^2+1)^3\\,dx = \\int_1^2 u^3\\,du = \\left[\\frac{u^4}{4}\\right]_1^2 = \\frac{16}{4} - \\frac{1}{4} = \\frac{15}{4} = \\mathbf{3.75}$$"
+  },
+  {
+    "id": "y12-ext1-fcs-sub-q04",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "stem": "Using the substitution $u = x^3 - 2$, the integral $\\displaystyle\\int 3x^2 e^{x^3 - 2}\\,dx$ becomes:",
+    "options": [
+      "$\\displaystyle\\int e^u\\,du$",
+      "$\\displaystyle\\int 3x^2 e^u\\,du$",
+      "$\\displaystyle\\int e^u \\cdot 3x^2\\,du$",
+      "$\\displaystyle\\int \\frac{e^u}{3x^2}\\,du$"
+    ],
+    "answer": "$\\displaystyle\\int e^u\\,du$",
+    "hint": "Differentiate $u = x^3 - 2$ and identify which part of the integrand becomes $du$.",
+    "explanation": "With $u = x^3 - 2$, we get $du = 3x^2\\,dx$.\n\nSo $3x^2\\,dx = du$, and the integral becomes $\\displaystyle\\int e^u\\,du = e^u + C = e^{x^3-2} + C$."
+  },
+  {
+    "id": "y12-ext1-fcs-sub-q05",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Using the substitution $u = \\sin x$, find $\\displaystyle\\int \\cos x \\cdot \\sin^4 x\\,dx$ in the form $\\dfrac{\\sin^n x}{k} + C$. What is the value of $k$?",
+    "answer": "5",
+    "tolerance": 0,
+    "hint": "With $u = \\sin x$, $du = \\cos x\\,dx$, so the integral becomes $\\displaystyle\\int u^4\\,du$.",
+    "explanation": "Let $u = \\sin x$, so $du = \\cos x\\,dx$.\n\n$$\\int \\cos x \\cdot \\sin^4 x\\,dx = \\int u^4\\,du = \\frac{u^5}{5} + C = \\frac{\\sin^5 x}{5} + C$$\n\nSo $n = 5$ and $k = \\mathbf{5}$."
+  },
+  {
+    "id": "y12-ext1-fcs-sub-q06",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Evaluate $\\displaystyle\\int_1^e \\frac{\\ln x}{x}\\,dx$. Give your answer to 2 decimal places.",
+    "answer": "0.5",
+    "tolerance": 0.005,
+    "hint": "Use $u = \\ln x$, so $du = \\dfrac{1}{x}\\,dx$. Change the limits.",
+    "explanation": "Let $u = \\ln x$, so $du = \\dfrac{dx}{x}$.\n\nNew limits: $x = 1 \\Rightarrow u = 0$; $x = e \\Rightarrow u = 1$.\n\n$$\\int_1^e \\frac{\\ln x}{x}\\,dx = \\int_0^1 u\\,du = \\left[\\frac{u^2}{2}\\right]_0^1 = \\frac{1}{2} - 0 = \\mathbf{0.5}$$"
+  },
+  {
+    "id": "y12-ext1-fcs-sub-q07",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Use the substitution $u = 4 - x^2$ to find $\\displaystyle\\int_0^1 \\frac{x}{\\sqrt{4-x^2}}\\,dx$. Give your answer to 4 decimal places.",
+    "answer": "0.2679",
+    "tolerance": 0.0005,
+    "hint": "With $u = 4-x^2$, $du = -2x\\,dx$, so $x\\,dx = -\\dfrac{du}{2}$. Change the limits.",
+    "explanation": "Let $u = 4 - x^2$, so $du = -2x\\,dx$, i.e. $x\\,dx = -\\dfrac{du}{2}$.\n\nNew limits: $x = 0 \\Rightarrow u = 4$; $x = 1 \\Rightarrow u = 3$.\n\n$$\\int_0^1 \\frac{x}{\\sqrt{4-x^2}}\\,dx = \\int_4^3 \\frac{1}{\\sqrt{u}} \\cdot \\left(-\\frac{du}{2}\\right) = \\frac{1}{2}\\int_3^4 u^{-1/2}\\,du$$\n\n$$= \\frac{1}{2}\\left[2\\sqrt{u}\\right]_3^4 = \\left[\\sqrt{u}\\right]_3^4 = \\sqrt{4} - \\sqrt{3} = 2 - 1.7321 = \\mathbf{0.2679}$$"
+  },
+  {
+    "id": "y12-ext1-fcs-sub-q08",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Find $\\displaystyle\\int x\\sqrt{x+1}\\,dx$ using the substitution $u = x + 1$. The answer has the form $\\dfrac{2(x+1)^{3/2}(ax+b)}{15} + C$. What is the value of $a$?",
+    "answer": "3",
+    "tolerance": 0,
+    "hint": "With $u = x+1$, write $x = u - 1$ and $dx = du$. Expand $x\\sqrt{x+1} = (u-1)\\sqrt{u}$ and integrate term by term.",
+    "explanation": "Let $u = x+1$, so $x = u-1$ and $dx = du$.\n\n$$\\int x\\sqrt{x+1}\\,dx = \\int (u-1)u^{1/2}\\,du = \\int\\left(u^{3/2} - u^{1/2}\\right)du$$\n\n$$= \\frac{2u^{5/2}}{5} - \\frac{2u^{3/2}}{3} + C = \\frac{2u^{3/2}}{15}(3u - 5) + C$$\n\nSubstituting back $u = x+1$:\n\n$$= \\frac{2(x+1)^{3/2}(3(x+1)-5)}{15} + C = \\frac{2(x+1)^{3/2}(3x-2)}{15} + C$$\n\nSo $a = \\mathbf{3}$ and $b = -2$."
+  },
+  {
+    "id": "y12-ext1-fcs-sub-q09",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 2,
+    "type": "numeric",
+    "stem": "Evaluate $\\displaystyle\\int_0^{\\pi/4} \\sin(2x)\\,dx$. Give your answer to 4 decimal places.",
+    "answer": "0.5",
+    "tolerance": 0.005,
+    "hint": "Use $u = 2x$, so $du = 2\\,dx$. Change the limits.",
+    "explanation": "Let $u = 2x$, so $du = 2\\,dx$, i.e. $dx = \\dfrac{du}{2}$.\n\nNew limits: $x = 0 \\Rightarrow u = 0$; $x = \\dfrac{\\pi}{4} \\Rightarrow u = \\dfrac{\\pi}{2}$.\n\n$$\\int_0^{\\pi/4}\\sin(2x)\\,dx = \\frac{1}{2}\\int_0^{\\pi/2}\\sin u\\,du = \\frac{1}{2}\\left[-\\cos u\\right]_0^{\\pi/2}$$\n\n$$= \\frac{1}{2}(-\\cos(\\pi/2) + \\cos 0) = \\frac{1}{2}(0 + 1) = \\mathbf{0.5}$$"
+  },
+  {
+    "id": "y12-ext1-fcs-sub-q10",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Use the substitution $u = e^x + 1$ to evaluate $\\displaystyle\\int_0^{\\ln 3} \\frac{e^x}{(e^x+1)^2}\\,dx$. Give your answer as a fraction (enter the decimal to 4 decimal places).",
+    "answer": "0.25",
+    "tolerance": 0.005,
+    "hint": "With $u = e^x + 1$, $du = e^x\\,dx$. Change limits: $x=0 \\Rightarrow u = 2$; $x = \\ln 3 \\Rightarrow u = 4$.",
+    "explanation": "Let $u = e^x + 1$, so $du = e^x\\,dx$.\n\nNew limits: $x = 0 \\Rightarrow u = 2$; $x = \\ln 3 \\Rightarrow u = e^{\\ln 3}+1 = 4$.\n\n$$\\int_0^{\\ln 3}\\frac{e^x}{(e^x+1)^2}\\,dx = \\int_2^4 u^{-2}\\,du = \\left[-u^{-1}\\right]_2^4 = -\\frac{1}{4}+\\frac{1}{2} = \\frac{1}{4} = \\mathbf{0.25}$$"
+  },
+  {
+    "id": "y12-ext1-fcs-sub-q11",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "A student claims that $\\displaystyle\\int_0^2 \\frac{x}{x^2+1}\\,dx = \\dfrac{\\ln 5}{2}$. Use the substitution $u = x^2 + 1$ to verify this. What is the value of $\\dfrac{\\ln 5}{2}$ to 4 decimal places?",
+    "answer": "0.8047",
+    "tolerance": 0.0005,
+    "hint": "With $u = x^2+1$, $du = 2x\\,dx$. Change limits and integrate $\\frac{1}{2u}$.",
+    "explanation": "Let $u = x^2 + 1$, so $du = 2x\\,dx$, i.e. $x\\,dx = \\dfrac{du}{2}$.\n\nNew limits: $x=0 \\Rightarrow u = 1$; $x=2 \\Rightarrow u = 5$.\n\n$$\\int_0^2 \\frac{x}{x^2+1}\\,dx = \\int_1^5 \\frac{1}{u}\\cdot\\frac{du}{2} = \\frac{1}{2}\\left[\\ln u\\right]_1^5 = \\frac{1}{2}(\\ln 5 - 0) = \\frac{\\ln 5}{2}$$\n\n$$\\frac{\\ln 5}{2} = \\frac{1.6094}{2} \\approx \\mathbf{0.8047}$$\n\nThe student's claim is correct."
+  },
+  {
+    "id": "y12-ext1-fcs-sub-q12",
+    "subtopic": "integration-by-substitution",
+    "topic": "further-calculus-skills",
+    "year": 12,
+    "difficulty": 3,
+    "type": "numeric",
+    "stem": "Use the substitution $u = \\cos x$ to evaluate $\\displaystyle\\int_0^{\\pi/2} \\sin x \\cos^3 x\\,dx$. Give your answer to 4 decimal places.",
+    "answer": "0.25",
+    "tolerance": 0.005,
+    "hint": "With $u = \\cos x$, $du = -\\sin x\\,dx$. Change limits: $x=0 \\Rightarrow u=1$; $x=\\pi/2 \\Rightarrow u=0$.",
+    "explanation": "Let $u = \\cos x$, so $du = -\\sin x\\,dx$.\n\nNew limits: $x=0 \\Rightarrow u=1$; $x=\\dfrac{\\pi}{2} \\Rightarrow u=0$.\n\n$$\\int_0^{\\pi/2}\\sin x\\cos^3 x\\,dx = \\int_1^0 u^3(-du) = \\int_0^1 u^3\\,du = \\left[\\frac{u^4}{4}\\right]_0^1 = \\frac{1}{4} = \\mathbf{0.25}$$"
+  }
+]

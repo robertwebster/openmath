@@ -1,0 +1,14 @@
+{
+  "id": "the-normal-distribution",
+  "title": "The normal distribution",
+  "year": 12,
+  "stage": "6",
+  "course": "standard-2",
+  "strand": "Statistical Analysis",
+  "syllabusOutcome": "MS-S5",
+  "description": "Standardise values using z-scores; interpret and compare z-scores across distributions; apply the empirical (68–95–99.7%) rule to find proportions and expected counts within normally distributed data.",
+  "subtopics": [
+    "z-scores",
+    "the-empirical-rule"
+  ]
+}

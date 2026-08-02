@@ -1,0 +1,94 @@
+[
+  {
+    "id": "rbl-worked-1",
+    "title": "Building a reducing-balance loan table",
+    "difficulty": 1,
+    "problem": "A loan has an opening balance of \\$6000. The monthly interest rate is 0.5% and the monthly repayment is \\$600. Complete the first 3 months of the loan table and state the closing balance at the end of month 3.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Set up the recurrence relation.",
+        "working": "Each month: $A_{n+1} = A_n \\times 1.005 - 600$\n\nOpening balance: $A_0 = \\$6000$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate month 1.",
+        "working": "Interest $= 6000 \\times 0.005 = \\$30$\n\n$$A_1 = 6000 \\times 1.005 - 600 = 6030 - 600 = \\$5430$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate month 2.",
+        "working": "Interest $= 5430 \\times 0.005 = \\$27.15$\n\n$$A_2 = 5430 \\times 1.005 - 600 = 5457.15 - 600 = \\$4857.15$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate month 3.",
+        "working": "Interest $= 4857.15 \\times 0.005 = \\$24.29$\n\n$$A_3 = 4857.15 \\times 1.005 - 600 = 4881.44 - 600 = \\$4281.44$$"
+      }
+    ],
+    "answer": "The closing balance at the end of month 3 is \\$4281.44."
+  },
+  {
+    "id": "rbl-worked-2",
+    "title": "Credit card with minimum repayments",
+    "difficulty": 2,
+    "problem": "A credit card has an outstanding balance of \\$3000. Interest is charged at 21% per annum, compounded monthly. A minimum repayment of \\$60 per month is made. Find the balance at the end of 3 months and comment on what the result shows.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find the monthly interest rate and set up the recurrence.",
+        "working": "Monthly rate $= \\dfrac{21\\%}{12} = 1.75\\%$\n\n$$A_{n+1} = A_n \\times 1.0175 - 60$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate month 1.",
+        "working": "$$A_1 = 3000 \\times 1.0175 - 60 = 3052.50 - 60 = \\$2992.50$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate month 2.",
+        "working": "$$A_2 = 2992.50 \\times 1.0175 - 60 = 3044.72 - 60 = \\$2984.72$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Calculate month 3.",
+        "working": "$$A_3 = 2984.72 \\times 1.0175 - 60 = 3036.50 - 60 = \\$2976.50$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Comment on the result.",
+        "working": "After 3 months of \\$60 repayments (\\$180 total), the balance has only reduced by:\n$$3000 - 2976.50 = \\$23.50$$\n\nAlmost all of each repayment goes to interest, not the principal. The debt will take a very long time to repay at the minimum repayment level."
+      }
+    ],
+    "answer": "Balance after 3 months: \\$2976.50. Minimum repayments barely dent the principal when the interest rate is high."
+  },
+  {
+    "id": "rbl-worked-3",
+    "title": "Comparing two loan options",
+    "difficulty": 3,
+    "problem": "Two lenders offer loans of \\$12\\,000. Lender A charges 6% p.a. (0.5% per month) with repayments of \\$700 per month. Lender B charges 7.2% p.a. (0.6% per month) with repayments of \\$680 per month. Find the closing balance after 2 months for each loan and identify which has the lower balance.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Set up the recurrence for each loan.",
+        "working": "Lender A: $A_{n+1} = A_n \\times 1.005 - 700$\n\nLender B: $A_{n+1} = A_n \\times 1.006 - 680$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate Lender A after 2 months.",
+        "working": "Month 1: $12\\,000 \\times 1.005 - 700 = 12\\,060 - 700 = \\$11\\,360$\n\nMonth 2: $11\\,360 \\times 1.005 - 700 = 11\\,416.80 - 700 = \\$10\\,716.80$"
+      },
+      {
+        "step": 3,
+        "instruction": "Calculate Lender B after 2 months.",
+        "working": "Month 1: $12\\,000 \\times 1.006 - 680 = 12\\,072 - 680 = \\$11\\,392$\n\nMonth 2: $11\\,392 \\times 1.006 - 680 = 11\\,460.35 - 680 = \\$10\\,780.35$"
+      },
+      {
+        "step": 4,
+        "instruction": "Compare the balances.",
+        "working": "Lender A: \\$10\\,716.80\n\nLender B: \\$10\\,780.35\n\nLender A has the lower balance after 2 months, even though Lender B's repayment is smaller."
+      }
+    ],
+    "answer": "After 2 months, Lender A balance: \\$10\\,716.80; Lender B balance: \\$10\\,780.35. Lender A (lower rate, higher repayment) reduces the loan faster."
+  }
+]

@@ -6,7 +6,7 @@ const years = [
   { year: 9,  stage: "Stage 5", topics: 10, available: true  },
   { year: 10, stage: "Stage 5", topics: 8,  available: true  },
   { year: 11, stage: "Stage 6", topics: 15, available: true  },
-  { year: 12, stage: "Stage 6", topics: 0,  available: false },
+  { year: 12, stage: "Stage 6", topics: 27, available: true  },
 ];
 
 export default function Home() {

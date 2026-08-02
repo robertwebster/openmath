@@ -1,0 +1,9 @@
+{
+  "id": "line-of-best-fit-and-regression",
+  "title": "Line of best fit and regression",
+  "topic": "bivariate-data-analysis",
+  "year": 12,
+  "strand": "Statistical Analysis",
+  "syllabusOutcome": "MS-S4",
+  "description": "Fit a line of best fit by eye and identify the least-squares regression line; interpret the gradient and y-intercept in context; use the regression equation for prediction; distinguish between interpolation and extrapolation and understand the risks of extrapolating beyond the data range."
+}

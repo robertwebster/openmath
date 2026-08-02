@@ -1,0 +1,74 @@
+[
+  {
+    "id": "proving-inequalities-worked-1",
+    "title": "Basic inequality from a perfect square",
+    "difficulty": 1,
+    "problem": "Prove that $a^2 + b^2 \\geq 2ab$ for all real $a$, $b$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Rearrange the inequality to show LHS $-$ RHS $\\geq 0$.",
+        "working": "It suffices to show $a^2 + b^2 - 2ab \\geq 0$."
+      },
+      {
+        "step": 2,
+        "instruction": "Express the left side as a perfect square.",
+        "working": "$a^2 + b^2 - 2ab = (a - b)^2$."
+      },
+      {
+        "step": 3,
+        "instruction": "Conclude using the non-negativity of squares.",
+        "working": "Since $(a-b)^2 \\geq 0$ for all real $a$, $b$, the inequality $a^2+b^2 \\geq 2ab$ holds, with equality iff $a=b$. $\\square$"
+      }
+    ],
+    "answer": "$a^2+b^2 \\geq 2ab$ for all real $a,b$, with equality iff $a=b$."
+  },
+  {
+    "id": "proving-inequalities-worked-2",
+    "title": "Proving AM–GM for two variables",
+    "difficulty": 2,
+    "problem": "Prove that for all non-negative $a$, $b$, $\\dfrac{a+b}{2} \\geq \\sqrt{ab}$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Substitute $u = \\sqrt{a}$, $v = \\sqrt{b}$ and use the non-negativity of a square.",
+        "working": "Let $u = \\sqrt{a}$, $v = \\sqrt{b}$ (both $\\geq 0$). Then $(u - v)^2 \\geq 0$."
+      },
+      {
+        "step": 2,
+        "instruction": "Expand and rewrite in terms of $a$ and $b$.",
+        "working": "$u^2 - 2uv + v^2 \\geq 0 \\implies a - 2\\sqrt{ab} + b \\geq 0$."
+      },
+      {
+        "step": 3,
+        "instruction": "Rearrange to obtain the AM-GM inequality.",
+        "working": "$a + b \\geq 2\\sqrt{ab} \\implies \\dfrac{a+b}{2} \\geq \\sqrt{ab}$. Equality holds iff $u = v$, i.e. $a = b$. $\\square$"
+      }
+    ],
+    "answer": "$\\dfrac{a+b}{2} \\geq \\sqrt{ab}$ for non-negative $a,b$, with equality iff $a=b$."
+  },
+  {
+    "id": "proving-inequalities-worked-3",
+    "title": "Applying AM–GM to find an extremum",
+    "difficulty": 3,
+    "problem": "Find the minimum value of $x + \\dfrac{9}{x}$ for $x > 0$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Apply AM-GM to the two positive terms $x$ and $\\dfrac{9}{x}$.",
+        "working": "$\\dfrac{x + \\frac{9}{x}}{2} \\geq \\sqrt{x \\cdot \\dfrac{9}{x}} = \\sqrt{9} = 3$."
+      },
+      {
+        "step": 2,
+        "instruction": "Multiply through by 2 to obtain the inequality.",
+        "working": "$x + \\dfrac{9}{x} \\geq 6$."
+      },
+      {
+        "step": 3,
+        "instruction": "Determine when equality holds and verify.",
+        "working": "Equality holds when $x = \\dfrac{9}{x}$, i.e. $x^2 = 9$, i.e. $x = 3$ (taking $x>0$). Verification: $3 + \\dfrac{9}{3} = 3 + 3 = 6$."
+      }
+    ],
+    "answer": "The minimum value is $6$, achieved at $x = 3$."
+  }
+]

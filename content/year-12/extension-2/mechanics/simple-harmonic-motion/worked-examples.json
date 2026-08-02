@@ -1,0 +1,84 @@
+[
+  {
+    "id": "shm-worked-1",
+    "title": "Reading the parameters from a displacement equation",
+    "difficulty": 1,
+    "problem": "A particle has displacement $x = 6\\sin(2t - \\pi/3)$ m. Find the (a) amplitude, (b) period, (c) maximum speed, and (d) maximum acceleration.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the standard form $x = A\\sin(nt+\\alpha)$ and read off the amplitude.",
+        "working": "Comparing with $x=A\\sin(nt+\\alpha)$: $A = 6$, $n = 2$. (a) Amplitude: $A = 6$ m"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the period.",
+        "working": "(b) $T = \\dfrac{2\\pi}{n} = \\dfrac{2\\pi}{2} = \\pi \\approx 3.14$ s"
+      },
+      {
+        "step": 3,
+        "instruction": "Find the maximum speed, which occurs at the centre $x=0$.",
+        "working": "(c) $v_{\\max} = nA = 2 \\times 6 = 12$ m/s"
+      },
+      {
+        "step": 4,
+        "instruction": "Find the maximum acceleration, which occurs at the endpoints $x=\\pm A$.",
+        "working": "(d) $|a|_{\\max} = n^2 A = 4 \\times 6 = 24$ m/s²"
+      }
+    ],
+    "answer": "Amplitude $=6$ m, period $=\\pi\\approx3.14$ s, maximum speed $=12$ m/s, maximum acceleration $=24$ m/s²."
+  },
+  {
+    "id": "shm-worked-2",
+    "title": "Deriving and using the velocity–displacement formula",
+    "difficulty": 2,
+    "problem": "A particle satisfies $\\ddot{x} = -4x$ and starts from rest at $x = 5$ m. Find its speed when it is at $x = 3$ m.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the parameters $n$ and $A$.",
+        "working": "$n^2 = 4 \\Rightarrow n = 2$. Starting from rest at $x = 5$ means amplitude $A = 5$."
+      },
+      {
+        "step": 2,
+        "instruction": "Use the velocity–displacement formula $v^2 = n^2(A^2 - x^2)$.",
+        "working": "$v^2 = 4(25 - 9) = 4 \\times 16 = 64 \\implies v = 8$ m/s"
+      },
+      {
+        "step": 3,
+        "instruction": "Confirm the formula by deriving it directly.",
+        "working": "Using $v\\dfrac{dv}{dx} = -4x$, integrate to get $\\dfrac{v^2}{2} = -2x^2 + C$; apply $v=0$ at $x=5$ to get $C = 50$. Then $v^2 = 100 - 4x^2 = 4(25-x^2)$, confirming the result."
+      }
+    ],
+    "answer": "The speed at $x=3$ m is $8$ m/s."
+  },
+  {
+    "id": "shm-worked-3",
+    "title": "Finding displacement as a function of time from initial conditions",
+    "difficulty": 3,
+    "problem": "A particle starts at the centre of its oscillation ($x=0$) moving in the positive direction with speed $10$ m/s, in SHM with period $\\pi$ s. Write $x$ as a function of $t$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Find $n$ from the period.",
+        "working": "$T = \\pi \\Rightarrow n = \\dfrac{2\\pi}{\\pi} = 2$"
+      },
+      {
+        "step": 2,
+        "instruction": "Find the amplitude using the maximum speed formula.",
+        "working": "$v_{\\max} = nA$: $10 = 2A \\implies A = 5$ m"
+      },
+      {
+        "step": 3,
+        "instruction": "Write $x$ using the given initial condition.",
+        "working": "The particle starts at $x=0$ moving in the positive direction, so $x = A\\sin(nt) = 5\\sin(2t)$ m"
+      },
+      {
+        "step": 4,
+        "instruction": "Check the result against the initial conditions.",
+        "working": "At $t=0$: $x = 5\\sin 0 = 0$ ✓; $v = \\dot{x} = 10\\cos(0) = 10$ ✓"
+      }
+    ],
+    "answer": "$x = 5\\sin(2t)$ m."
+  }
+]

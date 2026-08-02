@@ -1,0 +1,11 @@
+{
+  "id": "properties-and-calculus",
+  "title": "Properties and calculus",
+  "topic": "inverse-trigonometric-functions",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-1",
+  "strand": "Trigonometric functions",
+  "syllabusOutcome": "ME-12-02",
+  "description": "Differentiate $\\sin^{-1}x$, $\\cos^{-1}x$ and $\\tan^{-1}x$ and apply the chain rule; evaluate integrals that yield inverse trigonometric forms including $\\sin^{-1}\\!(x/a)$ and $(1/a)\\tan^{-1}\\!(x/a)$."
+}

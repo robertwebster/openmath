@@ -1,0 +1,74 @@
+[
+  {
+    "id": "zsc-worked-1",
+    "title": "Calculating a z-score",
+    "difficulty": 1,
+    "problem": "In a state-wide exam, scores have a mean of 65 and a standard deviation of 12. A student scored 89. Calculate their z-score and interpret it.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the z-score formula and identify the values.",
+        "working": "$x = 89$, $\\mu = 65$, $\\sigma = 12$\n\n$$z = \\frac{x - \\mu}{\\sigma}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute and calculate.",
+        "working": "$$z = \\frac{89 - 65}{12} = \\frac{24}{12} = 2$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the z-score.",
+        "working": "A z-score of 2 means this student scored 2 standard deviations above the mean. Fewer than 2.5% of students scored higher."
+      }
+    ],
+    "answer": "The z-score is 2. The student performed significantly above average."
+  },
+  {
+    "id": "zsc-worked-2",
+    "title": "Finding the original value from a z-score",
+    "difficulty": 2,
+    "problem": "Reaction times in a study are normally distributed with a mean of 250 ms and standard deviation of 30 ms. A participant's reaction time has a z-score of $-1.4$. Find their actual reaction time.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the formula and rearrange to find $x$.",
+        "working": "From $z = \\dfrac{x - \\mu}{\\sigma}$, rearrange to:\n\n$$x = \\mu + z \\times \\sigma$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Substitute the known values.",
+        "working": "$$x = 250 + (-1.4) \\times 30 = 250 - 42 = 208 \\text{ ms}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Interpret the result.",
+        "working": "A negative z-score means a value below the mean. This participant's reaction time of 208 ms is faster than average (lower is faster in reaction-time studies)."
+      }
+    ],
+    "answer": "The participant's reaction time is 208 ms."
+  },
+  {
+    "id": "zsc-worked-3",
+    "title": "Comparing performance across two distributions",
+    "difficulty": 3,
+    "problem": "Two students sit different end-of-year exams. Asha scores 82 in Science (mean 70, standard deviation 8). Ben scores 90 in History (mean 75, standard deviation 12). Who performed better relative to their respective cohorts?",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Calculate Asha's z-score in Science.",
+        "working": "$$z_{\\text{Asha}} = \\frac{82 - 70}{8} = \\frac{12}{8} = 1.5$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Calculate Ben's z-score in History.",
+        "working": "$$z_{\\text{Ben}} = \\frac{90 - 75}{12} = \\frac{15}{12} = 1.25$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Compare the z-scores.",
+        "working": "Asha: $z = 1.5$ — scored 1.5 standard deviations above her Science cohort.\n\nBen: $z = 1.25$ — scored 1.25 standard deviations above his History cohort.\n\nAsha has the higher z-score, so she performed better relative to her peers despite scoring a lower raw mark."
+      }
+    ],
+    "answer": "Asha performed better relative to her cohort. Her z-score of 1.5 is higher than Ben's z-score of 1.25."
+  }
+]

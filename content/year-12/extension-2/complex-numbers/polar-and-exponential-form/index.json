@@ -1,0 +1,11 @@
+{
+  "id": "polar-and-exponential-form",
+  "title": "Polar and exponential form",
+  "topic": "complex-numbers",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Complex numbers",
+  "syllabusOutcome": "MEX-12-02",
+  "description": "Express complex numbers in modulus–argument form $r(\\cos\\theta+i\\sin\\theta)$ and Euler's form $re^{i\\theta}$; multiply and divide using polar form; apply De Moivre's theorem to compute powers."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "further-integration",
+  "title": "Further integration",
+  "year": 12,
+  "stage": "6",
+  "course": "extension-2",
+  "strand": "Calculus",
+  "syllabusOutcome": "MEX-12-03",
+  "description": "Extend integration techniques to include integration by parts, partial fractions (including repeated and irreducible quadratic factors), the t-substitution, trigonometric integrals, reduction formulae, and problems requiring a strategic choice of method.",
+  "subtopics": [
+    "integration-techniques",
+    "recurrence-and-harder-integrals"
+  ]
+}

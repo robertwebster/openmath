@@ -29,14 +29,17 @@ interface ExampleState {
 
 function checkAnswer(q: Question, state: QuestionState): boolean {
   switch (q.type) {
+    // Proofs are self-assessed — never machine-marked, so never reported as wrong.
+    case "proof":
+      return false;
     case "numeric": {
       const student = parseFloat(state.value);
-      const correct = parseFloat(q.answer);
+      const correct = parseFloat(String(q.answer ?? ""));
       if (isNaN(student)) return false;
       return Math.abs(student - correct) <= (q.tolerance ?? 0);
     }
     case "coordinate": {
-      return state.value.replace(/\s/g, "") === q.answer.replace(/\s/g, "");
+      return state.value.replace(/\s/g, "") === String(q.answer ?? "").replace(/\s/g, "");
     }
     case "fraction": {
       return `${state.value}/${state.denominator}` === q.answer;
@@ -166,7 +169,9 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
                   {/* Card header */}
                   <div className="px-6 py-4 flex items-center justify-between gap-4">
                     <div>
-                      <h3 className="font-medium text-slate-900">{ex.title}</h3>
+                      <h3 className="font-medium text-slate-900">
+                        <MathText as="span" text={ex.title} />
+                      </h3>
                       <p className="text-xs text-slate-400 mt-0.5">{difficultyLabel(ex.difficulty)}</p>
                     </div>
                     <button
@@ -329,6 +334,12 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
                       </div>
                     )}
 
+                    {q.type === "proof" && (
+                      <p className="text-xs text-slate-500 bg-slate-50 border border-slate-200 rounded-lg px-3 py-2">
+                        ✎ Work this one through on paper — proofs are self-assessed.
+                      </p>
+                    )}
+
                     {q.type === "multiple-choice" && q.options && (
                       <div className="space-y-2">
                         {q.options.map((opt) => (
@@ -342,7 +353,7 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
                               disabled={qs.submitted}
                               className="accent-indigo-600"
                             />
-                            <span className="text-sm text-slate-700">{opt}</span>
+                            <MathText as="span" text={opt} className="text-sm text-slate-700" />
                           </label>
                         ))}
                       </div>
@@ -355,12 +366,12 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
                       onClick={() => handleSubmit(qi)}
                       className="print:hidden text-sm font-medium bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg px-4 py-2 transition-colors"
                     >
-                      Check answer
+                      {q.type === "proof" ? "Reveal worked proof" : "Check answer"}
                     </button>
                   )}
 
-                  {/* Feedback */}
-                  {qs.submitted && (
+                  {/* Feedback — proofs are self-assessed, so they get no correct/incorrect badge */}
+                  {qs.submitted && q.type !== "proof" && (
                     <div className="mt-4 flex items-center gap-3">
                       {qs.correct ? (
                         <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-green-700 bg-green-100 border border-green-300 rounded-full px-3 py-1">
@@ -381,7 +392,9 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
                   {/* Explanation — always in DOM, shown via state or print */}
                   <div className={showExplanation ? "block mt-4" : "hidden print:block"}>
                     <div className="bg-green-50 border border-green-200 rounded-lg px-4 py-3 print:mt-4">
-                      <p className="text-xs font-medium text-green-700 mb-2">Explanation</p>
+                      <p className="text-xs font-medium text-green-700 mb-2">
+                        {q.type === "proof" ? "Worked proof" : "Explanation"}
+                      </p>
                       <MathText text={q.explanation} className="text-sm text-slate-700 leading-relaxed" />
                     </div>
                   </div>
@@ -391,7 +404,7 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
                       onClick={() => handleReset(qi)}
                       className="print:hidden mt-4 text-sm font-medium text-slate-600 hover:text-slate-800 border border-slate-200 rounded-lg px-4 py-2 transition-colors"
                     >
-                      Try again
+                      {q.type === "proof" ? "Hide proof" : "Try again"}
                     </button>
                   )}
                 </div>

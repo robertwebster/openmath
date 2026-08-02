@@ -1,0 +1,14 @@
+{
+  "id": "bivariate-data-analysis",
+  "title": "Bivariate data analysis",
+  "year": 12,
+  "stage": "6",
+  "course": "standard-2",
+  "strand": "Statistical Analysis",
+  "syllabusOutcome": "MS-S4",
+  "description": "Construct and interpret scatterplots; describe the direction, form and strength of associations; estimate and interpret Pearson's correlation coefficient r; fit a line of best fit and use it for prediction.",
+  "subtopics": [
+    "scatterplots-and-correlation",
+    "line-of-best-fit-and-regression"
+  ]
+}

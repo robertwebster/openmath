@@ -1,0 +1,9 @@
+{
+  "id": "areas-and-the-trapezoidal-rule",
+  "title": "Areas and the trapezoidal rule",
+  "topic": "integral-calculus",
+  "year": 12,
+  "strand": "Calculus",
+  "syllabusOutcome": "MAV-12-05",
+  "description": "Calculate the exact area between a curve and an axis; find the area between two curves after determining intersection points; approximate areas numerically using the trapezoidal rule."
+}

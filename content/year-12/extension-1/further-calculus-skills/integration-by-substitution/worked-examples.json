@@ -1,0 +1,84 @@
+[
+  {
+    "id": "intsub-worked-1",
+    "title": "Indefinite integral (power function)",
+    "difficulty": 1,
+    "problem": "Find $\\displaystyle\\int 3x^2(x^3 - 1)^5\\,dx$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Choose $u$ to be the bracket that is raised to a power.",
+        "working": "The bracket $(x^3 - 1)$ is raised to a power; choose $u = x^3 - 1$."
+      },
+      {
+        "step": 2,
+        "instruction": "Find $du$.",
+        "working": "$$\\frac{du}{dx} = 3x^2 \\implies du = 3x^2\\,dx$$ The factor $3x^2\\,dx$ appears exactly in the integrand — perfect."
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute $u$ into the integral.",
+        "working": "$$\\int 3x^2(x^3-1)^5\\,dx = \\int u^5\\,du$$"
+      },
+      {
+        "step": 4,
+        "instruction": "Integrate with respect to $u$.",
+        "working": "$$\\int u^5\\,du = \\frac{u^6}{6} + C$$"
+      },
+      {
+        "step": 5,
+        "instruction": "Back-substitute $u = x^3 - 1$.",
+        "working": "$$= \\frac{(x^3-1)^6}{6} + C$$"
+      }
+    ],
+    "answer": "$\\displaystyle\\int 3x^2(x^3-1)^5\\,dx = \\frac{(x^3-1)^6}{6} + C$"
+  },
+  {
+    "id": "intsub-worked-2",
+    "title": "Definite integral (changing limits)",
+    "difficulty": 2,
+    "problem": "Evaluate $\\displaystyle\\int_0^2 \\frac{x}{(x^2+4)^2}\\,dx$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Choose $u$ and find $du$.",
+        "working": "Let $u = x^2 + 4$, so $du = 2x\\,dx$, i.e. $x\\,dx = \\dfrac{du}{2}$."
+      },
+      {
+        "step": 2,
+        "instruction": "Change the limits from $x$-values to $u$-values.",
+        "working": "When $x = 0$, $u = 0^2 + 4 = 4$. When $x = 2$, $u = 2^2 + 4 = 8$."
+      },
+      {
+        "step": 3,
+        "instruction": "Substitute and integrate directly using the new limits (do not back-substitute).",
+        "working": "$$\\int_0^2 \\frac{x}{(x^2+4)^2}\\,dx = \\int_4^8 \\frac{1}{u^2}\\cdot\\frac{du}{2} = \\frac{1}{2}\\int_4^8 u^{-2}\\,du$$ $$= \\frac{1}{2}\\left[-u^{-1}\\right]_4^8 = \\frac{1}{2}\\left(-\\frac{1}{8}+\\frac{1}{4}\\right) = \\frac{1}{2}\\cdot\\frac{1}{8} = \\frac{1}{16}$$"
+      }
+    ],
+    "answer": "$\\displaystyle\\int_0^2 \\frac{x}{(x^2+4)^2}\\,dx = \\frac{1}{16}$"
+  },
+  {
+    "id": "intsub-worked-3",
+    "title": "Trigonometric integrand",
+    "difficulty": 3,
+    "problem": "Evaluate $\\displaystyle\\int_0^{\\pi} \\sin^3 x \\cos x\\,dx$.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Choose $u$ and find $du$.",
+        "working": "Let $u = \\sin x$, so $du = \\cos x\\,dx$."
+      },
+      {
+        "step": 2,
+        "instruction": "Change the limits from $x$-values to $u$-values.",
+        "working": "When $x = 0$, $u = \\sin 0 = 0$. When $x = \\pi$, $u = \\sin \\pi = 0$. Both limits map to $u = 0$, so the definite integral equals zero without needing to compute anything further."
+      },
+      {
+        "step": 3,
+        "instruction": "Confirm with the formal calculation.",
+        "working": "$$\\int_0^{\\pi}\\sin^3 x\\cos x\\,dx = \\int_0^0 u^3\\,du = 0$$"
+      }
+    ],
+    "answer": "$\\displaystyle\\int_0^{\\pi} \\sin^3 x \\cos x\\,dx = 0$"
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "id": "annuities-super-worked-1",
+    "title": "Future value of an annuity using geometric series",
+    "difficulty": 1,
+    "problem": "Deposits of \\$2000 are made at the end of each year for 4 years into an account earning 5% per annum. Find the accumulated value at the end of 4 years.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Write the future value of each deposit, noting each earns interest for a different number of years (the 1st deposit grows for 3 years, the 2nd for 2 years, the 3rd for 1 year, and the 4th for 0 years).",
+        "working": "Future values: 1st deposit $2000(1.05)^3$, 2nd deposit $2000(1.05)^2$, 3rd deposit $2000(1.05)^1$, 4th deposit $2000$."
+      },
+      {
+        "step": 2,
+        "instruction": "Recognise this as a geometric series and sum it.",
+        "working": "$$FV = 2000 + 2000(1.05) + 2000(1.05)^2 + 2000(1.05)^3$$ This is a geometric series with first term $a = 2000$, common ratio $r = 1.05$, and $n = 4$ terms. $$FV = 2000 \\cdot \\frac{(1.05)^4 - 1}{1.05 - 1} = 2000 \\times \\frac{0.21551}{0.05} = 2000 \\times 4.3101 = \\$8620.25$$ Using the annuity formula directly: $$FV = M \\cdot \\frac{(1+r)^n - 1}{r} = 2000 \\times \\frac{(1.05)^4 - 1}{0.05} = \\$8620.25$$"
+      }
+    ],
+    "answer": "The accumulated value after 4 years is $\\$8620.25$."
+  },
+  {
+    "id": "annuities-super-worked-2",
+    "title": "Superannuation accumulation",
+    "difficulty": 2,
+    "problem": "Yuki contributes \\$5000 at the end of each year into a superannuation fund earning 6% per annum for 20 years. Find the total value of the fund at retirement.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Identify the annuity parameters.",
+        "working": "$M = 5000$, $r = 0.06$, $n = 20$."
+      },
+      {
+        "step": 2,
+        "instruction": "Apply the future value formula.",
+        "working": "$$FV = 5000 \\times \\frac{(1.06)^{20} - 1}{0.06}$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Evaluate.",
+        "working": "$(1.06)^{20} = 3.20714$ $$FV = 5000 \\times \\frac{3.20714 - 1}{0.06} = 5000 \\times \\frac{2.20714}{0.06} = 5000 \\times 36.786 = \\$183{,}928.00$$"
+      }
+    ],
+    "answer": "The fund is worth approximately $\\$183{,}928.00$ at retirement."
+  },
+  {
+    "id": "annuities-super-worked-3",
+    "title": "Present value and retirement drawdowns",
+    "difficulty": 3,
+    "problem": "On retirement, Yuki transfers her \\$183,928 into a new account earning 4% per annum and makes equal annual withdrawals for 15 years until the account is exhausted. Find the annual withdrawal.",
+    "steps": [
+      {
+        "step": 1,
+        "instruction": "Set up the present value equation: the present value of the withdrawal annuity must equal the fund balance.",
+        "working": "$$PV = M \\cdot \\frac{1 - (1+r)^{-n}}{r}$$ $$183{,}928 = M \\times \\frac{1 - (1.04)^{-15}}{0.04}$$"
+      },
+      {
+        "step": 2,
+        "instruction": "Evaluate the annuity factor.",
+        "working": "$(1.04)^{-15} = \\dfrac{1}{(1.04)^{15}} = \\dfrac{1}{1.80094} = 0.55526$ $$\\frac{1 - 0.55526}{0.04} = \\frac{0.44474}{0.04} = 11.1184$$"
+      },
+      {
+        "step": 3,
+        "instruction": "Solve for $M$.",
+        "working": "$$M = \\frac{183{,}928}{11.1184} = \\$16{,}543.16$$"
+      }
+    ],
+    "answer": "Yuki can withdraw approximately $\\$16{,}543$ per year for 15 years."
+  }
+]
