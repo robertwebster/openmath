@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 import "katex/dist/katex.min.css";
 
@@ -9,9 +10,10 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Open Math: Free NSW Mathematics Practice",
   description:
-    "Free, open source mathematics practice for NSW students in Years 7–10. Instant feedback, no accounts required.",
+    "Free, open source mathematics practice for NSW students in Years 7–12. Instant feedback, no accounts required.",
 };
 
 export default function RootLayout({
