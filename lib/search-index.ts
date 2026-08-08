@@ -51,13 +51,17 @@ export function buildSearchIndex(): SearchRecord[] {
     const topic = readTopic();
     const base = course ? `/year-${year}/${course}/${topicId}` : `/year-${year}/${topicId}`;
 
+    // index.json is cast to its type, never validated, so a hand-written file can be
+    // missing a field the types promise. Fall back rather than ship an undefined into
+    // the search payload: the matcher tokenises every record on every keystroke, so
+    // one malformed file would otherwise break the whole dropdown.
     records.push({
-      t: topic.title,
+      t: topic.title ?? topicId,
       k: "topic",
       y: year,
       ...(course ? { c: course } : {}),
-      s: topic.strand,
-      o: topic.syllabusOutcome,
+      s: topic.strand ?? "",
+      o: topic.syllabusOutcome ?? "",
       u: base,
     });
 
@@ -68,13 +72,13 @@ export function buildSearchIndex(): SearchRecord[] {
     for (const subId of subIds) {
       const sub = readSubtopic(subId);
       records.push({
-        t: sub.title,
+        t: sub.title ?? subId,
         k: "subtopic",
         y: year,
         ...(course ? { c: course } : {}),
-        p: topic.title,
-        s: sub.strand,
-        o: sub.syllabusOutcome,
+        p: topic.title ?? topicId,
+        s: sub.strand ?? "",
+        o: sub.syllabusOutcome ?? "",
         u: `${base}/${subId}`,
       });
     }
