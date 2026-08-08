@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { buildSearchIndex } from "@/lib/search-index";
+import TopicSearch from "@/components/TopicSearch";
 
 const years = [
   { year: 7,  stage: "Stage 4", topics: 16, available: true  },
@@ -10,6 +12,8 @@ const years = [
 ];
 
 export default function Home() {
+  const searchRecords = buildSearchIndex();
+
   return (
     <div className="flex flex-col min-h-full">
 
@@ -47,18 +51,9 @@ export default function Home() {
 
         {/* Search */}
         <div className="mb-12 max-w-xl mx-auto">
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="Search topics, e.g. trigonometry, probability..."
-              className="w-full px-5 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 placeholder-slate-400 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-base"
-            />
-            <span className="absolute right-4 top-3.5 text-slate-300 text-lg">
-              ⌕
-            </span>
-          </div>
+          <TopicSearch records={searchRecords} />
           <p className="text-xs text-slate-400 mt-2 text-center">
-            Topic search coming soon
+            {searchRecords.length} topics and sub-topics, Years 7 to 12
           </p>
         </div>
 

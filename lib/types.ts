@@ -56,6 +56,30 @@ export interface SubtopicMeta {
   verifiers?: SubtopicVerifier[];
 }
 
+/**
+ * One entry in the homepage search index. Every topic and sub-topic on the site
+ * becomes a record, and the whole index is serialised into the homepage payload,
+ * so the keys are deliberately short.
+ */
+export interface SearchRecord {
+  /** title */
+  t: string;
+  /** kind */
+  k: "topic" | "subtopic";
+  /** year */
+  y: number;
+  /** course slug — Stage 6 (Year 11+) only */
+  c?: string;
+  /** parent topic title — sub-topics only */
+  p?: string;
+  /** strand */
+  s: string;
+  /** syllabus outcome */
+  o: string;
+  /** url */
+  u: string;
+}
+
 export interface TopicMeta {
   id: string;
   title: string;

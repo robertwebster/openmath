@@ -4,18 +4,12 @@ import fs from "fs";
 import path from "path";
 import type { Metadata } from "next";
 import { getCourseTopicMeta } from "@/lib/content";
+import { getCourseTitle } from "@/lib/courses";
 import MathText from "@/components/MathText";
 
 interface Props {
   params: Promise<{ course: string }>;
 }
-
-const COURSE_TITLES: Record<string, string> = {
-  "standard-2": "Mathematics Standard 2",
-  advanced: "Mathematics Advanced",
-  "extension-1": "Mathematics Extension 1",
-  "extension-2": "Mathematics Extension 2",
-};
 
 // Curriculum order per course; any unlisted topics append alphabetically
 const TOPIC_ORDER: Record<string, string[]> = {
@@ -58,7 +52,7 @@ const TOPIC_ORDER: Record<string, string[]> = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { course } = await params;
-  const title = COURSE_TITLES[course];
+  const title = getCourseTitle(12, course);
   if (!title) return { title: "Year 12 | Open Math" };
   return {
     title: `${title} | Year 12 | Open Math`,
@@ -81,7 +75,7 @@ function getTopicIds(course: string): string[] {
 
 export default async function CoursePage({ params }: Props) {
   const { course } = await params;
-  const courseTitle = COURSE_TITLES[course];
+  const courseTitle = getCourseTitle(12, course);
   if (!courseTitle) notFound();
 
   const topics = getTopicIds(course).map((id) => getCourseTopicMeta(12, course, id));
