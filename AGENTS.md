@@ -9,6 +9,8 @@ This project uses **Next.js 16** (App Router). This version has breaking changes
 - Questions are written **only at the sub-topic level** — never create question banks at the topic or year level
 - Every question must include `subtopic`, `topic`, and `year` tags for aggregation
 - All content must reference a NSW Mathematics K–10 (2022) syllabus outcome
+- Every topic and sub-topic directory needs an `index.json` with `title`, `strand` and `syllabusOutcome`. The homepage search index is built by walking these files (`lib/search-index.ts`), so a directory without one is **silently invisible to search** — add `index.json` before, or alongside, `questions.json`
+- Adding a Stage 6 course slug means adding it to `COURSE_TITLES` in `lib/courses.ts` too — that map gates the `[course]` routes and the search index alike
 
 ## Code rules
 

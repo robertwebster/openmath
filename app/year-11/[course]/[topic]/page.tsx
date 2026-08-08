@@ -2,16 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getCourseTopicMeta, getCourseSubtopicMeta } from "@/lib/content";
+import { getCourseTitle } from "@/lib/courses";
 import MathText from "@/components/MathText";
 
 interface Props {
   params: Promise<{ course: string; topic: string }>;
 }
-
-const COURSE_TITLES: Record<string, string> = {
-  standard: "Mathematics Standard",
-  advanced: "Mathematics Advanced",
-};
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { course, topic } = await params;
@@ -28,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function TopicPage({ params }: Props) {
   const { course, topic } = await params;
-  const courseTitle = COURSE_TITLES[course];
+  const courseTitle = getCourseTitle(11, course);
   if (!courseTitle) notFound();
 
   let topicMeta;
