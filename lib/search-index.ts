@@ -15,6 +15,9 @@ import type { SearchRecord } from "./types";
 const STAGE_45_YEARS = [7, 8, 9, 10];
 const STAGE_6_YEARS = [11, 12];
 
+/** Every year with content, junior first. Stage 6 years also have course pages. */
+export const CONTENT_YEARS = [...STAGE_45_YEARS, ...STAGE_6_YEARS];
+
 /** Sub-directories of `dir` that contain an index.json, sorted. Missing dir -> []. */
 function contentDirs(...segments: string[]): string[] {
   const base = path.join(process.cwd(), "content", ...segments);

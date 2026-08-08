@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getTopicMeta, getSubtopicMeta } from "@/lib/content";
+import { breadcrumbJsonLd, learningResourceJsonLd } from "@/lib/structured-data";
+import JsonLd from "@/components/JsonLd";
 import MathText from "@/components/MathText";
 
 interface Props {
@@ -41,6 +43,24 @@ export default async function TopicPage({ params }: Props) {
 
   return (
     <div className="flex flex-col min-h-full">
+      <JsonLd
+        data={[
+          breadcrumbJsonLd([
+            { name: "Open Math", path: "/" },
+            { name: "Year 9", path: "/year-9" },
+            { name: topicMeta.title },
+          ]),
+          learningResourceJsonLd({
+            name: topicMeta.title,
+            description: topicMeta.description,
+            path: `/year-9/${topic}`,
+            year: 9,
+            strand: topicMeta.strand,
+            syllabusOutcome: topicMeta.syllabusOutcome,
+            resourceType: "Topic overview",
+          }),
+        ]}
+      />
 
       {/* Header */}
       <header className="bg-white border-b border-slate-200">
