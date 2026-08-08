@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { buildSearchIndex } from "@/lib/search-index";
+import { siteJsonLd } from "@/lib/structured-data";
+import JsonLd from "@/components/JsonLd";
 import TopicSearch from "@/components/TopicSearch";
 
 const years = [
@@ -16,6 +18,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-full">
+      <JsonLd data={siteJsonLd()} />
 
       {/* Header */}
       <header className="bg-white border-b border-slate-200">

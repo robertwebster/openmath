@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getCourseTopicMeta, getCourseSubtopicMeta, getCourseQuestions, getCourseWorkedExamples } from "@/lib/content";
 import { getCourseTitle } from "@/lib/courses";
+import { breadcrumbJsonLd, learningResourceJsonLd } from "@/lib/structured-data";
+import JsonLd from "@/components/JsonLd";
 import SubtopicContent from "@/components/SubtopicContent";
 
 interface Props {
@@ -39,6 +41,27 @@ export default async function SubtopicPage({ params }: Props) {
 
   return (
     <div className="flex flex-col min-h-full">
+      <JsonLd
+        data={[
+          breadcrumbJsonLd([
+            { name: "Open Math", path: "/" },
+            { name: "Year 11", path: "/year-11" },
+            { name: courseTitle, path: `/year-11/${course}` },
+            { name: topicMeta.title, path: `/year-11/${course}/${topic}` },
+            { name: subtopicMeta.title },
+          ]),
+          learningResourceJsonLd({
+            name: subtopicMeta.title,
+            description: subtopicMeta.description,
+            path: `/year-11/${course}/${topic}/${subtopic}`,
+            year: 11,
+            course,
+            strand: subtopicMeta.strand,
+            syllabusOutcome: subtopicMeta.syllabusOutcome,
+            resourceType: "Practice problems",
+          }),
+        ]}
+      />
 
       {/* Header */}
       <header className="bg-white border-b border-slate-200 print:hidden">
