@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getTopicMeta, getSubtopicMeta } from "@/lib/content";
+import { getTopicMeta, getSubtopicMeta, getWorksheetSections } from "@/lib/content";
 import { breadcrumbJsonLd, learningResourceJsonLd } from "@/lib/structured-data";
 import JsonLd from "@/components/JsonLd";
 import MathText from "@/components/MathText";
+import PrintButton from "@/components/PrintButton";
+import Worksheet from "@/components/Worksheet";
 
 interface Props {
   params: Promise<{ topic: string }>;
@@ -41,6 +43,8 @@ export default async function TopicPage({ params }: Props) {
     }
   }).filter(Boolean);
 
+  const worksheetSections = getWorksheetSections(10, topic, topicMeta.subtopics);
+
   return (
     <div className="flex flex-col min-h-full">
       <JsonLd
@@ -63,7 +67,7 @@ export default async function TopicPage({ params }: Props) {
       />
 
       {/* Header */}
-      <header className="bg-white border-b border-slate-200">
+      <header className="bg-white border-b border-slate-200 print:hidden">
         <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="text-xl font-semibold text-indigo-600 tracking-tight hover:text-indigo-700 transition-colors">
             Open Math
@@ -80,7 +84,7 @@ export default async function TopicPage({ params }: Props) {
         </div>
       </header>
 
-      <main className="flex-1 max-w-4xl mx-auto px-6 py-12 w-full">
+      <main className="flex-1 max-w-4xl mx-auto px-6 py-12 w-full print:hidden">
 
         {/* Breadcrumb */}
         <nav className="text-sm text-slate-400 mb-8">
@@ -97,6 +101,11 @@ export default async function TopicPage({ params }: Props) {
             <span className="mt-1.5 shrink-0 text-xs font-medium text-indigo-600 bg-indigo-50 border border-indigo-200 rounded-full px-2.5 py-0.5">
               Extension topic
             </span>
+          )}
+          {worksheetSections.length > 0 && (
+            <div className="ml-auto">
+              <PrintButton label="Print worksheet" />
+            </div>
           )}
         </div>
 
@@ -124,8 +133,19 @@ export default async function TopicPage({ params }: Props) {
 
       </main>
 
+      {/* Printable worksheet — questions only, no answers */}
+      {worksheetSections.length > 0 && (
+        <Worksheet
+          className="hidden print:block"
+          title={topicMeta.title}
+          subtitle={`${topicMeta.strand} · ${topicMeta.syllabusOutcome}`}
+          path={`/year-10/${topic}`}
+          sections={worksheetSections}
+        />
+      )}
+
       {/* Footer */}
-      <footer className="border-t border-slate-200 bg-white">
+      <footer className="border-t border-slate-200 bg-white print:hidden">
         <div className="max-w-4xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-400">
           <span>
             Built by{" "}

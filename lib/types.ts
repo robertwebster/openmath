@@ -23,6 +23,26 @@ export interface Question {
   explanation: string;
 }
 
+/**
+ * A question stripped of everything that would give the answer away, for the
+ * printable worksheet. Deliberately a narrowed pick of Question — dropping
+ * answer, tolerance, hint and explanation keeps them out of the page payload,
+ * so a worksheet page never ships its own answer key.
+ */
+export interface WorksheetQuestion {
+  id: string;
+  difficulty: Difficulty;
+  type: QuestionType;
+  stem: string;
+  options?: string[];
+}
+
+/** One sub-topic's worth of questions on a worksheet. */
+export interface WorksheetSection {
+  title: string;
+  questions: WorksheetQuestion[];
+}
+
 export interface WorkedExampleStep {
   step: number;
   instruction: string;

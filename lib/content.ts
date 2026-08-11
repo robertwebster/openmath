@@ -1,6 +1,13 @@
 import fs from "fs";
 import path from "path";
-import type { Question, WorkedExample, SubtopicMeta, TopicMeta } from "./types";
+import type {
+  Question,
+  WorkedExample,
+  SubtopicMeta,
+  TopicMeta,
+  WorksheetQuestion,
+  WorksheetSection,
+} from "./types";
 
 function readJson<T>(...segments: string[]): T {
   const filePath = path.join(process.cwd(), "content", ...segments);
@@ -40,4 +47,43 @@ export function getCourseQuestions(year: number, course: string, topicId: string
 
 export function getCourseWorkedExamples(year: number, course: string, topicId: string, subtopicId: string): WorkedExample[] {
   return readJson<WorkedExample[]>(`year-${year}`, course, topicId, subtopicId, "worked-examples.json");
+}
+
+/** Drop every field that would give the answer away. */
+export function toWorksheetQuestion(q: Question): WorksheetQuestion {
+  return { id: q.id, difficulty: q.difficulty, type: q.type, stem: q.stem, options: q.options };
+}
+
+/**
+ * Every question in a topic, grouped by sub-topic, for the printable worksheet.
+ * Pass `course` for Stage 6 (Year 11+), where topics sit under a course.
+ *
+ * A sub-topic with no readable index.json or questions.json is skipped rather
+ * than throwing — a half-built sub-topic must not take the topic page down.
+ */
+export function getWorksheetSections(
+  year: number,
+  topicId: string,
+  subtopicIds: string[],
+  course?: string
+): WorksheetSection[] {
+  const sections: WorksheetSection[] = [];
+
+  for (const subtopicId of subtopicIds) {
+    try {
+      const meta = course
+        ? getCourseSubtopicMeta(year, course, topicId, subtopicId)
+        : getSubtopicMeta(year, topicId, subtopicId);
+      const questions = course
+        ? getCourseQuestions(year, course, topicId, subtopicId)
+        : getQuestions(year, topicId, subtopicId);
+
+      if (questions.length === 0) continue;
+      sections.push({ title: meta.title, questions: questions.map(toWorksheetQuestion) });
+    } catch {
+      continue;
+    }
+  }
+
+  return sections;
 }
