@@ -133,8 +133,9 @@ const alignClass: Record<Align, string> = {
 
 function MarkdownTable({ header, rows, align }: Omit<Extract<Block, { kind: "table" }>, "kind">) {
   return (
-    // wide tables scroll inside the card rather than stretching the page
-    <div className="my-3 overflow-x-auto">
+    // wide tables scroll inside the card rather than stretching the page;
+    // on paper there is nothing to scroll, so let them overflow instead of clipping
+    <div className="my-3 overflow-x-auto print:overflow-visible">
       <table className="min-w-full text-sm border-collapse">
         <thead>
           <tr className="bg-slate-50">

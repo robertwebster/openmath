@@ -287,11 +287,18 @@ Each question has three states:
 
 ### Secondary use case: print and return
 
-A student may want to print a sub-topic page and work through the questions offline. The site supports this via browser print (`window.print()` / Ctrl+P). Print CSS hides navigation, feedback controls and input fields, leaving only the question stems and space for working.
+A student may want to print and work through the questions offline. The site supports this via browser print (`window.print()` / Ctrl+P), in two forms:
+
+| Action | Where | Output |
+|---|---|---|
+| **Print worksheet** | Topic and sub-topic pages | Question stems only, with blank working space sized by difficulty. No worked examples, no explanations, no answers. A topic sheet covers every sub-topic in the topic, numbered continuously. |
+| **Print with answers** | Sub-topic pages | The page as an answer key — every worked example with all its steps, and every question's full explanation. |
+
+The worksheet is rendered by `components/Worksheet.tsx` into the same page and revealed by print CSS. Questions reach it as `WorksheetQuestion` — a narrowed pick of `Question` that drops `answer`, `tolerance`, `hint` and `explanation`, so a worksheet page never ships its own answer key.
 
 The student can return to the page later and use a "Show all answers" button to reveal worked solutions for all questions at once, without going through the answer-entry flow.
 
-Both use cases are served by the same page — no separate PDF format, no second content format to maintain.
+All of this is served by the same pages — no separate PDF format, no second content format to maintain.
 
 ### Year 11 and 12 considerations
 

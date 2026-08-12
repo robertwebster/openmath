@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!--
+    Open Math mark: a radical on indigo-600, the site's accent colour.
+
+    Drawn as a stroked polyline rather than a filled outline so the weight stays
+    uniform — the thick-diagonal/thin-bar contrast of a typographic radical is the
+    first thing to disappear at 16px. Two numbers control the whole mark: rx on the
+    square, and stroke-width on the path.
+  -->
+  <rect width="512" height="512" rx="64" fill="#4F46E5"/>
+  <path
+    d="M92 265H162L222 367L318 109H420"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="54"
+    stroke-linecap="butt"
+    stroke-linejoin="miter"
+    stroke-miterlimit="10"
+  />
+</svg>
