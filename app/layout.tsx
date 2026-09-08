@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { SITE_URL } from "@/lib/site";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./globals.css";
 import "katex/dist/katex.min.css";
 
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en" className={`${geist.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900">
         {children}
+        <GoogleAnalytics />
       </body>
     </html>
   );
