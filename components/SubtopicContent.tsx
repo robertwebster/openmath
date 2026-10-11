@@ -6,6 +6,7 @@ import type { Question, WorkedExample, SubtopicMeta } from "@/lib/types";
 import MathText from "@/components/MathText";
 import Worksheet from "@/components/Worksheet";
 import { difficultyLabel } from "@/lib/difficulty";
+import { katexFontsReady, printWhenFontsReady } from "@/lib/katex-fonts";
 
 interface Props {
   subtopic: SubtopicMeta;
@@ -166,13 +167,13 @@ export default function SubtopicContent({ subtopic, questions, workedExamples }:
           <h1 className="text-3xl font-bold text-slate-900 tracking-tight">{subtopic.title}</h1>
           <div className="print:hidden shrink-0 mt-1 flex items-center gap-2">
             <button
-              onClick={() => setWorksheetMode(true)}
+              onClick={() => katexFontsReady().then(() => setWorksheetMode(true))}
               className="text-sm text-slate-500 hover:text-slate-700 border border-slate-200 rounded-lg px-3 py-1.5 transition-colors"
             >
               Print worksheet
             </button>
             <button
-              onClick={() => window.print()}
+              onClick={printWhenFontsReady}
               className="text-sm text-slate-500 hover:text-slate-700 border border-slate-200 rounded-lg px-3 py-1.5 transition-colors"
             >
               Print with answers
